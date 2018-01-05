@@ -1,0 +1,28 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+		<h1 class="heading-xlarge">
+			Playground
+		</h1>
+
+		<ul class="list list-bullet">
+			<li><a href="multiple">Multiple items</a></li>
+			<li><a href="multiple">Multiple items (alternative)</a></li>
+			
+		</ul>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
