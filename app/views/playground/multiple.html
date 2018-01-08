@@ -18,7 +18,7 @@
 	    	<a href="https://dwp-patterns.herokuapp.com/additemstoalist">https://dwp-patterns.herokuapp.com/additemstoalist</a>
 	    </p>
 
-		<form>
+		<form method="get">
 			<div class="grid-row">
 
 				<div class="form-group-compound list-item-wrapper">
@@ -30,7 +30,7 @@
 								<label class="form-label" for="field-1">
 									Field label
 								</label>
-								<input type="text" class="form-control" id="field-1" name="field-1">
+								<input type="text" class="form-control" id="field-1" name="field-1" value="{{ data['field-1'] }}">
 							</div>
 						</div>
 
@@ -39,7 +39,7 @@
 								<label class="form-label" for="field-2">
 									Field label
 								</label>
-								<input type="text" class="form-control" id="field-2" name="field-2">
+								<input type="text" class="form-control" id="field-2" name="field-2" value="{{ data['field-2'] }}">
 							</div>
 						</div>
 
