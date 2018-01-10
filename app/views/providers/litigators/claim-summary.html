@@ -10,20 +10,42 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-		<h1 class="heading-xlarge">
-			Claim for litigator fees
-		</h1>
+    	<form id="" action="" method="post" class="form">
 
-		<h2>
-			Cost summary
-		</h2>
+			<h1 class="heading-xlarge">
+				Claim for litigator fees
+			</h1>
 
-
-		<h2>
-			Claim summary
-		</h2>
+			<h2 class="heading-large">
+				Cost summary
+			</h2>
 
 
+			<div class="form-section">
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue and certify">
+					<input type="submit" class="button button-secondary" value="Save as draft">
+					<a href="#noop" class="link-delete">Delete this claim</a>
+				</div>
+			</div>
+
+
+			<h2 class="heading-large">
+				Claim summary
+			</h2>
+
+
+			<div class="form-section">
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue and certify">
+					<input type="submit" class="button button-secondary" value="Save as draft">
+					<a href="#noop" class="link-delete">Delete this claim</a>
+				</div>
+			</div>
+
+		</form>
+
+		{% include "./includes/help.html" %}
 
     </div>
   </div>

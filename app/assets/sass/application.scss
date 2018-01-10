@@ -98,3 +98,66 @@ $path: "/public/images/";
     display: block;
   }
 }
+
+a.link-delete {
+  color: #b10e1e;  
+
+  &:hover {
+    color: #df3034;
+  }
+
+}
+
+
+.navigation ol:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navigation {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.navigation li {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  float: left;
+  border-left: 1px solid #bfc1c3;
+  /*background-image: url("../images/separator.png");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;*/
+  list-style: none;
+  margin-left: 0.6em;
+  margin-bottom: 0.4em;
+  padding-left: 0.6em;
+}
+
+@media (min-width: 641px) {
+  .navigation li {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .navigation li {
+    /*background-image: url("../images/separator-2x.png");
+    background-size: 6px 11px;*/
+  }
+}
+
+.navigation li:first-child {
+  border-left: none;
+  /*background-image: none;*/
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navigation a {
+  color: #005da6;
+}
