@@ -75,6 +75,30 @@ $path: "/public/images/";
   }
 }
 
+.button-tertiary {
+  background-color: #2b8cc4;
+  color: #fff;
+  box-shadow: 0 2px 0 #005ea5;
+
+  &:hover {
+    background-color: #005ea5;
+    color: #fff;
+    box-shadow: 0 2px 0 #005ea5;
+  }
+
+  &:focus {
+    background-color: #005ea5;
+    color: #fff;
+    box-shadow: 0 2px 0 #005ea5;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+}
+
 .button-secondary {
   background-color: #bfc1c3;
   color: #0b0c0c;
@@ -90,6 +114,35 @@ $path: "/public/images/";
     background-color: #ccc;
     color: #0b0c0c;
     box-shadow: 0 2px 0 #666;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+}
+
+
+
+.button-delete {
+  background-color: #fff;
+  color: #b10e1e !important;
+  box-shadow: 0 2px 0 #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #b10e1e;
+  }
+
+  &:focus {
+    background-color: #fff;
+    color: #b10e1e;
+  }
+
+  &:visited {
+    background-color: #fff;
+    color: #b10e1e;
   }
 
   @media (max-width: 640px) {
