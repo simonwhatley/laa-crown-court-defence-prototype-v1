@@ -8,4 +8,14 @@ router.get('/', function (req, res) {
 
 // Add your routes here - above the module.exports line
 
+
+router.get('/providers/litigators/case-details', function(req, res) {
+    res.render('providers/litigators/case-details', 
+    	{ 
+    		'next_url' : '/providers/litigators/defendant-details', 
+    		'previous_url' : '/providers/litigators/' 
+    	});
+});
+
+
 module.exports = router
