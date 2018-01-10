@@ -75,25 +75,20 @@ $path: "/public/images/";
   }
 }
 
-
-.button {
-  margin-left: 5px;
-}
-
-.button-add-another {
-  background-color: #eee;
-  color: #000;
+.button-secondary {
+  background-color: #bfc1c3;
+  color: #0b0c0c;
   box-shadow: 0 2px 0 #666;
 
   &:hover {
     background-color: #ccc;
-    color: #000;
+    color: #0b0c0c;
     box-shadow: 0 2px 0 #666;
   }
 
   &:focus {
     background-color: #ccc;
-    color: #000;
+    color: #0b0c0c;
     box-shadow: 0 2px 0 #666;
   }
 
