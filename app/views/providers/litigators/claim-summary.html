@@ -10,50 +10,50 @@
 
 	{% include "./includes/banner.html" %}
 	
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  	<div class="grid-row">
+	    <div class="column-two-thirds">
 
-    	<a class="link-back" href="/url/of/previous/page">Back</a>
+	    	<a class="link-back" href="{{previous_url}}">Back</a>
 
-    	<form class="form" action="/url/of/next/page" method="post">
+	    	<form class="form" action="{{next_url}}" method="post">
 
-			<h1 class="heading-xlarge">
-				Claim for litigator fees
-			</h1>
+				<h1 class="heading-xlarge">
+					Claim for litigator fees
+				</h1>
 
-			<h2 class="heading-large">
-				Cost summary
-			</h2>
+				<h2 class="heading-large">
+					Cost summary
+				</h2>
 
 
-			<div class="form-section">
-				<div class="form-group">
-					<input type="submit" class="button" value="Continue and certify">
-					<input type="submit" class="button button-secondary" value="Save as draft">
-					<a href="#noop" class="link-delete">Delete this claim</a>
+				<div class="form-section">
+					<div class="form-group">
+						<input type="submit" class="button" value="Continue and certify">
+						<input type="submit" class="button button-secondary" value="Save as draft">
+						<a href="#noop" class="link-delete">Delete this claim</a>
+					</div>
 				</div>
-			</div>
 
 
-			<h2 class="heading-large">
-				Claim summary
-			</h2>
+				<h2 class="heading-large">
+					Claim summary
+				</h2>
 
 
-			<div class="form-section">
-				<div class="form-group">
-					<input type="submit" class="button" value="Continue and certify">
-					<input type="submit" class="button button-secondary" value="Save as draft">
-					<a href="#noop" class="link-delete">Delete this claim</a>
+				<div class="form-section">
+					<div class="form-group">
+						<input type="submit" class="button" value="Continue and certify">
+						<input type="submit" class="button button-secondary" value="Save as draft">
+						<a href="#noop" class="link-delete">Delete this claim</a>
+					</div>
 				</div>
-			</div>
 
-		</form>
+			</form>
 
-		{% include "./includes/help.html" %}
+			{% include "./includes/help.html" %}
 
-    </div>
-  </div>
+	    </div>
+  	</div>
 </main>
 
 {% endblock %}

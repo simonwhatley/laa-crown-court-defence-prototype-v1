@@ -10,38 +10,38 @@
 
 	{% include "./includes/banner.html" %}
 	
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  	<div class="grid-row">
+	    <div class="column-two-thirds">
 
-    	<a class="link-back" href="/url/of/previous/page">Back</a>
+	    	<a class="link-back" href="{{previous_url}}">Back</a>
 
-    	<form class="form" action="/url/of/next/page" method="post">
+	    	<form class="form" action="{{next_url}}" method="post">
 
-			<h1 class="heading-xlarge">
-				Claim for litigator fees
-			</h1>
+				<h1 class="heading-xlarge">
+					Claim for litigator fees
+				</h1>
 
-			<h2 class="heading-large">
-				Graduated fees
-			</h2>
+				<h2 class="heading-large">
+					Graduated fees
+				</h2>
 
 
-			<div class="form-section">
-				<div class="form-group fx-form-buttons">
-					<input type="submit" class="button" value="Save and continue">
-					<input type="submit" class="button button-secondary" value="Save as draft">
+				<div class="form-section">
+					<div class="form-group fx-form-buttons">
+						<input type="submit" class="button" value="Save and continue">
+						<input type="submit" class="button button-secondary" value="Save as draft">
+					</div>
 				</div>
-			</div>
 
-		</form>
+			</form>
 
-		{% include "./includes/help.html" %}
+			{% include "./includes/help.html" %}
 
-    </div>
+	    </div>
 
-    <!-- {% include "./includes/sidebar.html" %} -->
-    
-  </div>
+	    <!-- {% include "./includes/sidebar.html" %} -->
+	    
+  	</div>
 </main>
 
 {% endblock %}
