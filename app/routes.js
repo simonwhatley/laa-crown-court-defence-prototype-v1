@@ -14,7 +14,8 @@ router.get('/providers/advocates/case-details', function(req, res) {
     res.render('providers/advocates/case-details', 
     	{ 
     		'next_url' : '/providers/advocates/defendant-details', 
-    		'previous_url' : '/providers/advocates/' 
+    		'previous_url' : '/providers/advocates/',
+    		'home_url' : '/providers/advocates/' 
     	});
 });
 
@@ -29,6 +30,12 @@ router.get('/providers/advocates/defendant-details', function(req, res) {
 router.get('/providers/advocates/offence-details', function(req, res) {
     
 	// TODO: If case_type is a fixed fee
+	// appeal_against_conviction
+	// appeal_against_sentence
+	// breach_of_crown_court_order
+	// committal
+	// contempt
+	// elected_cases_not_proceeded
 
     res.render('providers/advocates/offence-details', 
     	{ 
@@ -37,6 +44,11 @@ router.get('/providers/advocates/offence-details', function(req, res) {
     	});
 
     // TODO: Else case_type is a graduated fee
+    // cracked_before_retrial
+    // cracked_trial
+    // guilty_plea
+    // retrial
+    // trial
 
     // res.render('providers/advocates/offence-details', 
     // 	{ 
@@ -125,10 +137,16 @@ router.get('/providers/litigators/bill-type', function(req, res) {
     res.render('providers/litigators/bill-type', 
     	{ 
     		'next_url' : '/providers/litigators/case-details', 
-    		'previous_url' : '/providers/litigators/' 
+    		'previous_url' : '/providers/litigators/',
+    		'home_url' : '/providers/litigators/' 
     	});
 });
 
+// if (req.query.bill_type === 'litigator_transfer') {
+//     var next_url = '/providers/litigators/transfer-details';
+// } else {
+//     var next_url = '/providers/litigators/case-details';
+// }
 
 // TODO: If bill_type is transfer
 
@@ -136,7 +154,8 @@ router.get('/providers/litigators/transfer-details', function(req, res) {
     res.render('providers/litigators/transfer-details', 
     	{ 
     		'next_url' : '/providers/litigators/case-details', 
-    		'previous_url' : '/providers/litigators/bill-type' 
+    		'previous_url' : '/providers/litigators/bill-type',
+    		'home_url' : '/providers/litigators/' 
     	});
 });
 
@@ -146,7 +165,8 @@ router.get('/providers/litigators/case-details', function(req, res) {
     res.render('providers/litigators/case-details', 
     	{ 
     		'next_url' : '/providers/litigators/defendant-details', 
-    		'previous_url' : '/providers/litigators/bill-type' 
+    		'previous_url' : '/providers/litigators/bill-type',
+    		'home_url' : '/providers/litigators/' 
     	});
 });
 
@@ -160,15 +180,34 @@ router.get('/providers/litigators/defendant-details', function(req, res) {
 
 router.get('/providers/litigators/offence-details', function(req, res) {
     
-	// TODO: If case_type is a fixed fee
+	// TODO: If case_type is a fixed fee:
+	// appeal_against_conviction
+	// appeal_against_sentence
+	// breach_of_crown_court_order
+	// committal_for_sentence
+	// contempt
+	// elected_cases_not_proceeded
+	// hearing_subsequent_to_sentence
+
+    // if (req.session.case_type === 'trial') {
+    //     var next_url = '/providers/litigators/graduated-fees';
+    // } else {
+    //     var next_url = '/providers/litigators/fixed-fees';
+    // }
 
     res.render('providers/litigators/offence-details', 
     	{ 
     		'next_url' : '/providers/litigators/fixed-fees', 
-    		'previous_url' : '/providers/litigators/defendant-details' 
+    		'previous_url' : '/providers/litigators/defendant-details'
     	});
 
-    // TODO: Else case_type is a graduated fee
+    // TODO: Else case_type is a graduated fee:
+    // cracked_before_retrial
+    // cracked_trial
+    // discontinuance
+    // guilty_plea
+    // retrial
+    // trial
 
     // res.render('providers/litigators/offence-details', 
     // 	{ 
