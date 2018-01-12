@@ -48,10 +48,11 @@ function checkSelectors(errors) {
   var checked = [];
 
   $(document).find('input[type="radio"], input[type="checkbox"]').each(function () {
-    var $parent = $(this).parents('div');
-    var label = $parent.find('label').clone().children().remove().end().text();
+    // var $fieldset = $(this).parents('fieldset');
+    var $fieldset = $(this).parents('.form-group');
+    var label = $fieldset.find('legend').clone().children().remove().end().text();
 
-    if ($parent.attr('data-required') !== undefined && $parent.find(':checked').length === 0) {
+    if ($fieldset.attr('data-required') !== undefined && $fieldset.find(':checked').length === 0) {
       if ($(this).attr('id') === undefined) {
         $(this).attr('id', $(this).attr('name'));
       }
@@ -62,8 +63,8 @@ function checkSelectors(errors) {
           {
             id: $(this).attr('id'),
             name: $(this).attr('name'),
-            // errorMessage: $parent.attr('data-error').toLowerCase() || defaultErrorMessage.toLowerCase(),
-            errorMessage: $parent.attr('data-error') || defaultErrorMessage,
+            // errorMessage: $fieldset.attr('data-error').toLowerCase() || defaultErrorMessage.toLowerCase(),
+            errorMessage: $fieldset.attr('data-error') || defaultErrorMessage,
             label: label,
             type: 'text, password'
           }
@@ -79,7 +80,7 @@ function appendErrorSummary() {
       '<h1 class="heading-medium error-summary-heading" id="error-summary-heading">' +
         defaultErrorHeading +
       '</h1>' +
-      '<p class="form-hint">' +
+      '<p>' +
         defaultErrorDescription +
       '</p>' +
       '<ul class="error-summary-list">' +
@@ -95,8 +96,7 @@ function appendErrorMessages(errors) {
   for (var i = 0; i < errors.length; i++) {
     if ($(document).find('a[href="#' + errors[i].id + '"]').length === 0) {
       $('.error-summary-list').append(
-        // '<li><a href="#' + errors[i].id + '">' + errors[i].label + ' - ' + errors[i].errorMessage + '</a></li>'
-        '<li><a href="#' + errors[i].id + '">' + errors[i].errorMessage + '</a></li>'
+        '<li><a href="#' + errors[i].id + '">' + errors[i].label + ' - ' + errors[i].errorMessage + '</a></li>'
       );
       var $formgroup = $(document).find('#' + errors[i].id).parents('.form-group');
       $formgroup.addClass('form-group-error');
