@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "../../layout.html" %}
 
 {% block page_title %}
   {% if serviceName %} {{ serviceName }} {% endif %}
@@ -10,15 +10,17 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
+    	<a class="link-back" href="../">Back</a>
+
 	    <h1 class="heading-xlarge">
-	      Multiple items
+	      Multiple items (alternative)
 	    </h1>
 
 	    <p>
 	    	<a href="https://dwp-patterns.herokuapp.com/additemstoalist">https://dwp-patterns.herokuapp.com/additemstoalist</a>
 	    </p>
 
-		<form method="get">
+		<!-- <form>
 			<div class="grid-row">
 
 				<div class="form-group-compound list-item-wrapper">
@@ -30,7 +32,7 @@
 								<label class="form-label" for="field-1">
 									Field label
 								</label>
-								<input type="text" class="form-control" id="field-1" name="field-1" value="{{ data['field-1'] }}">
+								<input type="text" class="form-control" id="field-1" name="field-1">
 							</div>
 						</div>
 
@@ -39,7 +41,7 @@
 								<label class="form-label" for="field-2">
 									Field label
 								</label>
-								<input type="text" class="form-control" id="field-2" name="field-2" value="{{ data['field-2'] }}">
+								<input type="text" class="form-control" id="field-2" name="field-2">
 							</div>
 						</div>
 
@@ -69,7 +71,7 @@
 				</div>
 			</div>
 
-		</form>
+		</form> -->
 
     </div>
   </div>

@@ -20,7 +20,7 @@ function clearValidation() {
 }
 
 function checkTextFields(errors) {
-  $(document).find('input[type="text"],input[type="password"], textarea').each(function () {
+  $(document).find('input[type="text"], input[type="password"], textarea').each(function () {
     var $formgroup = $(this).parents('.form-group');
     var label = $(this).parent().find('label').clone().children().remove().end().text();
 
@@ -62,7 +62,8 @@ function checkSelectors(errors) {
           {
             id: $(this).attr('id'),
             name: $(this).attr('name'),
-            errorMessage: $parent.attr('data-error').toLowerCase() || defaultErrorMessage.toLowerCase(),
+            // errorMessage: $parent.attr('data-error').toLowerCase() || defaultErrorMessage.toLowerCase(),
+            errorMessage: $parent.attr('data-error') || defaultErrorMessage,
             label: label,
             type: 'text, password'
           }
