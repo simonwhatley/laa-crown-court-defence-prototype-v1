@@ -28,7 +28,7 @@
 				</h2>
 
 				<div class="form-section">
-					<div class="form-group">
+					<div class="form-group" data-required="true" data-error="Choose a supplier number">
 
 						<label class="form-label-bold" for="radio-group">
 							Supplier number
@@ -59,7 +59,7 @@
 						</details>
 					</div>
 
-					<div class="form-group">
+					<div class="form-group" data-required="true" data-error="Add a reference number">
 						<label class="form-label-bold" for="reference-number">
 						Reference number
 						<span class="form-hint">
@@ -69,14 +69,33 @@
 						<input class="form-control form-control-1-3" id="reference-number" type="text" name="reference_number" value="{{ data['reference_number']}}">
 					</div>
 
-					<div class="form-group">
+					<div class="form-group" data-required="true" data-error="Choose a case type">
 
 						<label class="form-label-bold" for="radio-group">
 							Case type
 							<!-- <span class="form-hint">Please choose a relevant case type</span> -->
 						</label>
 
-						<div class="grid-row">
+						<select id="select-case_type" name="case_type" class="form-control form-control-1-3">
+							<option></option>
+							<option value="appeal_against_conviction">Appeal Against Conviction</option>
+							<option value="appeal_against_sentence">Appeal Against Sentence</option>
+							<option value="breach_of_crown_court_order">Breach of Crown Court Order</option>
+							<option value="committal">Committal</option>
+							<option value="committal_for_sentence">Committal for Sentence</option>
+							<option value="contempt">Contempt</option>
+							<option value="cracked_before_retrial">Cracked Before Retrial</option>
+							<option value="cracked_trial">Cracked Trial</option>
+							<option value="discontinuance">Discontinuance</option>
+							<option value="elected_case_not_proceeded">Elected Case Not Proceeded</option>
+							<option value="guilty_plea">Guilty Plea</option>
+							<option value="hearing_subsequent_to_sentence">Hearing Subsequent to Sentence</option>
+							<option value="retrial">Retrial</option>
+							<option value="trial">Trial</option>
+						</select>
+
+
+						<!-- <div class="grid-row">
 
 							<div class="column-one-half">
 
@@ -143,7 +162,7 @@
 
 							</div>
 
-						</div>
+						</div> -->
 
 					</div>
 
@@ -151,7 +170,7 @@
 
 						<div class="column-one-half">
 
-							<div class="form-group">
+							<div class="form-group" data-required="true" data-error="Add a court">
 								<label class="form-label-bold" for="court">
 								Court
 								<span class="form-hint">
@@ -165,7 +184,7 @@
 
 						<div class="column-one-half">
 
-							<div class="form-group">
+							<div class="form-group" data-required="true" data-error="Add a case number">
 								<label class="form-label-bold" for="case-number">
 								Case number
 								<span class="form-hint">
