@@ -1,32 +1,103 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
 {% block content %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-two-thirds">
+<main class="elements-index" id="content" role="main">
 
-      <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+	<div class="grid-row">
+		<div class="column-two-thirds">
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+			<h1 class="heading-xlarge">
+			Prototypes
+			</h1>
 
-      <h2 class="heading-medium">About this page</h2>
+			<p class="lede">
+			Something something something
+			</p>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-one-third">
+
+			<h2 class="heading-medium"><a href="./providers/">Providers</a></h2>
+			<p>
+			Lorem ipsum dolor sit emet.
+			</p>
+
+		</div>
+		<div class="column-one-third">
+
+			<h2 class="heading-medium"><a href="./caseworkers/">Caseworkers</a></h2>
+			<p>
+			Lorem ipsum dolor sit emet.
+			</p>
+
+		</div>
+		<div class="column-one-third">
+
+			<h2 class="heading-medium"><a href="./admins/">Admins</a></h2>
+			<p>
+				Lorem ipsum dolor sit emet.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-one-third">
+
+			<h2 class="heading-medium"><a href="./playground/">Playground</a></h2>
+			<p>
+				Lorem ipsum dolor sit emet.
+			</p>
+
+		</div>
+		<!-- <div class="column-one-third">
+
+			<h2 class="heading-medium"><a href="./"></a></h2>
+			<p>
+			Lorem ipsum dolor sit emet.
+			</p>
+
+		</div> -->
+		<!-- <div class="column-one-third">
+
+			<h2 class="heading-medium"><a href="./"></a></h2>
+			<p>
+			Lorem ipsum dolor sit emet.
+			</p>
+
+		</div> -->
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+			<hr>
+			<h3 class="heading-small">Looking for the styles?</h3>
+			<p>
+				The Sass files for <a href="https://github.com/alphagov/govuk_elements/tree/master/assets/sass" rel="external">all the examples can be found on GitHub</a>.
+			</p>
+
+			<h3 class="heading-small">Want to discuss these patterns?</h3>
+			<p>
+				<a href="https://paper.dropbox.com/doc/About-GOV.UK-Design-Patterns-hkou7bpzKya8Dadv24V1z" rel="external">
+					Discuss GOV.UK Design Patterns
+				</a>.
+			</p>
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+			<hr>
+			
 
 			<h2 class="heading-medium">Examples and documentation</h2>
 
@@ -35,7 +106,7 @@
 				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
 			</ul>
 
-      <h2 class="heading-medium">Other resources</h2>
+      		<h2 class="heading-medium">Other resources</h2>
 
 			<ul class="list list-bullet">
 				<li>
@@ -55,10 +126,39 @@
 				</li>
 			</ul>
 
-    </div>
-  </div>
+			<ul class="list list-bullet">
+				<li><a href="https://paper.dropbox.com/folder/show/GOV.UK-Design-Patterns-e.iX7ZavGxujPFwhjOZcQs9BGH2vBGRBJNqRyrSa5x73JE6s28CX" target="_blank">GOV.UK Design Patters (Dropbox Paper)</a></li>
+				<li><a href="http://rural-payments-styleguide.herokuapp.com/" target="_blank">RPA styleguide</a></li>
+				<li><a href="https://home-office-digital-patterns.herokuapp.com/patterns" target="_blank">Home Office patterns</a></li>
+				<li><a href="https://onsdigital.github.io/ons-pattern-library-starter/" target="_blank">ONS design patterns</a></li>
+				<li><a href="https://style.ons.gov.uk/category/data-visualisation/" target="_blank">ONS data visualisation</a></li>
+				<li><a href="https://dwp-patterns.herokuapp.com/" target="_blank">DWP patterns</a></li>
+				<li><a href="http://land-registry-elements.herokuapp.com/" target="_blank">Land Registry elements</a></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+			<hr>
+			<h3 class="heading-medium">Tools</h3>
+			<ul class="list list-bullet">
+				<li><a href="http://jsoneditoronline.org/" target="_blank" rel="external">JSON Editor</a></li>
+				<li><a href="http://www.generatedata.com/" target="_blank">Generate Data</a></li>
+				<li><a href="https://www.mockaroo.com/" target="_blank">Mockaroo</a></li>
+				<li><a href="https://www.freemaptools.com/download-uk-postcode-lat-lng.htm" target="_blank">FreeMapTools – UK Postcodes</a></li>
+				<li><a href="http://postcodes.io/" target="_blank">Postcodes.io</a></li>
+				<li><a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a></li>
+				<li><a href="https://www.lists.design/" target="_blank">Lists data</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Docs (MDN)</a></li>
+				<li><a href="https://thenounproject.com/" target="_blank">The Noun Project</a></li>
+			</ul>
+		</div>
+
+	</div>
+	
+
 </main>
 
 {% endblock %}
-
-
