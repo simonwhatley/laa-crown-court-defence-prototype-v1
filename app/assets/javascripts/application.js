@@ -99,3 +99,10 @@ function sortFields() {
     $('.remove-list-item').remove();
   }
 }
+
+
+
+$('#password + .fa').on('click', function() {
+  $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye'); // toggle our classes for the eye icon
+  $('#password').togglePassword(); // activate the hideShowPassword plugin
+});

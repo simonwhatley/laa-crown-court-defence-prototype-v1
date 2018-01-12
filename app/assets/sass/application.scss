@@ -53,6 +53,18 @@ $path: "/public/images/";
 }
 
 
+// Password visibilty
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+#password + .fa-eye {
+   cursor: pointer;
+   pointer-events: all;
+ }
+
+
+
 
 .item-wrapper {
   @extend %grid-row;
