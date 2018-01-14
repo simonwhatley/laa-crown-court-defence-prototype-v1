@@ -106,3 +106,16 @@ $('#password + .fa').on('click', function() {
   $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye'); // toggle our classes for the eye icon
   $('#password').togglePassword(); // activate the hideShowPassword plugin
 });
+
+// $('#password-2').showPassword('focus', {
+//   toggle: { className: 'show-hide' }
+// });
+
+
+$('#password-2').hideShowPassword({
+  show: false,
+  innerToggle: 'focus',
+  toggle: {
+    className: 'show-hide'
+  }
+});

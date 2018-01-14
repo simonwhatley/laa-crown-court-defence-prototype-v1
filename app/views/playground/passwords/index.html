@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "../../layout.html" %}
 
 {% block page_title %}
   {% if serviceName %} {{ serviceName }} {% endif %}
@@ -10,13 +10,19 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
+    	<a class="link-back" href="../">Back</a>
+
 	    <h1 class="heading-xlarge">
-	      Providers
+	      Passwords show/hide
 	    </h1>
 
 	    <!-- <p class="lede">
 			Something something something
 		</p> -->
+
+		<p>
+	    	<a href="http://cloudfour.github.io/hideShowPassword/">Cloud Four's hideShowPassword.js</a>
+	    </p>
 
 	    <h2 class="heading-large">
 	    	Sign in
@@ -40,7 +46,15 @@
 						<!-- <span class="form-hint">Something</span> -->
 					</label>
 					<input class="form-control form-control-2-3" id="password" type="password" name="password" autocomplete="off" autocapitalize="off">
-					<!-- <i class="fa fa-eye form-control-feedback" aria-hidden="true"></i> -->
+					<i class="fa fa-eye form-control-feedback" aria-hidden="true"></i>
+				</div>
+
+				<div class="form-group" data-required="true" data-error="Password is required">
+					<label class="form-label-bold" for="password-2">
+						Password
+						<!-- <span class="form-hint">Something</span> -->
+					</label>
+					<input class="form-control form-control-2-3 hideShowPassword-field" id="password-2" type="text" autocomplete="off" autocapitalize="off" spellcheck="true">
 				</div>
 
 			</div>
