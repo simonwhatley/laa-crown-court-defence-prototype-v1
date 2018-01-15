@@ -1,0 +1,66 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      Dependant drop-downs
+	    </h1>
+
+	    <form action="" method="post">
+
+        <div class="form-section">
+
+          <div class="form-group" data-required="true" data-error="Offence class is required">
+            <label class="form-label-bold" for="offence-class">
+              Offence class
+              <!-- <span class="form-hint">Something</span> -->
+            </label>
+
+            <select id="offence-class" class="form-control form-control-2-3">
+               <option value=""></option>
+               <option value='A'>A – Homicide and related grave offences</option>
+               <option value='B'>B – Offences involving serious violence or damage and serious drug offences</option>
+               <option value='C'>C – Lesser offences involving violence or damage and less serious drug offences</option>
+               <option value='D'>D – Serious sexual offences and offences against children</option>
+               <option value='E'>E – Burglary</option>
+               <option value='F'>F – Other offences of dishonesty up to £30,000</option>
+               <option value='G'>G – Other offences of dishonesty between £30,001 and £100,000</option>
+               <option value='H'>H – Miscellaneous lesser offences</option>
+               <option value='I'>I – Offences against public justice and similar offences</option>
+               <option value='J'>J – Serious sexual offences, offences against children</option>
+               <option value='K'>K – Offences of dishonesty in Class F where the value in is in excess of £100,000</option>
+            </select>
+
+          </div>
+
+          <div class="form-group" data-required="true" data-error="Offence category is required">
+            <label class="form-label-bold" for="offence-category">
+              Offence category
+              <!-- <span class="form-hint">Something</span> -->
+            </label>
+
+            <select id="offence-category" class="form-control form-control-2-3 depdrop" data-depends="['offence-class']" data-url="/data/offences.json">
+               <!-- your select options -->
+            </select>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
