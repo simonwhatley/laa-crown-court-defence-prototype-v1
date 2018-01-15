@@ -44,6 +44,57 @@ function checkTextFields(errors) {
   return;
 }
 
+function checkSelectFields(errors) {
+  $(document).find('select').each(function () {
+    var $formgroup = $(this).parents('.form-group');
+    var label = $(this).parent().find('legend').clone().children().remove().end().text();
+
+    if ($formgroup.attr('data-required') !== undefined && $(this).val() === '' && !$(this).parent().hasClass('js-hidden')) {
+      if ($(this).attr('id') === undefined) {
+        $(this).attr('id', $(this).attr('name'));
+      }
+
+      errors.push(
+        {
+          id: $(this).attr('id'),
+          name: $(this).attr('name'),
+          // errorMessage: $formgroup.attr('data-error').toLowerCase() || defaultErrorMessage.toLowerCase(),
+          errorMessage: $formgroup.attr('data-error') || defaultErrorMessage,
+          label: label,
+          type: 'text, password'
+        }
+      );
+    }
+  });
+  return;
+}
+
+function checkDateFields(errors) {
+  $(document).find('input[type="text"], input[type="number"').each(function () {
+    var $formgroup = $(this).parents('.form-date');
+    var label = $(this).parent().find('label').clone().children().remove().end().text();
+
+    if ($formgroup.attr('data-required') !== undefined && $(this).val() === '' && !$(this).parent().hasClass('js-hidden')) {
+      if ($(this).attr('id') === undefined) {
+        $(this).attr('id', $(this).attr('name'));
+      }
+
+      errors.push(
+        {
+          id: $(this).attr('id'),
+          name: $(this).attr('name'),
+          // errorMessage: $formgroup.attr('data-error').toLowerCase() || defaultErrorMessage.toLowerCase(),
+          errorMessage: $formgroup.attr('data-error') || defaultErrorMessage,
+          label: label,
+          type: 'text, password'
+        }
+      );
+    }
+  });
+  return;
+}
+
+
 function checkSelectors(errors) {
   var checked = [];
 
@@ -138,6 +189,7 @@ $(document).on('submit', 'form', function (e) {
     var errors = [];
 
     checkTextFields(errors);
+    checkSelectFields(errors);
     checkSelectors(errors);
 
     if (errors.length > 0) {
