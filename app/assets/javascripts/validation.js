@@ -70,9 +70,9 @@ function checkSelectFields(errors) {
 }
 
 function checkDateFields(errors) {
-  $(document).find('input[type="text"], input[type="number"').each(function () {
-    var $formgroup = $(this).parents('.form-date');
-    var label = $(this).parent().find('label').clone().children().remove().end().text();
+  $(document).find('input[type="text"], input[type="number"]').each(function () {
+    var $formgroup = $(this).parents('.form-group');
+    var label = $(this).parent().find('legend').clone().children().remove().end().text();
 
     if ($formgroup.attr('data-required') !== undefined && $(this).val() === '' && !$(this).parent().hasClass('js-hidden')) {
       if ($(this).attr('id') === undefined) {
@@ -189,8 +189,9 @@ $(document).on('submit', 'form', function (e) {
     var errors = [];
 
     checkTextFields(errors);
-    checkSelectFields(errors);
     checkSelectors(errors);
+    checkSelectFields(errors);
+    checkDateFields(errors);    
 
     if (errors.length > 0) {
       e.preventDefault();

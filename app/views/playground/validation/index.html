@@ -20,7 +20,7 @@
 	    	<a href="https://github.com/abbott567/validation-for-prototypes">https://github.com/abbott567/validation-for-prototypes</a>
 	    </p>
 
-	    <form action="./validation-result.html" method="post">
+	    <form action="./" method="post">
 	    	
 	    	<div class="form-section">
 
@@ -28,7 +28,7 @@
 
 					<label class="form-label-bold" for="text-input">
 						Text
-						<span class="form-hint">Please choose an option</span>
+						<span class="form-hint">Please enter some text</span>
 					</label>
 					<input class="form-control" id="text-input" type="text" name="text-input" value="{{ data['text-input']}}">
 
@@ -36,35 +36,13 @@
 
 		    	<div class="form-group" data-required="true" data-error="Textarea: Enter a value">
 
-					<label class="form-label-bold" for="radio-group">
+					<label class="form-label-bold" for="textarea-input">
 						Textarea
-						<span class="form-hint">Please choose an option</span>
+						<span class="form-hint">Please enter some text</span>
 					</label>
 					<textarea class="form-control" id="textarea-input" name="textarea">{{ data['textarea'] }}</textarea>
 
 		    	</div>
-
-		    	<!-- <div class="form-group" data-required="true" data-error="Radio: Choose an option">
-
-					<label class="form-label-bold" for="radio-group">
-						Radio group
-						<span class="form-hint">Please choose an option</span>
-					</label>
-
-					<div class="multiple-choice">
-						<input id="radio-1" type="radio" name="radio-group" value="one" {{ checked('radio-group','one') }}>
-						<label for="radio-1">One</label>
-					</div>
-					<div class="multiple-choice">
-						<input id="radio-2" type="radio" name="radio-group" value="two" {{ checked('radio-group','two') }}>
-						<label for="radio-2">Two</label>
-					</div>
-					<div class="multiple-choice">
-						<input id="radio-3" type="radio" name="radio-group" value="three" {{ checked('radio-group','three') }}>
-						<label for="radio-3">Three</label>
-					</div>
-
-				</div> -->
 
 				<div class="form-group" data-required="true" data-error="Radio: Choose an option">
 					
@@ -76,43 +54,21 @@
 						</legend>
 
 						<div class="multiple-choice">
-							<input id="radio-1" type="radio" name="radio-group" value="one" {{ checked('radio-group','one') }}>
+							<input id="radio-1" type="radio" name="radio-group" value="1" {{ checked('radio-group','1') }}>
 							<label for="radio-1">One</label>
 						</div>
 						<div class="multiple-choice">
-							<input id="radio-2" type="radio" name="radio-group" value="two" {{ checked('radio-group','two') }}>
+							<input id="radio-2" type="radio" name="radio-group" value="2" {{ checked('radio-group','2') }}>
 							<label for="radio-2">Two</label>
 						</div>
 						<div class="multiple-choice">
-							<input id="radio-3" type="radio" name="radio-group" value="three" {{ checked('radio-group','three') }}>
+							<input id="radio-3" type="radio" name="radio-group" value="3" {{ checked('radio-group','3') }}>
 							<label for="radio-3">Three</label>
 						</div>
 
 					</fieldset>
 
 				</div>
-
-				<!-- <div class="form-group" data-required="true" data-error="Checkbox: choose one or more options">
-
-					<label class="form-label-bold" for="checkbox-group">
-						Checkbox list
-						<span class="form-hint">Please choose one or more options</span>
-					</label>
-
-					<div class="multiple-choice">
-						<input id="checkbox-1" type="checkbox" name="checkbox-group" value="one" {{ checked('checkbox-group','one') }}>
-						<label for="checkbox-1">Option 1</label>
-					</div>
-					<div class="multiple-choice">
-						<input id="checkbox-2" type="checkbox" name="checkbox-group" value="two" {{ checked('checkbox-group','two') }}>
-						<label for="checkbox-2">Option 2</label>
-					</div>
-					<div class="multiple-choice">
-						<input id="checkbox-3" type="checkbox" name="checkbox-group" value="three" {{ checked('checkbox-group','three') }}>
-						<label for="checkbox-3">Option 3</label>
-					</div>
-
-				</div> -->
 
 				<div class="form-group" data-required="true" data-error="Checkbox: choose one or more options">
 
@@ -124,15 +80,15 @@
 					    </legend>
 
 					    <div class="multiple-choice">
-					      <input id="checkbox-list-1" name="checkbox-list" type="checkbox" value="one">
+					      <input id="checkbox-list-1" name="checkbox-list" type="checkbox" value="1" {{ checked('checkbox-list','1') }}>
 					      <label for="checkbox-list-1">Option 1</label>
 					    </div>
 					    <div class="multiple-choice">
-					      <input id="checkbox-list-2" name="checkbox-list" type="checkbox" value="two">
+					      <input id="checkbox-list-2" name="checkbox-list" type="checkbox" value="2" {{ checked('checkbox-list','2') }}>
 					      <label for="checkbox-list-2">Option 2</label>
 					    </div>
 					    <div class="multiple-choice">
-					      <input id="checkbox-list-3" name="checkbox-list" type="checkbox" value="three">
+					      <input id="checkbox-list-3" name="checkbox-list" type="checkbox" value="3" {{ checked('checkbox-list','3') }}>
 					      <label for="checkbox-list-3">Option 3</label>
 					    </div>
 
@@ -152,61 +108,14 @@
 						
 						<select id="select-box" class="form-control" name="select-box">
 							<option value=""></option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-							<option value="3">Option 3</option>
+							<option value="1" {% if data['select-box'] == 1 %}selected="selected"{% endif %}>Option 1</option>
+							<option value="2" {% if data['select-box'] == 2 %}selected="selected"{% endif %}>Option 2</option>
+							<option value="3" {% if data['select-box'] == 3 %}selected="selected"{% endif %}>Option 3</option>
 						</select>
 
 					</fieldset>
 
 		    	</div>
-
-		    	<!-- <div class="form-group" data-required="true" data-error="Select: Choose one or more options">
-
-					<label class="form-label-bold" for="select-box-multiple">
-						Multi-select
-						<span class="form-hint">Please choose an option</span>
-					</label>
-
-					<select class="form-control" id="select-box-multiple" name="select-box-multiple" multiple="multiple">
-						<option value="1">Option 1</option>
-						<option value="2">Option 2</option>
-						<option value="3">Option 3</option>
-						<option value="4">Option 4</option>
-						<option value="5">Option 5</option>
-						<option value="6">Option 6</option>
-					</select>
-
-		    	</div> -->
-
-
-				<!-- <div class="form-group" data-required="true" data-error="Date: Enter a date">
-
-				    <fieldset>
-
-						<legend class="form-label-bold">
-							Date
-							<span class="form-hint">For example, 31 3 2017</span>
-						</legend>
-
-						<div class="form-date">
-							<div class="form-group form-group-day">
-								<label class="form-label" for="date-day">Day</label>
-								<input class="form-control" id="date-day" value="{{data['date-day']}}" name="date-day" type="number" pattern="[0-9]*" min="1" max="31">
-							</div>
-							<div class="form-group form-group-month">
-								<label class="form-label" for="date-month">Month</label>
-								<input class="form-control" id="date-month" value="{{data['date-month']}}" name="date-month" type="number" pattern="[0-9]*" min="1" max="12">
-							</div>
-							<div class="form-group form-group-year">
-								<label class="form-label" for="date-year">Year</label>
-								<input class="form-control" id="date-year" value="{{data['date-year']}}" name="date-year" type="number" pattern="[0-9]*" min="1900" max="2018">
-							</div>
-						</div>
-
-					</fieldset>
-
-				</div> -->
 
 				<div class="form-group" data-required="true" data-error="Date: Enter a date">
 
@@ -235,24 +144,6 @@
 					</fieldset>
 
 				</div>
-
-		    	<!-- <div class="form-group" data-required="true" data-error="Autocomplete: Enter a value">
-
-					<label class="form-label-bold" for="autocomplete-input">
-						Autocomplete
-						<span class="form-hint">Please enter a value</span>
-					</label>
-
-					<input class="form-control" id="autocomplete-input" type="text" name="autocomplete-input" value="{{ data['autocomplete-input']}}">
-
-		    	</div> -->
-
-				<!-- <div class="form-group" data-required="true" data-error="File: Upload a file">
-					<label class="form-label" for="file-input">
-						Upload a file
-					</label>
-					<input class="form-control" id="file-input" type="file" name="file-input">
-				</div> -->
 
 	    	</div>
 
