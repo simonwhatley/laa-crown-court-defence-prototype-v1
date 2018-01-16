@@ -28,21 +28,26 @@
 				</h2>
 
 				<div class="form-section">
+
 					<div class="form-group" data-required="true" data-error="Choose a supplier number">
 
-						<label class="form-label-bold" for="radio-group">
-							Supplier number
-							<span class="form-hint">Please choose a relevant supplier</span>
-						</label>
+						<fieldset>
 
-						<div class="multiple-choice">
-							<input id="radio-1" type="radio" name="supplier_number" value="8A222Z" {{ checked('supplier_number','8A222Z') }}>
-							<label for="radio-1">8A222Z</label>
-						</div>
-						<div class="multiple-choice">
-							<input id="radio-2" type="radio" name="supplier_number" value="9B333Y" {{ checked('supplier_number','9B333Y') }}>
-							<label for="radio-2">9B333Y</label>
-						</div>
+							<legend class="form-label-bold" for="radio-1">
+								Supplier number
+								<span class="form-hint">Please choose a relevant supplier</span>
+							</legend>
+
+							<div class="multiple-choice">
+								<input id="radio-1" type="radio" name="supplier_number" value="8A222Z" {{ checked('supplier_number','8A222Z') }}>
+								<label for="radio-1">8A222Z</label>
+							</div>
+							<div class="multiple-choice">
+								<input id="radio-2" type="radio" name="supplier_number" value="9B333Y" {{ checked('supplier_number','9B333Y') }}>
+								<label for="radio-2">9B333Y</label>
+							</div>
+
+						</fieldset>
 
 					</div>
 
@@ -71,30 +76,32 @@
 
 					<div class="form-group" data-required="true" data-error="Choose a case type">
 
-						<label class="form-label-bold" for="radio-group">
-							Case type
-							<!-- <span class="form-hint">Please choose a relevant case type</span> -->
-						</label>
+						<fieldset>
 
-						<select id="select-case_type" name="case_type" class="form-control form-control-1-3">
-							<option></option>
-							<option value="appeal_against_conviction">Appeal Against Conviction</option>
-							<option value="appeal_against_sentence">Appeal Against Sentence</option>
-							<option value="breach_of_crown_court_order">Breach of Crown Court Order</option>
-							<option value="committal">Committal</option>
-							<option value="committal_for_sentence">Committal for Sentence</option>
-							<option value="contempt">Contempt</option>
-							<option value="cracked_before_retrial">Cracked Before Retrial</option>
-							<option value="cracked_trial">Cracked Trial</option>
-							<option value="discontinuance">Discontinuance</option>
-							<option value="elected_case_not_proceeded">Elected Case Not Proceeded</option>
-							<option value="guilty_plea">Guilty Plea</option>
-							<option value="hearing_subsequent_to_sentence">Hearing Subsequent to Sentence</option>
-							<option value="retrial">Retrial</option>
-							<option value="trial">Trial</option>
-						</select>
+							<legend class="form-label-bold" for="select-case_type">
+								Case type
+								<!-- <span class="form-hint">Please choose a relevant case type</span> -->
+							</legend>
 
+							<select id="select-case_type" name="case_type" class="form-control form-control-1-3">
+								<option></option>
+								<option value="appeal_against_conviction">Appeal Against Conviction</option>
+								<option value="appeal_against_sentence">Appeal Against Sentence</option>
+								<option value="breach_of_crown_court_order">Breach of Crown Court Order</option>
+								<option value="committal">Committal</option>
+								<option value="committal_for_sentence">Committal for Sentence</option>
+								<option value="contempt">Contempt</option>
+								<option value="cracked_before_retrial">Cracked Before Retrial</option>
+								<option value="cracked_trial">Cracked Trial</option>
+								<option value="discontinuance">Discontinuance</option>
+								<option value="elected_case_not_proceeded">Elected Case Not Proceeded</option>
+								<option value="guilty_plea">Guilty Plea</option>
+								<option value="hearing_subsequent_to_sentence">Hearing Subsequent to Sentence</option>
+								<option value="retrial">Retrial</option>
+								<option value="trial">Trial</option>
+							</select>
 
+						</fieldset>
 						<!-- <div class="grid-row">
 
 							<div class="column-one-half">

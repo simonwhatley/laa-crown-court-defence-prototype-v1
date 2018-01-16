@@ -5,8 +5,8 @@ const router = express.Router()
 router.use('/', (req, res, next) => {
   req.feature = req.originalUrl.split('/')[1]
   req.version = req.originalUrl.split('/')[2]
-  res.locals.feature = req.feature
-  res.locals.version = req.version
+  // res.locals.feature = req.feature
+  // res.locals.version = req.version
   next()
 })
 

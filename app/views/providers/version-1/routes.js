@@ -6,185 +6,180 @@ const router = express.Router()
 //   res.render('index')
 // })
 
+// Route to the start (sign in) page
 router.get('/', (req, res) => {
   res.redirect(`/${req.feature}/${req.version}/sign-in`)
 })
 
 // Add your routes here - above the module.exports line
 
-
 // ADVOCATES
 
 router.get('/advocates/case-details', function(req, res) {
-    
+
     res.render(`${req.feature}/${req.version}/advocates/case-details`, 
-    	{ 
-    		'next_url' : '/providers/version-1/advocates/defendant-details', 
-    		'previous_url' : '/providers/version-1/advocates/',
-    		'home_url' : '/providers/version-1/advocates/'
-    	});
+        { 
+            'next_url' : './defendant-details', 
+            'previous_url' : '../advocates/',
+            'home_url' : '../advocates/'
+        });
 });
 
 router.get('/advocates/defendant-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/defendant-details`, 
     	{ 
-    		'next_url' : '/providers/advocates/offence-details', 
-    		'previous_url' : '/providers/advocates/case-details' 
+    		'next_url' : './offence-details', 
+    		'previous_url' : './case-details' 
     	});
 });
 
-router.get('/providers/advocates/offence-details', function(req, res) {
+router.get('/advocates/offence-details', function(req, res) {
     
-	// TODO: If case_type is a fixed fee
-	// appeal_against_conviction
-	// appeal_against_sentence
-	// breach_of_crown_court_order
-	// committal
-	// contempt
-	// elected_cases_not_proceeded
-
-    res.render('providers/advocates/offence-details', 
+    res.render(`${req.feature}/${req.version}/advocates/offence-details`, 
     	{ 
-    		'next_url' : '/providers/advocates/fixed-fees', 
-    		'previous_url' : '/providers/advocates/defendant-details' 
+    		'next_url' : './fees', 
+    		'previous_url' : './defendant-details' 
     	});
-
-    // TODO: Else case_type is a graduated fee
-    // cracked_before_retrial
-    // cracked_trial
-    // guilty_plea
-    // retrial
-    // trial
-
-    // res.render('providers/advocates/offence-details', 
-    // 	{ 
-    // 		'next_url' : '/providers/advocates/fixed-fees', 
-    // 		'previous_url' : '/providers/advocates/defendant-details' 
-    // 	});
 
 });
 
-router.get('/providers/advocates/fixed-fees', function(req, res) {
-    res.render('providers/advocates/fixed-fees', 
+
+router.get('/advocates/fees', function(req, res) {
+
+    res.render(`${req.feature}/${req.version}/advocates/fixed-fees`, 
+        { 
+            'next_url' : './miscellaneous-fees', 
+            'previous_url' : './offence-details' 
+        });
+
+    // res.render(`${req.feature}/${req.version}/advocates/graduated-fees`, 
+    //  { 
+    //      'next_url' : './miscellaneous-fees', 
+    //      'previous_url' : './offence-details' 
+    //  });
+});
+
+// router.get('/advocates/fixed-fees', function(req, res) {
+//     res.render(`${req.feature}/${req.version}/advocates/fixed-fees`, 
+//     	{ 
+//     		'next_url' : './miscellaneous-fees', 
+//     		'previous_url' : './offence-details' 
+//     	});
+// });
+
+// router.get('/advocates/graduated-fees', function(req, res) {
+//     res.render(`${req.feature}/${req.version}/advocates/graduated-fees`, 
+//     	{ 
+//     		'next_url' : './miscellaneous-fees', 
+//     		'previous_url' : './offence-details' 
+//     	});
+// });
+
+router.get('/advocates/miscellaneous-fees', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees`, 
     	{ 
-    		'next_url' : '/providers/advocates/miscellaneous-fees', 
-    		'previous_url' : '/providers/advocates/offence-details' 
+    		'next_url' : './travel-expenses', 
+    		'previous_url' : './fees' 
     	});
 });
 
-router.get('/providers/advocates/graduated-fees', function(req, res) {
-    res.render('providers/advocates/graduated-fees', 
+router.get('/advocates/travel-expenses', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/travel-expenses`, 
     	{ 
-    		'next_url' : '/providers/advocates/miscellaneous-fees', 
-    		'previous_url' : '/providers/advocates/offence-details' 
+    		'next_url' : './supporting-evidence', 
+    		'previous_url' : './miscellaneous-fees' 
     	});
 });
 
-router.get('/providers/advocates/miscellaneous-fees', function(req, res) {
-    res.render('providers/advocates/miscellaneous-fees', 
+router.get('/advocates/supporting-evidence', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/supporting-evidence`, 
     	{ 
-    		'next_url' : '/providers/advocates/travel-expenses', 
-    		'previous_url' : '/providers/advocates/fixed-fees' 
+    		'next_url' : './additional-information', 
+    		'previous_url' : './travel-expenses' 
     	});
 });
 
-router.get('/providers/advocates/travel-expenses', function(req, res) {
-    res.render('providers/advocates/travel-expenses', 
+router.get('/advocates/additional-information', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/additional-information`, 
     	{ 
-    		'next_url' : '/providers/advocates/supporting-evidence', 
-    		'previous_url' : '/providers/advocates/miscellaneous-fees' 
+    		'next_url' : './claim-summary', 
+    		'previous_url' : './supporting-evidence' 
     	});
 });
 
-router.get('/providers/advocates/supporting-evidence', function(req, res) {
-    res.render('providers/advocates/supporting-evidence', 
+router.get('/advocates/claim-summary', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/claim-summary`, 
     	{ 
-    		'next_url' : '/providers/advocates/additional-information', 
-    		'previous_url' : '/providers/advocates/travel-expenses' 
+    		'next_url' : './certify-claim', 
+    		'previous_url' : './additional-information' 
     	});
 });
 
-router.get('/providers/advocates/additional-information', function(req, res) {
-    res.render('providers/advocates/additional-information', 
+router.get('/advocates/certify-claim', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/certify-claim`, 
     	{ 
-    		'next_url' : '/providers/advocates/claim-summary', 
-    		'previous_url' : '/providers/advocates/supporting-evidence' 
+    		'next_url' : './thank-you', 
+    		'previous_url' : './claim-summary' 
     	});
 });
 
-router.get('/providers/advocates/claim-summary', function(req, res) {
-    res.render('providers/advocates/claim-summary', 
+router.get('/advocates/thank-you', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/thank-you`, 
     	{ 
-    		'next_url' : '/providers/advocates/certify-claim', 
-    		'previous_url' : '/providers/advocates/additional-information' 
-    	});
-});
-
-router.get('/providers/advocates/certify-claim', function(req, res) {
-    res.render('providers/advocates/certify-claim', 
-    	{ 
-    		'next_url' : '/providers/advocates/thank-you', 
-    		'previous_url' : '/providers/advocates/claim-summary' 
-    	});
-});
-
-router.get('/providers/advocates/thank-you', function(req, res) {
-    res.render('providers/advocates/thank-you', 
-    	{ 
-    		'new_claim_url' : '/providers/advocates/case-details', 
-    		'your_claims_url' : '/providers/advocates/' 
+    		'new_claim_url' : './case-details', 
+    		'your_claims_url' : './' 
     	});
 });
 
 
 // LITIGATORS
 
-router.get('/providers/litigators/bill-type', function(req, res) {
-    res.render('providers/litigators/bill-type', 
+router.get('/litigators/bill-type', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/bill-type`, 
     	{ 
-    		'next_url' : '/providers/litigators/case-details', 
-    		'previous_url' : '/providers/litigators/',
-    		'home_url' : '/providers/litigators/' 
+    		'next_url' : './case-details', 
+    		'previous_url' : './litigators/',
+    		'home_url' : './litigators/' 
     	});
 });
 
 // if (req.query.bill_type === 'litigator_transfer') {
-//     var next_url = '/providers/litigators/transfer-details';
+//     var next_url = '/litigators/transfer-details';
 // } else {
-//     var next_url = '/providers/litigators/case-details';
+//     var next_url = '/litigators/case-details';
 // }
 
 // TODO: If bill_type is transfer
 
-router.get('/providers/litigators/transfer-details', function(req, res) {
-    res.render('providers/litigators/transfer-details', 
+router.get('/litigators/transfer-details', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/transfer-details`, 
     	{ 
-    		'next_url' : '/providers/litigators/case-details', 
-    		'previous_url' : '/providers/litigators/bill-type',
-    		'home_url' : '/providers/litigators/' 
+    		'next_url' : './case-details', 
+    		'previous_url' : './bill-type',
+    		'home_url' : './litigators/' 
     	});
 });
 
 // TODO: Else bill_type is final|interim
 
-router.get('/providers/litigators/case-details', function(req, res) {
-    res.render('providers/litigators/case-details', 
+router.get('/litigators/case-details', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/case-details`, 
     	{ 
-    		'next_url' : '/providers/litigators/defendant-details', 
-    		'previous_url' : '/providers/litigators/bill-type',
-    		'home_url' : '/providers/litigators/' 
+    		'next_url' : './defendant-details', 
+    		'previous_url' : './bill-type',
+    		'home_url' : './litigators/' 
     	});
 });
 
-router.get('/providers/litigators/defendant-details', function(req, res) {
-    res.render('providers/litigators/defendant-details', 
+router.get('/litigators/defendant-details', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/defendant-details`, 
     	{ 
-    		'next_url' : '/providers/litigators/offence-details', 
-    		'previous_url' : '/providers/litigators/case-details' 
+    		'next_url' : './offence-details', 
+    		'previous_url' : './case-details' 
     	});
 });
 
-router.get('/providers/litigators/offence-details', function(req, res) {
+router.get('/litigators/offence-details', function(req, res) {
     
 	// TODO: If case_type is a fixed fee:
 	// appeal_against_conviction
@@ -196,15 +191,15 @@ router.get('/providers/litigators/offence-details', function(req, res) {
 	// hearing_subsequent_to_sentence
 
     // if (req.session.case_type === 'trial') {
-    //     var next_url = '/providers/litigators/graduated-fees';
+    //     var next_url = '/litigators/graduated-fees';
     // } else {
-    //     var next_url = '/providers/litigators/fixed-fees';
+    //     var next_url = '/litigators/fixed-fees';
     // }
 
-    res.render('providers/litigators/offence-details', 
+    res.render(`${req.feature}/${req.version}/litigators/offence-details`, 
     	{ 
-    		'next_url' : '/providers/litigators/fixed-fees', 
-    		'previous_url' : '/providers/litigators/defendant-details'
+    		'next_url' : './fixed-fees', 
+    		'previous_url' : './defendant-details'
     	});
 
     // TODO: Else case_type is a graduated fee:
@@ -215,91 +210,91 @@ router.get('/providers/litigators/offence-details', function(req, res) {
     // retrial
     // trial
 
-    // res.render('providers/litigators/offence-details', 
+    // res.render(`${req.feature}/${req.version}/litigators/offence-details`, 
     // 	{ 
-    // 		'next_url' : '/providers/litigators/fixed-fees', 
-    // 		'previous_url' : '/providers/litigators/defendant-details' 
+    // 		'next_url' : './fixed-fees', 
+    // 		'previous_url' : './defendant-details' 
     // 	});
 
 });
 
-router.get('/providers/litigators/fixed-fees', function(req, res) {
-    res.render('providers/litigators/fixed-fees', 
+router.get('/litigators/fixed-fees', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/fixed-fees`, 
     	{ 
-    		'next_url' : '/providers/litigators/miscellaneous-fees', 
-    		'previous_url' : '/providers/litigators/offence-details' 
+    		'next_url' : './miscellaneous-fees', 
+    		'previous_url' : './offence-details' 
     	});
 });
 
-router.get('/providers/litigators/graduated-fees', function(req, res) {
-    res.render('providers/litigators/graduated-fees', 
+router.get('/litigators/graduated-fees', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/graduated-fees`, 
     	{ 
-    		'next_url' : '/providers/litigators/miscellaneous-fees', 
-    		'previous_url' : '/providers/litigators/offence-details' 
+    		'next_url' : './miscellaneous-fees', 
+    		'previous_url' : './offence-details' 
     	});
 });
 
-router.get('/providers/litigators/miscellaneous-fees', function(req, res) {
-    res.render('providers/litigators/miscellaneous-fees', 
+router.get('/litigators/miscellaneous-fees', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/miscellaneous-fees`, 
     	{ 
-    		'next_url' : '/providers/litigators/disbursements', 
-    		'previous_url' : '/providers/litigators/fixed-fees' 
+    		'next_url' : './disbursements', 
+    		'previous_url' : './fixed-fees' 
     	});
 });
 
-router.get('/providers/litigators/disbursements', function(req, res) {
-    res.render('providers/litigators/disbursements', 
+router.get('/litigators/disbursements', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/disbursements`, 
     	{ 
-    		'next_url' : '/providers/litigators/travel-expenses', 
-    		'previous_url' : '/providers/litigators/miscellaneous-fees' 
+    		'next_url' : './travel-expenses', 
+    		'previous_url' : './miscellaneous-fees' 
     	});
 });
 
-router.get('/providers/litigators/travel-expenses', function(req, res) {
-    res.render('providers/litigators/travel-expenses', 
+router.get('/litigators/travel-expenses', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/travel-expenses`, 
     	{ 
-    		'next_url' : '/providers/litigators/supporting-evidence', 
-    		'previous_url' : '/providers/litigators/disbursements' 
+    		'next_url' : './supporting-evidence', 
+    		'previous_url' : './disbursements' 
     	});
 });
 
-router.get('/providers/litigators/supporting-evidence', function(req, res) {
-    res.render('providers/litigators/supporting-evidence', 
+router.get('/litigators/supporting-evidence', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/supporting-evidence`, 
     	{ 
-    		'next_url' : '/providers/litigators/additional-information', 
-    		'previous_url' : '/providers/litigators/travel-expenses' 
+    		'next_url' : './additional-information', 
+    		'previous_url' : './travel-expenses' 
     	});
 });
 
-router.get('/providers/litigators/additional-information', function(req, res) {
-    res.render('providers/litigators/additional-information', 
+router.get('/litigators/additional-information', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/additional-information`, 
     	{ 
-    		'next_url' : '/providers/litigators/claim-summary', 
-    		'previous_url' : '/providers/litigators/supporting-evidence' 
+    		'next_url' : './claim-summary', 
+    		'previous_url' : './supporting-evidence' 
     	});
 });
 
-router.get('/providers/litigators/claim-summary', function(req, res) {
-    res.render('providers/litigators/claim-summary', 
+router.get('/litigators/claim-summary', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/claim-summary`, 
     	{ 
-    		'next_url' : '/providers/litigators/certify-claim', 
-    		'previous_url' : '/providers/litigators/additional-information' 
+    		'next_url' : './certify-claim', 
+    		'previous_url' : './additional-information' 
     	});
 });
 
-router.get('/providers/litigators/certify-claim', function(req, res) {
-    res.render('providers/litigators/certify-claim', 
+router.get('/litigators/certify-claim', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/certify-claim`, 
     	{ 
-    		'next_url' : '/providers/litigators/thank-you', 
-    		'previous_url' : '/providers/litigators/claim-summary' 
+    		'next_url' : './thank-you', 
+    		'previous_url' : './claim-summary' 
     	});
 });
 
-router.get('/providers/litigators/thank-you', function(req, res) {
-    res.render('providers/litigators/thank-you', 
+router.get('/litigators/thank-you', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/thank-you`, 
     	{ 
-    		'new_claim_url' : '/providers/litigators/bill-type', 
-    		'your_claims_url' : '/providers/litigators/' 
+    		'new_claim_url' : './bill-type', 
+    		'your_claims_url' : './' 
     	});
 });
 
