@@ -1,6 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
+const session = require('express-session')
+
+const utils = require('../../../utils')
+
+// console.log(utils.isGraduatedFee("agfs","Cracked Trial"))
+
 // Route index page
 // router.get('/', function (req, res) {
 //   res.render('index')
@@ -13,7 +19,9 @@ router.get('/', (req, res) => {
 
 // Add your routes here - above the module.exports line
 
+// ==============================================
 // ADVOCATES
+// ==============================================
 
 router.get('/advocates/case-details', function(req, res) {
 
@@ -29,7 +37,7 @@ router.get('/advocates/defendant-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/defendant-details`, 
     	{ 
     		'next_url' : './offence-details', 
-    		'previous_url' : './case-details' 
+    		'previous_url' : './case-details'
     	});
 });
 
@@ -43,37 +51,27 @@ router.get('/advocates/offence-details', function(req, res) {
 
 });
 
-
 router.get('/advocates/fees', function(req, res) {
 
-    res.render(`${req.feature}/${req.version}/advocates/fixed-fees`, 
-        { 
-            'next_url' : './miscellaneous-fees', 
-            'previous_url' : './offence-details' 
-        });
+    if (utils.isGraduatedFee("agfs", req.session.data.case_type)) {
 
-    // res.render(`${req.feature}/${req.version}/advocates/graduated-fees`, 
-    //  { 
-    //      'next_url' : './miscellaneous-fees', 
-    //      'previous_url' : './offence-details' 
-    //  });
+        res.render(`${req.feature}/${req.version}/advocates/graduated-fees`, 
+             { 
+                 'next_url' : './miscellaneous-fees', 
+                 'previous_url' : './offence-details' 
+             });
+
+    } else {
+
+        res.render(`${req.feature}/${req.version}/advocates/fixed-fees`, 
+            { 
+                'next_url' : './miscellaneous-fees', 
+                'previous_url' : './offence-details' 
+            });
+
+    }
+
 });
-
-// router.get('/advocates/fixed-fees', function(req, res) {
-//     res.render(`${req.feature}/${req.version}/advocates/fixed-fees`, 
-//     	{ 
-//     		'next_url' : './miscellaneous-fees', 
-//     		'previous_url' : './offence-details' 
-//     	});
-// });
-
-// router.get('/advocates/graduated-fees', function(req, res) {
-//     res.render(`${req.feature}/${req.version}/advocates/graduated-fees`, 
-//     	{ 
-//     		'next_url' : './miscellaneous-fees', 
-//     		'previous_url' : './offence-details' 
-//     	});
-// });
 
 router.get('/advocates/miscellaneous-fees', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees`, 
@@ -131,8 +129,9 @@ router.get('/advocates/thank-you', function(req, res) {
     	});
 });
 
-
+// ==============================================
 // LITIGATORS
+// ==============================================
 
 router.get('/litigators/bill-type', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/bill-type`, 
@@ -180,65 +179,42 @@ router.get('/litigators/defendant-details', function(req, res) {
 });
 
 router.get('/litigators/offence-details', function(req, res) {
-    
-	// TODO: If case_type is a fixed fee:
-	// appeal_against_conviction
-	// appeal_against_sentence
-	// breach_of_crown_court_order
-	// committal_for_sentence
-	// contempt
-	// elected_cases_not_proceeded
-	// hearing_subsequent_to_sentence
-
-    // if (req.session.case_type === 'trial') {
-    //     var next_url = '/litigators/graduated-fees';
-    // } else {
-    //     var next_url = '/litigators/fixed-fees';
-    // }
 
     res.render(`${req.feature}/${req.version}/litigators/offence-details`, 
     	{ 
-    		'next_url' : './fixed-fees', 
+    		'next_url' : './fees', 
     		'previous_url' : './defendant-details'
     	});
 
-    // TODO: Else case_type is a graduated fee:
-    // cracked_before_retrial
-    // cracked_trial
-    // discontinuance
-    // guilty_plea
-    // retrial
-    // trial
-
-    // res.render(`${req.feature}/${req.version}/litigators/offence-details`, 
-    // 	{ 
-    // 		'next_url' : './fixed-fees', 
-    // 		'previous_url' : './defendant-details' 
-    // 	});
-
 });
 
-router.get('/litigators/fixed-fees', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/fixed-fees`, 
-    	{ 
-    		'next_url' : './miscellaneous-fees', 
-    		'previous_url' : './offence-details' 
-    	});
-});
+router.get('/litigators/fees', function(req, res) {
 
-router.get('/litigators/graduated-fees', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/graduated-fees`, 
-    	{ 
-    		'next_url' : './miscellaneous-fees', 
-    		'previous_url' : './offence-details' 
-    	});
+    if (utils.isGraduatedFee("lgfs", req.session.data.case_type)) {
+
+        res.render(`${req.feature}/${req.version}/litigators/graduated-fees`, 
+            { 
+                'next_url' : './miscellaneous-fees', 
+                'previous_url' : './offence-details' 
+            });
+
+    } else {
+
+        res.render(`${req.feature}/${req.version}/litigators/fixed-fees`, 
+            { 
+                'next_url' : './miscellaneous-fees', 
+                'previous_url' : './offence-details' 
+            });        
+
+    }
+
 });
 
 router.get('/litigators/miscellaneous-fees', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/miscellaneous-fees`, 
     	{ 
     		'next_url' : './disbursements', 
-    		'previous_url' : './fixed-fees' 
+    		'previous_url' : './fees' 
     	});
 });
 
