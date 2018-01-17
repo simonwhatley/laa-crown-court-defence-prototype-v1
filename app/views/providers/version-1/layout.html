@@ -53,4 +53,11 @@
     {% block page_scripts %}{% endblock %}
   {% endblock %}
   <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <hr>
+      <p>{{data | dump | safe}}</p>
+    </div>
+  </div>
 {% endblock %}
