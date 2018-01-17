@@ -44,7 +44,6 @@ module.exports = {
 
 	},
 	isFixedFee: function(fee_scheme, case_type) {
-		// var caseType = case_type.toLowerCase().split(' ').join('_');
 		var caseType = case_type.toLowerCase().replace(/\s/g, '_');
 
 		var data = {
@@ -70,7 +69,6 @@ module.exports = {
 		return (!!~data[fee_scheme].indexOf(caseType));
 	},
 	isGraduatedFee: function(fee_scheme, case_type) {
-		// var caseType = case_type.toLowerCase().split(' ').join('_');
 		var caseType = case_type.toLowerCase().replace(/\s/g, '_');
 
 		var data = {
@@ -91,5 +89,37 @@ module.exports = {
 		};
 
 		return (!!~data[fee_scheme].indexOf(caseType));
+	},
+	authenticate: function(user_type, username) {
+
+		// var data = {
+		// 	"providers": [
+		// 		"advocate",
+		// 		"advocateadmin",
+		// 		"advocate@example.com",
+		// 		"advocateadmin@example.com",
+		// 		"horace@example.com",
+		// 		"horace.rumpole@example.com",
+		// 		"litigator",
+		// 		"litigatoradmin",
+		// 		"litigator@example.com",
+		// 		"litigatoradmin@example.com",
+		// 		"perry@example.com",
+		// 		"perry.mason@example.com"
+		// 	],
+		// 	"caseworkers": [
+		// 		"caseworker",
+		// 		"caseworkeradmin",
+		// 		"caseworker@example.com",
+		// 		"caseworkeradmin@example.com"
+		// 	]
+		// };
+
+		var data = {
+			"horace" : "advocates",
+			"perry" : "litigators"
+		};
+
+		return data[username];
 	}
 }

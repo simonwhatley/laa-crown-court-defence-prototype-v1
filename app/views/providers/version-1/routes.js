@@ -19,6 +19,20 @@ router.get('/', (req, res) => {
 
 // Add your routes here - above the module.exports line
 
+
+router.get('/auth', function(req, res) {
+
+    if (utils.authenticate("provider", req.session.data.username) == "advocates") {
+        res.redirect('advocates')
+    } else if (utils.authenticate("provider", req.session.data.username) == "litigators") {
+        res.redirect('litigators')
+    } else {
+        res.redirect('sign-in')
+    }
+    
+});
+
+
 // ==============================================
 // ADVOCATES
 // ==============================================
