@@ -151,8 +151,8 @@ router.get('/litigators/bill-type', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/bill-type`, 
     	{ 
     		'next_url' : './case-details', 
-    		'previous_url' : './litigators/',
-    		'home_url' : './litigators/' 
+    		'previous_url' : '../litigators/',
+    		'home_url' : '../litigators/' 
     	});
 });
 
