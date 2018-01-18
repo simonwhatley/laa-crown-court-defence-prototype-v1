@@ -14,7 +14,7 @@ const utils = require('../../../utils')
 
 // Route to the start (sign in) page
 router.get('/', (req, res) => {
-  res.redirect(`/${req.feature}/${req.version}/sign-in`)
+  res.redirect(`/${req.feature}/${req.version}/sign-in`);
 })
 
 // Add your routes here - above the module.exports line
@@ -23,11 +23,26 @@ router.get('/', (req, res) => {
 router.get('/auth', function(req, res) {
 
     if (utils.authenticate("provider", req.session.data.username) == "advocates") {
-        res.redirect('advocates')
+        
+        res.redirect('advocates');
+
     } else if (utils.authenticate("provider", req.session.data.username) == "litigators") {
-        res.redirect('litigators')
+        
+        res.redirect('litigators');
+
     } else {
-        res.redirect('sign-in')
+
+        // TODO: Check user input for errors
+
+        res.render(`${req.feature}/${req.version}/sign-in`,
+            { 
+                errors: {
+                    username: "Enter a valid email address",
+                    password: "Enter a valid password"
+            }
+        });
+
+        // res.redirect('sign-in')
     }
     
 });
