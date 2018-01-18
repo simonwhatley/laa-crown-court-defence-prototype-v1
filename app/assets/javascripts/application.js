@@ -119,3 +119,31 @@ $('#password-2').hideShowPassword({
     className: 'show-hide'
   }
 });
+
+
+// $("#offence-category").depdrop({
+//     url: '/playground/dependant-dropdowns/data/offences.json',
+//     depends: ['offence-class']
+// });
+
+
+// ---------------------------------------
+// Accordion JS
+// ---------------------------------------
+
+if (
+  'addEventListener' in document &&
+  document.querySelectorAll
+  ) {
+
+  document.addEventListener('DOMContentLoaded', function() {
+
+    var accordions = document.querySelectorAll('.accordion')
+
+    for (var i = accordions.length - 1; i >= 0; i--) {
+      new Accordion(accordions[i])
+    };
+
+  })
+
+}
