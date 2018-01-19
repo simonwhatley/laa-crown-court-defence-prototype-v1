@@ -1,0 +1,69 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      	<span class="heading-secondary">Tabs</span>
+        	Claim details
+	    </h1>
+
+		<div class="tabs">
+
+			<div class="tabs-nav">
+				<ul class="tabs-list">
+					<li><a href="#tab-1">Claim details</a></li>
+					<li><a href="#tab-2">Messages</a></li>
+				</ul>
+			</div>
+
+			<div class="tabs-content">
+
+				<div class="tabs-panel" id="tab-1">
+					<div class="tabs-panel-inner text">
+
+						<div class="grid-row">
+    						<div class="column-full">
+
+								<h2 class="heading-large">Claim details</h2>
+								<p>Some content would go here for tab 1.</p>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="tabs-panel" id="tab-2">
+					<div class="tabs-panel-inner text">
+						<div class="grid-row">
+    						<div class="column-full">
+
+								<h2 class="heading-large">Messages</h2>
+								<p>Some content would go here for tab 1.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			</div>
+
+		</div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
