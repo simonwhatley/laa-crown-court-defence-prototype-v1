@@ -1,0 +1,35 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="../">Back</a>
+
+		<h1 class="heading-xlarge">
+			<span class="heading-secondary">Navigation</span>
+			Pagination
+		</h1>
+
+
+		<nav class="page-numbers-container page-navigation" aria-label="Pagination">
+			<div class="previous">
+				<a href="" rel="prev" class="font-medium">Previous</a>
+			</div>
+			<div class="next">
+				<a href="" rel="next" class="font-medium">Next</a>
+			</div>
+		</nav>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
