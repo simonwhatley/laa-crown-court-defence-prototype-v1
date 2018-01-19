@@ -1,0 +1,32 @@
+{
+  "class": [
+      {
+        "code": "A",
+        "label": "Class A",
+        "category": [
+          {
+            "code": "A1",
+            "label": "Category A1"
+          },
+          {
+            "code": "A2",
+            "label": "Category A2"
+          }
+          ]
+      },
+      {
+        "code": "B",
+        "label": "Class B",
+        "category": [
+          {
+            "code": "B1",
+            "label": "Category B1"
+          },
+          {
+            "code": "B2",
+            "label": "Category B2"
+          }
+          ]
+      }
+    ]  
+}
