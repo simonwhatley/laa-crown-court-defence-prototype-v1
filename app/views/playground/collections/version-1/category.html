@@ -1,0 +1,65 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+<main class="content browse" id="content" role="main">
+
+    <a class="link-back" href="{{previous_url}}">Back</a>
+
+    <h1 class="heading-xlarge">
+        Offence details
+    </h1>
+
+    <div aria-busy="false" class="browse-panes root subsection" data-module="track-click">
+        <div class="subsection-pane pane" id="subsection">
+            <div class="pane-inner a-to-z">
+                <h2 tabindex="-1">
+                    Band name
+                </h2>
+                <!-- <p class="sort-order">
+                    A to Z
+                </p> -->
+
+                {% include "./includes/_categories_form.html" %}
+
+                <!-- <div class="detailed-guidance">
+                    <h2>
+                        Detailed guidance
+                    </h2>
+                    <ul>
+                        <li>
+                            <a data-track-action="2.1" data-track-category="thirdLevelBrowseLinkClicked" data-track-label="/topic/benefits-credits/universal-credit" data-track-options='{"dimension28":"1","dimension29":"Universal Credit"}' href="/topic/benefits-credits/universal-credit">
+                                Universal Credit
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="section-pane pane" id="section">
+            <div class="pane-inner alphabetical">
+                <h1 tabindex="-1">
+                    Class name
+                </h1>
+                <p class="sort-order">
+                    A to Z
+                </p>
+
+                {% include "./includes/_bands.html" %}
+
+            </div>
+        </div>
+        <div class="pane root-pane" id="root">
+            <h1 class="visually-hidden" tabindex="-1">
+                All classes
+            </h1>
+
+            {% include "./includes/_classes.html" %}
+
+        </div>
+    </div>
+</main>
+{% endblock %}

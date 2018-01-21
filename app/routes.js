@@ -32,6 +32,11 @@ router.use(/\/admins\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/admins/version-${req.params[0]}/routes`)(req, res, next);
 })
 
+// Playground > Collections
+router.use(/\/playground\/collections\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/collections/version-${req.params[0]}/routes`)(req, res, next);
+})
+
 // Add your routes above this line
 
 module.exports = router
