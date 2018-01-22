@@ -1,0 +1,9 @@
+<ul>
+	{% for class in classes -%}
+    <li>
+        <a data-track-action="{{class.code}}" data-track-category="firstLevelBrowseLinkClicked" data-track-label="{{base}}/browse/{{class.code}}" data-track-options="" href="{{base}}/browse/{{class.code}}">
+            {{class.label}}
+        </a>
+    </li>
+    {%- endfor %}
+</ul>

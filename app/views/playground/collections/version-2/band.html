@@ -1,0 +1,51 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+<main class="content browse" id="content" role="main">
+
+    <a class="link-back" href="{{base}}/browse">Back</a>
+
+    <h1 class="heading-xlarge">
+        Offence details
+    </h1>
+
+    <!-- <p>Base: {{base}}</p>
+    <p>Url: {{url}}</p>
+    <p>classUrl: {{classUrl}}</p> -->
+
+<!-- Classes:<br>{{classes | dump | safe}}
+<hr>
+Bands:<br>{{bands | dump | safe}} -->
+
+    <div aria-busy="false" class="browse-panes root section" data-module="track-click">
+        <div class="subsection-pane pane visually-hidden" id="subsection">
+        	<!-- Offence categories -->
+        </div>
+        <div class="section-pane pane with-sort" id="section">
+            <div class="pane-inner alphabetical">
+                <h2 tabindex="-1">
+                    Class {{class}} name
+                </h2>
+                <p class="sort-order">
+                    A to Z
+                </p>
+
+                {% include "./includes/_bands.html" %}
+
+            </div>
+        </div>
+        <div class="pane root-pane" id="root">
+            <h2 class="visually-hidden" tabindex="-1">
+                All classes
+            </h2>
+
+            {% include "./includes/_classes.html" %}
+
+        </div>
+    </div>
+</main>
+{% endblock %}
