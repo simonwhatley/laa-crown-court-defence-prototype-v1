@@ -1,8 +1,3 @@
-<!-- 
-TODO:
-Change id="root" to id="class", id="section" to id="band", id="subsection" to id="category"
- -->
-
 {% extends "../../../layout.html" %}
 
 {% block page_title %}
@@ -12,8 +7,7 @@ Change id="root" to id="class", id="section" to id="band", id="subsection" to id
 {% block content %}
 <main class="content browse" id="content" role="main">
 
-    <a class="link-back" href="{{previous_url}}">Back</a>
-    <!-- {% include "./includes/_breadcrumbs.html" %} -->
+    <a class="link-back" href="#noop">Back</a>
 
     <h1 class="heading-xlarge">
         Offence details

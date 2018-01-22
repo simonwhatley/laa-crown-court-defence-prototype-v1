@@ -7,7 +7,7 @@
 {% block content %}
 <main class="content browse" id="content" role="main">
 
-    <a class="link-back" href="{{previous_url}}">Back</a>
+    <a class="link-back" href="{{base}}/browse">Back</a>
 
     <h1 class="heading-xlarge">
         Offence details
@@ -20,7 +20,7 @@
         <div class="section-pane pane with-sort" id="section">
             <div class="pane-inner alphabetical">
                 <h2 tabindex="-1">
-                    Class name
+                    Class {{class}} name
                 </h2>
                 <p class="sort-order">
                     A to Z
