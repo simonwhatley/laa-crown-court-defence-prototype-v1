@@ -1,6 +1,6 @@
 <form method="get">
-  <input type="hidden" name="offence_class" value="{{class}}">
-  <input type="hidden" name="offence_band" value="{{band}}">
+  <input type="hidden" name="offence_class" value="{{class.code}}">
+  <input type="hidden" name="offence_band" value="{{band.code}}">
 
   <div class="form-section">
     <div class="form-group">
@@ -10,12 +10,27 @@
         <h3 class="heading-small">What is the category of offence?</h3>
         </legend>
 
-        {% for i in range(1,11) -%}
-        <div class="multiple-choice">
-          <input id="radio-{{i}}" type="radio" name="offence_category" value="{{i}}" {{ checked('offence_category', i) }}>
-          <label for="radio-{{i}}">Category {{class}}.{{band}}.{{i}}</label>
-        </div>
-        {%- endfor %}
+        {% if band.categories | length %}
+
+          {% for category in band.categories -%}
+          <div class="multiple-choice">
+            <input id="radio-{{ category.code }}" type="radio" name="offence_category" value="{{ category.code }}" {% if data['offence_category'] == category.code %}checked="checked"{% endif %}>
+            <label for="radio-{{ category.code }}">{{ category.label }}</label>
+          </div>
+          {%- endfor %}
+
+        {% else %}
+
+        <!-- <p>There are no categories for this band</p> -->
+
+          {% for i in range(1,11) -%}
+          <div class="multiple-choice">
+            <input id="radio-{{i}}" type="radio" name="offence_category" value="{{i}}" {% if data['offence_category'] == i %}checked="checked"{% endif %}>
+            <label for="radio-{{i}}">Category {{i}}</label>
+          </div>
+          {%- endfor %}
+
+        {% endif %}
 
         <p class="form-block bold">or</p>
         <div class="multiple-choice">

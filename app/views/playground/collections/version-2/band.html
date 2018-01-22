@@ -13,14 +13,6 @@
         Offence details
     </h1>
 
-    <!-- <p>Base: {{base}}</p>
-    <p>Url: {{url}}</p>
-    <p>classUrl: {{classUrl}}</p> -->
-
-<!-- Classes:<br>{{classes | dump | safe}}
-<hr>
-Bands:<br>{{bands | dump | safe}} -->
-
     <div aria-busy="false" class="browse-panes root section" data-module="track-click">
         <div class="subsection-pane pane visually-hidden" id="subsection">
         	<!-- Offence categories -->
@@ -28,7 +20,7 @@ Bands:<br>{{bands | dump | safe}} -->
         <div class="section-pane pane with-sort" id="section">
             <div class="pane-inner alphabetical">
                 <h2 tabindex="-1">
-                    Class {{class}} name
+                    {{ class.label | capitalize }}
                 </h2>
                 <p class="sort-order">
                     A to Z

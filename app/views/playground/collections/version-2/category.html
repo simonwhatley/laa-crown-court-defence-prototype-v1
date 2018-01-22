@@ -7,7 +7,7 @@
 {% block content %}
 <main class="content browse" id="content" role="main">
 
-    <a class="link-back" href="{{base}}/browse/{{class}}">Back</a>
+    <a class="link-back" href="{{base}}/browse/{{class.code}}">Back</a>
 
     <h1 class="heading-xlarge">
         Offence details
@@ -20,7 +20,7 @@
         <div class="subsection-pane pane" id="subsection">
             <div class="pane-inner a-to-z">
                 <h2 tabindex="-1">
-                    Band {{class}}.{{band}} name
+                    {{ band.label | capitalize }}
                 </h2>
                 <!-- <p class="sort-order">
                     A to Z
@@ -28,24 +28,25 @@
 
                 {% include "./includes/_categories_form.html" %}
 
-                <!-- <div class="detailed-guidance">
+                <div class="detailed-guidance">
                     <h2>
                         Detailed guidance
                     </h2>
-                    <ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur pulvinar nisl id faucibus. Nunc cursus eleifend elementum. Maecenas tincidunt tempor ligula, et rhoncus risus finibus eu.</p>
+                    <!-- <ul>
                         <li>
                             <a data-track-action="2.1" data-track-category="thirdLevelBrowseLinkClicked" data-track-label="/topic/benefits-credits/universal-credit" data-track-options='{"dimension28":"1","dimension29":"Universal Credit"}' href="/topic/benefits-credits/universal-credit">
                                 Universal Credit
                             </a>
                         </li>
-                    </ul>
-                </div> -->
+                    </ul> -->
+                </div>
             </div>
         </div>
         <div class="section-pane pane" id="section">
             <div class="pane-inner alphabetical">
                 <h1 tabindex="-1">
-                    Class {{class}} name
+                    {{ class.label | capitalize }}
                 </h1>
                 <p class="sort-order">
                     A to Z
