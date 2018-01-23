@@ -1,0 +1,63 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+<script src="/public/javascripts/jquery.hideseek.min.js"></script>
+<script>
+$('#search').hideseek({
+    higlight: true,
+    min_chars: 3,
+    nodata: "No results found."
+});
+</script>
+<style type="text/css">
+ul#offence-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+ul#offence-list li:nth-child(odd) {
+   background-color: #f8f8f8;
+}
+
+ul#offence-list li:hover {
+   background-color: #dee0e2;
+}
+
+.font-xsmall {
+    color: #6f777b;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<main class="content browse" id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-full">
+
+        <a class="link-back" href="#noop">Back</a>
+
+        <h1 class="heading-xlarge">
+            Offence details
+        </h1>
+
+        <div id="search-field" class="form-group">
+            <label class="form-label-bold" for="reference-number">
+                Search
+                <!-- <span class="form-hint">
+                    Lorem ipsum
+                </span> -->
+            </label>
+            <input id="search" class="form-control form-control-2-3" name="search" placeholder="" type="text" data-list="#offence-list" autocomplete="off">
+        </div>        
+
+        {% include "./includes/_offences.html" %}
+
+        </div>
+    </div>
+
+</main>
+{% endblock %}

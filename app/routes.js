@@ -37,6 +37,11 @@ router.use(/\/playground\/collections\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/playground/collections/version-${req.params[0]}/routes`)(req, res, next);
 })
 
+// Playground > Search/filter
+router.use(/\/playground\/search-filter\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/search-filter/version-${req.params[0]}/routes`)(req, res, next);
+})
+
 // Add your routes above this line
 
 module.exports = router
