@@ -9,20 +9,20 @@ module.exports = {
 	getClass: function(class_id) {
 		
 		var classObj = this.getClasses().filter(function (el) {
-  			 return (el.code === parseInt(class_id))
+  			 return (el.code == class_id)
 		})
 
 		return classObj[0]
 	},
 
 	getBands: function(class_id) {
-		return this.getClass(parseInt(class_id)).bands
+		return this.getClass(class_id).bands
 	},
 
 	getBand: function(class_id, band_id) {
 
-		var bandObj = this.getBands(parseInt(class_id)).filter(function (el) {
-			return (el.code === parseInt(band_id))
+		var bandObj = this.getBands(class_id).filter(function (el) {
+			return (el.code == band_id)
 		})
 
 		return bandObj[0]
@@ -30,13 +30,13 @@ module.exports = {
 	},
 
 	getCategories: function(class_id, band_id) {
-		return this.getBand(parseInt(class_id), parseInt(band_id)).categories
+		return this.getBand(class_id, band_id).categories
 	},
 
 	getCategory: function(class_id, band_id, category_id) {
 
-		var categoryObj = this.getBands(parseInt(class_id), parseInt(band_id)).filter(function (el) {
-			return (el.code === parseInt(category_id))
+		var categoryObj = this.getBands(class_id, band_id).filter(function (el) {
+			return (el.code == category_id)
 		})
 
 		return categoryObj[0]

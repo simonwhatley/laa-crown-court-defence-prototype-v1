@@ -1,12 +1,12 @@
 <ul>
 	{% for band in class.bands %}
     <li>
-        <a data-track-action="{{ band.code }}" data-track-category="secondLevelBrowseLinkClicked" data-track-label="{{base}}/browse/{{class.code}}/{{ band.code }}" data-track-options="" href="{{base}}/browse/{{class.code}}/{{ band.code }}">
+        <a data-track-action="{{band.code}}" data-track-category="secondLevelBrowseLinkClicked" data-track-label="{{base}}/browse/{{class.code}}/{{band.code}}" data-track-options="" href="{{base}}/browse/{{class.code}}/{{band.code}}">
             <h3>
-                {{ band.label }}
+                {{band.label}}
             </h3>
             <p>
-                {{ band.description }}
+                {{band.description}}
             </p>
         </a>
     </li>
