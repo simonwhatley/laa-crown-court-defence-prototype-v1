@@ -1,0 +1,38 @@
+<ul id="offence-list">
+    {% for offence in offences -%}
+    <li>
+    	<span class="font-xsmall">{{offence.class_label | capitalize}} > {{offence.band_label | capitalize}}</span><br>
+        <a class="bold" href="{{base}}/detail/{{offence.class_id}}/{{offence.band_id}}/{{offence.category_id}}">
+            {{offence.category_label | capitalize}}
+        </a><br>
+        <span class="font-xsmall">{{offence.act_label}}</span>
+    </li>
+    {%- endfor %}
+</ul>
+
+<!-- <div id="offence-list" class="grid-row">
+
+	<div class="column-full">
+
+		{% for offence in offences -%}
+		<div class="grid-row">
+			
+			<div class="column-two-thirds">
+				<span class="">{{offence.class_label | capitalize}} > {{offence.band_label | capitalize}}</span><br>
+		        <a href="{{base}}/detail/{{offence.class_id}}/{{offence.band_id}}/{{offence.category_id}}">
+		            {{offence.category_label | capitalize}}
+		        </a><br>
+		        <span class="">{{offence.act_label}}</span>
+			</div>
+
+			<div class="column-one-third">
+				<input type="submit" class="button" value="Select">
+			</div>
+
+		</div>
+		{%- endfor %}
+
+	</div>
+
+</div> -->
+

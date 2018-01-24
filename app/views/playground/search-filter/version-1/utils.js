@@ -1,4 +1,4 @@
-var offences = require('./data/scheme_10_offences_dummy.json')
+var offences = require('./data/scheme_10_offences.json')
 
 module.exports = {
 
