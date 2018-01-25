@@ -1,0 +1,81 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      <!-- <span class="heading-secondary">Accordion</span> -->
+        Offence details
+	    </h1>
+
+
+      <div class="accordion">
+
+        {% for class in range(1,18) -%}
+        <div class="accordion-section">
+            
+            <div class="accordion-section-header">
+                <h2 class="heading-medium">{{loop.index}} – Class name</h2>
+            </div>
+        
+            <div class="accordion-section-body">
+
+                {% for band in range(1,6) -%}
+
+                <h3 class="heading-medium">{{loop.index}} – Band name</h3>
+
+                <form method="get">
+                    <input type="hidden" name="offence_class" value="{{item}}">
+
+                    <div class="form-section">
+                        <div class="form-group">
+                            <fieldset>
+
+                                <legend>
+                                    <h4 class="heading-small">What is the category of offence?</h4>
+                                </legend>
+
+                                {% for category in range(1,11) -%}
+
+                                <div class="multiple-choice">
+                                    <input id="radio-{{loop.index}}" type="radio" name="offence_category" value="{{loop.index}}">
+                                    <label for="radio-{{loop.index}}">{{loop.index}} – Category name</label>
+                                </div>
+
+                                {%- endfor %}
+
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group form-buttons">
+                            <input type="submit" class="button" value="Save and continue">
+                            <input type="submit" class="button button-tertiary" value="Save as draft">
+                        </div>
+                    </div>
+
+                </form>
+
+                {%- endfor %}
+
+            </div>
+
+        </div>
+        {%- endfor %}	    
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+

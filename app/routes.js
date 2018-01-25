@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router()
+const router = new express.Router()
 
 
 router.use('/', (req, res, next) => {
@@ -30,6 +30,12 @@ router.use(/\/caseworkers\/version-([0-9]+)/, (req, res, next) => {
 // Admins (provider registration)
 router.use(/\/admins\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/admins/version-${req.params[0]}/routes`)(req, res, next);
+})
+
+
+// Playground > Accordion
+router.use(/\/playground\/accordion\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/accordion/version-${req.params[0]}/routes`)(req, res, next);
 })
 
 // Playground > Collections

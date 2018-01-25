@@ -1,0 +1,1455 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      <!-- <span class="heading-secondary">Accordion</span> -->
+        Offence details
+	    </h1>
+
+
+      <div class="accordion">
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">A – Homicide and related grave offences</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="A">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                      <input id="radio-1" type="radio" name="offence_category" value="48">
+                      <label for="radio-1">Attempt to cause explosion making or keeping explosive etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-2" type="radio" name="offence_category" value="77">
+                      <label for="radio-2">Causing explosion likely to endanger life or property</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-3" type="radio" name="offence_category" value="90">
+                      <label for="radio-3">Child destruction</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-4" type="radio" name="offence_category" value="211">
+                      <label for="radio-4">Infanticide</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-5" type="radio" name="offence_category" value="232">
+                      <label for="radio-5">Manslaughter</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-6" type="radio" name="offence_category" value="238">
+                      <label for="radio-6">Murder</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-7" type="radio" name="offence_category" value="341">
+                      <label for="radio-7">Soliciting to commit murder</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                      <input id="radio-8" type="radio" name="offence_category" value="379">
+                      <label for="radio-8">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">B – Offences involving serious violence or damage and serious drug offences</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="B">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="15">
+                    <label for="radio-1">Acquisition use or possession of criminal property</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="16">
+                    <label for="radio-2">Activities relating to opium</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="19">
+                    <label for="radio-3">Administering chloroform, laudanum etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="21">
+                    <label for="radio-4">Administering poison etc. so as to endanger life</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="24">
+                    <label for="radio-5">Aggravated arson</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="25">
+                    <label for="radio-6">Aggravated burglary</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="26">
+                    <label for="radio-7">Aggravated criminal damage</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="28">
+                    <label for="radio-8">Aggravated vehicle taking resulting in death</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="30">
+                    <label for="radio-9">Aiding and abetting suicide</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="32">
+                    <label for="radio-10">Allowing the death of a child</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="33">
+                    <label for="radio-11">Armed robbery</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="36">
+                    <label for="radio-12">Arson (where value exceeds £30,000)</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="42">
+                    <label for="radio-13">Assault with weapon with intent to rob</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="43">
+                    <label for="radio-14">Assaulting prison officer whilst possessing firearm etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="49">
+                    <label for="radio-15">Attempting to choke, suffocate, strangle etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="52">
+                    <label for="radio-16">Blackmail</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="73">
+                    <label for="radio-17">Causing bodily injury by explosives</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="74">
+                    <label for="radio-18">Causing danger to road users</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="75">
+                    <label for="radio-19">Causing death by careless driving while under the influence of drink or drugs</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-20" type="radio" name="offence_category" value="76">
+                    <label for="radio-20">Causing death by dangerous driving</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-21" type="radio" name="offence_category" value="78">
+                    <label for="radio-21">Causing miscarriage by poison, instrument</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-22" type="radio" name="offence_category" value="79">
+                    <label for="radio-22">Causing or allowing the death of a child</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-23" type="radio" name="offence_category" value="95">
+                    <label for="radio-23">Concealing criminal property</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-24" type="radio" name="offence_category" value="98">
+                    <label for="radio-24">Contamination of goods with intent</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-25" type="radio" name="offence_category" value="114">
+                    <label for="radio-25">Cruelty to persons under 16</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-26" type="radio" name="offence_category" value="115">
+                    <label for="radio-26">Cultivation of cannabis plant</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-27" type="radio" name="offence_category" value="123">
+                    <label for="radio-27">Directing terrorist organisation</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-28" type="radio" name="offence_category" value="124">
+                    <label for="radio-28">Disclosure prejudicing, or interference of material relevant to, investigation of terrorism</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-29" type="radio" name="offence_category" value="125">
+                    <label for="radio-29">Disclosure under sections 330, 331, 332 or 333 of the Proceeds of Crime Act 2002 otherwise than in the form and manner prescribed</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-30" type="radio" name="offence_category" value="126">
+                    <label for="radio-30">Drug trafficking offences at sea</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-31" type="radio" name="offence_category" value="128">
+                    <label for="radio-31">Endangering the safety of an aircraft</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-32" type="radio" name="offence_category" value="129">
+                    <label for="radio-32">Endangering the safety of railway passengers</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-33" type="radio" name="offence_category" value="143">
+                    <label for="radio-33">Failure to disclose knowledge or suspicion of money laundering: nominated officers in the regulated sector</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-34" type="radio" name="offence_category" value="144">
+                    <label for="radio-34">Failure to disclose knowledge or suspicion of money laundering: other nominated officers</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-35" type="radio" name="offence_category" value="145">
+                    <label for="radio-35">Failure to disclose knowledge or suspicion of money laundering: regulated sector</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-36" type="radio" name="offence_category" value="150">
+                    <label for="radio-36">False imprisonment</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-37" type="radio" name="offence_category" value="153">
+                    <label for="radio-37">Firing on Revenue vessel</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-38" type="radio" name="offence_category" value="171">
+                    <label for="radio-38">Fraudulent evasion of controls on Class A and B drugs</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-39" type="radio" name="offence_category" value="180">
+                    <label for="radio-39">Fund-raising for terrorism</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-40" type="radio" name="offence_category" value="191">
+                    <label for="radio-40">Hostage taking</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-41" type="radio" name="offence_category" value="192">
+                    <label for="radio-41">Illegal importation of Class A and B drugs</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-42" type="radio" name="offence_category" value="199">
+                    <label for="radio-42">Impeding persons endeavouring to escape wrecks</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-43" type="radio" name="offence_category" value="203">
+                    <label for="radio-43">Incitement of terrorism overseas</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-44" type="radio" name="offence_category" value="214">
+                    <label for="radio-44">Involvement in arrangements facilitating the acquisition, retention, use or control of criminal property</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-45" type="radio" name="offence_category" value="216">
+                    <label for="radio-45">Kidnapping</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-46" type="radio" name="offence_category" value="224">
+                    <label for="radio-46">Making or possession of explosive in suspicious circumstances</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-47" type="radio" name="offence_category" value="229">
+                    <label for="radio-47">Making threats to kill</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-48" type="radio" name="offence_category" value="233">
+                    <label for="radio-48">Manufacture and supply of scheduled substances</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-49" type="radio" name="offence_category" value="235">
+                    <label for="radio-49">Membership of proscribed organisations</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-50" type="radio" name="offence_category" value="255">
+                    <label for="radio-50">Occupier knowingly permitting drugs offences etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-51" type="radio" name="offence_category" value="256">
+                    <label for="radio-51">Offences against international protection of nuclear material</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-52" type="radio" name="offence_category" value="260">
+                    <label for="radio-52">Offences in relation to money laundering investigations</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-53" type="radio" name="offence_category" value="261">
+                    <label for="radio-53">Offences in relation to proceeds of drug trafficking</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-54" type="radio" name="offence_category" value="267">
+                    <label for="radio-54">Other offences involving money or property to be used for terrorism</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-55" type="radio" name="offence_category" value="281">
+                    <label for="radio-55">Placing explosives with intent to cause bodily injury</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-56" type="radio" name="offence_category" value="290">
+                    <label for="radio-56">Possession of a Class A or B drug with intent to supply</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-57" type="radio" name="offence_category" value="292">
+                    <label for="radio-57">Possession of articles for terrorist purposes</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-58" type="radio" name="offence_category" value="295">
+                    <label for="radio-58">Possession of firearm with criminal intent</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-59" type="radio" name="offence_category" value="296">
+                    <label for="radio-59">Possession of firearm with intent to endanger life</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-60" type="radio" name="offence_category" value="300">
+                    <label for="radio-60">Possession or acquisition of certain prohibited weapons etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-61" type="radio" name="offence_category" value="302">
+                    <label for="radio-61">Practitioner contravening drug supply regulations</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-62" type="radio" name="offence_category" value="305">
+                    <label for="radio-62">Prison mutiny</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-63" type="radio" name="offence_category" value="311">
+                    <label for="radio-63">Producing or supplying a Class A or B drug</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-64" type="radio" name="offence_category" value="315">
+                    <label for="radio-64">Racially-aggravated arson (not endangering life)</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-65" type="radio" name="offence_category" value="323">
+                    <label for="radio-65">Riot</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-66" type="radio" name="offence_category" value="344">
+                    <label for="radio-66">Support or meeting of proscribed organisations</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-67" type="radio" name="offence_category" value="349">
+                    <label for="radio-67">Tipping off</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-68" type="radio" name="offence_category" value="358">
+                    <label for="radio-68">Uniform of proscribed organisations</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-69" type="radio" name="offence_category" value="359">
+                    <label for="radio-69">Unlawful collection of information for terrorist purposes</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-70" type="radio" name="offence_category" value="362">
+                    <label for="radio-70">Use of firearm to resist arrest</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-71" type="radio" name="offence_category" value="369">
+                    <label for="radio-71">Using explosive or corrosives with intent to cause grievous bodily harm</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-72" type="radio" name="offence_category" value="373">
+                    <label for="radio-72">Violent disorder</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-73" type="radio" name="offence_category" value="376">
+                    <label for="radio-73">Weapons training</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-74" type="radio" name="offence_category" value="378">
+                    <label for="radio-74">Wounding or grievous bodily harm with intent to cause grievous bodily harm etc.</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-75" type="radio" name="offence_category" value="380">
+                    <label for="radio-75">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">C – Lesser offences involving violence or damage and less serious drug offences</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="C">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="338">
+                    <label for="radio-1">Shortening of shotgun or possession of shortened shotgun</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="339">
+                    <label for="radio-2">Shortening of smooth bore gun</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="342">
+                    <label for="radio-3">Stirring up racial hatred</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="343">
+                    <label for="radio-4">Supplying instrument etc. to cause miscarriage</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="350">
+                    <label for="radio-5">Tipping-off in relation to money laundering investigations</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="356">
+                    <label for="radio-6">Trespassing with a firearm</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="361">
+                    <label for="radio-7">Unlawful wounding</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="381">
+                    <label for="radio-8">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">D – Serious sexual offences and offences against children</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="D">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="100">
+                    <label for="radio-1">Controlling prostitution for gain</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="130">
+                    <label for="radio-2">Engaging in sexual activity in the presence of a child</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="131">
+                    <label for="radio-3">Engaging in sexual activity in the presence of a person with a mental disorder</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="136">
+                    <label for="radio-4">Exposure</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="183">
+                    <label for="radio-5">Gross indecency between male of 21 or over and male under 16</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="198">
+                    <label for="radio-6">Ill-treatment of persons of unsound mind</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="202">
+                    <label for="radio-7">Incest other than by man with a girl under 13</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="204">
+                    <label for="radio-8">Incitement to commit incest</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="207">
+                    <label for="radio-9">Indecent assault on a man</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="208">
+                    <label for="radio-10">Indecent assault on a woman</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="212">
+                    <label for="radio-11">Intercourse with an animal</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="217">
+                    <label for="radio-12">Living on earnings of male prostitution</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="231">
+                    <label for="radio-13">Man living on earnings of prostitution</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="234">
+                    <label for="radio-14">Meeting child following sexual grooming</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="275">
+                    <label for="radio-15">Permitting defective to use premises for intercourse</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="306">
+                    <label for="radio-16">Procuration of girl under 21</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="307">
+                    <label for="radio-17">Procurement of a defective</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="327">
+                    <label for="radio-18">Sex with adult relative</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="331">
+                    <label for="radio-19">Sexual assault</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-20" type="radio" name="offence_category" value="337">
+                    <label for="radio-20">Sexual penetration of a corpse</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-21" type="radio" name="offence_category" value="355">
+                    <label for="radio-21">Trespass with intent to commit sexual offence</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-22" type="radio" name="offence_category" value="374">
+                    <label for="radio-22">Voyeurism</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-23" type="radio" name="offence_category" value="377">
+                    <label for="radio-23">Woman exercising control over prostitute</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-24" type="radio" name="offence_category" value="382">
+                    <label for="radio-24">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">E – Burglary</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="E">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="62">
+                    <label for="radio-1">Burglary (domestic)</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="63">
+                    <label for="radio-2">Burglary (non-domestic)</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="182">
+                    <label for="radio-3">Going equipped to steal</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="383">
+                    <label for="radio-4">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">F – Other offences of dishonesty up to £30,000</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="F">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="219">
+                    <label for="radio-1">Making false entries in copies of registers sent to register</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="225">
+                    <label for="radio-2">Making or supplying articles for use in frauds</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="243">
+                    <label for="radio-3">Obtaining pecuniary advantage by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="246">
+                    <label for="radio-4">Obtaining property by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="249">
+                    <label for="radio-5">Obtaining services by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="252">
+                    <label for="radio-6">Obtaining services by dishonesty</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="257">
+                    <label for="radio-7">Offences in relation to dies or stamps</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="268">
+                    <label for="radio-8">Participating in fraudulent business carried on by sole trader etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="283">
+                    <label for="radio-9">Possession (with intention) of apparatus or material for making false identity documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="284">
+                    <label for="radio-10">Possession (with intention) of false identity documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="285">
+                    <label for="radio-11">Possession of false identify documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="286">
+                    <label for="radio-12">Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="287">
+                    <label for="radio-13">Possession etc of articles for use in frauds</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="346">
+                    <label for="radio-14">Theft</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="363">
+                    <label for="radio-15">Using a copy of a false instrument</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="366">
+                    <label for="radio-16">Using a false instrument</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="370">
+                    <label for="radio-17">VAT offences</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="390">
+                    <label for="radio-19">Counterfeiting notes and coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-20" type="radio" name="offence_category" value="394">
+                    <label for="radio-20">Fraudulent evasion: counterfeit notes or coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-21" type="radio" name="offence_category" value="396">
+                    <label for="radio-21">Illegal importation: counterfeit notes or coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-22" type="radio" name="offence_category" value="400">
+                    <label for="radio-22">Making, custody or control of counterfeiting materials etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-23" type="radio" name="offence_category" value="402">
+                    <label for="radio-23">Offences involving custody or control of counterfeit notes and coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-24" type="radio" name="offence_category" value="404">
+                    <label for="radio-24">Passing counterfeit notes and coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-25" type="radio" name="offence_category" value="414">
+                    <label for="radio-25">Removal of articles from places open to the public</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-26" type="radio" name="offence_category" value="416">
+                    <label for="radio-26">Undischarged bankrupt being concerned in a company</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="384">
+                    <label for="radio-18">Miscellaneous/other</label>
+                    </div>
+
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">G – Other offences of dishonesty between £30,001 and £100,000</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="G">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="7">
+                    <label for="radio-1">Abstraction of electricity</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="102">
+                    <label for="radio-2">Copying false instrument with intent</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="107">
+                    <label for="radio-3">Counterfeiting Customs documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="109">
+                    <label for="radio-4">Counterfeiting notes and coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="111">
+                    <label for="radio-5">Counterfeiting of dies or marks</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="117">
+                    <label for="radio-6">Custody or control of false instruments etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="134">
+                    <label for="radio-7">Evasion of liability by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="147">
+                    <label for="radio-8">False accounting</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="155">
+                    <label for="radio-9">Forgery</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="162">
+                    <label for="radio-10">Fraud by abuse of position</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="165">
+                    <label for="radio-11">Fraud by failing to disclose information</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="168">
+                    <label for="radio-12">Fraud by false representation</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="174">
+                    <label for="radio-13">Fraudulent evasion of duty</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="176">
+                    <label for="radio-14">Fraudulent evasion: counterfeit notes or coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="178">
+                    <label for="radio-15">Fraudulent evasion: not elsewhere specified</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="186">
+                    <label for="radio-16">Handling stolen goods</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="194">
+                    <label for="radio-17">Illegal importation: counterfeit notes or coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="196">
+                    <label for="radio-18">Illegal importation: not elsewhere specified</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="226">
+                    <label for="radio-19">Making or supplying articles for use in frauds</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-20" type="radio" name="offence_category" value="230">
+                    <label for="radio-20">Making, custody or control of counterfeiting materials etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-21" type="radio" name="offence_category" value="244">
+                    <label for="radio-21">Obtaining pecuniary advantage by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-22" type="radio" name="offence_category" value="247">
+                    <label for="radio-22">Obtaining property by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-23" type="radio" name="offence_category" value="250">
+                    <label for="radio-23">Obtaining services by deception</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-24" type="radio" name="offence_category" value="253">
+                    <label for="radio-24">Obtaining services by dishonesty</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-25" type="radio" name="offence_category" value="258">
+                    <label for="radio-25">Offences in relation to dies or stamps</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-26" type="radio" name="offence_category" value="262">
+                    <label for="radio-26">Offences involving custody or control of counterfeit notes and coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-27" type="radio" name="offence_category" value="269">
+                    <label for="radio-27">Participating in fraudulent business carried on by sole trader etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-28" type="radio" name="offence_category" value="271">
+                    <label for="radio-28">Passing counterfeit notes and coins</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-29" type="radio" name="offence_category" value="288">
+                    <label for="radio-29">Possession etc of articles for use in frauds</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-30" type="radio" name="offence_category" value="321">
+                    <label for="radio-30">Removal of articles from places open to the public</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-31" type="radio" name="offence_category" value="347">
+                    <label for="radio-31">Theft</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-32" type="radio" name="offence_category" value="357">
+                    <label for="radio-32">Undischarged bankrupt being concerned in a company</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-33" type="radio" name="offence_category" value="364">
+                    <label for="radio-33">Using a copy of a false instrument</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-34" type="radio" name="offence_category" value="367">
+                    <label for="radio-34">Using a false instrument</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-35" type="radio" name="offence_category" value="371">
+                    <label for="radio-35">VAT offences</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-37" type="radio" name="offence_category" value="392">
+                    <label for="radio-37">Destruction of registers of births etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-38" type="radio" name="offence_category" value="398">
+                    <label for="radio-38">Making false entries in copies of registers sent to register</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-39" type="radio" name="offence_category" value="406">
+                    <label for="radio-39">Possession (with intention) of apparatus or material for making false identity documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-40" type="radio" name="offence_category" value="408">
+                    <label for="radio-40">Possession (with intention) of false identity documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-41" type="radio" name="offence_category" value="410">
+                    <label for="radio-41">Possession of false identify documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-42" type="radio" name="offence_category" value="412">
+                    <label for="radio-42">Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-36" type="radio" name="offence_category" value="385">
+                    <label for="radio-36">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">H – Miscellaneous lesser offences</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="H">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="241">
+                    <label for="radio-1">Obstructing Customs officer</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="242">
+                    <label for="radio-2">Obstructing engine or carriage on railway</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="263">
+                    <label for="radio-3">Offences of publication of obscene matter</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="264">
+                    <label for="radio-4">Offences relating to the safe custody of controlled drugs</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="294">
+                    <label for="radio-5">Possession of Class B or C drug</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="299">
+                    <label for="radio-6">Possession of offensive weapon</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="304">
+                    <label for="radio-7">Presentation of obscene performance</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="308">
+                    <label for="radio-8">Procurement of a woman by false pretences</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="309">
+                    <label for="radio-9">Procurement of intercourse by threats etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="310">
+                    <label for="radio-10">Procuring others to commit homosexual acts</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="313">
+                    <label for="radio-11">Putting people in fear of violence</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="314">
+                    <label for="radio-12">Racially aggravated harassment/putting another in fear of violence</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="318">
+                    <label for="radio-13">Racially-aggravated public order offence</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="325">
+                    <label for="radio-14">Sending prohibited articles by post</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="340">
+                    <label for="radio-15">Solicitation for immoral purposes</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="351">
+                    <label for="radio-16">Trade description offences (9 offences)</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="360">
+                    <label for="radio-17">Unlawful eviction and harassment of occupier</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="375">
+                    <label for="radio-18">Wanton or furious driving</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="386">
+                    <label for="radio-19">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">I – Offences against public justice and similar offences</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="I">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="46">
+                    <label for="radio-1">Assisting offenders</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="94">
+                    <label for="radio-2">Concealing an arrestable offence</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="97">
+                    <label for="radio-3">Conspiring to commit offences outside the United Kingdom</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="104">
+                    <label for="radio-4">Corrupt transactions with agents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="105">
+                    <label for="radio-5">Corruption in public office</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="127">
+                    <label for="radio-6">Embracery</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="137">
+                    <label for="radio-7">Fabrication of evidence with intent to mislead a tribunal</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="149">
+                    <label for="radio-8">False evidence before European Court</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="151">
+                    <label for="radio-9">False statement tendered under section 5B of the Magistrates" Courts Act 1980</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="152">
+                    <label for="radio-10">False statement tendered under section 9 of the Criminal Justice Act 1967</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="181">
+                    <label for="radio-11">Giving false statements to procure cremation</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="189">
+                    <label for="radio-12">Harming, threatening to harm a witness, juror etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="213">
+                    <label for="radio-13">Intimidating a witness, juror etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="218">
+                    <label for="radio-14">Making a false statement to obtain interim possession order</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="220">
+                    <label for="radio-15">Making false statement to authorised officer</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="221">
+                    <label for="radio-16">Making false statement to resist making of interim possession order</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="273">
+                    <label for="radio-17">Perjuries (7 offences)</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="278">
+                    <label for="radio-18">Personating for purposes of bail etc.</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="279">
+                    <label for="radio-19">Personation of jurors</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-20" type="radio" name="offence_category" value="280">
+                    <label for="radio-20">Perverting the course of public justice</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-21" type="radio" name="offence_category" value="303">
+                    <label for="radio-21">Prejudicing a drug trafficking investigation</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-22" type="radio" name="offence_category" value="387">
+                    <label for="radio-22">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">J – Serious sexual offences, offences against children</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="J">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="206">
+                    <label for="radio-1">Indecency with children under 14</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="210">
+                    <label for="radio-2">Inducing person with mental disorder to engage in sexual activity</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="266">
+                    <label for="radio-3">Offering inducement to procure sexual activity with a person with a mental disorder</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="272">
+                    <label for="radio-4">Paying for sexual services of a child</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="276">
+                    <label for="radio-5">Permitting girl under 13 to use premises for sexual intercourse</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-6" type="radio" name="offence_category" value="277">
+                    <label for="radio-6">Permitting girl under 16 to use premises for intercourse</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-7" type="radio" name="offence_category" value="319">
+                    <label for="radio-7">Rape</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-8" type="radio" name="offence_category" value="320">
+                    <label for="radio-8">Rape of child under 13</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-9" type="radio" name="offence_category" value="328">
+                    <label for="radio-9">Sexual activity with a child</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-10" type="radio" name="offence_category" value="329">
+                    <label for="radio-10">Sexual activity with a child family member, with penetration</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-11" type="radio" name="offence_category" value="330">
+                    <label for="radio-11">Sexual activity with a person with a mental disorder</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-12" type="radio" name="offence_category" value="332">
+                    <label for="radio-12">Sexual assault of child under 13</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-13" type="radio" name="offence_category" value="333">
+                    <label for="radio-13">Sexual intercourse with defective</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-14" type="radio" name="offence_category" value="334">
+                    <label for="radio-14">Sexual intercourse with girl under 13</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-15" type="radio" name="offence_category" value="335">
+                    <label for="radio-15">Sexual intercourse with girl under 16</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-16" type="radio" name="offence_category" value="336">
+                    <label for="radio-16">Sexual intercourse with patients</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-17" type="radio" name="offence_category" value="345">
+                    <label for="radio-17">Taking, having etc. indecent photographs of children</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-18" type="radio" name="offence_category" value="352">
+                    <label for="radio-18">Trafficking into UK for sexual exploitation</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-19" type="radio" name="offence_category" value="353">
+                    <label for="radio-19">Trafficking out of UK for sexual exploitation</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-20" type="radio" name="offence_category" value="354">
+                    <label for="radio-20">Trafficking within UK for sexual exploitation</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-21" type="radio" name="offence_category" value="388">
+                    <label for="radio-21">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">K – Offences of dishonesty in Class F where the value in is in excess of £100,000</h2>
+          </div>
+          <div class="accordion-section-body">
+
+            <form method="get">
+              <input type="hidden" name="offence_class" value="K">
+
+              <div class="form-section">
+                <div class="form-group">
+                  <fieldset>
+
+                    <legend>
+                    <h3 class="heading-small">What is the category of offence?</h3>
+                    </legend>
+
+                    <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="offence_category" value="411">
+                    <label for="radio-1">Possession of false identify documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="offence_category" value="413">
+                    <label for="radio-2">Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-3" type="radio" name="offence_category" value="415">
+                    <label for="radio-3">Removal of articles from places open to the public</label>
+                    </div>
+                    <div class="multiple-choice">
+                    <input id="radio-4" type="radio" name="offence_category" value="417">
+                    <label for="radio-4">Undischarged bankrupt being concerned in a company</label>
+                    </div>
+                    <p class="form-block bold">or</p>
+                    <div class="multiple-choice">
+                    <input id="radio-5" type="radio" name="offence_category" value="MISC">
+                    <label for="radio-5">Miscellaneous/other</label>
+                    </div>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-group form-buttons">
+                  <input type="submit" class="button" value="Save and continue">
+                  <input type="submit" class="button button-tertiary" value="Save as draft">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+	    
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
