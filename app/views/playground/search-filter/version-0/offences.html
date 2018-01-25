@@ -4,32 +4,12 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_styles %}
+{% include "./includes/_page_styles.html" %}
+{% endblock %}
+
 {% block page_scripts %}
-<script src="/public/javascripts/jquery.hideseek.min.js"></script>
-<script>
-$('#search').hideseek({
-    higlight: true,
-    min_chars: 3,
-    nodata: "No results found."
-});
-</script>
-<style type="text/css">
-ul#offence-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-ul#offence-list li:nth-child(odd) {
-   background-color: #f8f8f8;
-}
-
-ul#offence-list li:hover {
-   background-color: #dee0e2;
-}
-
-.font-xsmall {
-    color: #6f777b;
-}
-</style>
+{% include "./includes/_page_scripts.html" %}
 {% endblock %}
 
 {% block content %}
@@ -38,7 +18,7 @@ ul#offence-list li:hover {
     <div class="grid-row">
         <div class="column-full">
 
-        <a class="link-back" href="#noop">Back</a>
+        <a class="link-back" href="../">Back</a>
 
         <h1 class="heading-xlarge">
             Offence details
@@ -52,7 +32,9 @@ ul#offence-list li:hover {
                 </span> -->
             </label>
             <input id="search" class="form-control form-control-2-3" name="search" placeholder="" type="text" data-list="#offence-list" autocomplete="off">
-        </div>        
+        </div>
+
+        <p>Total number of offences: {{offences.length}}</p>
 
         {% include "./includes/_offences.html" %}
 
