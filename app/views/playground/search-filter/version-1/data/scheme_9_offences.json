@@ -1,0 +1,2504 @@
+[
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 48,
+        "category_label": "Attempt to cause explosion making or keeping explosive etc."
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 77,
+        "category_label": "Causing explosion likely to endanger life or property"
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 90,
+        "category_label": "Child destruction"
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 211,
+        "category_label": "Infanticide"
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 232,
+        "category_label": "Manslaughter"
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 238,
+        "category_label": "Murder"
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 341,
+        "category_label": "Soliciting to commit murder"
+    },
+    {
+        "class_id": "A",
+        "class_label": "Homicide and related grave offences",
+        "category_id": 379,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 15,
+        "category_label": "Acquisition use or possession of criminal property"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 16,
+        "category_label": "Activities relating to opium"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 19,
+        "category_label": "Administering chloroform, laudanum etc."
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 21,
+        "category_label": "Administering poison etc. so as to endanger life"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 24,
+        "category_label": "Aggravated arson"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 25,
+        "category_label": "Aggravated burglary"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 26,
+        "category_label": "Aggravated criminal damage"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 28,
+        "category_label": "Aggravated vehicle taking resulting in death"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 30,
+        "category_label": "Aiding and abetting suicide"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 32,
+        "category_label": "Allowing the death of a child"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 33,
+        "category_label": "Armed robbery"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 36,
+        "category_label": "Arson (where value exceeds £30,000)"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 42,
+        "category_label": "Assault with weapon with intent to rob"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 43,
+        "category_label": "Assaulting prison officer whilst possessing firearm etc."
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 49,
+        "category_label": "Attempting to choke, suffocate, strangle etc."
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 52,
+        "category_label": "Blackmail"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 73,
+        "category_label": "Causing bodily injury by explosives"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 74,
+        "category_label": "Causing danger to road users"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 75,
+        "category_label": "Causing death by careless driving while under the influence of drink or drugs"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 76,
+        "category_label": "Causing death by dangerous driving"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 78,
+        "category_label": "Causing miscarriage by poison, instrument"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 79,
+        "category_label": "Causing or allowing the death of a child"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 95,
+        "category_label": "Concealing criminal property"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 98,
+        "category_label": "Contamination of goods with intent"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 114,
+        "category_label": "Cruelty to persons under 16"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 115,
+        "category_label": "Cultivation of cannabis plant"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 123,
+        "category_label": "Directing terrorist organisation"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 124,
+        "category_label": "Disclosure prejudicing, or interference of material relevant to, investigation of terrorism"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 125,
+        "category_label": "Disclosure under sections 330, 331, 332 or 333 of the Proceeds of Crime Act 2002 otherwise than in the form and manner prescribed"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 126,
+        "category_label": "Drug trafficking offences at sea"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 128,
+        "category_label": "Endangering the safety of an aircraft"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 129,
+        "category_label": "Endangering the safety of railway passengers"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 143,
+        "category_label": "Failure to disclose knowledge or suspicion of money laundering: nominated officers in the regulated sector"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 144,
+        "category_label": "Failure to disclose knowledge or suspicion of money laundering: other nominated officers"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 145,
+        "category_label": "Failure to disclose knowledge or suspicion of money laundering: regulated sector"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 150,
+        "category_label": "False imprisonment"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 153,
+        "category_label": "Firing on Revenue vessel"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 171,
+        "category_label": "Fraudulent evasion of controls on Class A and B drugs"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 180,
+        "category_label": "Fund-raising for terrorism"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 191,
+        "category_label": "Hostage taking"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 192,
+        "category_label": "Illegal importation of Class A and B drugs"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 199,
+        "category_label": "Impeding persons endeavouring to escape wrecks"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 203,
+        "category_label": "Incitement of terrorism overseas"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 214,
+        "category_label": "Involvement in arrangements facilitating the acquisition, retention, use or control of criminal property"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 216,
+        "category_label": "Kidnapping"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 224,
+        "category_label": "Making or possession of explosive in suspicious circumstances"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 229,
+        "category_label": "Making threats to kill"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 233,
+        "category_label": "Manufacture and supply of scheduled substances"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 235,
+        "category_label": "Membership of proscribed organisations"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 255,
+        "category_label": "Occupier knowingly permitting drugs offences etc."
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 256,
+        "category_label": "Offences against international protection of nuclear material"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 260,
+        "category_label": "Offences in relation to money laundering investigations"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 261,
+        "category_label": "Offences in relation to proceeds of drug trafficking"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 267,
+        "category_label": "Other offences involving money or property to be used for terrorism"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 281,
+        "category_label": "Placing explosives with intent to cause bodily injury"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 290,
+        "category_label": "Possession of a Class A or B drug with intent to supply"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 292,
+        "category_label": "Possession of articles for terrorist purposes"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 295,
+        "category_label": "Possession of firearm with criminal intent"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 296,
+        "category_label": "Possession of firearm with intent to endanger life"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 300,
+        "category_label": "Possession or acquisition of certain prohibited weapons etc."
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 302,
+        "category_label": "Practitioner contravening drug supply regulations"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 305,
+        "category_label": "Prison mutiny"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 311,
+        "category_label": "Producing or supplying a Class A or B drug"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 315,
+        "category_label": "Racially-aggravated arson (not endangering life)"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 323,
+        "category_label": "Riot"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 344,
+        "category_label": "Support or meeting of proscribed organisations"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 349,
+        "category_label": "Tipping off"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 358,
+        "category_label": "Uniform of proscribed organisations"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 359,
+        "category_label": "Unlawful collection of information for terrorist purposes"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 362,
+        "category_label": "Use of firearm to resist arrest"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 369,
+        "category_label": "Using explosive or corrosives with intent to cause grievous bodily harm"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 373,
+        "category_label": "Violent disorder"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 376,
+        "category_label": "Weapons training"
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 378,
+        "category_label": "Wounding or grievous bodily harm with intent to cause grievous bodily harm etc."
+    },
+    {
+        "class_id": "B",
+        "class_label": "Offences involving serious violence or damage and serious drug offences",
+        "category_id": 380,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 1,
+        "category_label": "Abandonment of children under two"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 14,
+        "category_label": "Acquisition by or supply of firearms to person denied them"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 22,
+        "category_label": "Administering poison with intent to injure etc."
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 35,
+        "category_label": "Arson (other than aggravated arson) where value does not exceed £300"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 38,
+        "category_label": "Assault occasioning actual bodily harm"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 44,
+        "category_label": "Assaults on officers saving wrecks"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 45,
+        "category_label": "Assisting illegal entry or harbouring persons"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 47,
+        "category_label": "Assisting prisoners to escape"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 50,
+        "category_label": "Attempting to injure or alarm the Sovereign"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 53,
+        "category_label": "Bomb hoax"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 56,
+        "category_label": "Breach of prison"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 59,
+        "category_label": "Breaking or injuring submarine telegraph cables"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 68,
+        "category_label": "Carrying loaded firearm in public place"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 88,
+        "category_label": "Child abduction by connected person"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 89,
+        "category_label": "Child abduction by other person"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 92,
+        "category_label": "Circumcision of females"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 96,
+        "category_label": "Concealment of birth"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 113,
+        "category_label": "Criminal damage (other than aggravated criminal damage)"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 120,
+        "category_label": "Dealing in firearms"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 132,
+        "category_label": "Escaping from lawful custody without force"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 139,
+        "category_label": "Failing to keep dogs under proper control resulting in injury"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 140,
+        "category_label": "Failure to comply with certificate when transferring firearm"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 141,
+        "category_label": "Failure to disclose information about terrorism"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 142,
+        "category_label": "Failure to disclose knowledge or suspicion of money laundering"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 170,
+        "category_label": "Fraudulent evasion of agricultural levy"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 172,
+        "category_label": "Fraudulent evasion of controls on Class C drugs"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 188,
+        "category_label": "Harbouring escaped prisoners"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 193,
+        "category_label": "Illegal importation of Class C drugs"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 222,
+        "category_label": "Making gunpowder etc. to commit offences"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 228,
+        "category_label": "Making threats to destroy or damage property"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 239,
+        "category_label": "Neglecting to provide food for or assaulting servants etc."
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 265,
+        "category_label": "Offender armed or disguised"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 274,
+        "category_label": "Permitting an escape"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 282,
+        "category_label": "Possessing anything with intent to destroy or damage property"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 291,
+        "category_label": "Possession of a Class C drug with intent to supply"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 293,
+        "category_label": "Possession of Class A drug"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 297,
+        "category_label": "Possession of firearm without certificate"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 298,
+        "category_label": "Possession of firearms by person convicted of crime"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 301,
+        "category_label": "Possession or acquisition of shotgun without certificate"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 312,
+        "category_label": "Producing or supplying Class C drug"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 316,
+        "category_label": "Racially-aggravated assault"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 317,
+        "category_label": "Racially-aggravated criminal damage"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 322,
+        "category_label": "Rescue"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 324,
+        "category_label": "Robbery (other than armed robbery)"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 326,
+        "category_label": "Setting spring guns with intent to inflict grievous bodily harm"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 338,
+        "category_label": "Shortening of shotgun or possession of shortened shotgun"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 339,
+        "category_label": "Shortening of smooth bore gun"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 342,
+        "category_label": "Stirring up racial hatred"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 343,
+        "category_label": "Supplying instrument etc. to cause miscarriage"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 350,
+        "category_label": "Tipping-off in relation to money laundering investigations"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 356,
+        "category_label": "Trespassing with a firearm"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 361,
+        "category_label": "Unlawful wounding"
+    },
+    {
+        "class_id": "C",
+        "class_label": "Lesser offences involving violence or damage and less serious drug offences",
+        "category_id": 381,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 2,
+        "category_label": "Abduction of defective from parent"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 4,
+        "category_label": "Abduction of unmarried girl under 18 from parent"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 9,
+        "category_label": "Abuse of position of trust"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 10,
+        "category_label": "Abuse of position of trust: causing a child to engage in sexual activity"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 11,
+        "category_label": "Abuse of position of trust: causing a child to watch sexual activity"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 12,
+        "category_label": "Abuse of trust: sexual activity in the presence of a child"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 13,
+        "category_label": "Abuse of trust: sexual activity with a child"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 18,
+        "category_label": "Administering a substance with intent"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 20,
+        "category_label": "Administering drugs to obtain intercourse"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 64,
+        "category_label": "Care workers: causing a person with a mental disorder to watch a sexual act"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 66,
+        "category_label": "Care workers: sexual activity in presence of a person with a mental disorder"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 70,
+        "category_label": "Causing a child to watch a sexual act"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 72,
+        "category_label": "Causing a person with a mental disorder to watch a sexual act"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 80,
+        "category_label": "Causing or encouraging prostitution of defective"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 84,
+        "category_label": "Causing or inciting prostitution for gain"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 87,
+        "category_label": "Causing sexual activity without penetration"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 91,
+        "category_label": "Child sex offence committed by person under 18"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 93,
+        "category_label": "Committing offence with intent to commit sexual offence"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 100,
+        "category_label": "Controlling prostitution for gain"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 130,
+        "category_label": "Engaging in sexual activity in the presence of a child"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 131,
+        "category_label": "Engaging in sexual activity in the presence of a person with a mental disorder"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 136,
+        "category_label": "Exposure"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 183,
+        "category_label": "Gross indecency between male of 21 or over and male under 16"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 198,
+        "category_label": "Ill-treatment of persons of unsound mind"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 202,
+        "category_label": "Incest other than by man with a girl under 13"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 204,
+        "category_label": "Incitement to commit incest"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 207,
+        "category_label": "Indecent assault on a man"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 208,
+        "category_label": "Indecent assault on a woman"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 212,
+        "category_label": "Intercourse with an animal"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 217,
+        "category_label": "Living on earnings of male prostitution"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 231,
+        "category_label": "Man living on earnings of prostitution"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 234,
+        "category_label": "Meeting child following sexual grooming"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 275,
+        "category_label": "Permitting defective to use premises for intercourse"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 306,
+        "category_label": "Procuration of girl under 21"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 307,
+        "category_label": "Procurement of a defective"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 327,
+        "category_label": "Sex with adult relative"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 331,
+        "category_label": "Sexual assault"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 337,
+        "category_label": "Sexual penetration of a corpse"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 355,
+        "category_label": "Trespass with intent to commit sexual offence"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 374,
+        "category_label": "Voyeurism"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 377,
+        "category_label": "Woman exercising control over prostitute"
+    },
+    {
+        "class_id": "D",
+        "class_label": "Serious sexual offences and offences against children",
+        "category_id": 382,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "E",
+        "class_label": "Burglary",
+        "category_id": 62,
+        "category_label": "Burglary (domestic)"
+    },
+    {
+        "class_id": "E",
+        "class_label": "Burglary",
+        "category_id": 63,
+        "category_label": "Burglary (non-domestic)"
+    },
+    {
+        "class_id": "E",
+        "class_label": "Burglary",
+        "category_id": 182,
+        "category_label": "Going equipped to steal"
+    },
+    {
+        "class_id": "E",
+        "class_label": "Burglary",
+        "category_id": 383,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 6,
+        "category_label": "Abstraction of electricity"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 101,
+        "category_label": "Copying false instrument with intent"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 106,
+        "category_label": "Counterfeiting Customs documents"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 110,
+        "category_label": "Counterfeiting of dies or marks"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 116,
+        "category_label": "Custody or control of false instruments etc."
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 121,
+        "category_label": "Destruction of registers of births etc."
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 133,
+        "category_label": "Evasion of liability by deception"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 146,
+        "category_label": "False accounting"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 154,
+        "category_label": "Forgery"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 161,
+        "category_label": "Fraud by abuse of position"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 164,
+        "category_label": "Fraud by failing to disclose information"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 167,
+        "category_label": "Fraud by false representation"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 173,
+        "category_label": "Fraudulent evasion of duty"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 177,
+        "category_label": "Fraudulent evasion: not elsewhere specified"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 185,
+        "category_label": "Handling stolen goods"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 195,
+        "category_label": "Illegal importation: not elsewhere specified"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 219,
+        "category_label": "Making false entries in copies of registers sent to register"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 225,
+        "category_label": "Making or supplying articles for use in frauds"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 243,
+        "category_label": "Obtaining pecuniary advantage by deception"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 246,
+        "category_label": "Obtaining property by deception"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 249,
+        "category_label": "Obtaining services by deception"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 252,
+        "category_label": "Obtaining services by dishonesty"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 257,
+        "category_label": "Offences in relation to dies or stamps"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 268,
+        "category_label": "Participating in fraudulent business carried on by sole trader etc."
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 283,
+        "category_label": "Possession (with intention) of apparatus or material for making false identity documents"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 284,
+        "category_label": "Possession (with intention) of false identity documents"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 285,
+        "category_label": "Possession of false identify documents"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 286,
+        "category_label": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 287,
+        "category_label": "Possession etc of articles for use in frauds"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 346,
+        "category_label": "Theft"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 363,
+        "category_label": "Using a copy of a false instrument"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 366,
+        "category_label": "Using a false instrument"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 370,
+        "category_label": "VAT offences"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 384,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 390,
+        "category_label": "Counterfeiting notes and coins"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 394,
+        "category_label": "Fraudulent evasion: counterfeit notes or coins"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 396,
+        "category_label": "Illegal importation: counterfeit notes or coins"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 400,
+        "category_label": "Making, custody or control of counterfeiting materials etc."
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 402,
+        "category_label": "Offences involving custody or control of counterfeit notes and coins"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 404,
+        "category_label": "Passing counterfeit notes and coins"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 414,
+        "category_label": "Removal of articles from places open to the public"
+    },
+    {
+        "class_id": "F",
+        "class_label": "Other offences of dishonesty up to £30,000",
+        "category_id": 416,
+        "category_label": "Undischarged bankrupt being concerned in a company"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 7,
+        "category_label": "Abstraction of electricity"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 102,
+        "category_label": "Copying false instrument with intent"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 107,
+        "category_label": "Counterfeiting Customs documents"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 109,
+        "category_label": "Counterfeiting notes and coins"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 111,
+        "category_label": "Counterfeiting of dies or marks"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 117,
+        "category_label": "Custody or control of false instruments etc."
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 134,
+        "category_label": "Evasion of liability by deception"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 147,
+        "category_label": "False accounting"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 155,
+        "category_label": "Forgery"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 162,
+        "category_label": "Fraud by abuse of position"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 165,
+        "category_label": "Fraud by failing to disclose information"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 168,
+        "category_label": "Fraud by false representation"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 174,
+        "category_label": "Fraudulent evasion of duty"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 176,
+        "category_label": "Fraudulent evasion: counterfeit notes or coins"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 178,
+        "category_label": "Fraudulent evasion: not elsewhere specified"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 186,
+        "category_label": "Handling stolen goods"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 194,
+        "category_label": "Illegal importation: counterfeit notes or coins"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 196,
+        "category_label": "Illegal importation: not elsewhere specified"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 226,
+        "category_label": "Making or supplying articles for use in frauds"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 230,
+        "category_label": "Making, custody or control of counterfeiting materials etc."
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 244,
+        "category_label": "Obtaining pecuniary advantage by deception"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 247,
+        "category_label": "Obtaining property by deception"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 250,
+        "category_label": "Obtaining services by deception"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 253,
+        "category_label": "Obtaining services by dishonesty"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 258,
+        "category_label": "Offences in relation to dies or stamps"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 262,
+        "category_label": "Offences involving custody or control of counterfeit notes and coins"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 269,
+        "category_label": "Participating in fraudulent business carried on by sole trader etc."
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 271,
+        "category_label": "Passing counterfeit notes and coins"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 288,
+        "category_label": "Possession etc of articles for use in frauds"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 321,
+        "category_label": "Removal of articles from places open to the public"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 347,
+        "category_label": "Theft"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 357,
+        "category_label": "Undischarged bankrupt being concerned in a company"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 364,
+        "category_label": "Using a copy of a false instrument"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 367,
+        "category_label": "Using a false instrument"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 371,
+        "category_label": "VAT offences"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 385,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 392,
+        "category_label": "Destruction of registers of births etc."
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 398,
+        "category_label": "Making false entries in copies of registers sent to register"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 406,
+        "category_label": "Possession (with intention) of apparatus or material for making false identity documents"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 408,
+        "category_label": "Possession (with intention) of false identity documents"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 410,
+        "category_label": "Possession of false identify documents"
+    },
+    {
+        "class_id": "G",
+        "class_label": "Other offences of dishonesty between £30,001 and £100,000",
+        "category_id": 412,
+        "category_label": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 17,
+        "category_label": "Acts outraging public decency"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 23,
+        "category_label": "Affray"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 27,
+        "category_label": "Aggravated vehicle taking"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 29,
+        "category_label": "Agreeing to indemnify sureties"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 41,
+        "category_label": "Assault with intent to resist arrest"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 51,
+        "category_label": "Being drunk on an aircraft"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 54,
+        "category_label": "Breach of anti-social behaviour order"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 55,
+        "category_label": "Breach of harassment injunction"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 57,
+        "category_label": "Breach of restraining order"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 58,
+        "category_label": "Breach of sex offender order"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 60,
+        "category_label": "Buggery of males of 16 or over otherwise than in private"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 85,
+        "category_label": "Causing prostitution of women"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 119,
+        "category_label": "Dangerous driving"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 122,
+        "category_label": "Detention of woman in brothel or other premises"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 157,
+        "category_label": "Forgery and misuse of driving documents"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 158,
+        "category_label": "Forgery etc. of licences and other documents"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 159,
+        "category_label": "Forgery of driving documents"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 160,
+        "category_label": "Forgery, alteration, fraud of licences etc."
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 184,
+        "category_label": "Gross indecency between males (other than where one is 21 or over and the other is under 16)"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 190,
+        "category_label": "Having an article with a blade or point in a public place"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 200,
+        "category_label": "Impersonating Customs officer"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 209,
+        "category_label": "Indecent display"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 215,
+        "category_label": "Keeping a disorderly house"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 223,
+        "category_label": "Making off without payment"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 236,
+        "category_label": "Misconduct endangering ship or persons on board ship"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 237,
+        "category_label": "Mishandling or falsifying parking documents etc."
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 240,
+        "category_label": "Obscene articles intended for publication for gain"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 241,
+        "category_label": "Obstructing Customs officer"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 242,
+        "category_label": "Obstructing engine or carriage on railway"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 263,
+        "category_label": "Offences of publication of obscene matter"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 264,
+        "category_label": "Offences relating to the safe custody of controlled drugs"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 294,
+        "category_label": "Possession of Class B or C drug"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 299,
+        "category_label": "Possession of offensive weapon"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 304,
+        "category_label": "Presentation of obscene performance"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 308,
+        "category_label": "Procurement of a woman by false pretences"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 309,
+        "category_label": "Procurement of intercourse by threats etc."
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 310,
+        "category_label": "Procuring others to commit homosexual acts"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 313,
+        "category_label": "Putting people in fear of violence"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 314,
+        "category_label": "Racially aggravated harassment/putting another in fear of violence"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 318,
+        "category_label": "Racially-aggravated public order offence"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 325,
+        "category_label": "Sending prohibited articles by post"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 340,
+        "category_label": "Solicitation for immoral purposes"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 351,
+        "category_label": "Trade description offences (9 offences)"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 360,
+        "category_label": "Unlawful eviction and harassment of occupier"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 375,
+        "category_label": "Wanton or furious driving"
+    },
+    {
+        "class_id": "H",
+        "class_label": "Miscellaneous lesser offences",
+        "category_id": 386,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 46,
+        "category_label": "Assisting offenders"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 94,
+        "category_label": "Concealing an arrestable offence"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 97,
+        "category_label": "Conspiring to commit offences outside the United Kingdom"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 104,
+        "category_label": "Corrupt transactions with agents"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 105,
+        "category_label": "Corruption in public office"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 127,
+        "category_label": "Embracery"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 137,
+        "category_label": "Fabrication of evidence with intent to mislead a tribunal"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 149,
+        "category_label": "False evidence before European Court"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 151,
+        "category_label": "False statement tendered under section 5B of the Magistrates' Courts Act 1980"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 152,
+        "category_label": "False statement tendered under section 9 of the Criminal Justice Act 1967"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 181,
+        "category_label": "Giving false statements to procure cremation"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 189,
+        "category_label": "Harming, threatening to harm a witness, juror etc."
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 213,
+        "category_label": "Intimidating a witness, juror etc."
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 218,
+        "category_label": "Making a false statement to obtain interim possession order"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 220,
+        "category_label": "Making false statement to authorised officer"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 221,
+        "category_label": "Making false statement to resist making of interim possession order"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 273,
+        "category_label": "Perjuries (7 offences)"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 278,
+        "category_label": "Personating for purposes of bail etc."
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 279,
+        "category_label": "Personation of jurors"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 280,
+        "category_label": "Perverting the course of public justice"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 303,
+        "category_label": "Prejudicing a drug trafficking investigation"
+    },
+    {
+        "class_id": "I",
+        "class_label": "Offences against public justice and similar offences",
+        "category_id": 387,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 3,
+        "category_label": "Abduction of unmarried girl under 16 from parent"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 5,
+        "category_label": "Abduction of woman by force"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 31,
+        "category_label": "Allowing or procuring child under 16 to go abroad to perform"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 34,
+        "category_label": "Arranging child sex offence"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 37,
+        "category_label": "Assault by penetration"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 39,
+        "category_label": "Assault of child under 13 by penetration"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 40,
+        "category_label": "Assault with intent to commit buggery"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 61,
+        "category_label": "Buggery of person under 16"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 65,
+        "category_label": "Care workers: inciting person with mental disorder to engage in sexual act"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 67,
+        "category_label": "Care workers: sexual activity with a person with a mental disorder"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 69,
+        "category_label": "Causing a child to engage in sexual activity"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 71,
+        "category_label": "Causing a child under 13 to engage in sexual activity"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 81,
+        "category_label": "Causing or encouraging prostitution of girl under 16"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 82,
+        "category_label": "Causing or inciting a person with a mental disorder to engage in sexual activity"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 83,
+        "category_label": "Causing or inciting child prostitution or pornography"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 86,
+        "category_label": "Causing sexual activity with penetration"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 99,
+        "category_label": "Controlling a child prostitute"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 138,
+        "category_label": "Facilitating child prostitution"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 201,
+        "category_label": "Incest by man with a girl under 13"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 205,
+        "category_label": "Inciting a child family member to engage in sexual activity"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 206,
+        "category_label": "Indecency with children under 14"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 210,
+        "category_label": "Inducing person with mental disorder to engage in sexual activity"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 266,
+        "category_label": "Offering inducement to procure sexual activity with a person with a mental disorder"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 272,
+        "category_label": "Paying for sexual services of a child"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 276,
+        "category_label": "Permitting girl under 13 to use premises for sexual intercourse"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 277,
+        "category_label": "Permitting girl under 16 to use premises for intercourse"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 319,
+        "category_label": "Rape"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 320,
+        "category_label": "Rape of child under 13"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 328,
+        "category_label": "Sexual activity with a child"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 329,
+        "category_label": "Sexual activity with a child family member, with penetration"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 330,
+        "category_label": "Sexual activity with a person with a mental disorder"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 332,
+        "category_label": "Sexual assault of child under 13"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 333,
+        "category_label": "Sexual intercourse with defective"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 334,
+        "category_label": "Sexual intercourse with girl under 13"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 335,
+        "category_label": "Sexual intercourse with girl under 16"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 336,
+        "category_label": "Sexual intercourse with patients"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 345,
+        "category_label": "Taking, having etc. indecent photographs of children"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 352,
+        "category_label": "Trafficking into UK for sexual exploitation"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 353,
+        "category_label": "Trafficking out of UK for sexual exploitation"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 354,
+        "category_label": "Trafficking within UK for sexual exploitation"
+    },
+    {
+        "class_id": "J",
+        "class_label": "Serious sexual offences, offences against children",
+        "category_id": 388,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 8,
+        "category_label": "Abstraction of electricity"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 103,
+        "category_label": "Copying false instrument with intent"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 108,
+        "category_label": "Counterfeiting Customs documents"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 112,
+        "category_label": "Counterfeiting of dies or marks"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 118,
+        "category_label": "Custody or control of false instruments etc."
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 135,
+        "category_label": "Evasion of liability by deception"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 148,
+        "category_label": "False accounting"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 156,
+        "category_label": "Forgery"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 163,
+        "category_label": "Fraud by abuse of position"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 166,
+        "category_label": "Fraud by failing to disclose information"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 169,
+        "category_label": "Fraud by false representation"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 175,
+        "category_label": "Fraudulent evasion of duty"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 179,
+        "category_label": "Fraudulent evasion: not elsewhere specified"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 187,
+        "category_label": "Handling stolen goods"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 197,
+        "category_label": "Illegal importation: not elsewhere specified"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 227,
+        "category_label": "Making or supplying articles for use in frauds"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 245,
+        "category_label": "Obtaining pecuniary advantage by deception"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 248,
+        "category_label": "Obtaining property by deception"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 251,
+        "category_label": "Obtaining services by deception"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 254,
+        "category_label": "Obtaining services by dishonesty"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 259,
+        "category_label": "Offences in relation to dies or stamps"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 270,
+        "category_label": "Participating in fraudulent business carried on by sole trader etc."
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 289,
+        "category_label": "Possession etc of articles for use in frauds"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 348,
+        "category_label": "Theft"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 365,
+        "category_label": "Using a copy of a false instrument"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 368,
+        "category_label": "Using a false instrument"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 372,
+        "category_label": "VAT offences"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 389,
+        "category_label": "Miscellaneous/other"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 391,
+        "category_label": "Counterfeiting notes and coins"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 393,
+        "category_label": "Destruction of registers of births etc."
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 395,
+        "category_label": "Fraudulent evasion: counterfeit notes or coins"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 397,
+        "category_label": "Illegal importation: counterfeit notes or coins"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 399,
+        "category_label": "Making false entries in copies of registers sent to register"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 401,
+        "category_label": "Making, custody or control of counterfeiting materials etc."
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 403,
+        "category_label": "Offences involving custody or control of counterfeit notes and coins"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 405,
+        "category_label": "Passing counterfeit notes and coins"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 407,
+        "category_label": "Possession (with intention) of apparatus or material for making false identity documents"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 409,
+        "category_label": "Possession (with intention) of false identity documents"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 411,
+        "category_label": "Possession of false identify documents"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 413,
+        "category_label": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 415,
+        "category_label": "Removal of articles from places open to the public"
+    },
+    {
+        "class_id": "K",
+        "class_label": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+        "category_id": 417,
+        "category_label": "Undischarged bankrupt being concerned in a company"
+    }
+]
