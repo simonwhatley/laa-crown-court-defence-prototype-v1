@@ -1,0 +1,45 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+{% include "./includes/_page_styles.html" %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./includes/_page_scripts.html" %}
+{% endblock %}
+
+{% block content %}
+<main class="content browse" id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-full">
+
+        <a class="link-back" href="../">Back</a>
+
+        <h1 class="heading-xlarge">
+            Offence details
+        </h1>
+
+        <div id="search-field" class="form-group">
+            <label class="form-label-bold" for="reference-number">
+                Search
+                <!-- <span class="form-hint">
+                    Lorem ipsum
+                </span> -->
+            </label>
+            <input id="search" class="form-control form-control-2-3" name="search" placeholder="" type="text" data-list="#offence-list" autocomplete="off">
+        </div>
+
+        <!-- <p>Total number of offences: {{offences.length}}</p> -->
+
+        {% include "./includes/_offences.html" %}
+
+        </div>
+    </div>
+
+</main>
+{% endblock %}
