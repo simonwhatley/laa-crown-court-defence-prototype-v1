@@ -1,0 +1,50 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+{% include "./includes/_page_styles.html" %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./includes/_page_scripts.html" %}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-full">
+
+        <a class="link-back" href="{{base}}">Back</a>
+
+        <h1 class="heading-xlarge">
+            Offence details
+        </h1>
+
+        <h2 class="heading-large">
+            {% if type == "class" -%}
+                <span class="heading-secondary">Class</span>
+                {{offences[0].class_label}}
+            {% elif type == "band" %}
+                <span class="heading-secondary">{{offences[0].class_label}}</span>
+                {{offences[0].band_label}}
+            {% elif type == "act" %}
+                <span class="heading-secondary">Act</span>
+                {{offences[0].act_label}}
+            {% else %}
+                List of offences
+            {% endif -%}
+        </h2>
+
+        <!-- {% include "./includes/_search_form.html" %} -->
+
+        {% include "./includes/_offences.html" %}
+
+        </div>
+    </div>
+
+</main>
+{% endblock %}

@@ -13,47 +13,38 @@
 {% endblock %}
 
 {% block content %}
-<main class="content browse" id="content" role="main">
+<main id="content" role="main">
 
     <div class="grid-row">
         <div class="column-full">
 
-        <a class="link-back" href="../">Back</a>
+            <a class="link-back" href="../">Back</a>
 
-        <h1 class="heading-xlarge">
-            Offence details
-        </h1>
+            <h1 class="heading-xlarge">
+                Offence details
+            </h1>
 
-        <div class="form-section">
+            <div class="form-section">
 
-            <div id="search-field" class="form-group">
-                <label class="form-label-bold" for="reference-number">
-                    Search
-                    <!-- <span class="form-hint">
-                        Lorem ipsum
-                    </span> -->
-                </label>
-                <input id="search" class="form-control form-control-2-3" name="search" placeholder="" type="text" data-list="#offence-list" autocomplete="off">
+                {% include "./includes/_search_form.html" %}
+
+                <div class="form-group column-two-thirds">
+                    <details>
+                        <summary>
+                            <span class="summary">Help with the offence classification</span>
+                        </summary>
+                        <div class="panel panel-border-narrow">
+                            <p>
+                                For more information on offence classification for the Advocates’ Graduated Fee Scheme (<abbr title="Advocates’ Graduated Fee Scheme">AGFS</abbr>), please visit the <a href="https://www.gov.uk/government/publications/crown-court-fee-guidance" target="_blank">Crown Court fee guidance</a> page on GOV.UK.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+
+                {% include "./includes/_offences.html" %}
+
             </div>
-
-            <div class="form-group">
-                <details>
-                    <summary>
-                        <span class="summary">Help with the offence classifications</span>
-                    </summary>
-                    <div class="panel panel-border-narrow">
-                        <p>
-                        Lorem ipsum dolor sit emet
-                        </p>
-                    </div>
-                </details>
-            </div>
-
-        </div>
-
-        <!-- <p>Total number of offences: {{offences.length}}</p> -->
-        {% include "./includes/_offences.html" %}
-
+   
         </div>
     </div>
 
