@@ -27,9 +27,9 @@ router.get('/search', function (req, res) {
 })
 
 // Route for class detail
-router.get('/detail/:class([0-9]+)', function (req, res) {
+router.get('/search/:class([0-9]+)', function (req, res) {
 
-  res.render(`${req.section}/${req.feature}/${req.version}/detail`,
+  res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
       type: "class",
@@ -39,9 +39,9 @@ router.get('/detail/:class([0-9]+)', function (req, res) {
 })
 
 // Route for band detail
-router.get('/detail/:class([0-9]+)/:band([0-9]+)/', function (req, res) {
+router.get('/search/:class([0-9]+)/:band([0-9]+)/', function (req, res) {
 
-  res.render(`${req.section}/${req.feature}/${req.version}/detail`,
+  res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
       type: "band",
@@ -51,9 +51,9 @@ router.get('/detail/:class([0-9]+)/:band([0-9]+)/', function (req, res) {
 })
 
 // Route for act detail
-router.get('/detail/act/:act([0-9]+)', function (req, res) {
+router.get('/search/act/:act([0-9]+)', function (req, res) {
 
-  res.render(`${req.section}/${req.feature}/${req.version}/detail`,
+  res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
       type: "act",
