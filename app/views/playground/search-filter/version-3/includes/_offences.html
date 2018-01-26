@@ -1,0 +1,25 @@
+<div class="grid-row">
+
+	<div id="offence-list" class="column-full">
+
+		{% for offence in offences -%}
+		<div id="offence-item-{{loop.index}}" class="grid-row offence-item">
+			
+			<div class="column-two-thirds">
+				<a href="{{base}}/detail/{{offence.class_id}}" class="font-xsmall link-grey">{{offence.class_label | capitalize}}</a> <span class="font-xsmall grey">></span> <a href="{{base}}/detail/{{offence.class_id}}/{{offence.band_id}}" class="font-xsmall link-grey">{{offence.band_label | capitalize}}</a><br>
+		        <span>{{offence.category_label | capitalize}}</span><br>
+		        <a href="" class="font-xsmall link-grey">{{offence.act_label}}</a>
+			</div>
+
+			<div class="column-one-third align-right"><br>
+				<a id="offence-item-button-{{loop.index}}" class="button offence-item-button" role="button" href="{{base}}/detail/{{offence.class_id}}/{{offence.band_id}}/{{offence.category_id}}">
+					Select and continue
+				</a>
+			</div>
+
+		</div>
+		{%- endfor %}
+
+	</div>
+
+</div>

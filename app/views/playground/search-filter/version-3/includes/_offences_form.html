@@ -1,0 +1,52 @@
+<form method="get">
+  <input type="hidden" name="offence_class" value="{{class.code}}">
+  <input type="hidden" name="offence_band" value="{{band.code}}">
+
+  <div class="form-section">
+    <div class="form-group">
+      <fieldset>
+
+        <legend>
+        <h3 class="heading-small">What is the category of offence?</h3>
+        </legend>
+
+
+<!-- <ul>
+    {% for offence in offences -%}
+    <li>
+      <span class="">{{offence.class_label | capitalize}} > {{offence.band_label | capitalize}}</span><br>
+        <a href="{{base}}/detail/{{offence.class_id}}/{{offence.band_id}}/{{offence.category_id}}">
+            {{offence.category_label | capitalize}}
+        </a><br>
+        <span class="">{{offence.act_label}}</span><br><br>
+    </li>
+    {%- endfor %}
+</ul> -->
+
+          {% for offence in offences -%}
+          <div class="multiple-choice">
+            <input id="radio-{{ offence.class_id }}-{{ offence.band_id }}-{{ offence.category_id }}" type="radio" name="offence_category" value="{{ category.code }}" {% if data['offence_category'] == offence.category_id %}checked="checked"{% endif %}>
+            <label for="radio-{{ offence.class_id }}-{{ offence.band_id }}-{{ offence.category_id }}">{{ offence.category_label }}</label>
+          </div>
+          {%- endfor %}
+
+        
+
+        <p class="form-block bold">or</p>
+        <div class="multiple-choice">
+          <input id="radio-misc" type="radio" name="offence_category" value="misc" {{ checked('offence_category','misc') }}>
+          <label for="radio-misc">Miscellaneous / other</label>
+        </div>
+
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-group form-buttons">
+      <input type="submit" class="button" value="Save and continue">
+      <input type="submit" class="button button-tertiary" value="Save as draft">
+    </div>
+  </div>
+
+</form>
