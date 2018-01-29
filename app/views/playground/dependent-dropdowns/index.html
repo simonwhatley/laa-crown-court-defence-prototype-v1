@@ -13,51 +13,16 @@
     	<a class="link-back" href="../">Back</a>
 
 	    <h1 class="heading-xlarge">
-	      Dependant drop-downs
+	      Dependent drop-downs
 	    </h1>
 
-	    <form action="" method="post">
-
-        <div class="form-section">
-
-          <div class="form-group" data-required="true" data-error="Offence class is required">
-            <label class="form-label-bold" for="offence-class">
-              Offence class
-              <!-- <span class="form-hint">Something</span> -->
-            </label>
-
-            <select id="offence-class" class="form-control form-control-2-3">
-               <option value=""></option>
-               <option value='A'>A – Homicide and related grave offences</option>
-               <option value='B'>B – Offences involving serious violence or damage and serious drug offences</option>
-               <option value='C'>C – Lesser offences involving violence or damage and less serious drug offences</option>
-               <option value='D'>D – Serious sexual offences and offences against children</option>
-               <option value='E'>E – Burglary</option>
-               <option value='F'>F – Other offences of dishonesty up to £30,000</option>
-               <option value='G'>G – Other offences of dishonesty between £30,001 and £100,000</option>
-               <option value='H'>H – Miscellaneous lesser offences</option>
-               <option value='I'>I – Offences against public justice and similar offences</option>
-               <option value='J'>J – Serious sexual offences, offences against children</option>
-               <option value='K'>K – Offences of dishonesty in Class F where the value in is in excess of £100,000</option>
-            </select>
-
-          </div>
-
-          <div class="form-group" data-required="true" data-error="Offence category is required">
-            <label class="form-label-bold" for="offence-category">
-              Offence category
-              <!-- <span class="form-hint">Something</span> -->
-            </label>
-
-            <select id="offence-category" class="form-control form-control-2-3 depdrop" data-depends="['offence-class']" data-url="/data/offences.json">
-               <!-- your select options -->
-            </select>
-
-          </div>
-
-        </div>
-
-      </form>
+	    <h2 class="heading-medium">Versions</h2>
+      <ul class="list list-bullet">
+        <li><a href="./version-0/">Version 0</a></li>
+        <!-- <li><a href="./version-1/">Version 1</a></li>
+        <li><a href="./version-2/">Version 2</a></li>
+        <li><a href="./version-3/">Version 3</a></li> -->
+      </ul>
 
       <div class="grid-row">
         <div class="column-full">
@@ -66,7 +31,7 @@
           <h2 class="heading-medium">Examples and documentation</h2>
 
           <ul class="list list-bullet">
-            <li><a href=""></a></li>
+            <li><a href="https://github.com/kartik-v/dependent-dropdown">Dependent Dropdown code on GitHub</a> and <a href="http://plugins.krajee.com/dependent-dropdown">Dependent Dropdown demo</a> – JQuery plugin that enables to add and control multi level dependent dropdown lists.</li>
           </ul>
 
         </div>

@@ -1,9 +1,0 @@
-// $json_output = {
-//     output: [
-//         {id: 'id-1', name: 'name-1'],
-//         {id: 'id-2', name: 'name-2'],
-//         {id: 'id-3', name: 'name-3']
-//     ],
-//     selected: 'default_id'
-// };
-

@@ -48,6 +48,11 @@ router.use(/\/playground\/search-filter\/version-([0-9]+)/, (req, res, next) => 
   require(`./views/playground/search-filter/version-${req.params[0]}/routes`)(req, res, next);
 })
 
+// Playground > Dependent drop-downs
+router.use(/\/playground\/dependent-dropdowns\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/dependent-dropdowns/version-${req.params[0]}/routes`)(req, res, next);
+})
+
 // Add your routes above this line
 
 module.exports = router

@@ -1,0 +1,452 @@
+{
+    "classes": [
+        {
+            "code": 1,
+            "label": "Murder & manslaughter",
+            "slug": "murder-manslaughter",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 1.1",
+                    "slug": "band-1-1",
+                    "description": "Killing of a child (16 years old or under); killing of two or more persons; killing of a police officer, prison officer or equivalent public servant in the course of their duty; killing of a patient in a medical or nursing care context; corporate manslaughter; manslaughter by gross negligence; missing body killing.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 1.2",
+                    "slug": "band-1-2",
+                    "description": "Killing done with a firearm; defendant has a previous conviction for murder; body is dismembered (literally), or destroyed by fire or other means by the offender; the defendant is a child (16 or under).",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 1.3",
+                    "slug": "band-1-3",
+                    "description": "All other cases of murder.",
+                    "categories": []
+                },
+                {
+                    "code": 4,
+                    "label": "Band 1.4",
+                    "slug": "band-1-4",
+                    "description": "All other cases of manslaughter.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 2,
+            "label": "Terrorism",
+            "slug": "terrorism",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 2.1",
+                    "slug": "band-2-1",
+                    "description": "Terrorist murder (S63B Terrorism Act 2000); Explosive Substances Act 1883 offences – especially S2&3; preparation for terrorism, S5 Terrorism Act 2000, disseminating terrorist publications, S2 Terrorism Act 2006; possession of material for the purpose of terrorism, S57 Terrorism Act 2000.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 2.2",
+                    "slug": "band-2-2",
+                    "description": "All other terrorist offences.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 3,
+            "label": "Serious Violence",
+            "slug": "serious-violence",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 3.1",
+                    "slug": "band-3-1",
+                    "description": "Attempted murder of a child, two or more persons, police officer nursing/medical contact or any violent offence committed with a live firearm.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 3.2",
+                    "slug": "band-3-2",
+                    "description": "All other attempted murder.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 3.3",
+                    "slug": "band-3-3",
+                    "description": "S18.",
+                    "categories": []
+                },
+                {
+                    "code": 4,
+                    "label": "Band 3.4",
+                    "slug": "band-3-4",
+                    "description": "All other serious violence (unless standard, or specified in Band 3.5).",
+                    "categories": []
+                },
+                {
+                    "code": 5,
+                    "label": "Band 3.5",
+                    "slug": "band-3-5",
+                    "description": "s20 Offences Against the Persons Act cases, s47 cases (Actual Bodily Harm), and Threats to Kill.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 4,
+            "label": "Sex offences (children)",
+            "slug": "sex-offences-children",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 4.1",
+                    "slug": "band-4-1",
+                    "description": "Rape / Assault by penetration.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 4.2",
+                    "slug": "band-4-2",
+                    "description": "Sexual Assault.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 4.3",
+                    "slug": "band-4-3",
+                    "description": "All other offences (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 5,
+            "label": "Sex offences (adult)",
+            "slug": "sex-offences-adult",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 5.1",
+                    "slug": "band-5-1",
+                    "description": "Rape / Assault by penetration.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 5.2",
+                    "slug": "band-5-2",
+                    "description": "Sexual Assault.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 5.3",
+                    "slug": "band-5-3",
+                    "description": "All other offences (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 6,
+            "label": "Dishonesty",
+            "slug": "dishonesty",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 6.1",
+                    "slug": "band-6-1",
+                    "description": "Over £10m or over 20,000 pages.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 6.2",
+                    "slug": "band-6-2",
+                    "description": "Over £1m or over 10,000 pages.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 6.3",
+                    "slug": "band-6-3",
+                    "description": "Over £100,000.",
+                    "categories": []
+                },
+                {
+                    "code": 4,
+                    "label": "Band 6.4",
+                    "slug": "band-6-4",
+                    "description": "Under £100,000.",
+                    "categories": []
+                },
+                {
+                    "code": 5,
+                    "label": "Band 6.5",
+                    "slug": "band-6-5",
+                    "description": "Under £30,000.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 7,
+            "label": "Property Damage",
+            "slug": "property-damage",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 7.1",
+                    "slug": "band-7-1",
+                    "description": "Arson with intent to endanger life/reckless as to endanger life.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 7.2",
+                    "slug": "band-7-2",
+                    "description": "Simple arson and criminal damage over £30,000.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 7.3",
+                    "slug": "band-7-3",
+                    "description": "All other offences (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 8,
+            "label": "Offences against the Public Interest",
+            "slug": "offences-against-the-public-interest",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 8.1",
+                    "slug": "band-8-1",
+                    "description": "All offences against the public interest (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 9,
+            "label": "Drugs offences",
+            "slug": "drugs-offences",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 9.1",
+                    "slug": "band-9-1",
+                    "description": "Class A: Importation S3 Misuse of Drugs Act/ S170 Customs and Excise Management Act; Or over 5,000 pages of evidence; Or weight over: 5kg Heroin or Cocaine, 10,000 Ecstasy tablets, 250,000 squares of LSD.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 9.2",
+                    "slug": "band-9-2",
+                    "description": "Class B: Importation S3 Misuse of Drugs Act/ S170 Customs and Excise Management Act; Or over 5,000 pages of evidence; Or weight over: 20kg Amphetamine, 200kg Cannabis, 5kg Ketamine.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 9.3",
+                    "slug": "band-9-3",
+                    "description": "Class C: Importation S3 Misuse of Drugs Act/ S170 Customs and Excise Management Act; Or over 5,000 pages of evidence.",
+                    "categories": []
+                },
+                {
+                    "code": 4,
+                    "label": "Band 9.4",
+                    "slug": "band-9-4",
+                    "description": "Class A: 1,000 pages of evidence; Or weight over: 1kg Heroin or Cocaine, 2,000 Ecstasy tablets, 2,5000 squares of LSD.",
+                    "categories": []
+                },
+                {
+                    "code": 5,
+                    "label": "Band 9.5",
+                    "slug": "band-9-5",
+                    "description": "Class B: 1,000 pages of evidence; Or weight over: 4kg of Amphetamine, 40kg of Cannabis, 1kg Ketamine.",
+                    "categories": []
+                },
+                {
+                    "code": 6,
+                    "label": "Band 9.6",
+                    "slug": "band-9-6",
+                    "description": "Class C: 1,000 pages of evidence.",
+                    "categories": []
+                },
+                {
+                    "code": 7,
+                    "label": "Band 9.7",
+                    "slug": "band-9-7",
+                    "description": "All other drugs cases of any class (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 10,
+            "label": "Driving offences",
+            "slug": "driving-offences",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 10.1",
+                    "slug": "band-10-1",
+                    "description": "Death and serious injury by driving cases (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 11,
+            "label": "Burglary & Robbery",
+            "slug": "burglary-robbery",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 11.1",
+                    "slug": "band-11-1",
+                    "description": "Aggravated burglary, burglary with intent to GBH or rape, and armed robbery.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 12,
+            "label": "Firearms Offences",
+            "slug": "firearms-offences",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 12.1",
+                    "slug": "band-12-1",
+                    "description": "Possession or supply of a firearm/ammunition with any ulterior intent or any offence for which the maximum penalty is life imprisonment.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 12.2",
+                    "slug": "band-12-2",
+                    "description": "Minimum sentence offence.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 12.3",
+                    "slug": "band-12-3",
+                    "description": "All other offences (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 13,
+            "label": "Other Offences Against the Person",
+            "slug": "other-offences-against-the-person",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 13.1",
+                    "slug": "band-13-1",
+                    "description": "Kidnapping; false imprisonment; blackmail (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 14,
+            "label": "Exploitation and human trafficking offences",
+            "slug": "exploitation-and-human-trafficking-offences",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 14.1",
+                    "slug": "band-14-1",
+                    "description": "All exploitation / human trafficking offences (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 15,
+            "label": "Public order offers",
+            "slug": "public-order-offers",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 15.1",
+                    "slug": "band-15-1",
+                    "description": "Riot and prison mutiny/riot.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 15.2",
+                    "slug": "band-15-2",
+                    "description": "Violent disorder.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 15.3",
+                    "slug": "band-15-3",
+                    "description": "Affray.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 16,
+            "label": "Regulatory offences",
+            "slug": "regulatory-offences",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 16.1",
+                    "slug": "band-16-1",
+                    "description": "Health and Safety or environmental cases involving one or more fatalities or defined by the HSE or EA as a category or Stage 1 \"major incident\"; Death of a child; A major accident at a site regulated by the Control of Major Accident Hazards Regulations 1999 (as amended); large scale explosion.",
+                    "categories": []
+                },
+                {
+                    "code": 2,
+                    "label": "Band 16.2",
+                    "slug": "band-16-2",
+                    "description": "Health and Safety or environmental cases not falling within Band 1 but involving: Serious and permanent personal injury/disability and/or widespread; Destruction of property (other than that owned or occupied by the defendant); Extensive pollution/irreparable damage to the environment; Toxic gas release (e.g. carbon monoxide, chlorine gas); Cases involving incidents governed by mining/railways/aviation legislation.",
+                    "categories": []
+                },
+                {
+                    "code": 3,
+                    "label": "Band 16.3",
+                    "slug": "band-16-3",
+                    "description": "All other offences (unless standard).",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "code": 17,
+            "label": "Standard cases",
+            "slug": "standard-cases",
+            "bands": [
+                {
+                    "code": 1,
+                    "label": "Band 17.1",
+                    "slug": "band-17-1",
+                    "description": "Standard cases.",
+                    "categories": []
+                }
+            ]
+        }
+    ]
+}
