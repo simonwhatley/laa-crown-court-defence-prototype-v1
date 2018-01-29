@@ -12,16 +12,24 @@ router.use('/', (req, res, next) => {
 
 // Route index page
 router.get('/', function (req, res) {
+  req.session.destroy()
   res.redirect(`/${req.section}/${req.feature}/${req.version}/search`)
 })
 
 // Route for search
 router.get('/search', function (req, res) {
 
+  if (req.session.data.category !== null) {
+    offence = utils.getOffenceByCategoryId(req.session.data.class, req.session.data.band, req.session.data.category)
+  } else {
+    offence = null
+  }
+
   res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
-      offences: utils.getOffences()
+      offences: utils.getOffences(),
+      offence: offence
     })
 
 })

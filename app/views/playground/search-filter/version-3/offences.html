@@ -24,7 +24,17 @@
                 Offence details
             </h1>
 
+            {% if data.category.length -%}
+            <div class="grid-row">
+                <div class="column-two-thirds">
+                    {% include "./includes/_selected_offence.html" %}
+                </div>
+            </div>
+            {%- endif %}
+
             <div class="form-section">
+
+                <h2 class="heading-medium">Find the offence related to your claim</h2>
 
                 {% include "./includes/_search_form.html" %}
 
@@ -39,7 +49,6 @@
                     {% endif -%}
                 </p>
                 {% endif %}
-
 
                 <div class="form-group column-two-thirds">
                     <details>

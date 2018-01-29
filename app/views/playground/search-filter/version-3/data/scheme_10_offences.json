@@ -140,7 +140,7 @@
         "category_id": 8,
         "category_label": "Soliciting to commit murder",
         "act_id": 7,
-        "act_label": "Offences against the Person Act 1861 S.4 Criminal Law Act 1977 Sec1"
+        "act_label": "Offences against the Person Act 1861 S.4 Criminal Law Act 1977 S.1"
     },
     {
         "class_id": 1,
@@ -668,7 +668,7 @@
         "category_id": 31,
         "category_label": "Hoaxes involving noxious substances or things",
         "act_id": 27,
-        "act_label": "Anti-terrorism, Crime and Security Act 2001 Sec114"
+        "act_label": "Anti-terrorism, Crime and Security Act 2001 S.114"
     },
     {
         "class_id": 2,
@@ -1273,7 +1273,7 @@
         "category_id": 103,
         "category_label": "Administering poison with intent to injure or annoy",
         "act_id": 99,
-        "act_label": "Offences against the Person Act 1861 Sec24"
+        "act_label": "Offences against the Person Act 1861 S.24"
     },
     {
         "class_id": 3,
@@ -1284,7 +1284,7 @@
         "category_id": 104,
         "category_label": "Administering drugs or using instruments to procure abortion",
         "act_id": 100,
-        "act_label": "Offences against the Person Act 1861 Sec58"
+        "act_label": "Offences against the Person Act 1861 S.58"
     },
     {
         "class_id": 3,
@@ -1328,7 +1328,7 @@
         "category_id": 1078,
         "category_label": "Inflicting Grievous Bodily Harm without intent",
         "act_id": 854,
-        "act_label": "Offences against the Person Act 1861 Sec20"
+        "act_label": "Offences against the Person Act 1861 S.20"
     },
     {
         "class_id": 3,
@@ -1339,7 +1339,7 @@
         "category_id": 1079,
         "category_label": "Malicious Wounding",
         "act_id": 854,
-        "act_label": "Offences against the Person Act 1861 Sec20"
+        "act_label": "Offences against the Person Act 1861 S.20"
     },
     {
         "class_id": 3,
@@ -1350,7 +1350,7 @@
         "category_id": 1083,
         "category_label": "Assault occasioning actual bodily harm",
         "act_id": 858,
-        "act_label": "Offences against the Person Act 1861 Sec47"
+        "act_label": "Offences against the Person Act 1861 S.47"
     },
     {
         "class_id": 4,
@@ -9123,7 +9123,7 @@
         "category_id": 1382,
         "category_label": "Arson endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9134,7 +9134,7 @@
         "category_id": 1383,
         "category_label": "Arson to motor vehicle endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9145,7 +9145,7 @@
         "category_id": 1384,
         "category_label": "Arson to other building endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9156,7 +9156,7 @@
         "category_id": 1385,
         "category_label": "Arson to other property endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9167,7 +9167,7 @@
         "category_id": 1386,
         "category_label": "Racially aggravated arson to dwelling endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9178,7 +9178,7 @@
         "category_id": 1387,
         "category_label": "Racially aggravated arson to motor vehicle endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9189,7 +9189,7 @@
         "category_id": 1389,
         "category_label": "Racially aggravated arson to other building endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9200,7 +9200,7 @@
         "category_id": 1390,
         "category_label": "Racially aggravated arson to other property endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9266,7 +9266,7 @@
         "category_id": 1380,
         "category_label": "Arson to motor vehicle not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9277,7 +9277,7 @@
         "category_id": 1381,
         "category_label": "Arson to other property not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9288,7 +9288,7 @@
         "category_id": 1388,
         "category_label": "Racially aggravated arson to motor vehicle not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9299,7 +9299,7 @@
         "category_id": 1391,
         "category_label": "Racially aggravated arson to other property not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9486,7 +9486,7 @@
         "category_id": 1380,
         "category_label": "Arson to motor vehicle not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9497,7 +9497,7 @@
         "category_id": 1381,
         "category_label": "Arson to other property not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9508,7 +9508,7 @@
         "category_id": 1388,
         "category_label": "Racially aggravated arson to motor vehicle not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -9519,7 +9519,7 @@
         "category_id": 1391,
         "category_label": "Racially aggravated arson to other property not endangering life",
         "act_id": 1159,
-        "act_label": "Criminal Damage Act 1971 Sec1"
+        "act_label": "Criminal Damage Act 1971 S.1"
     },
     {
         "class_id": 7,
@@ -10465,7 +10465,7 @@
         "category_id": 455,
         "category_label": "Possession of a controlled drug with intent to supply – Class A – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10476,7 +10476,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10487,7 +10487,7 @@
         "category_id": 460,
         "category_label": "Possession of a controlled drug with intent to supply – Cocaine",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10498,7 +10498,7 @@
         "category_id": 461,
         "category_label": "Possession of a controlled drug with intent to supply – Crack",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10509,7 +10509,7 @@
         "category_id": 462,
         "category_label": "Possession of a controlled drug with intent to supply – Crystal Meths",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10520,7 +10520,7 @@
         "category_id": 463,
         "category_label": "Possession of a controlled drug with intent to supply – GHB",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10531,7 +10531,7 @@
         "category_id": 464,
         "category_label": "Possession of a controlled drug with intent to supply – Heroin",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10542,7 +10542,7 @@
         "category_id": 465,
         "category_label": "Possession of a controlled drug with intent to supply – LSD",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10553,7 +10553,7 @@
         "category_id": 466,
         "category_label": "Possession of a controlled drug with intent to supply – MDMA",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10564,7 +10564,7 @@
         "category_id": 467,
         "category_label": "Possession of a controlled drug with intent to supply – Methadone",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10872,7 +10872,7 @@
         "category_id": 453,
         "category_label": "Possession of a controlled drug with intent to supply – Amphetamine",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10883,7 +10883,7 @@
         "category_id": 456,
         "category_label": "Possession of a controlled drug with intent to supply – Class B – Mephedrone including cathinone derivatives",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10894,7 +10894,7 @@
         "category_id": 457,
         "category_label": "Possession of a controlled drug with intent to supply – Class B – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -10905,7 +10905,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11191,7 +11191,7 @@
         "category_id": 454,
         "category_label": "Possession of a controlled drug with intent to supply – Anabolic steroids",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11202,7 +11202,7 @@
         "category_id": 458,
         "category_label": "Possession of a controlled drug with intent to supply – Class C – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11213,7 +11213,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11224,7 +11224,7 @@
         "category_id": 463,
         "category_label": "Possession of a controlled drug with intent to supply – GHB",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11532,7 +11532,7 @@
         "category_id": 455,
         "category_label": "Possession of a controlled drug with intent to supply – Class A – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11543,7 +11543,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11554,7 +11554,7 @@
         "category_id": 460,
         "category_label": "Possession of a controlled drug with intent to supply – Cocaine",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11565,7 +11565,7 @@
         "category_id": 461,
         "category_label": "Possession of a controlled drug with intent to supply – Crack",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11576,7 +11576,7 @@
         "category_id": 462,
         "category_label": "Possession of a controlled drug with intent to supply – Crystal Meths",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11587,7 +11587,7 @@
         "category_id": 463,
         "category_label": "Possession of a controlled drug with intent to supply – GHB",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11598,7 +11598,7 @@
         "category_id": 464,
         "category_label": "Possession of a controlled drug with intent to supply – Heroin",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11609,7 +11609,7 @@
         "category_id": 465,
         "category_label": "Possession of a controlled drug with intent to supply – LSD",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11620,7 +11620,7 @@
         "category_id": 466,
         "category_label": "Possession of a controlled drug with intent to supply – MDMA",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11631,7 +11631,7 @@
         "category_id": 467,
         "category_label": "Possession of a controlled drug with intent to supply – Methadone",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11851,7 +11851,7 @@
         "category_id": 453,
         "category_label": "Possession of a controlled drug with intent to supply – Amphetamine",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11862,7 +11862,7 @@
         "category_id": 456,
         "category_label": "Possession of a controlled drug with intent to supply – Class B – Mephedrone including cathinone derivatives",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11873,7 +11873,7 @@
         "category_id": 457,
         "category_label": "Possession of a controlled drug with intent to supply – Class B – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -11884,7 +11884,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12093,7 +12093,7 @@
         "category_id": 454,
         "category_label": "Possession of a controlled drug with intent to supply – Anabolic steroids",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12104,7 +12104,7 @@
         "category_id": 458,
         "category_label": "Possession of a controlled drug with intent to supply – Class C – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12115,7 +12115,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12126,7 +12126,7 @@
         "category_id": 463,
         "category_label": "Possession of a controlled drug with intent to supply – GHB",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12632,7 +12632,7 @@
         "category_id": 453,
         "category_label": "Possession of a controlled drug with intent to supply – Amphetamine",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12643,7 +12643,7 @@
         "category_id": 454,
         "category_label": "Possession of a controlled drug with intent to supply – Anabolic steroids",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12654,7 +12654,7 @@
         "category_id": 455,
         "category_label": "Possession of a controlled drug with intent to supply – Class A – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12665,7 +12665,7 @@
         "category_id": 456,
         "category_label": "Possession of a controlled drug with intent to supply – Class B – Mephedrone including cathinone derivatives",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12676,7 +12676,7 @@
         "category_id": 457,
         "category_label": "Possession of a controlled drug with intent to supply – Class B – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12687,7 +12687,7 @@
         "category_id": 458,
         "category_label": "Possession of a controlled drug with intent to supply – Class C – Other",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12698,7 +12698,7 @@
         "category_id": 459,
         "category_label": "Possession of a controlled drug with intent to supply – Class unspecified",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12709,7 +12709,7 @@
         "category_id": 460,
         "category_label": "Possession of a controlled drug with intent to supply – Cocaine",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12720,7 +12720,7 @@
         "category_id": 461,
         "category_label": "Possession of a controlled drug with intent to supply – Crack",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12731,7 +12731,7 @@
         "category_id": 462,
         "category_label": "Possession of a controlled drug with intent to supply – Crystal Meths",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12742,7 +12742,7 @@
         "category_id": 463,
         "category_label": "Possession of a controlled drug with intent to supply – GHB",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12753,7 +12753,7 @@
         "category_id": 463,
         "category_label": "Possession of a controlled drug with intent to supply – GHB",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12764,7 +12764,7 @@
         "category_id": 464,
         "category_label": "Possession of a controlled drug with intent to supply – Heroin",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12775,7 +12775,7 @@
         "category_id": 465,
         "category_label": "Possession of a controlled drug with intent to supply – LSD",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12786,7 +12786,7 @@
         "category_id": 466,
         "category_label": "Possession of a controlled drug with intent to supply – MDMA",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -12797,7 +12797,7 @@
         "category_id": 467,
         "category_label": "Possession of a controlled drug with intent to supply – Methadone",
         "act_id": 289,
-        "act_label": "Misuse of Drugs Act 1971 Sec5(3)"
+        "act_label": "Misuse of Drugs Act 1971 S.5(3)"
     },
     {
         "class_id": 9,
@@ -13094,7 +13094,7 @@
         "category_id": 1080,
         "category_label": "Drivers injuring persons by furious driving",
         "act_id": 855,
-        "act_label": "Offences against the Person Act 1861 Sec35"
+        "act_label": "Offences against the Person Act 1861 S.35"
     },
     {
         "class_id": 10,
@@ -13138,7 +13138,7 @@
         "category_id": 478,
         "category_label": "Aggravated burglary in a dwelling",
         "act_id": 298,
-        "act_label": "Theft Act 1968 Sec10"
+        "act_label": "Theft Act 1968 S.10"
     },
     {
         "class_id": 11,
@@ -16977,7 +16977,7 @@
         "category_id": 744,
         "category_label": "False or misleading statements re interim possession orders",
         "act_id": 552,
-        "act_label": "Crim Justice & Public Order Act 1994 Sec75"
+        "act_label": "Crim Justice & Public Order Act 1994 S.75"
     },
     {
         "class_id": 17,
@@ -17516,7 +17516,7 @@
         "category_id": 799,
         "category_label": "Preferential payment to creditor",
         "act_id": 595,
-        "act_label": "Deeds of Arrangement Act 1914 Sec17"
+        "act_label": "Deeds of Arrangement Act 1914 S.17"
     },
     {
         "class_id": 17,
@@ -19320,7 +19320,7 @@
         "category_id": 977,
         "category_label": "False representations or fraud for purpose of obtaining creditors’ consent to a agreement in connection with winding up",
         "act_id": 775,
-        "act_label": "Insolvency Act 1986 Sec211"
+        "act_label": "Insolvency Act 1986 S.211"
     },
     {
         "class_id": 17,
@@ -19331,7 +19331,7 @@
         "category_id": 978,
         "category_label": "Supply of intoxicating substance",
         "act_id": 776,
-        "act_label": "Intoxicating Substances (Supply) Act 1985 Sec1"
+        "act_label": "Intoxicating Substances (Supply) Act 1985 S.1"
     },
     {
         "class_id": 17,
@@ -20288,7 +20288,7 @@
         "category_id": 1081,
         "category_label": "Assault on person preserving wreck",
         "act_id": 856,
-        "act_label": "Offences against the Person Act 1861 Sec37"
+        "act_label": "Offences against the Person Act 1861 S.37"
     },
     {
         "class_id": 17,
@@ -20299,7 +20299,7 @@
         "category_id": 1082,
         "category_label": "Assault with intent to resist apprehension",
         "act_id": 857,
-        "act_label": "Offences against the Person Act 1861 Sec38"
+        "act_label": "Offences against the Person Act 1861 S.38"
     },
     {
         "class_id": 17,
@@ -20310,7 +20310,7 @@
         "category_id": 1084,
         "category_label": "Procuring drugs etc. to cause abortion",
         "act_id": 859,
-        "act_label": "Offences against the Person Act 1861 Sec59"
+        "act_label": "Offences against the Person Act 1861 S.59"
     },
     {
         "class_id": 17,
@@ -20882,7 +20882,7 @@
         "category_id": 1138,
         "category_label": "Acts intended or likely to stir up racial or religious hatred – Use of words or behaviour or display or written material",
         "act_id": 922,
-        "act_label": "Public Order Act 1986 Sec18"
+        "act_label": "Public Order Act 1986 S.18"
     },
     {
         "class_id": 17,
@@ -20893,7 +20893,7 @@
         "category_id": 1139,
         "category_label": "Acts intended or likely to stir up racial or religious hatred – Publishing or distributing written material",
         "act_id": 923,
-        "act_label": "Public Order Act 1986 Sec19"
+        "act_label": "Public Order Act 1986 S.19"
     },
     {
         "class_id": 17,
@@ -20904,7 +20904,7 @@
         "category_id": 1140,
         "category_label": "Acts intended or likely to stir up racial or religious hatred – Public performance of play",
         "act_id": 924,
-        "act_label": "Public Order Act 1986 Sec20"
+        "act_label": "Public Order Act 1986 S.20"
     },
     {
         "class_id": 17,
@@ -20915,7 +20915,7 @@
         "category_id": 1141,
         "category_label": "Acts intended or likely to stir up racial or religious hatred – Distributing, showing or playing a recording",
         "act_id": 925,
-        "act_label": "Public Order Act 1986 Sec21"
+        "act_label": "Public Order Act 1986 S.21"
     },
     {
         "class_id": 17,
@@ -20926,7 +20926,7 @@
         "category_id": 1142,
         "category_label": "Acts intended or likely to stir up racial or religious hatred – Broadcasting including programme in programme service",
         "act_id": 926,
-        "act_label": "Public Order Act 1986 Sec22"
+        "act_label": "Public Order Act 1986 S.22"
     },
     {
         "class_id": 17,
@@ -20937,7 +20937,7 @@
         "category_id": 1143,
         "category_label": "Acts intended or likely to stir up racial or religious hatred – Possession of racially inflammatory material",
         "act_id": 927,
-        "act_label": "Public Order Act 1986 Sec23"
+        "act_label": "Public Order Act 1986 S.23"
     },
     {
         "class_id": 17,
@@ -21784,7 +21784,7 @@
         "category_id": 1220,
         "category_label": "Soliciting another for the purpose of obtaining their sexual services as a prostitute in a street or public place",
         "act_id": 1005,
-        "act_label": "Sexual Offences Act 2003 Sec51A"
+        "act_label": "Sexual Offences Act 2003 S.51A"
     },
     {
         "class_id": 17,
