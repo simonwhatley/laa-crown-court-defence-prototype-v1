@@ -24,13 +24,13 @@ module.exports = {
 		return classObj
 	},
 
-	getOffenceByCategoryId: function(class_id, band_id, category_id) {
+	getOffencesByCategoryId: function(category_id) {
 		
-		var classObj = this.getOffencesByBandId(class_id, band_id).filter(function (el) {
+		var classObj = this.getOffences().filter(function (el) {
   			 return (el.category_id == category_id)
 		})
 
-		return classObj[0]
+		return classObj
 	},
 
 	getOffencesByActId: function(act_id) {
@@ -40,6 +40,15 @@ module.exports = {
 		})
 
 		return classObj
+	},
+
+	getOffence: function(class_id, band_id, category_id) {
+		
+		var classObj = this.getOffencesByBandId(class_id, band_id).filter(function (el) {
+  			 return (el.category_id == category_id)
+		})
+
+		return classObj[0]
 	}
 	
 }

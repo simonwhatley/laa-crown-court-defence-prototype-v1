@@ -20,7 +20,7 @@ router.get('/', function (req, res) {
 router.get('/search', function (req, res) {
 
   if (req.session.data.category !== null) {
-    offence = utils.getOffenceByCategoryId(req.session.data.class, req.session.data.band, req.session.data.category)
+    offence = utils.getOffence(req.session.data.class, req.session.data.band, req.session.data.category)
   } else {
     offence = null
   }
@@ -37,11 +37,18 @@ router.get('/search', function (req, res) {
 // Route for class detail
 router.get('/search/:class([0-9]+)', function (req, res) {
 
+  if (req.session.data.category !== null) {
+    offence = utils.getOffence(req.session.data.class, req.session.data.band, req.session.data.category)
+  } else {
+    offence = null
+  }
+
   res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
       type: "class",
-      offences: utils.getOffencesByClassId(req.params.class)
+      offences: utils.getOffencesByClassId(req.params.class),
+      offence: offence
     })
 
 })
@@ -49,11 +56,18 @@ router.get('/search/:class([0-9]+)', function (req, res) {
 // Route for band detail
 router.get('/search/:class([0-9]+)/:band([0-9]+)/', function (req, res) {
 
+  if (req.session.data.category !== null) {
+    offence = utils.getOffence(req.session.data.class, req.session.data.band, req.session.data.category)
+  } else {
+    offence = null
+  }
+
   res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
       type: "band",
-      offences: utils.getOffencesByBandId(req.params.class, req.params.band)
+      offences: utils.getOffencesByBandId(req.params.class, req.params.band),
+      offence: offence
     })
 
 })
@@ -61,11 +75,18 @@ router.get('/search/:class([0-9]+)/:band([0-9]+)/', function (req, res) {
 // Route for act detail
 router.get('/search/act/:act([0-9]+)', function (req, res) {
 
+  if (req.session.data.category !== null) {
+    offence = utils.getOffence(req.session.data.class, req.session.data.band, req.session.data.category)
+  } else {
+    offence = null
+  }
+
   res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
       type: "act",
-      offences: utils.getOffencesByActId(req.params.act)
+      offences: utils.getOffencesByActId(req.params.act),
+      offence: offence
     })
 
 })
