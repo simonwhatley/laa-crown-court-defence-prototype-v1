@@ -1,1 +1,8 @@
 <!-- <script src="/public/javascripts/dependent-dropdown.min.js"></script> -->
+<script>
+    $("#offence-category").depdrop({
+    	depends: ['offence-class'],
+        url: './data/categories',
+        parentParam: 'class'
+    });
+</script>
