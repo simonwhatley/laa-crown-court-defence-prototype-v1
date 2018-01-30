@@ -4,7 +4,8 @@ const router = new express.Router()
 const utils = require('../../../utils')
 
 router.get('/', (req, res) => {
-  res.redirect(`/${req.feature}/${req.version}/sign-in`)
+    req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/sign-in`)
 })
 
 // Add your routes here - above the module.exports line
