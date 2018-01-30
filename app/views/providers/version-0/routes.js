@@ -1,7 +1,5 @@
 const express = require('express')
-const router = express.Router()
-
-const session = require('express-session')
+const router = new express.Router()
 
 const utils = require('../../../utils')
 
@@ -17,42 +15,52 @@ router.get('/', (req, res) => {
 
 router.get('/advocates/case-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/case-details`, 
-        { 
-            'next_url' : './fee-details', 
-            'previous_url' : '../advocates/',
-            'home_url' : '../advocates/'
+        {
+            links: [
+                {'next' : './fee-details'}, 
+                {'previous' : '../advocates/'},
+                {'home' : '../advocates/'}
+            ]
         });
 });
 
 router.get('/advocates/fee-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/fee-details`, 
-        { 
-            'next_url' : './check-claim', 
-            'previous_url' : '../case-details'
+        {
+            links: [ 
+                {'next' : './check-claim'}, 
+                {'previous' : '../case-details'}
+            ]
         });
 });
 
 router.get('/advocates/check-claim', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/check-claim`, 
         { 
-            'next_url' : './certify-claim', 
-            'previous_url' : '../fee-details'
+            links: [
+                {'next' : './certify-claim'}, 
+                {'previous' : '../fee-details'}
+            ]
         });
 });
 
 router.get('/advocates/certify-claim', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/certify-claim-claim`, 
         { 
-            'next_url' : './thank-you', 
-            'previous_url' : '../check-claim'
+            links: [
+                {'next' : './thank-you'}, 
+                {'previous' : '../check-claim'}
+            ]
         });
 });
 
 router.get('/advocates/thank-you', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/thank-you`, 
     	{ 
-    		'new_claim_url' : './case-details', 
-    		'your_claims_url' : './' 
+            links: [
+        		{'new_claim' : './case-details'}, 
+        		{'your_claims' : './'}
+            ]
     	});
 });
 
@@ -63,59 +71,73 @@ router.get('/advocates/thank-you', function(req, res) {
 router.get('/litigators/bill-type', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/case-details`, 
         { 
-            'next_url' : './case-details', 
-            'previous_url' : '../litigators/',
-            'home_url' : '../litigators/'
+            links: [
+                {'next' : './case-details'}, 
+                {'previous' : '../litigators/'},
+                {'home' : '../litigators/'}
+            ]
         });
 });
 
 router.get('/litigators/transfer-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/case-details`, 
         { 
-            'next_url' : './case-details', 
-            'previous_url' : './bill-type',
-            'home_url' : '../litigators/'
+            links: [
+                {'next' : './case-details'}, 
+                {'previous' : './bill-type'},
+                {'home' : '../litigators/'}
+            ]
         });
 });
 
 router.get('/litigators/case-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/case-details`, 
         { 
-            'next_url' : './fee-details', 
-            'previous_url' : '../litigators/',
-            'home_url' : '../litigators/'
+            links: [
+                {'next' : './fee-details'}, 
+                {'previous' : '../litigators/'},
+                {'home' : '../litigators/'}
+            ]
         });
 });
 
 router.get('/litigators/fee-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/fee-details`, 
         { 
-            'next_url' : './check-claim', 
-            'previous_url' : '../case-details'
+            links: [
+                {'next' : './check-claim'}, 
+                {'previous' : '../case-details'}
+            ]
         });
 });
 
 router.get('/litigators/check-claim', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/check-claim`, 
         { 
-            'next_url' : './certify-claim', 
-            'previous_url' : '../fee-details'
+            links: [
+                {'next' : './certify-claim'}, 
+                {'previous' : '../fee-details'}
+            ]
         });
 });
 
 router.get('/litigators/certify-claim', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/certify-claim-claim`, 
         { 
-            'next_url' : './thank-you', 
-            'previous_url' : '../check-claim'
+            links: [
+                {'next' : './thank-you'}, 
+                {'previous' : '../check-claim'}
+            ]
         });
 });
 
 router.get('/litigators/thank-you', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/thank-you`, 
     	{ 
-    		'new_claim_url' : './case-details', 
-    		'your_claims_url' : './' 
+            links: [
+        		{'new_claim' : './case-details'}, 
+        		{'your_claims' : './'}
+            ]
     	});
 });
 
