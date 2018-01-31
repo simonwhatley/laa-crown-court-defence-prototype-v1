@@ -3,6 +3,8 @@
     $("#offence-category").depdrop({
     	depends: ['offence-class'],
         url: './data/categories',
-        parentParam: 'class'
+        loadingText: '',
+        parentParam: 'offence_class'
+        {%- if data['offence_class'].length %}, initialize: true{%- endif %}
     });
 </script>

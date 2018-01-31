@@ -38,7 +38,7 @@
                       <option value=""></option>
 
                       {% for class in classes -%}
-                      <option value="{{class.id}}">{{class.id}} – {{class.name}}</option>
+                      <option value="{{class.id}}" {%- if data['offence_class'] == class.id %}selected="selected"{%- endif %}>{{class.id}} – {{class.name}}</option>
                       {%- endfor %}
 
                     </select>
@@ -48,7 +48,7 @@
                   <div class="form-group">
                     <label class="form-label-bold" for="offence-category">
                       Offence category
-                      <!-- <span class="form-hint">Something</span> -->
+                      <span class="form-hint">If the offence category is not listed, choose "Miscellaneous/other"</span>
                     </label>
 
                     <select id="offence-category" name="offence_category" class="form-control form-control-2-3">
