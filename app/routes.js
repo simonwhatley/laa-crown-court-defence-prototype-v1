@@ -38,19 +38,24 @@ router.use(/\/playground\/accordion\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/playground/accordion/version-${req.params[0]}/routes`)(req, res, next);
 })
 
+// Playground > Autocomplete
+router.use(/\/playground\/autocomplete\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/autocomplete/version-${req.params[0]}/routes`)(req, res, next);
+})
+
 // Playground > Collections
 router.use(/\/playground\/collections\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/playground/collections/version-${req.params[0]}/routes`)(req, res, next);
 })
 
-// Playground > Search/filter
-router.use(/\/playground\/search-filter\/version-([0-9]+)/, (req, res, next) => {
-  require(`./views/playground/search-filter/version-${req.params[0]}/routes`)(req, res, next);
-})
-
 // Playground > Dependent drop-downs
 router.use(/\/playground\/dependent-dropdowns\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/playground/dependent-dropdowns/version-${req.params[0]}/routes`)(req, res, next);
+})
+
+// Playground > Search/filter
+router.use(/\/playground\/search-filter\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/search-filter/version-${req.params[0]}/routes`)(req, res, next);
 })
 
 // Add your routes above this line
