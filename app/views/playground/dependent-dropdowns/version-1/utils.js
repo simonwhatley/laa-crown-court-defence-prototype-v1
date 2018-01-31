@@ -6,46 +6,42 @@ module.exports = {
 		return offences
 	},
 
-	getOffencesByClassId: function(class_id) {
+	getOffenceClass: function(class_id) {
 		
-		var classObj = this.getOffences().filter(function (el) {
-  			 return (el.class_id == class_id)
+		var classObj = this.getOffences().classes.filter(function (el) {
+  			 return (el.id == class_id)
 		})
+
+		return classObj[0]
+	},
+
+	getOffenceBands: function(class_id) {
+		
+		var classObj = this.getOffenceClass(class_id).bands
 
 		return classObj
 	},
 
-	getOffencesByBandId: function(class_id, band_id) {
+	getOffenceBand: function(class_id, band_id) {
 		
-		var classObj = this.getOffencesByClassId(class_id).filter(function (el) {
-  			 return (el.band_id == band_id)
+		var classObj = this.getOffenceClass(class_id).bands.filter(function (el) {
+  			 return (el.id == band_id)
 		})
+
+		return classObj[0]
+	},
+
+	getOffenceCategories: function(class_id, band_id) {
+		
+		var classObj = this.getOffenceBand(class_id, band_id).categories
 
 		return classObj
 	},
 
-	getOffencesByCategoryId: function(category_id) {
+	getOffenceCategory: function(class_id, band_id, category_id) {
 		
-		var classObj = this.getOffences().filter(function (el) {
-  			 return (el.category_id == category_id)
-		})
-
-		return classObj
-	},
-
-	getOffencesByActId: function(act_id) {
-		
-		var classObj = this.getOffences().filter(function (el) {
-  			 return (el.act_id == act_id)
-		})
-
-		return classObj
-	},
-
-	getOffence: function(class_id, band_id, category_id) {
-		
-		var classObj = this.getOffencesByBandId(class_id, band_id).filter(function (el) {
-  			 return (el.category_id == category_id)
+		var classObj = this.getOffenceBands(class_id, band_id).categories.filter(function (el) {
+  			 return (el.id == category_id)
 		})
 
 		return classObj[0]

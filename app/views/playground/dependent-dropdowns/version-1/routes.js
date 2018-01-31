@@ -22,24 +22,19 @@ router.get('/search', function (req, res) {
   res.render(`${req.section}/${req.feature}/${req.version}/offences`,
     {
       base: req.baseUrl,
-      offences: utils.getOffences()
+      classes: utils.getOffences().classes
     })
 
 })
 
+router.get('/data/bands', function (req, res) {
+  var data = { output: utils.getOffenceBands(req.session.data.class[0]) , selected: req.session.data.offence_band }
+  res.json(data)
+})
 
-
-router.get('/data/:class([0-9]+)', function (req, res) {
-
-  res.json(utils.getOffencesByClassId(req.params.class))
-
-  // res.render(`${req.section}/${req.feature}/${req.version}/offences`,
-  //   {
-  //     base: req.baseUrl,
-  //     offences: utils.getOffences(),
-  //     offence: utils.getOffence(req.session.data.class, req.session.data.band, req.session.data.category)
-  //   })
-
+router.get('/data/categories', function (req, res) {
+  var data = { output: utils.getOffenceCategories(req.session.data.class[0], req.session.data.band[0]) , selected: req.session.data.offence_category }
+  res.json(data)
 })
 
 // Add your routes above this line

@@ -1,1 +1,21 @@
 <!-- <script src="/public/javascripts/dependent-dropdown.min.js"></script> -->
+<script>
+$("#offence-band").depdrop({
+	depends: ['offence-class'],
+    url: './data/bands',
+    loadingText: '',
+    parentParam: 'class',
+    nameParam: 'label'
+    {%- if data['offence_class'].length %}, initialize: true{%- endif %}
+});
+
+    $("#offence-category").depdrop({
+    	depends: ['offence-band'],
+        url: './data/categories',
+        loadingText: '',
+        parentParam: 'band',
+        nameParam: 'label'
+        {%- if data['offence_band'].length %}, initialize: true{%- endif %}
+    });
+
+</script>

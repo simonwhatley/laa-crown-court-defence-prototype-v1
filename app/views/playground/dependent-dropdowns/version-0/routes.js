@@ -29,9 +29,7 @@ router.get('/search', function (req, res) {
 
 router.get('/data/categories', function (req, res) {
   var data = { output: utils.getOffenceClass(req.session.data.offence_class[0]).categories , selected: req.session.data.offence_category }
-
   res.json(data)
-
 })
 
 // Add your routes above this line
