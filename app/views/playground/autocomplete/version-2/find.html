@@ -1,0 +1,83 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+{% include "./includes/_page_styles.html" %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./includes/_page_scripts.html" %}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <a class="link-back" href="../">Back</a>
+
+            <h1 class="heading-xlarge">
+                Offence details
+            </h1>
+
+            <form method="post">
+
+                <div class="form-section">
+
+                  <div class="form-group">
+                    <label class="form-label-bold" for="case-types">
+                      Offence category
+                      <span class="form-hint">If the offence category is not listed, choose "Miscellaneous/other"</span>
+                    </label>
+
+                    <select id="offence-categories" name="offence_category">
+                      <option value="" selected>Pick an option</option>
+                      
+                      {% for class in offences -%}
+                      <optgroup label="{{class.name}}">
+
+                        {% for category in class.categories -%}
+
+                          <option value="{{category.key}}" data-abbreviations="{{category.abbreviations}}" data-other-names="{{category.other_names}}">{{category.name}}</option>
+
+                        {%- endfor %}
+
+                      </optgroup>
+                      {%- endfor %}
+
+                    </select>                    
+
+                  </div>
+
+                </div>
+
+                <div class="form-section">
+                  <div class="form-group form-buttons">
+                    <input type="submit" class="button" value="Save and continue">
+                    <!-- <input type="submit" class="button button-tertiary" value="Save as draft"> -->
+                    <a href="{{base}}">Clear selection</a>
+                  </div>
+                </div>
+
+            </form>
+
+            <details>
+                <summary>
+                    <span class="summary">Help with the offence classification</span>
+                </summary>
+                <div class="panel panel-border-narrow">
+                    <p>
+                        For more information on offence classification for the Advocates’ Graduated Fee Scheme (<abbr title="Advocates’ Graduated Fee Scheme">AGFS</abbr>), please visit the <a href="https://www.gov.uk/government/publications/crown-court-fee-guidance" target="_blank">Crown Court fee guidance</a> page on GOV.UK.
+                    </p>
+                </div>
+            </details>
+   
+        </div>
+    </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,2543 @@
+[
+	{
+		"key": "A",
+		"name": "Homicide and related grave offences",
+		"categories":
+			[
+			    {
+			        "key": "A48",
+			        "name": "Attempt to cause explosion making or keeping explosive etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "A77",
+			        "name": "Causing explosion likely to endanger life or property",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "A90",
+			        "name": "Child destruction",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "A211",
+			        "name": "Infanticide",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "A232",
+			        "name": "Manslaughter",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "A238",
+			        "name": "Murder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "A341",
+			        "name": "Soliciting to commit murder",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "B",
+		"name": "Offences involving serious violence or damage and serious drug offences",
+		"categories":
+			[
+			    {
+			        "key": "B15",
+			        "name": "Acquisition use or possession of criminal property",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B16",
+			        "name": "Activities relating to opium",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B19",
+			        "name": "Administering chloroform, laudanum etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B21",
+			        "name": "Administering poison etc. so as to endanger life",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B24",
+			        "name": "Aggravated arson",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B25",
+			        "name": "Aggravated burglary",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B26",
+			        "name": "Aggravated criminal damage",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B28",
+			        "name": "Aggravated vehicle taking resulting in death",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B30",
+			        "name": "Aiding and abetting suicide",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B32",
+			        "name": "Allowing the death of a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B33",
+			        "name": "Armed robbery",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B36",
+			        "name": "Arson (where value exceeds £30,000)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B42",
+			        "name": "Assault with weapon with intent to rob",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B43",
+			        "name": "Assaulting prison officer whilst possessing firearm etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B49",
+			        "name": "Attempting to choke, suffocate, strangle etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B52",
+			        "name": "Blackmail",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B73",
+			        "name": "Causing bodily injury by explosives",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B74",
+			        "name": "Causing danger to road users",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B75",
+			        "name": "Causing death by careless driving while under the influence of drink or drugs",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B76",
+			        "name": "Causing death by dangerous driving",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B78",
+			        "name": "Causing miscarriage by poison, instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B79",
+			        "name": "Causing or allowing the death of a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B95",
+			        "name": "Concealing criminal property",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B98",
+			        "name": "Contamination of goods with intent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B114",
+			        "name": "Cruelty to persons under 16",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B115",
+			        "name": "Cultivation of cannabis plant",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B123",
+			        "name": "Directing terrorist organisation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B124",
+			        "name": "Disclosure prejudicing, or interference of material relevant to, investigation of terrorism",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B125",
+			        "name": "Disclosure under sections 330, 331, 332 or 333 of the Proceeds of Crime Act 2002 otherwise than in the form and manner prescribed",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B126",
+			        "name": "Drug trafficking offences at sea",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B128",
+			        "name": "Endangering the safety of an aircraft",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B129",
+			        "name": "Endangering the safety of railway passengers",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B143",
+			        "name": "Failure to disclose knowledge or suspicion of money laundering: nominated officers in the regulated sector",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B144",
+			        "name": "Failure to disclose knowledge or suspicion of money laundering: other nominated officers",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B145",
+			        "name": "Failure to disclose knowledge or suspicion of money laundering: regulated sector",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B150",
+			        "name": "False imprisonment",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B153",
+			        "name": "Firing on Revenue vessel",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B171",
+			        "name": "Fraudulent evasion of controls on Class A and B drugs",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B180",
+			        "name": "Fund-raising for terrorism",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B191",
+			        "name": "Hostage taking",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B192",
+			        "name": "Illegal importation of Class A and B drugs",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B199",
+			        "name": "Impeding persons endeavouring to escape wrecks",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B203",
+			        "name": "Incitement of terrorism overseas",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B214",
+			        "name": "Involvement in arrangements facilitating the acquisition, retention, use or control of criminal property",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B216",
+			        "name": "Kidnapping",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B224",
+			        "name": "Making or possession of explosive in suspicious circumstances",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B229",
+			        "name": "Making threats to kill",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B233",
+			        "name": "Manufacture and supply of scheduled substances",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B235",
+			        "name": "Membership of proscribed organisations",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B255",
+			        "name": "Occupier knowingly permitting drugs offences etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B256",
+			        "name": "Offences against international protection of nuclear material",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B260",
+			        "name": "Offences in relation to money laundering investigations",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B261",
+			        "name": "Offences in relation to proceeds of drug trafficking",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B267",
+			        "name": "Other offences involving money or property to be used for terrorism",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B281",
+			        "name": "Placing explosives with intent to cause bodily injury",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B290",
+			        "name": "Possession of a Class A or B drug with intent to supply",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B292",
+			        "name": "Possession of articles for terrorist purposes",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B295",
+			        "name": "Possession of firearm with criminal intent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B296",
+			        "name": "Possession of firearm with intent to endanger life",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B300",
+			        "name": "Possession or acquisition of certain prohibited weapons etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B302",
+			        "name": "Practitioner contravening drug supply regulations",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B305",
+			        "name": "Prison mutiny",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B311",
+			        "name": "Producing or supplying a Class A or B drug",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B315",
+			        "name": "Racially-aggravated arson (not endangering life)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B323",
+			        "name": "Riot",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B344",
+			        "name": "Support or meeting of proscribed organisations",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B349",
+			        "name": "Tipping off",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B358",
+			        "name": "Uniform of proscribed organisations",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B359",
+			        "name": "Unlawful collection of information for terrorist purposes",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B362",
+			        "name": "Use of firearm to resist arrest",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B369",
+			        "name": "Using explosive or corrosives with intent to cause grievous bodily harm",
+			        "other_names": [
+			        	"GBH",
+			        	"grievous bodily harm",
+			        	"greivous bodily harm",
+			        	"grevous bodily harm"
+			        ],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B373",
+			        "name": "Violent disorder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B376",
+			        "name": "Weapons training",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "B378",
+			        "name": "Wounding or grievous bodily harm with intent to cause grievous bodily harm etc.",
+			        "other_names": [
+			        	"GBH",
+			        	"grievous bodily harm",
+			        	"greivous bodily harm",
+			        	"grevous bodily harm"
+			        ],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "C",
+		"name": "Lesser offences involving violence or damage and less serious drug offences",
+		"categories":
+			[
+			    {
+			        "key": "C1",
+			        "name": "Abandonment of children under two",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C14",
+			        "name": "Acquisition by or supply of firearms to person denied them",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C22",
+			        "name": "Administering poison with intent to injure etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C35",
+			        "name": "Arson (other than aggravated arson) where value does not exceed £300",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C38",
+			        "name": "Assault occasioning actual bodily harm",
+			        "other_names": [
+			        	"ABH",
+			        	"actual bodily harm"
+			        ],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C44",
+			        "name": "Assaults on officers saving wrecks",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C45",
+			        "name": "Assisting illegal entry or harbouring persons",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C47",
+			        "name": "Assisting prisoners to escape",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C50",
+			        "name": "Attempting to injure or alarm the Sovereign",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C53",
+			        "name": "Bomb hoax",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C56",
+			        "name": "Breach of prison",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C59",
+			        "name": "Breaking or injuring submarine telegraph cables",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C68",
+			        "name": "Carrying loaded firearm in public place",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C88",
+			        "name": "Child abduction by connected person",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C89",
+			        "name": "Child abduction by other person",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C92",
+			        "name": "Circumcision of females",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C96",
+			        "name": "Concealment of birth",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C113",
+			        "name": "Criminal damage (other than aggravated criminal damage)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C120",
+			        "name": "Dealing in firearms",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C132",
+			        "name": "Escaping from lawful custody without force",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C139",
+			        "name": "Failing to keep dogs under proper control resulting in injury",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C140",
+			        "name": "Failure to comply with certificate when transferring firearm",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C141",
+			        "name": "Failure to disclose information about terrorism",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C142",
+			        "name": "Failure to disclose knowledge or suspicion of money laundering",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C170",
+			        "name": "Fraudulent evasion of agricultural levy",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C172",
+			        "name": "Fraudulent evasion of controls on Class C drugs",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C188",
+			        "name": "Harbouring escaped prisoners",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C193",
+			        "name": "Illegal importation of Class C drugs",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C222",
+			        "name": "Making gunpowder etc. to commit offences",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C228",
+			        "name": "Making threats to destroy or damage property",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C239",
+			        "name": "Neglecting to provide food for or assaulting servants etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C265",
+			        "name": "Offender armed or disguised",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C274",
+			        "name": "Permitting an escape",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C282",
+			        "name": "Possessing anything with intent to destroy or damage property",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C291",
+			        "name": "Possession of a Class C drug with intent to supply",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C293",
+			        "name": "Possession of Class A drug",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C297",
+			        "name": "Possession of firearm without certificate",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C298",
+			        "name": "Possession of firearms by person convicted of crime",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C301",
+			        "name": "Possession or acquisition of shotgun without certificate",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C312",
+			        "name": "Producing or supplying Class C drug",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C316",
+			        "name": "Racially-aggravated assault",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C317",
+			        "name": "Racially-aggravated criminal damage",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C322",
+			        "name": "Rescue",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C324",
+			        "name": "Robbery (other than armed robbery)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C326",
+			        "name": "Setting spring guns with intent to inflict grievous bodily harm",
+			        "other_names": [
+			        	"GBH",
+			        	"grievous bodily harm",
+			        	"greivous bodily harm",
+			        	"grevous bodily harm"
+			        ],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C338",
+			        "name": "Shortening of shotgun or possession of shortened shotgun",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C339",
+			        "name": "Shortening of smooth bore gun",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C342",
+			        "name": "Stirring up racial hatred",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C343",
+			        "name": "Supplying instrument etc. to cause miscarriage",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C350",
+			        "name": "Tipping-off in relation to money laundering investigations",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C356",
+			        "name": "Trespassing with a firearm",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "C361",
+			        "name": "Unlawful wounding",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "D",
+		"name": "Serious sexual offences and offences against children",
+		"categories":
+			[
+			    {
+			        "key": "D2",
+			        "name": "Abduction of defective from parent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D4",
+			        "name": "Abduction of unmarried girl under 18 from parent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D9",
+			        "name": "Abuse of position of trust",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D10",
+			        "name": "Abuse of position of trust: causing a child to engage in sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D11",
+			        "name": "Abuse of position of trust: causing a child to watch sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D12",
+			        "name": "Abuse of trust: sexual activity in the presence of a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D13",
+			        "name": "Abuse of trust: sexual activity with a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D18",
+			        "name": "Administering a substance with intent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D20",
+			        "name": "Administering drugs to obtain intercourse",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D64",
+			        "name": "Care workers: causing a person with a mental disorder to watch a sexual act",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D66",
+			        "name": "Care workers: sexual activity in presence of a person with a mental disorder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D70",
+			        "name": "Causing a child to watch a sexual act",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D72",
+			        "name": "Causing a person with a mental disorder to watch a sexual act",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D80",
+			        "name": "Causing or encouraging prostitution of defective",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D84",
+			        "name": "Causing or inciting prostitution for gain",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D87",
+			        "name": "Causing sexual activity without penetration",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D91",
+			        "name": "Child sex offence committed by person under 18",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D93",
+			        "name": "Committing offence with intent to commit sexual offence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D100",
+			        "name": "Controlling prostitution for gain",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D130",
+			        "name": "Engaging in sexual activity in the presence of a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D131",
+			        "name": "Engaging in sexual activity in the presence of a person with a mental disorder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D136",
+			        "name": "Exposure",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D183",
+			        "name": "Gross indecency between male of 21 or over and male under 16",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D198",
+			        "name": "Ill-treatment of persons of unsound mind",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D202",
+			        "name": "Incest other than by man with a girl under 13",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D204",
+			        "name": "Incitement to commit incest",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D207",
+			        "name": "Indecent assault on a man",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D208",
+			        "name": "Indecent assault on a woman",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D212",
+			        "name": "Intercourse with an animal",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D217",
+			        "name": "Living on earnings of male prostitution",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D231",
+			        "name": "Man living on earnings of prostitution",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D234",
+			        "name": "Meeting child following sexual grooming",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D275",
+			        "name": "Permitting defective to use premises for intercourse",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D306",
+			        "name": "Procuration of girl under 21",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D307",
+			        "name": "Procurement of a defective",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D327",
+			        "name": "Sex with adult relative",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D331",
+			        "name": "Sexual assault",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D337",
+			        "name": "Sexual penetration of a corpse",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D355",
+			        "name": "Trespass with intent to commit sexual offence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D374",
+			        "name": "Voyeurism",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "D377",
+			        "name": "Woman exercising control over prostitute",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "E",
+		"name": "Burglary",
+		"categories":
+			[
+			    {
+			        "key": "E62",
+			        "name": "Burglary (domestic)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "E63",
+			        "name": "Burglary (non-domestic)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "E182",
+			        "name": "Going equipped to steal",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "F",
+		"name": "Other offences of dishonesty up to £30,000",
+		"categories":
+			[
+			    {
+			        "key": "F6",
+			        "name": "Abstraction of electricity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F101",
+			        "name": "Copying false instrument with intent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F106",
+			        "name": "Counterfeiting Customs documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F110",
+			        "name": "Counterfeiting of dies or marks",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F116",
+			        "name": "Custody or control of false instruments etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F121",
+			        "name": "Destruction of registers of births etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F133",
+			        "name": "Evasion of liability by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F146",
+			        "name": "False accounting",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F154",
+			        "name": "Forgery",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F161",
+			        "name": "Fraud by abuse of position",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F164",
+			        "name": "Fraud by failing to disclose information",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F167",
+			        "name": "Fraud by false representation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F173",
+			        "name": "Fraudulent evasion of duty",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F177",
+			        "name": "Fraudulent evasion: not elsewhere specified",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F185",
+			        "name": "Handling stolen goods",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F195",
+			        "name": "Illegal importation: not elsewhere specified",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F219",
+			        "name": "Making false entries in copies of registers sent to register",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F225",
+			        "name": "Making or supplying articles for use in frauds",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F243",
+			        "name": "Obtaining pecuniary advantage by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F246",
+			        "name": "Obtaining property by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F249",
+			        "name": "Obtaining services by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F252",
+			        "name": "Obtaining services by dishonesty",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F257",
+			        "name": "Offences in relation to dies or stamps",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F268",
+			        "name": "Participating in fraudulent business carried on by sole trader etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F283",
+			        "name": "Possession (with intention) of apparatus or material for making false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F284",
+			        "name": "Possession (with intention) of false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F285",
+			        "name": "Possession of false identify documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F286",
+			        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F287",
+			        "name": "Possession etc of articles for use in frauds",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F346",
+			        "name": "Theft",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F363",
+			        "name": "Using a copy of a false instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F366",
+			        "name": "Using a false instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F370",
+			        "name": "VAT offences",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F390",
+			        "name": "Counterfeiting notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F394",
+			        "name": "Fraudulent evasion: counterfeit notes or coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F396",
+			        "name": "Illegal importation: counterfeit notes or coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F400",
+			        "name": "Making, custody or control of counterfeiting materials etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F402",
+			        "name": "Offences involving custody or control of counterfeit notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F404",
+			        "name": "Passing counterfeit notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F414",
+			        "name": "Removal of articles from places open to the public",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "F416",
+			        "name": "Undischarged bankrupt being concerned in a company",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "G",
+		"name": "Other offences of dishonesty between £30,001 and £100,000",
+		"categories":
+			[
+			    {
+			        "key": "G7",
+			        "name": "Abstraction of electricity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G102",
+			        "name": "Copying false instrument with intent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G107",
+			        "name": "Counterfeiting Customs documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G109",
+			        "name": "Counterfeiting notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G111",
+			        "name": "Counterfeiting of dies or marks",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G117",
+			        "name": "Custody or control of false instruments etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G134",
+			        "name": "Evasion of liability by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G147",
+			        "name": "False accounting",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G155",
+			        "name": "Forgery",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G162",
+			        "name": "Fraud by abuse of position",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G165",
+			        "name": "Fraud by failing to disclose information",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G168",
+			        "name": "Fraud by false representation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G174",
+			        "name": "Fraudulent evasion of duty",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G176",
+			        "name": "Fraudulent evasion: counterfeit notes or coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G178",
+			        "name": "Fraudulent evasion: not elsewhere specified",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G186",
+			        "name": "Handling stolen goods",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G194",
+			        "name": "Illegal importation: counterfeit notes or coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G196",
+			        "name": "Illegal importation: not elsewhere specified",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G226",
+			        "name": "Making or supplying articles for use in frauds",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G230",
+			        "name": "Making, custody or control of counterfeiting materials etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G244",
+			        "name": "Obtaining pecuniary advantage by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G247",
+			        "name": "Obtaining property by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G250",
+			        "name": "Obtaining services by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G253",
+			        "name": "Obtaining services by dishonesty",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G258",
+			        "name": "Offences in relation to dies or stamps",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G262",
+			        "name": "Offences involving custody or control of counterfeit notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G269",
+			        "name": "Participating in fraudulent business carried on by sole trader etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G271",
+			        "name": "Passing counterfeit notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G288",
+			        "name": "Possession etc of articles for use in frauds",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G321",
+			        "name": "Removal of articles from places open to the public",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G347",
+			        "name": "Theft",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G357",
+			        "name": "Undischarged bankrupt being concerned in a company",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G364",
+			        "name": "Using a copy of a false instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G367",
+			        "name": "Using a false instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G371",
+			        "name": "VAT offences",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G392",
+			        "name": "Destruction of registers of births etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G398",
+			        "name": "Making false entries in copies of registers sent to register",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G406",
+			        "name": "Possession (with intention) of apparatus or material for making false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G408",
+			        "name": "Possession (with intention) of false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G410",
+			        "name": "Possession of false identify documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "G412",
+			        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "H",
+		"name": "Miscellaneous lesser offences",
+		"categories":
+			[
+			    {
+			        "key": "H17",
+			        "name": "Acts outraging public decency",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H23",
+			        "name": "Affray",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H27",
+			        "name": "Aggravated vehicle taking",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H29",
+			        "name": "Agreeing to indemnify sureties",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H41",
+			        "name": "Assault with intent to resist arrest",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H51",
+			        "name": "Being drunk on an aircraft",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H54",
+			        "name": "Breach of anti-social behaviour order",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H55",
+			        "name": "Breach of harassment injunction",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H57",
+			        "name": "Breach of restraining order",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H58",
+			        "name": "Breach of sex offender order",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H60",
+			        "name": "Buggery of males of 16 or over otherwise than in private",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H85",
+			        "name": "Causing prostitution of women",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H119",
+			        "name": "Dangerous driving",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H122",
+			        "name": "Detention of woman in brothel or other premises",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H157",
+			        "name": "Forgery and misuse of driving documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H158",
+			        "name": "Forgery etc. of licences and other documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H159",
+			        "name": "Forgery of driving documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H160",
+			        "name": "Forgery, alteration, fraud of licences etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H184",
+			        "name": "Gross indecency between males (other than where one is 21 or over and the other is under 16)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H190",
+			        "name": "Having an article with a blade or point in a public place",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H200",
+			        "name": "Impersonating Customs officer",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H209",
+			        "name": "Indecent display",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H215",
+			        "name": "Keeping a disorderly house",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H223",
+			        "name": "Making off without payment",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H236",
+			        "name": "Misconduct endangering ship or persons on board ship",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H237",
+			        "name": "Mishandling or falsifying parking documents etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H240",
+			        "name": "Obscene articles intended for publication for gain",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H241",
+			        "name": "Obstructing Customs officer",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H242",
+			        "name": "Obstructing engine or carriage on railway",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H263",
+			        "name": "Offences of publication of obscene matter",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H264",
+			        "name": "Offences relating to the safe custody of controlled drugs",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H294",
+			        "name": "Possession of Class B or C drug",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H299",
+			        "name": "Possession of offensive weapon",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H304",
+			        "name": "Presentation of obscene performance",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H308",
+			        "name": "Procurement of a woman by false pretences",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H309",
+			        "name": "Procurement of intercourse by threats etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H310",
+			        "name": "Procuring others to commit homosexual acts",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H313",
+			        "name": "Putting people in fear of violence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H314",
+			        "name": "Racially aggravated harassment/putting another in fear of violence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H318",
+			        "name": "Racially-aggravated public order offence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H325",
+			        "name": "Sending prohibited articles by post",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H340",
+			        "name": "Solicitation for immoral purposes",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H351",
+			        "name": "Trade description offences (9 offences)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H360",
+			        "name": "Unlawful eviction and harassment of occupier",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "H375",
+			        "name": "Wanton or furious driving",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "I",
+		"name": "Offences against public justice and similar offences",
+		"categories":
+			[
+			    {
+			        "key": "I46",
+			        "name": "Assisting offenders",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I94",
+			        "name": "Concealing an arrestable offence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I97",
+			        "name": "Conspiring to commit offences outside the United Kingdom",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I104",
+			        "name": "Corrupt transactions with agents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I105",
+			        "name": "Corruption in public office",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I127",
+			        "name": "Embracery",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I137",
+			        "name": "Fabrication of evidence with intent to mislead a tribunal",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I149",
+			        "name": "False evidence before European Court",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I151",
+			        "name": "False statement tendered under section 5B of the Magistrates' Courts Act 1980",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I152",
+			        "name": "False statement tendered under section 9 of the Criminal Justice Act 1967",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I181",
+			        "name": "Giving false statements to procure cremation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I189",
+			        "name": "Harming, threatening to harm a witness, juror etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I213",
+			        "name": "Intimidating a witness, juror etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I218",
+			        "name": "Making a false statement to obtain interim possession order",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I220",
+			        "name": "Making false statement to authorised officer",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I221",
+			        "name": "Making false statement to resist making of interim possession order",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I273",
+			        "name": "Perjuries (7 offences)",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I278",
+			        "name": "Personating for purposes of bail etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I279",
+			        "name": "Personation of jurors",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I280",
+			        "name": "Perverting the course of public justice",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "I303",
+			        "name": "Prejudicing a drug trafficking investigation",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "J",
+		"name": "Serious sexual offences, offences against children",
+		"categories":
+			[
+			    {
+			        "key": "J3",
+			        "name": "Abduction of unmarried girl under 16 from parent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J5",
+			        "name": "Abduction of woman by force",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J31",
+			        "name": "Allowing or procuring child under 16 to go abroad to perform",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J34",
+			        "name": "Arranging child sex offence",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J37",
+			        "name": "Assault by penetration",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J39",
+			        "name": "Assault of child under 13 by penetration",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J40",
+			        "name": "Assault with intent to commit buggery",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J61",
+			        "name": "Buggery of person under 16",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J65",
+			        "name": "Care workers: inciting person with mental disorder to engage in sexual act",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J67",
+			        "name": "Care workers: sexual activity with a person with a mental disorder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J69",
+			        "name": "Causing a child to engage in sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J71",
+			        "name": "Causing a child under 13 to engage in sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J81",
+			        "name": "Causing or encouraging prostitution of girl under 16",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J82",
+			        "name": "Causing or inciting a person with a mental disorder to engage in sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J83",
+			        "name": "Causing or inciting child prostitution or pornography",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J86",
+			        "name": "Causing sexual activity with penetration",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J99",
+			        "name": "Controlling a child prostitute",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J138",
+			        "name": "Facilitating child prostitution",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J201",
+			        "name": "Incest by man with a girl under 13",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J205",
+			        "name": "Inciting a child family member to engage in sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J206",
+			        "name": "Indecency with children under 14",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J210",
+			        "name": "Inducing person with mental disorder to engage in sexual activity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J266",
+			        "name": "Offering inducement to procure sexual activity with a person with a mental disorder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J272",
+			        "name": "Paying for sexual services of a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J276",
+			        "name": "Permitting girl under 13 to use premises for sexual intercourse",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J277",
+			        "name": "Permitting girl under 16 to use premises for intercourse",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J319",
+			        "name": "Rape",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J320",
+			        "name": "Rape of child under 13",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J328",
+			        "name": "Sexual activity with a child",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J329",
+			        "name": "Sexual activity with a child family member, with penetration",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J330",
+			        "name": "Sexual activity with a person with a mental disorder",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J332",
+			        "name": "Sexual assault of child under 13",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J333",
+			        "name": "Sexual intercourse with defective",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J334",
+			        "name": "Sexual intercourse with girl under 13",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J335",
+			        "name": "Sexual intercourse with girl under 16",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J336",
+			        "name": "Sexual intercourse with patients",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J345",
+			        "name": "Taking, having etc. indecent photographs of children",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J352",
+			        "name": "Trafficking into UK for sexual exploitation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J353",
+			        "name": "Trafficking out of UK for sexual exploitation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "J354",
+			        "name": "Trafficking within UK for sexual exploitation",
+			        "other_names": [],
+			        "abbreviations": []
+			    }
+			]
+	},
+	{
+		"key": "K",
+		"name": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+		"categories":
+			[
+			    {
+			        "key": "K8",
+			        "name": "Abstraction of electricity",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K103",
+			        "name": "Copying false instrument with intent",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K108",
+			        "name": "Counterfeiting Customs documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K112",
+			        "name": "Counterfeiting of dies or marks",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K118",
+			        "name": "Custody or control of false instruments etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K135",
+			        "name": "Evasion of liability by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K148",
+			        "name": "False accounting",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K156",
+			        "name": "Forgery",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K163",
+			        "name": "Fraud by abuse of position",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K166",
+			        "name": "Fraud by failing to disclose information",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K169",
+			        "name": "Fraud by false representation",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K175",
+			        "name": "Fraudulent evasion of duty",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K179",
+			        "name": "Fraudulent evasion: not elsewhere specified",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K187",
+			        "name": "Handling stolen goods",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K197",
+			        "name": "Illegal importation: not elsewhere specified",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K227",
+			        "name": "Making or supplying articles for use in frauds",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K245",
+			        "name": "Obtaining pecuniary advantage by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K248",
+			        "name": "Obtaining property by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K251",
+			        "name": "Obtaining services by deception",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K254",
+			        "name": "Obtaining services by dishonesty",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K259",
+			        "name": "Offences in relation to dies or stamps",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K270",
+			        "name": "Participating in fraudulent business carried on by sole trader etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K289",
+			        "name": "Possession etc of articles for use in frauds",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K348",
+			        "name": "Theft",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K365",
+			        "name": "Using a copy of a false instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K368",
+			        "name": "Using a false instrument",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K372",
+			        "name": "VAT offences",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K391",
+			        "name": "Counterfeiting notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K393",
+			        "name": "Destruction of registers of births etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K395",
+			        "name": "Fraudulent evasion: counterfeit notes or coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K397",
+			        "name": "Illegal importation: counterfeit notes or coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K399",
+			        "name": "Making false entries in copies of registers sent to register",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K401",
+			        "name": "Making, custody or control of counterfeiting materials etc.",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K403",
+			        "name": "Offences involving custody or control of counterfeit notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K405",
+			        "name": "Passing counterfeit notes and coins",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K407",
+			        "name": "Possession (with intention) of apparatus or material for making false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K409",
+			        "name": "Possession (with intention) of false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K411",
+			        "name": "Possession of false identify documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K413",
+			        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K415",
+			        "name": "Removal of articles from places open to the public",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K417",
+			        "name": "Undischarged bankrupt being concerned in a company",
+			        "other_names": [],
+			        "abbreviations": []
+			    },
+			    {
+			        "key": "K389",
+			        "name": "Miscellaneous/other",
+			        "other_names": [
+			        	"Miscellaneous / other",
+			        	"miscellaneous",
+			        	"other"
+			        ],
+			        "abbreviations": []
+			    }
+			]
+	}
+]
