@@ -1,6 +1,3 @@
-
-
-
 var govukGovernmentOrganisationsAutocomplete = function(options) {
 
   var sourceSelect = function(query, callback) {

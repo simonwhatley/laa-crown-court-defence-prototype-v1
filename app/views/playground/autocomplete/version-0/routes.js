@@ -21,21 +21,10 @@ router.get('/find', function (req, res) {
 
   res.render(`${req.section}/${req.feature}/${req.version}/find`,
     {
-      base: req.baseUrl,
-      organisations: utils.getOrganisations()
+      base: req.baseUrl
     })
 
 })
-
-// router.get('/data/bands', function (req, res) {
-//   var data = { output: utils.getOffenceBands(req.session.data.class[0]) , selected: req.session.data.offence_band }
-//   res.json(data)
-// })
-
-// router.get('/data/categories', function (req, res) {
-//   var data = { output: utils.getOffenceCategories(req.session.data.class[0], req.session.data.band[0]) , selected: req.session.data.offence_category }
-//   res.json(data)
-// })
 
 // Add your routes above this line
 module.exports = router
