@@ -42,7 +42,7 @@
 
                         {% for category in class.categories -%}
 
-                          <option value="{{category.key}}" data-abbreviations="{{category.abbreviations}}" data-other-names="{{category.other_names}}">{{category.name}}</option>
+                          <option value="{{category.key}}" {% if category.abbreviations.length -%}data-abbreviations="{{category.abbreviations}}" {%- endif %}{% if category.other_names.length -%}data-other-names="{{category.other_names}}" {%- endif %}{% if category.key == data.offence_category %}selected="selected"{%- endif %}>{{category.name}}</option>
 
                         {%- endfor %}
 
