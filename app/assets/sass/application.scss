@@ -47,6 +47,10 @@ $path: "/public/images/";
   @include button ($red);
 }
 
+.button-ghost {
+  @include button ($grey-4);
+}
+
 .form-buttons *{
   margin-right: 10px;
   display: inline-block;
