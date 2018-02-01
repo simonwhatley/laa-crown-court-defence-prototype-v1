@@ -1,4 +1,4 @@
-var cccdCaseTypesAutocomplete = function(options) {
+var autocomplete = function(options) {
 
   var sourceSelect = function(query, callback) {
 
@@ -25,14 +25,14 @@ var cccdCaseTypesAutocomplete = function(options) {
       return new RegExp('\\b' + word, 'i')
     })
 
-    var matches = orgs.map(function(offence) {
+    var matches = orgs.map(function(thing) {
 
-      var allNames = [offence.name]
-        .concat(offence.other_names)
-        .concat(offence.abbreviations)
+      var allNames = [thing.name]
+        .concat(thing.other_names)
+        .concat(thing.abbreviations)
         .filter(function(name) { return name })
 
-      offence['resultPosition'] = null
+      thing['resultPosition'] = null
 
 
       for (var i = 0; i < allNames.length; i++) {
@@ -53,31 +53,31 @@ var cccdCaseTypesAutocomplete = function(options) {
         }, {'count': 0, 'lowestPosition': -1})
 
 
-        if (matches.count == regexes.length && (offence['resultPosition'] == null || matches.lowestPosition < offence['resultPosition'])) {
-          offence['resultPosition'] = matches.lowestPosition
+        if (matches.count == regexes.length && (thing['resultPosition'] == null || matches.lowestPosition < thing['resultPosition'])) {
+          thing['resultPosition'] = matches.lowestPosition
         }
       }
 
-      return offence
+      return thing
 
     })
 
-    var filteredMatches = matches.filter(function(offence) {
-      return (offence['resultPosition'] != null )
+    var filteredMatches = matches.filter(function(thing) {
+      return (thing['resultPosition'] != null )
     })
 
-    var sortedFilteredMatches = filteredMatches.sort(function(offenceA, offenceB) {
+    var sortedFilteredMatches = filteredMatches.sort(function(thingA, thingB) {
 
-      if (offenceA['resultPosition'] < offenceB['resultPosition'] ) {
+      if (thingA['resultPosition'] < thingB['resultPosition'] ) {
         return -1
-      } else if (offenceA['resultPosition'] > offenceB['resultPosition'] ) {
+      } else if (thingA['resultPosition'] > thingB['resultPosition'] ) {
         return 1
       } else {
         return 0
       }
     })
 
-    var results = sortedFilteredMatches.map(function(offence) { return offence['name'] })
+    var results = sortedFilteredMatches.map(function(thing) { return thing['name'] })
 
     return callback(results)
   }
