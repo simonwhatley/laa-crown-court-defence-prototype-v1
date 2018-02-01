@@ -1,9 +1,9 @@
-var organisations = require('./data/government_organisations.json')
+var caseTypes = require('./data/case_types.json')
 
 module.exports = {
 
-	getOrganisations: function() {
-		return organisations
+	getCaseTypes: function() {
+		return caseTypes
 	}
 	
 }
