@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-	{# include "./includes/_banner.html" #}
+	{% include "../includes/_banner.html" %}
 
 	<div class="grid-row">
 	    <div class="column-full">
@@ -21,53 +21,39 @@
 					Claim for litigator fees
 				</h1>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Fee details
-					</h2>
-				</div>
+				{% if fee_type == "fixed" %}
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Miscellaneous fees
-					</h2>
-				</div>
+					{% include "./includes/_fixed_fees.html" %}
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Disbursements
-					</h2>
-				</div>
+				{% else %}
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Travel expenses
-					</h2>
-				</div>
+					{% include "./includes/_graduated_fees.html" %}
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Supporting evidence
-					</h2>
-				</div>
+				{% endif %}
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Additional information
-					</h2>				
-				</div>
+				{% include "./includes/_miscellaneous_fees.html" %}
+
+				{% include "./includes/_disbursements.html" %}
+
+				{# from provider > includes #}
+				{% include "../includes/_travel_expenses.html" %}
+
+				{% include "./includes/_supporting_evidence.html" %}
+
+				{# from provider > includes #}
+				{% include "../includes/_additional_information.html" %}
 
 				<div class="form-section">
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
-						<a href="{{links.home}}">Cancel</a>
+						<!-- <a href="{{links.home}}">Cancel</a> -->
 					</div>
 				</div>
 
 			</form>
 
-			{# include "./includes/_help.html" #}
+			{% include "./includes/_help.html" %}
 
 	    </div>
   	</div>

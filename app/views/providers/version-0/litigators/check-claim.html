@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-	{# include "./includes/_banner.html" #}
+	{% include "../includes/_banner.html" %}
 
 	<div class="grid-row">
 	    <div class="column-full">
@@ -31,13 +31,13 @@
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
-						<a href="{{links.home}}">Cancel</a>
+						<!-- <a href="{{links.home}}">Cancel</a> -->
 					</div>
 				</div>
 
 			</form>
 
-			{# include "./includes/_help.html" #}
+			{% include "./includes/_help.html" %}
 
 	    </div>
   	</div>

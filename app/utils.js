@@ -1,4 +1,29 @@
 module.exports = {
+
+	getFeeType: function(case_type) {
+
+		var caseType = case_type.toLowerCase().replace(/\s/g, '_');
+		
+		var data = {
+			"appeal_against_conviction": "fixed",
+			"appeal_against_sentence": "fixed",
+			"breach_of_crown_court_order": "fixed",
+			"committal": "fixed",
+			"committal_for_sentence": "fixed",
+			"contempt": "fixed",
+			"elected_case_not_proceeded": "fixed",
+			"hearing_subsequent_to_sentence": "fixed",
+			"cracked_before_retrial": "graduated",
+			"cracked_trial": "graduated",
+			"discontinuance": "graduated",
+			"guilty_plea": "graduated",
+			"retrial": "graduated",
+			"trial": "graduated"	
+		}
+
+		return data[caseType]
+	},
+
 	feeType: function(fee_scheme, fee_type, case_type) {
 		// var data = {
 		// 	"agfs": [

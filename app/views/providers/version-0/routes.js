@@ -8,8 +8,6 @@ router.get('/', (req, res) => {
     res.redirect(`/${req.feature}/${req.version}/sign-in`)
 })
 
-// Add your routes here - above the module.exports line
-
 // ==============================================
 // ADVOCATES
 // ==============================================
@@ -17,51 +15,53 @@ router.get('/', (req, res) => {
 router.get('/advocates/case-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/case-details`, 
         {
-            links: [
-                {'next' : './fee-details'}, 
-                {'previous' : '../advocates/'},
-                {'home' : '../advocates/'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/advocates/fee-details', 
+                'previous' : req.baseUrl + '/advocates/',
+                'home' : req.baseUrl + '/advocates/'
+            }
         });
 });
 
-router.get('/advocates/fee-details', function(req, res) {
+router.post('/advocates/fee-details', function(req, res) {
+
     res.render(`${req.feature}/${req.version}/advocates/fee-details`, 
         {
-            links: [ 
-                {'next' : './check-claim'}, 
-                {'previous' : '../case-details'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/advocates/check-claim', 
+                'previous' : req.baseUrl + '/advocates/case-details'
+            },
+            fee_type: utils.getFeeType(req.session.data.case_type)
         });
 });
 
 router.get('/advocates/check-claim', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/check-claim`, 
         { 
-            links: [
-                {'next' : './certify-claim'}, 
-                {'previous' : '../fee-details'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/advocates/certify-claim', 
+                'previous' : req.baseUrl + '/advocates/fee-details'
+            }
         });
 });
 
 router.get('/advocates/certify-claim', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/certify-claim-claim`, 
+    res.render(`${req.feature}/${req.version}/advocates/certify-claim`, 
         { 
-            links: [
-                {'next' : './thank-you'}, 
-                {'previous' : '../check-claim'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/advocates/thank-you', 
+                'previous' : req.baseUrl + '/advocates/check-claim'
+            }
         });
 });
 
 router.get('/advocates/thank-you', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/thank-you`, 
     	{ 
-            links: [
-        		{'new_claim' : './case-details'}, 
-        		{'your_claims' : './'}
-            ]
+            links: {
+                'new' : req.baseUrl + '/advocates/case-details', 
+        		'home' : req.baseUrl + '/advocates/'
+            }            
     	});
 });
 
@@ -70,78 +70,105 @@ router.get('/advocates/thank-you', function(req, res) {
 // ==============================================
 
 router.get('/litigators/bill-type', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/case-details`, 
+    
+    res.render(`${req.feature}/${req.version}/litigators/bill-type`, 
         { 
-            links: [
-                {'next' : './case-details'}, 
-                {'previous' : '../litigators/'},
-                {'home' : '../litigators/'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/litigators/details', 
+                'previous' : req.baseUrl + '/litigators/',
+                'home' : req.baseUrl + '/litigators/'
+            }
         });
 });
 
+router.get('/litigators/details', function(req, res) {
+
+    if (req.session.data.bill_type == "litigator_transfer") {
+        
+        res.redirect(`/${req.feature}/${req.version}/litigators/transfer-details`)
+
+    } else {
+        
+        res.redirect(`/${req.feature}/${req.version}/litigators/case-details`)
+            
+    }
+
+});
+
 router.get('/litigators/transfer-details', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/case-details`, 
+    res.render(`${req.feature}/${req.version}/litigators/transfer-details`, 
         { 
-            links: [
-                {'next' : './case-details'}, 
-                {'previous' : './bill-type'},
-                {'home' : '../litigators/'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/litigators/case-details', 
+                'previous' : req.baseUrl + '/litigators/bill-type',
+                'home' : req.baseUrl + '/litigators/'
+            }
+            
         });
 });
 
 router.get('/litigators/case-details', function(req, res) {
+
+    if (req.session.data.bill_type == "litigator_transfer") {
+
+        var previousUrl = req.baseUrl + '/litigators/transfer-details'
+
+    } else {
+        
+        var previousUrl = req.baseUrl + '/litigators/bill-type'
+
+    }
+
     res.render(`${req.feature}/${req.version}/litigators/case-details`, 
         { 
-            links: [
-                {'next' : './fee-details'}, 
-                {'previous' : '../litigators/'},
-                {'home' : '../litigators/'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/litigators/fee-details', 
+                'previous' : previousUrl,
+                'home' : req.baseUrl + '/litigators/'
+            }
+            
         });
 });
 
 router.get('/litigators/fee-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/fee-details`, 
         { 
-            links: [
-                {'next' : './check-claim'}, 
-                {'previous' : '../case-details'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/litigators/check-claim', 
+                'previous' : req.baseUrl + '/litigators/case-details'
+            },
+            fee_type: utils.getFeeType(req.session.data.case_type)
         });
 });
 
 router.get('/litigators/check-claim', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/check-claim`, 
         { 
-            links: [
-                {'next' : './certify-claim'}, 
-                {'previous' : '../fee-details'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/litigators/certify-claim', 
+                'previous' : req.baseUrl + '/litigators/fee-details'
+            }            
         });
 });
 
 router.get('/litigators/certify-claim', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/certify-claim-claim`, 
+    res.render(`${req.feature}/${req.version}/litigators/certify-claim`, 
         { 
-            links: [
-                {'next' : './thank-you'}, 
-                {'previous' : '../check-claim'}
-            ]
+            links: {
+                'next' : req.baseUrl + '/litigators/thank-you', 
+                'previous' : req.baseUrl + '/litigators/check-claim'
+            }
         });
 });
 
 router.get('/litigators/thank-you', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/thank-you`, 
     	{ 
-            links: [
-        		{'new_claim' : './case-details'}, 
-        		{'your_claims' : './'}
-            ]
+            links: {
+                'new' : req.baseUrl + '/litigators/bill-type', 
+        		'home' : req.baseUrl + '/litigators/'
+            }
     	});
 });
-
-// Add your routes above this line
 
 module.exports = router

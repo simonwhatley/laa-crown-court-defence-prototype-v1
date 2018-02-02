@@ -8,12 +8,15 @@
 
 <main id="content" role="main">
 
-	{# include "./includes/_banner.html" #}
+	{% include "../includes/_banner.html" %}
 
 	<div class="grid-row">
 	    <div class="column-full">
 
-	    	<a class="link-back" href="{{links.previous}}">Back</a>
+	    	<a class="link-back" href="{{links.previous}}">
+	    		Back
+	    		<span class="visually-hidden"> to your claims</span>
+	    	</a>
 
 	    	<form class="form" action="{{links.next}}" method="post">
 
@@ -21,11 +24,8 @@
 					Claim for advocate fees
 				</h1>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Case details
-					</h2>
-				</div>
+				{% include "./includes/_case_details.html" %}
+
 
 				<div class="form-section">
 					<h2 class="heading-large">
@@ -43,13 +43,13 @@
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
-						<a href="{{links.home}}">Cancel</a>
+						<!-- <a href="{{links.home}}">Cancel</a> -->
 					</div>
 				</div>
 
 			</form>
 
-			{# include "./includes/_help.html" #}
+			{% include "./includes/_help.html" %}
 
 	    </div>
   	</div>
