@@ -12,16 +12,16 @@ module.exports = {
   			 return (el.class_id == class_id)
 		})
 
-		return classObj[0]
+		return classObj
 	},
 
-	getOffencesByBandId: function(band_id) {
+	getOffencesByBandId: function(class_id, band_id) {
 		
-		var classObj = this.getOffences().filter(function (el) {
+		var classObj = this.getOffencesByClassId(class_id).filter(function (el) {
   			 return (el.band_id == band_id)
 		})
 
-		return classObj[0]
+		return classObj
 	},
 
 	getOffencesByCategoryId: function(category_id) {
@@ -30,7 +30,7 @@ module.exports = {
   			 return (el.category_id == category_id)
 		})
 
-		return classObj[0]
+		return classObj
 	},
 
 	getOffencesByActId: function(act_id) {
@@ -39,8 +39,16 @@ module.exports = {
   			 return (el.act_id == act_id)
 		})
 
+		return classObj
+	},
+
+	getOffence: function(class_id, band_id, category_id) {
+		
+		var classObj = this.getOffencesByBandId(class_id, band_id).filter(function (el) {
+  			 return (el.category_id == category_id)
+		})
+
 		return classObj[0]
 	}
-
 	
 }

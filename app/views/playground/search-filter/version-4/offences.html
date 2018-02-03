@@ -1,0 +1,72 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+{% include "./includes/_page_styles.html" %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./includes/_page_scripts.html" %}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-full">
+
+            <a class="link-back" href="../">Back</a>
+
+            <h1 class="heading-xlarge">
+                Offence details
+            </h1>
+
+            {% if data.category.length -%}
+            <div class="grid-row">
+                <div class="column-two-thirds">
+                    {% include "./includes/_selected_offence.html" %}
+                </div>
+            </div>
+            {%- endif %}
+
+            <div class="form-section">
+
+                <h2 class="heading-medium">Find the offence related to your claim</h2>
+
+                {% include "./includes/_search_form.html" %}
+
+                {% if type %}
+                <p class="column-two-thirds">
+                    {% if type == "class" -%}
+                        Showing offences in the <span class="bold">{{offences[0].class_label}}</span> class. <a href="{{base}}/search">Clear filter</a>
+                    {% elif type == "act" %}
+                        Showing offences in the <span class="bold">{{offences[0].act_label}}</span> act. <a href="{{base}}/search">Clear filter</a>
+                    {% endif -%}
+                </p>
+                {% endif %}
+
+                <div class="form-group column-two-thirds">
+                    <details>
+                        <summary>
+                            <span class="summary">Help with the offence classification</span>
+                        </summary>
+                        <div class="panel panel-border-narrow">
+                            <p>
+                                For more information on offence classification for the Advocates’ Graduated Fee Scheme (<abbr title="Advocates’ Graduated Fee Scheme">AGFS</abbr>), please visit the <a href="https://www.gov.uk/government/publications/crown-court-fee-guidance" target="_blank">Crown Court fee guidance</a> page on GOV.UK.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+
+                {% include "./includes/_offences.html" %}
+
+            </div>
+   
+        </div>
+    </div>
+
+</main>
+{% endblock %}

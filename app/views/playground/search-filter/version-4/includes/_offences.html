@@ -6,12 +6,12 @@
 		<div id="offence-item-{{loop.index}}" class="grid-row offence-item">
 			
 			<div class="column-two-thirds">
-				<span class="font-xsmall grey">{{offence.class_label | capitalize}}</span><br>
+				<a href="{{base}}/search/{{offence.class_id}}" class="font-xsmall link-grey">{{offence.class_label | capitalize}}</a><br>
 		        <span>{{offence.category_label | capitalize}}</span>
 			</div>
 
-			<div class="column-one-third" style="text-align: right;">
-				<a id="offence-item-button-{{loop.index}}" class="button offence-item-button" role="button" href="{{base}}/detail/{{offence.class_id}}/{{offence.category_id}}">
+			<div class="column-one-third align-right">
+				<a id="offence-item-button-{{loop.index}}" class="button offence-item-button" role="button" href="?class={{offence.class_id}}&category={{offence.category_id}}">
 					Select and continue
 				</a>
 			</div>
