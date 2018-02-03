@@ -12,6 +12,19 @@ router.get('/', (req, res) => {
 // ADVOCATES
 // ==============================================
 
+router.get('/advocates/', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/index`, 
+        {
+            links: {
+                'start' : req.baseUrl + '/advocates/case-details',
+                'search': req.baseUrl + '/advocates/search',
+                'outstanding': req.baseUrl + '/advocates/outstanding',
+                'authorised': req.baseUrl + '/advocates/authorised'
+            },
+            claims: []
+        });
+});
+
 router.get('/advocates/case-details', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/case-details`, 
         {
@@ -68,6 +81,19 @@ router.get('/advocates/thank-you', function(req, res) {
 // ==============================================
 // LITIGATORS
 // ==============================================
+
+router.get('/litigators/', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/index`, 
+        {
+            links: {
+                'start' : req.baseUrl + '/litigators/bill-type',
+                'search': req.baseUrl + '/litigators/search',
+                'outstanding': req.baseUrl + '/litigators/outstanding',
+                'authorised': req.baseUrl + '/litigators/authorised'
+            },
+            claims: []
+        });
+});
 
 router.get('/litigators/bill-type', function(req, res) {
     
