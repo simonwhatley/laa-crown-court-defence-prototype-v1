@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router()
+const router = new express.Router()
 
 // const session = require('express-session')
 
@@ -111,9 +111,9 @@ router.get('/advocates/offence-details', function(req, res) {
 
 router.get('/advocates/fees', function(req, res) {
 
-    if (utils.isGraduatedFee("agfs", req.session.data.case_type)) {
+    if (utils.isFixedFee("agfs", req.session.data.case_type)) {
 
-        res.render(`${req.feature}/${req.version}/advocates/graduated-fees`,
+        res.render(`${req.feature}/${req.version}/advocates/fixed-fees`,
              {
                 links: {
                     'next' : req.baseUrl + '/advocates/miscellaneous-fees',
@@ -123,7 +123,7 @@ router.get('/advocates/fees', function(req, res) {
 
     } else {
 
-        res.render(`${req.feature}/${req.version}/advocates/fixed-fees`,
+        res.render(`${req.feature}/${req.version}/advocates/graduated-fees`,
             {
                 links: {
                     'next' : req.baseUrl + '/advocates/miscellaneous-fees',
@@ -343,18 +343,18 @@ router.get('/litigators/fees', function(req, res) {
     if (req.session.data.bill_type == "litigator_interim") {
 
         res.render(`${req.feature}/${req.version}/litigators/interim-fees`,
-                {
-                    links: {
-                        'next' : req.baseUrl + '/litigators/travel-expenses',
-                        'previous' : previousUrl
-                    }
-                });
+            {
+                links: {
+                    'next' : req.baseUrl + '/litigators/travel-expenses',
+                    'previous' : previousUrl
+                }
+            });
 
     } else {
 
-        if (utils.isGraduatedFee("lgfs", req.session.data.case_type)) {
+        if (utils.isFixedFee("lgfs", req.session.data.case_type)) {
 
-            res.render(`${req.feature}/${req.version}/litigators/graduated-fees`,
+            res.render(`${req.feature}/${req.version}/litigators/fixed-fees`,
                 {
                     links: {
                         'next' : req.baseUrl + '/litigators/miscellaneous-fees',
@@ -364,7 +364,7 @@ router.get('/litigators/fees', function(req, res) {
 
         } else {
 
-            res.render(`${req.feature}/${req.version}/litigators/fixed-fees`,
+            res.render(`${req.feature}/${req.version}/litigators/graduated-fees`,
                 {
                     links: {
                         'next' : req.baseUrl + '/litigators/miscellaneous-fees',
@@ -420,6 +420,9 @@ router.get('/litigators/travel-expenses', function(req, res) {
 });
 
 router.get('/litigators/supporting-evidence', function(req, res) {
+
+    console.log(req)
+
     res.render(`${req.feature}/${req.version}/litigators/supporting-evidence`,
     	{
             links: {
