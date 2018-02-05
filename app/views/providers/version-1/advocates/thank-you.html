@@ -8,38 +8,35 @@
 
 <main id="content" role="main">
 
-	{% include "./includes/banner.html" %}
+	{% include "./includes/_banner.html" %}
 	
   	<div class="grid-row">
 	    <div class="column-two-thirds">
 
-	    	{% include "./includes/navigation.html" %}
+	    	<a class="link-back" href="{{links.home}}">Home</a>
 
-	    	<form class="form" action="{{new_claim_url}}" method="post">
+			<h1 class="heading-xlarge">
+				Claim for advocate fees
+			</h1>
 
-				<h1 class="heading-xlarge">
-					Claim for advocate fees
-				</h1>
+			<h2 class="heading-large">
+				What happens next?
+			</h2>
 
-				<h2 class="heading-large">
-					What happens next?
-				</h2>
+			<p>
+				A case worker will assess your claim. You will be notified by email when your claim has been processed. You can also check the status of your claim at any time in the <a href="{{links.home}}">Your claims</a> view.
+			</p>
 
-				<p>
-					A case worker will assess your claim. You will be notified by email when your claim has been processed. You can also check the status of your claim at any time in the <a href="">Your claims</a> view.
-				</p>
-
-				<div class="form-section">
-					<div class="form-group form-buttons">
-						<input type="submit" class="button" value="Submit a new claim">
-						<input type="submit" class="button button-tertiary" value="View your claims">
-					</div>
+			<div class="form-section">
+				<div class="form-group form-buttons">
+					<a href="{{links.new}}" class="button" role="button">Submit a new claim</a>
+					<a href="{{links.home}}" class="button button-tertiary" role="button">View your claims</a>
 				</div>
-
-			</form>
+			</div>
 
 	    </div>
   	</div>
+
 </main>
 
 {% endblock %}

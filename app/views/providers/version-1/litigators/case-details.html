@@ -8,16 +8,14 @@
 
 <main id="content" role="main">
 
-	{% include "./includes/banner.html" %}
-
-	<!-- {% include "./includes/navigation.html" %} -->
+	{% include "./includes/_banner.html" %}
 
   	<div class="grid-row">
 	    <div class="column-full">
 
-	    	<a class="link-back" href="{{previous_url}}">Back</a>
+	    	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<form class="form" action="{{next_url}}" method="post">
+	    	<form class="form" action="{{links.next}}" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for litigator fees
@@ -83,93 +81,24 @@
 								<!-- <span class="form-hint">Please choose a relevant case type</span> -->
 							</legend>
 
-							<select id="select-case_type" name="case_type" class="form-control form-control-1-3">
+							<select id="select-case-type" name="case_type" class="form-control form-control-1-3">
 								<option></option>
-								<option value="appeal_against_conviction">Appeal Against Conviction</option>
-								<option value="appeal_against_sentence">Appeal Against Sentence</option>
-								<option value="breach_of_crown_court_order">Breach of Crown Court Order</option>
+								<option value="appeal_against_conviction" {% if data['case_type'] == "appeal_against_conviction" %}selected="selected"{% endif %}>Appeal Against Conviction</option>
+								<option value="appeal_against_sentence" {% if data['case_type'] == "appeal_against_sentence" %}selected="selected"{% endif %}>Appeal Against Sentence</option>
+								<option value="breach_of_crown_court_order" {% if data['case_type'] == "breach_of_crown_court_order" %}selected="selected"{% endif %}>Breach of Crown Court Order</option>
 								<option value="committal">Committal</option>
-								<option value="committal_for_sentence">Committal for Sentence</option>
-								<option value="contempt">Contempt</option>
-								<option value="cracked_before_retrial">Cracked Before Retrial</option>
-								<option value="cracked_trial">Cracked Trial</option>
-								<option value="discontinuance">Discontinuance</option>
-								<option value="elected_case_not_proceeded">Elected Case Not Proceeded</option>
-								<option value="guilty_plea">Guilty Plea</option>
-								<option value="hearing_subsequent_to_sentence">Hearing Subsequent to Sentence</option>
-								<option value="retrial">Retrial</option>
-								<option value="trial">Trial</option>
+								<option value="committal_for_sentence" {% if data['case_type'] == "committal_for_sentence" %}selected="selected"{% endif %}>Committal for Sentence</option>
+								<option value="cracked_before_retrial" {% if data['case_type'] == "cracked_before_retrial" %}selected="selected"{% endif %}>Cracked Before Retrial</option>
+								<option value="cracked_trial" {% if data['case_type'] == "cracked_trial" %}selected="selected"{% endif %}>Cracked Trial</option>
+								<option value="discontinuance" {% if data['case_type'] == "discontinuance" %}selected="selected"{% endif %}>Discontinuance</option>
+								<option value="elected_case_not_proceeded" {% if data['case_type'] == "elected_case_not_proceeded" %}selected="selected"{% endif %}>Elected Case Not Proceeded</option>
+								<option value="guilty_plea" {% if data['case_type'] == "guilty_plea" %}selected="selected"{% endif %}>Guilty Plea</option>
+								<option value="hearing_subsequent_to_sentence" {% if data['case_type'] == "hearing_subsequent_to_sentence" %}selected="selected"{% endif %}>Hearing Subsequent to Sentence</option>
+								<option value="retrial" {% if data['case_type'] == "retrial" %}selected="selected"{% endif %}>Retrial</option>
+								<option value="trial" {% if data['case_type'] == "trial" %}selected="selected"{% endif %}>Trial</option>
 							</select>
 
 						</fieldset>
-						<!-- <div class="grid-row">
-
-							<div class="column-one-half">
-
-								<div class="multiple-choice">
-									<input id="radio-appeal_against_conviction" type="radio" name="case_type" value="appeal_against_conviction" {{ checked('case_type','appeal_against_conviction') }}>
-									<label for="radio-appeal_against_conviction">Appeal Against Conviction</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-appeal_against_sentence" type="radio" name="case_type" value="appeal_against_sentence" {{ checked('case_type','appeal_against_sentence') }}>
-									<label for="radio-appeal_against_sentence">Appeal Against Sentence</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-breach_of_crown_court_order" type="radio" name="case_type" value="breach_of_crown_court_order" {{ checked('case_type','breach_of_crown_court_order') }}>
-									<label for="radio-breach_of_crown_court_order">Breach of Crown Court Order</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-committal" type="radio" name="case_type" value="committal" {{ checked('case_type','committal') }}>
-									<label for="radio-committal">Committal</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-committal_for_sentence" type="radio" name="case_type" value="committal_for_sentence" {{ checked('case_type','committal_for_sentence') }}>
-									<label for="radio-committal_for_sentence">Committal for Sentence</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-contempt" type="radio" name="case_type" value="contempt" {{ checked('case_type','contempt') }}>
-									<label for="radio-contempt">Contempt</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-cracked_before_retrial" type="radio" name="case_type" value="cracked_before_retrial" {{ checked('case_type','cracked_before_retrial') }}>
-									<label for="radio-cracked_before_retrial">Cracked Before Retrial</label>
-								</div>
-							</div>
-
-							<div class="column-one-half">
-
-								<div class="multiple-choice">
-									<input id="radio-cracked_trial" type="radio" name="case_type" value="cracked_trial" {{ checked('case_type','cracked_trial') }}>
-									<label for="radio-cracked_trial">Cracked Trial</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-discontinuance" type="radio" name="case_type" value="discontinuance" {{ checked('case_type','discontinuance') }}>
-									<label for="radio-discontinuance">Discontinuance</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-elected_case_not_proceeded" type="radio" name="case_type" value="elected_case_not_proceeded" {{ checked('case_type','elected_case_not_proceeded') }}>
-									<label for="radio-elected_case_not_proceeded">Elected Case Not Proceeded</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-guilty_plea" type="radio" name="case_type" value="guilty_plea" {{ checked('case_type','guilty_plea') }}>
-									<label for="radio-guilty_plea">Guilty Plea</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-hearing_subsequent_to_sentence" type="radio" name="case_type" value="hearing_subsequent_to_sentence" {{ checked('case_type','hearing_subsequent_to_sentence') }}>
-									<label for="radio-hearing_subsequent_to_sentence">Hearing Subsequent to Sentence</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-retrial" type="radio" name="case_type" value="retrial" {{ checked('case_type','retrial') }}>
-									<label for="radio-retrial">Retrial</label>
-								</div>
-								<div class="multiple-choice">
-									<input id="radio-trial" type="radio" name="case_type" value="trial" {{ checked('case_type','trial') }}>
-									<label for="radio-trial">Trial</label>
-								</div>
-
-							</div>
-
-						</div> -->
 
 					</div>
 
@@ -244,13 +173,13 @@
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
-						<a href="{{home_url}}">Cancel</a>
+						<a class="link-secondary" href="{{links.cancel}}">Cancel</a>
 					</div>
 				</div>
 
 			</form>
 
-			{% include "./includes/help.html" %}
+			{% include "./includes/_help.html" %}
 
 	    </div>
   	</div>

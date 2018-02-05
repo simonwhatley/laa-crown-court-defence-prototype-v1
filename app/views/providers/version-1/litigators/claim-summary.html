@@ -8,14 +8,14 @@
 
 <main id="content" role="main">
 
-	{% include "./includes/banner.html" %}
+	{% include "./includes/_banner.html" %}
 	
   	<div class="grid-row">
 	    <div class="column-full">
 
-	    	<a class="link-back" href="{{previous_url}}">Back</a>
+	    	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<form class="form" action="{{next_url}}" method="post">
+	    	<form class="form" action="{{links.next}}" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for litigator fees
@@ -25,36 +25,43 @@
 					Cost summary
 				</h2>
 
+				<!-- <div class="grid-row">
+
+					<div class="column-one-third">
+			
+						<h2 class="heading-large">
+							<span class="heading-secondary">Total authorised</span>
+							£99,999.00
+						</h2>
+
+						<p>
+							<a id="view-authorised-claims-details" href="{{links.authorised}}">View details <span class="visually-hidden">for total claims authorised</span></a>
+						</p>
+
+					</div>
+
+				</div> -->
+
 				<div class="grid-row">
 
-					<div class="column-one-quarter">						
+					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Fees</span>
 							£999,999.00
 						</h3>
-						<a href="">
+						<a href="{{links.fees}}">
 							Change fees
-						</a>				
+						</a>
 					</div>
-
-					<!-- <div class="column-one-quarter">
-						<h3 class="heading-large">
-							<span class="heading-secondary">Miscellaneous fees</span>
-							£999,999.00
-						</h3>
-						<a href="">
-							Change miscellaneous fees
-						</a>	
-					</div> -->
 
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Disbursements</span>
 							£999,999.00
 						</h3>
-						<a href="">
+						<a href="{{links.disbursements}}">
 							Change disbursements
-						</a>			
+						</a>
 					</div>
 
 					<div class="column-one-quarter">
@@ -62,16 +69,17 @@
 							<span class="heading-secondary">Travel expenses</span>
 							£999,999.00
 						</h3>
-						<a href="">
+						<a href="{{links.travel}}">
 							Change travel expenses
-						</a>				
+						</a>
 					</div>
 
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Net total</span>
 							£999,999.00
-						</h3>				
+						</h3>
+						<p class="font-grey">VAT £199,999.80</p>
 					</div>
 
 				</div>
@@ -84,7 +92,7 @@
 								<input type="submit" class="button" value="Continue and certify">
 								<input type="submit" class="button button-tertiary" value="Save as draft">
 								<!-- <input type="submit" class="button button-delete" value="Delete this claim"> -->
-								<a href="#noop" class="button button-delete" role="button">Delete this claim</a>
+								<a href="#noop" class="link-delete" role="button">Delete this claim</a>
 							</div>
 						</div>
 					</div>
@@ -101,13 +109,13 @@
 						<input type="submit" class="button" value="Continue and certify">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
 						<!-- <input type="submit" class="button button-delete" value="Delete this claim"> -->
-						<a href="#noop" class="button button-delete" role="button">Delete this claim</a>
+						<a href="#noop" class="link-delete" role="button">Delete this claim</a>
 					</div>
 				</div>
 
 			</form>
 
-			{% include "./includes/help.html" %}
+			{% include "./includes/_help.html" %}
 
 	    </div>
   	</div>

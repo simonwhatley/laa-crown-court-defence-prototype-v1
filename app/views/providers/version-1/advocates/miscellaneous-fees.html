@@ -8,14 +8,14 @@
 
 <main id="content" role="main">
 
-	{% include "./includes/banner.html" %}
+	{% include "./includes/_banner.html" %}
 
   	<div class="grid-row">
 	    <div class="column-two-thirds">
 
-	    	<a class="link-back" href="{{previous_url}}">Back</a>
+	    	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<form class="form" action="{{next_url}}" method="post">
+	    	<form class="form" action="{{links.next}}" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for advocate fees
@@ -34,7 +34,7 @@
 
 			</form>
 
-			{% include "./includes/help.html" %}
+			{% include "./includes/_help.html" %}
 
 	    </div>
 
