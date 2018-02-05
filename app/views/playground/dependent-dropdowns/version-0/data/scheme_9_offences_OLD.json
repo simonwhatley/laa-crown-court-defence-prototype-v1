@@ -1,0 +1,554 @@
+{
+	"classes" : [
+		{
+			"id": "A",
+			"name": "Homicide and related grave offences",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "B",
+			"name": "Offences involving serious violence or damage and serious drug offences",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "C",
+			"name": "Lesser offences involving violence or damage and less serious drug offences",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "D",
+			"name": "Serious sexual offences and offences against children",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "E",
+			"name": "Burglary",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "F",
+			"name": "Other offences of dishonesty up to £30,000",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "G",
+			"name": "Other offences of dishonesty between £30,001 and £100,000",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "H",
+			"name": "Miscellaneous lesser offences",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "I",
+			"name": "Offences against public justice and similar offences",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "J",
+			"name": "Serious sexual offences, offences against children",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		},
+		{
+			"id": "K",
+			"name": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+			"categories": [
+				{
+					"id": "1",
+					"name": "Category name"
+				},
+				{
+					"id": "2",
+					"name": "Category name"
+				},
+				{
+					"id": "3",
+					"name": "Category name"
+				},
+				{
+					"id": "4",
+					"name": "Category name"
+				},
+				{
+					"id": "5",
+					"name": "Category name"
+				},
+				{
+					"id": "6",
+					"name": "Category name"
+				},
+				{
+					"id": "7",
+					"name": "Category name"
+				},
+				{
+					"id": "8",
+					"name": "Category name"
+				},
+				{
+					"id": "9",
+					"name": "Category name"
+				},
+				{
+					"id": "10",
+					"name": "Category name"
+				},
+				{
+					"id": "11",
+					"name": "Miscellaneous/other"
+				}
+			]
+		}
+	]
+}
