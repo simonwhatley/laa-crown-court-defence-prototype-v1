@@ -21,19 +21,27 @@
 					Claim for litigator fees
 				</h1>
 
-				{% if fee_type == "fixed" %}
+				{% if data['bill_type'] == "litigator_interim" %}
 
-					{% include "./includes/_fixed_fees.html" %}
+					{% include "./includes/_interim_fees.html" %}
 
 				{% else %}
 
-					{% include "./includes/_graduated_fees.html" %}
+					{% if fee_type == "fixed" %}
+
+						{% include "./includes/_fixed_fees.html" %}
+
+					{% else %}
+
+						{% include "./includes/_graduated_fees.html" %}
+
+					{% endif %}
+
+					{% include "./includes/_miscellaneous_fees.html" %}
+
+					{% include "./includes/_disbursements.html" %}
 
 				{% endif %}
-
-				{% include "./includes/_miscellaneous_fees.html" %}
-
-				{% include "./includes/_disbursements.html" %}
 
 				{# from provider > includes #}
 				{% include "../includes/_travel_expenses.html" %}

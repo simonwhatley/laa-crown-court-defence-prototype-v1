@@ -2,7 +2,7 @@ module.exports = {
 
 	getFeeType: function(case_type) {
 
-		var caseType = case_type.toLowerCase().replace(/\s/g, '_');
+		// var caseType = case_type.toLowerCase().replace(/\s/g, '_');
 		
 		var data = {
 			"appeal_against_conviction": "fixed",
@@ -21,7 +21,7 @@ module.exports = {
 			"trial": "graduated"	
 		}
 
-		return data[caseType]
+		return data[case_type]
 	},
 
 	feeType: function(fee_scheme, fee_type, case_type) {
