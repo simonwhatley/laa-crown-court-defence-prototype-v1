@@ -94,7 +94,7 @@ module.exports = {
 		return (!!~data[fee_scheme].indexOf(caseType));
 	},
 	isGraduatedFee: function(fee_scheme, case_type) {
-		var caseType = case_type.toLowerCase().replace(/\s/g, '_');
+		// var caseType = case_type.toLowerCase().replace(/\s/g, '_');
 
 		var data = {
 			"agfs": [
@@ -113,7 +113,7 @@ module.exports = {
 			]
 		};
 
-		return (!!~data[fee_scheme].indexOf(caseType));
+		return (!!~data[fee_scheme].indexOf(case_type));
 	},
 	authenticate: function(user_type, username) {
 
