@@ -23,7 +23,7 @@ router.get('/search', function (req, res) {
     {
       base: req.baseUrl,
       offences: utils.getOffences(),
-      offence: utils.getOffence(req.session.data.class, req.session.data.band, req.session.data.category)
+      offence: utils.getOffence(req.session.data.class, req.session.data.category)
     })
 
 })
