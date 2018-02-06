@@ -25,11 +25,24 @@
 
 			<div class="grid-row">
 				<div class="column-two-thirds">
-					
+
 					<form class="form" method="post">
 
-						
-						{% include "./includes/_form_actions.html" %}
+						<div class="form-section">
+
+							<div class="form-section">
+
+								{% include "../includes/_supporting_evidence_disk_evidence.html" %}
+
+								{% include "../includes/_supporting_evidence_file_upload.html" %}
+
+								{% include "../includes/_supporting_evidence_checklist.html" %}
+
+							</div>
+
+							{% include "./includes/_form_actions.html" %}
+
+						</div>
 
 					</form>
 

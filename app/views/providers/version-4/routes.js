@@ -346,7 +346,7 @@ router.get('/litigators/case-details', function(req, res) {
                 'cancel' : req.baseUrl + '/litigators/cancel'
             },
             courts: utils.getCourts()
-            
+
     	});
 });
 
@@ -493,7 +493,8 @@ router.get('/litigators/supporting-evidence', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/additional-information',
                 'previous' : req.baseUrl + '/litigators/travel-expenses'
-            }
+            },
+            fee_scheme: 'lgfs'
     	});
 });
 

@@ -44,7 +44,7 @@ autocomplete({
 
 			<div class="grid-row">
 				<div class="column-one-half">
-					
+
 					<form class="form" method="post">
 
 						<div class="form-section">
@@ -161,11 +161,14 @@ autocomplete({
 							<div class="form-group">
 								<fieldset>
 
-									<legend>
-										<h1 class="form-label-bold">
-											Was this case transferred from another court?
-										</h1>
+									<legend class="form-label-bold">
+										Was this case transferred from another court?
 									</legend>
+
+									<div class="multiple-choice">
+										<input id="transfer-court-no" type="radio" name="transfer_court_option" value="no" {{ checked('transfer_court_option','no') }}>
+										<label for="transfer-court-no">No</label>
+									</div>
 
 									<div class="multiple-choice" data-target="transfer-court-panel">
 										<input id="transfer-court-yes" type="radio" name="transfer_court_option" value="yes" {{ checked('transfer_court_option','yes') }}>
@@ -186,11 +189,6 @@ autocomplete({
 											</label>
 											<input class="form-control" name="transfer_case_number" type="text" id="transfer-case-number" value="{{ data['transfer_case_number']}}">
 										</div>
-									</div>
-
-									<div class="multiple-choice" data-target="contact-by-phone">
-										<input id="transfer-court-no" type="radio" name="transfer_court_option" value="no" {{ checked('transfer_court_option','no') }}>
-										<label for="transfer-court-no">No</label>
 									</div>
 
 								</fieldset>

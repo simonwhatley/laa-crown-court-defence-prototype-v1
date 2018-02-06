@@ -16,7 +16,7 @@
 			<a class="link-back" href="{{links.previous}}">Back</a>
 
 			<h1 class="heading-xlarge">
-				Claim for advocate fees
+				Claim for litigator fees
 			</h1>
 
 			<h2 class="heading-large">
@@ -24,11 +24,12 @@
 			</h2>
 
 			<div class="grid-row">
-				<div class="column-two-thirds">
-					
+				<div class="column-full">
+
 					<form class="form" method="post">
 
-						
+						{% include "../includes/_additional_information.html" %}
+
 						{% include "./includes/_form_actions.html" %}
 
 					</form>
@@ -36,9 +37,6 @@
 					{% include "./includes/_help.html" %}
 
 				</div>
-
-				{# include "./includes/_sidebar.html" #}
-
 			</div>
 
 		</div>
