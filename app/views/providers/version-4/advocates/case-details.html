@@ -1,0 +1,215 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+<script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script src="/public/javascripts/cccd-autocomplete.js"></script>
+<script>
+autocomplete({
+  selectElement: document.getElementById('court'),
+  showAllValues: false,
+  minLength: 2,
+  defaultValue: ''
+})
+autocomplete({
+  selectElement: document.getElementById('case-type'),
+  showAllValues: false,
+  minLength: 2,
+  defaultValue: ''
+})
+</script>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			<h1 class="heading-xlarge">
+				Claim for advocate fees
+			</h1>
+
+			<h2 class="heading-large">
+				Case details
+			</h2>
+
+			<div class="grid-row">
+				<div class="column-one-half">
+					
+					<form class="form" method="post">
+
+						<div class="form-section">
+
+							<div class="form-group">
+
+								<fieldset>
+
+									<legend class="form-label-bold" for="instructed-advocate-1">
+										Instructed advocate
+										<!-- <span class="form-hint">Please choose a relevant instructed advocate</span> -->
+									</legend>
+
+									<div class="multiple-choice">
+										<input id="instructed-advocate-1" type="radio" name="instructed_advocate" value="8A222Z" {{ checked('instructed_advocate','8A222Z') }}>
+										<label for="instructed-advocate-1">Advocate Name (8A222Z)</label>
+									</div>
+									<div class="multiple-choice">
+										<input id="instructed-advocate-2" type="radio" name="instructed_advocate" value="9B333Y" {{ checked('instructed_advocate','9B333Y') }}>
+										<label for="instructed-advocate-2">Advocate Name (9B333Y)</label>
+									</div>
+
+								</fieldset>
+
+							</div>
+
+							<div class="form-group">
+								<details>
+									<summary>
+										<span class="summary">Help with adding more instructed advocates</span>
+									</summary>
+									<div class="panel panel-border-narrow">
+										<p>
+										Lorem ipsum dolor sit emet
+										</p>
+									</div>
+								</details>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label-bold" for="reference-number">
+									Reference number
+									<span class="form-hint">Your internal reference number for this claim</span>
+								</label>
+								<input class="form-control" id="reference-number" type="text" name="reference_number" value="{{ data['reference_number']}}" autocomplete="off" autocapitalize="off">
+							</div>
+
+							<div class="form-group">
+
+								<fieldset>
+
+									<legend class="form-label-bold" for="case-type">
+										Case type
+										<span class="form-hint">
+											For example Trial
+										</span>
+									</legend>
+
+									<select id="case-type" name="case_type" class="form-control">
+										<option></option>
+										<option value="appeal_against_conviction" {% if data['case_type'] == "appeal_against_conviction" %}selected="selected"{% endif %}>Appeal Against Conviction</option>
+										<option value="appeal_against_sentence" {% if data['case_type'] == "appeal_against_sentence" %}selected="selected"{% endif %}>Appeal Against Sentence</option>
+										<option value="breach_of_crown_court_order" {% if data['case_type'] == "breach_of_crown_court_order" %}selected="selected"{% endif %}>Breach of Crown Court Order</option>
+										<option value="committal">Committal</option>
+										<option value="committal_for_sentence" {% if data['case_type'] == "committal_for_sentence" %}selected="selected"{% endif %}>Committal for Sentence</option>
+										<option value="contempt" {% if data['case_type'] == "contempt" %}selected="selected"{% endif %}>Contempt</option>
+										<option value="cracked_before_retrial" {% if data['case_type'] == "cracked_before_retrial" %}selected="selected"{% endif %}>Cracked Before Retrial</option>
+										<option value="cracked_trial" {% if data['case_type'] == "cracked_trial" %}selected="selected"{% endif %}>Cracked Trial</option>
+										<option value="discontinuance" {% if data['case_type'] == "discontinuance" %}selected="selected"{% endif %}>Discontinuance</option>
+										<option value="elected_case_not_proceeded" {% if data['case_type'] == "elected_case_not_proceeded" %}selected="selected"{% endif %}>Elected Case Not Proceeded</option>
+										<option value="guilty_plea" {% if data['case_type'] == "guilty_plea" %}selected="selected"{% endif %}>Guilty Plea</option>
+										<option value="hearing_subsequent_to_sentence" {% if data['case_type'] == "hearing_subsequent_to_sentence" %}selected="selected"{% endif %}>Hearing Subsequent to Sentence</option>
+										<option value="retrial" {% if data['case_type'] == "retrial" %}selected="selected"{% endif %}>Retrial</option>
+										<option value="trial" {% if data['case_type'] == "trial" %}selected="selected"{% endif %}>Trial</option>
+									</select>
+
+								</fieldset>
+
+							</div>
+
+							<div class="form-group">
+
+								<fieldset>
+									<legend class="form-label-bold" for="court">
+										Court
+										<span class="form-hint">
+											For example Cardiff
+										</span>
+									</legend>
+
+									<select id="court" name="court" class="form-control">
+										<option value=""></option>
+
+										{% for court in courts -%}
+										<option value="{{court.id}}" {%- if data['court'] == court.id %}selected="selected"{%- endif %}>{{court.name}}</option>
+										{%- endfor %}
+
+									</select>
+
+								</fieldset>
+
+							</div>
+
+							<div class="form-group">
+								<label class="form-label-bold" for="case-number">
+									Case number
+									<span class="form-hint">
+										For example T20170101
+									</span>
+								</label>
+								<input class="form-control" id="case-number" type="text" name="case_number" value="{{ data['case_number']}}" autocomplete="off" autocapitalize="on">
+							</div>
+
+							<div class="form-group">
+								<fieldset>
+
+									<legend>
+										<h1 class="form-label-bold">
+											Was this case transferred from another court?
+										</h1>
+									</legend>
+
+									<div class="multiple-choice" data-target="transfer-court-panel">
+										<input id="transfer-court-yes" type="radio" name="transfer_court_option" value="yes" {{ checked('transfer_court_option','yes') }}>
+										<label for="transfer-court-yes">Yes</label>
+									</div>
+									<div class="panel panel-border-narrow js-hidden" id="transfer-court-panel">
+										<div class="form-group">
+											<label class="form-label-bold" for="transfer-court">
+												Court
+												<span class="form-hint">For example Cardiff</span>
+											</label>
+											<input class="form-control" name="transfer_court" type="text" id="transfer-court" value="{{ data['transfer_court']}}">
+										</div>
+										<div class="form-group">
+											<label class="form-label-bold" for="transfer-case-number">
+												Case number
+												<span class="form-hint">For example T20170101</span>
+											</label>
+											<input class="form-control" name="transfer_case_number" type="text" id="transfer-case-number" value="{{ data['transfer_case_number']}}">
+										</div>
+									</div>
+
+									<div class="multiple-choice" data-target="contact-by-phone">
+										<input id="transfer-court-no" type="radio" name="transfer_court_option" value="no" {{ checked('transfer_court_option','no') }}>
+										<label for="transfer-court-no">No</label>
+									</div>
+
+								</fieldset>
+							</div>
+
+						</div>
+
+						{% include "./includes/_form_actions.html" %}
+
+					</form>
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

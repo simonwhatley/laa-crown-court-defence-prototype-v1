@@ -1,4 +1,10 @@
+var courts = require('./data/crown_courts.json')
+
 module.exports = {
+
+	getCourts: function() {
+		return courts
+	},
 
 	getFeeType: function(case_type) {
 

@@ -1,0 +1,67 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	{# include "./includes/navigation.html" #}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h1 class="heading-xlarge">
+				Your claims
+			</h1>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-one-third">
+	
+			<h2 class="heading-large">
+				<span class="heading-secondary">Total outstanding</span>
+				£99,999.00
+			</h2>
+
+			<p>
+				<a id="view-outstanding-claim-details" href="{{links.outstanding}}">View details <span class="visually-hidden">for total claims outstanding</span></a>
+			</p>
+		
+		</div>
+		<div class="column-one-third">
+			
+			<h2 class="heading-large">
+				<span class="heading-secondary">Total authorised</span>
+				£99,999.00
+			</h2>
+
+			<p>
+				<a id="view-authorised-claims-details" href="{{links.authorised}}">View details <span class="visually-hidden">for total claims authorised</span></a>
+			</p>
+
+		</div>
+		<div class="column-one-third">
+
+			<h2 class="heading-large">
+				<!-- <span class="heading-secondary">Create a claim</span> -->
+				<a class="button button-start" href="{{links.start}}" role="button">Start now</a>
+			</h2>
+
+			<form id="upload-json" action="{{links.upload}}" method="post" enctype="multipart/form-data">
+				<label class="form-hint">Or upload your claims in <abbr title="JavaScript Object Notation">JSON</abbr></label>
+				<!-- <input id="file-uploader" type="submit" class="button button-tertiary" name="Choose file"> -->
+				<a class="button button-tertiary" href="{{links.upload}}" role="button">Choose file</a>
+			</form>
+
+		</div>
+	</div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+	    <div class="column-two-thirds">
+
+	    	<a class="link-back" href="{{links.previous}}">Back</a>
+
+	    	<form class="form" action="{{links.next}}" method="post">
+
+				<h1 class="heading-xlarge">
+					Claim for advocate fees
+				</h1>
+
+				<h2 class="heading-large">
+					Cost summary
+				</h2>
+
+
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Continue and certify">
+						<input type="submit" class="button button-tertiary" value="Save as draft">
+						<a href="#noop" class="link-delete">Delete this claim</a>
+					</div>
+				</div>
+
+
+				<h2 class="heading-large">
+					Claim summary
+				</h2>
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Case details
+					</h3>
+				</div>
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Defendant details
+					</h3>
+				</div>
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Offence details
+					</h3>
+				</div>
+
+				{% if data['bill_type'] == "advocate_interim" %}
+
+					<div class="form-section">
+						<h3 class="heading-medium">
+							Interim fees
+						</h3>
+					</div>
+
+				{% else %}
+
+					{% if data['fee_type'] == "fixed" -%}
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Fixed fees
+							</h3>
+						</div>
+
+					{% else %}
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Graduated fees
+							</h3>
+						</div>
+
+					{%- endif %}
+
+				{%- endif %}
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Miscellaneous fees
+					</h3>
+				</div>
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Travel expenses
+					</h3>
+				</div>
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Supporting evidence
+					</h3>
+				</div>
+
+				<div class="form-section">
+					<h3 class="heading-medium">
+						Additional information
+					</h3>
+				</div>
+
+
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Continue and certify">
+						<input type="submit" class="button button-tertiary" value="Save as draft">
+						<a href="#noop" class="link-delete">Delete this claim</a>
+					</div>
+				</div>
+
+			</form>
+
+			{% include "./includes/_help.html" %}
+
+	    </div>
+	</div>
+</main>
+
+{% endblock %}

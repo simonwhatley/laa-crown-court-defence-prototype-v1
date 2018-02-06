@@ -1,0 +1,153 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+  	<div class="grid-row">
+	    <div class="column-two-thirds">
+
+	    	<a class="link-back" href="{{links.previous}}">Back</a>
+
+	    	<form class="form" method="post">
+
+				<h1 class="heading-xlarge">
+					Claim for advocate fees
+				</h1>
+
+				<div class="form-section">
+					<h2 class="heading-large">
+						Certify claim
+					</h2>
+
+					<div class="form-group">
+
+						<p>Confirm you are the trial advocate (in cases where legal aid was granted on or after 5 May 2015) or instructed advocate and that you are entitled to submit a claim for this case. If our records show that you are not the trial or instructed advocate, we may reject the claim without payment.</p>
+
+						<p>Please choose the relevant option below.</p>
+
+					</div>
+
+					<div class="form-group">
+
+						<fieldset>
+
+							<h4 class="heading-small">Final fee claims where the representation order was granted on or after 5 May 2015</h4>
+
+							<p>I certify that I am the trial advocate as:</p>
+
+							<div class="multiple-choice">
+								<input id="advocate-role-0" type="radio" name="advocate_role" value="attended_main_hearing" {{ checked('advocate_role','attended_main_hearing') }}>
+								<label for="advocate-role-0">I attended the main hearing (1st day of trial)</label>
+							</div>
+
+						</fieldset>
+
+						<fieldset>
+
+							<h4 class="heading-small">All other claims</h4>
+
+							<p>I certify that I am the instructed advocate as:</p>
+
+							<div class="multiple-choice">
+								<input id="advocate-role-1" type="radio" name="advocate_role" value="notified_before_pcmh" {{ checked('advocate_role','notified_before_pcmh') }}>
+								<label for="advocate-role-1">I notified the court, in writing before the PCMH that I was the instructed advocate. A copy of the letter is attached.</label>
+							</div>
+							<div class="multiple-choice">
+								<input id="advocate-role-2" type="radio" name="advocate_role" value="attended_pcmh" {{ checked('advocate_role','attended_pcmh') }}>
+								<label for="advocate-role-2">I attended the PCMH (where the client was arraigned) and no other advocate wrote to the court prior to this to advise that they were the instructed advocate.</label>
+							</div>
+							<div class="multiple-choice">
+								<input id="advocate-role-3" type="radio" name="advocate_role" value="attended_first_hearing_after_pcmh" {{ checked('advocate_role','attended_first_hearing_after_pcmh') }}>
+								<label for="advocate-role-3">I attended the first hearing after the PCMH and no other advocate attended the PCMH or wrote to the court prior to this to advise that they were the instructed advocate.</label>
+							</div>
+							<div class="multiple-choice">
+								<input id="advocate-role-4" type="radio" name="advocate_role" value="new_instructed_advocate" {{ checked('advocate_role','new_instructed_advocate') }}>
+								<label for="advocate-role-4">The previous instructed advocate notified the court in writing that they were no longer acting in this case and I was then instructed.</label>
+							</div>
+							<div class="multiple-choice">
+								<input id="advocate-role-5" type="radio" name="advocate_role" value="fixed_fee_main_hearing" {{ checked('advocate_role','fixed_fee_main_hearing') }}>
+								<label for="advocate-role-5">The case was a fixed fee (with a case number beginning with an S or A) and I attended the main hearing.</label>
+							</div>
+
+						</fieldset>
+
+					</div>
+
+					<div class="form-group">
+
+						<p>All of the above options are in accordance with the relevant provision of any secondary legislation arising from the Legal Aid, Sentencing and Punishment of Offenders Act 2012.</p>
+
+						<h4 class="heading-small">You also confirm that you certify that:</h4>
+
+						<ul class="list list-bullet">
+							<li>Where you’ve represented more than one defendant in a case, you have only made, and will make, one claim for all those defendants together, including where one defendant has transferred representation to another advocate.</li>
+							<li>Neither your nor any other advocate has received any interim, hardship or staged payment on any case number within this matter other than the one under which this claim is made, unless fully detailed (case number, court and advocate supplier number under which payment was made) within this claim.</li>
+							<li>Where there is a joined indictment, you have included all matters that you as the instructed advocate have dealt with within that indictment in this claim.</li>
+							<li>Where a case has been transferred from one crown court to another, no claim has been made separately for the work in the first crown court and all work in both courts is included in this claim.</li>
+							<li>This work has not been and will not be the subject of any other claim for remuneration from criminal legal aid.</li>
+							<li>The information you have provided is correct and that you have not made, and will not make, any other claim for payment from criminal legal aid for the work you have done on this claim. You understand that if you have given incorrect or misleading information, your payment may be recouped.</li>
+							<li>If you are claiming a staged payment, you will make sure that any subsequent trial advocate is advised of this payment, with all necessary claim and payment details.</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="form-section">
+
+					<div class="form-group">
+						<label class="form-label-bold" for="certifying-name">
+						Name of the person certifying claim
+						<span class="form-hint">
+							Enter your full name
+						</span>
+						</label>
+						<input class="form-control" id="certifying-name" type="text" name="certifying_name" value="{{ data['certifying_name']}}">
+					</div>
+
+					<div class="form-group">
+						<fieldset>
+							<legend>
+								<span class="form-label-bold">
+									Date of certification
+								</span>
+								<span class="form-hint">For example, 31 1 2018</span>
+							</legend>
+
+							<div class="form-date">
+								<div class="form-group form-group-day">
+									<label class="form-label" for="certification-day">Day</label>
+									<input class="form-control" id="certification-day" name="certification-day" type="number" pattern="[0-9]*" min="0" max="31">
+								</div>
+								<div class="form-group form-group-month">
+									<label class="form-label" for="certification-month">Month</label>
+									<input class="form-control" id="certification-month" name="certification-month" type="number" pattern="[0-9]*" min="0" max="12">
+								</div>
+								<div class="form-group form-group-year">
+									<label class="form-label" for="certification-year">Year</label>
+									<input class="form-control" id="certification-year" name="certification-year" type="number" pattern="[0-9]*" min="2017" max="2018" value="">
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+				</div>
+
+				{% include "./includes/_form_actions.html" %}
+
+			</form>
+
+			{% include "./includes/_help.html" %}
+
+	    </div>
+  	</div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<div class="form-group">
+
+	<fieldset>
+
+		<legend class="form-label-bold" for="advocate-category-1">
+			Advocate category
+			<!-- <span class="form-hint">Please choose a relevant instructed advocate</span> -->
+		</legend>
+
+		<!--
+		TODO:
+		If rep order date after 01/04/2018 then show
+		- Junior
+		- Leading junior
+		- QC
+		 -->
+
+		<div class="multiple-choice">
+			<input id="advocate-category-1" type="radio" name="advocate_category" value="junior_alone" {{ checked('advocate_category','junior_alone') }}>
+			<label for="advocate-category-1">Junior alone</label>
+		</div>
+		<div class="multiple-choice">
+			<input id="advocate-category-2" type="radio" name="advocate_category" value="leading_junior" {{ checked('advocate_category','leading_junior') }}>
+			<label for="advocate-category-2">Leading junior</label>
+		</div>
+		<div class="multiple-choice">
+			<input id="advocate-category-3" type="radio" name="advocate_category" value="led_junior" {{ checked('advocate_category','led_junior') }}>
+			<label for="advocate-category-3">Led junior</label>
+		</div>
+		<div class="multiple-choice">
+			<input id="advocate-category-4" type="radio" name="advocate_category" value="qc" {{ checked('advocate_category','qc') }}>
+			<label for="advocate-category-4">QC</label>
+		</div>
+
+	</fieldset>
+
+</div>
