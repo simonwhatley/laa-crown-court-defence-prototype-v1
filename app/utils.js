@@ -18,7 +18,7 @@ module.exports = {
 			"discontinuance": "graduated",
 			"guilty_plea": "graduated",
 			"retrial": "graduated",
-			"trial": "graduated"	
+			"trial": "graduated"
 		}
 
 		return data[case_type]
@@ -69,7 +69,7 @@ module.exports = {
 
 	},
 	isFixedFee: function(fee_scheme, case_type) {
-		var caseType = case_type.toLowerCase().replace(/\s/g, '_');
+		// var caseType = case_type.toLowerCase().replace(/\s/g, '_');
 
 		var data = {
 			"agfs": [
@@ -91,7 +91,7 @@ module.exports = {
 			]
 		};
 
-		return (!!~data[fee_scheme].indexOf(caseType));
+		return (!!~data[fee_scheme].indexOf(case_type));
 	},
 	isGraduatedFee: function(fee_scheme, case_type) {
 		// var caseType = case_type.toLowerCase().replace(/\s/g, '_');

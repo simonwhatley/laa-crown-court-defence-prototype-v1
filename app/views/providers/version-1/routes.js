@@ -1,34 +1,26 @@
 const express = require('express')
 const router = new express.Router()
 
-// const session = require('express-session')
-
 const utils = require('../../../utils')
 
-// console.log(utils.isGraduatedFee("agfs","Cracked Trial"))
-
-// Route index page
-// router.get('/', function (req, res) {
-//   res.render('index')
-// })
+// ==============================================
+// COMMON
+// ==============================================
 
 // Route to the start (sign in) page
 router.get('/', (req, res) => {
   res.redirect(`/${req.feature}/${req.version}/sign-in`);
 })
 
-// Add your routes here - above the module.exports line
-
-
 router.get('/auth', function(req, res) {
 
     if (utils.authenticate("provider", req.session.data.username) == "advocates") {
 
-        res.redirect('advocates');
+        res.redirect(`/${req.feature}/${req.version}/advocates/`);
 
     } else if (utils.authenticate("provider", req.session.data.username) == "litigators") {
 
-        res.redirect('litigators');
+        res.redirect(`/${req.feature}/${req.version}/litigators/`);
 
     } else {
 
@@ -47,10 +39,10 @@ router.get('/auth', function(req, res) {
 
 });
 
-// router.get('/sign-out', function(req, res) {
-//     req.session.destroy()
-//     res.redirect(`/${req.feature}/${req.version}/sign-in`);
-// });
+router.get('/sign-out', function(req, res) {
+    req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/sign-in`);
+});
 
 
 // ==============================================
@@ -61,7 +53,7 @@ router.get('/advocates/', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/index`,
         {
             links: {
-                'start' : req.baseUrl + '/advocates/case-details',
+                'start' : req.baseUrl + '/advocates/start',
                 'search': req.baseUrl + '/advocates/search',
                 'outstanding': req.baseUrl + '/advocates/outstanding',
                 'authorised': req.baseUrl + '/advocates/authorised'
@@ -70,17 +62,19 @@ router.get('/advocates/', function(req, res) {
         });
 });
 
+router.get('/advocates/start', function(req, res) {
+    req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/advocates/case-details`);
+});
+
 router.get('/advocates/case-details', function(req, res) {
-
-    // TODO: if new claim, clear session before starting
-    // req.session.destroy()
-
     res.render(`${req.feature}/${req.version}/advocates/case-details`,
         {
             links: {
                 'next' : req.baseUrl + '/advocates/defendant-details',
                 'previous' : req.baseUrl + '/advocates/',
                 'home' : req.baseUrl + '/advocates/',
+                'save' : req.baseUrl + '/advocates/',
                 'cancel' : req.baseUrl + '/advocates/cancel'
             }
         });
@@ -218,7 +212,7 @@ router.get('/litigators/', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/index`,
         {
             links: {
-                'start' : req.baseUrl + '/litigators/bill-type',
+                'start' : req.baseUrl + '/litigators/start',
                 'search': req.baseUrl + '/litigators/search',
                 'outstanding': req.baseUrl + '/litigators/outstanding',
                 'authorised': req.baseUrl + '/litigators/authorised'
@@ -227,11 +221,12 @@ router.get('/litigators/', function(req, res) {
         });
 });
 
+router.get('/litigators/start', function(req, res) {
+    req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/litigators/bill-type`);
+});
+
 router.get('/litigators/bill-type', function(req, res) {
-
-    // TODO: if new claim, clear session before starting
-    // req.session.destroy()
-
     res.render(`${req.feature}/${req.version}/litigators/bill-type`,
     	{
             links: {
@@ -248,11 +243,11 @@ router.get('/litigators/details', function(req, res) {
 
     if (req.session.data.bill_type == "litigator_transfer") {
 
-        res.redirect('./transfer-details');
+        res.redirect(`/${req.feature}/${req.version}/litigators/transfer-details`);
 
     } else {
 
-        res.redirect('./case-details');
+        res.redirect(`/${req.feature}/${req.version}/litigators/case-details`);
 
     }
 
@@ -350,6 +345,16 @@ router.get('/litigators/fees', function(req, res) {
                 }
             });
 
+    } else if (req.session.data.bill_type == "litigator_transfer") {
+
+        res.render(`${req.feature}/${req.version}/litigators/transfer-fees`,
+            {
+                links: {
+                    'next' : req.baseUrl + '/litigators/travel-expenses',
+                    'previous' : previousUrl
+                }
+            });
+
     } else {
 
         if (utils.isFixedFee("lgfs", req.session.data.case_type)) {
@@ -400,13 +405,13 @@ router.get('/litigators/disbursements', function(req, res) {
 
 router.get('/litigators/travel-expenses', function(req, res) {
 
-    if (req.session.data.bill_type == "litigator_interim") {
+    if (req.session.data.bill_type == "litigator_final") {
 
-        var previousUrl = req.baseUrl + '/litigators/fees'
+        var previousUrl = req.baseUrl + '/litigators/disbursements'
 
     } else {
 
-        var previousUrl = req.baseUrl + '/litigators/disbursements'
+        var previousUrl = req.baseUrl + '/litigators/fees'
 
     }
 
@@ -476,8 +481,5 @@ router.get('/litigators/cancel', function(req, res) {
     req.session.destroy()
     res.redirect(`/${req.feature}/${req.version}/litigators/`);
 });
-
-
-// Add your routes above this line
 
 module.exports = router
