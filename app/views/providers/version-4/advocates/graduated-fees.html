@@ -33,6 +33,290 @@
 							{% include "./includes/_advocate_category.html" %}
 
 						</div>
+
+						<div class="form-section">
+							
+<div class="form-group">
+    <fieldset>
+        <legend class="heading-small">
+            Fee type
+            <span class="form-hint">
+                Please choose all relevant options
+            </span>
+        </legend>
+
+
+        <div class="multiple-choice" data-target="daily-attendance-fee-panel">
+            <input aria-controls="daily-attendance-fee-panel" aria-expanded="false" id="option-DA" name="agfs-grad-fees-1" type="checkbox" value="Option DA value">
+            <label for="option-DA">
+                Daily attendance fee
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="daily-attendance-fee-panel">
+            <div class="form-group el-input" id="wrapped-DA-input-number-of-days-1">
+                <label class="form-label-bold" for="DA-input-number-of-days-1">
+                    Number of days
+                    <span class="form-hint">
+                        Include all days attended
+                    </span>
+                </label>
+                <input class="form-control form-control-1-4" id="DA-input-number-of-days-1" name="DA-input-number-of-days-1" type="text" value="">
+                </input>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date attended 1
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="DA-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="DA-date-attended-1-1-day" max="31" min="0" name="DA-date-attended-1-1-day" pattern="[0-9]*" type="number" value="">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="DA-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="DA-date-attended-1-1-month" max="12" min="0" name="DA-date-attended-1-1-month" pattern="[0-9]*" type="number" value="">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="DA-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="DA-date-attended-1-1-year" max="2019" min="0" name="DA-date-attended-1-1-year" pattern="[0-9]*" type="number" value="">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <a href="#noop">
+                    Add another date
+                </a>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="graduated-fees-daily-input-net-amount-1">
+                    Net amount
+                </label>
+                <span class="input-group-prefix">
+                    £
+                </span>
+                <input class="form-control form-control-1-4" id="graduated-fees-daily-input-net-amount-1" max="999999.99" min="0.01" name="graduated-fees-daily-input-net-amount-1" step="0.01" type="number" value="">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="standard-appearance-fee-panel">
+            <input aria-controls="standard-appearance-fee-panel" aria-expanded="false" id="option-SAF" name="agfs-grad-fees-2" type="checkbox" value="Option SAF value">
+            <label for="option-SAF">
+                Standard appearance fee
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="standard-appearance-fee-panel">
+            <div class="form-group el-input" id="wrapped-SAF-input-number-of-appearances-1">
+                <label class="form-label-bold" for="SAF-input-number-of-appearances-1">
+                    Number of appearances
+                </label>
+                <input class="form-control form-control-1-4" id="SAF-input-number-of-appearances-1" name="SAF-input-number-of-appearances-1" type="text" value="">
+            </div>
+            <div class="form-group fx-saf-date">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date attended 1
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="SAF-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="SAF-date-attended-1-1-day" max="31" min="0" name="SAF-date-attended-1-1-day" pattern="[0-9]*" type="number" value="">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="SAF-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="SAF-date-attended-1-1-month" max="12" min="0" name="SAF-date-attended-1-1-month" pattern="[0-9]*" type="number" value="">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="SAF-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="SAF-date-attended-1-1-year" max="2019" min="0" name="SAF-date-attended-1-1-year" pattern="[0-9]*" type="number" value="">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <a href="#noop">
+                    Add another date
+                </a>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="graduated-fees-standard-input-net-amount-1">
+                    Net amount
+                </label>
+                <span class="input-group-prefix">
+                    £
+                </span>
+                <input class="form-control form-control-1-4" id="graduated-fees-standard-input-net-amount-1" max="999999.99" min="0.01" name="graduated-fees-standard-input-net-amount-1" step="0.01" type="number" value="">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="plea-trial-prep-hearing-panel">
+            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="option-PCM" name="agfs-grad-fees-3" type="checkbox" value="Option PCM value">
+            <label for="option-PCM">
+                Plea and trial preparation hearing
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="plea-trial-prep-hearing-panel">
+            <div class="form-group el-input" id="wrapped-PCM-input-number-of-hearings-1">
+                <label class="form-label-bold" for="PCM-input-number-of-hearings-1">
+                    Number of hearings
+                </label>
+                <input class="form-control form-control-1-4" id="PCM-input-number-of-hearings-1" name="PCM-input-number-of-hearings-1" type="text" value="">
+            </div>
+            <div class="form-group fx-pcm-date">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date attended 1
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="PCM-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="0" name="PCM-date-attended-1-1-day" pattern="[0-9]*" type="number" value="">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="PCM-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="0" name="PCM-date-attended-1-1-month" pattern="[0-9]*" type="number" value="">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="PCM-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="0" name="PCM-date-attended-1-1-year" pattern="[0-9]*" type="number" value="">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <a href="#noop">
+                    Add another date
+                </a>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="graduated-fees-case-management-input-net-amount-1">
+                    Net amount
+                </label>
+                <span class="input-group-prefix">
+                    £
+                </span>
+                <input class="form-control form-control-1-4" id="graduated-fees-case-management-input-net-amount-1" max="999999.99" min="0.01" name="graduated-fees-case-management-input-net-amount-1" step="0.01" type="number" value="">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="conferences-views-panel">
+            <input aria-controls="conferences-views-panel" aria-expanded="false" id="option-CV" name="agfs-grad-fees-4" type="checkbox" value="Option CV value">
+            <label for="option-CV">
+                Conferences and views
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="conferences-views-panel">
+            <div class="form-group el-input" id="wrapped-CV-input-number-of-conferences-and-views-1">
+                <label class="form-label-bold" for="CV-input-number-of-conferences-and-views-1">
+                    Number of conferences and views
+                </label>
+                <input class="form-control form-control-1-4" id="CV-input-number-of-conferences-and-views-1" name="CV-input-number-of-conferences-and-views-1" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="graduated-fees-conferences-views-input-net-amount-1">
+                    Net amount
+                </label>
+                <span class="input-group-prefix">
+                    £
+                </span>
+                <input class="form-control form-control-1-4" id="graduated-fees-conferences-views-input-net-amount-1" max="999999.99" min="0.01" name="graduated-fees-conferences-views-input-net-amount-1" step="0.01" type="number" value="">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="defendants-uplift-panel">
+            <input aria-controls="defendants-uplift-panel" aria-expanded="false" id="option-NDU" name="agfs-grad-fees-5" type="checkbox" value="Option NDU value">
+            <label for="option-NDU">
+                Number of defendants uplift
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="defendants-uplift-panel">
+            <div class="form-group el-input" id="wrapped-NDU-input-number-of-defendants-1">
+                <label class="form-label-bold" for="NDU-input-number-of-defendants-1">
+                    Number of defendants
+                </label>
+                <input class="form-control form-control-1-4" id="NDU-input-number-of-defendants-1" name="NDU-input-number-of-defendants-1" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="graduated-fees-defendants-input-net-amount-1">
+                    Net amount
+                </label>
+                <span class="input-group-prefix">
+                    £
+                </span>
+                <input class="form-control form-control-1-4" id="graduated-fees-defendants-input-net-amount-1" max="999999.99" min="0.01" name="graduated-fees-defendants-input-net-amount-1" step="0.01" type="number" value="">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="case-uplift-panel">
+            <input aria-controls="case-uplift-panel" aria-expanded="false" id="option-NCU" name="agfs-grad-fees-6" type="checkbox" value="Option NCU value">
+            <label for="option-NCU">
+                Number of cases uplift
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="case-uplift-panel">
+            <div class="form-group el-input" id="wrapped-NCU-input-number-of-cases-1">
+                <label class="form-label-bold" for="NCU-input-number-of-cases-1">
+                    Number of cases
+                </label>
+                <input class="form-control form-control-1-4" id="NCU-input-number-of-cases-1" name="NCU-input-number-of-cases-1" type="text" value="">
+            </div>
+            <div class="form-group el-input" id="wrapped-NCU-input-additional-case-numbers-1">
+                <label class="form-label-bold" for="NCU-input-additional-case-numbers-1">
+                    Additional case numbers
+                    <span class="form-hint">
+                        Seperate with commas
+                    </span>
+                </label>
+                <input class="form-control" id="NCU-input-additional-case-numbers-1" name="NCU-input-additional-case-numbers-1" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="graduated-fees-case-uplift-input-net-amount-1">
+                    Net amount
+                </label>
+                <span class="input-group-prefix">
+                    £
+                </span>
+                <input class="form-control form-control-1-4" id="graduated-fees-case-uplift-input-net-amount-1" max="999999.99" min="0.01" name="graduated-fees-case-uplift-input-net-amount-1" step="0.01" type="number" value="">
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+
+						</div>
 						
 						{% include "./includes/_form_actions.html" %}
 

@@ -4,6 +4,14 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{% if data['representation_order_date_year'] >= 2018 and data['representation_order_date_month'] >= 4 and data['representation_order_date_day'] >= 1 -%}
+{% include "../includes/_page_scripts_offence_details_scheme_10.html" %}
+{% else %}
+{% include "../includes/_page_scripts_offence_details_scheme_9.html" %}
+{%- endif %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -28,6 +36,19 @@
 					
 					<form class="form" method="post">
 
+						<div class="form-section">
+
+						{% if data['representation_order_date_year'] >= 2018 and data['representation_order_date_month'] >= 4 and data['representation_order_date_day'] >= 1 -%}
+					
+							{% include "../includes/_offences_scheme_10.html" %}
+
+						{% else %}
+						
+							{% include "../includes/_offences_scheme_9.html" %}
+
+						{%- endif %}
+
+						</div>
 						
 						{% include "./includes/_form_actions.html" %}
 

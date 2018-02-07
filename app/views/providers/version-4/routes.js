@@ -1,9 +1,7 @@
 const express = require('express')
 const router = new express.Router()
 
-const utils = require('../../../utils')
-
-console.log(utils.getCourts())
+const utils = require('./utils')
 
 // ==============================================
 // COMMON
@@ -46,6 +44,24 @@ router.get('/sign-out', function(req, res) {
     res.redirect(`/${req.feature}/${req.version}/sign-in`);
 });
 
+// ==============================================
+// Data
+// ==============================================
+
+router.get('/data/offences/9/categories', function (req, res) {
+    var data = { output: utils.getOffenceCategoriesScheme9(req.session.data.class[0]) , selected: req.session.data.offence_category }
+    res.json(data)
+})
+
+router.get('/data/offences/10/bands', function (req, res) {
+    var data = { output: utils.getOffenceBandsScheme10(req.session.data.class[0]) , selected: req.session.data.offence_band }
+    res.json(data)
+})
+
+router.get('/data/offences/10/categories', function (req, res) {
+    var data = { output: utils.getOffenceCategoriesScheme10(req.session.data.class[0], req.session.data.band[0]) , selected: req.session.data.offence_category }
+    res.json(data)
+})
 
 // ==============================================
 // ADVOCATES
@@ -91,6 +107,7 @@ router.get('/advocates/case-details', function(req, res) {
                 'save' : req.baseUrl + '/advocates/',
                 'cancel' : req.baseUrl + '/advocates/cancel'
             },
+            case_types: utils.getCaseTypesByFeeScheme('agfs'),
             courts: utils.getCourts()
         });
 });
@@ -118,12 +135,22 @@ router.get('/advocates/defendant-details', function(req, res) {
 
 router.get('/advocates/offence-details', function(req, res) {
 
+    // TODO: delete offence keys prior to re-running
+
+    // TODO: Nasty code! There must be a better way
+    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_year >= 4 && req.session.data.representation_order_date_year >= 1) {
+        var offenceClasses = utils.getOffenceClassesScheme10()
+    } else {
+        var offenceClasses = utils.getOffenceClassesScheme9()
+    }
+
     res.render(`${req.feature}/${req.version}/advocates/offence-details`,
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details'
-            }
+            },
+            classes: offenceClasses
     	});
 
 });
@@ -195,7 +222,7 @@ router.get('/advocates/travel-expenses', function(req, res) {
 
     } else {
 
-        var previousUrl = req.baseUrl + '/advocates/disbursements'
+        var previousUrl = req.baseUrl + '/advocates/miscellaneous-fees'
 
     }
 
@@ -345,6 +372,7 @@ router.get('/litigators/case-details', function(req, res) {
                 'home' : req.baseUrl + '/litigators/',
                 'cancel' : req.baseUrl + '/litigators/cancel'
             },
+            case_types: utils.getCaseTypesByFeeScheme('lgfs'),
             courts: utils.getCourts()
 
     	});
