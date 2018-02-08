@@ -7,7 +7,7 @@
 			<!-- <span class="form-hint">Please choose a relevant advocate category</span> -->
 		</legend>
 
-		{% if data['representation_order_date_year'] >= 2018 and data['representation_order_date_month'] >= 4 and data['representation_order_date_day'] >= 1 -%}
+		{% if data['scheme_version'] == 10 -%}
 		
 			<div class="multiple-choice">
 				<input id="advocate-category-1" type="radio" name="advocate_category" value="junior" {{ checked('advocate_category','junior') }}>

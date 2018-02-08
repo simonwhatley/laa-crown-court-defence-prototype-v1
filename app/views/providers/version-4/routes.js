@@ -139,9 +139,11 @@ router.get('/advocates/offence-details', function(req, res) {
 
     // TODO: Nasty code! There must be a better way
     if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_year >= 4 && req.session.data.representation_order_date_year >= 1) {
-        var offenceClasses = utils.getOffenceClassesScheme10()
+        // var req.session.data.scheme_version = 10
+        var classes = utils.getOffenceClassesScheme10()
     } else {
-        var offenceClasses = utils.getOffenceClassesScheme9()
+        // var req.session.data.scheme_version = 9
+        var classes = utils.getOffenceClassesScheme9()
     }
 
     res.render(`${req.feature}/${req.version}/advocates/offence-details`,
@@ -150,7 +152,7 @@ router.get('/advocates/offence-details', function(req, res) {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details'
             },
-            classes: offenceClasses
+            classes: classes
     	});
 
 });

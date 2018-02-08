@@ -2,20 +2,20 @@
 <script src="/public/javascripts/cccd-autocomplete.js"></script>
 <script>
 autocomplete({
+  selectElement: document.getElementById('case-type'),
+  showAllValues: false,
+  minLength: 2,
+  defaultValue: ''
+})
+autocomplete({
   selectElement: document.getElementById('court'),
-  showAllValues: true,
+  showAllValues: false,
   minLength: 2,
   defaultValue: ''
 })
 autocomplete({
   selectElement: document.getElementById('transfer-court'),
-  showAllValues: true,
-  minLength: 2,
-  defaultValue: ''
-})
-autocomplete({
-  selectElement: document.getElementById('case-type'),
-  showAllValues: true,
+  showAllValues: false,
   minLength: 2,
   defaultValue: ''
 })

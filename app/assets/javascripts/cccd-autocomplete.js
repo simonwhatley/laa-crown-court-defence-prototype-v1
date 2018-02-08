@@ -68,9 +68,9 @@ var autocomplete = function(options) {
 
     var sortedFilteredMatches = filteredMatches.sort(function(thingA, thingB) {
 
-      if (thingA['resultPosition'] < thingB['resultPosition'] ) {
+      if ( thingA['resultPosition'] < thingB['resultPosition'] ) {
         return -1
-      } else if (thingA['resultPosition'] > thingB['resultPosition'] ) {
+      } else if ( thingA['resultPosition'] > thingB['resultPosition'] ) {
         return 1
       } else {
         return 0

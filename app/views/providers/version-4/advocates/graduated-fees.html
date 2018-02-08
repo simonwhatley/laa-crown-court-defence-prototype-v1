@@ -40,20 +40,22 @@
 
 						</div>
 
-						<!-- TODO: Remove if scheme 10 -->
+						{% if data['scheme_version'] == 9 -%}
 						<div class="form-section">
 							
 							{% include "./includes/_graduated_fees_witnesses.html" %}
 
 						</div>
+						{%- endif %}
 
-						<!-- TODO: Remove if scheme 10 -->
+						{% if data['scheme_version'] == 9 -%}
 						<div class="form-section">
 							
 							{% include "./includes/_graduated_fees_prosecution_evidence.html" %}
 
 						</div>
-						
+						{%- endif %}
+
 						{% include "./includes/_form_actions.html" %}
 
 					</form>
