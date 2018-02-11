@@ -28,7 +28,17 @@
 					
 					<form class="form" method="post">
 
-						
+						<div class="form-section">
+							
+							{% include "../includes/_miscellaneous_fees.html" %}
+
+						</div>
+
+						<div class="form-section">
+							<hr>
+							<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
+						</div>
+
 						{% include "./includes/_form_actions.html" %}
 
 					</form>

@@ -9,20 +9,20 @@
 
 
         <div class="multiple-choice" data-target="daily-attendance-fee-panel">
-            <input aria-controls="daily-attendance-fee-panel" aria-expanded="false" id="option-DA" name="agfs-grad-fees-1" type="checkbox" value="Option DA value">
-            <label for="option-DA">
+            <input aria-controls="daily-attendance-fee-panel" aria-expanded="false" id="daily-attendance-fee" name="graduated_fees_checklist" type="checkbox" value="daily_attendance_fee" {% if  data['graduated_fees_checklist'] and 'daily_attendance_fee' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="daily-attendance-fee">
                 Daily attendance fee
             </label>
         </div>
         <div class="panel panel-border-narrow js-hidden" id="daily-attendance-fee-panel">
-            <div class="form-group el-input" id="wrapped-DA-input-number-of-days-1">
-                <label class="form-label-bold" for="DA-input-number-of-days-1">
+            <div class="form-group">
+                <label class="form-label-bold" for="daily-attendance-number-of-days">
                     Number of days
                     <span class="form-hint">
                         Include all days attended
                     </span>
                 </label>
-                <input class="form-control form-control-1-4" id="DA-input-number-of-days-1" name="DA-input-number-of-days-1" type="text" value="">
+                <input class="form-control form-control-1-4" id="daily-attendance-number-of-days" name="daily_attendance_number_of_days" type="text" value="{{data['daily_attendance_number_of_days']}}">
             </div>
             <div class="form-group">
                 <fieldset>
@@ -37,19 +37,19 @@
                             <label class="form-label" for="DA-date-attended-1-1-day">
                                 Day
                             </label>
-                            <input class="form-control" id="DA-date-attended-1-1-day" max="31" min="0" name="DA-date-attended-1-1-day" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="daily-attendance-date-attended-1-1-day" max="31" min="1" name="daily_attendance_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_1_day']}}">
                         </div>
                         <div class="form-group form-group-month">
                             <label class="form-label" for="DA-date-attended-1-1-month">
                                 Month
                             </label>
-                            <input class="form-control" id="DA-date-attended-1-1-month" max="12" min="0" name="DA-date-attended-1-1-month" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="daily-attendance-date-attended-1-1-month" max="12" min="1" name="daily_attendance_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_1_month']}}">
                         </div>
                         <div class="form-group form-group-year">
                             <label class="form-label" for="DA-date-attended-1-1-year">
                                 Year
                             </label>
-                            <input class="form-control" id="DA-date-attended-1-1-year" max="2019" min="0" name="DA-date-attended-1-1-year" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="daily-attendance-date-attended-1-1-year" max="2019" min="1900" name="daily_attendance_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_1_year']}}">
                         </div>
                     </div>
                 </fieldset>
@@ -72,17 +72,17 @@
 
 
         <div class="multiple-choice" data-target="standard-appearance-fee-panel">
-            <input aria-controls="standard-appearance-fee-panel" aria-expanded="false" id="option-SAF" name="agfs-grad-fees-2" type="checkbox" value="Option SAF value">
-            <label for="option-SAF">
+            <input aria-controls="standard-appearance-fee-panel" aria-expanded="false" id="standard-appearance-fee" name="graduated_fees_checklist" type="checkbox" value="standard_appearance_fee" {% if  data['graduated_fees_checklist'] and 'standard_appearance_fee' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="standard-appearance-fee">
                 Standard appearance fee
             </label>
         </div>
         <div class="panel panel-border-narrow js-hidden" id="standard-appearance-fee-panel">
-            <div class="form-group el-input" id="wrapped-SAF-input-number-of-appearances-1">
-                <label class="form-label-bold" for="SAF-input-number-of-appearances-1">
+            <div class="form-group">
+                <label class="form-label-bold" for="standard-appearances-number-of-appearances">
                     Number of appearances
                 </label>
-                <input class="form-control form-control-1-4" id="SAF-input-number-of-appearances-1" name="SAF-input-number-of-appearances-1" type="text" value="">
+                <input class="form-control form-control-1-4" id="standard-appearances-number-of-appearances" name="standard_appearances_number_of_appearances" type="text" value="{{data['standard_appearances_number_of_appearances']}}">
             </div>
             <div class="form-group fx-saf-date">
                 <fieldset>
@@ -97,19 +97,19 @@
                             <label class="form-label" for="SAF-date-attended-1-1-day">
                                 Day
                             </label>
-                            <input class="form-control" id="SAF-date-attended-1-1-day" max="31" min="0" name="SAF-date-attended-1-1-day" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="standard-appearance-date-attended-1-1-day" max="31" min="1" name="standard_appearance_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['standard_appearance_date_attended_1_1_day']}}">
                         </div>
                         <div class="form-group form-group-month">
                             <label class="form-label" for="SAF-date-attended-1-1-month">
                                 Month
                             </label>
-                            <input class="form-control" id="SAF-date-attended-1-1-month" max="12" min="0" name="SAF-date-attended-1-1-month" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="standard-appearance-date-attended-1-1-month" max="12" min="1" name="standard_appearance_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['standard_appearance_date_attended_1_1_month']}}">
                         </div>
                         <div class="form-group form-group-year">
                             <label class="form-label" for="SAF-date-attended-1-1-year">
                                 Year
                             </label>
-                            <input class="form-control" id="SAF-date-attended-1-1-year" max="2019" min="0" name="SAF-date-attended-1-1-year" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="standard-appearance-date-attended-1-1-year" max="2019" min="1900" name="standard_appearance_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['standard_appearance_date_attended_1_1_year']}}">
                         </div>
                     </div>
                 </fieldset>
@@ -132,17 +132,17 @@
 
 
         <div class="multiple-choice" data-target="plea-trial-prep-hearing-panel">
-            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="option-PCM" name="agfs-grad-fees-3" type="checkbox" value="Option PCM value">
-            <label for="option-PCM">
+            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="graduated_fees_checklist" type="checkbox" value="plea_trial_prep_hearing" {% if  data['graduated_fees_checklist'] and 'plea_trial_prep_hearing' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="plea-trial-prep-hearing">
                 Plea and trial preparation hearing
             </label>
         </div>
         <div class="panel panel-border-narrow js-hidden" id="plea-trial-prep-hearing-panel">
-            <div class="form-group el-input" id="wrapped-PCM-input-number-of-hearings-1">
-                <label class="form-label-bold" for="PCM-input-number-of-hearings-1">
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-number-of-hearings">
                     Number of hearings
                 </label>
-                <input class="form-control form-control-1-4" id="PCM-input-number-of-hearings-1" name="PCM-input-number-of-hearings-1" type="text" value="">
+                <input class="form-control form-control-1-4" id="plea-trial-prep-hearing-number-of-hearings" name="plea_trial_prep_hearing_number_of_hearings" type="text" value="{{data['plea_trial_prep_hearing_number_of_hearings']}}">
             </div>
             <div class="form-group fx-pcm-date">
                 <fieldset>
@@ -157,19 +157,19 @@
                             <label class="form-label" for="PCM-date-attended-1-1-day">
                                 Day
                             </label>
-                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="0" name="PCM-date-attended-1-1-day" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_day']}}">
                         </div>
                         <div class="form-group form-group-month">
                             <label class="form-label" for="PCM-date-attended-1-1-month">
                                 Month
                             </label>
-                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="0" name="PCM-date-attended-1-1-month" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_month']}}">
                         </div>
                         <div class="form-group form-group-year">
                             <label class="form-label" for="PCM-date-attended-1-1-year">
                                 Year
                             </label>
-                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="0" name="PCM-date-attended-1-1-year" pattern="[0-9]*" type="number" value="">
+                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="1900" name="plea_trial_preparation_hearing_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_year']}}">
                         </div>
                     </div>
                 </fieldset>
@@ -192,17 +192,17 @@
 
 
         <div class="multiple-choice" data-target="conferences-views-panel">
-            <input aria-controls="conferences-views-panel" aria-expanded="false" id="option-CV" name="agfs-grad-fees-4" type="checkbox" value="Option CV value">
-            <label for="option-CV">
+            <input aria-controls="conferences-views-panel" aria-expanded="false" id="conferences-views" name="graduated_fees_checklist" type="checkbox" value="conferences_views" {% if  data['graduated_fees_checklist'] and 'conferences_views' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="conferences-views">
                 Conferences and views
             </label>
         </div>
         <div class="panel panel-border-narrow js-hidden" id="conferences-views-panel">
-            <div class="form-group el-input" id="wrapped-CV-input-number-of-conferences-and-views-1">
-                <label class="form-label-bold" for="CV-input-number-of-conferences-and-views-1">
+            <div class="form-group">
+                <label class="form-label-bold" for="number-of-conferences-views">
                     Number of conferences and views
                 </label>
-                <input class="form-control form-control-1-4" id="CV-input-number-of-conferences-and-views-1" name="CV-input-number-of-conferences-and-views-1" type="text" value="">
+                <input class="form-control form-control-1-4" id="number-of-conferences-views" name="number_of_conferences_views" type="text" value="{{data['number_of_conferences_views']}}">
             </div>
             <div class="form-group">
                 <label class="form-label-bold" for="conference-views-net-amount">
@@ -217,17 +217,17 @@
 
 
         <div class="multiple-choice" data-target="defendants-uplift-panel">
-            <input aria-controls="defendants-uplift-panel" aria-expanded="false" id="option-NDU" name="agfs-grad-fees-5" type="checkbox" value="Option NDU value">
-            <label for="option-NDU">
+            <input aria-controls="defendants-uplift-panel" aria-expanded="false" id="defendants-uplift" name="graduated_fees_checklist" type="checkbox" value="defendants_uplift" {% if  data['graduated_fees_checklist'] and 'defendants_uplift' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="defendants-uplift">
                 Number of defendants uplift
             </label>
         </div>
         <div class="panel panel-border-narrow js-hidden" id="defendants-uplift-panel">
-            <div class="form-group el-input" id="wrapped-NDU-input-number-of-defendants-1">
-                <label class="form-label-bold" for="NDU-input-number-of-defendants-1">
+            <div class="form-group">
+                <label class="form-label-bold" for="number-of-defendants">
                     Number of defendants
                 </label>
-                <input class="form-control form-control-1-4" id="NDU-input-number-of-defendants-1" name="NDU-input-number-of-defendants-1" type="text" value="">
+                <input class="form-control form-control-1-4" id="number-of-defendants" name="number_of_defendants" type="text" value="{{data['number_of_defendants']}}">
             </div>
             <div class="form-group">
                 <label class="form-label-bold" for="defendants-uplift-net-amount">
@@ -241,27 +241,27 @@
         </div>
 
 
-        <div class="multiple-choice" data-target="case-uplift-panel">
-            <input aria-controls="case-uplift-panel" aria-expanded="false" id="option-NCU" name="agfs-grad-fees-6" type="checkbox" value="Option NCU value">
-            <label for="option-NCU">
+        <div class="multiple-choice" data-target="cases-uplift-panel">
+            <input aria-controls="cases-uplift-panel" aria-expanded="false" id="cases-uplift" name="graduated_fees_checklist" type="checkbox" value="cases_uplift" {% if  data['graduated_fees_checklist'] and 'cases_uplift' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="cases-uplift">
                 Number of cases uplift
             </label>
         </div>
-        <div class="panel panel-border-narrow js-hidden" id="case-uplift-panel">
-            <div class="form-group el-input" id="wrapped-NCU-input-number-of-cases-1">
-                <label class="form-label-bold" for="NCU-input-number-of-cases-1">
+        <div class="panel panel-border-narrow js-hidden" id="cases-uplift-panel">
+            <div class="form-group">
+                <label class="form-label-bold" for="number-of-cases">
                     Number of cases
                 </label>
-                <input class="form-control form-control-1-4" id="NCU-input-number-of-cases-1" name="NCU-input-number-of-cases-1" type="text" value="">
+                <input class="form-control form-control-1-4" id="number-of-cases" name="number_of_cases" type="text" value="{{data['number_of_cases']}}">
             </div>
-            <div class="form-group el-input" id="wrapped-NCU-input-additional-case-numbers-1">
-                <label class="form-label-bold" for="NCU-input-additional-case-numbers-1">
+            <div class="form-group" id="wrapped-additional-case-numbers">
+                <label class="form-label-bold" for="additional-case-numbers">
                     Additional case numbers
                     <span class="form-hint">
                         Seperate with commas
                     </span>
                 </label>
-                <input class="form-control" id="NCU-input-additional-case-numbers-1" name="NCU-input-additional-case-numbers-1" type="text" value="">
+                <input class="form-control" id="additional-case-numbers" name="additional_case_numbers" type="text" value="{{data['additional_case_numbers']}}">
             </div>
             <div class="form-group">
                 <label class="form-label-bold" for="cases-uplift-net-amount">

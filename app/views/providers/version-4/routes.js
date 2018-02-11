@@ -212,7 +212,8 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
                 'previous' : req.baseUrl + '/advocates/fees'
-            }
+            },
+            fees: []
     	});
 });
 
@@ -408,7 +409,8 @@ router.get('/litigators/offence-details', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/fees',
                 'previous' : req.baseUrl + '/litigators/defendant-details'
-            }
+            },
+            classes: []
     	});
 
 });
@@ -479,7 +481,8 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/disbursements',
                 'previous' : req.baseUrl + '/litigators/fees'
-            }
+            },
+            fees: []
     	});
 });
 

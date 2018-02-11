@@ -83,6 +83,10 @@ module.exports = {
 
 	},
 
+	getMiscellaneousFees: function(fee_scheme, fee_scheme_version) {
+
+	},
+
 	feeType: function(fee_scheme, fee_type, case_type) {
 		// var data = {
 		// 	"agfs": [
