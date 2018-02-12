@@ -46,7 +46,7 @@
 			<label for="supporting-evidence-checklist-8">Order in respect of judicial apportionment</label>
 		</div>
 
-		{% if fee_scheme == "lgfs" -%}
+		{% if data['fee_scheme'] == "lgfs" -%}
 		<div class="multiple-choice">
 			<input id="supporting-evidence-checklist-9" type="checkbox" name="supporting_evidence_checklist" value="prior_authority_crm4" {% if  data['supporting_evidence_checklist'] and 'prior_authority_crm4' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
 			<label for="supporting-evidence-checklist-9">Prior authority CRM4</label>

@@ -28,8 +28,18 @@
 					
 					<form class="form" method="post">
 
+						<p>I certify on behalf of the payee, that the information provided is correct.</p>
+
+						{% if data['bill_type'] == "litigator_final" -%}
+						<p>This work has not been and will not be the subject of any other claim for remuneration from criminal legal aid.</p>
+						{%- endif %}
 						
-						{% include "./includes/_form_actions.html" %}
+						<div class="form-section">
+							<div class="form-group form-buttons">
+								<input type="submit" class="button" value="Certify and submit" formaction="{{links.next}}">
+								<input type="submit" class="button button-tertiary" value="Save as draft" formaction="{{links.save}}">
+							</div>
+						</div>
 
 					</form>
 
