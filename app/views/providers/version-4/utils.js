@@ -2,6 +2,7 @@ var courts = require('./data/crown_courts.json')
 var caseTypes = require('./data/case_types.json')
 var offencesScheme10 = require('./data/scheme_10_offences.json')
 var offencesScheme9 = require('./data/scheme_9_offences.json')
+var miscellaneousFees = require('./data/miscellaneous_fees.json')
 
 module.exports = {
 
@@ -84,6 +85,12 @@ module.exports = {
 	},
 
 	getMiscellaneousFees: function(fee_scheme, fee_scheme_version) {
+
+		if(!fee_scheme || !fee_scheme_version) return null
+
+		return miscellaneousFees.filter( function(obj) {
+	        return !!~obj.scheme.indexOf(fee_scheme)
+	    })
 
 	},
 

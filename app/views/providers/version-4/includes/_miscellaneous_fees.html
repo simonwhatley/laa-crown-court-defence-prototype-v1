@@ -9,7 +9,7 @@
 			<option value=""></option>
 
 			{% for fee in fees -%}
-				<option value="{{fee.key}}" {% if fee.abbreviations.length -%}data-abbreviations="{{fee.abbreviations}}" {%- endif %}{% if fee.other_names.length -%}data-other-names="{{fee.other_names}}" {%- endif %} {% if data['miscellaneous_fee'] == type.key %}selected="selected"{% endif %}>{{fee.name}}</option>
+				<option value="{{fee.key}}"{% if fee.abbreviations.length -%} data-abbreviations="{{fee.abbreviations}}"{%- endif %}{% if fee.other_names.length -%} data-other-names="{{fee.other_names}}"{%- endif %}{% if data['miscellaneous_fee'] == fee.key -%} selected="selected"{%- endif %}>{{fee.name}}</option>
 			{%- endfor %}
 
 		</select>
@@ -18,11 +18,11 @@
 </div>
 
 <div class="form-group">
-    <label class="form-label-bold" for="daily-attendance-fee-net-amount">
+    <label class="form-label-bold" for="miscellaneous-fee-net-amount">
         Net amount
     </label>
     <span class="form-input-denote">
         £
     </span>
-    <input class="form-control form-control-1-4 form-input-denote__input" id="daily-attendance-fee-net-amount" name="daily_attendance_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_net_amount']}}">
+    <input class="form-control form-control-1-4 form-input-denote__input" id="miscellaneous-fee-net-amount" name="miscellaneous_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['miscellaneous_fee_net_amount']}}">
 </div>

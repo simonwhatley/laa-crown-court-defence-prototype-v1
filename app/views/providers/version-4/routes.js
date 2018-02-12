@@ -213,7 +213,7 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
                 'previous' : req.baseUrl + '/advocates/fees'
             },
-            fees: []
+            fees: utils.getMiscellaneousFees('agfs','9')
     	});
 });
 
@@ -410,7 +410,7 @@ router.get('/litigators/offence-details', function(req, res) {
                 'next' : req.baseUrl + '/litigators/fees',
                 'previous' : req.baseUrl + '/litigators/defendant-details'
             },
-            classes: []
+            classes: utils.getOffenceClassesScheme9()
     	});
 
 });
@@ -482,7 +482,7 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
                 'next' : req.baseUrl + '/litigators/disbursements',
                 'previous' : req.baseUrl + '/litigators/fees'
             },
-            fees: []
+            fees: utils.getMiscellaneousFees('lgfs','9')
     	});
 });
 
@@ -492,7 +492,8 @@ router.get('/litigators/disbursements', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/travel-expenses',
                 'previous' : req.baseUrl + '/litigators/miscellaneous-fees'
-            }
+            },
+            disbursements: []
     	});
 });
 
