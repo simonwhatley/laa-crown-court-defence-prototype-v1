@@ -167,6 +167,21 @@ span.status.status-part-authorised {
     border-color: #54592f
 }
 
+/* --------------------------------------- */
+/* Dropzone styles */
+/* --------------------------------------- */
+
+.dropzone {
+  border: 2px dashed #0b0c0c;
+  border-radius: 5px;
+  /*background-color: #f8f8f8;*/
+  min-height: 150px;
+  padding: 54px 54px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
 
 /* --------------------------------------- */
 /* Autocomplete styles */
