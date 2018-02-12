@@ -11,11 +11,11 @@
 	{% include "./includes/_banner.html" %}
 
 	<div class="grid-row">
-	    <div class="column-two-thirds">
+	    <div class="column-full">
 
 	    	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<form class="form" action="{{links.next}}" method="post">
+	    	<form class="form" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for advocate fees
@@ -25,12 +25,55 @@
 					Cost summary
 				</h2>
 
+				<div class="grid-row">
 
-				<div class="form-section">
-					<div class="form-group form-buttons">
-						<input type="submit" class="button" value="Continue and certify">
-						<input type="submit" class="button button-tertiary" value="Save as draft">
-						<a href="#noop" class="link-delete">Delete this claim</a>
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">Fees</span>
+							£999,999.00
+						</h3>
+						<a href="{{links.fees}}">
+							Change fees
+						</a>
+					</div>
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">Travel expenses</span>
+							£999,999.00
+						</h3>
+						<a href="{{links.travel}}">
+							Change travel expenses
+						</a>
+					</div>
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">VAT</span>
+							£199,999.80
+						</h3>
+						<p class="font-grey">&nbsp;</p>
+					</div>
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">Total claimed</span>
+							£999,999.00
+						</h3>
+						<p class="font-grey">&nbsp;</p>
+					</div>
+
+				</div>
+
+				<div class="grid-row">
+					<div class="column-full">
+						<div class="form-section">
+							<div class="form-group form-buttons">
+								<input type="submit" class="button" value="Save and continue" formaction="{{links.next}}">
+								<input type="submit" class="button button-tertiary" value="Save as draft" formaction="{{links.save}}">
+								<a href="#noop" class="link-delete" role="button">Delete this claim</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
