@@ -152,6 +152,14 @@
         "abbreviations": []
     },
     {
+        "key": "further_case_management_hearing_fcmh",
+        "name": "Further case management hearing (FCMH)",
+        "scheme": ["agfs"],
+        "scheme_version": ["10"],
+        "other_names": [],
+        "abbreviations": ["FCMH"]
+    },
+    {
         "key": "hearings_relating_to_admissibility_of_evidence_half_day",
         "name": "Hearings relating to admissibility of evidence (half day)",
         "scheme": ["agfs"],
@@ -216,6 +224,14 @@
         "abbreviations": []
     },
     {
+        "key": "mention_hearing",
+        "name": "Mention hearing",
+        "scheme": ["agfs"],
+        "scheme_version": ["10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
         "key": "noting_brief_fee",
         "name": "Noting brief fee",
         "scheme": ["agfs"],
@@ -227,7 +243,7 @@
         "key": "paper_plea_case_management",
         "name": "Paper plea & case management",
         "scheme": ["agfs"],
-        "scheme_version": ["9","10"],
+        "scheme_version": ["9"],
         "other_names": [],
         "abbreviations": []
     },
@@ -235,7 +251,7 @@
         "key": "paper_plea_case_management_uplift",
         "name": "Paper plea & case management uplift",
         "scheme": ["agfs"],
-        "scheme_version": ["9","10"],
+        "scheme_version": ["9"],
         "other_names": [],
         "abbreviations": []
     },

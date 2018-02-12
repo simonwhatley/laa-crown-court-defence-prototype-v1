@@ -3,6 +3,7 @@ var caseTypes = require('./data/case_types.json')
 var offencesScheme10 = require('./data/scheme_10_offences.json')
 var offencesScheme9 = require('./data/scheme_9_offences.json')
 var miscellaneousFees = require('./data/miscellaneous_fees.json')
+var disbursements = require('./data/disbursements.json')
 
 module.exports = {
 
@@ -86,11 +87,29 @@ module.exports = {
 
 	getMiscellaneousFees: function(fee_scheme, fee_scheme_version) {
 
-		if(!fee_scheme || !fee_scheme_version) return null
+		if(!fee_scheme)
+			return null
 
-		return miscellaneousFees.filter( function(obj) {
-	        return !!~obj.scheme.indexOf(fee_scheme)
-	    })
+		if(!fee_scheme_version)
+			var fee_scheme_version = "9"
+
+		return miscellaneousFees.filter( (obj) =>
+	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	    )
+
+	},
+
+	getDisbursements: function(fee_scheme, fee_scheme_version) {
+
+		if(!fee_scheme)
+			var fee_scheme = "lgfs"
+
+		if(!fee_scheme_version)
+			var fee_scheme_version = "9"
+
+		return disbursements.filter( (obj) =>
+	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	    )
 
 	},
 
