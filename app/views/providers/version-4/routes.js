@@ -128,7 +128,8 @@ router.get('/advocates/defendant-details', function(req, res) {
     	{
             links: {
                 'next' : nextUrl,
-                'previous' : req.baseUrl + '/advocates/case-details'
+                'previous' : req.baseUrl + '/advocates/case-details',
+                'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
@@ -150,7 +151,8 @@ router.get('/advocates/offence-details', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
-                'previous' : req.baseUrl + '/advocates/defendant-details'
+                'previous' : req.baseUrl + '/advocates/defendant-details',
+                'save' : req.baseUrl + '/advocates/'
             },
             classes: classes
     	});
@@ -175,7 +177,8 @@ router.get('/advocates/fees', function(req, res) {
             {
                 links: {
                     'next' : req.baseUrl + '/advocates/travel-expenses',
-                    'previous' : previousUrl
+                    'previous' : previousUrl,
+                    'save' : req.baseUrl + '/advocates/'
                 }
             });
 
@@ -187,7 +190,8 @@ router.get('/advocates/fees', function(req, res) {
                  {
                     links: {
                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl
+                        'previous' : previousUrl,
+                        'save' : req.baseUrl + '/advocates/'
                     }
                  });
 
@@ -197,7 +201,8 @@ router.get('/advocates/fees', function(req, res) {
                 {
                     links: {
                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl
+                        'previous' : previousUrl,
+                        'save' : req.baseUrl + '/advocates/'
                     }
                 });
 
@@ -211,7 +216,8 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
-                'previous' : req.baseUrl + '/advocates/fees'
+                'previous' : req.baseUrl + '/advocates/fees',
+                'save' : req.baseUrl + '/advocates/'
             },
             fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
     	});
@@ -233,7 +239,8 @@ router.get('/advocates/travel-expenses', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/supporting-evidence',
-                'previous' : previousUrl
+                'previous' : previousUrl,
+                'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
@@ -243,7 +250,8 @@ router.get('/advocates/supporting-evidence', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/additional-information',
-                'previous' : req.baseUrl + '/advocates/travel-expenses'
+                'previous' : req.baseUrl + '/advocates/travel-expenses',
+                'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
@@ -253,7 +261,8 @@ router.get('/advocates/additional-information', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/claim-summary',
-                'previous' : req.baseUrl + '/advocates/supporting-evidence'
+                'previous' : req.baseUrl + '/advocates/supporting-evidence',
+                'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
@@ -263,7 +272,8 @@ router.get('/advocates/claim-summary', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/certify-claim',
-                'previous' : req.baseUrl + '/advocates/additional-information'
+                'previous' : req.baseUrl + '/advocates/additional-information',
+                'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
@@ -273,7 +283,8 @@ router.get('/advocates/certify-claim', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/thank-you',
-                'previous' : req.baseUrl + '/advocates/claim-summary'
+                'previous' : req.baseUrl + '/advocates/claim-summary',
+                'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
@@ -349,6 +360,7 @@ router.get('/litigators/transfer-details', function(req, res) {
                 'next' : req.baseUrl + '/litigators/case-details',
                 'previous' : req.baseUrl + '/litigators/bill-type',
                 'home' : req.baseUrl + '/litigators/',
+                'save' : req.baseUrl + '/litigators/',
                 'cancel' : req.baseUrl + '/litigators/cancel'
             }
 
@@ -373,6 +385,7 @@ router.get('/litigators/case-details', function(req, res) {
                 'next' : req.baseUrl + '/litigators/defendant-details',
                 'previous' : previousUrl,
                 'home' : req.baseUrl + '/litigators/',
+                'save' : req.baseUrl + '/litigators/',
                 'cancel' : req.baseUrl + '/litigators/cancel'
             },
             case_types: utils.getCaseTypesByFeeScheme(req.session.data.fee_scheme),
@@ -397,7 +410,8 @@ router.get('/litigators/defendant-details', function(req, res) {
     	{
             links: {
                 'next' : nextUrl,
-                'previous' : req.baseUrl + '/litigators/case-details'
+                'previous' : req.baseUrl + '/litigators/case-details',
+                'save' : req.baseUrl + '/litigators/'
             }
     	});
 });
@@ -408,7 +422,8 @@ router.get('/litigators/offence-details', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/fees',
-                'previous' : req.baseUrl + '/litigators/defendant-details'
+                'previous' : req.baseUrl + '/litigators/defendant-details',
+                'save' : req.baseUrl + '/litigators/'
             },
             classes: utils.getOffenceClassesScheme9()
     	});
@@ -433,7 +448,8 @@ router.get('/litigators/fees', function(req, res) {
             {
                 links: {
                     'next' : req.baseUrl + '/litigators/travel-expenses',
-                    'previous' : previousUrl
+                    'previous' : previousUrl,
+                    'save' : req.baseUrl + '/litigators/'
                 }
             });
 
@@ -443,7 +459,8 @@ router.get('/litigators/fees', function(req, res) {
             {
                 links: {
                     'next' : req.baseUrl + '/litigators/travel-expenses',
-                    'previous' : previousUrl
+                    'previous' : previousUrl,
+                    'save' : req.baseUrl + '/litigators/'
                 }
             });
 
@@ -455,7 +472,8 @@ router.get('/litigators/fees', function(req, res) {
                 {
                     links: {
                         'next' : req.baseUrl + '/litigators/miscellaneous-fees',
-                        'previous' : previousUrl
+                        'previous' : previousUrl,
+                        'save' : req.baseUrl + '/litigators/'
                     }
                 });
 
@@ -465,7 +483,8 @@ router.get('/litigators/fees', function(req, res) {
                 {
                     links: {
                         'next' : req.baseUrl + '/litigators/miscellaneous-fees',
-                        'previous' : previousUrl
+                        'previous' : previousUrl,
+                        'save' : req.baseUrl + '/litigators/'
                     }
                 });
 
@@ -480,7 +499,8 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/disbursements',
-                'previous' : req.baseUrl + '/litigators/fees'
+                'previous' : req.baseUrl + '/litigators/fees',
+                'save' : req.baseUrl + '/litigators/'
             },
             fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
     	});
@@ -491,7 +511,8 @@ router.get('/litigators/disbursements', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/travel-expenses',
-                'previous' : req.baseUrl + '/litigators/miscellaneous-fees'
+                'previous' : req.baseUrl + '/litigators/miscellaneous-fees',
+                'save' : req.baseUrl + '/litigators/'
             },
             disbursements: utils.getDisbursements(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
     	});
@@ -513,7 +534,8 @@ router.get('/litigators/travel-expenses', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/supporting-evidence',
-                'previous' : previousUrl
+                'previous' : previousUrl,
+                'save' : req.baseUrl + '/litigators/'
             }
     	});
 });
@@ -524,7 +546,8 @@ router.get('/litigators/supporting-evidence', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/additional-information',
-                'previous' : req.baseUrl + '/litigators/travel-expenses'
+                'previous' : req.baseUrl + '/litigators/travel-expenses',
+                'save' : req.baseUrl + '/litigators/'
             }
     	});
 });
@@ -534,7 +557,8 @@ router.get('/litigators/additional-information', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/claim-summary',
-                'previous' : req.baseUrl + '/litigators/supporting-evidence'
+                'previous' : req.baseUrl + '/litigators/supporting-evidence',
+                'save' : req.baseUrl + '/litigators/'
             }
     	});
 });
@@ -544,7 +568,8 @@ router.get('/litigators/claim-summary', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/certify-claim',
-                'previous' : req.baseUrl + '/litigators/additional-information'
+                'previous' : req.baseUrl + '/litigators/additional-information',
+                'save' : req.baseUrl + '/litigators/'
             }
     	});
 });
@@ -554,7 +579,8 @@ router.get('/litigators/certify-claim', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/thank-you',
-                'previous' : req.baseUrl + '/litigators/claim-summary'
+                'previous' : req.baseUrl + '/litigators/claim-summary',
+                'save' : req.baseUrl + '/litigators/'
             }
     	});
 });
