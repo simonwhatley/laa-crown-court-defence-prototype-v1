@@ -137,13 +137,12 @@ router.get('/advocates/defendant-details', function(req, res) {
 router.get('/advocates/offence-details', function(req, res) {
 
     // TODO: delete offence keys prior to re-running
+    delete req.session.data.depdrop_all_params
 
     // TODO: Nasty code! There must be a better way
-    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_year >= 4 && req.session.data.representation_order_date_year >= 1) {
-        // var req.session.data.scheme_version = 10
+    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_month >= 4 && req.session.data.representation_order_date_day >= 1) {
         var classes = utils.getOffenceClassesScheme10()
     } else {
-        // var req.session.data.scheme_version = 9
         var classes = utils.getOffenceClassesScheme9()
     }
 
