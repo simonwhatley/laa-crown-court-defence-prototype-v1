@@ -46,7 +46,7 @@ module.exports = {
 	},
 
 	getOffenceCategoriesScheme9: function(class_id) {
-	
+
 		if(!class_id) return null
 
 		var classObj = this.getOffenceClassesScheme9().filter(function (obj) {
@@ -157,8 +157,11 @@ module.exports = {
 	    //return (case_type == "trial" ? "graduated" : "fixed");
 
 	},
+
 	isFixedFee: function(fee_scheme, case_type) {
 		// var caseType = case_type.toLowerCase().replace(/\s/g, '_');
+
+		if(!fee_scheme || !case_type) return null
 
 		var data = {
 			"agfs": [
@@ -182,8 +185,11 @@ module.exports = {
 
 		return (!!~data[fee_scheme].indexOf(case_type));
 	},
+
 	isGraduatedFee: function(fee_scheme, case_type) {
 		// var caseType = case_type.toLowerCase().replace(/\s/g, '_');
+
+		if(!fee_scheme || !case_type) return null
 
 		var data = {
 			"agfs": [
@@ -204,6 +210,7 @@ module.exports = {
 
 		return (!!~data[fee_scheme].indexOf(case_type));
 	},
+
 	authenticate: function(user_type, username) {
 
 		var data = {
