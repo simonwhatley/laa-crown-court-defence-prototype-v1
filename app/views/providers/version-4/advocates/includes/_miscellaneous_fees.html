@@ -5,8 +5,8 @@
 			<!-- <span class="form-hint"></span> -->
 		</legend>
 
-		<select id="miscellaneous-fee" name="miscellaneous_fee" class="form-control">
-			<option value=""></option>
+		<select id="miscellaneous-fee-1" name="miscellaneous_fee" class="form-control">
+			<option value="">&nbsp;</option>
 
 			{% for fee in fees -%}
 				<option value="{{fee.key}}"{% if fee.abbreviations.length -%} data-abbreviations="{{fee.abbreviations}}"{%- endif %}{% if fee.other_names.length -%} data-other-names="{{fee.other_names}}"{%- endif %}{% if data['miscellaneous_fee'] == fee.key -%} selected="selected"{%- endif %}>{{fee.name}}</option>
