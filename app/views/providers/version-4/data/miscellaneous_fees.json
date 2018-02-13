@@ -160,6 +160,14 @@
         "abbreviations": ["FCMH"]
     },
     {
+        "key": "ground_rules_hearing",
+        "name": "Ground rules hearing",
+        "scheme": ["agfs"],
+        "scheme_version": ["10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
         "key": "hearings_relating_to_admissibility_of_evidence_half_day",
         "name": "Hearings relating to admissibility of evidence (half day)",
         "scheme": ["agfs"],
@@ -220,14 +228,6 @@
         "name": "Hearings relating to disclosure (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
-        "other_names": [],
-        "abbreviations": []
-    },
-    {
-        "key": "mention_hearing",
-        "name": "Mention hearing",
-        "scheme": ["agfs"],
-        "scheme_version": ["10"],
         "other_names": [],
         "abbreviations": []
     },
