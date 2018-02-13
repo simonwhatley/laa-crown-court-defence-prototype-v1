@@ -206,67 +206,13 @@ module.exports = {
 	},
 	authenticate: function(user_type, username) {
 
-		// var data = {
-		// 	"providers": [
-		// 		"advocate",
-		// 		"advocateadmin",
-		// 		"advocate@example.com",
-		// 		"advocateadmin@example.com",
-		// 		"horace@example.com",
-		// 		"horace.rumpole@example.com",
-		// 		"litigator",
-		// 		"litigatoradmin",
-		// 		"litigator@example.com",
-		// 		"litigatoradmin@example.com",
-		// 		"perry@example.com",
-		// 		"perry.mason@example.com"
-		// 	],
-		// 	"caseworkers": [
-		// 		"caseworker",
-		// 		"caseworkeradmin",
-		// 		"caseworker@example.com",
-		// 		"caseworkeradmin@example.com"
-		// 	]
-		// };
-
 		var data = {
 			"horace" : "advocates",
-			"perry" : "litigators"
+			"horace@example.com" : "advocates",
+			"perry" : "litigators",
+			"perry@example.com" : "litigators"
 		};
 
 		return data[username];
 	}
 }
-
-
-		
-
-		// var data = {
-		// 	"agfs": [
-		// 		"Appeal Against Conviction",
-		// 		"Appeal Against Sentence",
-		// 		"Breach of Crown Court Order",
-		// 		"Committal",
-		// 		"Contempt",
-		// 		"Cracked Before Retrial",
-		// 		"Cracked Trial",
-		// 		"Elected Case Not Proceeded",
-		// 		"Guilty Plea",
-		// 		"Retrial",
-		// 		"Trial"
-		// 	],
-		// 	"lgfs": [
-		// 		"Appeal Against Conviction",
-		// 		"Appeal Against Sentence",
-		// 		"Breach of Crown Court Order",
-		// 		"Committal",
-		// 		"Committal For Sentence",
-		// 		"Cracked Before Retrial",
-		// 		"Cracked Trial",
-		// 		"Discontinuance",
-		// 		"Elected Case Not Proceeded",
-		// 		"Hearing Subsequent to Sentence",
-		// 		"Retrial",
-		// 		"Trial"
-		// 	]
-		// }
