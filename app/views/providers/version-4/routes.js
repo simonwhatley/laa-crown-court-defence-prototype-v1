@@ -449,7 +449,8 @@ router.get('/litigators/fees', function(req, res) {
                     'next' : req.baseUrl + '/litigators/travel-expenses',
                     'previous' : previousUrl,
                     'save' : req.baseUrl + '/litigators/'
-                }
+                },
+                disbursements: utils.getDisbursements(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
             });
 
     } else if (req.session.data.bill_type == "litigator_transfer") {

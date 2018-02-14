@@ -7,16 +7,15 @@
             </span>
         </legend>
 
-
         <div class="multiple-choice" data-target="interim-fee-panel">
-            <input aria-controls="interim-fee-panel" aria-expanded="false" id="disbursement" name="interim_fee" type="radio" value="disbursement_only" {{ checked('interim_fee','disbursement_only') }}>
+            <input aria-controls="interim-fee-panel" aria-expanded="false" id="disbursement" name="interim_fee_type" type="radio" value="disbursement_only" {{ checked('interim_fee_type','disbursement_only') }}>
             <label for="disbursement">
                 Disbursement only
             </label>
         </div>
-        
+
         <div class="multiple-choice" data-target="plea-trial-prep-hearing-panel">
-            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="interim_fee" type="radio" value="plea_trial_prep_hearing" {{ checked('interim_fee','plea_trial_prep_hearing') }}>
+            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="interim_fee_type" type="radio" value="plea_trial_prep_hearing" {{ checked('interim_fee_type','plea_trial_prep_hearing') }}>
             <label for="plea-trial-prep-hearing">
                 Plea and trial preparation hearing (<abbr title="Plea &amp; Trial Preparation Hearing">PTPH</abbr>)
             </label>
@@ -28,7 +27,7 @@
                 </label>
                 <input class="form-control form-control-1-4" id="standard-appearances-number-of-appearances" name="standard_appearances_number_of_appearances" type="text" value="{{data['standard_appearances_number_of_appearances']}}">
             </div>
-            <div class="form-group fx-saf-date">
+            <div class="form-group">
                 <fieldset>
                     <legend class="form-label-bold">
                         Date of hearing
@@ -76,7 +75,7 @@
 
 
         <div class="multiple-choice" data-target="retrial-new-solicitor-panel">
-            <input aria-controls="retrial-new-solicitor-panel" aria-expanded="false" id="disbursement" name="interim_fee" type="radio" value="retrial_new_solicitor" {{ checked('interim_fee','retrial_new_solicitor') }}>
+            <input aria-controls="retrial-new-solicitor-panel" aria-expanded="false" id="retrial-new-solicitor" name="interim_fee_type" type="radio" value="retrial_new_solicitor" {{ checked('interim_fee_type','retrial_new_solicitor') }}>
             <label for="retrial-new-solicitor">
                 Retrial, new solicitor
             </label>
@@ -161,7 +160,7 @@
 
 
         <div class="multiple-choice" data-target="retrial-start-panel">
-            <input aria-controls="retrial-start-panel" aria-expanded="false" id="retrial-start" name="interim_fee" type="radio" value="retrial_start" {{ checked('interim_fee','retrial_start') }}>
+            <input aria-controls="retrial-start-panel" aria-expanded="false" id="retrial-start" name="interim_fee_type" type="radio" value="retrial_start" {{ checked('interim_fee_type','retrial_start') }}>
             <label for="retrial-start">
                 Retrial start
             </label>
@@ -223,7 +222,7 @@
 
 
         <div class="multiple-choice" data-target="trial-start-panel">
-            <input aria-controls="trial-start-panel" aria-expanded="false" id="trial-start" name="interim_fee" type="radio" value="trial_start" {{ checked('interim_fee','trial_start') }}>
+            <input aria-controls="trial-start-panel" aria-expanded="false" id="trial-start" name="interim_fee_type" type="radio" value="trial_start" {{ checked('interim_fee_type','trial_start') }}>
             <label for="trial-start">
                 Trial start
             </label>
@@ -285,7 +284,7 @@
 
 
         <div class="multiple-choice" data-target="warrant-fee-panel">
-            <input aria-controls="warrant-fee-panel" aria-expanded="false" id="warrant-fee" name="interim_fee" type="radio" value="warrant_fee" {{ checked('interim_fee','warrant_fee') }}>
+            <input aria-controls="warrant-fee-panel" aria-expanded="false" id="warrant-fee" name="interim_fee_type" type="radio" value="warrant_fee" {{ checked('interim_fee_type','warrant_fee') }}>
             <label for="warrant-fee">
                 Warrant fee
             </label>
