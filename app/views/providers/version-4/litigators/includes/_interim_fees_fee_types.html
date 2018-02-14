@@ -1,0 +1,368 @@
+<div class="form-group">
+    <fieldset>
+        <legend class="heading-small">
+            Fee type
+            <span class="form-hint">
+                Please choose a relevant option
+            </span>
+        </legend>
+
+
+        <div class="multiple-choice" data-target="interim-fee-panel">
+            <input aria-controls="interim-fee-panel" aria-expanded="false" id="disbursement" name="interim_fee" type="radio" value="disbursement_only" {{ checked('interim_fee','disbursement_only') }}>
+            <label for="disbursement">
+                Disbursement only
+            </label>
+        </div>
+        
+        <div class="multiple-choice" data-target="plea-trial-prep-hearing-panel">
+            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="interim_fee" type="radio" value="plea_trial_prep_hearing" {{ checked('interim_fee','plea_trial_prep_hearing') }}>
+            <label for="plea-trial-prep-hearing">
+                Plea and trial preparation hearing (<abbr title="Plea &amp; Trial Preparation Hearing">PTPH</abbr>)
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="plea-trial-prep-hearing-panel">
+            <div class="form-group">
+                <label class="form-label-bold" for="standard-appearances-number-of-appearances">
+                    <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                </label>
+                <input class="form-control form-control-1-4" id="standard-appearances-number-of-appearances" name="standard_appearances_number_of_appearances" type="text" value="{{data['standard_appearances_number_of_appearances']}}">
+            </div>
+            <div class="form-group fx-saf-date">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date of hearing
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="SAF-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="standard-appearance-date-attended-1-1-day" max="31" min="1" name="standard_appearance_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['standard_appearance_date_attended_1_1_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="SAF-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="standard-appearance-date-attended-1-1-month" max="12" min="1" name="standard_appearance_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['standard_appearance_date_attended_1_1_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="SAF-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="standard-appearance-date-attended-1-1-year" max="2019" min="1900" name="standard_appearance_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['standard_appearance_date_attended_1_1_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <a href="#noop">
+                    Add another date
+                </a>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="standard-appearance-fee-net-amount">
+                    Net amount
+                </label>
+                <span class="form-input-denote">
+                    £
+                </span>
+                <input class="form-control form-control-1-4 form-input-denote__input" id="standard-appearance-fee-net-amount" name="standard_appearance_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['standard_appearance_fee_net_amount']}}">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="retrial-new-solicitor-panel">
+            <input aria-controls="retrial-new-solicitor-panel" aria-expanded="false" id="disbursement" name="interim_fee" type="radio" value="retrial_new_solicitor" {{ checked('interim_fee','retrial_new_solicitor') }}>
+            <label for="retrial-new-solicitor">
+                Retrial, new solicitor
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="retrial-new-solicitor-panel">
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-number-of-hearings">
+                    <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                </label>
+                <input class="form-control form-control-1-4" id="plea-trial-prep-hearing-number-of-hearings" name="plea_trial_prep_hearing_number_of_hearings" type="text" value="{{data['plea_trial_prep_hearing_number_of_hearings']}}">
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date of legal aid transfer
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="PCM-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="PCM-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="PCM-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="1900" name="plea_trial_preparation_hearing_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date first trial concluded
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="PCM-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="PCM-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="PCM-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="1900" name="plea_trial_preparation_hearing_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-net-amount">
+                    Net amount
+                </label>
+                <span class="form-input-denote">
+                    £
+                </span>
+                <input class="form-control form-control-1-4 form-input-denote__input" id="plea-trial-prep-hearing-net-amount" name="plea_trial_prep_hearing_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['plea_trial_prep_hearing_net_amount']}}">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="retrial-start-panel">
+            <input aria-controls="retrial-start-panel" aria-expanded="false" id="retrial-start" name="interim_fee" type="radio" value="retrial_start" {{ checked('interim_fee','retrial_start') }}>
+            <label for="retrial-start">
+                Retrial start
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="retrial-start-panel">
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-number-of-hearings">
+                    <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                </label>
+                <input class="form-control form-control-1-4" id="plea-trial-prep-hearing-number-of-hearings" name="plea_trial_prep_hearing_number_of_hearings" type="text" value="{{data['plea_trial_prep_hearing_number_of_hearings']}}">
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Retrial start date
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="PCM-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="PCM-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="PCM-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="1900" name="plea_trial_preparation_hearing_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-number-of-hearings">
+                    Estimated length of retrial
+                    <span class="form-hint">Number of days</span>
+                </label>
+                <input class="form-control form-control-1-4" id="plea-trial-prep-hearing-number-of-hearings" name="plea_trial_prep_hearing_number_of_hearings" type="text" value="{{data['plea_trial_prep_hearing_number_of_hearings']}}">
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-net-amount">
+                    Net amount
+                </label>
+                <span class="form-input-denote">
+                    £
+                </span>
+                <input class="form-control form-control-1-4 form-input-denote__input" id="plea-trial-prep-hearing-net-amount" name="plea_trial_prep_hearing_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['plea_trial_prep_hearing_net_amount']}}">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="trial-start-panel">
+            <input aria-controls="trial-start-panel" aria-expanded="false" id="trial-start" name="interim_fee" type="radio" value="trial_start" {{ checked('interim_fee','trial_start') }}>
+            <label for="trial-start">
+                Trial start
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="trial-start-panel">
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-number-of-hearings">
+                    <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                </label>
+                <input class="form-control form-control-1-4" id="plea-trial-prep-hearing-number-of-hearings" name="plea_trial_prep_hearing_number_of_hearings" type="text" value="{{data['plea_trial_prep_hearing_number_of_hearings']}}">
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Retrial start date
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="PCM-date-attended-1-1-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-day" max="31" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="PCM-date-attended-1-1-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-month" max="12" min="1" name="plea_trial_preparation_hearing_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="PCM-date-attended-1-1-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="PCM-date-attended-1-1-year" max="2019" min="1900" name="plea_trial_preparation_hearing_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['plea_trial_preparation_hearing_date_attended_1_1_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-number-of-hearings">
+                    Estimated length of retrial
+                    <span class="form-hint">Number of days</span>
+                </label>
+                <input class="form-control form-control-1-4" id="plea-trial-prep-hearing-number-of-hearings" name="plea_trial_prep_hearing_number_of_hearings" type="text" value="{{data['plea_trial_prep_hearing_number_of_hearings']}}">
+            </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="plea-trial-prep-hearing-net-amount">
+                    Net amount
+                </label>
+                <span class="form-input-denote">
+                    £
+                </span>
+                <input class="form-control form-control-1-4 form-input-denote__input" id="plea-trial-prep-hearing-net-amount" name="plea_trial_prep_hearing_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['plea_trial_prep_hearing_net_amount']}}">
+            </div>
+        </div>
+
+
+        <div class="multiple-choice" data-target="warrant-fee-panel">
+            <input aria-controls="warrant-fee-panel" aria-expanded="false" id="warrant-fee" name="interim_fee" type="radio" value="warrant_fee" {{ checked('interim_fee','warrant_fee') }}>
+            <label for="warrant-fee">
+                Warrant fee
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="warrant-fee-panel">
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Warrant issued
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="warrant-issued-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="warrant-issued-day" max="31" min="1" name="warrant_issued_day" pattern="[0-9]*" type="number" value="{{data['warrant_issued_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="warrant-issued-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="warrant-issued-month" max="12" min="1" name="warrant_issued_month" pattern="[0-9]*" type="number" value="{{data['warrant_issued_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="warrant-issued-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="warrant-issued-year" max="2018" min="2010" name="warrant_issued_year" pattern="[0-9]*" type="number" value="{{data['warrant_issued_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Warrant executed
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="warrant-executed-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="warrant-executed-day" max="31" min="1" name="warrant_executed_day" pattern="[0-9]*" type="number" value="{{data['warrant_executed_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="warrant-executed-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="warrant-executed-month" max="12" min="1" name="warrant_executed_month" pattern="[0-9]*" type="number" value="{{data['warrant_executed_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="warrant-executed-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="warrant-executed-year" max="2018" min="2010" name="warrant_executed_year" pattern="[0-9]*" type="number" value="{{data['warrant_executed_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label-bold" for="warrant-fee-net-amount">
+                    Net amount
+                </label>
+                <span class="form-input-denote">
+                    £
+                </span>
+                <input class="form-control form-control-1-4 form-input-denote__input" id="warrant-fee-net-amount" name="warrant_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['warrant_fee_net_amount']}}">
+            </div>
+        </div>
+
+    </fieldset>
+</div>

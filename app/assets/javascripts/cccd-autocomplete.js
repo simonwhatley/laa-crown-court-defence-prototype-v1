@@ -6,7 +6,7 @@ var autocomplete = function(options) {
       return option.value != ''
     })
 
-    var orgs = optionsWithAValue.map(function(select) {
+    var things = optionsWithAValue.map(function(select) {
 
       var dataAbbreviations = select.getAttribute('data-abbreviations');
       dataAbbreviations = dataAbbreviations ? dataAbbreviations.split('|') : []
@@ -25,7 +25,7 @@ var autocomplete = function(options) {
       return new RegExp('\\b' + word, 'i')
     })
 
-    var matches = orgs.map(function(thing) {
+    var matches = things.map(function(thing) {
 
       var allNames = [thing.name]
         .concat(thing.other_names)

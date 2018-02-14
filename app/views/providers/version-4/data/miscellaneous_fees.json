@@ -420,7 +420,7 @@
         "name": "Wasted preparation fee",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
-        "other_names": [],
+        "other_names": ["Wasted prep fee"],
         "abbreviations": []
     },
     {
@@ -428,7 +428,7 @@
         "name": "Written / oral advice",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
-        "other_names": [],
+        "other_names": ["Written or oral advice"],
         "abbreviations": []
     }
 ]
