@@ -446,11 +446,10 @@ router.get('/litigators/fees', function(req, res) {
         res.render(`${req.feature}/${req.version}/litigators/interim-fees`,
             {
                 links: {
-                    'next' : req.baseUrl + '/litigators/travel-expenses',
+                    'next' : req.baseUrl + '/litigators/disbursements',
                     'previous' : previousUrl,
                     'save' : req.baseUrl + '/litigators/'
-                },
-                disbursements: utils.getDisbursements(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
+                }
             });
 
     } else if (req.session.data.bill_type == "litigator_transfer") {
@@ -507,11 +506,22 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
 });
 
 router.get('/litigators/disbursements', function(req, res) {
+    
+    if (req.session.data.bill_type == "litigator_interim") {
+
+        var previousUrl = req.baseUrl + '/litigators/fees'
+
+    } else {
+
+        var previousUrl = req.baseUrl + '/litigators/miscellaneous-fees'
+
+    }
+
     res.render(`${req.feature}/${req.version}/litigators/disbursements`,
     	{
             links: {
                 'next' : req.baseUrl + '/litigators/travel-expenses',
-                'previous' : req.baseUrl + '/litigators/miscellaneous-fees',
+                'previous' : previousUrl,
                 'save' : req.baseUrl + '/litigators/'
             },
             disbursements: utils.getDisbursements(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
@@ -520,13 +530,13 @@ router.get('/litigators/disbursements', function(req, res) {
 
 router.get('/litigators/travel-expenses', function(req, res) {
 
-    if (req.session.data.bill_type == "litigator_final") {
+    if (req.session.data.bill_type == "litigator_transfer") {
 
-        var previousUrl = req.baseUrl + '/litigators/disbursements'
+        var previousUrl = req.baseUrl + '/litigators/fees'
 
     } else {
 
-        var previousUrl = req.baseUrl + '/litigators/fees'
+        var previousUrl = req.baseUrl + '/litigators/disbursements'
 
     }
 
