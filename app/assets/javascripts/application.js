@@ -19,8 +19,16 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+
+  // Use GOV.UK stick-at-top-when-scrolling.js to trigger sticky content
+  // Use with class="js-stick-at-top-when-scrolling"
+  GOVUK.stickAtTopWhenScrolling.init();
 })
 
+
+// ---------------------------------------
+// Add another item JS
+// ---------------------------------------
 
 $(document).on('click', '.button-add-another', function (e) {
   var beforeThis = $(this).parents('form > .grid-row');
@@ -101,6 +109,9 @@ function sortFields() {
 }
 
 
+// ---------------------------------------
+// Password show/hide JS
+// ---------------------------------------
 
 $('#password + .fa').on('click', function() {
   $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye'); // toggle our classes for the eye icon

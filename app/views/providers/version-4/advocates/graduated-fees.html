@@ -4,6 +4,10 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{# include "../includes/_page_scripts_sticky_sidebar.html" #}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -27,7 +31,7 @@
 
 			<p>Check the <a href="https://www.gov.uk/government/publications/graduated-fee-calculators" target="_blank">graduated fee calculators</a> <span class="visually-hidden">opens in new window</span> for help</p>
 
-			<div class="grid-row">
+			<div id="form-content" class="grid-row">
 				<div class="column-two-thirds">
 					
 					<form class="form" method="post">
