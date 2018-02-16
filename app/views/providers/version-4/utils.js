@@ -4,6 +4,7 @@ var offencesScheme10 = require('./data/scheme_10_offences.json')
 var offencesScheme9 = require('./data/scheme_9_offences.json')
 var miscellaneousFees = require('./data/miscellaneous_fees.json')
 var disbursements = require('./data/disbursements.json')
+var transferReasons = require('./data/transfer_reasons.json')
 
 module.exports = {
 
@@ -111,6 +112,10 @@ module.exports = {
 	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
 	    )
 
+	},
+
+	getTransferReasons: function() {
+		return transferReasons
 	},
 
 	feeType: function(fee_scheme, fee_type, case_type) {

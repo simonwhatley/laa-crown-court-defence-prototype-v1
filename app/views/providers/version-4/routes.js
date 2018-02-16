@@ -361,8 +361,8 @@ router.get('/litigators/transfer-details', function(req, res) {
                 'home' : req.baseUrl + '/litigators/',
                 'save' : req.baseUrl + '/litigators/',
                 'cancel' : req.baseUrl + '/litigators/cancel'
-            }
-
+            },
+            transfer_reasons: utils.getTransferReasons()
     	});
 });
 

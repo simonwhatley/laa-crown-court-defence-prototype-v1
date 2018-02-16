@@ -20,13 +20,11 @@
                 </label>
                 <select id="stop-acting-reason" name="stop_acting_reason">
                     <option value=""></option>
-                    <option value="10">Up to and including PCMH transfer</option>
-                    <option value="20">Before trial transfer</option>
-                    <option value="30">During trial transfer</option>
-                    <option value="40">Transfer after trial and before sentence hearing</option>
-                    <option value="50">Transfer before retrial</option>
-                    <option value="60">Transfer during retrial</option>
-                    <option value="70">Transfer after retrial and before sentence hearing</option>
+
+                    {% for reason in transfer_reasons -%}
+                        <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['start_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+                    {%- endfor %}
+
                 </select>
             </div>
             <div class="form-group">
@@ -74,13 +72,11 @@
                 </label>
                 <select id="start-acting-reason" name="start_acting_reason">
                     <option value=""></option>
-                    <option value="10">Up to and including PCMH transfer</option>
-                    <option value="20">Before trial transfer</option>
-                    <option value="30">During trial transfer</option>
-                    <option value="40">Transfer after trial and before sentence hearing</option>
-                    <option value="50">Transfer before retrial</option>
-                    <option value="60">Transfer during retrial</option>
-                    <option value="70">Transfer after retrial and before sentence hearing</option>
+                    
+                    {% for reason in transfer_reasons -%}
+                        <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['start_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+                    {%- endfor %}
+
                 </select>
             </div>
             <div class="form-group">
