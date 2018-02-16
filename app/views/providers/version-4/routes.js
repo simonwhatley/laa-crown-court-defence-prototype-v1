@@ -457,7 +457,7 @@ router.get('/litigators/fees', function(req, res) {
         res.render(`${req.feature}/${req.version}/litigators/transfer-fees`,
             {
                 links: {
-                    'next' : req.baseUrl + '/litigators/travel-expenses',
+                    'next' : req.baseUrl + '/litigators/miscellaneous-fees',
                     'previous' : previousUrl,
                     'save' : req.baseUrl + '/litigators/'
                 }

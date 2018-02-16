@@ -22,7 +22,7 @@
                     <option value=""></option>
 
                     {% for reason in transfer_reasons -%}
-                        <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['start_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+                        <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['stop_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
                     {%- endfor %}
 
                 </select>
@@ -72,7 +72,7 @@
                 </label>
                 <select id="start-acting-reason" name="start_acting_reason">
                     <option value=""></option>
-                    
+
                     {% for reason in transfer_reasons -%}
                         <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['start_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
                     {%- endfor %}
