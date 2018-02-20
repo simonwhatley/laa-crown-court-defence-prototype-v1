@@ -163,10 +163,14 @@ router.get('/advocates/fees', function(req, res) {
     if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
         var previousUrl = req.baseUrl + '/advocates/defendant-details'
+        
+        req.session.data.fee_type = 'fixed'
 
     } else {
 
         var previousUrl = req.baseUrl + '/advocates/offence-details'
+
+        req.session.data.fee_type = 'graduated'
 
     }
 
@@ -435,9 +439,13 @@ router.get('/litigators/fees', function(req, res) {
 
         var previousUrl = req.baseUrl + '/litigators/defendant-details'
 
+        req.session.data.fee_type = 'fixed'
+
     } else {
 
         var previousUrl = req.baseUrl + '/litigators/offence-details'
+
+        req.session.data.fee_type = 'graduated'
 
     }
 
