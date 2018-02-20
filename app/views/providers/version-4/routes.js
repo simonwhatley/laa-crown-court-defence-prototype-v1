@@ -104,8 +104,7 @@ router.get('/advocates/case-details', function(req, res) {
                 'next' : req.baseUrl + '/advocates/defendant-details',
                 'previous' : req.baseUrl + '/advocates/bill-type',
                 'home' : req.baseUrl + '/advocates/',
-                'save' : req.baseUrl + '/advocates/',
-                'cancel' : req.baseUrl + '/advocates/cancel'
+                'save' : req.baseUrl + '/advocates/'
             },
             case_types: utils.getCaseTypesByFeeScheme(req.session.data.fee_scheme),
             courts: utils.getCourts()
