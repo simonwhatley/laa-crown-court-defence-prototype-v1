@@ -103,6 +103,7 @@
     </fieldset>
 </div>
 
+{% if data['case_type'] != 'breach_of_crown_court_order' -%}
 <div class="form-group">
     <label class="form-label-bold " for="maat-reference">
         MAAT Reference
@@ -112,6 +113,7 @@
     </label>
     <input class="form-control" id="maat-reference" name="maat_reference" type="text" value="{{data['maat_reference']}}" autocomplete="off">
 </div>
+{%- endif %}
 
 <a href="#noop">
     Add another representation order

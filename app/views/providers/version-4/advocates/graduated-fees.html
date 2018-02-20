@@ -56,7 +56,8 @@
 						</div>
 						{%- endif %}
 
-						{% if data['fee_scheme_version'] != 10 -%}
+
+						{% if data['fee_scheme_version'] != 10 or (data['offence_class'] == 6 or data['offence_class'] == 9) -%}
 						<div class="form-section">
 							
 							{% include "./includes/_graduated_fees_prosecution_evidence.html" %}

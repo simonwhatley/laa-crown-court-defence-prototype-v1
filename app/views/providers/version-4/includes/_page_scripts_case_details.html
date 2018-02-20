@@ -1,12 +1,14 @@
 <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
 <script src="/public/javascripts/cccd-autocomplete.js"></script>
 <script>
+{% if data['bill_type'] != 'advocate_interim' -%}
 autocomplete({
   selectElement: document.getElementById('case-type'),
   showAllValues: false,
   minLength: 2,
   defaultValue: ''
 })
+{%- endif %}
 autocomplete({
   selectElement: document.getElementById('court'),
   showAllValues: false,

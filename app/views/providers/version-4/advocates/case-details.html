@@ -59,7 +59,7 @@
 							<div class="form-group">
 								<details>
 									<summary>
-										<span class="summary">Help with adding more instructed advocates</span>
+										<span class="summary">Help with missing instructed advocates</span>
 									</summary>
 									<div class="panel panel-border-narrow">
 										<!-- if admin user, otherwise change message -->
@@ -78,6 +78,8 @@
 								<input class="form-control" id="reference-number" type="text" name="reference_number" value="{{ data['reference_number']}}" autocomplete="off" autocapitalize="off">
 							</div>
 
+
+							{% if data['bill_type'] == 'advocate_final' -%}
 							<div class="form-group">
 
 								<fieldset>
@@ -101,6 +103,7 @@
 								</fieldset>
 
 							</div>
+							{%- endif %}
 
 							<div class="form-group">
 
