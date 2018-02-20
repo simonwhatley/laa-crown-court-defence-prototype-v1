@@ -26,8 +26,10 @@
 						Interim fees
 					</h2>
 
+					{% if data['representation_order_date_year'] >= 2018 and data['representation_order_date_month'] >= 4 and data['representation_order_date_day'] >= 1 -%}
+
 					<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
-					
+									
 					<form class="form" method="post">
 
 						<div class="form-section">
@@ -120,7 +122,21 @@
 
 					</form>
 
+
 					{% include "./includes/_help.html" %}
+				
+				{% else %}
+				
+					<p>You cannot submit an interim bill for claims with the earliest representation order before 1 April 2018.</p>
+
+					<div class="form-section">
+						<div class="form-group form-buttons">
+							<a href="{{links.new}}" class="button" role="button">Submit a new claim</a>
+							<a href="{{links.home}}" class="button button-tertiary" role="button">View your claims</a>
+						</div>
+					</div>
+				
+				{%- endif %}
 
 				</div>
 

@@ -181,7 +181,9 @@ router.get('/advocates/fees', function(req, res) {
                 links: {
                     'next' : req.baseUrl + '/advocates/travel-expenses',
                     'previous' : previousUrl,
-                    'save' : req.baseUrl + '/advocates/'
+                    'save' : req.baseUrl + '/advocates/',
+                    'new' : req.baseUrl + '/advocates/start',
+                    'home' : req.baseUrl + '/advocates/'
                 }
             });
 
