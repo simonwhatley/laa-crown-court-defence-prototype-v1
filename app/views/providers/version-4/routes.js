@@ -154,7 +154,9 @@ router.get('/advocates/offence-details', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
-                'save' : req.baseUrl + '/advocates/'
+                'save' : req.baseUrl + '/advocates/',
+                'new' : req.baseUrl + '/advocates/start',
+                'home' : req.baseUrl + '/advocates/'
             },
             classes: classes
     	});
