@@ -1,9 +1,9 @@
 [
 	{
-	    "key": "up_to_and_including_pcmh_transfer",
-	    "name": "Up to and including PCMH transfer",
+	    "key": "up_to_and_including_ptph_transfer",
+	    "name": "Up to and including PTPH transfer",
 	    "other_names": [],
-	    "abbreviations": ["PCMH"]
+	    "abbreviations": ["PTPH"]
 	},
 	{
 	    "key": "before_trial_transfer",
