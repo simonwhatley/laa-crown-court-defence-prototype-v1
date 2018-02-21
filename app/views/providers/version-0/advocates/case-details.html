@@ -24,19 +24,57 @@
 					Claim for advocate fees
 				</h1>
 
-				{% include "./includes/_case_details.html" %}
+				<div class="grid-row">
+					
+					<div class="column-full">
+						
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Case details
+							</h2>
+							
+							{% include "./includes/_case_details.html" %}
 
+						</div>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Offence details
-					</h2>
+					</div>
+
 				</div>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Defendant details
-					</h2>
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+						
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Offence details
+							</h2>
+							
+							{% include "../includes/_offence_details.html" %}
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+						
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Defendant details
+							</h2>
+							
+							{% include "../includes/_defendant_details.html" %}
+
+							<hr>
+							<a href="#noop" class="button button-secondary" role="button">Add another defendant</a>
+						</div>
+
+					</div>
+
 				</div>
 
 				<div class="form-section">

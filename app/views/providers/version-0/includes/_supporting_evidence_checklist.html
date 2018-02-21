@@ -1,0 +1,62 @@
+<div class="form-group">
+	<fieldset>
+
+		<legend class="form-label-bold">
+			Supporting evidence checklist
+			<span class="form-hint">Select all that apply</span>
+		</legend>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-1" type="checkbox" name="supporting_evidence_checklist" value="representation_order" {% if data['supporting_evidence_checklist'] and 'representation_order' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-1">Representation order</label>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-2" type="checkbox" name="supporting_evidence_checklist" value="indictment" {% if data['supporting_evidence_checklist'] and 'indictment' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-2">A copy of the indictment</label>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-3" type="checkbox" name="supporting_evidence_checklist" value="committal_bundle_front_sheets" {% if data['supporting_evidence_checklist'] and 'committal_bundle_front_sheets' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-3">Committal bundle front sheets</label>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-4" type="checkbox" name="supporting_evidence_checklist" value="expenses_invoices" {% if data['supporting_evidence_checklist'] and 'expenses_invoices' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-4">Expenses invoices</label>
+		</div>
+		
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-5" type="checkbox" name="supporting_evidence_checklist" value="details_of_previous_fee_advancements" {% if data['supporting_evidence_checklist'] and 'details_of_previous_fee_advancements' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-5">Details of previous fee advancements</label>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-6" type="checkbox" name="supporting_evidence_checklist" value="hardship_supporting_evidence" {% if data['supporting_evidence_checklist'] and 'hardship_supporting_evidence' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-6">Hardship supporting evidence</label>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-7" type="checkbox" name="supporting_evidence_checklist" value="justification_for_out_of_time_claim" {% if data['supporting_evidence_checklist'] and 'justification_for_out_of_time_claim' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-7">Justification for out of time claim</label>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-8" type="checkbox" name="supporting_evidence_checklist" value="judicial_apportionment" {% if data['supporting_evidence_checklist'] and 'judicial_apportionment' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-8">Order in respect of judicial apportionment</label>
+		</div>
+
+		{% if data['fee_scheme'] == "lgfs" -%}
+			<div class="multiple-choice">
+				<input id="supporting-evidence-checklist-9" type="checkbox" name="supporting_evidence_checklist" value="prior_authority_crm4" {% if data['supporting_evidence_checklist'] and 'prior_authority_crm4' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+				<label for="supporting-evidence-checklist-9">Prior authority CRM4</label>
+			</div>
+		{%- endif %}
+
+		<div class="multiple-choice">
+			<input id="supporting-evidence-checklist-10" type="checkbox" name="supporting_evidence_checklist" value="special_preparation_form" {% if data['supporting_evidence_checklist'] and 'special_preparation_form' in data['supporting_evidence_checklist'] %}checked="checked"{%- endif %}>
+			<label for="supporting-evidence-checklist-10">Special preparation form</label>
+		</div>
+
+	</fieldset>
+</div>

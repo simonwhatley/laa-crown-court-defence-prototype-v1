@@ -21,25 +21,66 @@
 					Claim for advocate fees
 				</h1>
 
-				{% if fee_type == "fixed" %}
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
 
-					{% include "./includes/_fixed_fees.html" %}
+						{% if fee_type == "fixed" %}
 
-				{% else %}
+							{% include "./includes/_fixed_fees.html" %}
 
-					{% include "./includes/_graduated_fees.html" %}
+						{% else %}
 
-				{% endif %}
+							{% include "./includes/_graduated_fees.html" %}
 
-				{% include "./includes/_miscellaneous_fees.html" %}
+						{% endif %}
 
-				{# from provider > includes #}
-				{% include "../includes/_travel_expenses.html" %}
+					</div>
 
-				{% include "./includes/_supporting_evidence.html" %}
+				</div>
 
-				{# from provider > includes #}
-				{% include "../includes/_additional_information.html" %}
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+
+						{% include "./includes/_miscellaneous_fees.html" %}
+
+					</div>
+
+				</div>
+
+
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+
+						{# from provider > includes #}
+						{% include "../includes/_travel_expenses.html" %}
+
+					</div>
+
+				</div>
+
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+
+						{% include "./includes/_supporting_evidence.html" %}
+
+					</div>
+
+				</div>
+
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+
+						{# from provider > includes #}
+						{% include "../includes/_additional_information.html" %}
+
+					</div>
+
+				</div>
 
 				<div class="form-section">
 					<div class="form-group form-buttons">
