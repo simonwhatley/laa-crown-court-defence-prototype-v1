@@ -247,7 +247,9 @@ router.get('/advocates/travel-expenses', function(req, res) {
                 'next' : req.baseUrl + '/advocates/supporting-evidence',
                 'previous' : previousUrl,
                 'save' : req.baseUrl + '/advocates/'
-            }
+            },
+            travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
+            travel_reasons: utils.getTravelReasons()
     	});
 });
 
