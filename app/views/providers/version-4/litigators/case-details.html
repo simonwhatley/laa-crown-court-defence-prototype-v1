@@ -83,19 +83,42 @@
 
 									<legend class="form-label-bold" for="case-type">
 										Case type
+										{% if data['bill_type'] != 'litigator_interim' -%}
 										<span class="form-hint">
 											For example Trial
 										</span>
+										{%- endif %}
 									</legend>
 
-									<select id="case-type" name="case_type" class="form-control">
-										<option></option>
+									{% if data['bill_type'] == 'litigator_interim' -%}
 
 										{% for type in case_types -%}
-											<option value="{{type.key}}" {% if type.abbreviations.length -%}data-abbreviations="{{type.abbreviations}}" {%- endif %}{% if type.other_names.length -%}data-other-names="{{type.other_names}}" {%- endif %} {% if data['case_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
+
+											{% if type.key in ["retrial","trial"] -%}
+
+											<div class="multiple-choice">
+												<input id="radio-{{type.key}}" type="radio" name="case_type" value="{{type.key}}" {{ checked('case_type',type.key) }}>
+												<label for="radio-{{type.key}}">{{type.name}}</label>
+											</div>
+
+											{%- endif %}
+
 										{%- endfor %}
 
-									</select>
+									{% else %}
+
+										<select id="case-type" name="case_type" class="form-control">
+											<option value=""></option>
+
+											{% for type in case_types -%}
+
+												<option value="{{type.key}}" {% if type.abbreviations.length -%}data-abbreviations="{{type.abbreviations}}" {%- endif %}{% if type.other_names.length -%}data-other-names="{{type.other_names}}" {%- endif %} {% if data['case_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
+
+											{%- endfor %}
+
+										</select>
+
+									{%- endif %}
 
 								</fieldset>
 
