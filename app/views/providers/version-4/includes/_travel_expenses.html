@@ -7,21 +7,96 @@
             </span> -->
         </legend>
 
-        {% for type in travel_types%}
+        {% for type in travel_types %}
         <div class="multiple-choice" data-target="{{type.key}}-panel">
-            <input aria-controls="{{type.key}}-panel" aria-expanded="false" id="{{type.key}}" name="travel_type" type="radio" value="{{type.key}}" {% if data['travel_type'] and type.key in data['travel_type'] %}checked="checked"{%- endif %}>
-            <label for="car-travel">
+            <input aria-controls="{{type.key}}-panel" aria-expanded="false" id="{{type.key}}" name="travel_type" type="radio" value="{{type.key}}" {{ checked('travel_type',type.key) }}>
+            <label for="{{type.key}}">
                 {{type.name}}
             </label>
         </div>
-        <!-- TODO: Separate fields dependant on travel type -->
+        {% if type.key != 'parking' -%}
         <div class="panel panel-border-narrow js-hidden" id="{{type.key}}-panel">
-            <label class="form-label-bold" for="reference-number">
-				Destination
-				<span class="form-hint">Please provide a destination</span>
-			</label>
-			<input class="form-control" id="travel-destination" type="text" name="travel_destination" value="{{ data['travel_destination']}}" autocomplete="off" autocapitalize="off">
+
+            {% if type.key in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","travel_time"] -%}
+            <div class="form-group">
+                <label class="form-label-bold" for="travel-destination">
+    				Destination
+    				<span class="form-hint">Please provide a destination</span>
+    			</label>
+    			<input class="form-control" id="travel-destination" type="text" name="travel_destination" value="{{ data['travel_destination']}}" autocomplete="off" autocapitalize="off">
+            </div>
+            {%- endif %}
+
+            {% if type.key in ["hotel_accommodation","subsistence"] -%}
+            <div class="form-group">
+                <label class="form-label-bold" for="travel-location">
+                    Location
+                    <span class="form-hint">Please provide a location</span>
+                </label>
+                <input class="form-control" id="travel-location" type="text" name="travel_location" value="{{ data['travel_location']}}" autocomplete="off" autocapitalize="off">
+            </div>
+            {%- endif %}
+
+            {% if type.key in ["bike_travel","car_travel"] -%}
+            <div class="form-group">
+                <label class="form-label-bold" for="travel-distance">
+                    Distance
+                    <span class="form-hint">Miles</span>
+                </label>
+                <input class="form-control form-control-1-8" id="travel-distance" type="text" name="travel_distance" value="{{ data['travel_distance']}}" autocomplete="off" autocapitalize="off">
+            </div>
+            {%- endif %}
+
+            {% if type.key in ["travel_time"] -%}
+            <div class="form-group">
+                <label class="form-label-bold" for="travel-time">
+                    Hours
+                </label>
+                <input class="form-control form-control-1-8" id="travel-time" type="text" name="travel_time" value="{{ data['travel_time']}}" autocomplete="off" autocapitalize="off">
+            </div>
+            {%- endif %}
+
+            {% if type.key in ["bike_travel","car_travel"] -%}
+            <div class="form-group">
+                <fieldset class="inline">
+                    <legend class="form-label-bold">
+                        Cost
+                    </legend>
+
+                    {% if type.key == 'bike_travel' -%}
+
+                    <div class="multiple-choice">
+                        <input id="mileage-twenty" name="travel_cost_per_mile" type="radio" value="20" checked="checked"><!-- {{ checked('travel_cost_per_mile','20') }} -->
+                        <label for="mileage-twenty">
+                            20p per mile
+                        </label>
+                    </div>
+
+                    {% else %}
+
+                    <div class="multiple-choice">
+                        <input id="mileage-twenty-five" name="travel_cost_per_mile" type="radio" value="25" {{ checked('travel_cost_per_mile','25') }}>
+                        <label for="mileage-twenty-five">
+                            25p per mile
+                        </label>
+                    </div>
+
+                    <div class="multiple-choice">
+                        <input id="mileage-forty-five" name="travel_cost_per_mile" type="radio" value="45" {{ checked('travel_cost_per_mile','45') }}>
+                        <label for="mileage-forty-five">
+                            45p per mile
+                        </label>
+                    </div>
+
+                    {%- endif %}
+
+                </fieldset>
+            </div>
+            {%- endif %}
+
         </div>
+        {%- endif %}
+
         {% endfor %}
 
 
@@ -32,9 +107,9 @@
             </label>
         </div>
         <div class="panel panel-border-narrow js-hidden" id="car-travel-panel">
-            
+
         </div> -->
-        
+
     </fieldset>
 
 </div>
