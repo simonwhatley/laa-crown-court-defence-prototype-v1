@@ -4,6 +4,10 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{% include "./includes/_page_scripts_fixed_fees.html" %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -32,6 +36,10 @@
 						{% else %}
 
 							{% include "./includes/_graduated_fees.html" %}
+
+							{% include "./includes/_witnesses.html" %}
+
+							{% include "./includes/_evidence.html" %}
 
 						{% endif %}
 
@@ -95,6 +103,7 @@
 			{% include "./includes/_help.html" %}
 
 	    </div>
+
   	</div>
 
 </main>

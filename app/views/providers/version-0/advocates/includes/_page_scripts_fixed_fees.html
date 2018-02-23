@@ -1,0 +1,42 @@
+<script type="text/javascript">
+// $(function(){
+  
+//   // Bind the change listener to any .fx-select
+//   $('.fx-select-fee-type').on('change', function(e){
+//     e.preventDefault();
+    
+//     // Read the `data-el` attr on the selected option
+//     var childSelector = $(this).find(':selected').attr('data-el');
+    
+//     // Loop over the `.fx-block` divs
+//     $('.fx-block').is(function(){
+//       var $el = $(this);
+      
+//       // matching the `data-el` class will show the element
+//       // no match will hide
+//       $el.hasClass(childSelector) ? $el.show() : $el.hide();
+//     });
+//   });
+// });
+
+$(function(){
+  
+  // Bind the change listener to any .fx-select
+  $('.fx-select-fee-type').on('change', function(e){
+    e.preventDefault();
+    
+    // Read the `data-state` attr on the selected option
+    var childState = $(this).find(':selected').attr('data-case-numbers');
+    
+    // Loop over the `.fx-block` divs
+    $('.fx-block').is(function(){
+      var $el = $(this);
+      
+      // matching the `data-el` class will show the element
+      // no match will hide
+      
+      childState == "true" ? $el.show() : $el.hide();
+    });
+  });
+});
+</script>
