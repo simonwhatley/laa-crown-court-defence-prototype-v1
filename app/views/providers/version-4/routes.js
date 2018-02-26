@@ -98,10 +98,17 @@ router.get('/advocates/bill-type', function(req, res) {
 });
 
 router.get('/advocates/case-details', function(req, res) {
+
+    // if (req.session.data.referrer == 'summary') {
+    //     var nextUrl = req.baseUrl + '/advocates/claim-summary'
+    // } else {
+        var nextUrl = req.baseUrl + '/advocates/defendant-details'
+    // }
+
     res.render(`${req.feature}/${req.version}/advocates/case-details`,
         {
             links: {
-                'next' : req.baseUrl + '/advocates/defendant-details',
+                'next' : nextUrl,
                 'previous' : req.baseUrl + '/advocates/bill-type',
                 'home' : req.baseUrl + '/advocates/',
                 'save' : req.baseUrl + '/advocates/'
@@ -281,7 +288,15 @@ router.get('/advocates/claim-summary', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/certify-claim',
                 'previous' : req.baseUrl + '/advocates/additional-information',
-                'save' : req.baseUrl + '/advocates/'
+                'save' : req.baseUrl + '/advocates/',
+                'case_details' : req.baseUrl + '/advocates/case-details' + '?referrer=summary',
+                'defendant_details' : req.baseUrl + '/advocates/defendant-details' + '?referrer=summary',
+                'offence_details' : req.baseUrl + '/advocates/offence-details' + '?referrer=summary',
+                'fees' : req.baseUrl + '/advocates/fees' + '?referrer=summary',
+                'miscellaneous_fees' : req.baseUrl + '/advocates/miscellaneous-fees' + '?referrer=summary',
+                'travel_expenses' : req.baseUrl + '/advocates/travel-expenses' + '?referrer=summary',
+                'supporting_evidence' : req.baseUrl + '/advocates/supporting-evidence' + '?referrer=summary',
+                'additional_information' : req.baseUrl + '/advocates/additional-information' + '?referrer=summary'
             }
     	});
 });
