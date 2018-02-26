@@ -1,0 +1,178 @@
+[
+    {
+        "key": "appeals_to_the_crown_court_against_conviction",
+        "name": "Appeals to the crown court against conviction",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "appeals_to_the_crown_court_against_conviction_uplift",
+        "name": "Appeals to the crown court against conviction (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "appeals_to_the_crown_court_against_sentence",
+        "name": "Appeals to the crown court against sentence",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "appeals_to_the_crown_court_against_sentence_uplift",
+        "name": "Appeals to the crown court against sentence (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "breach_of_crown_court_order",
+        "name": "Breach of a crown court order",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "breach_of_crown_court_order_uplift",
+        "name": "Breach of a crown court order (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "committal_for_sentence_hearings",
+        "name": "Committal for sentence hearings",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "committal_for_sentence_hearings_uplift",
+        "name": "Committal for sentence hearings (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "contempt",
+        "name": "Contempt",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "cracked_case_discontinued",
+        "name": "Cracked case discontinued",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "cracked_case_discontinued_uplift",
+        "name": "Cracked case discontinued (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "elected_case_not_proceeded",
+        "name": "Elected case not proceeded",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "elected_case_not_proceeded_uplift",
+        "name": "Elected case not proceeded (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "number_of_cases_uplift",
+        "name": "Number of cases (uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": true
+        }
+    },
+    {
+        "key": "number_of_defendants_uplift",
+        "name": "Number of defendants uplift",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    },
+    {
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": [],
+        "attributes": {
+        	"additional_case_numbers": false
+        }
+    }
+]

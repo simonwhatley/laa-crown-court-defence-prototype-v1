@@ -15,21 +15,72 @@
 
 	    	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<form class="form" action="{{links.next}}" method="post">
+	    	<form class="form" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for advocate fees
 				</h1>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Check your claim
-					</h2>
+				<div class="grid-row">
+					
+					<div class="column-three-quarters">
+
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Check your claim
+							</h2>
+
+							<p>Check all the information below is correct before submitting your claim.</p>
+
+							<h3 class="heading-medium">
+								Case details
+							</h3>
+
+							{% if fee_type == "graduated" -%}
+							<h3 class="heading-medium">
+								Offence details
+							</h3>
+							{%- endif %}
+
+							<h3 class="heading-medium">
+								Defendants
+							</h3>
+
+							<h3 class="heading-medium">
+								{% if fee_type == "graduated" -%}
+									Graduated fees
+								{% else %}
+									Fixed fees
+								{%- endif %}
+							</h3>
+
+							<h3 class="heading-medium">
+								Miscellaneous fees
+							</h3>
+
+							<h3 class="heading-medium">
+								Travel expenses
+							</h3>
+
+							<h3 class="heading-medium">
+								Supporting evidence
+							</h3>
+
+							<h3 class="heading-medium">
+								Additional information
+							</h3>
+
+						</div>
+
+					</div>
+
+					{% include "./includes/_sidebar.html" %}
+
 				</div>
 
 				<div class="form-section">
 					<div class="form-group form-buttons">
-						<input type="submit" class="button" value="Save and continue">
+						<input type="submit" class="button" value="Save and continue" formaction="{{links.next}}">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
 						<!-- <a href="{{links.home}}">Cancel</a> -->
 					</div>

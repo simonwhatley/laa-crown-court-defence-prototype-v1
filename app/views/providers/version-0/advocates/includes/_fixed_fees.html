@@ -1,8 +1,17 @@
+<input type="hidden" name="fee_type" value="fixed">
 <div class="form-section">
 
 	<h2 id="section-heading" class="heading-large">
 		Fixed fees
 	</h2>
+
+	<h3 class="heading-medium">
+		Fixed fee 1
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this fee<span>
+		</a>
+	</h3>
 	
 	<div class="form-group">
 		<fieldset>
@@ -12,28 +21,17 @@
 
 			<select class="form-control fx-select-fee-type" name="fee_type" id="fee-type">
 				<option value=""></option>
-				<option data-case-numbers="false" value="appeals_to_the_crown_court_against_conviction">Appeals to the crown court against conviction</option>
-				<option data-case-numbers="true" value="appeals_to_the_crown_court_against_conviction_uplift">Appeals to the crown court against conviction uplift</option>
-				<option data-case-numbers="false" value="appeals_to_the_crown_court_against_sentence">Appeals to the crown court against sentence</option>
-				<option data-case-numbers="true" value="appeals_to_the_crown_court_against_sentence_uplift">Appeals to the crown court against sentence uplift</option>
-				<option data-case-numbers="false" value="breach_of_crown_court_order">Breach of a crown court order</option>
-				<option data-case-numbers="true" value="breach_of_crown_court_order_uplift">Breach of a crown court order uplift</option>
-				<option data-case-numbers="false" value="committal_for_sentence_hearings">Committal for sentence hearings</option>
-				<option data-case-numbers="true" value="committal_for_sentence_hearings_uplift">Committal for sentence hearings uplift</option>
-				<option data-case-numbers="false" value="contempt">Contempt</option>
-				<option data-case-numbers="false" value="cracked_case_discontinued">Cracked case discontinued</option>
-				<option data-case-numbers="true" value="cracked_case_discontinued_uplift">Cracked case discontinued uplift</option>
-				<option data-case-numbers="false" value="elected_case_not_proceeded">Elected case not proceeded</option>
-				<option data-case-numbers="true" value="elected_case_not_proceeded_uplift">Elected case not proceeded uplift</option>
-				<option data-case-numbers="true" value="number_of_cases_uplift">Number of cases uplift</option>
-				<option data-case-numbers="false" value="number_of_defendants_uplift">Number of defendants uplift</option>
-				<option data-case-numbers="false" value="standard_appearance_fee">Standard appearance fee</option>
+
+				{% for fee in fixed_fees %}
+					<option data-case-numbers="{{fee.attributes.additional_case_numbers}}" value="{{fee.key}}" {% if data['fee_type'] == fee.key %}selected="selected"{% endif %}>{{fee.name}}</option>
+				{%- endfor %}
+
 			</select>
 
 		</fieldset>
 	</div>
 
-	<div class="form-group fx-block">
+	<div class="form-group fx-additional-case-numbers">
 	    <label class="form-label-bold" for="fixed-fee-1-case-numbers">
             Additional case numbers
             <span class="form-hint">Separate with commas</span>
@@ -58,9 +56,11 @@
 	    <input class="form-control form-control-1-4 form-input-denote__input" id="fixed-fee-1-net-amount" name="fixed_fee_1_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_net_amount']}}">
 	</div>
 
+</div>
+
+<div class="form-section">
 	<hr>
-
-	<a href="#noop" class="button button-secondary" role="button">Add another fixed fee</a>
-
-
+	<div class="form-group form-buttons">
+		<a href="#noop" class="button button-secondary" role="button">Add another fixed fee</a>
+	</div>
 </div>

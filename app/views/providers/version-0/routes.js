@@ -1,7 +1,7 @@
 const express = require('express')
 const router = new express.Router()
 
-const utils = require('../../../utils')
+const utils = require('./utils')
 
 router.get('/', (req, res) => {
     req.session.destroy()
@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 // ==============================================
 
 router.get('/advocates/', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/index`, 
+    res.render(`${req.feature}/${req.version}/advocates/index`,
         {
             links: {
                 'start' : req.baseUrl + '/advocates/case-details',
@@ -26,55 +26,61 @@ router.get('/advocates/', function(req, res) {
 });
 
 router.get('/advocates/case-details', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/case-details`, 
+    res.render(`${req.feature}/${req.version}/advocates/case-details`,
         {
             links: {
-                'next' : req.baseUrl + '/advocates/fee-details', 
+                'next' : req.baseUrl + '/advocates/fee-details',
                 'previous' : req.baseUrl + '/advocates/',
                 'home' : req.baseUrl + '/advocates/'
-            }
+            },
+            case_types: utils.getCaseTypesByFeeScheme('agfs'),
+            courts: utils.getCourts()
         });
 });
 
-router.post('/advocates/fee-details', function(req, res) {
-
-    res.render(`${req.feature}/${req.version}/advocates/fee-details`, 
+router.get('/advocates/fee-details', function(req, res) {
+    res.render(`${req.feature}/${req.version}/advocates/fee-details`,
         {
             links: {
-                'next' : req.baseUrl + '/advocates/check-claim', 
+                'next' : req.baseUrl + '/advocates/check-claim',
                 'previous' : req.baseUrl + '/advocates/case-details'
             },
-            fee_type: utils.getFeeType(req.session.data.case_type)
+            fee_type: utils.getFeeTypeForCaseType(req.session.data.case_type),
+            fixed_fees: utils.getFixedFees('agfs','9'),
+            misc_fees: utils.getMiscellaneousFees('agfs','9'),
+            travel_types: utils.getTravelTypes('agfs'),
+            travel_reasons: utils.getTravelReasons()
         });
 });
 
 router.get('/advocates/check-claim', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/check-claim`, 
-        { 
+    res.render(`${req.feature}/${req.version}/advocates/check-claim`,
+        {
             links: {
-                'next' : req.baseUrl + '/advocates/certify-claim', 
+                'next' : req.baseUrl + '/advocates/certify-claim',
                 'previous' : req.baseUrl + '/advocates/fee-details'
-            }
+            },
+            fee_type: req.session.data.fee_type
         });
 });
 
 router.get('/advocates/certify-claim', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/certify-claim`, 
-        { 
+    res.render(`${req.feature}/${req.version}/advocates/certify-claim`,
+        {
             links: {
-                'next' : req.baseUrl + '/advocates/thank-you', 
+                'next' : req.baseUrl + '/advocates/thank-you',
                 'previous' : req.baseUrl + '/advocates/check-claim'
             }
         });
 });
 
 router.get('/advocates/thank-you', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/thank-you`, 
-    	{ 
+    res.render(`${req.feature}/${req.version}/advocates/thank-you`,
+    	{
             links: {
-                'new' : req.baseUrl + '/advocates/case-details', 
+                'new' : req.baseUrl + '/advocates/case-details',
         		'home' : req.baseUrl + '/advocates/'
-            }            
+            }
     	});
 });
 
@@ -83,7 +89,7 @@ router.get('/advocates/thank-you', function(req, res) {
 // ==============================================
 
 router.get('/litigators/', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/index`, 
+    res.render(`${req.feature}/${req.version}/litigators/index`,
         {
             links: {
                 'start' : req.baseUrl + '/litigators/bill-type',
@@ -97,10 +103,10 @@ router.get('/litigators/', function(req, res) {
 
 router.get('/litigators/bill-type', function(req, res) {
     
-    res.render(`${req.feature}/${req.version}/litigators/bill-type`, 
-        { 
+    res.render(`${req.feature}/${req.version}/litigators/bill-type`,
+        {
             links: {
-                'next' : req.baseUrl + '/litigators/details', 
+                'next' : req.baseUrl + '/litigators/details',
                 'previous' : req.baseUrl + '/litigators/',
                 'home' : req.baseUrl + '/litigators/'
             }
@@ -122,10 +128,10 @@ router.get('/litigators/details', function(req, res) {
 });
 
 router.get('/litigators/transfer-details', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/transfer-details`, 
-        { 
+    res.render(`${req.feature}/${req.version}/litigators/transfer-details`,
+        {
             links: {
-                'next' : req.baseUrl + '/litigators/case-details', 
+                'next' : req.baseUrl + '/litigators/case-details',
                 'previous' : req.baseUrl + '/litigators/bill-type',
                 'home' : req.baseUrl + '/litigators/'
             }
@@ -145,22 +151,23 @@ router.get('/litigators/case-details', function(req, res) {
 
     }
 
-    res.render(`${req.feature}/${req.version}/litigators/case-details`, 
-        { 
+    res.render(`${req.feature}/${req.version}/litigators/case-details`,
+        {
             links: {
-                'next' : req.baseUrl + '/litigators/fee-details', 
+                'next' : req.baseUrl + '/litigators/fee-details',
                 'previous' : previousUrl,
                 'home' : req.baseUrl + '/litigators/'
-            }
-            
+            },
+            case_types: utils.getCaseTypesByFeeScheme('lgfs'),
+            courts: utils.getCourts()
         });
 });
 
 router.get('/litigators/fee-details', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/fee-details`, 
-        { 
+    res.render(`${req.feature}/${req.version}/litigators/fee-details`,
+        {
             links: {
-                'next' : req.baseUrl + '/litigators/check-claim', 
+                'next' : req.baseUrl + '/litigators/check-claim',
                 'previous' : req.baseUrl + '/litigators/case-details'
             },
             fee_type: utils.getFeeType(req.session.data.case_type)
@@ -168,30 +175,30 @@ router.get('/litigators/fee-details', function(req, res) {
 });
 
 router.get('/litigators/check-claim', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/check-claim`, 
-        { 
+    res.render(`${req.feature}/${req.version}/litigators/check-claim`,
+        {
             links: {
-                'next' : req.baseUrl + '/litigators/certify-claim', 
+                'next' : req.baseUrl + '/litigators/certify-claim',
                 'previous' : req.baseUrl + '/litigators/fee-details'
-            }            
+            }
         });
 });
 
 router.get('/litigators/certify-claim', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/certify-claim`, 
-        { 
+    res.render(`${req.feature}/${req.version}/litigators/certify-claim`,
+        {
             links: {
-                'next' : req.baseUrl + '/litigators/thank-you', 
+                'next' : req.baseUrl + '/litigators/thank-you',
                 'previous' : req.baseUrl + '/litigators/check-claim'
             }
         });
 });
 
 router.get('/litigators/thank-you', function(req, res) {
-    res.render(`${req.feature}/${req.version}/litigators/thank-you`, 
-    	{ 
+    res.render(`${req.feature}/${req.version}/litigators/thank-you`,
+    	{
             links: {
-                'new' : req.baseUrl + '/litigators/bill-type', 
+                'new' : req.baseUrl + '/litigators/bill-type',
         		'home' : req.baseUrl + '/litigators/'
             }
     	});

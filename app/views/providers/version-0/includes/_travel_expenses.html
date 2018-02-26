@@ -4,9 +4,45 @@
 		Travel expenses
 	</h2>
 
+	<p>Please enter each expense (for example train ticket, hotel stay) separately.</p>
 
+	<h3 class="heading-medium">
+		Expense 1
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this expense<span>
+		</a>
+	</h3>
+
+	<div class="form-group">
+	    <label class="form-label-bold" for="expense-type">
+	        Expense type
+	        <!-- <span class="form-hint">Something</span> -->
+	    </label>
+	    <select class="form-control" id="expense-type" name="expense_type">
+	        <option value=""></option>
+	        {% for type in travel_types %}
+
+	        <option
+	        	data-date="{{type.attributes.date}}"
+	        	data-distance="{{type.attributes.distance}}"
+	        	data-hours="{{type.attributes.hours}}"
+	        	data-location="{{type.attributes.location}}"
+	        	data-destination="{{type.attributes.destination}}"
+	        	data-mileage="{{type.attributes.mileage}}"
+	        	data-reason="{{type.attributes.reason}}"
+	        	value="{{type.key}}"
+	        	{% if data['expense_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
+	        {%- endfor %}
+	    </select>
+	</div>
+
+</div>
+
+<div class="form-section">
 	<hr>
-
-	<a href="#noop" class="button button-secondary" role="button">Add another expense</a>
-
+	<div class="form-group form-buttons">
+		<a href="#noop" class="button button-secondary" role="button">Add another expense</a>
+		<a href="#noop" class="button button-tertiary" role="button">Duplicate expense</a>
+	</div>
 </div>

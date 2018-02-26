@@ -1,0 +1,482 @@
+[
+    {
+        "key": 1,
+        "name": "Aylesbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 2,
+        "name": "Basildon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 3,
+        "name": "Birmingham",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 4,
+        "name": "Blackfriars",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 5,
+        "name": "Bolton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 6,
+        "name": "Bournemouth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 7,
+        "name": "Bradford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 8,
+        "name": "Bristol",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 9,
+        "name": "Burnley",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 10,
+        "name": "Caernarfon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 11,
+        "name": "Cambridge",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 12,
+        "name": "Canterbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 13,
+        "name": "Cardiff",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 14,
+        "name": "Carlisle",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 15,
+        "name": "Central Criminal Court",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 16,
+        "name": "Chelmsford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 17,
+        "name": "Chester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 18,
+        "name": "Chichester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 19,
+        "name": "Coventry",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 20,
+        "name": "Croydon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 21,
+        "name": "Derby",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 22,
+        "name": "Doncaster",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 23,
+        "name": "Durham",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 24,
+        "name": "Exeter",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 25,
+        "name": "Gloucester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 26,
+        "name": "Grimsby",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 27,
+        "name": "Guildford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 28,
+        "name": "Harrow",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 29,
+        "name": "Hull",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 30,
+        "name": "Inner London",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 31,
+        "name": "Ipswich",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 32,
+        "name": "Isleworth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 33,
+        "name": "Kingston Upon Thames",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 34,
+        "name": "Leeds",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 35,
+        "name": "Leicester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 36,
+        "name": "Lewes",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 37,
+        "name": "Lincoln",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 38,
+        "name": "Liverpool",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 39,
+        "name": "Luton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 40,
+        "name": "Maidstone",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 41,
+        "name": "Manchester (Crown Sq)",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 42,
+        "name": "Manchester (Minshull St)",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 43,
+        "name": "Merthyr Tydfil",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 44,
+        "name": "Middx Guildhall",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 45,
+        "name": "Mold",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 46,
+        "name": "Newcastle",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 47,
+        "name": "Newport",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 48,
+        "name": "Newport (IOW)",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 49,
+        "name": "Northampton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 50,
+        "name": "Norwich",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 51,
+        "name": "Nottingham",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 52,
+        "name": "Oxford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 53,
+        "name": "Peterborough",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 54,
+        "name": "Plymouth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 55,
+        "name": "Portsmouth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 56,
+        "name": "Preston",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 57,
+        "name": "Reading",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 58,
+        "name": "Salisbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 59,
+        "name": "Sheffield",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 60,
+        "name": "Shrewsbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 61,
+        "name": "Snaresbrook",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 62,
+        "name": "Southampton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 63,
+        "name": "Southwark",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 64,
+        "name": "Stafford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 65,
+        "name": "St Albans",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 66,
+        "name": "Stoke on Trent",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 67,
+        "name": "Swansea",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 68,
+        "name": "Swindon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 69,
+        "name": "Taunton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 70,
+        "name": "Teesside",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 71,
+        "name": "Truro",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 72,
+        "name": "Warrington",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 73,
+        "name": "Warwick",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 74,
+        "name": "Weymouth and Dorcester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 75,
+        "name": "Winchester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 76,
+        "name": "Wolverhampton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 77,
+        "name": "Wood Green",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 78,
+        "name": "Woolwich",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 79,
+        "name": "Worcester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": 80,
+        "name": "York",
+        "other_names": [],
+        "abbreviations": []
+    }
+]

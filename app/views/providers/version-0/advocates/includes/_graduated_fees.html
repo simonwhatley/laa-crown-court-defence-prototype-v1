@@ -1,3 +1,4 @@
+<input type="hidden" name="fee_type" value="graduated">
 <div class="form-section">
 
 	<h2 id="section-heading" class="heading-large">
@@ -25,56 +26,25 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="basic-fee-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="basic-fee-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="basic-fee-net-amount" name="basic_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['basic_fee_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="basic-fee-rate" name="basic_fee_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['basic_fee_rate']}}">
 		    </div>
 		</div>
 	</div>
-
-	<!-- <div class="grid-row">
-		<div class="column-one-half">
-			<div class="form-group">
-		        <fieldset>
-		            <legend class="form-label-bold">
-		                Date
-		                <span class="form-hint">
-		                    For example, 31 3 2017
-		                </span>
-		            </legend>
-		            <div class="form-date">
-		                <div class="form-group form-group-day">
-		                    <label class="form-label" for="basic-fee-date-1-1-day">
-		                        Day
-		                    </label>
-		                    <input class="form-control" id="basic-fee-date-1-1-day" max="31" min="1" name="basic_fee_date_1_1_day" pattern="[0-9]*" type="number" value="{{data['basic_fee_date_1_1_day']}}">
-		                </div>
-		                <div class="form-group form-group-month">
-		                    <label class="form-label" for="basic-fee-date-1-1-month">
-		                        Month
-		                    </label>
-		                    <input class="form-control" id="basic-fee-date-1-1-month" max="12" min="1" name="basic_fee_date_1_1_month" pattern="[0-9]*" type="number" value="{{data['basic_fee_date_1_1_month']}}">
-		                </div>
-		                <div class="form-group form-group-year">
-		                    <label class="form-label" for="basic-fee-date-1-1-year">
-		                        Year
-		                    </label>
-		                    <input class="form-control" id="basic-fee-date-1-1-year" max="2019" min="1900" name="basic_fee_date_1_1_year" pattern="[0-9]*" type="number" value="{{data['basic_fee_date_1_1_year']}}">
-		                </div>
-		            </div>
-		        </fieldset>
-		    </div>
-		    <div class="form-group">
-                <a href="#noop">
-                    Add another date
-                </a>
-            </div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
 		</div>
-	</div> -->
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
+		</div>
+	</div>
 
 	<h3 class="heading-medium">
 		Additional fees
@@ -97,14 +67,23 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="daily-attendance-fee-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="daily-attendance-fee-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="daily-attendance-fee-net-amount" name="daily_attendance_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="daily-attendance-fee-rate" name="daily_attendance_fee_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
 		</div>
 	</div>
 
@@ -166,14 +145,23 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="daily-attendance-fee-2-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="daily-attendance-fee-2-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="daily-attendance-fee-2-net-amount" name="daily_attendance_fee_2_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_2_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="daily-attendance-fee-2-rate" name="daily_attendance_fee_2_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_2_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
 		</div>
 	</div>
 
@@ -235,14 +223,23 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="daily-attendance-fee-3-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="daily-attendance-fee-3-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="daily-attendance-fee-3-net-amount" name="daily_attendance_fee_3_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_3_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="daily-attendance-fee-3-rate" name="daily_attendance_fee_3_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_3_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
 		</div>
 	</div>
 
@@ -305,14 +302,23 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="standard-appearance-fee-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="standard-appearance-fee-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="standard-appearance-fee-net-amount" name="standard_appearance_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['standard_appearance_fee_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="standard-appearance-fee-rate" name="standard_appearance_fee_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['standard_appearance_fee_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
 		</div>
 	</div>
 
@@ -374,14 +380,23 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="plea-trial-preparation-hearing-fee-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="plea-trial-preparation-hearing-fee-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="plea-trial-preparation-hearing-fee-net-amount" name="plea_trial_preparation_hearing_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['plea_trial_preparation_hearing_fee_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="plea-trial-preparation-hearing-fee-rate" name="plea_trial_preparation_hearing_fee_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['plea_trial_preparation_hearing_fee_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
 		</div>
 	</div>
 
@@ -443,14 +458,24 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="conferences-views-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="conferences-views-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="conferences-views-net-amount" name="conferences_views_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['conferences_views_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="conferences-views-rate" name="conferences_views_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['conferences_views_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
+			<br>&nbsp;
 		</div>
 	</div>
 
@@ -471,14 +496,24 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="number-defendants-uplift-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="number-defendants-uplift-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="number-defendants-uplift-net-amount" name="number_defendants_uplift_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['number_defendants_uplift_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="number-defendants-uplift-rate" name="number_defendants_uplift_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['number_defendants_uplift_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
+			<br>&nbsp;
 		</div>
 	</div>
 
@@ -499,14 +534,23 @@
 		</div>
 		<div class="column-one-quarter">
 			<div class="form-group">
-		        <label class="form-label-bold" for="number-cases-uplift-net-amount">
-		            Net amount
+		        <label class="form-label-bold" for="number-cases-uplift-rate">
+		            Rate
 		        </label>
 		        <span class="form-input-denote">
 		            £
 		        </span>
-		        <input class="form-control form-control-3-4 form-input-denote__input" id="number-cases-uplift-net-amount" name="number_cases_uplift_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['number_cases_uplift_net_amount']}}">
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="number-cases-uplift-rate" name="number_cases_uplift_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['number_cases_uplift_rate']}}">
 		    </div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-three-quarters">
+			&nbsp;
+		</div>
+		<div class="column-one-quarter">
+			<span class="form-label-bold">Total</span>
+			£0.00
 		</div>
 	</div>
 
