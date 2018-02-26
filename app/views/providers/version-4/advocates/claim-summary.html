@@ -29,7 +29,17 @@
 
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
-							<span class="heading-secondary">Fees</span>
+							<span class="heading-secondary">
+								{% if data['bill_type'] == "advocate_interim" -%}
+									Interim fees
+								{% else %}
+									{% if data['fee_type'] == "graduated" -%}
+										Graduated fees
+									{% else %}
+										Fixed fees
+									{%- endif %}
+								{%- endif %}
+							</span>
 							£999,999.00
 						</h3>
 						<a href="{{links.fees}}">
@@ -37,30 +47,42 @@
 						</a>
 					</div>
 
+					{% if data['bill_type'] == "advocate_final" -%}
+						<div class="column-one-quarter">
+							<h3 class="heading-large">
+								<span class="heading-secondary">Miscellaneous fees</span>
+								£999,999.80
+							</h3>
+							<a href="{{links.fees}}">
+								Change fees
+							</a>
+						</div>
+					{%- endif %}
+
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Travel expenses</span>
 							£999,999.00
 						</h3>
 						<a href="{{links.travel}}">
-							Change travel expenses
+							Change expenses
 						</a>
 					</div>
 
-					<div class="column-one-quarter">
+					<!-- <div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">VAT</span>
 							£199,999.80
 						</h3>
 						<p>&nbsp;</p>
-					</div>
+					</div> -->
 
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Total claimed</span>
 							£999,999.00
 						</h3>
-						<p>&nbsp;</p>
+						<p class="font-grey">VAT £199,999.80</p>
 					</div>
 
 				</div>

@@ -29,7 +29,17 @@
 
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
-							<span class="heading-secondary">Fees</span>
+							<span class="heading-secondary">
+								{% if data['bill_type'] == "litigator_interim" -%}
+									Interim fees
+								{% else %}
+									{% if data['fee_type'] == "graduated" -%}
+										Graduated fees
+									{% else %}
+										Fixed fees
+									{%- endif %}
+								{%- endif %}
+							</span>
 							£999,999.00
 						</h3>
 						<a href="{{links.fees}}">
@@ -53,7 +63,7 @@
 							£999,999.00
 						</h3>
 						<a href="{{links.travel}}">
-							Change travel expenses
+							Change expenses
 						</a>
 					</div>
 
