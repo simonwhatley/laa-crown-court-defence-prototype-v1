@@ -1,0 +1,430 @@
+{% macro netamount(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-input-' + (data.legend | nameAttr) + '-' + seedNum %}
+
+  <div class="form-group {{ 'form-group-error' if errorState }} {{ data.cssClassesParent if data.cssClassesParent }}">
+    <label class="form-label-bold" for="{{contextID}}">
+      Net amount
+      {% if errorState %}
+      <span class="error-message">
+        {{data.error | default('Missing data.error')}}
+      </span>
+      {% endif %}
+    </label>
+    <span class="input-group-prefix">£</span><input
+
+    id="{{contextID}}"
+    name="{{contextID}}"
+    value="{{formcache[contextID]}}"
+    class="form-control form-control-1-4 {{ 'form-control-error' if errorState }} {{ data.cssClasses if data.cssClasses }}"
+
+    type="number"
+    min="0.01"
+    max="999999.99"
+    step="0.01"
+    />
+  </div>
+{% endmacro %}
+
+{% macro vatamount(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-input-' + (data.legend | nameAttr) + '-' + seedNum %}
+
+  <div class="form-group {{ 'form-group-error' if errorState }} {{ data.cssClassesParent if data.cssClassesParent }}">
+    <label class="form-label-bold" for="{{contextID}}">
+      VAT amount
+      {% if errorState %}
+      <span class="error-message">
+        {{data.error | default('Missing data.error')}}
+      </span>
+      {% endif %}
+    </label>
+    <span class="input-group-prefix">£</span><input
+
+    id="{{contextID}}"
+    name="{{contextID}}"
+    value="{{formcache[contextID]}}"
+    class="form-control form-control-1-4 {{ 'form-control-error' if errorState }} {{ data.cssClasses if data.cssClasses }}"
+
+    type="number"
+    min="0.01"
+    max="999999.99"
+    step="0.01"
+    />
+  </div>
+{% endmacro %}
+
+{% macro costpermile(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-cpm-' + (data.label | nameAttr) + '-' + seedNum %}
+  <div class="form-group fx-mileage {{ data.cssClassesParent if data.cssClassesParent }}">
+    <fieldset class="inline">
+      <legend>
+        <h1 class="heading-small">
+          Cost per mile
+        </h1>
+        {% if errorState %}
+        <span class="error-message">
+          Error message about personal details goes here
+        </span>
+      </legend>
+      {% endif %}
+      <div class="multiple-choice fx-20p">
+        <input id="{{contextID}}-1" type="radio" name="{{contextID}}" value="20"
+
+        {{'checked' if "20" == (formcache[contextID])}}
+
+        />
+        <label for="{{contextID}}-1">20p per mile</label>
+      </div>
+      <div class="multiple-choice fx-40p">
+        <input id="{{contextID}}-2" type="radio" name="{{contextID}}" value="45"
+
+        {{'checked' if "45" == (formcache[contextID] | default('45'))}}
+
+        />
+        <label for="{{contextID}}-2">45p per mile</label>
+      </div>
+    </fieldset>
+  </div>
+{% endmacro %}
+
+{% macro miscfeeLGFS(data, formcache, FORM, seedNum=1) %}
+  <div class="fx-misc-fee {{ 'hidden' if (seedNum > 1)}}">
+
+    <h3 class="heading-medium">
+      Item {{seedNum}}
+      <a href="delete-model/miscfee/{{seedNum}}" style="float:right;" class="font-small fx-remove-link">Remove</a>
+    </h3>
+    <div class="form-section">
+      {{FORM.select(data[0], formcache, seedNum)}}
+      {{FORM.input(data[1], formcache, seedNum)}}
+      {{FORM.netamount(data[2], formcache, seedNum)}}
+    </div>
+    <hr />
+
+
+  </div>
+{% endmacro %}
+
+{% macro disbursementLGFS(data, formcache, FORM, seedNum=1) %}
+  <div class="fx-disbursement {{ 'hidden' if (seedNum > 1)}}">
+    <h3 class="heading-medium">
+      Item {{seedNum}}
+      <a href="delete-model/disbursement/{{seedNum}}" style="float:right;" class="font-small fx-remove-link">Remove</a>
+    </h3>
+
+    <div class="form-section">
+      {{FORM.select(data[0], formcache, seedNum)}}
+      <div class="grid-row">
+        <div class="column-one-quarter">
+          {{FORM.netamount(data[1], formcache, seedNum)}}
+        </div>
+
+        <div class="column-one-quarter">
+          {{FORM.vatamount(data[2], formcache, seedNum)}}
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro miscfeeAGFS(data, formcache, FORM, seedNum=1) %}
+  <div class="fx-misc-fee {{ 'hidden' if (seedNum > 1)}}">
+
+    <h3 class="heading-medium">
+      Item {{seedNum}}
+      <a href="delete-model/miscfee/{{seedNum}}" style="float:right;" class="font-small fx-remove-link">Remove</a>
+    </h3>
+    <div class="form-section">
+      {{FORM.select(data[0], formcache, seedNum)}}
+      {{FORM.netamount(data[1], formcache, seedNum)}}
+    </div>
+    <hr />
+
+
+  </div>
+{% endmacro %}
+
+{% macro trialdetails(data, formcache, FORM, keylookup) %}
+  <h3 class="heading-medium">
+    Trial details
+  </h3>
+
+  <div class="grid-row">
+
+    <div class="column-one-half">
+      <div class="form-section">
+        {{FORM.date(data[keylookup[0]], formcache)}}
+      </div>
+    </div>
+
+    <div class="column-one-half">
+      <div class="form-section">
+        {{FORM.inputfieldset(data[keylookup[1]], formcache)}}
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-half">
+      <div class="form-section">
+        {{FORM.date(data[keylookup[2]], formcache)}}
+      </div>
+    </div>
+
+    <div class="column-one-half">
+      <div class="form-section">
+        {{FORM.inputfieldset(data[keylookup[3]], formcache)}}
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro defendant(data, formcache, FORM, seedNum=1) %}
+  <div class="fx-defendant {{ 'hidden' if (seedNum > 1)}}">
+    <h3 class="heading-medium">
+      Defendant {{seedNum}}
+      <a href="#noop" style="float:right;" class="font-small fx-remove-link {{ 'hidden' if (seedNum == 1)}}">Remove</a>
+    </h3>
+    <div class="form-section">
+      {{FORM.input(data[0], formcache, seedNum)}}
+      {{FORM.input(data[1], formcache, seedNum)}}
+      {{FORM.date(data[2], formcache, seedNum)}}
+      {{FORM.checkboxlist(data[3], formcache, seedNum)}}
+
+      <details role="group">
+        <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+          <span class="summary">Help with judicial apportionment</span>
+        </summary>
+        <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+          <p>
+            Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
+          </p>
+        </div>
+      </details>
+
+      <h3 class="heading-medium">
+        Representation order details
+      </h3>
+
+      {{FORM.date(data[4], formcache, seedNum)}}
+      {{FORM.input(data[5], formcache, seedNum)}}
+
+      <a href="#noop">Add another representation order</a>
+    </div>
+    <hr />
+  </div>
+{% endmacro %}
+
+{% macro expenses(data, formcache, FORM, seedNum=1) %}
+  <div class="form-section  fx-for-travel-hook  {{ 'hidden' if (seedNum > 1)}}" data-itemNum="{{seedNum}}">
+    <h3 class="heading-medium">
+      Item {{seedNum}}
+      <span style="float:right;">
+        <a href="#noop" class="font-small">Remove this</a>
+      </span>
+    </h3>
+
+    <div class="grid-row">
+      <div class="column-half">
+        {{FORM.select(data[0], formcache, seedNum)}}
+      </div>
+      <div class="column-half">
+        {{FORM.select(data[1], formcache, seedNum)}}
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        {{FORM.input(data[2], formcache, seedNum)}}
+      </div>
+      <div class="column-one-third">
+        {{FORM.input(data[3], formcache, seedNum)}}
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-half">
+        {{FORM.date(data[4], formcache, seedNum)}}
+      </div>
+
+      <div class="column-one-quarter">
+        <br/><br/>
+        {{FORM.netamount(data[5], formcache, seedNum)}}
+      </div>
+      <div class="column-one-quarter">
+        <br/><br/>
+        {{FORM.vatamount(data[6], formcache, seedNum)}}
+      </div>
+    </div>
+
+    {{FORM.costpermile(data[7], formcache, seedNum)}}
+    <hr />
+  </div>
+{% endmacro %}
+
+
+{% macro defendantSingle(data, formcache, FORM, seedNum=1) %}
+  <div class="fx-defendant">
+    <h3 class="heading-medium">
+      Defendant {{seedNum}}
+      <a href="#noop" style="float:right;" class="font-small fx-remove-link {{ 'hidden' if (seedNum == 1)}}">Remove</a>
+    </h3>
+    <div class="form-section">
+      {{FORM.input(data[0], formcache, seedNum)}}
+      {{FORM.input(data[1], formcache, seedNum)}}
+      {{FORM.date(data[2], formcache, seedNum)}}
+      {{FORM.checkboxlist(data[3], formcache, seedNum)}}
+
+      <details role="group">
+        <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+          <span class="summary">Help with judicial apportionment</span>
+        </summary>
+        <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+          <p>
+            Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
+          </p>
+        </div>
+      </details>
+
+      <h3 class="heading-medium">
+        Representation order details
+      </h3>
+
+      {{FORM.date(data[4], formcache, seedNum)}}
+      {{FORM.input(data[5], formcache, seedNum)}}
+
+      <a href="#noop">Add another representation order</a>
+    </div>
+    <hr />
+  </div>
+{% endmacro %}
+
+{% macro defendantCS(formcache, item)%}
+  {% if formcache['general-input-first-name-'+item] %}
+  <tr>
+    <th style="vertical-align: top; width: 33%;">Defendant {{item}}</th>
+    <td style="padding: 0">
+      <table class="nested-table" style="border:0;margin-bottom: 0">
+        <tbody>
+          <tr>
+            <th style="width: 40%;">Defendant name</th>
+            <td>{{formcache['general-input-first-name-'+item]}} {{formcache['general-input-last-name-'+item]}}</td>
+          </tr>
+          <tr>
+            <th>Date of birth</th>
+            <td>{{formcache['general-date-of-birth-'+ item +'-day']}}/{{formcache['general-date-of-birth-'+ item +'-month']}}/{{formcache['general-date-of-birth-'+ item +'-year']}}</td>
+          </tr>
+          <tr>
+            <th>MAAT Reference</th>
+            <td>{{formcache['general-input-maat-reference-'+item]}}</td>
+          </tr>
+          <tr>
+            <th>Representation order date</th>
+            <td>{{formcache['general-representation-order-date-'+ item +'-day']}}/{{formcache['general-representation-order-date-'+ item +'-month']}}/{{formcache['general-representation-order-date-'+ item +'-year']}}</td>
+          </tr>
+          <tr>
+            <th>Judical apportionment</th>
+            <td>{{"Yes" if formcache['general-checkbox-group-no-header-attr-'+ item +'-1'] == 'Order for judicial apportionment' else "No"}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  {% endif %}
+{% endmacro %}
+
+{% macro miscfeesCS(formcache, item)%}
+  {% if formcache['misc-fee-select-fee-type-'+item] %}
+  <tr>
+    <th style="vertical-align: top; width: 33%;">Item {{item}}</th>
+    <td style="padding: 0">
+      <table class="nested-table" style="border:0;margin-bottom: 0">
+        <tbody>
+          <tr>
+            <th style=" width: 33%;">Fee type</th>
+            <td>{{formcache['misc-fee-select-fee-type-'+item]}}</td>
+          </tr>
+          <tr>
+            <th>Net amount</th>
+            <td class="fx-item-net-amount">{{formcache['misc-fee-input-net-amount-'+item]}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  {% endif %}
+{% endmacro %}
+
+{% macro disbursementCS(formcache, item)%}
+  {% if formcache['general-select-disbursement-type-'+item] %}
+  <tr>
+    <th style="vertical-align: top; width: 33%;">Item {{item}}</th>
+    <td style="padding: 0">
+      <table class="nested-table" style="border:0;margin-bottom: 0">
+        <tbody>
+          <tr>
+            <th style=" width: 33%;">Fee type</th>
+            <td>{{formcache['general-select-disbursement-type-'+item]}}</td>
+          </tr>
+          <tr>
+            <th>Net amount</th>
+            <td class="fx-item-net-amount">{{formcache['disbursements-input-net-amount-'+item]}}</td>
+          </tr>
+          <tr>
+            <th>VAT amount</th>
+            <td class="fx-item-vat-amount">{{formcache['disbursements-input-vat-amount-'+item]}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  {% endif %}
+{% endmacro %}
+
+{% macro expensesCS(formcache, item)%}
+  {% if formcache['general-select-expense-type-'+item] %}
+    <tr>
+      <th style="vertical-align: top; width: 33%;">Item {{item}}</th>
+      <td style="padding: 0">
+        <table class="nested-table" style="border:0;margin-bottom: 0">
+          <tbody>
+            <tr>
+              <th style="width: 33%">Expense type</th>
+              <td>{{formcache['general-select-expense-type-' + item]}}</td>
+            </tr>
+            <tr>
+              <th>Reason for travel</th>
+              <td>{{formcache['general-select-reason-for-travel-' + item]}}</td>
+            </tr>
+            <tr>
+              <th>Destination</th>
+              <td>{{formcache['general-input-destination-' + item]}}</td>
+            </tr>
+            {% if formcache['general-input-distance-in-miles-' + item] %}
+              <tr>
+                <th>Distance in miles</th>
+                <td>{{formcache['general-input-distance-in-miles-' + item]}}</td>
+              </tr>
+            {% endif %}
+              <tr>
+                <th>Date of travel</th>
+                <td>
+                  {{formcache['travel-expenses-date-of-travel-'+ item +'-day']}}/{{formcache['travel-expenses-date-of-travel-'+ item +'-month']}}/{{formcache['travel-expenses-date-of-travel-'+ item +'-year']}}
+                </td>
+              </tr>
+            {% if formcache['general-cpm-cost-per-mile-'+ item] %}
+              <tr>
+                <th>Cost per mile</th>
+                <td>{{formcache['general-cpm-cost-per-mile-'+ item]}}p per mile</td>
+              </tr>
+            {% endif %}
+            <tr>
+              <th>Net amount</th>
+              <td class="fx-item-net-amount">{{formcache['travel-expenses-input-net-amount-' + item]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  {% endif %}
+{% endmacro %}

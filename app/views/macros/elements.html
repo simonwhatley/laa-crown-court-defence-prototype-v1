@@ -1,0 +1,270 @@
+
+<!-- Element: Input -->
+
+{% macro input(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-input-' + (data.label | nameAttr) + '-' + seedNum %}
+  <div class="form-group el-input {{ 'form-group-error' if errorState }} {{ 'hidden' if data.hidden }} {{ data.cssClassesParent if data.cssClassesParent }}" id="wrapped-{{contextID}}" >
+    <label class="form-label-bold {{ data.cssClassesLabel if data.cssClassesLabel }}" for="{{ contextID }}">
+      {{data.label | default('Missing data.label')}}
+
+      {% if data.hint %}
+      <span class="form-hint">
+        {{data.hint}}
+      </span>
+      {% endif %}
+      {% if errorState %}
+      <span class="error-message">
+        {{data.error | default('Missing data.error')}}
+      </span>
+      {% endif %}
+    </label>
+    <input
+    class="form-control {{ 'form-group-error' if errorState }} {{ 'disabled' if data.readonly == true}} {{ data.cssClasses if data.cssClasses }}"
+    id="{{ contextID }}"
+    type="{{data.type | default('text')}}"
+    name="{{ contextID }}"
+    {% if data.setValue %}
+    value="{{data.setValue}}"
+    {% else %}
+    value="{{formcache[contextID]}}"
+    {% endif %}
+    {{ 'disabled' if data.readonly == true}}
+    {{ 'data-uppercase=true' if data.uppercase == true}}
+    />
+  </div>
+{% endmacro %}
+
+
+<!-- Form: Input (fieldset) -->
+
+{% macro inputfieldset(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-input-' + (data.label | nameAttr) + '-' + seedNum %}
+  <div class="form-group {{ 'form-group-error' if errorState }}">
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          {{data.legend | default('Missing data.legend')}}
+        </span>
+        <span class="form-hint">{{data.hint | default('For example, 31 3 1980')}}</span>
+        {% if errorState %}
+        <span class="error-message">
+          {{data.error | default('Missing data.error')}}
+        </span>
+        {% endif %}
+      </legend>
+      <div class="form-date">
+        <div class="form-group form-group-day">
+          <label class="form-label" for="{{contextID}}">{{data.label | default('Day')}}</label>
+          <input class="form-control {{ 'form-control-error' if errorState }}" id="{{contextID}}" name="{{contextID}}" type="number" pattern="[0-9]*" value="{{formcache[contextID]}}" />
+        </div>
+      </div>
+    </fieldset>
+  </div>
+{% endmacro %}
+
+
+<!-- Form: Radio group -->
+
+{% macro radiogroup(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-radio-group-' + (data.heading | nameAttr) + '-' + seedNum %}
+  <div class="form-group {{ 'form-group-error' if errorState }}" id="wrapped-{{contextID}}">
+    <fieldset>
+      <legend>
+        <h1 class="heading-small">
+          {{data.heading | default('Missing data.heading')}}
+        </h1>
+
+        <span class="form-hint">{{data.bodytext | default('Missing data.bodytext')}}</span>
+        {% if errorState %}
+        <span class="error-message">
+          {{data.error | default('Missing data.error')}}
+        </span>
+        {% endif %}
+      </legend>
+
+      {% for item in data.options %}
+      <div class="multiple-choice">
+        <input id="{{contextID}}-{{loop.index}}" type="radio" name="{{contextID}}" value="{{item}}" {{'checked' if item == formcache[contextID]}} />
+        <label for="{{contextID}}-{{loop.index}}">{{item}}</label>
+      </div>
+      {% endfor %}
+
+    </fieldset>
+  </div>
+{% endmacro %}
+
+
+<!-- Form: Date -->
+
+{% macro date(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) + '-' + (data.legend | nameAttr) + '-' + seedNum %}
+
+    <!-- THERE IS A BUG HERE
+      You will not be able to change the date
+    -->
+    <div class="form-group
+    {{ 'form-group-error' if errorState }}
+    {{ 'fx-populate' if data.populate }}
+    {{ data.cssClassesParent if data.cssClassesParent }}
+    "
+    {{ "data-contextID=" + contextID if data.populate }}
+    >
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          {{data.legend | default('Missing data.lagend')}}
+        </span>
+        {% if data.legend == "Date of birth" %}
+        <span class="form-hint">
+          {{(data.hint | default('For example, 31 3 1980')) if (data.showhint | default(true))}}
+        </span>
+        {% else %}
+        <span class="form-hint">
+          {{(data.hint | default('For example, 31 3 2017')) if (data.showhint | default(true))}}
+        </span>
+        {% endif %}
+        {% if errorState %}
+        <span class="error-message">
+          {{data.error | default('Missing data.error')}}
+        </span>
+        {% endif %}
+      </legend>
+      <div class="form-date">
+        <div class="form-group form-group-day">
+          <label class="form-label" for="{{contextID}}-day">Day</label>
+          <input class="form-control {{ 'form-control-error' if errorState }}" id="{{contextID}}-day" value="{{formcache[contextID+'-day']}}" name="{{contextID}}-day" type="number" pattern="[0-9]*" min="0" max="31">
+        </div>
+        <div class="form-group form-group-month">
+          <label class="form-label" for="{{contextID}}-month">Month</label>
+          <input class="form-control {{ 'form-control-error' if errorState }}" id="{{contextID}}-month" value="{{formcache[contextID+'-month']}}" name="{{contextID}}-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="{{contextID}}-year">Year</label>
+          <input class="form-control {{ 'form-control-error' if errorState }}" id="{{contextID}}-year" value="{{formcache[contextID+'-year']}}" name="{{contextID}}-year" type="number" pattern="[0-9]*" min="0" max="2019">
+        </div>
+        {% if data.removeLink %}
+        <div class="remove-date">
+          <br />
+          <a href="#noop">Remove date</a>
+        </div>
+        {% endif %}
+      </div>
+      {% if data.addAnotherLink %}
+      <div class="form-group" style="clear:both">
+        <br />
+        <a href="#noop">Add another date</a>
+      </div>
+      {% endif %}
+    </fieldset>
+  </div>
+{% endmacro %}
+
+<!-- Form: Checkbox list -->
+
+{% macro checkboxlist(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-checkbox-group-' + (data.heading | nameAttr) + '-' + seedNum %}
+
+  {% if data.heading %}
+    <h3 class="heading-medium">{{data.heading}}</h3>
+    {% endif %}
+    <div class="form-group {{ 'form-group-error' if errorState }}">
+      <fieldset>
+        <legend>
+          {% if data.bodytext %}
+          <span class="body-text">
+            {{ data.bodytext }}
+          </span>
+          {% endif %}
+          {% if errorState %}
+          <span class="error-message">
+            {{data.error | default('Missing data.error')}}
+          </span>
+          {% endif %}
+        </legend>
+
+        {% for item in data.options %}
+        <div class="multiple-choice">
+          <input id="{{contextID+ '-'+loop.index}}" type="checkbox" name="{{contextID+ '-'+loop.index}}" value="{{item}}" {{'checked' if (item == formcache[contextID+'-'+loop.index])}} />
+          <label for="{{contextID+ '-'+loop.index}}">{{item}}</label>
+        </div>
+        {% endfor %}
+      </fieldset>
+    </div>
+{% endmacro %}
+
+<!-- Add more -->
+
+{% macro addmore(data, formcache={}) %}
+    <div class="form-group fx-addmore" data-selector="{{data.fxselector}}">
+      <input type="{{data.type | default('submit')}}" class="button button-secondary" value="{{data.value | default('Add another')}}" />
+    </div>
+{% endmacro %}
+
+<!-- Form: Select drop-down -->
+
+{% macro select(data, formcache={}, seedNum=1) %}
+  {% set contextID = (data.context | default('general')) +'-select-' + (data.label | nameAttr) + '-' + seedNum %}
+  <div class="form-group {{ 'form-group-error' if errorState }} {{ 'fx-typeahead' if data.typeahead !== false }}
+  {{ data.cssClassesParent if data.cssClassesParent }}
+   ">
+    <label class="form-label-bold" for="{{contextID}}">
+      {{data.label | default("Missing data.label")}}
+
+      {% if data.hint %}
+      <span class="form-hint">
+        {{data.hint}}
+      </span>
+      {% endif %}
+
+
+      {% if errorState %}
+      <span class="error-message">
+        {{data.error | default('Missing data.error')}}
+      </span>
+      {% endif %}
+    </label>
+    <select autocomplete="off"
+    class="form-control
+    {{ 'typeahead' if data.typeahead !== false }}
+    {{ data.cssClasses if data.cssClasses }}
+    {{ 'form-control-error' if errorState }}
+    "
+    {{ 'disabled' if data.readonly == true}}
+
+    id="{{contextID}}"
+
+    name="{{contextID}}"
+    >
+
+    {% if not data.emptyOption %}
+    <option value=""></option>
+    {% else %}
+    <option value="">Please select ...</option>
+    {% endif %}
+
+    {% if data.options[0] | is_string %}
+    {% for item in data.options %}
+    <option
+    value="{{item}}"
+    {{'selected' if formcache[contextID]==item}}>
+
+    {{item}}
+
+  </option>
+  {% endfor %}
+
+  {% else %}
+  {% for item in data.options %}
+  <option
+  {{'selected' if formcache[contextID]==item.text}}
+  {% for attr in item.dataAttrs %}
+  data-{{attr | safe}}
+  {% endfor %}
+  data-trigger="{{item.trigger}}"
+  value="{{item.text}}">
+  {{item.text}}</option>
+  {% endfor %}
+  {% endif %}
+  </select>
+  </div>
+{% endmacro %}
