@@ -34,6 +34,17 @@ $path: "/public/images/";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+/* --------------------------------------- */
+/* Layout styles */
+/* --------------------------------------- */
+
+.column-three-quarters {
+  @include grid-column(3 / 4);
+}
+
+/* --------------------------------------- */
+/* Basic button styles */
+/* --------------------------------------- */
 
 .button-secondary {
   @include button ($light-blue);

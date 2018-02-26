@@ -27,7 +27,7 @@
 
 				<div class="grid-row">
 					
-					<div class="column-two-thirds">
+					<div class="column-three-quarters">
 
 						{% if fee_type == "fixed" %}
 
@@ -44,12 +44,14 @@
 						{% endif %}
 
 					</div>
+						
+					{% include "./includes/_sidebar.html" %}
 
 				</div>
 
 				<div class="grid-row">
 					
-					<div class="column-two-thirds">
+					<div class="column-three-quarters">
 
 						{% include "./includes/_miscellaneous_fees.html" %}
 
@@ -60,7 +62,7 @@
 
 				<div class="grid-row">
 					
-					<div class="column-two-thirds">
+					<div class="column-three-quarters">
 
 						{# from provider > includes #}
 						{% include "../includes/_travel_expenses.html" %}
@@ -71,7 +73,7 @@
 
 				<div class="grid-row">
 					
-					<div class="column-two-thirds">
+					<div class="column-three-quarters">
 
 						{% include "./includes/_supporting_evidence.html" %}
 
@@ -81,7 +83,7 @@
 
 				<div class="grid-row">
 					
-					<div class="column-two-thirds">
+					<div class="column-three-quarters">
 
 						{# from provider > includes #}
 						{% include "../includes/_additional_information.html" %}
