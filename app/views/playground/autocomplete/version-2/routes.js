@@ -19,8 +19,6 @@ router.get('/', function (req, res) {
 // Route for offence lookup
 router.get('/find', function (req, res) {
 
-console.log(utils.getOffences())
-
   res.render(`${req.section}/${req.feature}/${req.version}/find`,
     {
       base: req.baseUrl,
