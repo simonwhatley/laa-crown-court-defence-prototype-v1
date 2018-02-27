@@ -4,14 +4,16 @@
 	    "name": "Bike travel",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
-	    	"distance": false,
-	    	"hours": false,
 	    	"destination": true,
+	    	"distance": true,
+	    	"hours": false,
 	    	"location": false,
 	    	"mileage": false,
 	    	"reason": true,
-	    	"cost": ["20"]
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -19,14 +21,16 @@
 	    "name": "Cab fares",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": true,
 	    	"distance": false,
 	    	"hours": false,
-	    	"destination": false,
 	    	"location": false,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -34,14 +38,16 @@
 	    "name": "Car travel",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": true,
 	    	"date": true,
-	    	"distance": false,
+	    	"destination": true,
+	    	"distance": true,
 	    	"hours": false,
-	    	"destination": false,
 	    	"location": false,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -49,14 +55,16 @@
 	    "name": "Hotel accommodation",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": false,
 	    	"distance": false,
 	    	"hours": false,
-	    	"destination": false,
-	    	"location": false,
+	    	"location": true,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -64,14 +72,16 @@
 	    "name": "Parking",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": false,
 	    	"distance": false,
 	    	"hours": false,
-	    	"destination": false,
 	    	"location": false,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -79,14 +89,16 @@
 	    "name": "Road or tunnel tolls",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": true,
 	    	"distance": false,
 	    	"hours": false,
-	    	"destination": false,
 	    	"location": false,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -94,14 +106,16 @@
 	    "name": "Subsistence",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": false,
 	    	"distance": false,
 	    	"hours": false,
-	    	"destination": false,
-	    	"location": false,
+	    	"location": true,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -109,14 +123,16 @@
 	    "name": "Train or public transport",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": true,
 	    	"distance": false,
 	    	"hours": false,
-	    	"destination": false,
 	    	"location": false,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	},
 	{
@@ -124,14 +140,16 @@
 	    "name": "Travel time",
 	    "scheme": ["agfs"],
 	    "attributes": {
+	    	"cost": false,
 	    	"date": true,
+	    	"destination": true,
 	    	"distance": false,
-	    	"hours": false,
-	    	"destination": false,
+	    	"hours": true,
 	    	"location": false,
 	    	"mileage": false,
-	    	"reason": false,
-	    	"cost": false
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
 	    }
 	}
 ]

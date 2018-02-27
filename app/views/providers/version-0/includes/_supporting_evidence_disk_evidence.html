@@ -5,11 +5,6 @@
 			Will you be sending disk evidence for this claim?
 		</legend>
 
-		<div class="multiple-choice">
-			<input id="electronic-evidence-no" type="radio" name="electronic_evidence_option" value="no" {{ checked('electronic_evidence_option','no') }}>
-			<label for="electronic-evidence-no">No</label>
-		</div>
-
 		<div class="multiple-choice" data-target="electronic-evidence-panel">
 			<input id="electronic-evidence-yes" type="radio" name="electronic_evidence_option" value="yes" {{ checked('electronic_evidence_option','yes') }}>
 			<label for="electronic-evidence-yes">Yes</label>
@@ -26,6 +21,11 @@
 			Nottingham<br>
 			NG1 2AS
 			</p>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="electronic-evidence-no" type="radio" name="electronic_evidence_option" value="no" {{ checked('electronic_evidence_option','no') }}>
+			<label for="electronic-evidence-no">No</label>
 		</div>
 
 	</fieldset>

@@ -114,7 +114,18 @@ a.link-change, a.link-remove {
 /* Show/hide styles */
 /* --------------------------------------- */
 
-.fx-block, .fx-additional-case-numbers {
+.fx-block,
+.fx-additional-case-numbers,
+.fx-travel-cost,
+.fx-travel-date,
+.fx-travel-destination,
+.fx-travel-distance,
+.fx-travel-location,
+.fx-travel-hours,
+.fx-travel-mileage,
+.fx-travel-reason,
+.fx-travel-net-amount,
+.fx-travel-vat-amount {
   display: none;
 }
 
