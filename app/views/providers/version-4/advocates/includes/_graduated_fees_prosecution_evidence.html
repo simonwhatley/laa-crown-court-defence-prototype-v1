@@ -2,6 +2,10 @@
     Pages of prosecution evidence (<abbr title="pages of prosecution evidence">PPE</abbr>)
 </h3>
 
+{% if data['fee_scheme_version'] == 10 and ((data['offence_class'] == 6 or data['offence_class'] == 9)) -%}
+<p style="color:red; font-weight:bold;">HELP TEXT</p>
+{%- endif %}
+
 <div class="form-group">
     <fieldset>
         <div class="form-group">
