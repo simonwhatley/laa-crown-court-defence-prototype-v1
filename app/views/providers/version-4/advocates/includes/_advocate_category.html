@@ -10,30 +10,30 @@
 		{% if data['fee_scheme_version'] == 10 -%}
 		
 			<div class="multiple-choice">
-				<input id="advocate-category-1" type="radio" name="advocate_category" value="junior" {{ checked('advocate_category','junior') }}>
-				<label for="advocate-category-1">Junior</label>
+				<input id="advocate-category-junior" type="radio" name="advocate_category" value="junior" {{ checked('advocate_category','junior') }}>
+				<label for="advocate-category-junior">Junior</label>
 			</div>
 		
 		{% else %}
 		
 			<div class="multiple-choice">
-				<input id="advocate-category-1" type="radio" name="advocate_category" value="junior_alone" {{ checked('advocate_category','junior_alone') }}>
-				<label for="advocate-category-1">Junior alone</label>
+				<input id="advocate-category-junior-alone" type="radio" name="advocate_category" value="junior_alone" {{ checked('advocate_category','junior_alone') }}>
+				<label for="advocate-category-junior-alone">Junior alone</label>
 			</div>
 			<div class="multiple-choice">
-				<input id="advocate-category-3" type="radio" name="advocate_category" value="led_junior" {{ checked('advocate_category','led_junior') }}>
-				<label for="advocate-category-3">Led junior</label>
+				<input id="advocate-category-led-junior" type="radio" name="advocate_category" value="led_junior" {{ checked('advocate_category','led_junior') }}>
+				<label for="advocate-category-2=led-junior">Led junior</label>
 			</div>
 		
 		{% endif %}
 
 		<div class="multiple-choice">
-			<input id="advocate-category-2" type="radio" name="advocate_category" value="leading_junior" {{ checked('advocate_category','leading_junior') }}>
-			<label for="advocate-category-2">Leading junior</label>
+			<input id="advocate-category-leading-junior" type="radio" name="advocate_category" value="leading_junior" {{ checked('advocate_category','leading_junior') }}>
+			<label for="advocate-category-leading-junior">Leading junior</label>
 		</div>
 		<div class="multiple-choice">
-			<input id="advocate-category-4" type="radio" name="advocate_category" value="qc" {{ checked('advocate_category','qc') }}>
-			<label for="advocate-category-4">QC</label>
+			<input id="advocate-category-qc" type="radio" name="advocate_category" value="qc" {{ checked('advocate_category','qc') }}>
+			<label for="advocate-category-qc">QC</label>
 		</div>
 
 	</fieldset>

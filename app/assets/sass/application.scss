@@ -125,7 +125,11 @@ a.link-change, a.link-remove {
 .fx-travel-mileage,
 .fx-travel-reason,
 .fx-travel-net-amount,
-.fx-travel-vat-amount {
+.fx-travel-vat-amount,
+.fx-case-details-trial,
+.fx-case-details-retrial,
+.fx-case-details-cracked-trial,
+.fx-case-details-cracked-before-retrial, {
   display: none;
 }
 

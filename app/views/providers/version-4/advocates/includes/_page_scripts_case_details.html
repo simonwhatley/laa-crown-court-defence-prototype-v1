@@ -1,0 +1,65 @@
+<script type="text/javascript">
+// $(function(){
+//   $('#case-type').on('blur', function(){
+//       alert($(this).val().toLowerCase());
+//   });
+// });
+
+$(function(){
+  $('#case-type').on('blur', function(e){
+    e.preventDefault();
+
+    var type = $(this).val().toLowerCase();
+  
+    $('.fx-case-details-trial').is(function(){
+      var $el = $(this);
+      type == "trial" || type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-retrial').is(function(){
+      var $el = $(this);
+      type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-trial').is(function(){
+      var $el = $(this);
+      type == "cracked trial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-before-retrial').is(function(){
+      var $el = $(this);
+      type == "cracked before retrial" ? $el.show() : $el.hide();
+    });
+
+  });
+});
+
+// $(function(){
+//   $('.fx-select-case-type').on('change', function(e){
+//     e.preventDefault();
+
+//     var type = $(this).find(':selected').attr('value');
+  
+//     $('.fx-case-details-trial').is(function(){
+//       var $el = $(this);
+//       type == "trial" || type == "retrial" ? $el.show() : $el.hide();
+//     });
+
+//     $('.fx-case-details-retrial').is(function(){
+//       var $el = $(this);
+//       type == "retrial" ? $el.show() : $el.hide();
+//     });
+
+//     $('.fx-case-details-cracked-trial').is(function(){
+//       var $el = $(this);
+//       type == "cracked_trial" ? $el.show() : $el.hide();
+//     });
+
+//     $('.fx-case-details-cracked-before-retrial').is(function(){
+//       var $el = $(this);
+//       type == "cracked_before_retrial" ? $el.show() : $el.hide();
+//     });
+
+//   });
+// });
+</script>

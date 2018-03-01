@@ -6,6 +6,7 @@
 
 {% block page_scripts %}
 {% include "../includes/_page_scripts_case_details.html" %}
+{% include "./includes/_page_scripts_case_details.html" %}
 {% endblock %}
 
 {% block content %}
@@ -91,7 +92,7 @@
 										</span>
 									</legend>
 
-									<select id="case-type" name="case_type" class="form-control">
+									<select id="case-type" name="case_type" class="form-control fx-select-case-type">
 										<option value=""></option>
 
 										{% for type in case_types -%}
@@ -181,6 +182,34 @@
 								</fieldset>
 							</div>
 
+						</div>
+
+						<div class="form-section fx-case-details-trial">
+							<h3 class="heading-medium">
+								Trial details
+							</h3>
+							{% include "./includes/_case_details_trial.html" %}
+						</div>
+
+						<div class="form-section fx-case-details-retrial">
+							<h3 class="heading-medium">
+								Retrial details
+							</h3>
+							{% include "./includes/_case_details_retrial.html" %}
+						</div>
+
+						<div class="form-section fx-case-details-cracked-trial">
+							<h3 class="heading-medium">
+								Cracked trial details
+							</h3>
+							{% include "./includes/_case_details_cracked_trial.html" %}
+						</div>
+
+						<div class="form-section fx-case-details-cracked-before-retrial">
+							<h3 class="heading-medium">
+								Cracked before retrial details
+							</h3>
+							{% include "./includes/_case_details_cracked_trial.html" %}
 						</div>
 
 						{% include "./includes/_form_actions.html" %}
