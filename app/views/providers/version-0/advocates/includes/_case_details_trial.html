@@ -1,0 +1,90 @@
+<div class="grid-row">
+    <div class="column-half">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label-bold">
+                    First day of trial
+                    <span class="form-hint">
+                        For example, 31 3 2017
+                    </span>
+                </legend>
+                <div class="form-date">
+                    <div class="form-group form-group-day">
+                        <label class="form-label" for="first-day-of-trial-day">
+                            Day
+                        </label>
+                        <input class="form-control" id="first-day-of-trial-day" max="31" min="1" name="first_day_of_trial_day" pattern="[0-9]*" type="number" value="{{data['first_day_of_trial_day']}}">
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="DA-date-attended-1-1-month">
+                            Month
+                        </label>
+                        <input class="form-control" id="first-day-of-trial-month" max="12" min="1" name="first_day_of_trial_month" pattern="[0-9]*" type="number" value="{{data['first_day_of_trial_month']}}">
+                    </div>
+                    <div class="form-group form-group-year">
+                        <label class="form-label" for="DA-date-attended-1-1-year">
+                            Year
+                        </label>
+                        <input class="form-control" id="first-day-of-trial-year" max="2019" min="1900" name="first_day_of_trial_year" pattern="[0-9]*" type="number" value="{{data['first_day_of_trial_year']}}">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="column-half">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label-bold">
+                    Trial concluded on
+                    <span class="form-hint">
+                        For example, 31 3 2017
+                    </span>
+                </legend>
+                <div class="form-date">
+                    <div class="form-group form-group-day">
+                        <label class="form-label" for="trial-concluded-on-day">
+                            Day
+                        </label>
+                        <input class="form-control" id="trial-concluded-on-day" max="31" min="1" name="trial_concluded_on_day" pattern="[0-9]*" type="number" value="{{data['trial_concluded_on_day']}}">
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="DA-date-attended-1-1-month">
+                            Month
+                        </label>
+                        <input class="form-control" id="trial-concluded-on-month" max="12" min="1" name="trial_concluded_on_month" pattern="[0-9]*" type="number" value="{{data['trial_concluded_on_month']}}">
+                    </div>
+                    <div class="form-group form-group-year">
+                        <label class="form-label" for="DA-date-attended-1-1-year">
+                            Year
+                        </label>
+                        <input class="form-control" id="trial-concluded-on-year" max="2019" min="1900" name="trial_concluded_on_year" pattern="[0-9]*" type="number" value="{{data['trial_concluded_on_year']}}">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-half">
+        <div class="form-group">
+            <label class="form-label-bold" for="estimated-trial-length">
+                Estimated trial length
+                <span class="form-hint">
+                    Number of days
+                </span>
+            </label>
+            <input class="form-control form-control-1-8" id="estimated-trial-length" name="estimated_trial_length" type="text" value="{{data['estimated_trial_length']}}">
+        </div>
+    </div>
+    <div class="column-half">
+        <div class="form-group">
+            <label class="form-label-bold" for="actual-trial-length">
+                Actual trial length
+                <span class="form-hint">
+                    Number of days
+                </span>
+            </label>
+            <input class="form-control form-control-1-8" id="actual-trial-length" name="actual_trial_length" type="text" value="{{data['actual_trial_length']}}">
+        </div>
+    </div>
+</div>

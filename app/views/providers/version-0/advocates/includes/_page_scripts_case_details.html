@@ -6,17 +6,48 @@ autocomplete({
   showAllValues: false,
   minLength: 0,
   defaultValue: ''
-})
+});
+
 autocomplete({
   selectElement: document.getElementById('court'),
   showAllValues: false,
   minLength: 0,
   defaultValue: ''
-})
+});
+
 autocomplete({
   selectElement: document.getElementById('transfer-court'),
   showAllValues: false,
   minLength: 0,
   defaultValue: ''
-})
+});
+
+$(function(){
+  $('#case-type').on('blur', function(e){
+    e.preventDefault();
+
+    var type = $(this).val().toLowerCase();
+  
+    $('.fx-case-details-trial').is(function(){
+      var $el = $(this);
+      type == "trial" || type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-retrial').is(function(){
+      var $el = $(this);
+      type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-trial').is(function(){
+      var $el = $(this);
+      type == "cracked trial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-before-retrial').is(function(){
+      var $el = $(this);
+      type == "cracked before retrial" ? $el.show() : $el.hide();
+    });
+
+  });
+});
 </script>
