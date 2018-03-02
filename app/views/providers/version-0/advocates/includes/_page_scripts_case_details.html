@@ -26,7 +26,7 @@ $(function(){
   $('#case-type').on('blur', function(e){
     e.preventDefault();
 
-    var type = $(this).val().toLowerCase();
+    var type = $(this).val().toLowerCase().replace(/\s/g, '_');
   
     $('.fx-case-details-trial').is(function(){
       var $el = $(this);
@@ -40,12 +40,12 @@ $(function(){
 
     $('.fx-case-details-cracked-trial').is(function(){
       var $el = $(this);
-      type == "cracked trial" ? $el.show() : $el.hide();
+      type == "cracked_trial" ? $el.show() : $el.hide();
     });
 
     $('.fx-case-details-cracked-before-retrial').is(function(){
       var $el = $(this);
-      type == "cracked before retrial" ? $el.show() : $el.hide();
+      type == "cracked_before_retrial" ? $el.show() : $el.hide();
     });
 
   });
