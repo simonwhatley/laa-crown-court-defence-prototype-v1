@@ -1,6 +1,6 @@
 var courts = require('./data/crown_courts.json')
 var caseTypes = require('./data/case_types.json')
-var offences = require('./data/scheme_9_offences.json')
+var offences = require('./data/scheme_9_offences_reverse.json')
 var fixedFees = require('./data/fixed_fees.json')
 var miscellaneousFees = require('./data/miscellaneous_fees.json')
 var disbursements = require('./data/disbursements.json')
@@ -46,19 +46,19 @@ module.exports = {
 
 	},
 
-	getOffenceClasses: function() {
-		return offences.classes
+	getOffenceCategories: function() {
+		return offences.categories
 	},
 
-	getOffenceCategories: function(class_id) {
+	getOffenceClasses: function(category_id) {
 
-		if(!class_id) return null
+		if(!category_id) return null
 
-		var classObj = this.getOffenceClasses().filter(function (obj) {
-  			 return (obj.key == class_id)
+		var categoryObj = this.getOffenceCategories().filter(function (obj) {
+  			 return (obj.key == category_id)
 		})
 
-		return classObj[0].categories
+		return categoryObj[0].classes
 
 	},
 

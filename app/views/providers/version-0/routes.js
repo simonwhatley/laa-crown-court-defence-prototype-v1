@@ -9,6 +9,15 @@ router.get('/', (req, res) => {
 })
 
 // ==============================================
+// Data
+// ==============================================
+
+router.get('/data/offences/9/classes', function (req, res) {
+    var data = { output: utils.getOffenceClasses(req.session.data.category[0]) , selected: req.session.data.offence_class }
+    res.json(data)
+})
+
+// ==============================================
 // ADVOCATES
 // ==============================================
 
@@ -34,7 +43,8 @@ router.get('/advocates/case-details', function(req, res) {
                 'home' : req.baseUrl + '/advocates/'
             },
             case_types: utils.getCaseTypesByFeeScheme('agfs'),
-            courts: utils.getCourts()
+            courts: utils.getCourts(),
+            offences: utils.getOffenceCategories()
         });
 });
 
