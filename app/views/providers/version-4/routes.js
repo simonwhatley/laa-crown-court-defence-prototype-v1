@@ -165,7 +165,6 @@ router.get('/advocates/offence-details', function(req, res) {
 
     } else {
 
-        // TODO: delete offence keys prior to re-running
         delete req.session.data.depdrop_all_params
 
         res.render(`${req.feature}/${req.version}/advocates/offence-details`,
@@ -182,15 +181,6 @@ router.get('/advocates/offence-details', function(req, res) {
 
     }
 
-    
-
-});
-
-router.get('/advocates/clear/offences', function(req, res) {
-    delete req.session.data.offence_class
-    delete req.session.data.offence_band
-    delete req.session.data.offence_category
-    res.redirect(`/${req.feature}/${req.version}/advocates/offence-details`);
 });
 
 router.get('/advocates/fees', function(req, res) {
@@ -348,6 +338,13 @@ router.get('/advocates/thank-you', function(req, res) {
 router.get('/advocates/cancel', function(req, res) {
     req.session.destroy()
     res.redirect(`/${req.feature}/${req.version}/advocates/`);
+});
+
+router.get('/advocates/clear/offences', function(req, res) {
+    delete req.session.data.offence_class
+    delete req.session.data.offence_band
+    delete req.session.data.offence_category
+    res.redirect(`/${req.feature}/${req.version}/advocates/offence-details`);
 });
 
 // ==============================================
