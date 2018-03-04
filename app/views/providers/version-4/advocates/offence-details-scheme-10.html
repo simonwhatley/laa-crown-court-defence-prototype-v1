@@ -54,7 +54,17 @@
 
 					</div>
 
-
+					{% if type %}
+	                <p class="column-two-thirds">
+	                    {% if type == "class" -%}
+	                        Showing offences in the <span class="bold">{{offences[0].class_label}}</span> class. <a href="{{links.filter}}">Clear filter</a>
+	                    {% elif type == "band" %}
+	                        Showing offences in <span class="bold">{{offences[0].band_label}}</span> in the <span class="bold">{{offences[0].class_label}}</span> class. <a href="{{links.filter}}">Clear filter</a>
+	                    {% elif type == "act" %}
+	                        Showing offences in the <span class="bold">{{offences[0].act_label}}</span> act. <a href="{{links.filter}}">Clear filter</a>
+	                    {% endif -%}
+	                </p>
+	                {% endif %}
 
 					{% include "../includes/_offences_scheme_10_list.html" %}
 

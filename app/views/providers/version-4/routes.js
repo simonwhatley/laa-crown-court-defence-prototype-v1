@@ -154,9 +154,10 @@ router.get('/advocates/offence-details', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
-                'save' : req.baseUrl + '/advocates/',
-                'new' : req.baseUrl + '/advocates/start',
-                'home' : req.baseUrl + '/advocates/',
+                // 'save' : req.baseUrl + '/advocates/',
+                // 'new' : req.baseUrl + '/advocates/start',
+                // 'home' : req.baseUrl + '/advocates/',
+                'filter': req.baseUrl + '/advocates/offence-details',
                 'clear': req.baseUrl + '/advocates/clear/offences'
             },
             offences: utils.getOffencesScheme10(),
@@ -180,6 +181,66 @@ router.get('/advocates/offence-details', function(req, res) {
         });
 
     }
+
+});
+
+router.get('/advocates/offence-details/:class([0-9]+)', function(req, res) {
+
+    res.render(`${req.feature}/${req.version}/advocates/offence-details-scheme-10`,
+        {
+            links: {
+                'next' : req.baseUrl + '/advocates/fees',
+                'previous' : req.baseUrl + '/advocates/defendant-details',
+                // 'save' : req.baseUrl + '/advocates/',
+                // 'new' : req.baseUrl + '/advocates/start',
+                // 'home' : req.baseUrl + '/advocates/',
+                'filter': req.baseUrl + '/advocates/offence-details',
+                'clear': req.baseUrl + '/advocates/clear/offences'
+            },
+            type: "class",
+            offences: utils.getOffencesScheme10ByClassId(req.params.class),
+            offence: utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+        });
+
+});
+
+router.get('/advocates/offence-details/:class([0-9]+)/:band([0-9]+)', function(req, res) {
+
+    res.render(`${req.feature}/${req.version}/advocates/offence-details-scheme-10`,
+        {
+            links: {
+                'next' : req.baseUrl + '/advocates/fees',
+                'previous' : req.baseUrl + '/advocates/defendant-details',
+                // 'save' : req.baseUrl + '/advocates/',
+                // 'new' : req.baseUrl + '/advocates/start',
+                // 'home' : req.baseUrl + '/advocates/',
+                'filter': req.baseUrl + '/advocates/offence-details',
+                'clear': req.baseUrl + '/advocates/clear/offences'
+            },
+            type: "band",
+            offences: utils.getOffencesScheme10ByBandId(req.params.class, req.params.band),
+            offence: utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+        });
+
+});
+
+router.get('/advocates/offence-details/act/:act([0-9]+)', function(req, res) {
+
+    res.render(`${req.feature}/${req.version}/advocates/offence-details-scheme-10`,
+        {
+            links: {
+                'next' : req.baseUrl + '/advocates/fees',
+                'previous' : req.baseUrl + '/advocates/defendant-details',
+                // 'save' : req.baseUrl + '/advocates/',
+                // 'new' : req.baseUrl + '/advocates/start',
+                // 'home' : req.baseUrl + '/advocates/',
+                'filter': req.baseUrl + '/advocates/offence-details',
+                'clear': req.baseUrl + '/advocates/clear/offences'
+            },
+            type: "act",
+            offences: utils.getOffencesScheme10ByActId(req.params.act),
+            offence: utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+        });
 
 });
 

@@ -94,7 +94,7 @@ module.exports = {
 	},
 
 	getOffencesScheme10ByClassId: function(class_id) {
-		
+		// console.log(class_id)
 		var classObj = this.getOffencesScheme10().filter(function (el) {
   			 return (el.class_id == class_id)
 		})
@@ -103,7 +103,7 @@ module.exports = {
 	},
 
 	getOffencesScheme10ByBandId: function(class_id, band_id) {
-		
+		// console.log(band_id)
 		var classObj = this.getOffencesScheme10ByClassId(class_id).filter(function (el) {
   			 return (el.band_id == band_id)
 		})
