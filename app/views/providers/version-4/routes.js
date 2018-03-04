@@ -146,18 +146,30 @@ router.get('/advocates/defendant-details', function(req, res) {
 
 router.get('/advocates/offence-details', function(req, res) {
 
-    // TODO: delete offence keys prior to re-running
-    delete req.session.data.depdrop_all_params
-
     // TODO: Nasty code! There must be a better way
     if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_month >= 4 && req.session.data.representation_order_date_day >= 1) {
-        var classes = utils.getOffenceClassesScheme10()
-    } else {
-        var classes = utils.getOffenceClassesScheme9()
-    }
+        
+        res.render(`${req.feature}/${req.version}/advocates/offence-details-scheme-10`,
+        {
+            links: {
+                'next' : req.baseUrl + '/advocates/fees',
+                'previous' : req.baseUrl + '/advocates/defendant-details',
+                'save' : req.baseUrl + '/advocates/',
+                'new' : req.baseUrl + '/advocates/start',
+                'home' : req.baseUrl + '/advocates/',
+                'clear': req.baseUrl + '/advocates/clear/offences'
+            },
+            offences: utils.getOffencesScheme10(),
+            offence: utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+        });
 
-    res.render(`${req.feature}/${req.version}/advocates/offence-details`,
-    	{
+    } else {
+
+        // TODO: delete offence keys prior to re-running
+        delete req.session.data.depdrop_all_params
+
+        res.render(`${req.feature}/${req.version}/advocates/offence-details`,
+        {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
@@ -165,9 +177,20 @@ router.get('/advocates/offence-details', function(req, res) {
                 'new' : req.baseUrl + '/advocates/start',
                 'home' : req.baseUrl + '/advocates/'
             },
-            classes: classes
-    	});
+            offences: utils.getOffenceClassesScheme9()
+        });
 
+    }
+
+    
+
+});
+
+router.get('/advocates/clear/offences', function(req, res) {
+    delete req.session.data.offence_class
+    delete req.session.data.offence_band
+    delete req.session.data.offence_category
+    res.redirect(`/${req.feature}/${req.version}/advocates/offence-details`);
 });
 
 router.get('/advocates/fees', function(req, res) {

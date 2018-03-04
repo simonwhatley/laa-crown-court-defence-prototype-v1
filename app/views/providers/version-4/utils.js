@@ -1,6 +1,7 @@
 var courts = require('./data/crown_courts.json')
 var caseTypes = require('./data/case_types.json')
 var offencesScheme10 = require('./data/scheme_10_offences.json')
+var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json')
 var offencesScheme9 = require('./data/scheme_9_offences.json')
 var miscellaneousFees = require('./data/miscellaneous_fees.json')
 var disbursements = require('./data/disbursements.json')
@@ -60,32 +61,81 @@ module.exports = {
 
 	},
 
-	getOffenceClassesScheme10: function() {
-		return offencesScheme10.classes
+	// getOffenceClassesScheme10: function() {
+	// 	return offencesScheme10.classes
+	// },
+
+	// getOffenceBandsScheme10: function(class_id) {
+
+	// 	if(!class_id) return null
+
+	// 	var classObj = this.getOffenceClassesScheme10().filter(function (obj) {
+ //  			 return (obj.key == class_id)
+	// 	})
+
+	// 	return classObj[0].bands
+
+	// },
+
+	// getOffenceCategoriesScheme10: function(class_id, band_id) {
+
+	// 	if(!class_id || !band_id) return null
+
+	// 	var classObj = this.getOffenceBandsScheme10(class_id).filter(function (obj) {
+ //  			 return (obj.key == band_id)
+	// 	})
+
+	// 	return classObj[0].categories
+
+	// },
+
+	getOffencesScheme10: function() {
+		return offencesScheme10_flat
 	},
 
-	getOffenceBandsScheme10: function(class_id) {
-
-		if(!class_id) return null
-
-		var classObj = this.getOffenceClassesScheme10().filter(function (obj) {
-  			 return (obj.key == class_id)
+	getOffencesScheme10ByClassId: function(class_id) {
+		
+		var classObj = this.getOffencesScheme10().filter(function (el) {
+  			 return (el.class_id == class_id)
 		})
 
-		return classObj[0].bands
-
+		return classObj
 	},
 
-	getOffenceCategoriesScheme10: function(class_id, band_id) {
-
-		if(!class_id || !band_id) return null
-
-		var classObj = this.getOffenceBandsScheme10(class_id).filter(function (obj) {
-  			 return (obj.key == band_id)
+	getOffencesScheme10ByBandId: function(class_id, band_id) {
+		
+		var classObj = this.getOffencesScheme10ByClassId(class_id).filter(function (el) {
+  			 return (el.band_id == band_id)
 		})
 
-		return classObj[0].categories
+		return classObj
+	},
 
+	getOffencesScheme10ByCategoryId: function(category_id) {
+		
+		var classObj = this.getOffencesScheme10().filter(function (el) {
+  			 return (el.category_id == category_id)
+		})
+
+		return classObj
+	},
+
+	getOffencesScheme10ByActId: function(act_id) {
+		
+		var classObj = this.getOffencesScheme10().filter(function (el) {
+  			 return (el.act_id == act_id)
+		})
+
+		return classObj
+	},
+
+	getOffenceScheme10: function(class_id, band_id, category_id) {
+		
+		var classObj = this.getOffencesScheme10ByBandId(class_id, band_id).filter(function (el) {
+  			 return (el.category_id == category_id)
+		})
+
+		return classObj[0]
 	},
 
 	getMiscellaneousFees: function(fee_scheme, fee_scheme_version) {

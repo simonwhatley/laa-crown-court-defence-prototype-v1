@@ -7,7 +7,7 @@
   </label>
   <select id="offence-class" name="offence_class" class="form-control">
     <option value=""></option>
-    {% for class in classes -%}
+    {% for class in offences -%}
     <option value="{{class.key}}" {% if data['offence_class'] == class.key -%}selected="selected"{%- endif %}>{{class.key}} – {{class.name | capitalize}}</option>
     {%- endfor %}
   </select>
