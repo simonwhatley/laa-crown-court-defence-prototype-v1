@@ -12,6 +12,13 @@ router.get('/', (req, res) => {
   res.redirect(`/${req.feature}/${req.version}/sign-in`);
 })
 
+router.get('/sign-in', function(req, res) {
+    res.render(`${req.feature}/${req.version}/sign-in`,
+        {
+            proposition_links: "hide"
+        });
+});
+
 router.get('/auth', function(req, res) {
 
     if (utils.authenticate("provider", req.session.data.username) == "advocates") {
@@ -154,9 +161,6 @@ router.get('/advocates/offence-details', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
-                // 'save' : req.baseUrl + '/advocates/',
-                // 'new' : req.baseUrl + '/advocates/start',
-                // 'home' : req.baseUrl + '/advocates/',
                 'filter': req.baseUrl + '/advocates/offence-details',
                 'clear': req.baseUrl + '/advocates/clear/offences'
             },
@@ -191,9 +195,6 @@ router.get('/advocates/offence-details/:class([0-9]+)', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
-                // 'save' : req.baseUrl + '/advocates/',
-                // 'new' : req.baseUrl + '/advocates/start',
-                // 'home' : req.baseUrl + '/advocates/',
                 'filter': req.baseUrl + '/advocates/offence-details',
                 'clear': req.baseUrl + '/advocates/clear/offences'
             },
@@ -211,9 +212,6 @@ router.get('/advocates/offence-details/:class([0-9]+)/:band([0-9]+)', function(r
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
-                // 'save' : req.baseUrl + '/advocates/',
-                // 'new' : req.baseUrl + '/advocates/start',
-                // 'home' : req.baseUrl + '/advocates/',
                 'filter': req.baseUrl + '/advocates/offence-details',
                 'clear': req.baseUrl + '/advocates/clear/offences'
             },
@@ -231,9 +229,6 @@ router.get('/advocates/offence-details/act/:act([0-9]+)', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details',
-                // 'save' : req.baseUrl + '/advocates/',
-                // 'new' : req.baseUrl + '/advocates/start',
-                // 'home' : req.baseUrl + '/advocates/',
                 'filter': req.baseUrl + '/advocates/offence-details',
                 'clear': req.baseUrl + '/advocates/clear/offences'
             },
@@ -253,6 +248,16 @@ router.get('/advocates/fees', function(req, res) {
     } else {
 
         var previousUrl = req.baseUrl + '/advocates/offence-details'
+
+    }
+
+    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_month >= 4 && req.session.data.representation_order_date_day >= 1) {
+
+        req.session.data.fee_scheme_version = '10'
+
+    } else {
+
+        req.session.data.fee_scheme_version = '9'
 
     }
 
@@ -279,7 +284,9 @@ router.get('/advocates/fees', function(req, res) {
                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
                         'previous' : previousUrl,
                         'save' : req.baseUrl + '/advocates/'
-                    }
+                    },
+                    fixed_fees: utils.getFixedFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version),
+                    fee_scheme_version: req.session.data.fee_scheme_version
                  });
 
         } else {
@@ -290,7 +297,8 @@ router.get('/advocates/fees', function(req, res) {
                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
                         'previous' : previousUrl,
                         'save' : req.baseUrl + '/advocates/'
-                    }
+                    },
+                    fee_scheme_version: req.session.data.fee_scheme_version
                 });
 
         }

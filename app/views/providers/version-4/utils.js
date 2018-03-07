@@ -4,6 +4,7 @@ var offencesScheme10 = require('./data/scheme_10_offences.json')
 var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json')
 var offencesScheme9 = require('./data/scheme_9_offences.json')
 var miscellaneousFees = require('./data/miscellaneous_fees.json')
+var fixedFees = require('./data/fixed_fees.json')
 var disbursements = require('./data/disbursements.json')
 var transferReasons = require('./data/transfer_reasons.json')
 var travelTypes = require('./data/travel_types.json')
@@ -136,6 +137,20 @@ module.exports = {
 		})
 
 		return classObj[0]
+	},
+
+	getFixedFees: function(fee_scheme, fee_scheme_version) {
+
+		if(!fee_scheme)
+			return null
+
+		if(!fee_scheme_version)
+			var fee_scheme_version = "9"
+
+		return fixedFees.filter( (obj) =>
+	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	    )
+
 	},
 
 	getMiscellaneousFees: function(fee_scheme, fee_scheme_version) {

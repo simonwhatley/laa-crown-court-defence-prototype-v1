@@ -22,11 +22,13 @@
           {% endblock %}
         </a>
         
+        {% if proposition_links != "hide" -%}
         <ul id="proposition-links">
           <li><a href="./">Claims</a></li>
           <li><a href="./settings">Settings</a></li>
           <li><a href="../sign-out">Sign out</a></li>
         </ul>
+        {%- endif %}
         
       </nav>
     </div>
@@ -54,4 +56,5 @@
     {% block page_scripts %}{% endblock %}
   {% endblock %}
   <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+  <hr>{{data|dump|safe}}
 {% endblock %}
