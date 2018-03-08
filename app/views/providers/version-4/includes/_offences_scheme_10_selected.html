@@ -1,3 +1,4 @@
+{% if offence.class_label.length and offence.band_label.length and offence.category_label.length -%}
 <div class="selected-offence">
 	<p class="bold">You have chosen the following offence details:</p>
 	<p>
@@ -7,3 +8,4 @@
 		<a href="{{links.clear}}">Clear selection</a>
 	</p>
 </div>
+{%- endif %}
