@@ -62,6 +62,30 @@ module.exports = {
 
 	},
 
+	getOffenceScheme9ClassName: function(class_id) {
+
+		if(!class_id) return null
+
+		var classObj = this.getOffenceClassesScheme9().filter(function (obj) {
+  			 return (obj.key == class_id)
+		})
+
+		return classObj[0].name
+	},
+
+	getOffenceScheme9CategoryName: function(class_id, category_id) {
+
+		if(!class_id) return null
+
+		if(!category_id) return null
+
+		var classObj = this.getOffenceCategoriesScheme9(class_id).filter(function (obj) {
+  			 return (obj.key == category_id)
+		})
+
+		return classObj[0].name
+	},
+
 	// getOffenceClassesScheme10: function() {
 	// 	return offencesScheme10.classes
 	// },
