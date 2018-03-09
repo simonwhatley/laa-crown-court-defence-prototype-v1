@@ -1,0 +1,40 @@
+<table>
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				First name
+			</th>
+			<td>{{data['defendant_first_name']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Last name
+			</th>
+			<td>{{data['defendant_last_name']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Date of birth
+			</th>
+			<td>{{data['date_of_birth_day']}}/{{data['date_of_birth_month']}}/{{data['date_of_birth_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Order for judicial apportionment
+			</th>
+			<td>{% if data['order_judicial_apportionment'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Representation order date
+			</th>
+			<td>{{data['representation_order_date_day']}}/{{data['representation_order_date_month']}}/{{data['representation_order_date_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				<abbr title="means assessment administration tool">MAAT</abbr> reference
+			</th>
+			<td>{{data['maat_reference']}}</td>
+		</tr>
+	</tbody>
+</table>

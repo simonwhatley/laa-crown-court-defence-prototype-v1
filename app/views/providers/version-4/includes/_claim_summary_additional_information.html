@@ -1,0 +1,14 @@
+{% if data['additional_information'].length -%}
+<table>
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Additional information
+			</th>
+			<td>{{data['additional_information']}}</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There is no additional information for this claim.</p>
+{%- endif %}

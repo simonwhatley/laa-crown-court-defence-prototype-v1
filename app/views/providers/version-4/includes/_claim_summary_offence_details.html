@@ -1,0 +1,24 @@
+<table>
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Offence class
+			</th>
+			<td>{{data['offence_class']}}</td>
+		</tr>
+		{% if data['bill_type'] in ['advocate_final','advocate_interim'] and data['fee_scheme_version'] == 10 -%}
+		<tr>
+			<th class="bold" scope="row">
+				Offence band
+			</th>
+			<td>{{data['offence_band']}}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Offence category
+			</th>
+			<td>{{data['offence_category']}}</td>
+		</tr>
+	</tbody>
+</table>

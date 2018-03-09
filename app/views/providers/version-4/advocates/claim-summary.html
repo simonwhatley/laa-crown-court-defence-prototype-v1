@@ -112,7 +112,70 @@
 									<span class="visually-hidden">&nbsp;case details</span>
 								</a>
 							</h3>
+
+							{% include "./includes/_claim_summary_case_details.html" %}
+
 						</div>
+
+						{% if data['case_type'] in ['trial','retrial'] -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Trial details
+								<a href="{{links.case_details}}#trial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;trial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_trial.html" %}
+
+						</div>
+						{%- endif %}
+
+						{% if data['case_type'] == 'retrial' -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Retrial details
+								<a href="{{links.case_details}}#retrial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;retrial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_retrial.html" %}
+
+						</div>
+						{%- endif %}
+
+						{% if data['case_type'] == 'cracked_trial' -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Cracked trial details
+								<a href="{{links.case_details}}#cracked-trial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;cracked trial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_cracked_trial.html" %}
+
+						</div>
+						{%- endif %}
+
+						{% if data['case_type'] == 'cracked_before_retrial' -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Cracked before retrial details
+								<a href="{{links.case_details}}#cracked-before-retrial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;cracked trial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_cracked_before_retrial.html" %}
+
+						</div>
+						{%- endif %}
 
 						<div class="form-section">
 							<h3 class="heading-medium">
@@ -122,6 +185,9 @@
 									<span class="visually-hidden">&nbsp;defendant details</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_defendant_details.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -132,6 +198,9 @@
 									<span class="visually-hidden">&nbsp;offence details</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_offence_details.html" %}
+
 						</div>
 
 						{% if data['bill_type'] == "advocate_interim" %}
@@ -139,11 +208,14 @@
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Interim fees
-								<a href="{{links.fees}}" class="link-change">
-									Change
-									<span class="visually-hidden">&nbsp;interim fees</span>
-								</a>
+									<a href="{{links.fees}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;interim fees</span>
+									</a>
 								</h3>
+
+								{% include "./includes/_claim_summary_interim_fees.html" %}
+
 							</div>
 
 						{% else %}
@@ -158,6 +230,9 @@
 											<span class="visually-hidden">&nbsp;fixed fees</span>
 										</a>
 									</h3>
+
+									{% include "./includes/_claim_summary_fixed_fees.html" %}
+
 								</div>
 
 							{% else %}
@@ -170,6 +245,9 @@
 											<span class="visually-hidden">&nbsp;graduated fees</span>
 										</a>
 									</h3>
+
+									{% include "./includes/_claim_summary_graduated_fees.html" %}
+
 								</div>
 
 							{%- endif %}
@@ -184,6 +262,9 @@
 									<span class="visually-hidden">&nbsp;miscellaneous</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -194,6 +275,9 @@
 									<span class="visually-hidden">&nbsp;travel expenses</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_travel_expenses.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -204,6 +288,9 @@
 									<span class="visually-hidden">&nbsp;supporting evidence</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_supporting_evidence.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -214,6 +301,9 @@
 									<span class="visually-hidden">&nbsp;additional information</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_additional_information.html" %}
+
 						</div>
 
 					</div>
