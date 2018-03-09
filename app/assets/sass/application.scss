@@ -109,6 +109,22 @@ a.link-change, a.link-remove {
   color: #6f777b;
 }
 
+/* --------------------------------------- */
+/* Claim state styles */
+/* --------------------------------------- */
+
+table.summary tr th:first-child,
+table.summary tr td:first-child {
+  width: 33%;
+}
+
+/*table.summary tr th:first-child {
+  padding-left: 10px;
+}
+
+table.summary tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}*/
 
 /* --------------------------------------- */
 /* Show/hide styles */
