@@ -1,3 +1,4 @@
+{% if data['travel_expense_1_type'].length -%}
 <!-- <table class="summary">
 	<tbody>
 		<tr>
@@ -89,3 +90,6 @@
 		</tr>
 	</tbody>
 </table> -->
+{% else %}
+<p>There are no travel expenses for this claim.</p>
+{%- endif %}

@@ -106,11 +106,11 @@ router.get('/advocates/bill-type', function(req, res) {
 
 router.get('/advocates/case-details', function(req, res) {
 
-    // if (req.session.data.referrer == 'summary') {
-    //     var nextUrl = req.baseUrl + '/advocates/claim-summary'
-    // } else {
+    if (req.session.data.referrer == 'summary') {
+        var nextUrl = req.baseUrl + '/advocates/claim-summary'
+    } else {
         var nextUrl = req.baseUrl + '/advocates/defendant-details'
-    // }
+    }
 
     res.render(`${req.feature}/${req.version}/advocates/case-details`,
         {

@@ -1,3 +1,7 @@
+{% if data['warrant_fee_net_amount'].length -%}
 <table class="summary">
 
 </table>
+{% else %}
+<p>There are no interim fees for this claim.</p>
+{%- endif %}

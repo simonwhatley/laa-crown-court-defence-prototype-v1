@@ -1,3 +1,4 @@
+{% if offence.category_label.length -%}
 <table class="summary">
 	<tbody>
 		<tr>
@@ -22,3 +23,6 @@
 		</tr>
 	</tbody>
 </table>
+{% else %}
+<p>There are no offence details for this claim.</p>
+{%- endif %}

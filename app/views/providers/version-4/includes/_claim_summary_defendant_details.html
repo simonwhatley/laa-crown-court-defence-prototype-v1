@@ -1,3 +1,4 @@
+{% if data['defendant_1_first_name'].length -%}
 <table class="summary">
 	<tbody>
 		<tr>
@@ -48,3 +49,6 @@
 		{%- endif %}
 	</tbody>
 </table>
+{% else %}
+<p>There are no defendants for this claim.</p>
+{%- endif %}

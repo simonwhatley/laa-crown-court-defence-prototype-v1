@@ -16,7 +16,7 @@
 			<th class="bold" scope="row">
 				Estimated trial length
 			</th>
-			<td>{{data['estimated_trial_length']}} days</td>
+			<td>{% if data['estimated_trial_length'].length -%}{{data['estimated_trial_length']}} days{% else %}Not provided{%- endif %}</td>
 		</tr>
 		<tr>
 			<th class="bold" scope="row">

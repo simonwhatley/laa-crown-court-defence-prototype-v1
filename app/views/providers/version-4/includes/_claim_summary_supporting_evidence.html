@@ -1,3 +1,4 @@
+{% if data['supporting_evidence_checklist'].length -%}
 <table class="summary">
 	<tbody>
 		<tr>
@@ -32,3 +33,6 @@
 		</tr>
 	</tbody>
 </table>
+{% else %}
+<p>There is no supporting evidence for this claim.</p>
+{%- endif %}

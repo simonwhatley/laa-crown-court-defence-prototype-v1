@@ -1,49 +1,49 @@
 <table class="summary">
 	<tbody>
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Instructed advocate
 			</th>
-			<td aria-label="">{{data['instructed_advocate']}}</td>
+			<td>{{data['instructed_advocate']}}</td>
 		</tr>
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Reference number
 			</th>
-			<td aria-label="">{{data['reference_number']}}</td>
+			<td>{{data['reference_number']}}</td>
 		</tr>
 		{% if data['bill_type'] == 'advocate_final' -%}
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Case type
 			</th>
-			<td aria-label="">{{data['case_type']|replace('_',' ')|capitalize}}</td>
+			<td>{{data['case_type']|replace('_',' ')|capitalize}}</td>
 		</tr>
 		{%- endif %}
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Court
 			</th>
-			<td aria-label="">{{data['court']|replace('_',' ')|capitalize}}</td>
+			<td>{{data['court']|replace('_',' ')|capitalize}}</td>
 		</tr>
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Case number
 			</th>
-			<td aria-label="">{{data['case_number']}}</td>
+			<td>{{data['case_number']}}</td>
 		</tr>
 		{% if data['transfer_court_option'] == 'yes' -%}
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Transfer court
 			</th>
-			<td aria-label="">{{data['transfer_court']|replace('_',' ')|capitalize}}</td>
+			<td>{{data['transfer_court']|replace('_',' ')|capitalize}}</td>
 		</tr>
 		<tr>
-			<th aria-label="" class="bold" scope="row">
+			<th class="bold" scope="row">
 				Transfer case number
 			</th>
-			<td aria-label="">{{data['transfer_case_number']}}</td>
+			<td>{{data['transfer_case_number']}}</td>
 		</tr>
 		{%- endif %}
 
