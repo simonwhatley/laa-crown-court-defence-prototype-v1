@@ -154,7 +154,7 @@ router.get('/advocates/defendant-details', function(req, res) {
 router.get('/advocates/offence-details', function(req, res) {
 
     // TODO: Nasty code! There must be a better way
-    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_month >= 4 && req.session.data.representation_order_date_day >= 1) {
+    if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
         
         res.render(`${req.feature}/${req.version}/advocates/offence-details-scheme-10`,
         {
@@ -251,7 +251,7 @@ router.get('/advocates/fees', function(req, res) {
 
     }
 
-    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_month >= 4 && req.session.data.representation_order_date_day >= 1) {
+    if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
 
         req.session.data.fee_scheme_version = '10'
 
@@ -318,7 +318,7 @@ router.get('/advocates/fees-v2', function(req, res) {
 
     }
 
-    if (req.session.data.representation_order_date_year >= 2018 && req.session.data.representation_order_date_month >= 4 && req.session.data.representation_order_date_day >= 1) {
+    if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
 
         req.session.data.fee_scheme_version = '10'
         var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
