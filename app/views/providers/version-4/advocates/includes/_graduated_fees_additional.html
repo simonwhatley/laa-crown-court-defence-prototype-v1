@@ -9,7 +9,7 @@
 
 
         <div class="multiple-choice" data-target="daily-attendance-fee-panel">
-            <input aria-controls="daily-attendance-fee-panel" aria-expanded="false" id="daily-attendance-fee" name="graduated_fees_checklist" type="checkbox" value="daily_attendance_fee" {% if  data['graduated_fees_checklist'] and 'daily_attendance_fee' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <input aria-controls="daily-attendance-fee-panel" aria-expanded="false" id="daily-attendance-fee" name="graduated_fees_checklist" type="checkbox" value="daily_attendance_fee" {% if (data['graduated_fees_checklist'] and 'daily_attendance_fee' in data['graduated_fees_checklist']) or (data['actual_trial_length'] >= 1) -%}checked="checked"{%- endif %}>
             <label for="daily-attendance-fee">
                 Daily attendance fee
             </label>
@@ -22,38 +22,110 @@
                         Include all days attended
                     </span>
                 </label>
-                <input class="form-control form-control-1-4" id="daily-attendance-number-of-days" name="daily_attendance_number_of_days" type="text" value="{{data['daily_attendance_number_of_days']}}">
+                <input class="form-control form-control-1-8" id="daily-attendance-number-of-days" name="daily_attendance_number_of_days" type="text" value="{% if data['daily_attendance_number_of_days'].length -%}{{data['daily_attendance_number_of_days']}}{% elif data['actual_trial_length'].length %}{{data['actual_trial_length']}}{%- endif %}">
+
             </div>
-            <div class="form-group">
-                <fieldset>
-                    <legend class="form-label-bold">
-                        Date attended 1
-                        <span class="form-hint">
-                            For example, 31 3 2017
-                        </span>
-                    </legend>
-                    <div class="form-date">
-                        <div class="form-group form-group-day">
-                            <label class="form-label" for="daily-attendance-date-attended-1-1-day">
-                                Day
-                            </label>
-                            <input class="form-control" id="daily-attendance-date-attended-1-1-day" max="31" min="1" name="daily_attendance_date_attended_1_1_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_1_day']}}">
+
+            {% if data['actual_trial_length'].length -%}
+
+                {% for i in range(0, data['actual_trial_length']) -%}
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold" style="width:100%;">
+                            Date attended {{loop.index}}
+                            {% if data['actual_trial_length'] > 1 -%}
+                            <a href="#noop" class="link-remove">
+                                Remove
+                                <span class="visually-hidden">&nbsp;this fee<span>
+                            </a>
+                            {%- endif %}
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-day" max="31" min="1" name="daily_attendance_date_attended_{{loop.index}}_day" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_date_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_date_attended_' + loop.index + '_day']}}{% elif loop.index == 1 and data['first_day_of_trial_day'].length %}{{data['first_day_of_trial_day']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_day'].length %}{{data['trial_concluded_on_day']}}{%- endif %}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-month" max="12" min="1" name="daily_attendance_date_attended_{{loop.index}}_month" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_date_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_date_attended_' + loop.index + '_month']}}{% elif loop.index == 1 and data['first_day_of_trial_month'].length %}{{data['first_day_of_trial_month']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_month'].length %}{{data['trial_concluded_on_month']}}{%- endif %}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-year" max="2019" min="1900" name="daily_attendance_date_attended_{{loop.index}}_year" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_date_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_date_attended_' + loop.index + '_year']}}{% elif loop.index == 1 and data['first_day_of_trial_year'].length %}{{data['first_day_of_trial_year']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_year'].length %}{{data['trial_concluded_on_year']}}{%- endif %}">
+                            </div>
                         </div>
-                        <div class="form-group form-group-month">
-                            <label class="form-label" for="DA-date-attended-1-1-month">
-                                Month
-                            </label>
-                            <input class="form-control" id="daily-attendance-date-attended-1-1-month" max="12" min="1" name="daily_attendance_date_attended_1_1_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_1_month']}}">
+
+                        <!-- <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-day" max="31" min="1" name="daily_attendance_date_attended_{{loop.index}}_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_' + loop.index + '_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-month" max="12" min="1" name="daily_attendance_date_attended_{{loop.index}}_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_' + loop.index + '_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-year" max="2019" min="1900" name="daily_attendance_date_attended_{{loop.index}}_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_' + loop.index + '_year']}}">
+                            </div>
+                        </div> -->
+                    </fieldset>
+                </div>
+
+                {%- endfor %}
+
+            {% else %}
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold" style="width:100%;">
+                            Date attended 1
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="daily-attendance-date-attended-1-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-1-day" max="31" min="1" name="daily_attendance_date_attended_1_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-1-month" max="12" min="1" name="daily_attendance_date_attended_1_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="daily-attendance-date-attended-1-year" max="2019" min="1900" name="daily_attendance_date_attended_1_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_year']}}">
+                            </div>
                         </div>
-                        <div class="form-group form-group-year">
-                            <label class="form-label" for="DA-date-attended-1-1-year">
-                                Year
-                            </label>
-                            <input class="form-control" id="daily-attendance-date-attended-1-1-year" max="2019" min="1900" name="daily_attendance_date_attended_1_1_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_1_year']}}">
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
+                    </fieldset>
+                </div>
+
+            {%- endif %}
+
             <div class="form-group">
                 <a href="#noop">
                     Add another date
