@@ -94,9 +94,12 @@ a.link-change, a.link-remove {
   float: right;
   font-size: 19px;
   line-height: 1.31579;
-  font-weight: 700;
   &:hover {
     color: #2b8cc4;
+  }
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
@@ -113,8 +116,8 @@ a.link-change, a.link-remove {
 /* Claim state styles */
 /* --------------------------------------- */
 
-table.summary tr th:first-child,
-table.summary tr td:first-child {
+table.summary tbody tr th:first-child,
+table.summary tbody tr td:first-child {
   width: 33%;
 }
 

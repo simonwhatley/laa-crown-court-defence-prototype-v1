@@ -1,16 +1,27 @@
-<table class="summary">
+<!-- <table class="summary">
 	<tbody>
 		<tr>
 			<th class="bold" scope="row">
-				Fee type
+				Expense 1
 			</th>
-			<td>{{data['miscellaneous_fee']|replace('_',' ')|capitalize}}</td>
-		</tr>
-		<tr>
-			<th class="bold" scope="row">
-				Net amount
-			</th>
-			<td>&pound;{{data['miscellaneous_fee_net_amount']|float}}</td>
+			<td> -->
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">
+								Fee type
+							</th>
+							<td>{{data['miscellaneous_fee_1']|replace('_',' ')|capitalize}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>&pound;{{data['miscellaneous_fee_1_net_amount']|float}}</td>
+						</tr>
+					</tbody>
+				</table>
+			<!-- </td>
 		</tr>
 	</tbody>
-</table>
+</table> -->

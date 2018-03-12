@@ -4,37 +4,47 @@
 			<th class="bold" scope="row">
 				First name
 			</th>
-			<td>{{data['defendant_first_name']}}</td>
+			<td>{{data['defendant_1_first_name']}}</td>
 		</tr>
 		<tr>
 			<th class="bold" scope="row">
 				Last name
 			</th>
-			<td>{{data['defendant_last_name']}}</td>
+			<td>{{data['defendant_1_last_name']}}</td>
 		</tr>
 		<tr>
 			<th class="bold" scope="row">
 				Date of birth
 			</th>
-			<td>{{data['date_of_birth_day']}}/{{data['date_of_birth_month']}}/{{data['date_of_birth_year']}}</td>
+			<td>
+				{% if data['defendant_1_date_of_birth_day'].length and data['defendant_1_date_of_birth_year'].length and data['defendant_1_date_of_birth_year'].length -%}
+				{{data['defendant_1_date_of_birth_day']}}/{{data['defendant_1_date_of_birth_month']}}/{{data['defendant_1_date_of_birth_year']}}
+				{%- endif %}
+			</td>
 		</tr>
 		<tr>
 			<th class="bold" scope="row">
 				Order for judicial apportionment
 			</th>
-			<td>{% if data['order_judicial_apportionment'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
+			<td>{% if data['defendant_1_order_judicial_apportionment'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
 		</tr>
 		<tr>
 			<th class="bold" scope="row">
 				Representation order date
 			</th>
-			<td>{{data['representation_order_date_day']}}/{{data['representation_order_date_month']}}/{{data['representation_order_date_year']}}</td>
+			<td>
+				{% if data['defendant_1_representation_order_date_1_day'].length and data['defendant_1_representation_order_date_1_month'].length and data['defendant_1_representation_order_date_1_year'].length -%}
+				{{data['defendant_1_representation_order_date_1_day']}}/{{data['defendant_1_representation_order_date_1_month']}}/{{data['defendant_1_representation_order_date_1_year']}}
+				{%- endif %}
+			</td>
 		</tr>
+		{% if data['case_type'] != 'breach_of_crown_court_order' -%}
 		<tr>
 			<th class="bold" scope="row">
 				<abbr title="means assessment administration tool">MAAT</abbr> reference
 			</th>
-			<td>{{data['maat_reference']}}</td>
+			<td>{{data['defendant_1_maat_reference_1']}}</td>
 		</tr>
+		{%- endif %}
 	</tbody>
 </table>

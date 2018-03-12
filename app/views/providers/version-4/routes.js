@@ -435,6 +435,17 @@ router.get('/advocates/additional-information', function(req, res) {
 });
 
 router.get('/advocates/claim-summary', function(req, res) {
+
+    if (req.session.data.fee_scheme_version == 10) {
+
+        var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+
+    } else {
+
+        var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
+
+    }
+
     res.render(`${req.feature}/${req.version}/advocates/claim-summary`,
     	{
             links: {
@@ -449,7 +460,8 @@ router.get('/advocates/claim-summary', function(req, res) {
                 'travel_expenses' : req.baseUrl + '/advocates/travel-expenses' + '?referrer=summary',
                 'supporting_evidence' : req.baseUrl + '/advocates/supporting-evidence' + '?referrer=summary',
                 'additional_information' : req.baseUrl + '/advocates/additional-information' + '?referrer=summary'
-            }
+            },
+            offence: offence
     	});
 });
 

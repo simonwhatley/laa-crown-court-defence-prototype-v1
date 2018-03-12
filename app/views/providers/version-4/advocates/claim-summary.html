@@ -190,6 +190,7 @@
 
 						</div>
 
+						{% if data['fee_type'] == 'graduated' -%}
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Offence details
@@ -202,6 +203,7 @@
 							{% include "../includes/_claim_summary_offence_details.html" %}
 
 						</div>
+						{%- endif %}
 
 						{% if data['bill_type'] == "advocate_interim" %}
 

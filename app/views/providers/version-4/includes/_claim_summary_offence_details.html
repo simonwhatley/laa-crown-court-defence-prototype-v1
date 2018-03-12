@@ -4,21 +4,21 @@
 			<th class="bold" scope="row">
 				Offence class
 			</th>
-			<td>{{data['offence_class']}}</td>
+			<td>{{offence.class_label}}</td>
 		</tr>
 		{% if data['bill_type'] in ['advocate_final','advocate_interim'] and data['fee_scheme_version'] == 10 -%}
 		<tr>
 			<th class="bold" scope="row">
 				Offence band
 			</th>
-			<td>{{data['offence_band']}}</td>
+			<td>{{offence.band_label}}</td>
 		</tr>
 		{%- endif %}
 		<tr>
 			<th class="bold" scope="row">
 				Offence category
 			</th>
-			<td>{{data['offence_category']}}</td>
+			<td>{{offence.category_label}}</td>
 		</tr>
 	</tbody>
 </table>
