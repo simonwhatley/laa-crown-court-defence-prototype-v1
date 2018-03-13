@@ -1,7 +1,149 @@
-{% if data['graduated_fees_checklist'].length -%}
+{#% if data['advocate_category'].length -%#}
 <table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">Advocate category</th>
+			<td>{{data['advocate_category']}}</td>
+		</tr>
 
+		{% if data['graduated_fees_checklist'] and "daily_attendance_fees" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Daily attendance fees</th>
+			<td>
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of days</th>
+							<td>{{data['daily_attendance_fees_number_of_days']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates attended</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>{{data['daily_attendance_fees_net_amount']}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "standard_appearance_fees" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Standard appearance fees</th>
+			<td>
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of appearances</th>
+							<td>{{data['standard_appearance_fees_number_of_appearances']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates attended</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>{{data['standard_appearance_fees_net_amount']}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "plea_trial_prep_hearing" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Plea and trial preparation hearings</th>
+			<td>
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of hearings</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates attended</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "conferences_views" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Conferences and views</th>
+			<td>
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of conferences and views</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "defendants_uplift" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Number of defendants uplift</th>
+			<td>
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of defendants</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "cases_uplift" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Number of cases uplift</th>
+			<td>
+				<table class="summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of cases</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Additional case numbers</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+	</tbody>
 </table>
-{% else %}
+{#% else %}
 <p>There are no graduated fees for this claim.</p>
-{%- endif %}
+{%- endif %#}

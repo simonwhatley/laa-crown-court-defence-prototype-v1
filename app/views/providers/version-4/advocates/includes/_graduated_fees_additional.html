@@ -1,28 +1,28 @@
 <div class="form-group">
     <fieldset>
         <legend class="heading-small">
-            Fee type
+            Type of fee
             <span class="form-hint">
                 Please choose all relevant options
             </span>
         </legend>
 
 
-        <div class="multiple-choice" data-target="daily-attendance-fee-panel">
-            <input aria-controls="daily-attendance-fee-panel" aria-expanded="false" id="daily-attendance-fee" name="graduated_fees_checklist" type="checkbox" value="daily_attendance_fee" {% if (data['graduated_fees_checklist'] and 'daily_attendance_fee' in data['graduated_fees_checklist']) or (data['actual_trial_length'] >= 1) -%}checked="checked"{%- endif %}>
+        <div class="multiple-choice" data-target="daily-attendance-fees-panel">
+            <input aria-controls="daily-attendance-fees-panel" aria-expanded="false" id="daily-attendance-fees" name="graduated_fees_checklist" type="checkbox" value="daily_attendance_fees" {% if (data['graduated_fees_checklist'] and 'daily_attendance_fees' in data['graduated_fees_checklist']) or (data['actual_trial_length'] >= 1) -%}checked="checked"{%- endif %}>
             <label for="daily-attendance-fee">
                 Daily attendance fee
             </label>
         </div>
-        <div class="panel panel-border-narrow js-hidden" id="daily-attendance-fee-panel">
+        <div class="panel panel-border-narrow js-hidden" id="daily-attendance-fees-panel">
             <div class="form-group">
-                <label class="form-label-bold" for="daily-attendance-number-of-days">
+                <label class="form-label-bold" for="daily-attendance-fees-number-of-days">
                     Number of days
                     <span class="form-hint">
                         Include all days attended
                     </span>
                 </label>
-                <input class="form-control form-control-1-8" id="daily-attendance-number-of-days" name="daily_attendance_number_of_days" type="text" value="{% if data['daily_attendance_number_of_days'].length -%}{{data['daily_attendance_number_of_days']}}{% elif data['actual_trial_length'].length %}{{data['actual_trial_length']}}{%- endif %}">
+                <input class="form-control form-control-1-8" id="daily-attendance-fees-number-of-days" name="daily_attendance_fees_number_of_days" type="text" value="{% if data['daily_attendance_fees_number_of_days'].length -%}{{data['daily_attendance_fees_number_of_days']}}{% elif data['actual_trial_length'].length %}{{data['actual_trial_length']}}{%- endif %}">
 
             </div>
 
@@ -47,43 +47,43 @@
 
                         <div class="form-date">
                             <div class="form-group form-group-day">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-day">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-day">
                                     Day
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-day" max="31" min="1" name="daily_attendance_date_attended_{{loop.index}}_day" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_date_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_date_attended_' + loop.index + '_day']}}{% elif loop.index == 1 and data['first_day_of_trial_day'].length %}{{data['first_day_of_trial_day']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_day'].length %}{{data['trial_concluded_on_day']}}{%- endif %}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-{{loop.index}}-day" max="31" min="1" name="daily_attendance_fee_dates_attended_{{loop.index}}_day" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_fee_dates_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_fee_dates_attended_' + loop.index + '_day']}}{% elif loop.index == 1 and data['first_day_of_trial_day'].length %}{{data['first_day_of_trial_day']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_day'].length %}{{data['trial_concluded_on_day']}}{%- endif %}">
                             </div>
                             <div class="form-group form-group-month">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-month">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-month">
                                     Month
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-month" max="12" min="1" name="daily_attendance_date_attended_{{loop.index}}_month" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_date_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_date_attended_' + loop.index + '_month']}}{% elif loop.index == 1 and data['first_day_of_trial_month'].length %}{{data['first_day_of_trial_month']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_month'].length %}{{data['trial_concluded_on_month']}}{%- endif %}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-{{loop.index}}-month" max="12" min="1" name="daily_attendance_fee_dates_attended_{{loop.index}}_month" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_fee_dates_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_fee_dates_attended_' + loop.index + '_month']}}{% elif loop.index == 1 and data['first_day_of_trial_month'].length %}{{data['first_day_of_trial_month']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_month'].length %}{{data['trial_concluded_on_month']}}{%- endif %}">
                             </div>
                             <div class="form-group form-group-year">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-year">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-year">
                                     Year
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-year" max="2019" min="1900" name="daily_attendance_date_attended_{{loop.index}}_year" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_date_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_date_attended_' + loop.index + '_year']}}{% elif loop.index == 1 and data['first_day_of_trial_year'].length %}{{data['first_day_of_trial_year']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_year'].length %}{{data['trial_concluded_on_year']}}{%- endif %}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-{{loop.index}}-year" max="2019" min="1900" name="daily_attendance_fee_dates_attended_{{loop.index}}_year" pattern="[0-9]*" type="number" value="{% if data['daily_attendance_fee_dates_attended_' + loop.index + '_day'].length -%}{{data['daily_attendance_fee_dates_attended_' + loop.index + '_year']}}{% elif loop.index == 1 and data['first_day_of_trial_year'].length %}{{data['first_day_of_trial_year']}}{% elif loop.index == data['actual_trial_length'] and data['trial_concluded_on_year'].length %}{{data['trial_concluded_on_year']}}{%- endif %}">
                             </div>
                         </div>
 
                         <!-- <div class="form-date">
                             <div class="form-group form-group-day">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-day">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-day">
                                     Day
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-day" max="31" min="1" name="daily_attendance_date_attended_{{loop.index}}_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_' + loop.index + '_day']}}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-{{loop.index}}-day" max="31" min="1" name="daily_attendance_fee_dates_attended_{{loop.index}}_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_fee_dates_attended_' + loop.index + '_day']}}">
                             </div>
                             <div class="form-group form-group-month">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-month">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-month">
                                     Month
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-month" max="12" min="1" name="daily_attendance_date_attended_{{loop.index}}_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_' + loop.index + '_month']}}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-{{loop.index}}-month" max="12" min="1" name="daily_attendance_fee_dates_attended_{{loop.index}}_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_fee_dates_attended_' + loop.index + '_month']}}">
                             </div>
                             <div class="form-group form-group-year">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-year">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-year">
                                     Year
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-{{loop.index}}-year" max="2019" min="1900" name="daily_attendance_date_attended_{{loop.index}}_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_' + loop.index + '_year']}}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-{{loop.index}}-year" max="2019" min="1900" name="daily_attendance_fee_dates_attended_{{loop.index}}_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_fee_dates_attended_' + loop.index + '_year']}}">
                             </div>
                         </div> -->
                     </fieldset>
@@ -103,22 +103,22 @@
                         </legend>
                         <div class="form-date">
                             <div class="form-group form-group-day">
-                                <label class="form-label" for="daily-attendance-date-attended-1-day">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-1-day">
                                     Day
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-1-day" max="31" min="1" name="daily_attendance_date_attended_1_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_day']}}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-1-day" max="31" min="1" name="daily_attendance_fee_dates_attended_1_day" pattern="[0-9]*" type="number" value="{{data['daily_attendance_fee_dates_attended_1_day']}}">
                             </div>
                             <div class="form-group form-group-month">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-month">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-month">
                                     Month
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-1-month" max="12" min="1" name="daily_attendance_date_attended_1_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_month']}}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-1-month" max="12" min="1" name="daily_attendance_fee_dates_attended_1_month" pattern="[0-9]*" type="number" value="{{data['daily_attendance_fee_dates_attended_1_month']}}">
                             </div>
                             <div class="form-group form-group-year">
-                                <label class="form-label" for="daily-attendance-date-attended-{{loop.index}}-year">
+                                <label class="form-label" for="daily-attendance-fees-date-attended-{{loop.index}}-year">
                                     Year
                                 </label>
-                                <input class="form-control" id="daily-attendance-date-attended-1-year" max="2019" min="1900" name="daily_attendance_date_attended_1_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_date_attended_1_year']}}">
+                                <input class="form-control" id="daily-attendance-fees-date-attended-1-year" max="2019" min="1900" name="daily_attendance_fee_dates_attended_1_year" pattern="[0-9]*" type="number" value="{{data['daily_attendance_fee_dates_attended_1_year']}}">
                             </div>
                         </div>
                     </fieldset>
@@ -131,30 +131,33 @@
                     Add another date
                 </a>
             </div>
+            <!-- TODO: If actual trial length is greater than 2, show box. Need some JS here?? -->
+            <!-- {% if data['actual_trial_length'] > 2 -%}disabled="true"{%- endif %} -->
+
             <div class="form-group">
-                <label class="form-label-bold" for="daily-attendance-fee-net-amount">
+                <label class="form-label-bold" for="daily-attendance-fees-net-amount">
                     Net amount
                 </label>
                 <span class="form-input-denote">
                     £
                 </span>
-                <input class="form-control form-control-1-4 form-input-denote__input" id="daily-attendance-fee-net-amount" name="daily_attendance_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fee_net_amount']}}">
+                <input class="form-control form-control-1-4 form-input-denote__input" id="daily-attendance-fees-net-amount" name="daily_attendance_fees_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['daily_attendance_fees_net_amount']}}">
             </div>
         </div>
 
 
-        <div class="multiple-choice" data-target="standard-appearance-fee-panel">
-            <input aria-controls="standard-appearance-fee-panel" aria-expanded="false" id="standard-appearance-fee" name="graduated_fees_checklist" type="checkbox" value="standard_appearance_fee" {% if  data['graduated_fees_checklist'] and 'standard_appearance_fee' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
-            <label for="standard-appearance-fee">
+        <div class="multiple-choice" data-target="standard-appearance-fees-panel">
+            <input aria-controls="standard-appearance-fees-panel" aria-expanded="false" id="standard-appearance-fees" name="graduated_fees_checklist" type="checkbox" value="standard_appearance_fees" {% if data['graduated_fees_checklist'] and 'standard_appearance_fees' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <label for="standard-appearance-fees">
                 Standard appearance fee
             </label>
         </div>
-        <div class="panel panel-border-narrow js-hidden" id="standard-appearance-fee-panel">
+        <div class="panel panel-border-narrow js-hidden" id="standard-appearance-fees-panel">
             <div class="form-group">
-                <label class="form-label-bold" for="standard-appearances-number-of-appearances">
+                <label class="form-label-bold" for="standard-appearance-fees-number-of-appearances">
                     Number of appearances
                 </label>
-                <input class="form-control form-control-1-4" id="standard-appearances-number-of-appearances" name="standard_appearances_number_of_appearances" type="text" value="{{data['standard_appearances_number_of_appearances']}}">
+                <input class="form-control form-control-1-4" id="standard-appearance-fees-number-of-appearances" name="standard_appearance_fees_number_of_appearances" type="text" value="{{data['standard_appearance_fees_number_of_appearances']}}">
             </div>
             <div class="form-group">
                 <fieldset>
@@ -192,19 +195,19 @@
                 </a>
             </div>
             <div class="form-group">
-                <label class="form-label-bold" for="standard-appearance-fee-net-amount">
+                <label class="form-label-bold" for="standard-appearance-fees-net-amount">
                     Net amount
                 </label>
                 <span class="form-input-denote">
                     £
                 </span>
-                <input class="form-control form-control-1-4 form-input-denote__input" id="standard-appearance-fee-net-amount" name="standard_appearance_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['standard_appearance_fee_net_amount']}}">
+                <input class="form-control form-control-1-4 form-input-denote__input" id="standard-appearance-fees-net-amount" name="standard_appearance_fees_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['standard_appearance_fees_net_amount']}}">
             </div>
         </div>
 
 
         <div class="multiple-choice" data-target="plea-trial-prep-hearing-panel">
-            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="graduated_fees_checklist" type="checkbox" value="plea_trial_prep_hearing" {% if  data['graduated_fees_checklist'] and 'plea_trial_prep_hearing' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="graduated_fees_checklist" type="checkbox" value="plea_trial_prep_hearing" {% if data['graduated_fees_checklist'] and 'plea_trial_prep_hearing' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
             <label for="plea-trial-prep-hearing">
                 Plea and trial preparation hearing
             </label>
@@ -264,7 +267,7 @@
 
 
         <div class="multiple-choice" data-target="conferences-views-panel">
-            <input aria-controls="conferences-views-panel" aria-expanded="false" id="conferences-views" name="graduated_fees_checklist" type="checkbox" value="conferences_views" {% if  data['graduated_fees_checklist'] and 'conferences_views' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <input aria-controls="conferences-views-panel" aria-expanded="false" id="conferences-views" name="graduated_fees_checklist" type="checkbox" value="conferences_views" {% if data['graduated_fees_checklist'] and 'conferences_views' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
             <label for="conferences-views">
                 Conferences and views
             </label>
@@ -289,7 +292,7 @@
 
 
         <div class="multiple-choice" data-target="defendants-uplift-panel">
-            <input aria-controls="defendants-uplift-panel" aria-expanded="false" id="defendants-uplift" name="graduated_fees_checklist" type="checkbox" value="defendants_uplift" {% if  data['graduated_fees_checklist'] and 'defendants_uplift' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <input aria-controls="defendants-uplift-panel" aria-expanded="false" id="defendants-uplift" name="graduated_fees_checklist" type="checkbox" value="defendants_uplift" {% if data['graduated_fees_checklist'] and 'defendants_uplift' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
             <label for="defendants-uplift">
                 Number of defendants uplift
             </label>
@@ -314,7 +317,7 @@
 
 
         <div class="multiple-choice" data-target="cases-uplift-panel">
-            <input aria-controls="cases-uplift-panel" aria-expanded="false" id="cases-uplift" name="graduated_fees_checklist" type="checkbox" value="cases_uplift" {% if  data['graduated_fees_checklist'] and 'cases_uplift' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
+            <input aria-controls="cases-uplift-panel" aria-expanded="false" id="cases-uplift" name="graduated_fees_checklist" type="checkbox" value="cases_uplift" {% if data['graduated_fees_checklist'] and 'cases_uplift' in data['graduated_fees_checklist'] %}checked="checked"{%- endif %}>
             <label for="cases-uplift">
                 Number of cases uplift
             </label>
