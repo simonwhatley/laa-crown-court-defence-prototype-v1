@@ -1,22 +1,28 @@
 <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
 <script src="/public/javascripts/cccd-autocomplete.js"></script>
 <script type="text/javascript">
+// TODO: define autocomplete for 1..n fixed fees
+var i = 1;
+
 autocomplete({
-  selectElement: document.getElementById('fee-type'),
+  selectElement: document.getElementById('fixed-fee-' + i + '-type'),
   showAllValues: true,
-  minLength: 0,
+  // minLength: 0,
   defaultValue: ''
 });
 
+$('.fx-additional-case-numbers-' + i).hide();
+
 $(function(){
-  $('#fee-type').on('blur', function(e){
+
+  $('#fixed-fee-' + i + '-type').on('blur', function(e){
     e.preventDefault();
 
     // Replace spaces with underscores
     // Remove parentheses
     var type = $(this).val().toLowerCase().replace(/\s/g, '_').replace(/\(|\)/g, '');
-  
-    $('.fx-additional-case-numbers').is(function(){
+
+    $('.fx-additional-case-numbers-' + i).is(function(){
       var $el = $(this);
 
       type == "appeals_to_the_crown_court_against_conviction_uplift" ||
@@ -31,25 +37,4 @@ $(function(){
 
   });
 });
-
-// $(function(){
-  
-//   // Bind the change listener to any .fx-select
-//   $('.fx-select-fee-type').on('change', function(e){
-//     e.preventDefault();
-    
-//     // Read the `data-state` attr on the selected option
-//     var childState = $(this).find(':selected').attr('data-case-numbers');
-    
-//     // Loop over the `.fx-block` divs
-//     $('.fx-additional-case-numbers').is(function(){
-//       var $el = $(this);
-      
-//       // matching the `data-el` class will show the element
-//       // no match will hide
-      
-//       childState == "true" ? $el.show() : $el.hide();
-//     });
-//   });
-// });
 </script>

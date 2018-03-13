@@ -1,12 +1,12 @@
 <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
 <script src="/public/javascripts/cccd-autocomplete.js"></script>
 <script>
-for (var i = 1; i <= 10; i++) {
-	autocomplete({
-	  selectElement: document.getElementById('miscellaneous-fee-' + i),
-	  showAllValues: true,
-	  minLength: 0,
-	  defaultValue: ''
-	});
-}
+// TODO: define autocomplete for 1..n miscellaneous fees
+var i = 1;
+autocomplete({
+  selectElement: document.getElementById('miscellaneous-fee-' + i),
+  showAllValues: true,
+  // minLength: 0,
+  defaultValue: ''
+});
 </script>
