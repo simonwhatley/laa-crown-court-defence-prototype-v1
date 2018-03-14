@@ -286,18 +286,20 @@
 
 						{%- endif %}
 
-						<div class="form-section">
-							<h3 class="heading-medium">
-								Miscellaneous fees
-								<a href="{{links.miscellaneous_fees}}" class="link-change">
-									Change
-									<span class="visually-hidden">&nbsp;miscellaneous</span>
-								</a>
-							</h3>
+						{% if data['fee_scheme_version'] != 10 -%}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Miscellaneous fees
+									<a href="{{links.miscellaneous_fees}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;miscellaneous</span>
+									</a>
+								</h3>
 
-							{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
+								{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
 
-						</div>
+							</div>
+						{%- endif %}
 
 						<div class="form-section">
 							<h3 class="heading-medium">
