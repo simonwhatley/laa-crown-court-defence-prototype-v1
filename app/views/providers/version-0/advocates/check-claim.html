@@ -25,50 +25,143 @@
 					
 					<div class="column-three-quarters">
 
+						
+						<h2 id="section-heading" class="heading-large">
+							Check your claim
+						</h2>
+
+						<p>Check all the information below is correct before submitting your claim.</p>
+
 						<div class="form-section">
-							<h2 id="section-heading" class="heading-large">
-								Check your claim
-							</h2>
-
-							<p>Check all the information below is correct before submitting your claim.</p>
-
 							<h3 class="heading-medium">
 								Case details
 							</h3>
 
-							{% if fee_type == "graduated" -%}
-							<h3 class="heading-medium">
-								Offence details
-							</h3>
+							{% include "./includes/_check_claim_case_details.html" %}
+
+						</div>
+
+						{% if data['court'] and data['case_number'] -%}
+
+							{% if data['case_type'] in ['trial','retrial'] -%}
+								<div class="form-section">
+									<h2 class="heading-medium">
+										Trial details
+									</h2>
+
+									{% include "./includes/_check_claim_case_details_trial.html" %}
+
+								</div>
 							{%- endif %}
 
+							{% if data['case_type'] == 'retrial' -%}
+								<div class="form-section">
+									<h2 class="heading-medium">
+										Retrial details
+									</h2>
+
+									{% include "./includes/_check_claim_case_details_retrial.html" %}
+
+								</div>
+							{%- endif %}
+
+							{% if data['case_type'] == 'cracked_trial' -%}
+								<div class="form-section">
+									<h2 class="heading-medium">
+										Cracked trial details
+									</h2>
+
+									{% include "./includes/_check_claim_case_details_cracked_trial.html" %}
+
+								</div>
+							{%- endif %}
+
+							{% if data['case_type'] == 'cracked_before_retrial' -%}
+								<div class="form-section">
+									<h2 class="heading-medium">
+										Cracked before retrial details
+									</h2>
+
+									{% include "./includes/_check_claim_case_details_cracked_before_retrial.html" %}
+
+								</div>
+							{%- endif %}
+
+						{%- endif %}
+
+						{% if fee_type == "graduated" -%}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Offence details
+								</h3>
+
+								{% include "../includes/_check_claim_offence_details.html" %}
+
+							</div>
+						{%- endif %}
+
+						<div class="form-section">
 							<h3 class="heading-medium">
-								Defendants
+								Defendant details
 							</h3>
 
-							<h3 class="heading-medium">
-								{% if fee_type == "graduated" -%}
+							{% include "../includes/_check_claim_defendant_details.html" %}
+
+						</div>
+
+						{% if fee_type == "graduated" -%}
+							<div class="form-section">
+								<h3 class="heading-medium">
 									Graduated fees
-								{% else %}
-									Fixed fees
-								{%- endif %}
-							</h3>
+								</h3>
 
+								{% include "./includes/_check_claim_graduated_fees.html" %}
+
+							</div>
+						{% else %}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Fixed fees
+								</h3>
+
+								{% include "./includes/_check_claim_fixed_fees.html" %}
+
+							</div>
+						{%- endif %}
+						
+						<div class="form-section">
 							<h3 class="heading-medium">
 								Miscellaneous fees
 							</h3>
 
+							{% include "../includes/_check_claim_miscellaneous_fees.html" %}
+
+						</div>
+
+						<div class="form-section">
 							<h3 class="heading-medium">
 								Travel expenses
 							</h3>
 
+							{% include "../includes/_check_claim_travel_expenses.html" %}
+
+						</div>
+
+						<div class="form-section">
 							<h3 class="heading-medium">
 								Supporting evidence
 							</h3>
 
+							{% include "../includes/_check_claim_supporting_evidence.html" %}
+
+						</div>
+
+						<div class="form-section">
 							<h3 class="heading-medium">
 								Additional information
 							</h3>
+
+							{% include "../includes/_check_claim_additional_information.html" %}
 
 						</div>
 

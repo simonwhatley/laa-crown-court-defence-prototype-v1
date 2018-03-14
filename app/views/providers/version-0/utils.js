@@ -62,6 +62,30 @@ module.exports = {
 
 	},
 
+	getOffenceCategoryName: function(category_id) {
+
+		if(!category_id) return null
+
+		var categoryObj = this.getOffenceCategories().filter(function (obj) {
+  			 return (obj.key == category_id)
+		})
+
+		return categoryObj[0].name
+	},
+
+	getOffenceClassName: function(class_id, category_id) {
+
+		if(!class_id) return null
+
+		if(!category_id) return null
+
+		var classObj = this.getOffenceClasses(category_id).filter(function (obj) {
+  			 return (obj.key == class_id)
+		})
+
+		return classObj[0].name
+	},
+
 	getFixedFees: function(fee_scheme, fee_scheme_version) {
 
 		if(!fee_scheme)

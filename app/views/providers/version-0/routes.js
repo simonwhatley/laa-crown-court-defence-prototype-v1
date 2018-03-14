@@ -70,7 +70,8 @@ router.get('/advocates/check-claim', function(req, res) {
                 'next' : req.baseUrl + '/advocates/certify-claim',
                 'previous' : req.baseUrl + '/advocates/fee-details'
             },
-            fee_type: req.session.data.fee_type
+            fee_type: req.session.data.fee_type,
+            offence: { "category_label": utils.getOffenceCategoryName(req.session.data.offence_category), "class_label": utils.getOffenceClassName(req.session.data.offence_class, req.session.data.offence_category) }
         });
 });
 

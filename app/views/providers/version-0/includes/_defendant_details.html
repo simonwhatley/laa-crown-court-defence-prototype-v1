@@ -1,15 +1,15 @@
 <div class="form-group">
-    <label class="form-label-bold " for="defendant-first-name">
+    <label class="form-label-bold " for="defendant-1-first-name">
         First name
     </label>
-    <input class="form-control" id="defendant-first-name" name="defendant_first_name" type="text" value="{{data['defendant_first_name']}}" autocomplete="off">
+    <input class="form-control" id="defendant-1-first-name" name="defendant_1_first_name" type="text" value="{{data['defendant_1_first_name']}}" autocomplete="off">
 </div>
 
 <div class="form-group">
-    <label class="form-label-bold" for="defendant-last-name">
+    <label class="form-label-bold" for="defendant-1-last-name">
         Last name
     </label>
-    <input class="form-control" id="defendant-last-name" name="defendant_last_name" type="text" value="{{data['defendant_last_name']}}" autocomplete="off">
+    <input class="form-control" id="defendant-1-last-name" name="defendant_1_last_name" type="text" value="{{data['defendant_1_last_name']}}" autocomplete="off">
 </div>
 
 <div class="form-group">
@@ -22,22 +22,22 @@
         </legend>
         <div class="form-date">
             <div class="form-group form-group-day">
-                <label class="form-label" for="date-of-birth-day">
+                <label class="form-label" for="defendant-1-date-of-birth-day">
                     Day
                 </label>
-                <input class="form-control" id="date-of-birth-day" max="31" min="1" name="date_of_birth_day" pattern="[0-9]*" type="number" value="{{data['date_of_birth_day']}}">
+                <input class="form-control" id="defendant-1-date-of-birth-day" max="31" min="1" name="defendant_1_date_of_birth_day" pattern="[0-9]*" type="number" value="{{data['defendant_1_date_of_birth_day']}}">
             </div>
             <div class="form-group form-group-month">
-                <label class="form-label" for="date-of-birth-month">
+                <label class="form-label" for="defendant-1-date-of-birth-month">
                     Month
                 </label>
-                <input class="form-control" id="date-of-birth-month" max="12" min="1" name="date_of_birth_month" pattern="[0-9]*" type="number" value="{{data['date_of_birth_month']}}">
+                <input class="form-control" id="defendant-1-date-of-birth-month" max="12" min="1" name="defendant_1_date_of_birth_month" pattern="[0-9]*" type="number" value="{{data['defendant_1_date_of_birth_month']}}">
             </div>
             <div class="form-group form-group-year">
-                <label class="form-label" for="date-of-birth-year">
+                <label class="form-label" for="defendant-1-date-of-birth-year">
                     Year
                 </label>
-                <input class="form-control" id="date-of-birth-year" max="2018" min="1900" name="date_of_birth_year" pattern="[0-9]*" type="number" value="{{data['date_of_birth_year']}}">
+                <input class="form-control" id="defendant-1-date-of-birth-year" max="2018" min="1900" name="defendant_1_date_of_birth_year" pattern="[0-9]*" type="number" value="{{data['defendant_1_date_of_birth_year']}}">
             </div>
         </div>
     </fieldset>
@@ -46,8 +46,8 @@
 <div class="form-group">
     <fieldset>
         <div class="multiple-choice">
-            <input id="order-judicial-apportionment" name="order_judicial_apportionment" type="checkbox" value="true" {{ checked('order_judicial_apportionment','true') }}>
-                <label for="order-judicial-apportionment">
+            <input id="defendant-1-order-judicial-apportionment" name="defendant_1_order_judicial_apportionment" type="checkbox" value="true" {{ checked('defendant_1_order_judicial_apportionment','true') }}>
+                <label for="defendant-1-order-judicial-apportionment">
                     Order for judicial apportionment
                 </label>
             </input>
@@ -82,22 +82,22 @@
         </legend>
         <div class="form-date">
             <div class="form-group form-group-day">
-                <label class="form-label" for="representation-order-date-day">
+                <label class="form-label" for="defendant-1-representation-order-date-1-day">
                     Day
                 </label>
-                <input class="form-control" id="representation-order-date-day" max="31" min="1" name="representation_order_date_day" pattern="[0-9]*" type="number" value="{{data['representation_order_date_day']}}">
+                <input class="form-control" id="defendant-1-representation-order-date-1-day" max="31" min="1" name="defendant_1_representation_order_date_1_day" pattern="[0-9]*" type="number" value="{{data['defendant_1_representation_order_date_1_day']}}">
             </div>
             <div class="form-group form-group-month">
-                <label class="form-label" for="representation-order-date-month">
+                <label class="form-label" for="defendant-1-representation-order-date-1-month">
                     Month
                 </label>
-                <input class="form-control" id="representation-order-date-month" max="12" min="1" name="representation_order_date_month" pattern="[0-9]*" type="number" value="{{data['representation_order_date_month']}}">
+                <input class="form-control" id="defendant-1-representation-order-date-1-month" max="12" min="1" name="defendant_1_representation_order_date_1_month" pattern="[0-9]*" type="number" value="{{data['defendant_1_representation_order_date_1_month']}}">
             </div>
             <div class="form-group form-group-year">
-                <label class="form-label" for="representation-order-date-year">
+                <label class="form-label" for="defendant-1-representation-order-date-1-year">
                     Year
                 </label>
-                <input class="form-control" id="representation-order-date-year" max="2018" min="2010" name="representation_order_date_year" pattern="[0-9]*" type="number" value="{{data['representation_order_date_year']}}">
+                <input class="form-control" id="defendant-1-representation-order-date-1-year" max="2018" min="2010" name="defendant_1_representation_order_date_1_year" pattern="[0-9]*" type="number" value="{{data['defendant_1_representation_order_date_1_year']}}">
             </div>
         </div>
     </fieldset>
@@ -111,7 +111,7 @@
             For example 123456789
         </span>
     </label>
-    <input class="form-control" id="maat-reference" name="maat_reference" type="text" value="{{data['maat_reference']}}" autocomplete="off">
+    <input class="form-control" id="maat-reference" name="defendant_1_maat_reference_1" type="text" value="{{data['defendant_1_maat_reference_1']}}" autocomplete="off">
 </div>
 {%- endif %}
 
