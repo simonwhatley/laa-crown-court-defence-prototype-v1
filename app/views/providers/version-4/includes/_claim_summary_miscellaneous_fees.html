@@ -1,16 +1,16 @@
 {% if data['miscellaneous_fee_1'].length -%}
-<!-- <table class="summary">
+<table class="summary">
 	<tbody>
 		<tr>
 			<th class="bold" scope="row">
-				Expense 1
+				Fee 1
 			</th>
-			<td> -->
-				<table class="summary">
+			<td>
+				<table class="nested-summary">
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">
-								Fee type
+								Type of fee
 							</th>
 							<td>{{data['miscellaneous_fee_1']|replace('_',' ')|capitalize}}</td>
 						</tr>
@@ -22,10 +22,10 @@
 						</tr>
 					</tbody>
 				</table>
-			<!-- </td>
+			</td>
 		</tr>
 	</tbody>
-</table> -->
+</table>
 {% else %}
 <p>There are no miscellaneous fees for this claim.</p>
 {%- endif %}

@@ -252,6 +252,36 @@
 
 								</div>
 
+								{% if data['fee_scheme_version'] != 10 -%}
+									<div class="form-section">
+										<h3 class="heading-medium">
+											Prosecution witnesses
+											<a href="{{links.fees}}#prosecution-witnesses" class="link-change">
+												Change
+												<span class="visually-hidden">&nbsp;witnesses fees</span>
+											</a>
+										</h3>
+
+										{% include "./includes/_claim_summary_graduated_fees_witnesses.html" %}
+
+									</div>
+								{%- endif %}
+
+								{% if data['fee_scheme_version'] != 10 or (data['offence_class'] == 6 or data['offence_class'] == 9) -%}
+									<div class="form-section">
+										<h3 class="heading-medium">
+											Pages of prosecution evidence (<abbr title="pages of prosecution evidence">PPE</abbr>)
+											<a href="{{links.fees}}#prosecution-evidence" class="link-change">
+												Change
+												<span class="visually-hidden">&nbsp;evidence fees</span>
+											</a>
+										</h3>
+
+										{% include "./includes/_claim_summary_graduated_fees_prosecution_evidence.html" %}
+
+									</div>
+								{%- endif %}
+
 							{%- endif %}
 
 						{%- endif %}
