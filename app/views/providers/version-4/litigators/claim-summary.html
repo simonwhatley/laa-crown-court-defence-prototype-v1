@@ -104,6 +104,9 @@
 									<span class="visually-hidden">&nbsp;case details</span>
 								</a>
 							</h3>
+
+							{% include "./includes/_claim_summary_case_details.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -114,6 +117,9 @@
 									<span class="visually-hidden">&nbsp;defendant details</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_defendant_details.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -124,6 +130,9 @@
 									<span class="visually-hidden">&nbsp;offence details</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_offence_details.html" %}
+
 						</div>
 
 						{% if data['bill_type'] == "litigator_interim" %}
@@ -136,6 +145,9 @@
 										<span class="visually-hidden">&nbsp;interim fees</span>
 									</a>
 								</h3>
+
+								{% include "./includes/_claim_summary_interim_fees.html" %}
+
 							</div>
 
 						{% elif data['bill_type'] == "litigator_transfer" %}
@@ -148,6 +160,9 @@
 										<span class="visually-hidden">&nbsp;transfer fees</span>
 									</a>
 								</h3>
+
+								{% include "./includes/_claim_summary_transfer_fees.html" %}
+
 							</div>
 
 						{% else %}
@@ -162,6 +177,9 @@
 											<span class="visually-hidden">&nbsp;fixed fees</span>
 										</a>
 									</h3>
+
+									{% include "./includes/_claim_summary_fixed_fees.html" %}
+
 								</div>
 
 							{% else %}
@@ -174,6 +192,9 @@
 											<span class="visually-hidden">&nbsp;graduated fees</span>
 										</a>
 									</h3>
+
+									{% include "./includes/_claim_summary_graduated_fees.html" %}
+
 								</div>
 
 							{%- endif %}
@@ -188,6 +209,9 @@
 									<span class="visually-hidden">&nbsp;miscellaneous fees</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -198,6 +222,9 @@
 									<span class="visually-hidden">&nbsp;travel expenses</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_travel_expenses.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -208,6 +235,9 @@
 									<span class="visually-hidden">&nbsp;supporting evidence</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_supporting_evidence.html" %}
+
 						</div>
 
 						<div class="form-section">
@@ -218,6 +248,9 @@
 									<span class="visually-hidden">&nbsp;additional information</span>
 								</a>
 							</h3>
+
+							{% include "../includes/_claim_summary_additional_information.html" %}
+
 						</div>
 
 					</div>
