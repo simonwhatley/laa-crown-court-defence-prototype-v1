@@ -155,7 +155,7 @@ router.get('/advocates/offence-details', function(req, res) {
 
     // TODO: Nasty code! There must be a better way
     if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
-        
+
         res.render(`${req.feature}/${req.version}/advocates/offence-details-scheme-10`,
         {
             links: {
@@ -705,7 +705,7 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
 });
 
 router.get('/litigators/disbursements', function(req, res) {
-    
+
     if (req.session.data.bill_type == "litigator_interim") {
 
         var previousUrl = req.baseUrl + '/litigators/fees'

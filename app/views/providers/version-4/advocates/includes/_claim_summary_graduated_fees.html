@@ -3,7 +3,7 @@
 	<tbody>
 		<tr>
 			<th class="bold" scope="row">Advocate category</th>
-			<td>{{data['advocate_category']|replace('_',' ')|capitalize}}</td>
+			<td>{% if data['advocate_category'] == 'qc' -%}{{data['advocate_category']|upper}}{% else %}{{data['advocate_category']|replace('_',' ')|capitalize}}{%- endif %}</td>
 		</tr>
 
 		{% if data['graduated_fees_checklist'] and "daily_attendance_fees" in data['graduated_fees_checklist'] -%}
