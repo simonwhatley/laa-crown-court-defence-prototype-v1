@@ -68,5 +68,11 @@ $(function(){
 
   });
 
+{% if data['travel_expense_1_type'].length %}
+if ($('.fx-select-expense-type').val()) {
+  $('.fx-select-expense-type').trigger('change');
+}
+{%- endif %}
+
 });
 </script>
