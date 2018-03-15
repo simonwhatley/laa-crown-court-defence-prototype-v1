@@ -1,3 +1,4 @@
+{% if data['court'].length and data['case_number'].length -%}
 <table class="summary">
 	<tbody>
 		<tr>
@@ -49,3 +50,6 @@
 
 	</tbody>
 </table>
+{% else %}
+<p>There are case details for this claim.</p>
+{%- endif %}
