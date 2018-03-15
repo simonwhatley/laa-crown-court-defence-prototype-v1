@@ -9,16 +9,22 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   // Use GOV.UK shim-links-with-button-role.js to trigger a link styled to look like a button,
   // with role="button" when the space key is pressed.
-  GOVUK.shimLinksWithButtonRole.init()
+  GOVUK.shimLinksWithButtonRole.init();
 
   // Details/summary polyfill from frontend toolkit
-  GOVUK.details.init()
+  GOVUK.details.init();
+
+  // Prevent browsers from storing/caching input data-target
+  $('form').attr('autocomplete', 'off');
+
+  // Disable autocorrect, autocapitalize and spellcheck
+  $('input, textarea').attr('autocorrect', 'off').attr('autocapitalize', 'off').attr('spellcheck', 'false');
 
   // Show and hide toggled content
   // Where .multiple-choice uses the data-target attribute
   // to toggle hidden content
-  var showHideContent = new GOVUK.ShowHideContent()
-  showHideContent.init()
+  var showHideContent = new GOVUK.ShowHideContent();
+  showHideContent.init();
 
   // Use GOV.UK stick-at-top-when-scrolling.js to trigger sticky content
   // Use with class="js-stick-at-top-when-scrolling"
