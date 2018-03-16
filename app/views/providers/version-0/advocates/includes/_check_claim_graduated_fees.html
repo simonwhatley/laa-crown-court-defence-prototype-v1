@@ -8,15 +8,15 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{{data['basic_fee_quantity']}}</td>
+							<td>{{data['basic_fee_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>{{data['basic_fee_rate']}}</td>
+							<td>&pound;{{data['basic_fee_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['basic_fee_quantity'] * data['basic_fee_rate']}}</td>
+							<td>&pound;{{(data['basic_fee_quantity'] * data['basic_fee_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -29,7 +29,7 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['daily_attendance_fee_1_quantity'].length %}{{data['daily_attendance_fee_1_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['daily_attendance_fee_1_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Dates</th>
@@ -37,11 +37,11 @@
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['daily_attendance_fee_1_rate'].length %}{{data['daily_attendance_fee_1_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['daily_attendance_fee_1_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['daily_attendance_fee_1_quantity'] * data['daily_attendance_fee_1_rate']}}</td>
+							<td>&pound;{{(data['daily_attendance_fee_1_quantity'] * data['daily_attendance_fee_1_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -54,7 +54,7 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['daily_attendance_fee_2_quantity'].length %}{{data['daily_attendance_fee_2_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['daily_attendance_fee_2_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Dates</th>
@@ -62,11 +62,11 @@
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['daily_attendance_fee_2_rate'].length %}{{data['daily_attendance_fee_2_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['daily_attendance_fee_2_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['daily_attendance_fee_2_quantity'] * data['daily_attendance_fee_2_rate']}}</td>
+							<td>&pound;{{(data['daily_attendance_fee_2_quantity'] * data['daily_attendance_fee_2_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -79,7 +79,7 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['daily_attendance_fee_3_quantity'].length %}{{data['daily_attendance_fee_3_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['daily_attendance_fee_3_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Dates</th>
@@ -87,11 +87,11 @@
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['daily_attendance_fee_3_rate'].length %}{{data['daily_attendance_fee_3_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['daily_attendance_fee_3_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['daily_attendance_fee_3_quantity'] * data['daily_attendance_fee_3_rate']}}</td>
+							<td>&pound;{{(data['daily_attendance_fee_3_quantity'] * data['daily_attendance_fee_3_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -104,7 +104,7 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['standard_appearance_fee_quantity'].length %}{{data['standard_appearance_fee_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['standard_appearance_fee_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Dates</th>
@@ -112,11 +112,11 @@
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['standard_appearance_fee_rate'].length %}{{data['standard_appearance_fee_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['standard_appearance_fee_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['standard_appearance_fee_quantity'] * data['standard_appearance_fee_rate']}}</td>
+							<td>&pound;{{(data['standard_appearance_fee_quantity'] * data['standard_appearance_fee_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -129,15 +129,15 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['plea_trial_preparation_hearing_fee_quantity'].length %}{{data['plea_trial_preparation_hearing_fee_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['plea_trial_preparation_hearing_fee_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['plea_trial_preparation_hearing_fee_rate'].length %}{{data['plea_trial_preparation_hearing_fee_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['plea_trial_preparation_hearing_fee_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['plea_trial_preparation_hearing_fee_quantity'] * data['plea_trial_preparation_hearing_fee_rate']}}</td>
+							<td>&pound;{{(data['plea_trial_preparation_hearing_fee_quantity'] * data['plea_trial_preparation_hearing_fee_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -150,15 +150,15 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['conferences_views_quantity'].length %}{{data['conferences_views_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['conferences_views_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['conferences_views_rate'].length %}{{data['conferences_views_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['conferences_views_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['conferences_views_quantity'] * data['conferences_views_rate']}}</td>
+							<td>&pound;{{(data['conferences_views_quantity'] * data['conferences_views_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -171,15 +171,15 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['number_defendants_uplift_quantity'].length %}{{data['number_defendants_uplift_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['number_defendants_uplift_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['number_defendants_uplift_rate'].length %}{{data['number_defendants_uplift_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['number_defendants_uplift_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['number_defendants_uplift_quantity'] * data['number_defendants_uplift_rate']}}</td>
+							<td>&pound;{{(data['number_defendants_uplift_quantity'] * data['number_defendants_uplift_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -192,15 +192,15 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['number_cases_uplift_quantity'].length %}{{data['number_cases_uplift_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['number_cases_uplift_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Rate</th>
-							<td>&pound;{% if data['number_cases_uplift_rate'].length %}{{data['number_cases_uplift_rate']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['number_cases_uplift_rate']|numeral('0,0.00')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{{data['number_cases_uplift_quantity'] * data['number_cases_uplift_rate']}}</td>
+							<td>&pound;{{(data['number_cases_uplift_quantity'] * data['number_cases_uplift_rate'])|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -213,11 +213,11 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['witnesses_quantity'].length %}{{data['witnesses_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['witnesses_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{% if data['witnesses_net_amount'].length %}{{data['witnesses_net_amount']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['witnesses_net_amount']|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
@@ -230,11 +230,11 @@
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">Quantity</th>
-							<td>{% if data['evidence_quantity'].length %}{{data['evidence_quantity']}}{% else %}0{%- endif %}</td>
+							<td>{{data['evidence_quantity']|numeral('0')}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">Net amount</th>
-							<td>&pound;{% if data['evidence_net_amount'].length %}{{data['evidence_net_amount']}}{% else %}0.00{%- endif %}</td>
+							<td>&pound;{{data['evidence_net_amount']|numeral('0,0.00')}}</td>
 						</tr>
 					</tbody>
 				</table>
