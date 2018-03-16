@@ -10,7 +10,7 @@ const utils = require('./utils')
 // Route to the start (sign in) page
 router.get('/', (req, res) => {
   res.redirect(`/${req.feature}/${req.version}/sign-in`);
-})
+});
 
 router.get('/sign-in', function(req, res) {
     res.render(`${req.feature}/${req.version}/sign-in`,
