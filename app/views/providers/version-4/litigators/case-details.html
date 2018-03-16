@@ -43,14 +43,14 @@
 										<span class="form-hint">Please choose a relevant supplier</span>
 									</legend>
 
-									<div class="multiple-choice">
-										<input id="radio-1" type="radio" name="supplier_number" value="8A222Z" {{ checked('supplier_number','8A222Z') }}>
-										<label for="radio-1">8A222Z</label>
-									</div>
-									<div class="multiple-choice">
-										<input id="radio-2" type="radio" name="supplier_number" value="9B333Y" {{ checked('supplier_number','9B333Y') }}>
-										<label for="radio-2">9B333Y</label>
-									</div>
+									{% for supplier in ['5A000Z','6B111Y','7C222X','8D333W','9E444V'] -%}
+
+										<div class="multiple-choice">
+											<input id="supplier-number-{{loop.index}}" type="radio" name="supplier_number" value="{{supplier}}" {{ checked('supplier_number', supplier) }}>
+											<label for="supplier-number-{{loop.index}}">{{supplier}}</label>
+										</div>
+
+									{%- endfor %}
 
 								</fieldset>
 
@@ -63,7 +63,7 @@
 									</summary>
 									<div class="panel panel-border-narrow">
 										<p>
-										Lorem ipsum dolor sit emet
+										You can add more <abbr title="litigator graduated fee scheme">LGFS</abbr> supplier numbers in the <a href="#noop">manage provider</a> section
 										</p>
 									</div>
 								</details>
@@ -94,7 +94,7 @@
 
 										{% for type in case_types -%}
 
-											{% if type.key in ["retrial","trial"] -%}
+											{% if type.key in ['retrial','trial'] -%}
 
 											<div class="multiple-choice">
 												<input id="radio-{{type.key}}" type="radio" name="case_type" value="{{type.key}}" {{ checked('case_type',type.key) }}>
@@ -199,6 +199,37 @@
 
 								</fieldset>
 							</div>
+
+							<div class="form-group">
+						        <fieldset>
+						            <legend class="form-label-bold">
+						                Date case concluded
+						                <span class="form-hint">
+						                    For example, 31 3 2017
+						                </span>
+						            </legend>
+						            <div class="form-date">
+						                <div class="form-group form-group-day">
+						                    <label class="form-label" for="date-case-concluded-day">
+						                        Day
+						                    </label>
+						                    <input class="form-control" id="date-case-concluded-day" max="31" min="1" name="date_case_concluded_day" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_day']}}">
+						                </div>
+						                <div class="form-group form-group-month">
+						                    <label class="form-label" for="date-case-concluded-month">
+						                        Month
+						                    </label>
+						                    <input class="form-control" id="date-case-concluded-month" max="12" min="1" name="date_case_concluded_month" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_month']}}">
+						                </div>
+						                <div class="form-group form-group-year">
+						                    <label class="form-label" for="date-case-concluded-year">
+						                        Year
+						                    </label>
+						                    <input class="form-control" id="date-case-concluded-year" max="2019" min="1900" name="date_case_concluded_year" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_year']}}">
+						                </div>
+						            </div>
+						        </fieldset>
+						    </div>
 
 						</div>
 

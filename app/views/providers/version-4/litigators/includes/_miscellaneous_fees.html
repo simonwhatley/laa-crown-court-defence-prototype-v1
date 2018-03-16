@@ -1,5 +1,13 @@
 <div class="form-section" data-item-number="1">
 
+	<h3 class="heading-medium">
+		Miscellaneous fee 1
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this fee</span>
+		</a>
+	</h3>
+
 	<div class="form-group">
 		<fieldset>
 			<legend class="form-label-bold">
@@ -9,19 +17,19 @@
 
 			{% for fee in fees -%}
 				<div class="multiple-choice" data-target="{{fee.key}}-panel">
-					<input id="miscellaneous-fee-{{loop.index}}" type="radio" name="miscellaneous_fee" value="{{fee.key}}" {{ checked('miscellaneous_fee',fee.key) }}>
-					<label for="miscellaneous-fee-{{loop.index}}">{{fee.name}}</label>
+					<input id="miscellaneous-fee-{{loop.index}}-type" type="radio" name="miscellaneous_fee_1_type" value="{{fee.key}}" {{ checked('miscellaneous_fee_1_type',fee.key) }}>
+					<label for="miscellaneous-fee-{{loop.index}}-type">{{fee.name}}</label>
 				</div>
 				{% if fee.key == "case_uplift" -%}
 				<div class="panel panel-border-narrow js-hidden" id="{{fee.key}}-panel">
 		            <div class="form-group">
-		                <label class="form-label-bold" for="additional-case-numbers">
+		                <label class="form-label-bold" for="miscellaneous-fee-1-additional-case-numbers">
 		                    Additional case numbers
 		                    <span class="form-hint">
 		                        Separate with commas
 		                    </span>
 		                </label>
-		                <input class="form-control form-control-3-4" id="additional-case-numbers" name="additional_case_numbers" type="text" value="{{data['additional_case_numbers']}}">
+		                <input class="form-control form-control-3-4" id="miscellaneous-fee-1-additional-case-numbers" name="miscellaneous_fee_1_additional_case_numbers" type="text" value="{{data['miscellaneous_fee_1_additional_case_numbers']}}">
 		            </div>
 		        </div>
 				{%- endif %}
@@ -31,13 +39,13 @@
 	</div>
 
 	<div class="form-group">
-	    <label class="form-label-bold" for="miscellaneous-fee-net-amount">
+	    <label class="form-label-bold" for="miscellaneous-fee-1-net-amount">
 	        Net amount
 	    </label>
 	    <span class="form-input-denote">
 	        £
 	    </span>
-	    <input class="form-control form-control-1-4 form-input-denote__input" id="miscellaneous-fee-net-amount" name="miscellaneous_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['miscellaneous_fee_net_amount']}}">
+	    <input class="form-control form-control-1-4 form-input-denote__input" id="miscellaneous-fee-1-net-amount" name="miscellaneous_fee_1_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['miscellaneous_fee_1_net_amount']}}">
 	</div>
 
 </div>

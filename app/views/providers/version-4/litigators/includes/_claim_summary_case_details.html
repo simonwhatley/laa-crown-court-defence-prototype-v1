@@ -47,9 +47,14 @@
 			<td>{{data['transfer_case_number']}}</td>
 		</tr>
 		{%- endif %}
-
+		<tr>
+			<th class="bold" scope="row">
+				Date case concluded
+			</th>
+			<td>{{data['date_case_concluded_day']}}/{{data['date_case_concluded_month']}}/{{data['date_case_concluded_year']}}</td>
+		</tr>
 	</tbody>
 </table>
 {% else %}
-<p>There are case details for this claim.</p>
+<p>There are no case details for this claim.</p>
 {%- endif %}

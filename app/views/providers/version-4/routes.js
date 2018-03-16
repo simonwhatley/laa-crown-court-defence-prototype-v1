@@ -623,7 +623,7 @@ router.get('/litigators/offence-details', function(req, res) {
                 'previous' : req.baseUrl + '/litigators/defendant-details',
                 'save' : req.baseUrl + '/litigators/'
             },
-            classes: utils.getOffenceClassesScheme9()
+            offences: utils.getOffenceClassesScheme9()
     	});
 
 });
@@ -700,7 +700,7 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
                 'previous' : req.baseUrl + '/litigators/fees',
                 'save' : req.baseUrl + '/litigators/'
             },
-            fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
+            fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, '9')
     	});
 });
 
@@ -745,7 +745,9 @@ router.get('/litigators/travel-expenses', function(req, res) {
                 'next' : req.baseUrl + '/litigators/supporting-evidence',
                 'previous' : previousUrl,
                 'save' : req.baseUrl + '/litigators/'
-            }
+            },
+            travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
+            travel_reasons: utils.getTravelReasons()
     	});
 });
 
@@ -778,8 +780,19 @@ router.get('/litigators/claim-summary', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/certify-claim',
                 'previous' : req.baseUrl + '/litigators/additional-information',
-                'save' : req.baseUrl + '/litigators/'
-            }
+                'save' : req.baseUrl + '/litigators/',
+                'case_details' : req.baseUrl + '/litigators/case-details' + '?referrer=summary',
+                'transfer_details' : req.baseUrl + '/litigators/transfer-details' + '?referrer=summary',
+                'defendant_details' : req.baseUrl + '/litigators/defendant-details' + '?referrer=summary',
+                'offence_details' : req.baseUrl + '/litigators/offence-details' + '?referrer=summary',
+                'fees' : req.baseUrl + '/litigators/fees' + '?referrer=summary',
+                'miscellaneous_fees' : req.baseUrl + '/litigators/miscellaneous-fees' + '?referrer=summary',
+                'disbursements' : req.baseUrl + '/litigators/miscellaneous-fees' + '?referrer=summary',
+                'travel_expenses' : req.baseUrl + '/litigators/travel-expenses' + '?referrer=summary',
+                'supporting_evidence' : req.baseUrl + '/litigators/supporting-evidence' + '?referrer=summary',
+                'additional_information' : req.baseUrl + '/litigators/additional-information' + '?referrer=summary'
+            },
+            offence: { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
     	});
 });
 

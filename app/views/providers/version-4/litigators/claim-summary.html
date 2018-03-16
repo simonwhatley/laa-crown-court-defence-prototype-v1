@@ -32,6 +32,8 @@
 							<span class="heading-secondary">
 								{% if data['bill_type'] == "litigator_interim" -%}
 									Interim fees
+								{% elif data['bill_type'] == "litigator_transfer" %}
+									Transfer fees
 								{% else %}
 									{% if data['fee_type'] == "graduated" -%}
 										Graduated fees
@@ -40,7 +42,7 @@
 									{%- endif %}
 								{%- endif %}
 							</span>
-							£999,999.00
+							£99,999.00
 						</h3>
 						<a href="{{links.fees}}">
 							Change fees
@@ -50,7 +52,7 @@
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Disbursements</span>
-							£999,999.00
+							£99,999.00
 						</h3>
 						<a href="{{links.disbursements}}">
 							Change disbursements
@@ -60,7 +62,7 @@
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Travel expenses</span>
-							£999,999.00
+							£99,999.00
 						</h3>
 						<a href="{{links.travel}}">
 							Change expenses
@@ -70,9 +72,9 @@
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">Total claimed</span>
-							£999,999.00
+							£99,999.00
 						</h3>
-						<p class="font-grey">VAT £199,999.80</p>
+						<p class="font-grey">VAT £19,999.80</p>
 					</div>
 
 				</div>
@@ -96,10 +98,25 @@
 							Claim summary
 						</h2>
 
+						{% if data['bill_type'] == "litigator_transfer" %}
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Transfer details
+								<a href="{{links.transfer_details}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;case details</span>
+								</a>
+							</h3>
+
+							{% include "./includes/_claim_summary_transfer_details.html" %}
+
+						</div>
+						{%- endif %}
+
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Case details
-								<a href="#noop" class="link-change">
+								<a href="{{links.case_details}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;case details</span>
 								</a>
@@ -112,7 +129,7 @@
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Defendant details
-								<a href="#noop" class="link-change">
+								<a href="{{links.defendant_details}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;defendant details</span>
 								</a>
@@ -122,10 +139,11 @@
 
 						</div>
 
+						{% if data['fee_type'] == "graduated" -%}
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Offence details
-								<a href="#noop" class="link-change">
+								<a href="{{links.offence_details}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;offence details</span>
 								</a>
@@ -134,13 +152,14 @@
 							{% include "../includes/_claim_summary_offence_details.html" %}
 
 						</div>
+						{%- endif %}
 
 						{% if data['bill_type'] == "litigator_interim" %}
 
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Interim fees
-									<a href="#noop" class="link-change">
+									<a href="{{links.fees}}" class="link-change">
 										Change
 										<span class="visually-hidden">&nbsp;interim fees</span>
 									</a>
@@ -155,7 +174,7 @@
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Transfer fees
-									<a href="#noop" class="link-change">
+									<a href="{{links.fees}}" class="link-change">
 										Change
 										<span class="visually-hidden">&nbsp;transfer fees</span>
 									</a>
@@ -172,7 +191,7 @@
 								<div class="form-section">
 									<h3 class="heading-medium">
 										Fixed fees
-										<a href="#noop" class="link-change">
+										<a href="{{links.fees}}" class="link-change">
 											Change
 											<span class="visually-hidden">&nbsp;fixed fees</span>
 										</a>
@@ -187,7 +206,7 @@
 								<div class="form-section">
 									<h3 class="heading-medium">
 										Graduated fees
-										<a href="#noop" class="link-change">
+										<a href="{{links.fees}}" class="link-change">
 											Change
 											<span class="visually-hidden">&nbsp;graduated fees</span>
 										</a>
@@ -204,7 +223,7 @@
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Miscellaneous fees
-								<a href="#noop" class="link-change">
+								<a href="{{links.miscellaneous_fees}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;miscellaneous fees</span>
 								</a>
@@ -216,8 +235,21 @@
 
 						<div class="form-section">
 							<h3 class="heading-medium">
+								Disbursements
+								<a href="{{links.disbursements}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;disbursements</span>
+								</a>
+							</h3>
+
+							{% include "./includes/_claim_summary_disbursements.html" %}
+
+						</div>
+
+						<div class="form-section">
+							<h3 class="heading-medium">
 								Travel expenses
-								<a href="#noop" class="link-change">
+								<a href="{{links.travel_expenses}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;travel expenses</span>
 								</a>
@@ -230,7 +262,7 @@
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Supporting evidence
-								<a href="#noop" class="link-change">
+								<a href="{{links.supporting_evidence}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;supporting evidence</span>
 								</a>
@@ -243,7 +275,7 @@
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Additional information
-								<a href="#noop" class="link-change">
+								<a href="{{links.additional_information}}" class="link-change">
 									Change
 									<span class="visually-hidden">&nbsp;additional information</span>
 								</a>
