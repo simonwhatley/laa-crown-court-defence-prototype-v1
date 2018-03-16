@@ -170,7 +170,8 @@ router.get('/litigators/case-details', function(req, res) {
                 'home' : req.baseUrl + '/litigators/'
             },
             case_types: utils.getCaseTypesByFeeScheme('lgfs'),
-            courts: utils.getCourts()
+            courts: utils.getCourts(),
+            offences: utils.getOffenceCategories()
         });
 });
 

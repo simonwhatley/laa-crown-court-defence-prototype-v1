@@ -4,6 +4,10 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{% include "../includes/_page_scripts_case_details.html" %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -13,7 +17,10 @@
 	<div class="grid-row">
 	    <div class="column-full">
 
-	    	<a class="link-back" href="{{links.previous}}">Back</a>
+	    	<a class="link-back" href="{{links.previous}}">
+	    		Back
+	    		<span class="visually-hidden"> to your claims</span>
+	    	</a>
 
 	    	<form class="form" action="{{links.next}}" method="post">
 
@@ -21,22 +28,57 @@
 					Claim for litigator fees
 				</h1>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Case details
-					</h2>
+				<div class="grid-row">
+					
+					<div class="column-full">
+						
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Case details
+							</h2>
+							
+							{% include "./includes/_case_details.html" %}
+
+						</div>
+
+					</div>
+
 				</div>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Offence details
-					</h2>
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+						
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Offence details
+							</h2>
+							
+							{% include "../includes/_offence_details.html" %}
+
+						</div>
+
+					</div>
+
 				</div>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Defendant details
-					</h2>
+				<div class="grid-row">
+					
+					<div class="column-two-thirds">
+						
+						<div class="form-section">
+							<h2 id="section-heading" class="heading-large">
+								Defendant details
+							</h2>
+							
+							{% include "../includes/_defendant_details.html" %}
+
+							<hr>
+							<a href="#noop" class="button button-secondary" role="button">Add another defendant</a>
+						</div>
+
+					</div>
+
 				</div>
 
 				<div class="form-section">
