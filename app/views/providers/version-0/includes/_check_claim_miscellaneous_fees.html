@@ -1,4 +1,4 @@
-{% if data['miscellaneous_fee_1'].length -%}
+{% if data['miscellaneous_fee_1_type'].length -%}
 <table class="summary">
 	<tbody>
 		<tr>
@@ -12,7 +12,7 @@
 							<th class="bold" scope="row">
 								Type of fee
 							</th>
-							<td>{{data['miscellaneous_fee_1']|replace('_',' ')|capitalize}}</td>
+							<td>{{data['miscellaneous_fee_1_type']|replace('_',' ')|capitalize}}</td>
 						</tr>
 						<tr>
 							<th class="bold" scope="row">

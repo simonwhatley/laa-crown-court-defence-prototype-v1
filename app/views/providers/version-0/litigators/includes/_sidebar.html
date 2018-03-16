@@ -10,7 +10,7 @@
 			{% elif data['bill_type'] == "litigator_transfer" %}
 				Transfer fees
 			{% else %}
-				{% if data['fee_type'] == "graduated" -%}
+				{% if fee_type == "graduated" or data['fee_type'] == "graduated" -%}
 					Graduated fees
 				{% else %}
 					Fixed fees
@@ -43,6 +43,6 @@
 			Total
 			<span class="numeric" data-total-fees="£0.00">£0.00</span>
 		</h3>
-		
+
 	</div>
 </div>

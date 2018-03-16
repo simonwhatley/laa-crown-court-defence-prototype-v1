@@ -22,11 +22,11 @@
 					Type of fee
 				</legend>
 
-				<select id="miscellaneous-fee-1" name="miscellaneous_fee_1" class="form-control">
+				<select id="miscellaneous-fee-1-type" name="miscellaneous_fee_1_type" class="form-control">
 					<option value="">&nbsp;</option>
 
 					{% for fee in misc_fees -%}
-						<option value="{{fee.key}}"{% if fee.abbreviations.length -%} data-abbreviations="{{fee.abbreviations}}"{%- endif %}{% if fee.other_names.length -%} data-other-names="{{fee.other_names}}"{%- endif %}{% if data['miscellaneous_fee_1'] == fee.key -%} selected="selected"{%- endif %}>{{fee.name}}</option>
+						<option value="{{fee.key}}"{% if fee.abbreviations.length -%} data-abbreviations="{{fee.abbreviations}}"{%- endif %}{% if fee.other_names.length -%} data-other-names="{{fee.other_names}}"{%- endif %}{% if data['miscellaneous_fee_1_type'] == fee.key -%} selected="selected"{%- endif %}>{{fee.name}}</option>
 					{%- endfor %}
 
 				</select>

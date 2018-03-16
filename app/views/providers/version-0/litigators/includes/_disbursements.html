@@ -25,7 +25,7 @@
         			<option value=""></option>
 
         			{% for disbursement in disbursements -%}
-        				<option value="{{disbursement.key}}"{% if disbursement.abbreviations.length -%} data-abbreviations="{{disbursement.abbreviations}}"{%- endif %}{% if disbursement.other_names.length -%} data-other-names="{{disbursement.other_names}}"{%- endif %}{% if data['disbursement'] == disbursement.key -%} selected="selected"{%- endif %}>{{disbursement.name}}</option>
+        				<option value="{{disbursement.key}}"{% if disbursement.abbreviations.length -%} data-abbreviations="{{disbursement.abbreviations}}"{%- endif %}{% if disbursement.other_names.length -%} data-other-names="{{disbursement.other_names}}"{%- endif %}{% if data['disbursement_1_type'] == disbursement.key -%} selected="selected"{%- endif %}>{{disbursement.name}}</option>
         			{%- endfor %}
 
         		</select>
@@ -54,10 +54,10 @@
         </div>
 
     </div>
-    
+
     <hr>
     <div class="form-group form-buttons">
         <a href="#noop" class="button button-secondary" role="button">Add another disbursement</a>
     </div>
-    
+
 </div>

@@ -22,10 +22,10 @@
 				</h1>
 
 				<div class="grid-row">
-					
+
 					<div class="column-three-quarters">
 
-						
+
 						<h2 id="section-heading" class="heading-large">
 							Check your claim
 						</h2>
@@ -52,9 +52,9 @@
 
 						</div>
 
-						
 
-						{% if fee_type == "graduated" -%}
+
+						{% if data['fee_type'] == "graduated" -%}
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Offence details
@@ -123,7 +123,7 @@
 							{%- endif %}
 
 						{%- endif %}
-						
+
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Miscellaneous fees
@@ -135,10 +135,28 @@
 
 						<div class="form-section">
 							<h3 class="heading-medium">
+								Disbursements
+							</h3>
+
+							{% include "./includes/_check_claim_disbursements.html" %}
+
+						</div>
+
+						<div class="form-section">
+							<h3 class="heading-medium">
 								Travel expenses
 							</h3>
 
 							{% include "../includes/_check_claim_travel_expenses.html" %}
+
+						</div>
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Warrant fees
+							</h3>
+
+							{% include "./includes/_check_claim_warrant_fees.html" %}
 
 						</div>
 
