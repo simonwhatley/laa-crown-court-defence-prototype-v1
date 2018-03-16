@@ -182,7 +182,11 @@ router.get('/litigators/fee-details', function(req, res) {
                 'next' : req.baseUrl + '/litigators/check-claim',
                 'previous' : req.baseUrl + '/litigators/case-details'
             },
-            fee_type: utils.getFeeType(req.session.data.case_type)
+            fee_type: utils.getFeeTypeForCaseType(req.session.data.case_type),
+            fixed_fees: utils.getFixedFees('lgfs','9'),
+            misc_fees: utils.getMiscellaneousFees('lgfs','9'),
+            travel_types: utils.getTravelTypes('lgfs'),
+            travel_reasons: utils.getTravelReasons()
         });
 });
 

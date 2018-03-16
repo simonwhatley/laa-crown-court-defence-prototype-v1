@@ -4,56 +4,77 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{#% include "./includes/_page_scripts_fixed_fees.html" %#}
+{% include "../includes/_page_scripts_travel_expenses.html" %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
 
 	{% include "../includes/_banner.html" %}
 
-	<div class="grid-row">
+  	<div class="grid-row">
 	    <div class="column-full">
 
 	    	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<form class="form" action="{{links.next}}" method="post">
+	    	<form class="form" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for litigator fees
 				</h1>
 
-				{% if data['bill_type'] == "litigator_interim" %}
+				<div class="grid-row">
+					
+					<div class="column-three-quarters">
 
-					{% include "./includes/_interim_fees.html" %}
+						{% if data['bill_type'] == "litigator_interim" -%}
+							
+							{% include "./includes/_interim_fees.html" %}
 
-				{% else %}
+						{% elif data['bill_type'] == "litigator_transfer" %}
+							
+							{% include "./includes/_transfer_fees.html" %}
 
-					{% if fee_type == "fixed" %}
+						{% else %}
 
-						{% include "./includes/_fixed_fees.html" %}
+							{% if fee_type == "graduated" %}
 
-					{% else %}
+								{% include "./includes/_graduated_fees.html" %}
 
-						{% include "./includes/_graduated_fees.html" %}
+							{% else %}
 
-					{% endif %}
+								{% include "./includes/_fixed_fees.html" %}
 
-					{% include "./includes/_miscellaneous_fees.html" %}
+							{% endif %}
 
-					{% include "./includes/_disbursements.html" %}
+						{%- endif %}
+					
+						{% include "./includes/_miscellaneous_fees.html" %}
 
-				{% endif %}
+						{% include "./includes/_disbursements.html" %}
 
-				{# from provider > includes #}
-				{% include "../includes/_travel_expenses.html" %}
+						</div>
 
-				{% include "./includes/_supporting_evidence.html" %}
+						{# from provider > includes #}
+						{% include "../includes/_travel_expenses.html" %}
 
-				{# from provider > includes #}
-				{% include "../includes/_additional_information.html" %}
+						{% include "./includes/_supporting_evidence.html" %}
+
+						{# from provider > includes #}
+						{% include "../includes/_additional_information.html" %}
+
+					</div>
+
+					{% include "./includes/_sidebar.html" %}
+
+				</div>
 
 				<div class="form-section">
 					<div class="form-group form-buttons">
-						<input type="submit" class="button" value="Save and continue">
+						<input type="submit" class="button" value="Save and continue" formaction="{{links.next}}">
 						<input type="submit" class="button button-tertiary" value="Save as draft">
 						<!-- <a href="{{links.home}}">Cancel</a> -->
 					</div>
@@ -64,6 +85,7 @@
 			{% include "./includes/_help.html" %}
 
 	    </div>
+
   	</div>
 
 </main>
