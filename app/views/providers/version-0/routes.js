@@ -155,9 +155,9 @@ router.get('/litigators/', function(req, res) {
         });
 });
 
-router.get('/advocates/start', function(req, res) {
+router.get('/litigators/start', function(req, res) {
     req.session.destroy()
-    res.redirect(`/${req.feature}/${req.version}/advocates/bill-type`);
+    res.redirect(`/${req.feature}/${req.version}/litigators/bill-type`);
 });
 
 router.get('/litigators/bill-type', function(req, res) {
