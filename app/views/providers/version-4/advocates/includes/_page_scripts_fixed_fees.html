@@ -11,9 +11,9 @@ autocomplete({
   defaultValue: ''
 });
 
-$('.fx-additional-case-numbers-' + i).hide();
-
 $(function(){
+
+  $('.fx-additional-case-numbers-' + i).hide();
 
   $('#fixed-fee-' + i + '-type').on('blur', function(e){
     e.preventDefault();
@@ -36,5 +36,10 @@ $(function(){
     });
 
   });
+
+  if ($('#fixed-fee-' + i + '-type').val()) {
+    $('#fixed-fee-' + i + '-type').trigger('blur');
+  }
+
 });
 </script>
