@@ -13,7 +13,7 @@
 			</th>
 			<td>{{data['reference_number']}}</td>
 		</tr>
-		{% if data['bill_type'] == 'advocate_final' -%}
+		{% if data['bill_type'] in ['litigator_final','litigator_interim'] -%}
 		<tr>
 			<th class="bold" scope="row">
 				Case type

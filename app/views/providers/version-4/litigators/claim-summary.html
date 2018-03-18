@@ -139,19 +139,21 @@
 
 						</div>
 
-						{% if data['fee_type'] == "graduated" -%}
-						<div class="form-section">
-							<h3 class="heading-medium">
-								Offence details
-								<a href="{{links.offence_details}}" class="link-change">
-									Change
-									<span class="visually-hidden">&nbsp;offence details</span>
-								</a>
-							</h3>
+						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == "graduated") or data['bill_type'] == 'litigator_interim' -%}
 
-							{% include "../includes/_claim_summary_offence_details.html" %}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Offence details
+									<a href="{{links.offence_details}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;offence details</span>
+									</a>
+								</h3>
 
-						</div>
+								{% include "../includes/_claim_summary_offence_details.html" %}
+
+							</div>
+
 						{%- endif %}
 
 						{% if data['bill_type'] == "litigator_interim" %}

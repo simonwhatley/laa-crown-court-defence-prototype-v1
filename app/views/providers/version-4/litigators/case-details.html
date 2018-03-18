@@ -77,6 +77,7 @@
 								<input class="form-control" id="reference-number" type="text" name="reference_number" value="{{ data['reference_number']}}" autocomplete="off" autocapitalize="off">
 							</div>
 
+							{% if data['bill_type'] in ['litigator_final','litigator_interim'] -%}
 							<div class="form-group">
 
 								<fieldset>
@@ -123,6 +124,7 @@
 								</fieldset>
 
 							</div>
+							{%- endif %}
 
 							<div class="form-group">
 

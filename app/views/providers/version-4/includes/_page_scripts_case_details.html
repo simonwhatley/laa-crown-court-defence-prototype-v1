@@ -1,7 +1,7 @@
 <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
 <script src="/public/javascripts/cccd-autocomplete.js"></script>
 <script>
-{% if data['bill_type'].length and (data['bill_type'] != 'advocate_interim' and data['bill_type'] != 'litigator_interim') -%}
+{% if data['bill_type'] in ['advocate_final','litigator_final'] -%}
 autocomplete({
   selectElement: document.getElementById('case-type'),
   showAllValues: false,
