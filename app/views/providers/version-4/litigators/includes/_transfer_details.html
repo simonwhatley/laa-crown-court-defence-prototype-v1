@@ -18,7 +18,7 @@
                 <label class="form-label-bold">
                     When did you stop acting?
                 </label>
-                <select id="stop-acting-reason" name="stop_acting_reason">
+                <select id="stop-acting-reason" class="form-control" name="stop_acting_reason">
                     <option value=""></option>
 
                     {% for reason in transfer_reasons -%}
@@ -70,7 +70,7 @@
                 <label class="form-label-bold">
                     When did you start acting?
                 </label>
-                <select id="start-acting-reason" name="start_acting_reason">
+                <select id="start-acting-reason" class="form-control" name="start_acting_reason">
                     <option value=""></option>
 
                     {% for reason in transfer_reasons -%}
@@ -129,7 +129,7 @@
                 Yes
             </label>
         </div>
-        
+
         <div class="multiple-choice">
             <input aria-expanded="false" id="case-elected-no" name="case_elected" type="radio" value="no" {{ checked('case_elected','no') }}>
             <label for="case-elected-no">
