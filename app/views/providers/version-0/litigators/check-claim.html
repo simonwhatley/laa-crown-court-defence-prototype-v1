@@ -53,8 +53,7 @@
 						</div>
 
 
-
-						{% if data['fee_type'] == "graduated" -%}
+						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == "graduated") or data['bill_type'] == 'litigator_interim' -%}
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Offence details
@@ -151,6 +150,7 @@
 
 						</div>
 
+						{% if data['bill_type'] == "litigator_final" %}
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Warrant fees
@@ -159,6 +159,7 @@
 							{% include "./includes/_check_claim_warrant_fees.html" %}
 
 						</div>
+						{%- endif %}
 
 						<div class="form-section">
 							<h3 class="heading-medium">

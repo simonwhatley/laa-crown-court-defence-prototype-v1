@@ -14,6 +14,14 @@
 							</th>
 							<td>{{data['miscellaneous_fee_1_type']|replace('_',' ')|capitalize}}</td>
 						</tr>
+						{%if data['miscellaneous_fee_1_additional_case_numbers'].length %}
+						<tr>
+							<th class="bold" scope="row">
+								Additional case numbers
+							</th>
+							<td>{{data['miscellaneous_fee_1_additional_case_numbers']|upper}}</td>
+						</tr>
+						{%- endif %}
 						<tr>
 							<th class="bold" scope="row">
 								Net amount

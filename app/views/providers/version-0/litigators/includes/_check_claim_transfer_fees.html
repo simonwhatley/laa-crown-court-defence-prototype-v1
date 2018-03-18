@@ -1,0 +1,26 @@
+{% if data['transfer_fee_net_amount'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Type of fee
+			</th>
+			<td>Transfer</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Total <!-- number of  -->pages of evidence
+			</th>
+			<td>{{data['total_number_of_pages_of_prosecution_evidence']|numeral('0,0')}} pages</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Net amount
+			</th>
+			<td>&pound;{{data['transfer_fee_net_amount']|numeral('0,0.00')}}</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no graduated fees for this claim.</p>
+{%- endif %}

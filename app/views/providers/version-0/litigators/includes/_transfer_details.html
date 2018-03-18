@@ -1,0 +1,88 @@
+<div class="form-group">
+
+	<fieldset class="inline">
+
+		<legend class="form-label-bold" for="case-type">
+			Litigator type
+		</legend>
+
+		<div class="multiple-choice">
+			<input id="litigator-type-original" type="radio" name="litigator_type" value="original" {{ checked('litigator_type','original') }}>
+			<label for="litigator-type-original">Original</label>
+		</div>
+		<div class="multiple-choice">
+			<input id="litigator-type-new" type="radio" name="litigator_type" value="new" {{ checked('litigator_type','new') }}>
+			<label for="litigator-type-new">New</label>
+		</div>
+
+	</fieldset>
+
+</div>
+
+<div class="form-group">
+
+	<fieldset class="inline">
+
+		<legend class="form-label-bold" for="case-type">
+			Was the case elected?
+		</legend>
+
+		<div class="multiple-choice">
+            <input aria-expanded="false" id="case-elected-yes" name="case_elected" type="radio" value="yes" {{ checked('case_elected','yes') }}>
+            <label for="case-elected-yes">Yes</label>
+        </div>
+
+        <div class="multiple-choice">
+            <input aria-expanded="false" id="case-elected-no" name="case_elected" type="radio" value="no" {{ checked('case_elected','no') }}>
+            <label for="case-elected-no">No</label>
+        </div>
+
+	</fieldset>
+
+</div>
+
+
+<div class="form-group">
+    <label class="form-label-bold">
+        When did you stop/start acting?
+    </label>
+    <select id="start-acting-reason" class="form-control" name="start_acting_reason">
+        <option value=""></option>
+
+        {% for reason in transfer_reasons -%}
+            <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['start_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+        {%- endfor %}
+
+    </select>
+</div>
+
+<div class="form-group">
+    <fieldset>
+        <legend class="form-label-bold">
+            Date stopped/started acting
+            <span class="form-hint">
+                For example, 31 3 2017
+            </span>
+        </legend>
+        <div class="form-date">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="date-started-acting-day">
+                    Day
+                </label>
+                <input class="form-control" id="date-started-acting-day" max="31" min="1" name="date_started_acting_day" pattern="[0-9]*" type="number" value="{{data['date_started_acting_day']}}">
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="date-started-acting-month">
+                    Month
+                </label>
+                <input class="form-control" id="date-started-acting-month" max="12" min="1" name="date_started_acting_month" pattern="[0-9]*" type="number" value="{{data['date_started_acting_month']}}">
+            </div>
+            <div class="form-group form-group-year">
+                <label class="form-label" for="date-started-acting-year">
+                    Year
+                </label>
+                <input class="form-control" id="date-started-acting-year" max="2019" min="1900" name="date_started_acting_year" pattern="[0-9]*" type="number" value="{{data['date_started_acting_year']}}">
+            </div>
+        </div>
+    </fieldset>
+</div>

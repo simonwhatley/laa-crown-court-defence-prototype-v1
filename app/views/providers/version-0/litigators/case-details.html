@@ -29,14 +29,14 @@
 				</h1>
 
 				<div class="grid-row">
-					
+
 					<div class="column-full">
-						
+
 						<div class="form-section">
 							<h2 id="section-heading" class="heading-large">
 								Case details
 							</h2>
-							
+
 							{% include "./includes/_case_details.html" %}
 
 						</div>
@@ -45,15 +45,16 @@
 
 				</div>
 
+				{% if data['bill_type'] in ['litigator_final','litigator_interim'] -%}
 				<div class="grid-row">
-					
+
 					<div class="column-two-thirds">
-						
+
 						<div class="form-section">
 							<h2 id="section-heading" class="heading-large">
 								Offence details
 							</h2>
-							
+
 							{% include "../includes/_offence_details.html" %}
 
 						</div>
@@ -61,16 +62,17 @@
 					</div>
 
 				</div>
+				{%- endif %}
 
 				<div class="grid-row">
-					
+
 					<div class="column-two-thirds">
-						
+
 						<div class="form-section">
 							<h2 id="section-heading" class="heading-large">
 								Defendant details
 							</h2>
-							
+
 							{% include "../includes/_defendant_details.html" %}
 
 							<hr>

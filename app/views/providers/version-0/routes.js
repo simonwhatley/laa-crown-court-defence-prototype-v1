@@ -193,8 +193,8 @@ router.get('/litigators/transfer-details', function(req, res) {
                 'next' : req.baseUrl + '/litigators/case-details',
                 'previous' : req.baseUrl + '/litigators/bill-type',
                 'home' : req.baseUrl + '/litigators/'
-            }
-
+            },
+            transfer_reasons: utils.getTransferReasons()
         });
 });
 
