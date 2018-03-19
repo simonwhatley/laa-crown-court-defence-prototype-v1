@@ -138,7 +138,7 @@ router.get('/advocates/offence-details', function(req, res) {
 
 router.get('/advocates/fees', function(req, res) {
 
-    if (utils.isFixedFee("agfs", req.session.data.case_type)) {
+    if (utils.isFixedFee('agfs', req.session.data.case_type)) {
 
         res.render(`${req.feature}/${req.version}/advocates/fixed-fees`,
              {
@@ -330,7 +330,7 @@ router.get('/litigators/case-details', function(req, res) {
 
 router.get('/litigators/defendant-details', function(req, res) {
 
-    if (utils.isFixedFee("lgfs", req.session.data.case_type)) {
+    if (utils.isFixedFee('lgfs', req.session.data.case_type)) {
 
         var nextUrl = req.baseUrl + '/litigators/fees'
 
@@ -363,7 +363,7 @@ router.get('/litigators/offence-details', function(req, res) {
 
 router.get('/litigators/fees', function(req, res) {
 
-    if (utils.isFixedFee("lgfs", req.session.data.case_type)) {
+    if (utils.isFixedFee('lgfs', req.session.data.case_type)) {
 
         var previousUrl = req.baseUrl + '/litigators/defendant-details'
 
@@ -395,7 +395,7 @@ router.get('/litigators/fees', function(req, res) {
 
     } else {
 
-        if (utils.isFixedFee("lgfs", req.session.data.case_type)) {
+        if (utils.isFixedFee('lgfs', req.session.data.case_type)) {
 
             res.render(`${req.feature}/${req.version}/litigators/fixed-fees`,
                 {
