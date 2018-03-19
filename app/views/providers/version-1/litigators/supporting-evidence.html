@@ -3,28 +3,24 @@
 {% block page_title %}
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
-
 {% block content %}
 
 <main id="content" role="main">
 
 	{% include "./includes/_banner.html" %}
 
-  	<div class="grid-row">
-	    <div class="column-two-thirds">
+	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<a class="link-back" href="{{links.previous}}">Back</a>
+	<h1 class="heading-xlarge">
+		Claim for litigator fees
+	</h1>
+
+  	<div class="grid-row">
+	    <div class="column-three-quarters">
 
 	    	<form class="form" method="post">
 
-				<h1 class="heading-xlarge">
-					Claim for litigator fees
-				</h1>
-
-				<h2 class="heading-large">
-					Supporting evidence
-				</h2>
-
+				{% include "./includes/_supporting_evidence.html" %}
 
 				{% include "./includes/_form_actions.html" %}
 
@@ -33,7 +29,10 @@
 			{% include "./includes/_help.html" %}
 
 	    </div>
- 	</div>
+
+	    {% include "./includes/_sidebar.html" %}
+
+  	</div>
 </main>
 
 {% endblock %}

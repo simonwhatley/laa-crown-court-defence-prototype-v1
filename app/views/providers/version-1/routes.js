@@ -299,7 +299,8 @@ router.get('/litigators/transfer-details', function(req, res) {
                 'previous' : req.baseUrl + '/litigators/bill-type',
                 'home' : req.baseUrl + '/litigators/',
                 'cancel' : req.baseUrl + '/litigators/cancel'
-            }
+            },
+            transfer_reasons: utils.getTransferReasons()
 
     	});
 });
@@ -323,8 +324,9 @@ router.get('/litigators/case-details', function(req, res) {
                 'previous' : previousUrl,
                 'home' : req.baseUrl + '/litigators/',
                 'cancel' : req.baseUrl + '/litigators/cancel'
-            }
-            
+            },
+            case_types: utils.getCaseTypesByFeeScheme('agfs'),
+            courts: utils.getCourts()
     	});
 });
 
@@ -332,10 +334,12 @@ router.get('/litigators/defendant-details', function(req, res) {
 
     if (utils.isFixedFee('lgfs', req.session.data.case_type)) {
 
+        req.session.data.fee_type = 'fixed'
         var nextUrl = req.baseUrl + '/litigators/fees'
 
     } else {
 
+        req.session.data.fee_type = 'graduated'
         var nextUrl = req.baseUrl + '/litigators/offence-details'
 
     }
@@ -356,7 +360,8 @@ router.get('/litigators/offence-details', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/fees',
                 'previous' : req.baseUrl + '/litigators/defendant-details'
-            }
+            },
+            offences: utils.getOffenceCategories()
     	});
 
 });
@@ -402,7 +407,8 @@ router.get('/litigators/fees', function(req, res) {
                     links: {
                         'next' : req.baseUrl + '/litigators/miscellaneous-fees',
                         'previous' : previousUrl
-                    }
+                    },
+                    fixed_fees: utils.getFixedFees('lgfs','9')
                 });
 
         } else {

@@ -10,21 +10,25 @@
 
 	{% include "./includes/_banner.html" %}
 
-  	<div class="grid-row">
-	    <div class="column-two-thirds">
+	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<a class="link-back" href="{{links.previous}}">Back</a>
+	<h1 class="heading-xlarge">
+		Claim for litigator fees
+	</h1>
+
+  	<div class="grid-row">
+	    <div class="column-three-quarters">
 
 	    	<form class="form" method="post">
 
-				<h1 class="heading-xlarge">
-					Claim for litigator fees
-				</h1>
+	    		<div class="form-section">
+	    			<h2 id="section-heading" class="heading-large">
+	    				Transfer details
+	    			</h2>
 
-				<h2 class="heading-large">
-					Transfer details
-				</h2>
+	    			{% include "./includes/_transfer_details.html" %}
 
+	    		</div>
 
 				{% include "./includes/_form_actions.html" %}
 
@@ -33,6 +37,9 @@
 			{% include "./includes/_help.html" %}
 
 	    </div>
+
+	    {% include "./includes/_sidebar.html" %}
+
   	</div>
 </main>
 
