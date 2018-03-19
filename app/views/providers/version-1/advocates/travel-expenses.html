@@ -4,27 +4,28 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{% include "../includes/_page_scripts_travel_expenses.html" %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
 
 	{% include "./includes/_banner.html" %}
 
-  	<div class="grid-row">
-	    <div class="column-two-thirds">
+	<a class="link-back" href="{{links.previous}}">Back</a>
 
-	    	<a class="link-back" href="{{links.previous}}">Back</a>
+	<h1 class="heading-xlarge">
+		Claim for advocate fees
+	</h1>
+
+  	<div class="grid-row">
+	    <div class="column-three-quarters">
 
 	    	<form class="form" method="post">
 
-				<h1 class="heading-xlarge">
-					Claim for advocate fees
-				</h1>
-
-				<h2 class="heading-large">
-					Travel expenses
-				</h2>
-
+				{% include "../includes/_travel_expenses.html" %}
 
 				{% include "./includes/_form_actions.html" %}
 
@@ -34,7 +35,7 @@
 
 	    </div>
 
-	    {# include "./includes/_sidebar.html" #}
+	    {% include "./includes/_sidebar.html" %}
 
   	</div>
 </main>

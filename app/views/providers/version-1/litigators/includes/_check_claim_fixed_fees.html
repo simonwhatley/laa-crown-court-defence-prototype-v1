@@ -1,0 +1,26 @@
+{% if data['fixed_fee_date_day'].length and data['fixed_fee_date_month'].length and data['fixed_fee_date_year'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Type of fee
+			</th>
+			<td>{{data['case_type']|replace('_',' ')|capitalize}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Date
+			</th>
+			<td>{{data['fixed_fee_date_day']}}/{{data['fixed_fee_date_month']}}/{{data['fixed_fee_date_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Net amount
+			</th>
+			<td>&pound;{{data['fixed_fee_net_amount']|numeral('0,0.00')}}</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no fixed fees for this claim.</p>
+{%- endif %}

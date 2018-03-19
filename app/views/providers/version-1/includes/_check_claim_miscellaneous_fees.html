@@ -1,0 +1,39 @@
+{% if data['miscellaneous_fee_1_type'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Fee 1
+			</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">
+								Type of fee
+							</th>
+							<td>{{data['miscellaneous_fee_1_type']|replace('_',' ')|capitalize}}</td>
+						</tr>
+						{%if data['miscellaneous_fee_1_additional_case_numbers'].length %}
+						<tr>
+							<th class="bold" scope="row">
+								Additional case numbers
+							</th>
+							<td>{{data['miscellaneous_fee_1_additional_case_numbers']|upper}}</td>
+						</tr>
+						{%- endif %}
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>&pound;{{data['miscellaneous_fee_1_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no miscellaneous fees for this claim.</p>
+{%- endif %}

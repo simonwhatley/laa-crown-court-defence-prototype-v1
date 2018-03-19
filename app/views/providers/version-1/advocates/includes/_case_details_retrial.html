@@ -1,0 +1,127 @@
+<div class="grid-row">
+    <div class="column-half">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label-bold">
+                    First day of retrial
+                    <span class="form-hint">
+                        For example, 31 3 2017
+                    </span>
+                </legend>
+                <div class="form-date">
+                    <div class="form-group form-group-day">
+                        <label class="form-label" for="first-day-of-retrial-day">
+                            Day
+                        </label>
+                        <input class="form-control" id="first-day-of-retrial-day" max="31" min="1" name="first_day_of_retrial_day" pattern="[0-9]*" type="number" value="{{data['first_day_of_retrial_day']}}">
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="DA-date-attended-1-1-month">
+                            Month
+                        </label>
+                        <input class="form-control" id="first-day-of-retrial-month" max="12" min="1" name="first_day_of_retrial_month" pattern="[0-9]*" type="number" value="{{data['first_day_of_retrial_month']}}">
+                    </div>
+                    <div class="form-group form-group-year">
+                        <label class="form-label" for="DA-date-attended-1-1-year">
+                            Year
+                        </label>
+                        <input class="form-control" id="first-day-of-retrial-year" max="2019" min="1900" name="first_day_of_retrial_year" pattern="[0-9]*" type="number" value="{{data['first_day_of_retrial_year']}}">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="column-half">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label-bold">
+                    Retrial concluded on
+                    <span class="form-hint">
+                        For example, 31 3 2017
+                    </span>
+                </legend>
+                <div class="form-date">
+                    <div class="form-group form-group-day">
+                        <label class="form-label" for="retrial-concluded-on-day">
+                            Day
+                        </label>
+                        <input class="form-control" id="retrial-concluded-on-day" max="31" min="1" name="retrial_concluded_on_day" pattern="[0-9]*" type="number" value="{{data['retrial_concluded_on_day']}}">
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="DA-date-attended-1-1-month">
+                            Month
+                        </label>
+                        <input class="form-control" id="retrial-concluded-on-month" max="12" min="1" name="retrial_concluded_on_month" pattern="[0-9]*" type="number" value="{{data['retrial_concluded_on_month']}}">
+                    </div>
+                    <div class="form-group form-group-year">
+                        <label class="form-label" for="DA-date-attended-1-1-year">
+                            Year
+                        </label>
+                        <input class="form-control" id="retrial-concluded-on-year" max="2019" min="1900" name="retrial_concluded_on_year" pattern="[0-9]*" type="number" value="{{data['retrial_concluded_on_year']}}">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-half">
+        <div class="form-group">
+            <label class="form-label-bold" for="estimated-retrial-length">
+                Estimated retrial length
+                <span class="form-hint">
+                    Number of days
+                </span>
+            </label>
+            <input class="form-control form-control-1-8" id="estimated-retrial-length" name="estimated_retrial_length" type="text" value="{{data['estimated_retrial_length']}}">
+        </div>
+    </div>
+    <div class="column-half">
+        <div class="form-group">
+            <label class="form-label-bold" for="actual-retrial-length">
+                Actual retrial length
+                <span class="form-hint">
+                    Number of days
+                </span>
+            </label>
+            <input class="form-control form-control-1-8" id="actual-retrial-length" name="actual_retrial_length" type="text" value="{{data['actual_retrial_length']}}">
+        </div>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-half">
+        <div class="form-group">
+            <fieldset class="inline">
+                <legend class="form-label-bold" for="apply-reduced-rate-1">
+                    Apply reduced rate to retrial?
+                    <!-- <span class="form-hint">Something...</span> -->
+                </legend>
+                <div class="multiple-choice">
+                    <input id="apply-reduced-rate-1" type="radio" name="apply_reduced_rate" value="yes" {{ checked('apply_reduced_rate','yes') }}>
+                    <label for="apply-reduced-rate-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                    <input id="apply-reduced-rate-2" type="radio" name="apply_reduced_rate" value="no" {{ checked('apply_reduced_rate','no') }}>
+                    <label for="apply-reduced-rate-2">No</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <details>
+                <summary>
+                    <span class="summary">Help with claiming a reduced rate</span>
+                </summary>
+                <div class="panel panel-border-narrow">
+                    <p>A reduced rate can be requested if:</p>
+                    <ul class="list list-bullet">
+                        <li>you represented the defendant(s) at the original trial</li>
+                        <li>you don’t want the reduced rate to be applied to the original trial</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </div>
+    <!-- <div class="column-half">
+        
+    </div> -->
+</div>

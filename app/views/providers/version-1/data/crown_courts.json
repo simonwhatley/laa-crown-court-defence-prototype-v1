@@ -1,0 +1,482 @@
+[
+    {
+        "key": "aylesbury",
+        "name": "Aylesbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "basildon",
+        "name": "Basildon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "birmingham",
+        "name": "Birmingham",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "blackfriars",
+        "name": "Blackfriars",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "bolton",
+        "name": "Bolton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "bournemouth",
+        "name": "Bournemouth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "bradford",
+        "name": "Bradford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "bristol",
+        "name": "Bristol",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "burnley",
+        "name": "Burnley",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "caernarfon",
+        "name": "Caernarfon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "cambridge",
+        "name": "Cambridge",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "canterbury",
+        "name": "Canterbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "cardiff",
+        "name": "Cardiff",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "carlisle",
+        "name": "Carlisle",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "central_criminal_court",
+        "name": "Central Criminal Court",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "chelmsford",
+        "name": "Chelmsford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "chester",
+        "name": "Chester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "chichester",
+        "name": "Chichester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "coventry",
+        "name": "Coventry",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "croydon",
+        "name": "Croydon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "derby",
+        "name": "Derby",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "doncaster",
+        "name": "Doncaster",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "durham",
+        "name": "Durham",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "exeter",
+        "name": "Exeter",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "gloucester",
+        "name": "Gloucester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "grimsby",
+        "name": "Grimsby",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "guildford",
+        "name": "Guildford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "harrow",
+        "name": "Harrow",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "hull",
+        "name": "Hull",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "inner_london",
+        "name": "Inner London",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "ipswich",
+        "name": "Ipswich",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "isleworth",
+        "name": "Isleworth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "kingston_upon_thames",
+        "name": "Kingston Upon Thames",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "leeds",
+        "name": "Leeds",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "leicester",
+        "name": "Leicester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "lewes",
+        "name": "Lewes",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "lincoln",
+        "name": "Lincoln",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "liverpool",
+        "name": "Liverpool",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "luton",
+        "name": "Luton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "maidstone",
+        "name": "Maidstone",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "manchester_(crown_sq)",
+        "name": "Manchester (Crown Sq)",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "manchester_(minshull_st)",
+        "name": "Manchester (Minshull St)",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "merthyr_tydfil",
+        "name": "Merthyr Tydfil",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "middx_guildhall",
+        "name": "Middx Guildhall",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "mold",
+        "name": "Mold",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "newcastle",
+        "name": "Newcastle",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "newport",
+        "name": "Newport",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "newport_(iow)",
+        "name": "Newport (IOW)",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "northampton",
+        "name": "Northampton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "norwich",
+        "name": "Norwich",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "nottingham",
+        "name": "Nottingham",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "oxford",
+        "name": "Oxford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "peterborough",
+        "name": "Peterborough",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "plymouth",
+        "name": "Plymouth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "portsmouth",
+        "name": "Portsmouth",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "preston",
+        "name": "Preston",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "reading",
+        "name": "Reading",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "salisbury",
+        "name": "Salisbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "sheffield",
+        "name": "Sheffield",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "shrewsbury",
+        "name": "Shrewsbury",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "snaresbrook",
+        "name": "Snaresbrook",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "southampton",
+        "name": "Southampton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "southwark",
+        "name": "Southwark",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "stafford",
+        "name": "Stafford",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "st_albans",
+        "name": "St Albans",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "stoke_on_trent",
+        "name": "Stoke on Trent",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "swansea",
+        "name": "Swansea",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "swindon",
+        "name": "Swindon",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "taunton",
+        "name": "Taunton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "teesside",
+        "name": "Teesside",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "truro",
+        "name": "Truro",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "warrington",
+        "name": "Warrington",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "warwick",
+        "name": "Warwick",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "weymouth_and_dorcester",
+        "name": "Weymouth and Dorcester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "winchester",
+        "name": "Winchester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "wolverhampton",
+        "name": "Wolverhampton",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "wood_green",
+        "name": "Wood Green",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "woolwich",
+        "name": "Woolwich",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "worcester",
+        "name": "Worcester",
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "york",
+        "name": "York",
+        "other_names": [],
+        "abbreviations": []
+    }
+]

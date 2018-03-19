@@ -1,0 +1,119 @@
+<input type="hidden" name="fee_type" value="fixed">
+
+<div class="form-section">
+
+	<h2 id="section-heading" class="heading-large">
+		Fixed fees
+	</h2>
+
+	<h3 class="heading-medium">
+		Fixed fee 1
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this fee<span>
+		</a>
+	</h3>
+
+	<div class="form-group">
+		<fieldset>
+			<legend class="form-label-bold">
+				Type of fee
+			</legend>
+
+			<select class="form-control fx-select-fixed-fee-1-type" name="fixed_fee_1_type" id="fixed-fee-1-type">
+				<option value=""></option>
+
+				{% for fee in fixed_fees %}
+					<option data-case-numbers="{{fee.attributes.additional_case_numbers}}" value="{{fee.key}}" {% if data['fixed_fee_1_type'] == fee.key %}selected="selected"{% endif %}>{{fee.name}}</option>
+				{%- endfor %}
+
+			</select>
+
+		</fieldset>
+	</div>
+
+	<div class="form-group">
+	    <label class="form-label-bold" for="fixed-fee-1-quantity">
+	        Quantity
+	    </label>
+	    <input class="form-control form-control-1-8" id="fixed-fee-1-quantity" type="text" name="fixed_fee_1_quantity" value="{{data['fixed_fee_1_quantity']}}" autocomplete="off" autocapitalize="off">
+	</div>
+
+	<div class="form-group fx-additional-case-numbers-1">
+	    <label class="form-label-bold" for="fixed-fee-1-additional-case-numbers">
+	        Additional case numbers
+	        <span class="form-hint">Separate with commas</span>
+	    </label>
+	    <input class="form-control" id="fixed-fee-1-additional-case-numbers" type="text" name="fixed_fee_1_additional_case_numbers" value="{{data['fixed_fee_1_additional_case_numbers']}}" autocomplete="off" autocapitalize="off">
+	</div>
+
+	<div class="form-group">
+	    <label class="form-label-bold" for="fixed-fee-1-net-amount">
+	        Net amount
+	    </label>
+	    <span class="form-input-denote">
+	        £
+	    </span>
+	    <input class="form-control form-control-1-4 form-input-denote__input" id="fixed-fee-1-net-amount" name="fixed_fee_1_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_net_amount']}}">
+	</div>
+
+{#}
+	<h3 class="heading-medium">
+		Fixed fee 1
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this fee<span>
+		</a>
+	</h3>
+	
+	<div class="form-group">
+		<fieldset>
+			<legend class="form-label-bold">
+				Type of fee
+			</legend>
+
+			<select class="form-control fx-select-fee-type" name="fee_type" id="fee-type">
+				<option value=""></option>
+
+				{% for fee in fixed_fees %}
+					<option data-case-numbers="{{fee.attributes.additional_case_numbers}}" value="{{fee.key}}" {% if data['fee_type'] == fee.key %}selected="selected"{% endif %}>{{fee.name}}</option>
+				{%- endfor %}
+
+			</select>
+
+		</fieldset>
+	</div>
+
+	<div class="form-group fx-additional-case-numbers">
+	    <label class="form-label-bold" for="fixed-fee-1-case-numbers">
+            Additional case numbers
+            <span class="form-hint">Separate with commas</span>
+        </label>
+        <input class="form-control" id="fixed-fee-1-case-numbers" type="text" name="fixed_fee_1_case_numbers" value="{{ data['fixed_fee_1_case_numbers']}}" autocomplete="off" autocapitalize="off">
+    </div>
+
+	<div class="form-group">
+        <label class="form-label-bold" for="fixed-fee-1-quantity">
+            Quantity
+        </label>
+        <input class="form-control form-control-1-8" id="fixed-fee-1-quantity" type="text" name="fixed_fee_1_quantity" value="{{ data['fixed_fee_1_quantity']}}" autocomplete="off" autocapitalize="off">
+    </div>
+
+	<div class="form-group">
+	    <label class="form-label-bold" for="fixed-fee-1-net-amount">
+	        Net amount
+	    </label>
+	    <span class="form-input-denote">
+	        £
+	    </span>
+	    <input class="form-control form-control-1-4 form-input-denote__input" id="fixed-fee-1-net-amount" name="fixed_fee_1_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_net_amount']}}">
+	</div>
+{#}
+</div>
+
+<div class="form-section">
+	<hr>
+	<div class="form-group form-buttons">
+		<a href="#noop" class="button button-secondary" role="button">Add another fixed fee</a>
+	</div>
+</div>

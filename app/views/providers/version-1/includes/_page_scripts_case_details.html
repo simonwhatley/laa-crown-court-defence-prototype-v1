@@ -1,0 +1,55 @@
+<script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script src="/public/javascripts/cccd-autocomplete.js"></script>
+<script>
+{% if data['bill_type'] in ['advocate_final','litigator_final'] -%}
+autocomplete({
+  selectElement: document.getElementById('case-type'),
+  showAllValues: false,
+  minLength: 0,
+  defaultValue: ''
+});
+{%- endif %}
+
+autocomplete({
+  selectElement: document.getElementById('court'),
+  showAllValues: false,
+  minLength: 0,
+  defaultValue: ''
+});
+
+autocomplete({
+  selectElement: document.getElementById('transfer-court'),
+  showAllValues: false,
+  minLength: 0,
+  defaultValue: ''
+});
+
+$(function(){
+  $('#case-type').on('blur', function(e){
+    e.preventDefault();
+
+    var type = $(this).val().toLowerCase().replace(/\s/g, '_');
+
+    $('.fx-case-details-trial').is(function(){
+      var $el = $(this);
+      type == "trial" || type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-retrial').is(function(){
+      var $el = $(this);
+      type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-trial').is(function(){
+      var $el = $(this);
+      type == "cracked_trial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-before-retrial').is(function(){
+      var $el = $(this);
+      type == "cracked_before_retrial" ? $el.show() : $el.hide();
+    });
+
+  });
+});
+</script>

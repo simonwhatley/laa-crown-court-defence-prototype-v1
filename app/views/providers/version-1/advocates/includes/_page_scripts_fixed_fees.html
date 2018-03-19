@@ -1,0 +1,46 @@
+<!-- <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script src="/public/javascripts/cccd-autocomplete.js"></script> -->
+<script type="text/javascript">
+// TODO: define autocomplete for 1..n fixed fees
+var i = 1;
+
+// autocomplete({
+//   selectElement: document.getElementById('fixed-fee-' + i + '-type'),
+//   showAllValues: true,
+//   // minLength: 0,
+//   defaultValue: ''
+// });
+
+$(function(){
+
+  $('.fx-additional-case-numbers-' + i).hide();
+
+  $('#fixed-fee-' + i + '-type').on('change', function(e){
+  // $('#fixed-fee-' + i + '-type').on('blur', function(e){
+    e.preventDefault();
+
+    // Replace spaces with underscores
+    // Remove parentheses
+    var type = $(this).val().toLowerCase().replace(/\s/g, '_').replace(/\(|\)/g, '');
+
+    $('.fx-additional-case-numbers-' + i).is(function(){
+      var $el = $(this);
+
+      type == "appeals_to_the_crown_court_against_conviction_uplift" ||
+      type == "appeals_to_the_crown_court_against_sentence_uplift" ||
+      type == "breach_of_a_crown_court_order_uplift" ||
+      type == "committal_for_sentence_hearings_uplift" ||
+      type == "cracked_case_discontinued_uplift" ||
+      type == "elected_case_not_proceeded_uplift" ||
+      type == "number_of_cases_uplift" ? $el.show() : $el.hide();
+
+    });
+
+  });
+
+  if ($('#fixed-fee-' + i + '-type').val()) {
+    $('#fixed-fee-' + i + '-type').trigger('blur');
+  }
+
+});
+</script>

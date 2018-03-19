@@ -1,0 +1,30 @@
+<script type="text/javascript">
+// TODO: define autocomplete for 1..n fixed fees
+var i = 1;
+
+$(function(){
+
+  $('.fx-additional-case-numbers-' + i).hide();
+
+  $('#miscellaneous-fee-' + i + '-type').on('change', function(e){
+    e.preventDefault();
+
+    // Replace spaces with underscores
+    // Remove parentheses
+    var type = $(this).val().toLowerCase().replace(/\s/g, '_').replace(/\(|\)/g, '');
+
+    $('.fx-additional-case-numbers-' + i).is(function(){
+      var $el = $(this);
+
+      type == "case_uplift" ? $el.show() : $el.hide();
+
+    });
+
+  });
+
+  if ($('#miscellaneous-fee-' + i + '-type').val()) {
+    $('#miscellaneous-fee-' + i + '-type').trigger('change');
+  }
+
+});
+</script>

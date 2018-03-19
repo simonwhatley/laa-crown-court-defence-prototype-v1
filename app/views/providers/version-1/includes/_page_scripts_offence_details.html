@@ -1,0 +1,12 @@
+<script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script src="/public/javascripts/cccd-autocomplete.js"></script>
+<script>
+$("#offence-class").depdrop({
+  depends: ['offence-category'],
+    url: '../data/offences/9/classes',
+    loadingText: '',
+    parentParam: 'category',
+    idParam: 'key'
+    {%- if data['offence_category'].length %}, initialize: true{%- endif %}
+});
+</script>

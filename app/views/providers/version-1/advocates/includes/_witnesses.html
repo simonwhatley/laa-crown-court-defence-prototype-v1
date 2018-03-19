@@ -1,0 +1,34 @@
+<div class="form-section">
+
+	<h3 class="heading-medium">
+		Witnesses
+	</h3>
+
+	<div class="grid-row">
+		<div class="column-one-half">
+			<label class="form-label">
+				Total number of prosecution witnesses
+			</label>
+		</div>
+		<div class="column-one-quarter">
+			<div class="form-group">
+		        <label class="form-label-bold" for="witnesses-quantity">
+		            Quantity
+		        </label>
+		        <input class="form-control" id="witnesses-quantity" type="text" name="witnesses_quantity" value="{{ data['witnesses_quantity']}}" autocomplete="off" autocapitalize="off">
+		    </div>
+		</div>
+		<div class="column-one-quarter">
+			<div class="form-group">
+		        <label class="form-label-bold" for="witnesses-net-amount">
+		            Net amount
+		        </label>
+		        <span class="form-input-denote">
+		            £
+		        </span>
+		        <input class="form-control form-control-3-4 form-input-denote__input" id="witnesses-net-amount" name="witnesses_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['witnesses_net_amount']}}">
+		    </div>
+		</div>
+	</div>
+
+</div>

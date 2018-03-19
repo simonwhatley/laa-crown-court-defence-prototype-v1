@@ -1,0 +1,26 @@
+<div class="form-group">
+    <label class="form-label-bold" for="offence-category">
+        Offence category
+        <span class="form-hint">
+            If the offence category is not listed,
+            <br>
+                choose "Miscellaneous/other"
+            </br>
+        </span>
+    </label>
+    <select class="form-control" id="offence-category" name="offence_category">
+        <option value=""></option>
+        {% for offence in offences -%}
+        <option value="{{offence.key}}" {% if data['offence_category'] == offence.key %}selected="selected"{% endif %}>{{offence.name}}</option>
+        {%- endfor %}
+    </select>
+</div>
+<div class="form-group">
+    <label class="form-label-bold" for="offence-class">
+        Offence class
+        <!-- <span class="form-hint">Something</span> -->
+    </label>
+    <select class="form-control" id="offence-class" name="offence_class">
+       <!--  <option value=""></option> -->
+    </select>
+</div>

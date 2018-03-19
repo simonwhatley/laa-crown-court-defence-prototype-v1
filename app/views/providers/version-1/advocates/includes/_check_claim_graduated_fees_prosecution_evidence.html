@@ -1,0 +1,14 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">Total number of pages</th>
+			<td>{{data['total_number_of_pages_of_prosecution_evidence']}}</td>
+		</tr>
+		{% if data['fee_scheme_version'] == 9 -%}
+		<tr>
+			<th class="bold" scope="row">Net amount</th>
+			<td>&pound;{{data['prosecution_evidence_net_amount']|numeral('0,0.00')}}</td>
+		</tr>
+		{%- endif %}
+	</tbody>
+</table>

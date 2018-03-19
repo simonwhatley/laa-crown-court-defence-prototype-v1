@@ -1,0 +1,78 @@
+<script type="text/javascript">
+$(function(){
+  
+  $('.fx-select-expense-type').on('change', function(e){
+    e.preventDefault();
+    
+    var costState = $(this).find(':selected').attr('data-cost');
+    var dateState = $(this).find(':selected').attr('data-date');
+    var destinationState = $(this).find(':selected').attr('data-destination');
+    var distanceState = $(this).find(':selected').attr('data-distance');
+    var hoursState = $(this).find(':selected').attr('data-hours');
+    var locationState = $(this).find(':selected').attr('data-location');
+    var mileageState = $(this).find(':selected').attr('data-mileage');
+    var reasonState = $(this).find(':selected').attr('data-reason');
+    var netAmountState = $(this).find(':selected').attr('data-net-amount');
+    var vatAmountState = $(this).find(':selected').attr('data-vat-amount');
+    
+
+    $('.fx-travel-cost').is(function(){
+      var $el = $(this);
+      costState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-date').is(function(){
+      var $el = $(this);
+      dateState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-destination').is(function(){
+      var $el = $(this);
+      destinationState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-distance').is(function(){
+      var $el = $(this);
+      distanceState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-hours').is(function(){
+      var $el = $(this);
+      hoursState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-location').is(function(){
+      var $el = $(this);
+      locationState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-mileage').is(function(){
+      var $el = $(this);
+      mileageState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-reason').is(function(){
+      var $el = $(this);
+      reasonState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-net-amount').is(function(){
+      var $el = $(this);
+      netAmountState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-vat-amount').is(function(){
+      var $el = $(this);
+      vatAmountState == "true" ? $el.show() : $el.hide();
+    });
+
+  });
+
+{% if data['travel_expense_1_type'].length %}
+if ($('.fx-select-expense-type').val()) {
+  $('.fx-select-expense-type').trigger('change');
+}
+{%- endif %}
+
+});
+</script>

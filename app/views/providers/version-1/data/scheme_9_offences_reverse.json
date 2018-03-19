@@ -1,0 +1,2658 @@
+{
+    "categories": [{
+        "key": 1,
+        "name": "Abandonment of children under two",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 2,
+        "name": "Abduction of defective from parent",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 3,
+        "name": "Abduction of unmarried girl under 16 from parent",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 4,
+        "name": "Abduction of unmarried girl under 18 from parent",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 5,
+        "name": "Abduction of woman by force",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 6,
+        "name": "Abstraction of electricity",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 7,
+        "name": "Abuse of position of trust",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 8,
+        "name": "Abuse of position of trust: causing a child to engage in sexual activity",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 9,
+        "name": "Abuse of position of trust: causing a child to watch sexual activity",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 10,
+        "name": "Abuse of trust: sexual activity in the presence of a child",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 11,
+        "name": "Abuse of trust: sexual activity with a child",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 12,
+        "name": "Acquisition by or supply of firearms to person denied them",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 13,
+        "name": "Acquisition use or possession of criminal property",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 14,
+        "name": "Activities relating to opium",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 15,
+        "name": "Acts outraging public decency",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 16,
+        "name": "Administering a substance with intent",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 17,
+        "name": "Administering chloroform, laudanum etc.",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 18,
+        "name": "Administering drugs to obtain intercourse",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 19,
+        "name": "Administering poison etc. so as to endanger life",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 20,
+        "name": "Administering poison with intent to injure etc.",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 21,
+        "name": "Affray",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 22,
+        "name": "Aggravated arson",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 23,
+        "name": "Aggravated burglary",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 24,
+        "name": "Aggravated criminal damage",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 25,
+        "name": "Aggravated vehicle taking",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 26,
+        "name": "Aggravated vehicle taking resulting in death",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 27,
+        "name": "Agreeing to indemnify sureties",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 28,
+        "name": "Aiding and abetting suicide",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 29,
+        "name": "Allowing or procuring child under 16 to go abroad to perform",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 30,
+        "name": "Allowing the death of a child",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 31,
+        "name": "Armed robbery",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 32,
+        "name": "Arranging child sex offence",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 33,
+        "name": "Arson (other than aggravated arson) where value does not exceed £300",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 34,
+        "name": "Arson (where value exceeds £30,000)",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 35,
+        "name": "Assault by penetration",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 36,
+        "name": "Assault occasioning actual bodily harm",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 37,
+        "name": "Assault of child under 13 by penetration",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 38,
+        "name": "Assault with intent to commit buggery",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 39,
+        "name": "Assault with intent to resist arrest",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 40,
+        "name": "Assault with weapon with intent to rob",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 41,
+        "name": "Assaulting prison officer whilst possessing firearm etc.",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 42,
+        "name": "Assaults on officers saving wrecks",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 43,
+        "name": "Assisting illegal entry or harbouring persons",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 44,
+        "name": "Assisting offenders",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 45,
+        "name": "Assisting prisoners to escape",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 46,
+        "name": "Attempt to cause explosion making or keeping explosive etc.",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 47,
+        "name": "Attempting to choke, suffocate, strangle etc.",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 48,
+        "name": "Attempting to injure or alarm the Sovereign",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 49,
+        "name": "Being drunk on an aircraft",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 50,
+        "name": "Blackmail",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 51,
+        "name": "Bomb hoax",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 52,
+        "name": "Breach of anti-social behaviour order",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 53,
+        "name": "Breach of harassment injunction",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 54,
+        "name": "Breach of prison",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 55,
+        "name": "Breach of restraining order",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 56,
+        "name": "Breach of sex offender order",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 57,
+        "name": "Breaking or injuring submarine telegraph cables",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 58,
+        "name": "Buggery of males of 16 or over otherwise than in private",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 59,
+        "name": "Buggery of person under 16",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 60,
+        "name": "Burglary (domestic)",
+        "classes": [{
+            "key": "E",
+            "name": "Burglary"
+        }]
+    }, {
+        "key": 61,
+        "name": "Burglary (non-domestic)",
+        "classes": [{
+            "key": "E",
+            "name": "Burglary"
+        }]
+    }, {
+        "key": 62,
+        "name": "Care workers: causing a person with a mental disorder to watch a sexual act",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 63,
+        "name": "Care workers: inciting person with mental disorder to engage in sexual act",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 64,
+        "name": "Care workers: sexual activity in presence of a person with a mental disorder",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 65,
+        "name": "Care workers: sexual activity with a person with a mental disorder",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 66,
+        "name": "Carrying loaded firearm in public place",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 67,
+        "name": "Causing a child to engage in sexual activity",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 68,
+        "name": "Causing a child to watch a sexual act",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 69,
+        "name": "Causing a child under 13 to engage in sexual activity",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 70,
+        "name": "Causing a person with a mental disorder to watch a sexual act",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 71,
+        "name": "Causing bodily injury by explosives",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 72,
+        "name": "Causing danger to road users",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 73,
+        "name": "Causing death by careless driving while under the influence of drink or drugs",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 74,
+        "name": "Causing death by dangerous driving",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 75,
+        "name": "Causing explosion likely to endanger life or property",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 76,
+        "name": "Causing miscarriage by poison, instrument",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 77,
+        "name": "Causing or allowing the death of a child",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 78,
+        "name": "Causing or encouraging prostitution of defective",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 79,
+        "name": "Causing or encouraging prostitution of girl under 16",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 80,
+        "name": "Causing or inciting a person with a mental disorder to engage in sexual activity",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 81,
+        "name": "Causing or inciting child prostitution or pornography",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 82,
+        "name": "Causing or inciting prostitution for gain",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 83,
+        "name": "Causing prostitution of women",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 84,
+        "name": "Causing sexual activity with penetration",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 85,
+        "name": "Causing sexual activity without penetration",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 86,
+        "name": "Child abduction by connected person",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 87,
+        "name": "Child abduction by other person",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 88,
+        "name": "Child destruction",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 89,
+        "name": "Child sex offence committed by person under 18",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 90,
+        "name": "Circumcision of females",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 91,
+        "name": "Committing offence with intent to commit sexual offence",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 92,
+        "name": "Concealing an arrestable offence",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 93,
+        "name": "Concealing criminal property",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 94,
+        "name": "Concealment of birth",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 95,
+        "name": "Conspiring to commit offences outside the United Kingdom",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 96,
+        "name": "Contamination of goods with intent",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 97,
+        "name": "Controlling a child prostitute",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 98,
+        "name": "Controlling prostitution for gain",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 99,
+        "name": "Copying false instrument with intent",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 100,
+        "name": "Corrupt transactions with agents",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 101,
+        "name": "Corruption in public office",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 102,
+        "name": "Counterfeiting Customs documents",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 103,
+        "name": "Counterfeiting notes and coins",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 104,
+        "name": "Counterfeiting of dies or marks",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 104,
+        "name": "Counterfeiting of dies or marks",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 104,
+        "name": "Counterfeiting of dies or marks",
+        "classes": [{
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 105,
+        "name": "Criminal damage (other than aggravated criminal damage)",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 106,
+        "name": "Cruelty to persons under 16",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 107,
+        "name": "Cultivation of cannabis plant",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 108,
+        "name": "Custody or control of false instruments etc.",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 109,
+        "name": "Dangerous driving",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 110,
+        "name": "Dealing in firearms",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 111,
+        "name": "Destruction of registers of births etc.",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 112,
+        "name": "Detention of woman in brothel or other premises",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 113,
+        "name": "Directing terrorist organisation",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 114,
+        "name": "Disclosure prejudicing, or interference of material relevant to, investigation of terrorism",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 115,
+        "name": "Disclosure under sections 330, 331, 332 or 333 of the Proceeds of Crime Act 2002 otherwise than in the form and manner prescribed",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 116,
+        "name": "Drug trafficking offences at sea",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 117,
+        "name": "Embracery",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 118,
+        "name": "Endangering the safety of an aircraft",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 119,
+        "name": "Endangering the safety of railway passengers",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 120,
+        "name": "Engaging in sexual activity in the presence of a child",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 121,
+        "name": "Engaging in sexual activity in the presence of a person with a mental disorder",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 122,
+        "name": "Escaping from lawful custody without force",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 123,
+        "name": "Evasion of liability by deception",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 123,
+        "name": "Evasion of liability by deception",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 123,
+        "name": "Evasion of liability by deception",
+        "classes": [{
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 124,
+        "name": "Exposure",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 125,
+        "name": "Fabrication of evidence with intent to mislead a tribunal",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 126,
+        "name": "Facilitating child prostitution",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 127,
+        "name": "Failing to keep dogs under proper control resulting in injury",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 128,
+        "name": "Failure to comply with certificate when transferring firearm",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 129,
+        "name": "Failure to disclose information about terrorism",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 130,
+        "name": "Failure to disclose knowledge or suspicion of money laundering",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 131,
+        "name": "Failure to disclose knowledge or suspicion of money laundering: nominated officers in the regulated sector",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 132,
+        "name": "Failure to disclose knowledge or suspicion of money laundering: other nominated officers",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 133,
+        "name": "Failure to disclose knowledge or suspicion of money laundering: regulated sector",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 134,
+        "name": "False accounting",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 135,
+        "name": "False evidence before European Court",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 136,
+        "name": "False imprisonment",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 137,
+        "name": "False statement tendered under section 5B of the Magistrates' Courts Act 1980",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 138,
+        "name": "False statement tendered under section 9 of the Criminal Justice Act 1967",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 139,
+        "name": "Firing on Revenue vessel",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 140,
+        "name": "Forgery",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 141,
+        "name": "Forgery and misuse of driving documents",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 142,
+        "name": "Forgery etc. of licences and other documents",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 143,
+        "name": "Forgery of driving documents",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 144,
+        "name": "Forgery, alteration, fraud of licences etc.",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 145,
+        "name": "Fraud by abuse of position",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 146,
+        "name": "Fraud by failing to disclose information",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 147,
+        "name": "Fraud by false representation",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 148,
+        "name": "Fraudulent evasion of agricultural levy",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 149,
+        "name": "Fraudulent evasion of controls on Class A and B drugs",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 150,
+        "name": "Fraudulent evasion of controls on Class C drugs",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 151,
+        "name": "Fraudulent evasion of duty",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 152,
+        "name": "Fraudulent evasion: counterfeit notes or coins",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 153,
+        "name": "Fraudulent evasion: not elsewhere specified",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 154,
+        "name": "Fund-raising for terrorism",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 155,
+        "name": "Giving false statements to procure cremation",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 156,
+        "name": "Going equipped to steal",
+        "classes": [{
+            "key": "E",
+            "name": "Burglary"
+        }]
+    }, {
+        "key": 157,
+        "name": "Gross indecency between male of 21 or over and male under 16",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 158,
+        "name": "Gross indecency between males (other than where one is 21 or over and the other is under 16)",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 159,
+        "name": "Handling stolen goods",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 160,
+        "name": "Harbouring escaped prisoners",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 161,
+        "name": "Harming, threatening to harm a witness, juror etc.",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 162,
+        "name": "Having an article with a blade or point in a public place",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 163,
+        "name": "Hostage taking",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 165,
+        "name": "Illegal importation of Class A and B drugs",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 166,
+        "name": "Illegal importation of Class C drugs",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 167,
+        "name": "Illegal importation: counterfeit notes or coins",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 168,
+        "name": "Illegal importation: not elsewhere specified",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 164,
+        "name": "Ill-treatment of persons of unsound mind",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 169,
+        "name": "Impeding persons endeavouring to escape wrecks",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 170,
+        "name": "Impersonating Customs officer",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 171,
+        "name": "Incest by man with a girl under 13",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 172,
+        "name": "Incest other than by man with a girl under 13",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 173,
+        "name": "Incitement of terrorism overseas",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 174,
+        "name": "Incitement to commit incest",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 175,
+        "name": "Inciting a child family member to engage in sexual activity",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 176,
+        "name": "Indecency with children under 14",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 177,
+        "name": "Indecent assault on a man",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 178,
+        "name": "Indecent assault on a woman",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 179,
+        "name": "Indecent display",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 180,
+        "name": "Inducing person with mental disorder to engage in sexual activity",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 181,
+        "name": "Infanticide",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 182,
+        "name": "Intercourse with an animal",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 183,
+        "name": "Intimidating a witness, juror etc.",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 184,
+        "name": "Involvement in arrangements facilitating the acquisition, retention, use or control of criminal property",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 185,
+        "name": "Keeping a disorderly house",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 186,
+        "name": "Kidnapping",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 187,
+        "name": "Living on earnings of male prostitution",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 188,
+        "name": "Making a false statement to obtain interim possession order",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 189,
+        "name": "Making false entries in copies of registers sent to register",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 190,
+        "name": "Making false statement to authorised officer",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 191,
+        "name": "Making false statement to resist making of interim possession order",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 192,
+        "name": "Making gunpowder etc. to commit offences",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 193,
+        "name": "Making off without payment",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 194,
+        "name": "Making or possession of explosive in suspicious circumstances",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 195,
+        "name": "Making or supplying articles for use in frauds",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 196,
+        "name": "Making threats to destroy or damage property",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 197,
+        "name": "Making threats to kill",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 198,
+        "name": "Making, custody or control of counterfeiting materials etc.",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 199,
+        "name": "Man living on earnings of prostitution",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 200,
+        "name": "Manslaughter",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 201,
+        "name": "Manufacture and supply of scheduled substances",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 202,
+        "name": "Meeting child following sexual grooming",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 203,
+        "name": "Membership of proscribed organisations",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 205,
+        "name": "Misconduct endangering ship or persons on board ship",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 206,
+        "name": "Mishandling or falsifying parking documents etc.",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 207,
+        "name": "Murder",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 208,
+        "name": "Neglecting to provide food for or assaulting servants etc.",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 209,
+        "name": "Obscene articles intended for publication for gain",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 210,
+        "name": "Obstructing Customs officer",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 211,
+        "name": "Obstructing engine or carriage on railway",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 212,
+        "name": "Obtaining pecuniary advantage by deception",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 213,
+        "name": "Obtaining property by deception",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 214,
+        "name": "Obtaining services by deception",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 215,
+        "name": "Obtaining services by dishonesty",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 216,
+        "name": "Occupier knowingly permitting drugs offences etc.",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 217,
+        "name": "Offences against international protection of nuclear material",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 218,
+        "name": "Offences in relation to dies or stamps",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 219,
+        "name": "Offences in relation to money laundering investigations",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 220,
+        "name": "Offences in relation to proceeds of drug trafficking",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 221,
+        "name": "Offences involving custody or control of counterfeit notes and coins",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 222,
+        "name": "Offences of publication of obscene matter",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 223,
+        "name": "Offences relating to the safe custody of controlled drugs",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 224,
+        "name": "Offender armed or disguised",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 225,
+        "name": "Offering inducement to procure sexual activity with a person with a mental disorder",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 226,
+        "name": "Other offences involving money or property to be used for terrorism",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 227,
+        "name": "Participating in fraudulent business carried on by sole trader etc.",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 228,
+        "name": "Passing counterfeit notes and coins",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 229,
+        "name": "Paying for sexual services of a child",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 230,
+        "name": "Perjuries (7 offences)",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 231,
+        "name": "Permitting an escape",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 232,
+        "name": "Permitting defective to use premises for intercourse",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 233,
+        "name": "Permitting girl under 13 to use premises for sexual intercourse",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 234,
+        "name": "Permitting girl under 16 to use premises for intercourse",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 235,
+        "name": "Personating for purposes of bail etc.",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 236,
+        "name": "Personation of jurors",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 237,
+        "name": "Perverting the course of public justice",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 238,
+        "name": "Placing explosives with intent to cause bodily injury",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 239,
+        "name": "Possessing anything with intent to destroy or damage property",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 240,
+        "name": "Possession (with intention) of apparatus or material for making false identity documents",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 241,
+        "name": "Possession (with intention) of false identity documents",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 249,
+        "name": "Possession of false identify documents",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 242,
+        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 243,
+        "name": "Possession etc of articles for use in frauds",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 244,
+        "name": "Possession of a Class A or B drug with intent to supply",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 245,
+        "name": "Possession of a Class C drug with intent to supply",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 246,
+        "name": "Possession of articles for terrorist purposes",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 247,
+        "name": "Possession of Class A drug",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 248,
+        "name": "Possession of Class B or C drug",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 250,
+        "name": "Possession of firearm with criminal intent",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 251,
+        "name": "Possession of firearm with intent to endanger life",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 252,
+        "name": "Possession of firearm without certificate",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 253,
+        "name": "Possession of firearms by person convicted of crime",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 254,
+        "name": "Possession of offensive weapon",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 255,
+        "name": "Possession or acquisition of certain prohibited weapons etc.",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 256,
+        "name": "Possession or acquisition of shotgun without certificate",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 257,
+        "name": "Practitioner contravening drug supply regulations",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 258,
+        "name": "Prejudicing a drug trafficking investigation",
+        "classes": [{
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }]
+    }, {
+        "key": 259,
+        "name": "Presentation of obscene performance",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 260,
+        "name": "Prison mutiny",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 261,
+        "name": "Procuration of girl under 21",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 262,
+        "name": "Procurement of a defective",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 263,
+        "name": "Procurement of a woman by false pretences",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 264,
+        "name": "Procurement of intercourse by threats etc.",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 265,
+        "name": "Procuring others to commit homosexual acts",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 266,
+        "name": "Producing or supplying a Class A or B drug",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 267,
+        "name": "Producing or supplying Class C drug",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 268,
+        "name": "Putting people in fear of violence",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 269,
+        "name": "Racially aggravated harassment/putting another in fear of violence",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 270,
+        "name": "Racially-aggravated arson (not endangering life)",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 271,
+        "name": "Racially-aggravated assault",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 272,
+        "name": "Racially-aggravated criminal damage",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 273,
+        "name": "Racially-aggravated public order offence",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 274,
+        "name": "Rape",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 275,
+        "name": "Rape of child under 13",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 276,
+        "name": "Removal of articles from places open to the public",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 277,
+        "name": "Rescue",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 278,
+        "name": "Riot",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 279,
+        "name": "Robbery (other than armed robbery)",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 280,
+        "name": "Sending prohibited articles by post",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 281,
+        "name": "Setting spring guns with intent to inflict grievous bodily harm",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 282,
+        "name": "Sex with adult relative",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 283,
+        "name": "Sexual activity with a child",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 284,
+        "name": "Sexual activity with a child family member, with penetration",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 285,
+        "name": "Sexual activity with a person with a mental disorder",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 286,
+        "name": "Sexual assault",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 287,
+        "name": "Sexual assault of child under 13",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 288,
+        "name": "Sexual intercourse with defective",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 289,
+        "name": "Sexual intercourse with girl under 13",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 290,
+        "name": "Sexual intercourse with girl under 16",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 291,
+        "name": "Sexual intercourse with patients",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 292,
+        "name": "Sexual penetration of a corpse",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 293,
+        "name": "Shortening of shotgun or possession of shortened shotgun",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 294,
+        "name": "Shortening of smooth bore gun",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 295,
+        "name": "Solicitation for immoral purposes",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 296,
+        "name": "Soliciting to commit murder",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }]
+    }, {
+        "key": 297,
+        "name": "Stirring up racial hatred",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 298,
+        "name": "Supplying instrument etc. to cause miscarriage",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 299,
+        "name": "Support or meeting of proscribed organisations",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 300,
+        "name": "Taking, having etc. indecent photographs of children",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 301,
+        "name": "Theft",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 301,
+        "name": "Theft",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 301,
+        "name": "Theft",
+        "classes": [{
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 302,
+        "name": "Tipping off",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 303,
+        "name": "Tipping-off in relation to money laundering investigations",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 304,
+        "name": "Trade description offences (9 offences)",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 305,
+        "name": "Trafficking into UK for sexual exploitation",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 306,
+        "name": "Trafficking out of UK for sexual exploitation",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 307,
+        "name": "Trafficking within UK for sexual exploitation",
+        "classes": [{
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }]
+    }, {
+        "key": 308,
+        "name": "Trespass with intent to commit sexual offence",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 309,
+        "name": "Trespassing with a firearm",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 310,
+        "name": "Undischarged bankrupt being concerned in a company",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 311,
+        "name": "Uniform of proscribed organisations",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 312,
+        "name": "Unlawful collection of information for terrorist purposes",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 313,
+        "name": "Unlawful eviction and harassment of occupier",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 314,
+        "name": "Unlawful wounding",
+        "classes": [{
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }]
+    }, {
+        "key": 315,
+        "name": "Use of firearm to resist arrest",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 316,
+        "name": "Using a copy of a false instrument",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 316,
+        "name": "Using a copy of a false instrument",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 316,
+        "name": "Using a copy of a false instrument",
+        "classes": [{
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 317,
+        "name": "Using a false instrument",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 317,
+        "name": "Using a false instrument",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 317,
+        "name": "Using a false instrument",
+        "classes": [{
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 318,
+        "name": "Using explosive or corrosives with intent to cause grievous bodily harm",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 319,
+        "name": "VAT offences",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }]
+    }, {
+        "key": 319,
+        "name": "VAT offences",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }]
+    }, {
+        "key": 319,
+        "name": "VAT offences",
+        "classes": [{
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 320,
+        "name": "Violent disorder",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 321,
+        "name": "Voyeurism",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 322,
+        "name": "Wanton or furious driving",
+        "classes": [{
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }]
+    }, {
+        "key": 323,
+        "name": "Weapons training",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 324,
+        "name": "Woman exercising control over prostitute",
+        "classes": [{
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }]
+    }, {
+        "key": 325,
+        "name": "Wounding or grievous bodily harm with intent to cause grievous bodily harm etc.",
+        "classes": [{
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }]
+    }, {
+        "key": 204,
+        "name": "Miscellaneous/other",
+        "classes": [{
+            "key": "A",
+            "name": "Homicide and related grave offences"
+        }, {
+            "key": "B",
+            "name": "Offences involving serious violence or damage and serious drug offences"
+        }, {
+            "key": "C",
+            "name": "Lesser offences involving violence or damage and less serious drug offences"
+        }, {
+            "key": "D",
+            "name": "Serious sexual offences and offences against children"
+        }, {
+            "key": "E",
+            "name": "Burglary"
+        }, {
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "H",
+            "name": "Miscellaneous lesser offences"
+        }, {
+            "key": "I",
+            "name": "Offences against public justice and similar offences"
+        }, {
+            "key": "J",
+            "name": "Serious sexual offences, offences against children"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 103,
+        "name": "Counterfeiting notes and coins",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 111,
+        "name": "Destruction of registers of births etc.",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 152,
+        "name": "Fraudulent evasion: counterfeit notes or coins",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 167,
+        "name": "Illegal importation: counterfeit notes or coins",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 189,
+        "name": "Making false entries in copies of registers sent to register",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 198,
+        "name": "Making, custody or control of counterfeiting materials etc.",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 221,
+        "name": "Offences involving custody or control of counterfeit notes and coins",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 228,
+        "name": "Passing counterfeit notes and coins",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 240,
+        "name": "Possession (with intention) of apparatus or material for making false identity documents",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 241,
+        "name": "Possession (with intention) of false identity documents",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 249,
+        "name": "Possession of false identify documents",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 242,
+        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents",
+        "classes": [{
+            "key": "G",
+            "name": "Other offences of dishonesty between £30,001 and £100,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 276,
+        "name": "Removal of articles from places open to the public",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }, {
+        "key": 310,
+        "name": "Undischarged bankrupt being concerned in a company",
+        "classes": [{
+            "key": "F",
+            "name": "Other offences of dishonesty up to £30,000"
+        }, {
+            "key": "K",
+            "name": "Offences of dishonesty in Class F where the value in is in excess of £100,000"
+        }]
+    }]
+}

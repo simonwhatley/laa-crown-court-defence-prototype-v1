@@ -1,0 +1,32 @@
+<div class="form-group">
+	<fieldset>
+
+		<legend class="form-label-bold">
+			Will you be sending disk evidence for this claim?
+		</legend>
+
+		<div class="multiple-choice" data-target="electronic-evidence-panel">
+			<input id="electronic-evidence-yes" type="radio" name="electronic_evidence_option" value="yes" {{ checked('electronic_evidence_option','yes') }}>
+			<label for="electronic-evidence-yes">Yes</label>
+		</div>
+		<div class="panel panel-border-narrow js-hidden" id="electronic-evidence-panel">
+			<h3 class="heading-small">Help with sending the evidence</h3>
+			<p>You have electronic evidence on disk that relates to this claim. It is recommended that you send it by recorded delivery.</p>
+			<p>Please fill the <a href="#noop" rel="external" target="_blank">electronic evidence coversheet<span class="visually-hidden"> opens in new window</span></a> and include it with your disk(s).</p>
+			<p>
+			Legal Aid Agency<br>
+			Reference: {{data['case_number']}}<br>
+			Fothergill House<br>
+			16 King Street<br>
+			Nottingham<br>
+			NG1 2AS
+			</p>
+		</div>
+
+		<div class="multiple-choice">
+			<input id="electronic-evidence-no" type="radio" name="electronic_evidence_option" value="no" {{ checked('electronic_evidence_option','no') }}>
+			<label for="electronic-evidence-no">No</label>
+		</div>
+
+	</fieldset>
+</div>

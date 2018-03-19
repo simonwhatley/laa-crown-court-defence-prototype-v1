@@ -1,0 +1,35 @@
+<div class="form-section">
+	<h2 class="heading-large">
+		Interim fees
+	</h2>
+
+	<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
+
+	<div class="form-group">
+		<fieldset>
+			<legend class="form-label-bold">
+				Type of fee
+			</legend>
+
+			<select id="interim-fee-1-type" name="interim_fee_type" class="form-control">
+				<option value="">&nbsp;</option>
+
+				<option value="disbursement_only"{% if data['interim_fee_type'] == 'disbursement_only' -%} selected="selected"{%- endif %}>Disbursement only</option>
+				<option value="plea_trial_prep_hearing"{% if data['interim_fee_type'] == 'plea_trial_prep_hearing' -%} selected="selected"{%- endif %}>Plea and trial preparation hearing (PTPH)</option>
+				{% if data['case_type'] == 'retrial' -%}
+					<option value="retrial_new_solicitor"{% if data['interim_fee_type'] == 'retrial_new_solicitor' -%} selected="selected"{%- endif %}>Retrial, new solicitor</option>
+					<option value="retrial_start"{% if data['interim_fee_type'] == 'retrial_start' -%} selected="selected"{%- endif %}>Retrial start</option>
+				{%- endif %}
+				{% if data['case_type'] == 'trial' -%}
+					<option value="trial_start"{% if data['interim_fee_type'] == 'trial_start' -%} selected="selected"{%- endif %}>Trial start</option>
+				{%- endif %}
+				<option value="warrant_fee"{% if data['interim_fee_type'] == 'warrant_fee' -%} selected="selected"{%- endif %}>Warrant fee</option>
+
+			</select>
+
+
+		</fieldset>
+	</div>
+
+
+</div>

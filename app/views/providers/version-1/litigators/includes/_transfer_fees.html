@@ -1,0 +1,38 @@
+<div class="form-section">
+	<h2 class="heading-large">
+		Transfer fees
+	</h2>
+
+	<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
+
+	<div class="grid-row">
+		<div class="column-one-quarter">
+			<div class="form-group">
+		    	<span class="bold">
+		            Type of fee
+		        </span>
+		        <p>Transfer</p>
+		    </div>
+		</div>
+		<div class="column-one-half">
+			<div class="form-group">
+		        <label class="form-label-bold " for="total-number-of-pages-of-prosecution-evidence">
+		            Total PPE
+		        </label>
+		        <input class="form-control form-control-1-2" id="total-number-of-pages-of-prosecution-evidence" name="total_number_of_pages_of_prosecution_evidence" type="number" max="999999" min="0" step="1" value="{{data['total_number_of_pages_of_prosecution_evidence']}}" autocomplete="off">
+		    </div>
+		</div>
+		<div class="column-one-quarter">
+			<div class="form-group">
+		        <label class="form-label-bold" for="transfer-fee--net-amount">
+		            Net amount
+		        </label>
+		        <span class="form-input-denote">
+		            &pound;
+		        </span>
+		        <input class="form-control form-input-denote__input" style="width: 100%;" id="transfer-fee-net-amount" name="transfer_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.00" value="{{data['transfer_fee_net_amount']}}">
+		    </div>
+		</div>
+	</div>
+
+</div>

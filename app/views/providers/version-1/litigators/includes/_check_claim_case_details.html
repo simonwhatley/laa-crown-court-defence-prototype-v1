@@ -1,0 +1,66 @@
+{% if data['court'].length and data['case_number'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Supplier number
+			</th>
+			<td>{{data['supplier_number']|upper}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Reference number
+			</th>
+			<td>{{data['reference_number']}}</td>
+		</tr>
+		{% if data['bill_type'] in ['litigator_final','litigator_interim'] -%}
+		<tr>
+			<th class="bold" scope="row">
+				Case type
+			</th>
+			<td>{{data['case_type']|replace('_',' ')|title}}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Court
+			</th>
+			<td>{{data['court']|replace('_',' ')|title}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Case number
+			</th>
+			<td>{{data['case_number']|upper}}</td>
+		</tr>
+		{% if data['transfer_court_option'] == 'yes' -%}
+		<tr>
+			<th class="bold" scope="row">
+				Transfer court
+			</th>
+			<td>{{data['transfer_court']|replace('_',' ')|title}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Transfer case number
+			</th>
+			<td>{{data['transfer_case_number']}}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Date case concluded
+			</th>
+			<td>
+				{% if data['date_case_concluded_day'].length and data['date_case_concluded_month'].length and data['date_case_concluded_year'].length -%}
+					{{data['date_case_concluded_day']}}/{{data['date_case_concluded_month']}}/{{data['date_case_concluded_year']}}
+				{% else %}
+					Date not provided
+				{%- endif %}
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no case details for this claim.</p>
+{%- endif %}

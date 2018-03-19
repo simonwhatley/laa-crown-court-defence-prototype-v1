@@ -1,0 +1,247 @@
+{% if data['basic_fee_quantity'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">Basic fees</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['basic_fee_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['basic_fee_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['basic_fee_quantity'] * data['basic_fee_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Daily attendance fees (3 to 40 days)</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['daily_attendance_fee_1_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates</th>
+							<td>No dates provided</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['daily_attendance_fee_1_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['daily_attendance_fee_1_quantity'] * data['daily_attendance_fee_1_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Daily attendance fees (41 to 50 days)</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['daily_attendance_fee_2_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates</th>
+							<td>No dates provided</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['daily_attendance_fee_2_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['daily_attendance_fee_2_quantity'] * data['daily_attendance_fee_2_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Daily attendance fees (over 50 days)</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['daily_attendance_fee_3_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates</th>
+							<td>No dates provided</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['daily_attendance_fee_3_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['daily_attendance_fee_3_quantity'] * data['daily_attendance_fee_3_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Standard appearance fees</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['standard_appearance_fee_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates</th>
+							<td>No dates provided</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['standard_appearance_fee_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['standard_appearance_fee_quantity'] * data['standard_appearance_fee_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Plea and trial preparation hearing</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['plea_trial_preparation_hearing_fee_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['plea_trial_preparation_hearing_fee_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['plea_trial_preparation_hearing_fee_quantity'] * data['plea_trial_preparation_hearing_fee_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Conferences and views</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['conferences_views_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['conferences_views_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['conferences_views_quantity'] * data['conferences_views_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Number of defendants uplift</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['number_defendants_uplift_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['number_defendants_uplift_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['number_defendants_uplift_quantity'] * data['number_defendants_uplift_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Number of cases uplift</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['number_cases_uplift_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Rate</th>
+							<td>&pound;{{data['number_cases_uplift_rate']|numeral('0,0.00')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{(data['number_cases_uplift_quantity'] * data['number_cases_uplift_rate'])|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Witnesses</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['witnesses_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['witnesses_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="bold" scope="row">
+			<th>Pages of prosecution evidence</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['evidence_quantity']|numeral('0')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['evidence_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no graduated fees for this claim.</p>
+{%- endif %}

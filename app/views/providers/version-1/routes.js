@@ -1,16 +1,23 @@
 const express = require('express')
 const router = new express.Router()
 
-const utils = require('../../../utils')
+const utils = require('./utils')
 
 // ==============================================
 // COMMON
 // ==============================================
 
-// Route to the start (sign in) page
 router.get('/', (req, res) => {
-  res.redirect(`/${req.feature}/${req.version}/sign-in`);
-})
+    req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/sign-in`)
+});
+
+router.get('/sign-in', function(req, res) {
+    res.render(`${req.feature}/${req.version}/sign-in`,
+        {
+            proposition_links: "hide"
+        });
+});
 
 router.get('/auth', function(req, res) {
 
@@ -44,6 +51,14 @@ router.get('/sign-out', function(req, res) {
     res.redirect(`/${req.feature}/${req.version}/sign-in`);
 });
 
+// ==============================================
+// Data
+// ==============================================
+
+router.get('/data/offences/9/classes', function (req, res) {
+    var data = { output: utils.getOffenceClasses(req.session.data.category[0]) , selected: req.session.data.offence_class }
+    res.json(data)
+});
 
 // ==============================================
 // ADVOCATES
@@ -64,6 +79,13 @@ router.get('/advocates/', function(req, res) {
 
 router.get('/advocates/start', function(req, res) {
     req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/advocates/bill-type`);
+});
+
+
+
+router.get('/advocates/bill-type', function(req, res) {
+    req.session.data.bill_type = 'advocate_final'
     res.redirect(`/${req.feature}/${req.version}/advocates/case-details`);
 });
 
@@ -76,16 +98,26 @@ router.get('/advocates/case-details', function(req, res) {
                 'home' : req.baseUrl + '/advocates/',
                 'save' : req.baseUrl + '/advocates/',
                 'cancel' : req.baseUrl + '/advocates/cancel'
-            }
+            },
+            case_types: utils.getCaseTypesByFeeScheme('agfs'),
+            courts: utils.getCourts()
         });
 });
 
 router.get('/advocates/defendant-details', function(req, res) {
 
+    if (utils.isFixedFee("agfs", req.session.data.case_type)) {
+        req.session.data.fee_type = 'fixed'
+        var nextUrl = req.baseUrl + '/advocates/fees'
+    } else {
+        req.session.data.fee_type = 'graduated'
+        var nextUrl = req.baseUrl + '/advocates/offence-details'
+    }
+
     res.render(`${req.feature}/${req.version}/advocates/defendant-details`,
     	{
             links: {
-                'next' : req.baseUrl + '/advocates/offence-details',
+                'next' : nextUrl,
                 'previous' : req.baseUrl + '/advocates/case-details'
             }
     	});
@@ -98,7 +130,8 @@ router.get('/advocates/offence-details', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/fees',
                 'previous' : req.baseUrl + '/advocates/defendant-details'
-            }
+            },
+            offences: utils.getOffenceCategories()
     	});
 
 });
@@ -111,8 +144,9 @@ router.get('/advocates/fees', function(req, res) {
              {
                 links: {
                     'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                    'previous' : req.baseUrl + '/advocates/offence-details'
-                }
+                    'previous' : req.baseUrl + '/advocates/defendant-details'
+                },
+                fixed_fees: utils.getFixedFees('agfs','9')
              });
 
     } else {
@@ -135,7 +169,8 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
                 'previous' : req.baseUrl + '/advocates/fees'
-            }
+            },
+            misc_fees: utils.getMiscellaneousFees('agfs','9')
     	});
 });
 
@@ -145,7 +180,9 @@ router.get('/advocates/travel-expenses', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/supporting-evidence',
                 'previous' : req.baseUrl + '/advocates/miscellaneous-fees'
-            }
+            },
+            travel_types: utils.getTravelTypes('agfs'),
+            travel_reasons: utils.getTravelReasons()
     	});
 });
 
@@ -175,7 +212,8 @@ router.get('/advocates/claim-summary', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/advocates/certify-claim',
                 'previous' : req.baseUrl + '/advocates/additional-information'
-            }
+            },
+            offence: { "category_label": utils.getOffenceCategoryName(req.session.data.offence_category), "class_label": utils.getOffenceClassName(req.session.data.offence_class, req.session.data.offence_category) }
     	});
 });
 
@@ -389,7 +427,8 @@ router.get('/litigators/miscellaneous-fees', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/disbursements',
                 'previous' : req.baseUrl + '/litigators/fees'
-            }
+            },
+            misc_fees: utils.getMiscellaneousFees('lgfs','9')
     	});
 });
 
@@ -399,7 +438,8 @@ router.get('/litigators/disbursements', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/travel-expenses',
                 'previous' : req.baseUrl + '/litigators/miscellaneous-fees'
-            }
+            },
+            disbursements: utils.getDisbursements('lgfs','9')
     	});
 });
 
@@ -420,7 +460,9 @@ router.get('/litigators/travel-expenses', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/supporting-evidence',
                 'previous' : previousUrl
-            }
+            },
+            travel_types: utils.getTravelTypes('lgfs'),
+            travel_reasons: utils.getTravelReasons()
     	});
 });
 
@@ -471,7 +513,7 @@ router.get('/litigators/thank-you', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/thank-you`,
     	{
             links: {
-                'new' : req.baseUrl + '/litigators/bill-type',
+                'new' : req.baseUrl + '/litigators/start',
                 'home' : req.baseUrl + '/litigators/'
             }
     	});

@@ -1,27 +1,37 @@
-<div class="column-one-third">
+<div class="column-one-quarter">
+	<div id="sidebar" class="js-stick-at-top-when-scrolling">
+		<h2>
+			Summary total
+		</h2>
 
-	<h2>
-		Summary total
-	</h2>
+		<h3>
+			{% if data['fee_type'] == "graduated" -%}
+				Graduated fees
+			{% else %}
+				Fixed fees
+			{%- endif %}
+			<span class="numeric" data-total-fees="£0.00">£0.00</span>
+		</h3>
 
-	<h3>
-		Fees total
-		<span class="numeric" data-total-fees="£0.00">£0.00</span>
-	</h3>
+		<h3>
+			Miscellaneous fees
+			<span class="numeric" data-total-fees="£0.00">£0.00</span>
+		</h3>
 
-	<h3>
-		Expenses total
-		<span class="numeric" data-total-fees="£0.00">£0.00</span>
-	</h3>
+		<h3>
+			Travel expenses
+			<span class="numeric" data-total-fees="£0.00">£0.00</span>
+		</h3>
 
-	<h3>
-		VAT total
-		<span class="numeric" data-total-fees="£0.00">£0.00</span>
-	</h3>
+		<h3>
+			VAT
+			<span class="numeric" data-total-fees="£0.00">£0.00</span>
+		</h3>
 
-	<h3>
-		Total
-		<span class="numeric" data-total-fees="£0.00">£0.00</span>
-	</h3>
+		<h3>
+			Total
+			<span class="numeric" data-total-fees="£0.00">£0.00</span>
+		</h3>
 
+	</div>
 </div>

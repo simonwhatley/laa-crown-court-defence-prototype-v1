@@ -10,20 +10,27 @@
 
 	{% include "./includes/_banner.html" %}
 
-  	<div class="grid-row">
-	    <div class="column-two-thirds">
-
 	    	<a class="link-back" href="{{links.previous}}">Back</a>
-
-	    	<form class="form" method="post">
 
 				<h1 class="heading-xlarge">
 					Claim for advocate fees
 				</h1>
 
-				<h2 class="heading-large">
-					Defendant details
-				</h2>
+  	<div class="grid-row">
+	    <div class="column-three-quarters">
+
+	    	<form class="form" method="post">
+
+				<div class="form-section">
+					<h2 id="section-heading" class="heading-large">
+						Defendant details
+					</h2>
+
+					{% include "../includes/_defendant_details.html" %}
+
+					<hr>
+					<a href="#noop" class="button button-secondary" role="button">Add another defendant</a>
+				</div>
 
 				{% include "./includes/_form_actions.html" %}
 
@@ -32,6 +39,9 @@
 			{% include "./includes/_help.html" %}
 
 	    </div>
+
+	    {% include "./includes/_sidebar.html" %}
+
   	</div>
 
 </main>
