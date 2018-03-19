@@ -21,23 +21,79 @@
 					Claim for litigator fees
 				</h1>
 
-				<div class="form-section">
-					<h2 class="heading-large">
-						Certify claim
-					</h2>
-				</div>
+				<div class="grid-row">
+					<div class="column-two-thirds">
 
-				<div class="form-section">
-					<div class="form-group form-buttons">
-						<input type="submit" class="button" value="Certify and submit">
-						<input type="submit" class="button button-tertiary" value="Save as draft">
-						<!-- <a href="{{links.home}}">Cancel</a> -->
+						<h2 id="section-heading" class="heading-large">
+							Certify claim
+						</h2>
+						
+						<form class="form" method="post">
+
+							<p>I certify on behalf of the payee, that the information provided is correct.</p>
+
+							{% if data['bill_type'] == "litigator_final" -%}
+							<p>This work has not been and will not be the subject of any other claim for remuneration from criminal legal aid.</p>
+							{%- endif %}
+
+							<div class="form-section">
+
+								<div class="form-group">
+									<label class="form-label-bold" for="certifying-name">
+									Name of the person certifying claim
+									<span class="form-hint">
+										Enter your full name
+									</span>
+									</label>
+									<input class="form-control" id="certifying-name" type="text" name="certifying_name" value="{{ data['certifying_name']}}">
+								</div>
+
+								<div class="form-group">
+									<fieldset>
+										<legend>
+											<span class="form-label-bold">
+												Date of certification
+											</span>
+											<span class="form-hint">For example, 31 1 2018</span>
+										</legend>
+
+										<div class="form-date">
+											<div class="form-group form-group-day">
+												<label class="form-label" for="certification-day">Day</label>
+												<input class="form-control" id="certification-day" name="certification_day" type="number" pattern="[0-9]*" min="0" max="31">
+											</div>
+											<div class="form-group form-group-month">
+												<label class="form-label" for="certification-month">Month</label>
+												<input class="form-control" id="certification-month" name="certification_month" type="number" pattern="[0-9]*" min="0" max="12">
+											</div>
+											<div class="form-group form-group-year">
+												<label class="form-label" for="certification-year">Year</label>
+												<input class="form-control" id="certification-year" name="certification_year" type="number" pattern="[0-9]*" min="2017" max="2018">
+											</div>
+										</div>
+									</fieldset>
+								</div>
+
+							</div>
+							
+							<div class="form-section">
+								<div class="form-group form-buttons">
+									<input type="submit" class="button" value="Certify and submit" formaction="{{links.next}}">
+									<input type="submit" class="button button-tertiary" value="Save as draft" formaction="{{links.save}}">
+								</div>
+							</div>
+
+						</form>
+
+						{% include "./includes/_help.html" %}
+
 					</div>
+
+					{# include "./includes/_sidebar.html" #}
+
 				</div>
 
 			</form>
-
-			{% include "./includes/_help.html" %}
 
 	    </div>
   	</div>
