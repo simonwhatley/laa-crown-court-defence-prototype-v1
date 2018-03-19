@@ -75,6 +75,11 @@ router.get('/advocates/', function(req, res) {
 
 router.get('/advocates/start', function(req, res) {
     req.session.destroy()
+    res.redirect(`/${req.feature}/${req.version}/advocates/bill-type`);
+});
+
+router.get('/advocates/bill-type', function(req, res) {
+    req.session.data.bill_type = 'advocate_final'
     res.redirect(`/${req.feature}/${req.version}/advocates/case-details`);
 });
 
