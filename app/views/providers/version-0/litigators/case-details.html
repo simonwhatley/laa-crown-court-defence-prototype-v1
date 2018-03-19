@@ -14,19 +14,19 @@
 
 	{% include "../includes/_banner.html" %}
 
-	<div class="grid-row">
-	    <div class="column-full">
+	<a class="link-back" href="{{links.previous}}">
+		Back
+		<span class="visually-hidden"> to your claims</span>
+	</a>
 
-	    	<a class="link-back" href="{{links.previous}}">
-	    		Back
-	    		<span class="visually-hidden"> to your claims</span>
-	    	</a>
+	<h1 class="heading-xlarge">
+		Claim for litigator fees
+	</h1>
+
+	<div class="grid-row">
+	    <div class="column-three-quarters">
 
 	    	<form class="form" action="{{links.next}}" method="post">
-
-				<h1 class="heading-xlarge">
-					Claim for litigator fees
-				</h1>
 
 				<div class="grid-row">
 
@@ -96,6 +96,9 @@
 			{% include "./includes/_help.html" %}
 
 	    </div>
+
+		{% include "./includes/_sidebar.html" %}
+
   	</div>
 
 </main>

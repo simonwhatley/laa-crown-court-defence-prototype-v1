@@ -7,8 +7,10 @@
 		<h3>
 			{% if fee_type == "graduated" or data['fee_type'] == "graduated" -%}
 				Graduated fees
-			{% else %}
+			{% elif fee_type == "fixed" or data['fee_type'] == "fixed" %}
 				Fixed fees
+			{% else %}
+				Claim fees
 			{%- endif %}
 			<span class="numeric" data-total-fees="£0.00">£0.00</span>
 		</h3>
