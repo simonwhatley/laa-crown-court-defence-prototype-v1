@@ -137,7 +137,7 @@ router.get('/advocates/thank-you', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/thank-you`,
     	{
             links: {
-                'new' : req.baseUrl + '/advocates/case-details',
+                'new' : req.baseUrl + '/advocates/start',
         		'home' : req.baseUrl + '/advocates/'
             }
     	});
