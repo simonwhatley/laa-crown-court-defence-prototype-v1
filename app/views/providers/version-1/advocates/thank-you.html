@@ -8,16 +8,23 @@
 
 <main id="content" role="main">
 
-	{% include "./includes/_banner.html" %}
-	
-  	<div class="grid-row">
-	    <div class="column-two-thirds">
+	{% include "../includes/_banner.html" %}
 
 	    	<a class="link-back" href="{{links.home}}">Home</a>
 
 			<h1 class="heading-xlarge">
 				Claim for advocate fees
 			</h1>
+
+	<div class="grid-row">
+	    <div class="column-three-quarters">
+
+	    	<div class="confirmation">
+				<h2 class="heading-large">
+					Thank you for submitting your claim
+				</h2>
+				<p>Your claim reference is <span class="bold">{{data['case_number']|upper}}/11234</span></p>
+			</div>
 
 			<h2 class="heading-large">
 				What happens next?
@@ -29,6 +36,7 @@
 
 			<div class="form-section">
 				<div class="form-group form-buttons">
+					<!-- <input type="submit" class="button" value="Submit a new claim"> -->
 					<a href="{{links.new}}" class="button" role="button">Submit a new claim</a>
 					<a href="{{links.home}}" class="button button-tertiary" role="button">View your claims</a>
 				</div>

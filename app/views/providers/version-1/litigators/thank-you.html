@@ -8,16 +8,23 @@
 
 <main id="content" role="main">
 
-	{% include "./includes/_banner.html" %}
-	
-  	<div class="grid-row">
-	    <div class="column-two-thirds">
+	{% include "../includes/_banner.html" %}
 
-	    	<a class="link-back" href="{{links.home}}">Home</a>
+	<a class="link-back" href="{{links.home}}">Home</a>
 
-			<h1 class="heading-xlarge">
-				Claim for litigator fees
-			</h1>
+	<h1 class="heading-xlarge">
+		Claim for litigator fees
+	</h1>
+
+	<div class="grid-row">
+	    <div class="column-three-quarters">
+
+	    	<div class="confirmation">
+				<h2 class="heading-large">
+					Thank you for submitting your claim
+				</h2>
+				<p>Your claim reference is <span class="bold">{{data['case_number']|upper}}/11234</span></p>
+			</div>
 
 			<h2 class="heading-large">
 				What happens next?
