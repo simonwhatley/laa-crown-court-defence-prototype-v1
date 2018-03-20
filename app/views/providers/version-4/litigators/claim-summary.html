@@ -139,7 +139,7 @@
 
 						</div>
 
-						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == "graduated") or data['bill_type'] == 'litigator_interim' -%}
+						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == "graduated") or data['bill_type'] in ['litigator_interim','litigator_transfer'] -%}
 
 							<div class="form-section">
 								<h3 class="heading-medium">

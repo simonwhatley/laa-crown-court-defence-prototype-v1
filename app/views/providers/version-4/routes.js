@@ -598,15 +598,15 @@ router.get('/litigators/defendant-details', function(req, res) {
 
     } else {
 
-        if (req.session.data.bill_type == 'litigator_transfer') {
+        // if (req.session.data.bill_type == 'litigator_transfer') {
 
-            var nextUrl = req.baseUrl + '/litigators/fees'
+        //     var nextUrl = req.baseUrl + '/litigators/fees'
 
-        } else {
+        // } else {
 
             var nextUrl = req.baseUrl + '/litigators/offence-details'
 
-        }
+        // }
 
         req.session.data.fee_type = 'graduated'
 
@@ -644,15 +644,15 @@ router.get('/litigators/fees', function(req, res) {
 
     } else {
 
-        if (req.session.data.bill_type == 'litigator_transfer') {
+        // if (req.session.data.bill_type == 'litigator_transfer') {
 
-            var previousUrl = req.baseUrl + '/litigators/defendant-details'
+        //     var previousUrl = req.baseUrl + '/litigators/defendant-details'
 
-        } else {
+        // } else {
 
             var previousUrl = req.baseUrl + '/litigators/offence-details'
 
-        }
+        // }
 
     }
 
