@@ -18,5 +18,10 @@
 	    "key": "view_of_crime_scene",
 	    "name": "View of crime scene",
 	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "other",
+	    "name": "Other",
+	    "scheme": ["agfs", "lgfs"]
 	}
 ]

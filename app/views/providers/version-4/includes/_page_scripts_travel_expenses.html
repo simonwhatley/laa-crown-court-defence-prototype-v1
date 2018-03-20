@@ -1,9 +1,9 @@
 <script type="text/javascript">
 $(function(){
-  
+
   $('.fx-select-expense-type').on('change', function(e){
     e.preventDefault();
-    
+
     var costState = $(this).find(':selected').attr('data-cost');
     var dateState = $(this).find(':selected').attr('data-date');
     var destinationState = $(this).find(':selected').attr('data-destination');
@@ -14,7 +14,7 @@ $(function(){
     var reasonState = $(this).find(':selected').attr('data-reason');
     var netAmountState = $(this).find(':selected').attr('data-net-amount');
     var vatAmountState = $(this).find(':selected').attr('data-vat-amount');
-    
+
 
     $('.fx-travel-cost').is(function(){
       var $el = $(this);
@@ -68,11 +68,22 @@ $(function(){
 
   });
 
-{% if data['travel_expense_1_type'].length %}
+  $('.fx-select-travel-reason').on('change', function(e){
+    e.preventDefault();
+
+    var otherState = $(this).find(':selected').attr('data-other');
+
+    $('.fx-travel-reason-other').is(function(){
+      var $el = $(this);
+      otherState == "true" ? $el.show() : $el.hide();
+    });
+
+  });
+
+
 if ($('.fx-select-expense-type').val()) {
   $('.fx-select-expense-type').trigger('change');
 }
-{%- endif %}
 
 });
 </script>

@@ -45,21 +45,41 @@
 			<div class="form-group fx-travel-reason">
 				<fieldset>
 					<legend class="form-label-bold">
-						Reason
+						Travel reason
 		            	<!-- <span class="form-hint">Something</span> -->
 					</legend>
-					<select id="travel-expense-1-reason" class="form-control form-control-3-4" name="travel_expense_1_reason">
+					<select id="travel-expense-1-reason" class="form-control form-control-3-4 fx-select-travel-reason" name="travel_expense_1_reason">
 						<option value=""></option>
 						{% for reason in travel_reasons -%}
-							<option value="{{reason.key}}" {% if data['travel_expense_1_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+							<option
+								{% if reason.key == 'other' -%}data-other="true"{%- endif %}
+								value="{{reason.key}}"
+								{% if data['travel_expense_1_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
 						{%- endfor %}
 					</select>
 				</fieldset>
 			</div>
 
+			<div class="form-group fx-travel-reason-other">
+				<label class="form-label-bold" for="travel-expense-1-travel-reason-other">
+		            Other reason
+		            <!-- <span class="form-hint">Something</span> -->
+		        </label>
+		        <input class="form-control form-control-3-4" id="travel-expense-1-travel-reason-other" type="text" name="travel_expense_1_travel_reason_other" value="{{ data['travel_expense_1_travel_reason_other']}}" autocomplete="off" autocapitalize="off">
+			</div>
+
 		</div>
 
 	</div>
+
+	<!-- <div class="grid-row ">
+		<div class="column-half">
+
+		</div>
+		<div class="column-half">
+
+		</div>
+	</div> -->
 
 	<div class="grid-row">
 
@@ -104,11 +124,11 @@
 	</div>
 
 	<div class="grid-row">
-		
-		<div class="column-full">
+
+		<div class="column-half">
 
 			<div class="form-group fx-travel-cost">
-		    	<fieldset class="inline">
+		    	<fieldset>
 				    <legend class="form-label-bold" for="travel-expense-1-net-amount">
 				        Cost per mile
 				    </legend>
@@ -122,12 +142,12 @@
 					</div>
 				</fieldset>
 			</div>
-			
+
 		</div>
 
-	</div>
+	<!-- </div>
 
-	<div class="grid-row">
+	<div class="grid-row"> -->
 
 		<div class="column-half">
 
@@ -164,6 +184,10 @@
 
 		</div>
 
+	</div>
+
+	<div class="grid-row">
+
 		<div class="column-half">
 
 			<div class="form-group fx-travel-net-amount">
@@ -178,6 +202,20 @@
 
 		</div>
 
+		<div class="column-half">
+
+			<div class="form-group fx-travel-net-amount">
+			    <label class="form-label-bold" for="travel-expense-1-vat-amount">
+			        <abbr title="Value Added Tax">VAT</abbr> amount
+			    </label>
+			    <span class="form-input-denote">
+			        &pound;
+			    </span>
+			    <input class="form-control form-input-denote__input" id="travel-expense-1-vat-amount" name="travel_expense_1_vat_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['travel_expense_1_vat_amount']}}">
+			</div>
+
+		</div>
+
 	</div>
-	
+
 </div>
