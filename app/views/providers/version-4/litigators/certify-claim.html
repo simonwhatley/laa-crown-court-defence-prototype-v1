@@ -15,9 +15,7 @@
 
 			<a class="link-back" href="{{links.previous}}">Back</a>
 
-			<h1 class="heading-xlarge">
-				Claim for litigator fees
-			</h1>
+			{% include "./includes/_page_heading.html" %}
 
 			<div class="grid-row">
 				<div class="column-two-thirds">
@@ -25,7 +23,7 @@
 					<h2 id="section-heading" class="heading-large">
 						Certify claim
 					</h2>
-					
+
 					<form class="form" method="post">
 
 						<p>I certify on behalf of the payee, that the information provided is correct.</p>
@@ -73,7 +71,7 @@
 							</div>
 
 						</div>
-						
+
 						<div class="form-section">
 							<div class="form-group form-buttons">
 								<input type="submit" class="button" value="Certify and submit" formaction="{{links.next}}">

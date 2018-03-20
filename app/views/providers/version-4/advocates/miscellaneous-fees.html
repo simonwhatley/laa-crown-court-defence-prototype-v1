@@ -19,9 +19,7 @@
 
 			<a class="link-back" href="{{links.previous}}">Back</a>
 
-			<h1 class="heading-xlarge">
-				Claim for advocate fees
-			</h1>
+			{% include "./includes/_page_heading.html" %}
 
 			<div class="grid-row">
 				<div class="column-two-thirds">
@@ -33,7 +31,7 @@
 					<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
 
 					<p>If needed, please complete a <a href="https://www.gov.uk/government/publications/af1-claim-for-advocate-graduated-fees" target="_blank">special prep form</a> <span class="visually-hidden">opens in new window</span> and attach to the claim.</p>
-					
+
 					<form class="form" method="post">
 
 						{% include "./includes/_miscellaneous_fees.html" %}
