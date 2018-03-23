@@ -5,7 +5,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["APH"]
     },
     {
         "key": "abuse_of_process_hearings_half_day_uplift",
@@ -13,7 +13,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["APU"]
     },
     {
         "key": "abuse_of_process_hearings_whole_day",
@@ -21,7 +21,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["APW"]
     },
     {
         "key": "abuse_of_process_hearings_whole_day_uplift",
@@ -29,7 +29,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["AWU"]
     },
     {
         "key": "adjourned_appeals",
@@ -85,7 +85,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["DTH","PCH"]
     },
     {
         "key": "confiscation_hearings_half_day_uplift",
@@ -93,7 +93,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["DHU","CHU"]
     },
     {
         "key": "confiscation_hearings_whole_day",
@@ -101,7 +101,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["DTW","PCW"]
     },
     {
         "key": "confiscation_hearings_whole_day_uplift",
@@ -109,7 +109,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["DWU","CWU"]
     },
     {
         "key": "costs_judge_application",
@@ -133,7 +133,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["DSE"]
     },
     {
         "key": "deferred_sentence_hearings_uplift",
@@ -141,7 +141,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["DSU"]
     },
     {
         "key": "evidence_provision_fee",
@@ -173,7 +173,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["AEH","PAH"]
     },
     {
         "key": "hearings_relating_to_admissibility_of_evidence_half_day_uplift",
@@ -181,7 +181,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["EHU","PHU"]
     },
     {
         "key": "hearings_relating_to_admissibility_of_evidence_whole_day",
@@ -189,7 +189,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["AEW","PAW"]
     },
     {
         "key": "hearings_relating_to_admissibility_of_evidence_whole_day_uplift",
@@ -197,7 +197,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["EWU","PWU"]
     },
     {
         "key": "hearings_relating_to_disclosure_half_day",
@@ -205,7 +205,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["HDH"]
     },
     {
         "key": "hearings_relating_to_disclosure_half_day_uplift",
@@ -213,7 +213,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["HHU"]
     },
     {
         "key": "hearings_relating_to_disclosure_whole_day",
@@ -221,7 +221,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["HDW"]
     },
     {
         "key": "hearings_relating_to_disclosure_whole_day_uplift",
@@ -229,7 +229,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["HWU"]
     },
     {
         "key": "noting_brief_fee",
@@ -237,23 +237,23 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["NBR"]
     },
     {
-        "key": "paper_plea_case_management",
-        "name": "Paper plea & case management",
+        "key": "paper_plea_case_management_hearing",
+        "name": "Paper plea & case management hearing",
         "scheme": ["agfs"],
         "scheme_version": ["9"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["PPC"]
     },
     {
-        "key": "paper_plea_case_management_uplift",
-        "name": "Paper plea & case management uplift",
+        "key": "paper_plea_case_management_hearing_uplift",
+        "name": "Paper plea & case management hearing uplift",
         "scheme": ["agfs"],
         "scheme_version": ["9"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["PCU"]
     },
     {
         "key": "proceeds_of_crime_hearings_half_day",
@@ -357,7 +357,7 @@
         "scheme": ["agfs","lgfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["SPF"]
     },
     {
         "key": "standard_appearance_fee_uplift",
@@ -365,7 +365,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": [],
-        "abbreviations": []
+        "abbreviations": ["SAU"]
     },
     {
         "key": "trial_not_proceed",
@@ -421,7 +421,7 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": ["Wasted prep fee"],
-        "abbreviations": []
+        "abbreviations": ["WPF"]
     },
     {
         "key": "written_oral_advice",
@@ -429,6 +429,6 @@
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "other_names": ["Written or oral advice"],
-        "abbreviations": []
+        "abbreviations": ["WOA","RNF","RNL"]
     }
 ]
