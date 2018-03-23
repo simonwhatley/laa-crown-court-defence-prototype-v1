@@ -15,6 +15,16 @@
 							<td>{{data['miscellaneous_fee_1_type']|replace('_',' ')|capitalize}}</td>
 						</tr>
 						<tr>
+							<th class="bold" scope="row">Date of hearing</th>
+							<td>
+								{% if data['miscellaneous_fee_1_date_day'].length and data['miscellaneous_fee_1_date_month'] and data['miscellaneous_fee_1_date_year'] -%}
+
+									{{data['miscellaneous_fee_1_date_day']}}/{{data['miscellaneous_fee_1_date_month']}}/{{data['miscellaneous_fee_1_date_year']}}
+
+								{%- endif %}
+							</td>
+						</tr>
+						<tr>
 							<th class="bold" scope="row">
 								Net amount
 							</th>

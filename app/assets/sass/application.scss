@@ -47,6 +47,34 @@ $path: "/public/images/";
 }
 
 /* --------------------------------------- */
+/* Width styles */
+/* --------------------------------------- */
+
+.width-full {
+  width: 100%;
+}
+
+.width-half, .width-one-half {
+  width: 50%;
+}
+
+.width-quarter, .width-one-quarter {
+  width: 25%;
+}
+
+.width-three-quarters {
+  width: 75%;
+}
+
+.width-third, .width-one-third {
+  width: 33.3333333%;
+}
+
+.width-two-thirds {
+  width: 66.6666666%;
+}
+
+/* --------------------------------------- */
 /* Basic button styles */
 /* --------------------------------------- */
 
@@ -97,6 +125,7 @@ a.link-secondary, a.fix {
 a.link-change, a.link-remove {
   float: right;
   font-size: 19px;
+  /*font-weight: normal !important;*/
   line-height: 1.31579;
   &:hover {
     color: #2b8cc4;

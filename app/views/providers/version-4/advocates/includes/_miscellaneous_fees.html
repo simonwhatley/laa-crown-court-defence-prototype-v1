@@ -27,6 +27,45 @@
 		</fieldset>
 	</div>
 
+	 <div class="form-group">
+	    <fieldset>
+	        <legend class="form-label-bold">
+	            Date of hearing
+	            <span class="form-hint">
+	                For example, 31 3 2017
+	            </span>
+	        </legend>
+
+			<div class="form-date">
+			    <div class="form-group form-group-day">
+			        <label class="form-label" for="miscellaneous-fee-1-date-day">
+			            Day
+			        </label>
+			        <input class="form-control" id="miscellaneous-fee-1-date-day" max="31" min="1" name="miscellaneous_fee_1_date_day" pattern="[0-9]*" type="number" value="{{data['miscellaneous_fee_1_date_day']}}">
+			    </div>
+			    <div class="form-group form-group-month">
+			        <label class="form-label" for="miscellaneous-fee-1-date-month">
+			            Month
+			        </label>
+			        <input class="form-control" id="miscellaneous-fee-1-date-month" max="12" min="1" name="miscellaneous_fee_1_date_month" pattern="[0-9]*" type="number" value="{{data['miscellaneous_fee_1_date_month']}}">
+			    </div>
+			    <div class="form-group form-group-year">
+			        <label class="form-label" for="miscellaneous-fee-1-date-year">
+			            Year
+			        </label>
+			        <input class="form-control" id="miscellaneous-fee-1-date-year" max="2019" min="1900" name="miscellaneous_fee_1_date_year" pattern="[0-9]*" type="number" value="{{data['miscellaneous_fee_1_date_year']}}">
+			    </div>
+			</div>
+
+		</fieldset>
+	</div>
+
+	<!-- <div class="form-group">
+	    <a href="#noop">
+	        Add another date
+	    </a>
+	</div> -->
+
 	<div class="form-group">
 	    <label class="form-label-bold" for="miscellaneous-fee-1-net-amount">
 	        Net amount
