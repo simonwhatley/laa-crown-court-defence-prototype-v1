@@ -1,0 +1,103 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHZYFDLX6xDaMgEvHq9NMiIp9RbsmbrM" type="text/javascript"></script>
+<script src="/public/javascripts/jquery.distancecalculator.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+  $('#calculate').on('click', function(e) {
+    e.preventDefault();
+
+    var origin = $('#origin_address').val();
+    console.log(origin);
+    var destination = $('#destination_address').val();
+    console.log(destination);
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    $('#distance').distancecalculator({
+      start_address: origin,
+      end_address: destination,
+      units: "mile",
+      travel_mode: "DRIVING",
+      result_container_type: "textbox"
+     });
+
+  });
+
+});
+</script>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  	<div class="grid-row">
+	    <div class="column-two-thirds">
+
+	    	<a class="link-back" href="../">Back</a>
+
+		    <h1 class="heading-xlarge">
+		      Distance calculation (2)
+		    </h1>
+
+			<form id="map-form">
+
+				<div class="form-section">
+
+					<div class="form-group">
+					    <label class="form-label-bold" for="origin_address">
+					        Origin postcode
+					        <span class="form-hint">Enter a valid postcode</span>
+					    </label>
+					    <input class="form-control" id="origin_address" type="text" name="origin_address" autocomplete="off" autocapitalize="off">
+					</div>
+
+					<div class="form-group">
+					    <label class="form-label-bold" for="destination_address">
+					        Destination postcode
+					        <span class="form-hint">Enter a valid postcode</span>
+					    </label>
+					    <input class="form-control" id="destination_address" type="text" name="destination_address" autocomplete="off" autocapitalize="off">
+					</div>
+
+          <div class="form-group">
+              <label class="form-label-bold" for="distance">
+                  Distance
+                  <span class="form-hint">Miles</span>
+              </label>
+              <input class="form-control form-control-1-8" id="distance" type="text" name="distance" autocomplete="off" autocapitalize="off" readonly="readonly">
+          </div>
+
+				</div>
+				
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input id="calculate" type="submit" class="button" value="Calculate">
+						<a id="cancel" class="link-secondary">Cancel</a>
+					</div>
+				</div>
+
+			</form>
+
+			<!-- <p>The distance is: <span id="result">?</span> miles.</p> -->
+
+			<hr>
+
+		    <p>
+		    	<a href="https://github.com/aslamdoctor/jQuery.distancecalculator">
+		    		https://github.com/aslamdoctor/jQuery.distancecalculator
+		    	</a>
+		    </p>
+
+		</div>
+	</div>
+</main>
+
+{% endblock %}
