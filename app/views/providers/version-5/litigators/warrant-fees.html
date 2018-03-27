@@ -1,0 +1,125 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					<h2 id="section-heading" class="heading-large">
+						Warrant fees
+					</h2>
+
+					<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
+
+					<form class="form" method="post">
+
+						<div class="form-section">
+
+							<div class="form-group">
+							    <fieldset>
+							        <legend class="form-label-bold">
+							            Warrant issued
+							            <span class="form-hint">
+							                For example, 31 3 2017
+							            </span>
+							        </legend>
+							        <div class="form-date">
+							            <div class="form-group form-group-day">
+							                <label class="form-label" for="warrant-issued-day">
+							                    Day
+							                </label>
+							                <input class="form-control" id="warrant-issued-day" max="31" min="1" name="warrant_issued_day" pattern="[0-9]*" type="number" value="{{data['warrant_issued_day']}}">
+							            </div>
+							            <div class="form-group form-group-month">
+							                <label class="form-label" for="warrant-issued-month">
+							                    Month
+							                </label>
+							                <input class="form-control" id="warrant-issued-month" max="12" min="1" name="warrant_issued_month" pattern="[0-9]*" type="number" value="{{data['warrant_issued_month']}}">
+							            </div>
+							            <div class="form-group form-group-year">
+							                <label class="form-label" for="warrant-issued-year">
+							                    Year
+							                </label>
+							                <input class="form-control" id="warrant-issued-year" max="2018" min="2010" name="warrant_issued_year" pattern="[0-9]*" type="number" value="{{data['warrant_issued_year']}}">
+							            </div>
+							        </div>
+							    </fieldset>
+							</div>
+
+							<div class="form-group">
+							    <fieldset>
+							        <legend class="form-label-bold">
+							            Warrant executed (if applicable)
+							            <span class="form-hint">
+							                For example, 31 3 2017
+							            </span>
+							        </legend>
+							        <div class="form-date">
+							            <div class="form-group form-group-day">
+							                <label class="form-label" for="warrant-executed-day">
+							                    Day
+							                </label>
+							                <input class="form-control" id="warrant-executed-day" max="31" min="1" name="warrant_executed_day" pattern="[0-9]*" type="number" value="{{data['warrant_executed_day']}}">
+							            </div>
+							            <div class="form-group form-group-month">
+							                <label class="form-label" for="warrant-executed-month">
+							                    Month
+							                </label>
+							                <input class="form-control" id="warrant-executed-month" max="12" min="1" name="warrant_executed_month" pattern="[0-9]*" type="number" value="{{data['warrant_executed_month']}}">
+							            </div>
+							            <div class="form-group form-group-year">
+							                <label class="form-label" for="warrant-executed-year">
+							                    Year
+							                </label>
+							                <input class="form-control" id="warrant-executed-year" max="2018" min="2010" name="warrant_executed_year" pattern="[0-9]*" type="number" value="{{data['warrant_executed_year']}}">
+							            </div>
+							        </div>
+							    </fieldset>
+							</div>
+
+							<div class="form-group">
+							    <label class="form-label-bold " for="warrant-net-amount">
+							        Net amount
+							        <!-- <span class="form-hint">
+							            Something...
+							        </span> -->
+							    </label>
+							    <input class="form-control form-control-1-4" id="warrant-fee-net-amount" name="warrant_fee_net_amount" type="text" value="{{data['warrant_fee_net_amount']}}" autocomplete="off">
+							</div>
+
+						</div>
+
+
+						{% include "./includes/_form_actions.html" %}
+
+					</form>
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+
+				{% include "./includes/_sidebar.html" %}
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

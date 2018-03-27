@@ -1,0 +1,181 @@
+{% if data['interim_fee_type'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Type of fee
+			</th>
+			<td>{{data['interim_fee_type']|replace('_',' ')|capitalize}}</td>
+		</tr>
+		{% if data['interim_fee_type'] != 'disbursement_only' -%}
+			
+			<!-- PTPH -->
+			{% if data['interim_fee_type'] == 'plea_trial_prep_hearing' -%}
+			<tr>
+				<th class="bold" scope="row">
+					PPE total at the time
+				</th>
+				<td>{{data['pages_of_prosecution_evidence']|numeral('0,0')}} pages</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Date of hearing
+				</th>
+				<td>
+					{% if data['date_of_hearing_day'].length and data['date_of_hearing_month'].length and data['date_of_hearing_year'].length -%}
+						{{data['date_of_hearing_day']}}/{{data['date_of_hearing_month']}}/{{data['date_of_hearing_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Net amount
+				</th>
+				<td>&pound;{{data['plea_trial_prep_hearing_net_amount']|numeral('0,0.00')}}</td>
+			</tr>
+			{%- endif %}
+
+			<!-- Retrial, new solicitor -->
+			{% if data['interim_fee_type'] == 'retrial_new_solicitor' -%}
+			<tr>
+				<th class="bold" scope="row">
+					PPE total at the time
+				</th>
+				<td>{{data['retrial_new_solicitor_pages_of_prosecution_evidence']|numeral('0,0')}}</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Date of legal aid transfer
+				</th>
+				<td>
+					{% if data['date_legal_aid_transfer_day'].length and data['date_legal_aid_transfer_month'].length and data['date_legal_aid_transfer_year'].length -%}
+						{{data['date_legal_aid_transfer_day']}}/{{data['date_legal_aid_transfer_month']}}/{{data['date_legal_aid_transfer_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Date first trial concluded
+				</th>
+				<td>
+					{% if data['date_first_trial_concluded_day'].length and data['date_first_trial_concluded_month'].length and data['date_first_trial_concluded_year'].length -%}
+						{{data['date_first_trial_concluded_day']}}/{{data['date_first_trial_concluded_month']}}/{{data['date_first_trial_concluded_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Net amount
+				</th>
+				<td>&pound;{{data['retrial_new_solicitor_net_amount']|numeral('0,0.00')}}</td>
+			</tr>
+			{%- endif %}
+
+			<!-- Retrial start -->
+			{% if data['interim_fee_type'] == 'retrial_start' -%}
+			<tr>
+				<th class="bold" scope="row">
+					PPE total at the time
+				</th>
+				<td>{{data['retrial_start_pages_of_prosecution_evidence']|numeral('0,0')}}</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Retrial start date
+				</th>
+				<td>
+					{% if data['retrial_start_date_day'].length and data['retrial_start_date_month'].length and data['retrial_start_date_year'].length -%}
+						{{data['retrial_start_date_day']}}/{{data['retrial_start_date_month']}}/{{data['retrial_start_date_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Net amount
+				</th>
+				<td>&pound;{{data['retrial_net_amount']|numeral('0,0.00')}}</td>
+			</tr>
+			{%- endif %}
+
+			<!-- Trial start -->
+			{% if data['interim_fee_type'] == 'trial_start' -%}
+			<tr>
+				<th class="bold" scope="row">
+					PPE total at the time
+				</th>
+				<td>{{data['trial_start_pages_of_prosecution_evidence']|numeral('0,0')}}</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Trial start date
+				</th>
+				<td>
+					{% if data['trial_start_date_day'].length and data['trial_start_date_month'].length and data['trial_start_date_year'].length -%}
+						{{data['trial_start_date_day']}}/{{data['trial_start_date_month']}}/{{data['trial_start_date_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Estimated length of trial
+				</th>
+				<td>{{data['estimated_length_of_trial']}} days</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Net amount
+				</th>
+				<td>&pound;{{data['trial_net_amount']|numeral('0,0.00')}}</td>
+			</tr>
+			{%- endif %}
+
+			<!-- Warrant fee -->
+			{% if data['interim_fee_type'] == 'warrant_fee' -%}
+			<tr>
+				<th class="bold" scope="row">
+					Warrant issued date
+				</th>
+				<td>
+					{% if data['warrant_issued_day'].length and data['warrant_issued_month'].length and data['warrant_issued_year'].length -%}
+						{{data['warrant_issued_day']}}/{{data['warrant_issued_month']}}/{{data['warrant_issued_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Warrant executed date
+				</th>
+				<td>
+					{% if data['warrant_executed_day'].length and data['warrant_executed_month'].length and data['warrant_executed_year'].length -%}
+						{{data['warrant_executed_day']}}/{{data['warrant_executed_month']}}/{{data['warrant_executed_year']}}
+					{% else %}
+						Date not provided
+					{%- endif %}
+				</td>
+			</tr>
+			<tr>
+				<th class="bold" scope="row">
+					Net amount
+				</th>
+				<td>&pound;{{data['warrant_fee_net_amount']|numeral('0,0.00')}}</td>
+			</tr>
+			{%- endif %}
+
+		{%- endif %}
+	</tbody>
+</table>
+{% else %}
+<p>There are no interim fees for this claim.</p>
+{%- endif %}

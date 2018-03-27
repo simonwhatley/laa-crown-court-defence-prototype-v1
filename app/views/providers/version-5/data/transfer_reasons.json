@@ -1,0 +1,44 @@
+[
+	{
+	    "key": "up_to_and_including_ptph_transfer",
+	    "name": "Up to and including PTPH transfer",
+	    "other_names": [],
+	    "abbreviations": ["PTPH"]
+	},
+	{
+	    "key": "before_trial_transfer",
+	    "name": "Before trial transfer",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "during_trial_transfer",
+	    "name": "During trial transfer",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "transfer_after_trial_and_before_sentence_hearing",
+	    "name": "Transfer after trial and before sentence hearing",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "transfer_before_retrial",
+	    "name": "Transfer before retrial",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "transfer_during_retrial",
+	    "name": "Transfer during retrial",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "transfer_after_retrial_and_before_sentence_hearing",
+	    "name": "Transfer after retrial and before sentence hearing",
+	    "other_names": [],
+	    "abbreviations": []
+	}
+]

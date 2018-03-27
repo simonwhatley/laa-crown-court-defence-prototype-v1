@@ -1,0 +1,212 @@
+<div class="form-section" data-item-number="1">
+
+	<h3 class="heading-medium">
+		Expense 1
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this expense</span>
+		</a>
+	</h3>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group">
+			    <label class="form-label-bold" for="expense-type">
+			        Type of expense
+			        <!-- <span class="form-hint">Something</span> -->
+			    </label>
+			    <select id="travel-expense-1-type" class="form-control form-control-3-4 fx-select-expense-type" name="travel_expense_1_type">
+			        <option value=""></option>
+			        {% for type in travel_types %}
+
+			        <option
+			        	data-cost="{{type.attributes.cost}}"
+			        	data-date="{{type.attributes.date}}"
+			        	data-destination="{{type.attributes.destination}}"
+			        	data-distance="{{type.attributes.distance}}"
+			        	data-hours="{{type.attributes.hours}}"
+			        	data-location="{{type.attributes.location}}"
+			        	data-mileage="{{type.attributes.mileage}}"
+			        	data-reason="{{type.attributes.reason}}"
+			        	data-net-amount="{{type.attributes.net}}"
+			        	data-vat-amount="{{type.attributes.vat}}"
+			        	value="{{type.key}}"
+			        	{% if data['travel_expense_1_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
+			        {%- endfor %}
+			    </select>
+			</div>
+
+		</div>
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-reason">
+				<fieldset>
+					<legend class="form-label-bold">
+						Travel reason
+		            	<!-- <span class="form-hint">Something</span> -->
+					</legend>
+					<select id="travel-expense-1-reason" class="form-control form-control-3-4 fx-select-travel-reason" name="travel_expense_1_reason">
+						<option value=""></option>
+						{% for reason in travel_reasons -%}
+							<option
+								{% if reason.key == 'other' -%}data-other="true"{%- endif %}
+								value="{{reason.key}}"
+								{% if data['travel_expense_1_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+						{%- endfor %}
+					</select>
+				</fieldset>
+			</div>
+
+			<div class="form-group fx-travel-reason-other">
+				<label class="form-label-bold" for="travel-expense-1-travel-reason-other">
+		            Other reason
+		            <!-- <span class="form-hint">Something</span> -->
+		        </label>
+		        <input class="form-control form-control-3-4" id="travel-expense-1-travel-reason-other" type="text" name="travel_expense_1_travel_reason_other" value="{{ data['travel_expense_1_travel_reason_other']}}" autocomplete="off" autocapitalize="off">
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-destination">
+				<label class="form-label-bold" for="travel-expense-1-destination">
+		            Destination
+		            <!-- <span class="form-hint">Something</span> -->
+		        </label>
+		        <input class="form-control form-control-3-4" id="travel-expense-1-destination" type="text" name="travel_expense_1_destination" value="{{ data['travel_expense_1_destination']}}" autocomplete="off" autocapitalize="off">
+			</div>
+
+			<div class="form-group fx-travel-location">
+				<label class="form-label-bold" for="travel-expense-1-location">
+		            Location
+		            <!-- <span class="form-hint">Something</span> -->
+		        </label>
+		        <input class="form-control form-control-3-4" id="travel-expense-1-location" type="text" name="travel_expense_1_location" value="{{ data['travel_expense_1_location']}}" autocomplete="off" autocapitalize="off">
+			</div>
+
+		</div>
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-hours">
+			    <label class="form-label-bold" for="travel-expense-1-hours">
+			        Hours
+			    </label>
+			    <input class="form-control form-control-1-8" id="travel-expense-1-hours" name="travel_expense_1_hours" type="number" max="999.00" min="0.00" step="0.25" value="{{data['travel_expense_1_hours']}}">
+			</div>
+
+			<div class="form-group fx-travel-distance">
+			    <label class="form-label-bold" for="travel-expense-1-distance">
+			        Distance
+			    </label>
+			    <input class="form-control form-control-1-4" id="travel-expense-1-distance" name="travel_expense_1_distance" type="number" max="9999.00" min="0.00" step="0.01" value="{{data['travel_expense_1_distance']}}">
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-cost">
+		    	<fieldset>
+				    <legend class="form-label-bold" for="travel-expense-1-net-amount">
+				        Cost per mile
+				    </legend>
+				    <div class="multiple-choice">
+						<input id="cost-per-mile-1" type="radio" name="travel_expense_1_cost_per_mile" value="25" {{ checked('travel_expense_1_cost_per_mile','25') }}>
+						<label for="cost-per-mile-1"><abbr title="25 pence">25p</abbr> per mile</label>
+					</div>
+					<div class="multiple-choice">
+						<input id="cost-per-mile-2" type="radio" name="travel_expense_1_cost_per_mile" value="45" {{ checked('travel_expense_1_cost_per_mile','45') }}>
+						<label for="cost-per-mile-2"><abbr title="25 pence">45p</abbr> per mile</label>
+					</div>
+				</fieldset>
+			</div>
+
+		</div>
+
+	<!-- </div>
+
+	<div class="grid-row"> -->
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-date">
+		        <fieldset>
+		            <legend class="form-label-bold">
+		                Date of expense
+		                <span class="form-hint">
+		                    For example, 31 3 2017
+		                </span>
+		            </legend>
+		            <div class="form-date">
+		                <div class="form-group form-group-day">
+		                    <label class="form-label" for="travel-expense-date-1-day">
+		                        Day
+		                    </label>
+		                    <input class="form-control" id="travel-expense-date-1-day" max="31" min="1" name="travel_expense_date_1_day" pattern="[0-9]*" type="number" value="{{data['travel_expense_date_1_day']}}">
+		                </div>
+		                <div class="form-group form-group-month">
+		                    <label class="form-label" for="travel-expense-date-1-month">
+		                        Month
+		                    </label>
+		                    <input class="form-control" id="travel-expense-date-1-month" max="12" min="1" name="travel_expense_date_1_month" pattern="[0-9]*" type="number" value="{{data['travel_expense_date_1_month']}}">
+		                </div>
+		                <div class="form-group form-group-year">
+		                    <label class="form-label" for="travel-expense-date-1-year">
+		                        Year
+		                    </label>
+		                    <input class="form-control" id="travel-expense-date-1-year" max="2019" min="1900" name="travel_expense_date_1_year" pattern="[0-9]*" type="number" value="{{data['travel_expense_date_1_year']}}">
+		                </div>
+		            </div>
+		        </fieldset>
+		    </div>
+
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-net-amount">
+			    <label class="form-label-bold" for="travel-expense-1-net-amount">
+			        Net amount
+			    </label>
+			    <span class="form-input-denote">
+			        &pound;
+			    </span>
+			    <input class="form-control form-input-denote__input" id="travel-expense-1-net-amount" name="travel_expense_1_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['travel_expense_1_net_amount']}}">
+			</div>
+
+		</div>
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-net-amount">
+			    <label class="form-label-bold" for="travel-expense-1-vat-amount">
+			        <abbr title="Value Added Tax">VAT</abbr> amount
+			    </label>
+			    <span class="form-input-denote">
+			        &pound;
+			    </span>
+			    <input class="form-control form-input-denote__input" id="travel-expense-1-vat-amount" name="travel_expense_1_vat_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['travel_expense_1_vat_amount']}}">
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

@@ -1,0 +1,155 @@
+[
+	{
+	    "key": "bike_travel",
+	    "name": "Bike travel",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": true,
+	    	"distance": true,
+	    	"hours": false,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "cab_fares",
+	    "name": "Cab fares",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": true,
+	    	"distance": false,
+	    	"hours": false,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "car_travel",
+	    "name": "Car travel",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": true,
+	    	"date": true,
+	    	"destination": true,
+	    	"distance": true,
+	    	"hours": false,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "hotel_accommodation",
+	    "name": "Hotel accommodation",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": false,
+	    	"distance": false,
+	    	"hours": false,
+	    	"location": true,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "parking",
+	    "name": "Parking",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": false,
+	    	"distance": false,
+	    	"hours": false,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "road_or_tunnel_tolls",
+	    "name": "Road or tunnel tolls",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": true,
+	    	"distance": false,
+	    	"hours": false,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "subsistence",
+	    "name": "Subsistence",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": false,
+	    	"distance": false,
+	    	"hours": false,
+	    	"location": true,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "train_or_public_transport",
+	    "name": "Train or public transport",
+	    "scheme": ["agfs", "lgfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": true,
+	    	"distance": false,
+	    	"hours": false,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	},
+	{
+	    "key": "travel_time",
+	    "name": "Travel time",
+	    "scheme": ["agfs"],
+	    "attributes": {
+	    	"cost": false,
+	    	"date": true,
+	    	"destination": true,
+	    	"distance": false,
+	    	"hours": true,
+	    	"location": false,
+	    	"mileage": false,
+	    	"reason": true,
+	    	"net": true,
+	    	"vat": false
+	    }
+	}
+]

@@ -1,0 +1,261 @@
+.messages-container {
+    border: 1px solid #bfc1c3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+.messages-container .messages-list {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+.messages-container .messages-list .history .event {
+    color: #4c2c92;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    margin-right: 1em;
+    text-align: right;
+}
+.messages-container .messages-list .history .event strong {
+    font-weight: bold;
+}
+.messages-container .messages-list .history .event .message-container, .messages-container .messages-list .history .event .message-body {
+    margin-right: 0;
+    padding-right: 0;
+    border: 0px solid black;
+}
+.messages-container .messages-list .history .event table {
+    margin-left: auto;
+    width: 50%;
+}
+.messages-container .messages-list .history .event table .visuallyhidden, .messages-container .messages-list .history .event table .js-enabled select.typeahead, .js-enabled .messages-container .messages-list .history .event table select.typeahead {
+    display: none;
+}
+.messages-container .messages-list .history .event table td {
+    border-top: 1px solid #bfc1c3;
+}
+.messages-container .messages-list .history .message-right .message-body {
+    background: none;
+    border: 0px solid black;
+    color: #0b0c0c;
+    text-align: right !important;
+}
+.messages-container .messages-list .history .message-right .message-body::after {
+    border-left: 0em solid #28A197 !important;
+}
+.messages-container .messages-list .history .message-right .message-body .message-audit {
+    color: #0b0c0c;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.messages-container .messages-list .history .message-right .message-body p {
+    margin-bottom: 0;
+}
+.messages-container .messages-list .single-date {
+    text-align: center;
+}
+.messages-container .messages-list .single-date legend {
+    text-align: center;
+    border: 1px solid #bfc1c3;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    color: #6f777b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.messages-container .messages-list .event-date {
+    color: #006435;
+    border: 2px solid #006435;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.messages-container .messages-list .message-container {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.messages-container .messages-list .message-container .message-body {
+    padding: 10px 20px;
+}
+.messages-container .messages-list .message-audit {
+    font-size: 80%;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+.messages-container .messages-list .message-audit .sent {
+    padding-right: 1.6em;
+    text-align: right;
+}
+@media print {
+    .messages-container .messages-list .message-right {
+        margin-left: 95px;
+    }
+}
+.messages-container .messages-list .message-right .message-audit {
+    text-align: right;
+}
+@media print {
+    .messages-container .messages-list .message-right .message-audit {
+        font-weight: 700;
+        color: black;
+    }
+    .messages-container .messages-list .message-right .message-body {
+        background: none;
+        border: 1px solid black;
+    }
+    .messages-container .messages-list .message-right .message-body::after {
+        border: none;
+    }
+}
+.messages-container .messages-list .message-right .message-body {
+    background-color: #2b8cc4;
+    position: relative;
+    text-align: right;
+    color: #fff;
+    border-radius: 0.5em 0.5em 0.75em 0.5em;
+}
+.messages-container .messages-list .message-right .message-body::after {
+    content: "";
+    position: absolute;
+    right: -1.5em;
+    bottom: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-left: 1em solid #2b8cc4;
+    border-bottom-left-radius: 1.75em 1.5em;
+}
+.messages-container .messages-list .message-right .message-body a:link {
+    color: #fff;
+}
+.messages-container .messages-list .message-right .message-body a:hover {
+    color: #bfc1c3;
+}
+.messages-container .messages-list .message-right .message-body a:active {
+    color: #fff;
+}
+@media print {
+    .messages-container .messages-list .message-left {
+        margin-right: 95px;
+    }
+}
+.messages-container .messages-list .message-left .message-audit {
+    text-align: left;
+    color: #0b0c0c;
+}
+@media print {
+    .messages-container .messages-list .message-left .message-audit {
+        font-weight: 700;
+        color: black;
+    }
+    .messages-container .messages-list .message-left .message-body {
+        background: none;
+        border: 1px solid black;
+    }
+    .messages-container .messages-list .message-left .message-body::after {
+        border: none;
+    }
+}
+.messages-container .messages-list .message-left .message-body {
+    background-color: #dee0e2;
+    position: relative;
+    text-align: left;
+    border-radius: 0.5em 0.5em 0.5em 0.75em;
+}
+.messages-container .messages-list .message-left .message-body::after {
+    content: "";
+    position: absolute;
+    left: -1.5em;
+    bottom: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-right: 1em solid #dee0e2;
+    border-bottom-right-radius: 1.75em 1.5em;
+}
+.messages-container .message-controls {
+    padding: 15px;
+    border-top: 1px solid #bfc1c3;
+}
+.messages-container .message-controls .upload-column .upload-button {
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+.messages-container .message-controls .message-column {
+    margin: 15px 0;
+}
+.messages-container .message-controls .message-column input[type="text"] {
+    width: 50%;
+    padding: 2px 5px;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+}
+@media (min-width: 641px) {
+    .messages-container .message-controls .message-column input[type="text"] {
+        font-size: 19px;
+        line-height: 1.31579;
+    }
+}
+.messages-container .message-controls .message-column textarea {
+    resize: vertical
+}
+.messages-container .message-controls .submit-column .button-secondary {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #2b8cc4;
+    color: #fff;
+    box-shadow: 0 2px 0 #005ea5;
+}
+.messages-container .message-controls .submit-column .button-secondary:hover {
+    background-color: #005ea5;
+}
+.messages-container .message-controls .file-to-be-uploaded {
+    border-top: 1px solid #bfc1c3;
+    padding-top: 15px;
+    display: none;
+}
+.messages-container .message-controls .file-to-be-uploaded .filename {
+    font-weight: bold;
+}
+.messages-container .messages-print-link {
+    text-align: right;
+    padding-right: 1em;
+}
+.messages-container .message-status {
+    position: relative;
+    left: -9999px;
+}
+.messages-container .message-status .message-success {
+    color: #006435;
+    font-weight: bold;
+}
+.messages-container .message-status .message-error {
+    color: #b10e1e;
+    font-weight: bold;
+}
+
+
+/* assessment decision */
+/*.messages-container .messages-list .decision .message-right .message-body::after {
+    content: "";
+    position: absolute;
+    right: -1.5em;
+    bottom: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-left: 1em solid #912b88;
+    border-bottom-left-radius: 1.75em 1.5em;
+}*/

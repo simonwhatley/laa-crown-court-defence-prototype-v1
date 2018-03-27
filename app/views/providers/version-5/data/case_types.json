@@ -1,0 +1,114 @@
+[
+	{
+	    "key": "appeal_against_conviction",
+	    "name": "Appeal Against Conviction",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "fixed",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "appeal_against_sentence",
+	    "name": "Appeal Against Sentence",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "fixed",
+	    "other_names": ["Appeal Against Sentance"],
+	    "abbreviations": []
+	},
+	{
+	    "key": "breach_of_crown_court_order",
+	    "name": "Breach of Crown Court Order",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "fixed",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "committal",
+	    "name": "Committal",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "fixed",
+	    "other_names": ["Comittal", "Commital"],
+	    "abbreviations": []
+	},
+	{
+	    "key": "committal_for_sentence",
+	    "name": "Committal for Sentence",
+	    "scheme": ["lgfs"],
+	    "type": "fixed",
+	    "other_names": ["Comittal for Sentence", "Commital for Sentence", "Committal for Sentance"],
+	    "abbreviations": []
+	},
+	{
+	    "key": "contempt",
+	    "name": "Contempt",
+	    "scheme": ["agfs"],
+	    "type": "fixed",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "cracked_before_retrial",
+	    "name": "Cracked Before Retrial",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "graduated",
+	    "other_names": ["Cracked Before Retrail"],
+	    "abbreviations": []
+	},
+	{
+	    "key": "cracked_trial",
+	    "name": "Cracked Trial",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "graduated",
+	    "other_names": ["Cracked Trail"],
+	    "abbreviations": []
+	},
+	{
+	    "key": "discontinuance",
+	    "name": "Discontinuance",
+	    "scheme": ["lgfs"],
+	    "type": "graduated",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "elected_case_not_proceeded",
+	    "name": "Elected Case Not Proceeded",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "fixed",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "guilty_plea",
+	    "name": "Guilty Plea",
+	    "scheme": ["agfs"],
+	    "type": "graduated",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "hearing_subsequent_to_sentence",
+	    "name": "Hearing Subsequent to Sentence",
+	    "scheme": ["lgfs"],
+	    "type": "fixed",
+	    "other_names": [],
+	    "abbreviations": []
+	},
+	{
+	    "key": "retrial",
+	    "name": "Retrial",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "graduated",
+	    "other_names": ["Retrail"],
+	    "abbreviations": []
+	},
+	{
+	    "key": "trial",
+	    "name": "Trial",
+	    "scheme": ["agfs", "lgfs"],
+	    "type": "graduated",
+	    "other_names": ["Trail","Tiral"],
+	    "abbreviations": []
+	}
+]

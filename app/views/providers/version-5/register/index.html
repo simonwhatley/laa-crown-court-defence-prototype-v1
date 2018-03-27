@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      Providers
+	    </h1>
+
+	    <!-- <p class="lede">
+			Something something something
+		</p> -->
+
+	    <h2 class="heading-large">
+	    	Register
+	    </h2>
+
+	    <form action="" method="post">
+
+			<!-- <div class="form-section">
+				
+				<div class="form-group" data-required="true" data-error="Email is required">
+					<label class="form-label-bold" for="email">
+						Email
+						<span class="form-hint">Something</span>
+					</label>
+					<input class="form-control form-control-2-3" id="email" type="text" name="email">
+				</div>
+
+				<div class="form-group" data-required="true" data-error="Password is required">
+					<label class="form-label-bold" for="password">
+						Password
+						<span class="form-hint">Something</span>
+					</label>
+					<input class="form-control form-control-2-3" id="password" type="password" name="password">
+				</div>
+
+			</div> -->
+
+			<div class="form-section">
+				<div class="form-group form-buttons">
+					<input type="submit" class="button" value="Register">
+					<!-- <a href="/providers/register/" class="button button-tertiary" role="button">Register</a> -->
+				</div>
+			</div>
+
+		</form>
+
+		<details>
+			<summary>
+				<span class="summary">Help with registering</span>
+			</summary>
+			<!-- <div class="panel panel-border-narrow">
+				<p>
+				For any queries about your claim, contact the following:
+				<br /><br />
+				Litigators' graduated fee scheme <br />
+				Email: <a href="#noop">litigators-fee@legalaid.gsi.gov.uk</a> <br />
+				Phone: 0115 852 6000
+				</p>
+			</div> -->
+		</details>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

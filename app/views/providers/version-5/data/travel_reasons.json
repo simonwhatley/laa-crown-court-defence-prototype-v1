@@ -1,0 +1,27 @@
+[
+	{
+	    "key": "court_hearing",
+	    "name": "Court hearing",
+	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "pre_trial_conference_expert_witnesses",
+	    "name": "Pre-trial conference expert witnesses",
+	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "pre_trial_conference_defendant",
+	    "name": "Pre-trial conference defendant",
+	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "view_of_crime_scene",
+	    "name": "View of crime scene",
+	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "other",
+	    "name": "Other",
+	    "scheme": ["agfs", "lgfs"]
+	}
+]

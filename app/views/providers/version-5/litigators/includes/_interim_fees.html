@@ -1,0 +1,370 @@
+<div class="form-group">
+    <fieldset>
+        <legend class="heading-small">
+            Type of fee
+            <span class="form-hint">
+                Please choose a relevant option
+            </span>
+        </legend>
+
+        <div class="multiple-choice" data-target="interim-fee-panel">
+            <input aria-controls="interim-fee-panel" aria-expanded="false" id="disbursement" name="interim_fee_type" type="radio" value="disbursement_only" {{ checked('interim_fee_type','disbursement_only') }}>
+            <label for="disbursement">
+                Disbursement only
+            </label>
+        </div>
+
+        {% if data['case_type'] == 'trial' -%}
+            <div class="multiple-choice" data-target="plea-trial-prep-hearing-panel">
+                <input aria-controls="plea-trial-prep-hearing-panel" aria-expanded="false" id="plea-trial-prep-hearing" name="interim_fee_type" type="radio" value="plea_trial_prep_hearing" {{ checked('interim_fee_type','plea_trial_prep_hearing') }}>
+                <label for="plea-trial-prep-hearing">
+                    Plea and trial preparation hearing (<abbr title="Plea &amp; Trial Preparation Hearing">PTPH</abbr>)
+                </label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="plea-trial-prep-hearing-panel">
+                <div class="form-group">
+                    <label class="form-label-bold" for="standard-appearances-number-of-appearances">
+                        <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                    </label>
+                    <input class="form-control form-control-1-4" id="pages-of-prosecution-evidence" name="pages_of_prosecution_evidence" type="text" value="{{data['pages_of_prosecution_evidence']}}">
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold">
+                            Date of hearing
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="date-of-hearing-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="date-of-hearing-day" max="31" min="1" name="date_of_hearing_day" pattern="[0-9]*" type="number" value="{{data['date_of_hearing_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="date-of-hearing-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="date-of-hearing-month" max="12" min="1" name="date_of_hearing_month" pattern="[0-9]*" type="number" value="{{data['date_of_hearing_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="date-of-hearing-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="date-of-hearing-year" max="2019" min="1900" name="date_of_hearing_year" pattern="[0-9]*" type="number" value="{{data['date_of_hearing_year']}}">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <a href="#noop">
+                        Add another date
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label class="form-label-bold" for="plea-trial-prep-hearing-net-amount">
+                        Net amount
+                    </label>
+                    <span class="form-input-denote">
+                        &pound;
+                    </span>
+                    <input class="form-control form-control-1-4 form-input-denote__input" id="plea-trial-prep-hearing-net-amount" name="plea_trial_prep_hearing_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['plea_trial_prep_hearing_net_amount']}}">
+                </div>
+            </div>
+        {%- endif %}
+
+        {% if data['case_type'] == 'retrial' -%}
+            <div class="multiple-choice" data-target="retrial-new-solicitor-panel">
+                <input aria-controls="retrial-new-solicitor-panel" aria-expanded="false" id="retrial-new-solicitor" name="interim_fee_type" type="radio" value="retrial_new_solicitor" {{ checked('interim_fee_type','retrial_new_solicitor') }}>
+                <label for="retrial-new-solicitor">
+                    Retrial, new solicitor
+                </label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="retrial-new-solicitor-panel">
+                <div class="form-group">
+                    <label class="form-label-bold" for="retrial-new-solicitor-pages-of-prosecution-evidence">
+                        <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                    </label>
+                    <input class="form-control form-control-1-4" id="retrial-new-solicitor-pages-of-prosecution-evidence" name="retrial_new_solicitor_pages_of_prosecution_evidence" type="text" value="{{data['retrial_new_solicitor_pages_of_prosecution_evidence']}}">
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold">
+                            Date of legal aid transfer
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="date-legal-aid-transfer-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="date-legal-aid-transfer-day" max="31" min="1" name="date_legal_aid_transfer_day" pattern="[0-9]*" type="number" value="{{data['date_legal_aid_transfer_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="date-legal-aid-transfer-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="date-legal-aid-transfer-month" max="12" min="1" name="date_legal_aid_transfer_month" pattern="[0-9]*" type="number" value="{{data['date_legal_aid_transfer_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="date-legal-aid-transfer-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="date-legal-aid-transfer-year" max="2019" min="1900" name="date_legal_aid_transfer_year" pattern="[0-9]*" type="number" value="{{data['date_legal_aid_transfer_year']}}">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold">
+                            Date first trial concluded
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="date-first-trial-concluded-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="date-first-trial-concluded-day" max="31" min="1" name="date_first_trial_concluded_day" pattern="[0-9]*" type="number" value="{{data['date_first_trial_concluded_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="date-first-trial-concluded-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="date-first-trial-concluded-month" max="12" min="1" name="date_first_trial_concluded_month" pattern="[0-9]*" type="number" value="{{data['date_first_trial_concluded_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="date-first-trial-concluded-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="date-first-trial-concluded-year" max="2019" min="1900" name="date_first_trial_concluded_year" pattern="[0-9]*" type="number" value="{{data['date_first_trial_concluded_year']}}">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label class="form-label-bold" for="plea-trial-prep-hearing-net-amount">
+                        Net amount
+                    </label>
+                    <span class="form-input-denote">
+                        &pound;
+                    </span>
+                    <input class="form-control form-control-1-4 form-input-denote__input" id="retrial-new-solicitor-net-amount" name="retrial_new_solicitor_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['retrial_new_solicitor_net_amount']}}">
+                </div>
+            </div>
+
+            <div class="multiple-choice" data-target="retrial-start-panel">
+                <input aria-controls="retrial-start-panel" aria-expanded="false" id="retrial-start" name="interim_fee_type" type="radio" value="retrial_start" {{ checked('interim_fee_type','retrial_start') }}>
+                <label for="retrial-start">
+                    Retrial start
+                </label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="retrial-start-panel">
+                <div class="form-group">
+                    <label class="form-label-bold" for="retrial-start-pages-of-prosecution-evidence">
+                        <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                    </label>
+                    <input class="form-control form-control-1-4" id="retrial-start-pages-of-prosecution-evidence" name="retrial_start_pages_of_prosecution_evidence" type="text" value="{{data['retrial_start_pages_of_prosecution_evidence']}}">
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold">
+                            Retrial start date
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="retrial-start-date-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="retrial-start-date-day" max="31" min="1" name="retrial_start_date_day" pattern="[0-9]*" type="number" value="{{data['retrial_start_date_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="retrial-start-date-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="retrial-start-date-month" max="12" min="1" name="retrial_start_date_month" pattern="[0-9]*" type="number" value="{{data['retrial_start_date_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="retrial-start-date-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="retrial-start-date-year" max="2019" min="1900" name="retrial_start_date_year" pattern="[0-9]*" type="number" value="{{data['retrial_start_date_year']}}">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label class="form-label-bold" for="estimated-length-of-retrial">
+                        Estimated length of retrial
+                        <span class="form-hint">Number of days</span>
+                    </label>
+                    <input class="form-control form-control-1-4" id="estimated-length-of-retrial" name="estimated_length_of_retrial" type="text" value="{{data['estimated_length_of_retrial']}}">
+                </div>
+                <div class="form-group">
+                    <label class="form-label-bold" for="retrial-net-amount">
+                        Net amount
+                    </label>
+                    <span class="form-input-denote">
+                        &pound;
+                    </span>
+                    <input class="form-control form-control-1-4 form-input-denote__input" id="retrial-net-amount" name="retrial_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['retrial_net_amount']}}">
+                </div>
+            </div>
+        {%- endif %}
+
+        {% if data['case_type'] == 'trial' -%}
+            <div class="multiple-choice" data-target="trial-start-panel">
+                <input aria-controls="trial-start-panel" aria-expanded="false" id="trial-start" name="interim_fee_type" type="radio" value="trial_start" {{ checked('interim_fee_type','trial_start') }}>
+                <label for="trial-start">
+                    Trial start
+                </label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="trial-start-panel">
+                <div class="form-group">
+                    <label class="form-label-bold" for="trial-start-pages-of-prosecution-evidence">
+                        <abbr title="Pages of Prosecution Evidence">PPE</abbr> total at the time
+                    </label>
+                    <input class="form-control form-control-1-4" id="trial-start-pages-of-prosecution-evidence" name="trial_start_pages_of_prosecution_evidence" type="text" value="{{data['trial_start_pages_of_prosecution_evidence']}}">
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="form-label-bold">
+                            Trial start date
+                            <span class="form-hint">
+                                For example, 31 3 2017
+                            </span>
+                        </legend>
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="trial-start-date-day">
+                                    Day
+                                </label>
+                                <input class="form-control" id="trial-start-date-day" max="31" min="1" name="trial_start_date_day" pattern="[0-9]*" type="number" value="{{data['trial_start_date_day']}}">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="trial-start-date-month">
+                                    Month
+                                </label>
+                                <input class="form-control" id="trial-start-date-month" max="12" min="1" name="trial_start_date_month" pattern="[0-9]*" type="number" value="{{data['trial_start_date_month']}}">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label class="form-label" for="trial-start-date-year">
+                                    Year
+                                </label>
+                                <input class="form-control" id="trial-start-date-year" max="2019" min="1900" name="trial_start_date_year" pattern="[0-9]*" type="number" value="{{data['trial_start_date_year']}}">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label class="form-label-bold" for="estimated-length-of-trial">
+                        Estimated length of trial
+                        <span class="form-hint">Number of days</span>
+                    </label>
+                    <input class="form-control form-control-1-4" id="estimated-length-of-trial" name="estimated_length_of_trial" type="text" value="{{data['estimated_length_of_trial']}}">
+                </div>
+                <div class="form-group">
+                    <label class="form-label-bold" for="trial-net-amount">
+                        Net amount
+                    </label>
+                    <span class="form-input-denote">
+                        &pound;
+                    </span>
+                    <input class="form-control form-control-1-4 form-input-denote__input" id="trial-net-amount" name="trial_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['trial_net_amount']}}">
+                </div>
+            </div>
+        {%- endif %}
+
+
+        <div class="multiple-choice" data-target="warrant-fee-panel">
+            <input aria-controls="warrant-fee-panel" aria-expanded="false" id="warrant-fee" name="interim_fee_type" type="radio" value="warrant_fee" {{ checked('interim_fee_type','warrant_fee') }}>
+            <label for="warrant-fee">
+                Warrant fee
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="warrant-fee-panel">
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Warrant issued
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="warrant-issued-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="warrant-issued-day" max="31" min="1" name="warrant_issued_day" pattern="[0-9]*" type="number" value="{{data['warrant_issued_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="warrant-issued-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="warrant-issued-month" max="12" min="1" name="warrant_issued_month" pattern="[0-9]*" type="number" value="{{data['warrant_issued_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="warrant-issued-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="warrant-issued-year" max="2018" min="2010" name="warrant_issued_year" pattern="[0-9]*" type="number" value="{{data['warrant_issued_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Warrant executed
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="warrant-executed-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="warrant-executed-day" max="31" min="1" name="warrant_executed_day" pattern="[0-9]*" type="number" value="{{data['warrant_executed_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="warrant-executed-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="warrant-executed-month" max="12" min="1" name="warrant_executed_month" pattern="[0-9]*" type="number" value="{{data['warrant_executed_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="warrant-executed-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="warrant-executed-year" max="2018" min="2010" name="warrant_executed_year" pattern="[0-9]*" type="number" value="{{data['warrant_executed_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label-bold" for="warrant-fee-net-amount">
+                    Net amount
+                </label>
+                <span class="form-input-denote">
+                    &pound;
+                </span>
+                <input class="form-control form-control-1-4 form-input-denote__input" id="warrant-fee-net-amount" name="warrant_fee_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['warrant_fee_net_amount']}}">
+            </div>
+        </div>
+
+    </fieldset>
+</div>

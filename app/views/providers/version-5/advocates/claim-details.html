@@ -1,0 +1,82 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<a class="link-back" href="{{links.home}}">Home</a>
+
+	<!-- <h1 class="heading-xlarge">
+		Claim 12345
+	</h1> -->
+
+	<div class="grid-row">
+		<div class="column-one-third">
+			<h1 class="heading-large">
+				<span class="heading-secondary">Case number</span>
+				T20180101
+				<span class="font-small font-grey">#115424</span>
+			</h1>
+		</div>
+		<div class="column-one-third">
+			<h1 class="heading-large">
+				<span class="heading-secondary">Status</span>
+				<span class="font-small status status-authorised">Authorised</span>
+			</h1>
+		</div>
+		<div class="column-one-third">
+			<h1 class="heading-large">
+				<span class="heading-secondary">Assessed date</span>
+				23/10/2018
+			</h1>
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-one-third">
+			<h1 class="heading-large">
+				<span class="heading-secondary">Defendant</span>
+				J. Anderson
+			</h1>
+		</div>
+		<div class="column-one-third">
+			<h1 class="heading-large">
+				<span class="heading-secondary">Chamber</span>
+				Equity Court
+			</h1>
+		</div>
+		<div class="column-one-third">
+			<!-- <h1 class="heading-large">
+				<span class="heading-secondary">Something</span>
+				Something
+			</h1> -->
+		</div>
+	</div>
+
+	<div class="grid-row">
+	    <div class="column-full">
+
+			{#% include "./includes/_claim_detail_overview.html" %#}
+
+			<h2 class="heading-medium">
+				Messages
+			</h2>
+
+			{% include "./includes/_messages.html" %}
+
+			{#% include "./includes/_claim_details.html" %#}
+
+		</div>
+	</div>
+
+	{#% include "./includes/_help.html" %#}
+
+</main>
+
+{% endblock %}

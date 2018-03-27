@@ -1,0 +1,250 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "../includes/_page_scripts_case_details.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-one-half">
+
+					<h2 id="section-heading" class="heading-large">
+						Case details
+					</h2>
+
+					<form class="form" method="post">
+
+						<div class="form-section">
+
+							<div class="form-group" data-required="true" data-error="Choose a supplier number">
+
+								<fieldset>
+
+									<legend class="form-label-bold" for="radio-1">
+										Supplier number
+										<span class="form-hint">Please choose a relevant supplier</span>
+									</legend>
+
+									{% for supplier in ['5A000Z','6B111Y','7C222X','8D333W','9E444V'] -%}
+
+										<div class="multiple-choice">
+											<input id="supplier-number-{{loop.index}}" type="radio" name="supplier_number" value="{{supplier}}" {{ checked('supplier_number', supplier) }}>
+											<label for="supplier-number-{{loop.index}}">{{supplier}}</label>
+										</div>
+
+									{%- endfor %}
+
+								</fieldset>
+
+							</div>
+
+							<div class="form-group">
+								<details>
+									<summary>
+										<span class="summary">Help with adding more suppliers</span>
+									</summary>
+									<div class="panel panel-border-narrow">
+										<p>
+										You can add more <abbr title="litigator graduated fee scheme">LGFS</abbr> supplier numbers in the <a href="#noop">manage provider</a> section
+										</p>
+									</div>
+								</details>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label-bold" for="reference-number">
+									Reference number
+									<span class="form-hint">Your internal reference number for this claim</span>
+								</label>
+								<input class="form-control" id="reference-number" type="text" name="reference_number" value="{{ data['reference_number']}}" autocomplete="off" autocapitalize="off">
+							</div>
+
+							{% if data['bill_type'] in ['litigator_final','litigator_interim'] -%}
+							<div class="form-group">
+
+								<fieldset>
+
+									<legend class="form-label-bold" for="case-type">
+										Case type
+										{% if data['bill_type'] != 'litigator_interim' -%}
+										<span class="form-hint">
+											For example Trial
+										</span>
+										{%- endif %}
+									</legend>
+
+									{% if data['bill_type'] == 'litigator_interim' -%}
+
+										{% for type in case_types -%}
+
+											{% if type.key in ['retrial','trial'] -%}
+
+											<div class="multiple-choice">
+												<input id="radio-{{type.key}}" type="radio" name="case_type" value="{{type.key}}" {{ checked('case_type',type.key) }}>
+												<label for="radio-{{type.key}}">{{type.name}}</label>
+											</div>
+
+											{%- endif %}
+
+										{%- endfor %}
+
+									{% else %}
+
+										<select id="case-type" name="case_type" class="form-control">
+											<option value=""></option>
+
+											{% for type in case_types -%}
+
+												<option value="{{type.key}}" {% if type.abbreviations.length -%}data-abbreviations="{{type.abbreviations}}" {%- endif %}{% if type.other_names.length -%}data-other-names="{{type.other_names}}" {%- endif %} {% if data['case_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
+
+											{%- endfor %}
+
+										</select>
+
+									{%- endif %}
+
+								</fieldset>
+
+							</div>
+							{%- endif %}
+
+							<div class="form-group">
+
+								<fieldset>
+									<legend class="form-label-bold" for="court">
+										Court
+										<span class="form-hint">
+											For example Cardiff
+										</span>
+									</legend>
+
+									<select id="court" name="court" class="form-control">
+										<option value=""></option>
+
+										{% for court in courts -%}
+											<option value="{{court.key}}" {% if court.abbreviations.length -%}data-abbreviations="{{court.abbreviations}}" {%- endif %}{% if court.other_names.length -%}data-other-names="{{court.other_names}}" {%- endif %} {%- if data['court'] == court.key %}selected="selected"{%- endif %}>{{court.name}}</option>
+										{%- endfor %}
+
+									</select>
+
+								</fieldset>
+
+							</div>
+
+							<div class="form-group">
+								<label class="form-label-bold" for="case-number">
+									Case number
+									<span class="form-hint">
+										For example T20170101
+									</span>
+								</label>
+								<input class="form-control" id="case-number" type="text" name="case_number" value="{{ data['case_number']}}" autocomplete="off" autocapitalize="on">
+							</div>
+
+							<div class="form-group">
+								<fieldset>
+
+									<legend class="form-label-bold">
+										Was this case transferred from another court?
+									</legend>
+
+									<div class="multiple-choice">
+										<input id="transfer-court-no" type="radio" name="transfer_court_option" value="no" {{ checked('transfer_court_option','no') }}>
+										<label for="transfer-court-no">No</label>
+									</div>
+
+									<div class="multiple-choice" data-target="transfer-court-panel">
+										<input id="transfer-court-yes" type="radio" name="transfer_court_option" value="yes" {{ checked('transfer_court_option','yes') }}>
+										<label for="transfer-court-yes">Yes</label>
+									</div>
+									<div class="panel panel-border-narrow js-hidden" id="transfer-court-panel">
+										<div class="form-group">
+											<label class="form-label-bold" for="transfer-court">
+												Court
+												<span class="form-hint">For example Cardiff</span>
+											</label>
+											<select id="transfer-court" name="transfer_court" class="form-control">
+												<option value=""></option>
+
+												{% for court in courts -%}
+													<option value="{{court.key}}" {% if court.abbreviations.length -%}data-abbreviations="{{court.abbreviations}}" {%- endif %}{% if court.other_names.length -%}data-other-names="{{court.other_names}}" {%- endif %} {%- if data['transfer_court'] == court.key %}selected="selected"{%- endif %}>{{court.name}}</option>
+												{%- endfor %}
+
+											</select>
+										</div>
+										<div class="form-group">
+											<label class="form-label-bold" for="transfer-case-number">
+												Case number
+												<span class="form-hint">For example T20170101</span>
+											</label>
+											<input class="form-control" name="transfer_case_number" type="text" id="transfer-case-number" value="{{ data['transfer_case_number']}}">
+										</div>
+									</div>
+
+								</fieldset>
+							</div>
+
+							<div class="form-group">
+						        <fieldset>
+						            <legend class="form-label-bold">
+						                Date case concluded
+						                <span class="form-hint">
+						                    For example, 31 3 2017
+						                </span>
+						            </legend>
+						            <div class="form-date">
+						                <div class="form-group form-group-day">
+						                    <label class="form-label" for="date-case-concluded-day">
+						                        Day
+						                    </label>
+						                    <input class="form-control" id="date-case-concluded-day" max="31" min="1" name="date_case_concluded_day" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_day']}}">
+						                </div>
+						                <div class="form-group form-group-month">
+						                    <label class="form-label" for="date-case-concluded-month">
+						                        Month
+						                    </label>
+						                    <input class="form-control" id="date-case-concluded-month" max="12" min="1" name="date_case_concluded_month" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_month']}}">
+						                </div>
+						                <div class="form-group form-group-year">
+						                    <label class="form-label" for="date-case-concluded-year">
+						                        Year
+						                    </label>
+						                    <input class="form-control" id="date-case-concluded-year" max="2019" min="1900" name="date_case_concluded_year" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_year']}}">
+						                </div>
+						            </div>
+						        </fieldset>
+						    </div>
+
+						</div>
+
+						{% include "./includes/_form_actions.html" %}
+
+					</form>
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}
