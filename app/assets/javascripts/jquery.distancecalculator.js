@@ -83,13 +83,13 @@
         // Show distance in different measurements
         function convertDistance(distance, units) {
             if(units=='mile'){
-                return (((distance*0.621371192)/100) / 10);
+                return (((distance*0.621371192)/100) / 10).toFixed(1);
             }
             else if(units=='kilometer'){
-                return ((((distance*0.621371192)/100) / 10) * 1.609344);
+                return ((((distance*0.621371192)/100) / 10) * 1.609344).toFixed(1);
             }
             else{
-                return distance;
+                return distance.toFixed(1);
             }
         }
 

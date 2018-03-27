@@ -18,16 +18,17 @@ var destination_location;
 $(document).ready(function() {
   // console.log('test');
   initialize();
-  
-  //Grab the address values from the form on submit, and then run the maps code
-  $('#map-form').submit(function(event) {
-      //Also, stop the form from actually submitting
-      event.preventDefault();
-      origin_address = $('#origin_address').val();
-      destination_address = $('#destination_address').val();
-      //Run it, baby!
-      showLocation();
+
+  $('#map-form').on('submit', function(e) {
+    e.preventDefault();
+
+    origin_address = $('#origin_address').val();
+    destination_address = $('#destination_address').val();
+    //Run it
+    showLocation();
+
   });
+  
 });
 
 var geocoder, origin_location, destination_location;
@@ -114,6 +115,10 @@ function calculateDistance()
 					</div>
 
 				</div>
+
+				<div class="form-section">
+					<p>The distance is: <span class="bold" id="mile_distance">0</span> miles.</p>
+				</div>
 				
 				<div class="form-section">
 					<div class="form-group form-buttons">
@@ -124,9 +129,9 @@ function calculateDistance()
 
 			</form>
 
-			<p>The distance is: <span id="mile_distance">?</span> miles.</p>
-
 			<hr>
+
+      		<p class="font-small"><a href="./index2">See version 2</a></p>
 
 		    <p>
 		    	<a href="https://github.com/Asherlc/Distance-Calculator/">

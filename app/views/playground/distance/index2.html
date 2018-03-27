@@ -14,10 +14,8 @@ $(document).ready(function() {
     e.preventDefault();
 
     var origin = $('#origin_address').val();
-    console.log(origin);
     var destination = $('#destination_address').val();
-    console.log(destination);
-
+    
     // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
     // Result container: container (default), textbox
 
@@ -46,55 +44,56 @@ $(document).ready(function() {
 		    <h1 class="heading-xlarge">
 		      Distance calculation (2)
 		    </h1>
+        
 
-			<form id="map-form">
+  			<form id="map-form">
 
-				<div class="form-section">
+  				<div class="form-section">
 
-					<div class="form-group">
-					    <label class="form-label-bold" for="origin_address">
-					        Origin postcode
-					        <span class="form-hint">Enter a valid postcode</span>
-					    </label>
-					    <input class="form-control" id="origin_address" type="text" name="origin_address" autocomplete="off" autocapitalize="off">
-					</div>
+  					<div class="form-group">
+  					    <label class="form-label-bold" for="origin_address">
+  					        Origin postcode
+  					        <span class="form-hint">Enter a valid postcode</span>
+  					    </label>
+  					    <input class="form-control" id="origin_address" type="text" name="origin_address" autocomplete="off" autocapitalize="off">
+  					</div>
 
-					<div class="form-group">
-					    <label class="form-label-bold" for="destination_address">
-					        Destination postcode
-					        <span class="form-hint">Enter a valid postcode</span>
-					    </label>
-					    <input class="form-control" id="destination_address" type="text" name="destination_address" autocomplete="off" autocapitalize="off">
-					</div>
+  					<div class="form-group">
+  					    <label class="form-label-bold" for="destination_address">
+  					        Destination postcode
+  					        <span class="form-hint">Enter a valid postcode</span>
+  					    </label>
+  					    <input class="form-control" id="destination_address" type="text" name="destination_address" autocomplete="off" autocapitalize="off">
+  					</div>
 
-          <div class="form-group">
-              <label class="form-label-bold" for="distance">
-                  Distance
-                  <span class="form-hint">Miles</span>
-              </label>
-              <input class="form-control form-control-1-8" id="distance" type="text" name="distance" autocomplete="off" autocapitalize="off" readonly="readonly">
-          </div>
+            <div class="form-group">
+                <label class="form-label-bold" for="distance">
+                    Distance
+                    <span class="form-hint">Miles</span>
+                </label>
+                <input class="form-control form-control-1-8" id="distance" type="text" name="distance" autocomplete="off" autocapitalize="off" readonly="readonly">
+            </div>
 
-				</div>
-				
-				<div class="form-section">
-					<div class="form-group form-buttons">
-						<input id="calculate" type="submit" class="button" value="Calculate">
-						<a id="cancel" class="link-secondary">Cancel</a>
-					</div>
-				</div>
+  				</div>
+  				
+  				<div class="form-section">
+  					<div class="form-group form-buttons">
+  						<input id="calculate" type="submit" class="button" value="Calculate">
+  						<a id="cancel" class="link-secondary">Cancel</a>
+  					</div>
+  				</div>
 
-			</form>
-
-			<!-- <p>The distance is: <span id="result">?</span> miles.</p> -->
+  			</form>
 
 			<hr>
 
-		    <p>
-		    	<a href="https://github.com/aslamdoctor/jQuery.distancecalculator">
-		    		https://github.com/aslamdoctor/jQuery.distancecalculator
-		    	</a>
-		    </p>
+      <p class="font-small"><a href="./">See version 1</a></p>
+
+	    <p>
+	    	<a href="https://github.com/aslamdoctor/jQuery.distancecalculator">
+	    		https://github.com/aslamdoctor/jQuery.distancecalculator
+	    	</a>
+	    </p>
 
 		</div>
 	</div>
