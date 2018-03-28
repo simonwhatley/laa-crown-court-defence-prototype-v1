@@ -75,6 +75,7 @@ router.get('/data/offences/10/categories', function (req, res) {
 // ==============================================
 
 router.get('/advocates/', function(req, res) {
+    console.log(utils.getClaims('agfs')[0].defendants)
     res.render(`${req.feature}/${req.version}/advocates/index`,
         {
             links: {
@@ -83,7 +84,7 @@ router.get('/advocates/', function(req, res) {
                 'outstanding': req.baseUrl + '/advocates/outstanding',
                 'authorised': req.baseUrl + '/advocates/authorised'
             },
-            claims: []
+            claims: utils.getClaims('agfs')
         });
 });
 
@@ -498,7 +499,8 @@ router.get('/advocates/clear/offences', function(req, res) {
     res.redirect(`/${req.feature}/${req.version}/advocates/offence-details`);
 });
 
-router.get('/advocates/:claim_id([AST]{1}[0-9]{8})/details', function(req, res) {
+// :claim_id([AST]{1}[0-9]{8})
+router.get('/advocates/:claim_id([0-9]+)/details', function(req, res) {
 
     // TODO: if claim id not valid, send back to all claims list
 
@@ -508,6 +510,7 @@ router.get('/advocates/:claim_id([AST]{1}[0-9]{8})/details', function(req, res) 
                 // 'new' : req.baseUrl + '/advocates/start',
                 'home' : req.baseUrl + '/advocates/'
             },
+            // detail: utils.getClaim(req.params.claim_id),
             messages: utils.getMessages(req.params.claim_id)
         });
 });

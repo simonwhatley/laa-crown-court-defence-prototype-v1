@@ -1,0 +1,290 @@
+[
+    {
+        "id": 61807,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "draft",
+        "instructed_advocate": "002YQ",
+        "reference_number": "EC/T20170101",
+        "case_type": "trial",
+        "fee_type": "graduated",
+        "court": "central_criminal_court",
+        "case_number": "T20170101",
+        "defendants": [
+            {
+                "first_name": "Joseph",
+                "last_name": "Anderson",
+                "date_of_birth": "1/1/1970",
+                "judicial_apportionment": "no",
+                "representation_orders": [
+                    {
+                        "representation_order_date": "31/1/2018",
+                        "maat_reference": 12345678
+                    }
+                ]
+            },
+            {
+                "first_name": "Larry",
+                "last_name": "David",
+                "date_of_birth": "31/3/1972",
+                "judicial_apportionment": "no",
+                "representation_orders": [
+                    {
+                        "representation_order_date": "31/1/2018",
+                        "maat_reference": 12345679
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 66624,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "draft",
+        "instructed_advocate": "002ZR",
+        "reference_number": "EC/T20170102",
+        "case_type": "retrial",
+        "fee_type": "graduated",
+        "court": "snaresbrook",
+        "case_number": "T20170102",
+        "defendants": [
+            {
+                "first_name": "Jacqueline",
+                "last_name": "Weaver",
+                "date_of_birth": "31/3/1972",
+                "judicial_apportionment": "no",
+                "representation_orders": [
+                    {
+                        "representation_order_date": "31/1/2018",
+                        "maat_reference": 12345679
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 73160,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "draft",
+        "instructed_advocate": "002YP",
+        "reference_number": "EC/T20170103",
+        "case_type": "guilty_plea",
+        "fee_type": "graduated",
+        "court": "inner_london",
+        "case_number": "T20170103",
+        "defendants": [
+            {
+                "first_name": "Dee",
+                "last_name": "Fence",
+                "date_of_birth": "31/3/1972",
+                "judicial_apportionment": "no",
+                "representation_orders": [
+                    {
+                        "representation_order_date": "31/1/2018",
+                        "maat_reference": 12345679
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 77501,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "submitted",
+        "instructed_advocate": "002YQ",
+        "reference_number": "EC/T20170104",
+        "case_type": "trial",
+        "fee_type": "graduated",
+        "court": "central_criminal_court",
+        "case_number": "T20170104"
+    },
+    {
+        "id": 84915,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "submitted",
+        "instructed_advocate": "002ZR",
+        "reference_number": "EC/T20170105",
+        "case_type": "retrial",
+        "fee_type": "graduated",
+        "court": "snaresbrook",
+        "case_number": "T20170105"
+    },
+    {
+        "id": 91001,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "submitted",
+        "instructed_advocate": "002YP",
+        "reference_number": "EC/T20170106",
+        "case_type": "guilty_plea",
+        "fee_type": "graduated",
+        "court": "inner_london",
+        "case_number": "T20170106"
+    },
+    {
+        "id": 93069,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "allocated",
+        "instructed_advocate": "002YQ",
+        "reference_number": "EC/T20170107",
+        "case_type": "trial",
+        "fee_type": "graduated",
+        "court": "central_criminal_court",
+        "case_number": "T20170107"
+    },
+    {
+        "id": 97631,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "allocated",
+        "instructed_advocate": "002ZR",
+        "reference_number": "EC/T20170108",
+        "case_type": "retrial",
+        "fee_type": "graduated",
+        "court": "snaresbrook",
+        "case_number": "T20170108"
+    },
+    {
+        "id": 99362,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 9,
+        "status": "allocated",
+        "instructed_advocate": "002YP",
+        "reference_number": "EC/T20170109",
+        "case_type": "guilty_plea",
+        "fee_type": "graduated",
+        "court": "inner_london",
+        "case_number": "T20170109"
+    },
+    {
+        "id": 103493,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "draft",
+        "instructed_advocate": "002YQ",
+        "reference_number": "EC/T20170110",
+        "case_type": "trial",
+        "fee_type": "graduated",
+        "court": "central_criminal_court",
+        "case_number": "T20170110"
+    },
+    {
+        "id": 112300,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "draft",
+        "instructed_advocate": "002ZR",
+        "reference_number": "EC/T20170111",
+        "case_type": "retrial",
+        "fee_type": "graduated",
+        "court": "snaresbrook",
+        "case_number": "T20170111"
+    },
+    {
+        "id": 117155,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "draft",
+        "instructed_advocate": "002YP",
+        "reference_number": "EC/T20170112",
+        "case_type": "guilty_plea",
+        "fee_type": "graduated",
+        "court": "inner_london",
+        "case_number": "T20170112"
+    },
+    {
+        "id": 125650,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "submitted",
+        "instructed_advocate": "002YQ",
+        "reference_number": "EC/T20170113",
+        "case_type": "trial",
+        "fee_type": "graduated",
+        "court": "central_criminal_court",
+        "case_number": "T20170113"
+    },
+    {
+        "id": 134207,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "submitted",
+        "instructed_advocate": "002ZR",
+        "reference_number": "EC/T20170114",
+        "case_type": "retrial",
+        "fee_type": "graduated",
+        "court": "snaresbrook",
+        "case_number": "T20170114"
+    },
+    {
+        "id": 138362,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "submitted",
+        "instructed_advocate": "002YP",
+        "reference_number": "EC/T20170115",
+        "case_type": "guilty_plea",
+        "fee_type": "graduated",
+        "court": "inner_london",
+        "case_number": "T20170115"
+    },
+    {
+        "id": 145940,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "allocated",
+        "instructed_advocate": "002YQ",
+        "reference_number": "EC/T20170116",
+        "case_type": "trial",
+        "fee_type": "graduated",
+        "court": "central_criminal_court",
+        "case_number": "T20170116"
+    },
+    {
+        "id": 153675,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "allocated",
+        "instructed_advocate": "002ZR",
+        "reference_number": "EC/T20170117",
+        "case_type": "retrial",
+        "fee_type": "graduated",
+        "court": "snaresbrook",
+        "case_number": "T20170117"
+    },
+    {
+        "id": 163516,
+        "bill_type": "advocate_final",
+        "fee_scheme": "AGFS",
+        "fee_scheme_version": 10,
+        "status": "allocated",
+        "instructed_advocate": "002YP",
+        "reference_number": "EC/T20170118",
+        "case_type": "guilty_plea",
+        "fee_type": "graduated",
+        "court": "inner_london",
+        "case_number": "T20170118"
+    }
+]

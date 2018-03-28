@@ -10,6 +10,7 @@ var transferReasons = require('./data/transfer_reasons.json')
 var travelTypes = require('./data/travel_types.json')
 var travelReasons = require('./data/travel_reasons.json')
 var messages = require('./data/messages.json')
+var advocateClaims = require('./data/claims_advocates.json')
 
 module.exports = {
 
@@ -110,7 +111,7 @@ module.exports = {
 	},
 
 	getOffencesScheme10ByCategoryId: function(category_id) {
-		
+
 		var classObj = this.getOffencesScheme10().filter(function (el) {
   			 return (el.category_id == category_id)
 		})
@@ -119,7 +120,7 @@ module.exports = {
 	},
 
 	getOffencesScheme10ByActId: function(act_id) {
-		
+
 		var classObj = this.getOffencesScheme10().filter(function (el) {
   			 return (el.act_id == act_id)
 		})
@@ -128,7 +129,7 @@ module.exports = {
 	},
 
 	getOffenceScheme10: function(class_id, band_id, category_id) {
-		
+
 		var classObj = this.getOffencesScheme10ByBandId(class_id, band_id).filter(function (el) {
   			 return (el.category_id == category_id)
 		})
@@ -183,12 +184,12 @@ module.exports = {
 	},
 
 	getTravelTypes: function(fee_scheme) {
-		
+
 		if(!fee_scheme) return travelTypes
 
 		return travelTypes.filter( function(obj) {
 	        return !!~obj.scheme.indexOf(fee_scheme)
-	    })
+	    });
 
 	},
 
@@ -196,15 +197,29 @@ module.exports = {
 		return travelReasons
 	},
 
-	getMessages: function(case_number) {
-		
-		if(!case_number) return null
+	getClaims: function(fee_scheme) {
+		if(!fee_scheme) return null
+
+		return advocateClaims;
+	},
+
+	getClaim: function(claim_id) {
+		if(!claim_id) return null
+
+		return advocateClaims.filter( function(obj) {
+	        return !!~obj.id.indexOf(claim_id)
+	    });
+	},
+
+	getMessages: function(claim_id) {
+
+		if(!claim_id) return null
 
 		var messageObj = messages.cases.filter(function (obj) {
-  			 return (obj.case_number == case_number)
-		})
+  			 return (obj.claim_id == claim_id)
+		});
 
-		return messageObj[0].messages
+		return messageObj[0].messages;
 
 	},
 

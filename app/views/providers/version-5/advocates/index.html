@@ -24,7 +24,7 @@
 
 	<div class="grid-row">
 		<div class="column-one-third">
-	
+
 			<h2 class="heading-large">
 				<span class="heading-secondary">Total outstanding</span>
 				£99,999.00
@@ -33,10 +33,10 @@
 			<p>
 				<a id="view-outstanding-claim-details" href="{{links.outstanding}}">View details <span class="visually-hidden">for total claims outstanding</span></a>
 			</p>
-		
+
 		</div>
 		<div class="column-one-third">
-			
+
 			<h2 class="heading-large">
 				<span class="heading-secondary">Total authorised</span>
 				£99,999.00
@@ -111,7 +111,40 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr id="claim-12345">
+
+						{% for claim in claims %}
+
+						<tr id="claim-{{claim.id}}">
+							<th aria-label="Case number" scope="row">
+								{% if claim.status == 'draft' -%}
+								<a href="./{{claim.id}}/summary">
+								{% else %}
+								<a href="./{{claim.id}}/details">
+								{%- endif %}
+									{{claim.case_number}}
+								</a>
+								<br>
+								<span class="font-xsmall">{{claim.reference_number}}</span>
+							</th>
+							<td aria-label="Defendants">
+								<ul>
+								{% for defendant in claim.defendants %}
+									<li>{{defendant.first_name}} {{defendant.last_name}}</li>
+								{% endfor %}
+								</ul>
+							</td>
+							<td aria-label="Claimed amount" class="numeric">£0.00</td>
+							<td aria-label="Assessed amount" class="numeric">&ndash;</td>
+							<td aria-label="Claim status">
+								<span class="status status-{{claim.status | replace('_','-')}}">{{claim.status | replace('_',' ') | capitalize}}</span>
+							</td>
+							<td aria-label="Date submitted">&ndash;</td>
+							<td aria-label="Messages">&ndash;</td>
+						</tr>
+
+						{% endfor %}
+
+						<!-- <tr id="claim-12345">
 							<th aria-label="Case number" scope="row">
 								<a href="./T20180101/details">T20180101</a><br>
 								<span class="font-xsmall">SW/T2018ABC</span>
@@ -154,7 +187,7 @@
 							<td aria-label="Messages" class="messages">
 								<span class="none">No messages</span>
 							</td>
-						</tr>
+						</tr> -->
 					</tbody>
 				</table>
 			</div>
