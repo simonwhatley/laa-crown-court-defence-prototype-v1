@@ -155,6 +155,12 @@ table.summary tbody tr td:first-child {
   width: 33%;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
 /*table.summary tr th:first-child {
   padding-left: 10px;
 }
