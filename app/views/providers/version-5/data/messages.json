@@ -15,7 +15,7 @@
                 {
                     "message_id": 87605,
                     "timestamp": "2018-10-16T10:51:00.000Z",
-                    "message": "I forgot to attach filename\n\nAttachment: DefendantName_T12345678_Indictment.pdf (23.1 KB)",
+                    "message": "I forgot to attach filename\n\nAttachment: DefendantName_T12345678-Indictment.pdf (23.1 KB)",
                     "user_id": 3,
                     "user_name": "Horace Rumpole",
                     "type": "provider"
