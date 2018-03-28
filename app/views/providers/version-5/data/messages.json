@@ -1,6 +1,7 @@
 {
     "cases": [
         {
+        "claim_id": 115424,
         "case_number": "T20180101",
         "messages":
             [
@@ -15,7 +16,7 @@
                 {
                     "message_id": 87605,
                     "timestamp": "2018-10-16T10:51:00.000Z",
-                    "message": "I forgot to attach filename\n\nAttachment: DefendantName_T12345678-Indictment.pdf (23.1 KB)",
+                    "message": "I forgot to attach filename\n\nAttachment: <a href='#noop'>DefendantName_T12345678-Indictment.pdf</a> (23.1 KB)",
                     "user_id": 3,
                     "user_name": "Horace Rumpole",
                     "type": "provider"
@@ -39,7 +40,7 @@
                 {
                     "message_id": 107190,
                     "timestamp": "2018-10-21T11:55:00.000Z",
-                    "message": "Please consider new offence information\n\nAttachment: Screen_Shot_2017-10-17_at_15.21.45.png (337 KB)",
+                    "message": "Please consider new offence information\n\nAttachment: <a href='#noop'>Screen_Shot_2017-10-17_at_15.21.45.png</a> (337 KB)",
                     "user_id": 3,
                     "user_name": "Horace Rumpole",
                     "type": "provider"
@@ -61,8 +62,17 @@
                     "type": "system"
                 },
                 {
+                    "message_id": 121179,
+                    "timestamp": "2018-10-23T09:54:00.000Z",
+                    "message": "Assessment made\n\n<table><thead><tr><th>&nbsp;</th><th scope='col'>Amount</th></tr></thead><tbody><tr><td scope='row' class='bold'>Fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Miscellaneous fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Travel expenses</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Net amount</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>VAT (20%)</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Gross amount</td><td>£0.00</td></tr></tbody></table>",
+                    "user_id": 1,
+                    "user_name": "System",
+                    "type": "system"
+
+                },
+                {
                     "message_id": 121199,
-                    "timestamp": "2018-10-23T11:56:00.000Z",
+                    "timestamp": "2018-10-23T09:56:00.000Z",
                     "message": "Your claim has been authorised",
                     "user_id": 1,
                     "user_name": "System",
@@ -70,7 +80,7 @@
                 },
                 {
                     "message_id": 130335,
-                    "timestamp": "2018-10-23T11:56:00.000Z",
+                    "timestamp": "2018-10-23T10:05:00.000Z",
                     "message": "Paid as claimed",
                     "user_id": 2,
                     "user_name": "Caseworker",
