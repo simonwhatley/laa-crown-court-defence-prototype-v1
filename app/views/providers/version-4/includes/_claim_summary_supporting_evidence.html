@@ -1,12 +1,14 @@
 {% if data['supporting_evidence_checklist'].length -%}
 <table class="summary">
 	<tbody>
+		{% if data['bill_type'] == 'advocate_final' -%}
 		<tr>
 			<th class="bold" scope="row">
 				Will you be sending disk evidence for this claim?
 			</th>
 			<td>{% if data['electronic_evidence_option'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
 		</tr>
+		{%- endif %}
 		<tr>
 			<th class="bold" scope="row">
 				Supporting evidence

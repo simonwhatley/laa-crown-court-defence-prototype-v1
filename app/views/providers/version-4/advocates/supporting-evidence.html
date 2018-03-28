@@ -35,7 +35,11 @@
 
 							<div class="form-section">
 
-								{% include "../includes/_supporting_evidence_disk_evidence.html" %}
+								{% if data['bill_type'] == 'advocate_final' -%}
+								
+									{% include "../includes/_supporting_evidence_disk_evidence.html" %}
+								
+								{%- endif %}
 
 								{% include "../includes/_supporting_evidence_file_upload.html" %}
 
