@@ -5,8 +5,12 @@
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
         "status": "draft",
-        "instructed_advocate": "002YQ",
-        "reference_number": "EC/T20170101",
+        "instructed_advocate": {
+            "code": "001PY",
+            "first_name": "Horace",
+            "last_name": "Rumpole"
+        },
+        "reference_number": "HR/PS/72852849",
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
@@ -55,12 +59,16 @@
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
         "status": "draft",
-        "instructed_advocate": "002ZR",
-        "reference_number": "EC/T20170102",
-        "case_type": "retrial",
-        "fee_type": "graduated",
+        "instructed_advocate": {
+            "code": "001UC",
+            "first_name": "Hilda",
+            "last_name": "Wystan"
+        },
+        "reference_number": "HW/KY/44332721",
+        "case_type": "appeal_against_conviction",
+        "fee_type": "fixed",
         "court": "snaresbrook",
-        "case_number": "T20170102",
+        "case_number": "A20170102",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -104,10 +112,14 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
-        "status": "draft",
-        "instructed_advocate": "002YP",
-        "reference_number": "EC/T20170103",
-        "case_type": "guilty_plea",
+        "status": "submitted",
+        "instructed_advocate": {
+            "code": "0020X",
+            "first_name": "Guthrie",
+            "last_name": "Featherstone"
+        },
+        "reference_number": "GF/LT/75674990",
+        "case_type": "retrial",
         "fee_type": "graduated",
         "court": "inner_london",
         "case_number": "T20170103",
@@ -155,20 +167,24 @@
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
         "status": "submitted",
-        "instructed_advocate": "002YQ",
-        "reference_number": "EC/T20170104",
-        "case_type": "trial",
-        "fee_type": "graduated",
+        "instructed_advocate": {
+            "code": "0023A",
+            "first_name": "Samuel",
+            "last_name": "Ballard"
+        },
+        "reference_number": "SB/AN/42935618",
+        "case_type": "appeal_against_sentence",
+        "fee_type": "fixed",
         "court": "central_criminal_court",
-        "case_number": "T20170104",
+        "case_number": "A20170104",
         "totals": {
             "claimed": {
-                "fees": 0.00,
-                "miscellaneous_fees": 0.00,
-                "expenses": 0.00,
-                "net_amount": 0.00,
-                "vat_amount": 0.00,
-                "gross_amount": 0.00
+                "fees": 50.00,
+                "miscellaneous_fees": 30.00,
+                "expenses": 20.00,
+                "net_amount": 100.00,
+                "vat_amount": 20.00,
+                "gross_amount": 120.00
             },
             "assessed": {
                 "fees": 0.00,
@@ -213,10 +229,14 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
-        "status": "submitted",
-        "instructed_advocate": "002ZR",
-        "reference_number": "EC/T20170105",
-        "case_type": "retrial",
+        "status": "allocated",
+        "instructed_advocate": {
+            "code": "0024B",
+            "first_name": "Phyllida",
+            "last_name": "Trant"
+        },
+        "reference_number": "PT/LF/27627162",
+        "case_type": "cracked_before_retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
         "case_number": "T20170105",
@@ -244,9 +264,17 @@
         },
         "messages": [
             {
-                "message_id": 81355,
-                "timestamp": "2018-10-16T10:50:00.000Z",
+                "message_id": 61347,
+                "timestamp": "2018-03-29T10:50:00.000Z",
                 "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 69230,
+                "timestamp": "2018-03-29T10:53:00.000Z",
+                "message": "Your claim has been allocated",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
@@ -272,11 +300,15 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
-        "status": "submitted",
-        "instructed_advocate": "002YP",
-        "reference_number": "EC/T20170106",
-        "case_type": "guilty_plea",
-        "fee_type": "graduated",
+        "status": "allocated",
+        "instructed_advocate": {
+            "code": "0025C",
+            "first_name": "Claude",
+            "last_name": "Erskine-Brown"
+        },
+        "reference_number": "CEB/SJ/66637216",
+        "case_type": "breach_of_crown_court_order",
+        "fee_type": "fixed",
         "court": "inner_london",
         "case_number": "T20170106",
         "totals": {
@@ -303,9 +335,33 @@
         },
         "messages": [
             {
-                "message_id": 81355,
-                "timestamp": "2018-10-16T10:50:00.000Z",
+                "message_id": 61347,
+                "timestamp": "2018-03-29T10:50:00.000Z",
                 "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 69230,
+                "timestamp": "2018-03-29T10:53:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 73900,
+                "timestamp": "2018-03-29T11:22:00.000Z",
+                "message": "Your claim has been de-allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 78632,
+                "timestamp": "2018-03-30T10:30:00.000Z",
+                "message": "Your claim has been allocated",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
@@ -331,10 +387,14 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
-        "status": "allocated",
-        "instructed_advocate": "002YQ",
-        "reference_number": "EC/T20170107",
-        "case_type": "trial",
+        "status": "authorised",
+        "instructed_advocate": {
+            "code": "0026D",
+            "first_name": "George",
+            "last_name": "Frobisher"
+        },
+        "reference_number": "GF/KM/65063864",
+        "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "central_criminal_court",
         "case_number": "T20170107",
@@ -362,17 +422,9 @@
         },
         "messages": [
             {
-                "message_id": 81355,
-                "timestamp": "2018-10-16T10:50:00.000Z",
+                "message_id": 61347,
+                "timestamp": "2018-03-29T10:50:00.000Z",
                 "message": "Your claim has been submitted",
-                "user_id": 1,
-                "user_name": "System",
-                "type": "system"
-            },
-            {
-                "message_id": 92327,
-                "timestamp": "2018-10-19T10:53:00.000Z",
-                "message": "Your claim has been allocated",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
@@ -398,11 +450,15 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
-        "status": "allocated",
-        "instructed_advocate": "002ZR",
-        "reference_number": "EC/T20170108",
-        "case_type": "retrial",
-        "fee_type": "graduated",
+        "status": "authorised",
+        "instructed_advocate": {
+            "code": "002HA",
+            "first_name": "Percy",
+            "last_name": "Hoskins"
+        },
+        "reference_number": "PH/AT/67772268",
+        "case_type": "committal_for_sentence",
+        "fee_type": "fixed",
         "court": "snaresbrook",
         "case_number": "T20170108",
         "totals": {
@@ -465,10 +521,14 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 9,
-        "status": "allocated",
-        "instructed_advocate": "002YP",
-        "reference_number": "EC/T20170109",
-        "case_type": "guilty_plea",
+        "status": "part_authorised",
+        "instructed_advocate": {
+            "code": "002JB",
+            "first_name": "Fiona",
+            "last_name": "Allways"
+        },
+        "reference_number": "FA/TL/69142753",
+        "case_type": "trial",
         "fee_type": "graduated",
         "court": "inner_london",
         "case_number": "T20170109",
@@ -491,13 +551,13 @@
             }
         },
         "dates": {
-            "submitted": "2018-03-29T09:30:00.000Z",
-            "assessed": ""
+            "submitted": "2018-03-22T09:30:00.000Z",
+            "assessed": "2018-03-29T09:30:00.000Z"
         },
         "messages": [
             {
                 "message_id": 81355,
-                "timestamp": "2018-10-16T10:50:00.000Z",
+                "timestamp": "2018-03-22T10:50:00.000Z",
                 "message": "Your claim has been submitted",
                 "user_id": 1,
                 "user_name": "System",
@@ -505,7 +565,7 @@
             },
             {
                 "message_id": 92327,
-                "timestamp": "2018-10-19T10:53:00.000Z",
+                "timestamp": "2018-03-23T10:53:00.000Z",
                 "message": "Your claim has been allocated",
                 "user_id": 1,
                 "user_name": "System",
@@ -532,10 +592,14 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "draft",
-        "instructed_advocate": "002YQ",
-        "reference_number": "EC/T20170110",
-        "case_type": "trial",
+        "status": "part_authorised",
+        "instructed_advocate": {
+            "code": "002PG",
+            "first_name": "Elisabeth",
+            "last_name": "Probert"
+        },
+        "reference_number": "EP/HR/23473716",
+        "case_type": "cracked_trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
         "case_number": "T20170110",
@@ -582,9 +646,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "draft",
-        "instructed_advocate": "002ZR",
-        "reference_number": "EC/T20170111",
+        "status": "rejected",
+        "instructed_advocate": {
+            "code": "002RJ",
+            "first_name": "Dave",
+            "last_name": "Inchcape"
+        },
+        "reference_number": "DI/RR/96062451",
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
@@ -632,9 +700,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "draft",
-        "instructed_advocate": "002YP",
-        "reference_number": "EC/T20170112",
+        "status": "rejected",
+        "instructed_advocate": {
+            "code": "002VM",
+            "first_name": "Charles",
+            "last_name": "Hearthstoke"
+        },
+        "reference_number": "CH/FF/27545971",
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "inner_london",
@@ -682,9 +754,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "submitted",
-        "instructed_advocate": "002YQ",
-        "reference_number": "EC/T20170113",
+        "status": "refused",
+        "instructed_advocate": {
+            "code": "002XP",
+            "first_name": "Albert",
+            "last_name": "Handyside"
+        },
+        "reference_number": "AH/DG/78766352",
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
@@ -732,9 +808,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "submitted",
-        "instructed_advocate": "002ZR",
-        "reference_number": "EC/T20170114",
+        "status": "refused",
+        "instructed_advocate": {
+            "code": "0031J",
+            "first_name": "Henry",
+            "last_name": "Trench"
+        },
+        "reference_number": "HT/MS/61831396",
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
@@ -782,9 +862,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "submitted",
-        "instructed_advocate": "002YP",
-        "reference_number": "EC/T20170115",
+        "status": "redetermination",
+        "instructed_advocate": {
+            "code": "0032K",
+            "first_name": "Marguerite",
+            "last_name": "Ballard"
+        },
+        "reference_number": "MB/JW/23467250",
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "inner_london",
@@ -832,9 +916,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "allocated",
-        "instructed_advocate": "002YQ",
-        "reference_number": "EC/T20170116",
+        "status": "redetermination",
+        "instructed_advocate": {
+            "code": "001PY",
+            "first_name": "Horace",
+            "last_name": "Rumpole"
+        },
+        "reference_number": "HR/MK/64269597",
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
@@ -882,9 +970,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "allocated",
-        "instructed_advocate": "002ZR",
-        "reference_number": "EC/T20170117",
+        "status": "awaiting_written_reasons",
+        "instructed_advocate": {
+            "code": "001UC",
+            "first_name": "Hilda",
+            "last_name": "Wystan"
+        },
+        "reference_number": "HW/CB/62650859",
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
@@ -932,9 +1024,13 @@
         "bill_type": "advocate_final",
         "fee_scheme": "AGFS",
         "fee_scheme_version": 10,
-        "status": "allocated",
-        "instructed_advocate": "002YP",
-        "reference_number": "EC/T20170118",
+        "status": "awaiting_written_reasons",
+        "instructed_advocate": {
+            "code": "0020X",
+            "first_name": "Guthrie",
+            "last_name": "Featherstone"
+        },
+        "reference_number": "GF/AB/69038851",
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "inner_london",

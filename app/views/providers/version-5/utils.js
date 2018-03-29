@@ -204,11 +204,14 @@ module.exports = {
 	},
 
 	getClaim: function(claim_id) {
+
 		if(!claim_id) return null
 
-		return advocateClaims.filter( function(obj) {
-	        return !!~obj.id.indexOf(claim_id)
-	    });
+		var claimObj = advocateClaims.filter(function (obj) {
+  			 return (obj.id == claim_id)
+		});
+
+		return claimObj[0];
 	},
 
 	getMessages: function(claim_id) {

@@ -117,14 +117,14 @@
 						<tr id="claim-{{claim.id}}">
 							<th aria-label="Case number" scope="row">
 								{% if claim.status == 'draft' -%}
-								<a href="./{{claim.id}}/summary">
+								<a href="#noop"><!-- ./{{claim.id}}/summary -->
 								{% else %}
 								<a href="./{{claim.id}}/details">
 								{%- endif %}
 									{{claim.case_number}}
 								</a>
 								<br>
-								<span class="font-xsmall">{{claim.reference_number}}</span>
+								<span class="font-xsmall font-grey">{{claim.reference_number}}</span>
 							</th>
 							<td aria-label="Defendants">
 								<ul>
@@ -164,50 +164,6 @@
 
 						{% endfor %}
 
-						<!-- <tr id="claim-12345">
-							<th aria-label="Case number" scope="row">
-								<a href="./T20180101/details">T20180101</a><br>
-								<span class="font-xsmall">SW/T2018ABC</span>
-							</th>
-							<td aria-label="Defendants">Joseph Anderson</td>
-							<td aria-label="Claimed amount" class="numeric">£0.00</td>
-							<td aria-label="Assessed amount" class="numeric">&ndash;</td>
-							<td aria-label="Claim status">
-								<span class="status status-draft">Draft</span>
-							</td>
-							<td aria-label="Date submitted">&ndash;</td>
-							<td aria-label="Messages">&ndash;</td>
-						</tr>
-						<tr id="claim-12346">
-							<th aria-label="Case number" scope="row">
-								<a href="#noop">A20180101</a>
-							</th>
-							<td aria-label="Defendants">Dee Fence, Jacqueline Weaver</td>
-							<td aria-label="Claimed amount" class="numeric">£1,033.71</td>
-							<td aria-label="Assessed amount" class="numeric">&ndash;</td>
-							<td aria-label="Claim status">
-								<span class="status status-submitted">Submitted</span>
-							</td>
-							<td aria-label="Date submitted">01/02/2018</td>
-							<td aria-label="Messages">
-								<a href="#">View (2 new)</a>
-							</td>
-						</tr>
-						<tr id="claim-12347">
-							<th aria-label="Case number" scope="row">
-								<a href="#noop">S20180101</a>
-							</th>
-							<td aria-label="Defendants">Larry David</td>
-							<td aria-label="Claimed amount" class="numeric">£804.00</td>
-							<td aria-label="Assessed amount" class="numeric">£804.00</td>
-							<td aria-label="Claim status">
-								<span class="status status-authorised">Authorised</span>
-							</td>
-							<td aria-label="Date submitted">01/02/2018</td>
-							<td aria-label="Messages" class="messages">
-								<span class="none">No messages</span>
-							</td>
-						</tr> -->
 					</tbody>
 				</table>
 			</div>

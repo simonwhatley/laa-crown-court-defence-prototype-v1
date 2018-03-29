@@ -14,11 +14,17 @@
 
 	{% include "./includes/_claim_details_overview.html" %}
 
-	{% include "./includes/_messages.html" %}
+	{% include "./includes/_claim_details_messages.html" %}
 
-	{% include "./includes/_claim_details_summary.html" %}
+	{% if claim.status in ['draft','submitted','allocated'] -%}
 
-	{% include "./includes/_claim_details_assessment_summary.html" %}
+		{% include "./includes/_claim_details_summary.html" %}
+
+	{% else %}
+
+		{% include "./includes/_claim_details_assessment_summary.html" %}
+
+	{%- endif %}
 
 	{% include "./includes/_claim_details.html" %}
 
