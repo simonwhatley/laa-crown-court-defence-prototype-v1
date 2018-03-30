@@ -47,11 +47,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-09-24T00:00:00.000Z",
-                        "maat_number": 72852849
+                        "maat_reference": 72852849
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 66624,
@@ -101,11 +116,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-05-28T00:00:00.000Z",
-                        "maat_number": 44332721
+                        "maat_reference": 44332721
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 73160,
@@ -155,11 +185,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-12-08T00:00:00.000Z",
-                        "maat_number": 75674990
+                        "maat_reference": 75674990
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 77501,
@@ -218,11 +263,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-06-08T00:00:00.000Z",
-                        "maat_number": 42935618
+                        "maat_reference": 42935618
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 84915,
@@ -289,11 +349,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-09-05T00:00:00.000Z",
-                        "maat_number": 27627162
+                        "maat_reference": 27627162
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 91001,
@@ -331,7 +406,8 @@
         },
         "dates": {
             "submitted": "2018-03-29T09:30:00.000Z",
-            "assessed": ""
+            "assessed": "",
+            "reason": "I attended the main hearing (1st day of trial)"
         },
         "messages": [
             {
@@ -376,11 +452,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2018-03-04T00:00:00.000Z",
-                        "maat_number": 66637216
+                        "maat_reference": 66637216
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 93069,
@@ -439,11 +530,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2018-02-21T00:00:00.000Z",
-                        "maat_number": 65063864
+                        "maat_reference": 65063864
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 97631,
@@ -510,11 +616,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-12-02T00:00:00.000Z",
-                        "maat_number": 67772268
+                        "maat_reference": 67772268
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 99362,
@@ -581,11 +702,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-03-15T00:00:00.000Z",
-                        "maat_number": 69142753
+                        "maat_reference": 69142753
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 103493,
@@ -635,11 +771,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-05-05T00:00:00.000Z",
-                        "maat_number": 23473716
+                        "maat_reference": 23473716
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 112300,
@@ -689,11 +840,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2018-02-12T00:00:00.000Z",
-                        "maat_number": 96062451
+                        "maat_reference": 96062451
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 117155,
@@ -743,11 +909,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-05-28T00:00:00.000Z",
-                        "maat_number": 27545971
+                        "maat_reference": 27545971
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 125650,
@@ -797,11 +978,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-11-23T00:00:00.000Z",
-                        "maat_number": 78766352
+                        "maat_reference": 78766352
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 134207,
@@ -851,11 +1047,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-08-11T00:00:00.000Z",
-                        "maat_number": 61831396
+                        "maat_reference": 61831396
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 138362,
@@ -905,11 +1116,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2018-01-08T00:00:00.000Z",
-                        "maat_number": 23467250
+                        "maat_reference": 23467250
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 145940,
@@ -959,11 +1185,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-08-24T00:00:00.000Z",
-                        "maat_number": 64269597
+                        "maat_reference": 64269597
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 153675,
@@ -1013,11 +1254,26 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-08-17T00:00:00.000Z",
-                        "maat_number": 62650859
+                        "maat_reference": 62650859
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     },
     {
         "id": 163516,
@@ -1067,10 +1323,25 @@
                 "representation_orders": [
                     {
                         "representation_order_date": "2017-03-18T00:00:00.000Z",
-                        "maat_number": 69038851
+                        "maat_reference": 69038851
                     }
                 ]
             }
-        ]
+        ],
+        "offence_details": {
+            "offence_class": "",
+            "offence_band": "",
+            "offence_category": ""
+        },
+        "fees": [],
+        "miscellaneous_fees": [],
+        "expenses": [],
+        "supporting_evidence": [],
+        "additional_information": "",
+        "certification": {
+            "certified_by": "Rufus Titterington",
+            "certified_date": "2018-03-30T12:00:00.000Z",
+            "reason": "I attended the main hearing (1st day of trial)"
+        }
     }
 ]
