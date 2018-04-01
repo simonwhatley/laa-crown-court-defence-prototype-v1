@@ -503,18 +503,12 @@ router.get('/advocates/clear/offences', function(req, res) {
 router.get('/advocates/:claim_id([0-9]+)/details', function(req, res) {
 
     // TODO: if claim id not valid, send back to all claims list
-
-    console.log(utils.getClaim(req.params.claim_id))
-
     res.render(`${req.feature}/${req.version}/advocates/claim-details`,
         {
             links: {
-                // 'new' : req.baseUrl + '/advocates/start',
                 'home' : req.baseUrl + '/advocates/'
             },
             claim: utils.getClaim(req.params.claim_id)
-            // ,
-            // messages: utils.getMessages(req.params.claim_id)
         });
 });
 

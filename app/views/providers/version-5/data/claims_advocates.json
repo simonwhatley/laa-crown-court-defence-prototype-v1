@@ -14,7 +14,7 @@
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
-        "case_number": "T20170101",
+        "case_number": "T20180101",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -83,7 +83,7 @@
         "case_type": "appeal_against_conviction",
         "fee_type": "fixed",
         "court": "snaresbrook",
-        "case_number": "A20170102",
+        "case_number": "A20180102",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -152,7 +152,7 @@
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "inner_london",
-        "case_number": "T20170103",
+        "case_number": "T20180103",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -172,10 +172,19 @@
             }
         },
         "dates": {
-            "submitted": "",
+            "submitted": "2018-03-28T09:50:00.000Z",
             "assessed": ""
         },
-        "messages": [],
+        "messages": [
+            {
+                "message_id": 95349,
+                "timestamp": "2018-03-28T09:50:00.000Z",
+                "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            }
+        ],
         "defendants": [
             {
                 "first_name": "Louisa",
@@ -221,7 +230,7 @@
         "case_type": "appeal_against_sentence",
         "fee_type": "fixed",
         "court": "central_criminal_court",
-        "case_number": "A20170104",
+        "case_number": "A20180104",
         "totals": {
             "claimed": {
                 "fees": 50.00,
@@ -241,13 +250,13 @@
             }
         },
         "dates": {
-            "submitted": "2018-03-28T09:30:00.000Z",
+            "submitted": "2018-03-28T10:50:00.000Z",
             "assessed": ""
         },
         "messages": [
             {
                 "message_id": 81355,
-                "timestamp": "2018-10-16T10:50:00.000Z",
+                "timestamp": "2018-03-28T10:50:00.000Z",
                 "message": "Your claim has been submitted",
                 "user_id": 1,
                 "user_name": "System",
@@ -299,7 +308,7 @@
         "case_type": "cracked_before_retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
-        "case_number": "T20170105",
+        "case_number": "T20180105",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -385,7 +394,7 @@
         "case_type": "breach_of_crown_court_order",
         "fee_type": "fixed",
         "court": "inner_london",
-        "case_number": "T20170106",
+        "case_number": "T20180106",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -488,7 +497,7 @@
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "central_criminal_court",
-        "case_number": "T20170107",
+        "case_number": "T20180107",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -509,13 +518,37 @@
         },
         "dates": {
             "submitted": "2018-03-29T09:30:00.000Z",
-            "assessed": ""
+            "assessed": "2018-04-05T11:56:00.000Z"
         },
         "messages": [
             {
-                "message_id": 61347,
+                "message_id": 31637,
                 "timestamp": "2018-03-29T10:50:00.000Z",
                 "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 40606,
+                "timestamp": "2018-04-05T11:56:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 43723,
+                "timestamp": "2018-04-05T11:56:00.000Z",
+                "message": "Your claim has been authorised",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 50733,
+                "timestamp": "2018-04-05T11:56:00.000Z",
+                "message": "Assessment made\n\n<table><thead><tr><th>&nbsp;</th><th scope='col'>Amount</th></tr></thead><tbody><tr><td scope='row' class='bold'>Fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Miscellaneous fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Travel expenses</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Net amount</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>VAT (20%)</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Gross amount</td><td>£0.00</td></tr></tbody></table>",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
@@ -566,7 +599,7 @@
         "case_type": "committal_for_sentence",
         "fee_type": "fixed",
         "court": "snaresbrook",
-        "case_number": "T20170108",
+        "case_number": "T20180108",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -587,24 +620,89 @@
         },
         "dates": {
             "submitted": "2018-03-29T09:30:00.000Z",
-            "assessed": ""
+            "assessed": "2018-04-03T09:56:00.000Z"
         },
         "messages": [
             {
                 "message_id": 81355,
-                "timestamp": "2018-10-16T10:50:00.000Z",
+                "timestamp": "2018-03-29T09:30:00.000Z",
                 "message": "Your claim has been submitted",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
             },
             {
+                "message_id": 87605,
+                "timestamp": "2018-03-29T10:51:00.000Z",
+                "message": "I forgot to attach filename\n\nAttachment: <a href='#noop'>DefendantName_T12345678-Indictment.pdf</a> (23.1 KB)",
+                "user_id": 3,
+                "user_name": "Rufus Titterington",
+                "type": "provider"
+            },
+            {
                 "message_id": 92327,
-                "timestamp": "2018-10-19T10:53:00.000Z",
+                "timestamp": "2018-03-30T10:53:00.000Z",
                 "message": "Your claim has been allocated",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
+            },
+            {
+                "message_id": 98961,
+                "timestamp": "2018-03-30T10:55:00.000Z",
+                "message": "Okay great. We'll use the file in our assessment of the claim",
+                "user_id": 2,
+                "user_name": "Caseworker",
+                "type": "caseworker"
+            },
+            {
+                "message_id": 114983,
+                "timestamp": "2018-03-31T11:55:00.000Z",
+                "message": "You requested redetermination",
+                "user_id": 3,
+                "user_name": "Rufus Titterington",
+                "type": "provider"
+            },
+            {
+                "message_id": 107190,
+                "timestamp": "2018-03-31T11:56:00.000Z",
+                "message": "Please consider new offence information\n\nAttachment: <a href='#noop'>Screen_Shot_2017-10-17_at_15.21.45.png</a> (337 KB)",
+                "user_id": 3,
+                "user_name": "Rufus Titterington",
+                "type": "provider"
+            },
+            {
+                "message_id": 118365,
+                "timestamp": "2018-04-02T11:56:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 121179,
+                "timestamp": "2018-04-03T09:54:00.000Z",
+                "message": "Assessment made\n\n<table><thead><tr><th>&nbsp;</th><th scope='col'>Amount</th></tr></thead><tbody><tr><td scope='row' class='bold'>Fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Miscellaneous fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Travel expenses</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Net amount</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>VAT (20%)</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Gross amount</td><td>£0.00</td></tr></tbody></table>",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+
+            },
+            {
+                "message_id": 121199,
+                "timestamp": "2018-04-03T09:56:00.000Z",
+                "message": "Your claim has been authorised",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 130335,
+                "timestamp": "2018-04-03T10:05:00.000Z",
+                "message": "Paid as claimed",
+                "user_id": 2,
+                "user_name": "Caseworker",
+                "type": "caseworker"
             }
         ],
         "defendants": [
@@ -652,7 +750,7 @@
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "inner_london",
-        "case_number": "T20170109",
+        "case_number": "T20180109",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -672,22 +770,38 @@
             }
         },
         "dates": {
-            "submitted": "2018-03-22T09:30:00.000Z",
-            "assessed": "2018-03-29T09:30:00.000Z"
+            "submitted": "2018-03-29T09:30:00.000Z",
+            "assessed": "2018-04-05T11:56:00.000Z"
         },
         "messages": [
             {
-                "message_id": 81355,
-                "timestamp": "2018-03-22T10:50:00.000Z",
+                "message_id": 31637,
+                "timestamp": "2018-03-29T10:50:00.000Z",
                 "message": "Your claim has been submitted",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
             },
             {
-                "message_id": 92327,
-                "timestamp": "2018-03-23T10:53:00.000Z",
+                "message_id": 40606,
+                "timestamp": "2018-04-05T11:56:00.000Z",
                 "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 43723,
+                "timestamp": "2018-04-05T11:56:00.000Z",
+                "message": "Your claim has been part-authorised",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 50733,
+                "timestamp": "2018-04-05T11:56:00.000Z",
+                "message": "Assessment made\n\n<table><thead><tr><th>&nbsp;</th><th scope='col'>Amount</th></tr></thead><tbody><tr><td scope='row' class='bold'>Fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Miscellaneous fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Travel expenses</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Net amount</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>VAT (20%)</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Gross amount</td><td>£0.00</td></tr></tbody></table>",
                 "user_id": 1,
                 "user_name": "System",
                 "type": "system"
@@ -738,7 +852,7 @@
         "case_type": "cracked_trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
-        "case_number": "T20170110",
+        "case_number": "T20180110",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -758,10 +872,68 @@
             }
         },
         "dates": {
-            "submitted": "",
-            "assessed": ""
+            "submitted": "2018-03-28T09:30:00.000Z",
+            "assessed": "2018-04-03T09:56:00.000Z"
         },
-        "messages": [],
+        "messages": [
+            {
+                "message_id": 81355,
+                "timestamp": "2018-03-28T09:30:00.000Z",
+                "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 87605,
+                "timestamp": "2018-03-29T10:51:00.000Z",
+                "message": "I forgot to attach filename\n\nAttachment: <a href='#noop'>DefendantName_T12345678-Indictment.pdf</a> (23.1 KB)",
+                "user_id": 3,
+                "user_name": "Rufus Titterington",
+                "type": "provider"
+            },
+            {
+                "message_id": 92327,
+                "timestamp": "2018-03-30T10:53:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 98961,
+                "timestamp": "2018-03-30T10:55:00.000Z",
+                "message": "Okay great. We'll use the file in our assessment of the claim",
+                "user_id": 2,
+                "user_name": "Caseworker",
+                "type": "caseworker"
+            },
+            {
+                "message_id": 121179,
+                "timestamp": "2018-04-03T09:54:00.000Z",
+                "message": "Assessment made\n\n<table><thead><tr><th>&nbsp;</th><th scope='col'>Amount</th></tr></thead><tbody><tr><td scope='row' class='bold'>Fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Miscellaneous fees</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Travel expenses</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Net amount</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>VAT (20%)</td><td>£0.00</td></tr><tr><td scope='row' class='bold'>Gross amount</td><td>£0.00</td></tr></tbody></table>",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+
+            },
+            {
+                "message_id": 121199,
+                "timestamp": "2018-04-03T09:56:00.000Z",
+                "message": "Your claim has been part-authorised",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 130335,
+                "timestamp": "2018-04-03T10:05:00.000Z",
+                "message": "Your claim was part-authorised because lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus non dolor sed condimentum. Proin molestie dolor sit amet finibus convallis. Curabitur ipsum diam, posuere id hendrerit non, rutrum et enim.",
+                "user_id": 2,
+                "user_name": "Caseworker",
+                "type": "caseworker"
+            }
+        ],
         "defendants": [
             {
                 "first_name": "Harlie",
@@ -807,7 +979,7 @@
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
-        "case_number": "T20170111",
+        "case_number": "T20180111",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -827,7 +999,7 @@
             }
         },
         "dates": {
-            "submitted": "",
+            "submitted": "2018-03-28T09:30:00.000Z",
             "assessed": ""
         },
         "messages": [],
@@ -876,7 +1048,7 @@
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "inner_london",
-        "case_number": "T20170112",
+        "case_number": "T20180112",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -896,7 +1068,7 @@
             }
         },
         "dates": {
-            "submitted": "",
+            "submitted": "2018-03-28T09:30:00.000Z",
             "assessed": ""
         },
         "messages": [],
@@ -945,7 +1117,7 @@
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
-        "case_number": "T20170113",
+        "case_number": "T20180113",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -1014,7 +1186,7 @@
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
-        "case_number": "T20170114",
+        "case_number": "T20180114",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -1083,7 +1255,7 @@
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "inner_london",
-        "case_number": "T20170115",
+        "case_number": "T20180115",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -1152,7 +1324,7 @@
         "case_type": "trial",
         "fee_type": "graduated",
         "court": "central_criminal_court",
-        "case_number": "T20170116",
+        "case_number": "T20180116",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -1221,7 +1393,7 @@
         "case_type": "retrial",
         "fee_type": "graduated",
         "court": "snaresbrook",
-        "case_number": "T20170117",
+        "case_number": "T20180117",
         "totals": {
             "claimed": {
                 "fees": 0.00,
@@ -1290,7 +1462,7 @@
         "case_type": "guilty_plea",
         "fee_type": "graduated",
         "court": "inner_london",
-        "case_number": "T20170118",
+        "case_number": "T20180118",
         "totals": {
             "claimed": {
                 "fees": 0.00,

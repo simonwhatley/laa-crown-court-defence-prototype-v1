@@ -155,7 +155,7 @@
 							</td>
 							<td aria-label="Messages" class="font-grey">
 								{% if claim.messages.length -%}
-									<a href="">View {{claim.messages.length}} message{% if claim.messages.length > 1 -%}s{%- endif %}</a>
+									<a href="./{{claim.id}}/details">View {{claim.messages.length}} message{% if claim.messages.length > 1 -%}s{%- endif %}</a>
 								{% else %}
 									No messages
 								{%- endif %}
