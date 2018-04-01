@@ -1000,9 +1000,50 @@
         },
         "dates": {
             "submitted": "2018-03-28T09:30:00.000Z",
-            "assessed": ""
+            "assessed": "2018-04-07T10:55:00.000Z"
         },
-        "messages": [],
+        "messages": [
+            {
+                "message_id": 15094,
+                "timestamp": "2018-03-28T09:30:00.000Z",
+                "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 24755,
+                "timestamp": "2018-04-05T09:00:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 28999,
+                "timestamp": "2018-04-05T10:53:00.000Z",
+                "message": "You have not attached an indictment to the claim. Please can you provide an indictment within the next 48 hours or I will have to reject the claim.",
+                "user_id": 2,
+                "user_name": "Caseworker 1",
+                "type": "caseworker"
+            },
+            {
+                "message_id": 32949,
+                "timestamp": "2018-04-07T10:55:00.000Z",
+                "message": "Your claim has been rejected",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 38398,
+                "timestamp": "2018-04-07T10:55:00.000Z",
+                "message": "Your claim has been rejected: <ul><li>No indictment attached</li></ul>",
+                "user_id": 2,
+                "user_name": "Caseworker 1",
+                "type": "caseworker"
+            }
+        ],
         "defendants": [
             {
                 "first_name": "Ruthy",
@@ -1068,10 +1109,51 @@
             }
         },
         "dates": {
-            "submitted": "2018-03-28T09:30:00.000Z",
-            "assessed": ""
+            "submitted": "2018-03-28T10:50:00.000Z",
+            "assessed": "2018-04-07T10:55:00.000Z"
         },
-        "messages": [],
+        "messages": [
+            {
+                "message_id": 74083,
+                "timestamp": "2018-03-28T10:50:00.000Z",
+                "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 76641,
+                "timestamp": "2018-04-05T09:00:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 78365,
+                "timestamp": "2018-04-05T10:53:00.000Z",
+                "message": "You have not attached an indictment to the claim. Please can you provide an indictment within the next 48 hours or I will have to reject the claim.",
+                "user_id": 2,
+                "user_name": "Caseworker 1",
+                "type": "caseworker"
+            },
+            {
+                "message_id": 85296,
+                "timestamp": "2018-04-07T10:55:00.000Z",
+                "message": "Your claim has been rejected",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 89826,
+                "timestamp": "2018-04-07T10:55:00.000Z",
+                "message": "Your claim has been rejected: <ul><li>Other: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li></ul>",
+                "user_id": 2,
+                "user_name": "Caseworker 1",
+                "type": "caseworker"
+            }
+        ],
         "defendants": [
             {
                 "first_name": "Farra",
@@ -1137,10 +1219,43 @@
             }
         },
         "dates": {
-            "submitted": "2018-03-29T09:30:00.000Z",
-            "assessed": ""
+            "submitted": "2018-03-29T10:50:00.000Z",
+            "assessed": "2018-04-05T10:53:00.000Z"
         },
-        "messages": [],
+        "messages": [
+            {
+                "message_id": 72162,
+                "timestamp": "2018-03-29T10:50:00.000Z",
+                "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 79657,
+                "timestamp": "2018-04-05T09:00:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 87665,
+                "timestamp": "2018-04-05T10:53:00.000Z",
+                "message": "Your claim has been refused",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 91024,
+                "timestamp": "2018-04-05T10:54:00.000Z",
+                "message": "Your claim has been refused: <ul><li>Wrong instructed advocate</li></ul>",
+                "user_id": 1,
+                "user_name": "Caseworker 2",
+                "type": "caseworker"
+            }
+        ],
         "defendants": [
             {
                 "first_name": "Dotty",
@@ -1207,9 +1322,50 @@
         },
         "dates": {
             "submitted": "2018-03-29T09:30:00.000Z",
-            "assessed": ""
+            "assessed": "2018-04-05T10:54:00.000Z"
         },
-        "messages": [],
+        "messages": [
+            {
+                "message_id": 72162,
+                "timestamp": "2018-03-29T10:50:00.000Z",
+                "message": "Your claim has been submitted",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 79657,
+                "timestamp": "2018-04-05T09:00:00.000Z",
+                "message": "Your claim has been allocated",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 87665,
+                "timestamp": "2018-04-05T10:54:00.000Z",
+                "message": "Your claim has been refused",
+                "user_id": 1,
+                "user_name": "System",
+                "type": "system"
+            },
+            {
+                "message_id": 91024,
+                "timestamp": "2018-04-05T10:54:00.000Z",
+                "message": "Your claim has been refused: <ul><li>Other: This is a duplicate claim</li></ul>",
+                "user_id": 1,
+                "user_name": "Caseworker 2",
+                "type": "caseworker"
+            },
+            {
+                "message_id": 91024,
+                "timestamp": "2018-04-05T10:57:00.000Z",
+                "message": "I refused your claim because it was a duplicate of an earlier claim you submitted for the same court, case number and defendant.",
+                "user_id": 1,
+                "user_name": "Caseworker 2",
+                "type": "caseworker"
+            }
+        ],
         "defendants": [
             {
                 "first_name": "Michele",
