@@ -75,7 +75,6 @@ router.get('/data/offences/10/categories', function (req, res) {
 // ==============================================
 
 router.get('/advocates/', function(req, res) {
-    console.log(utils.getClaims('agfs')[0].defendants)
     res.render(`${req.feature}/${req.version}/advocates/index`,
         {
             links: {
