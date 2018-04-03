@@ -1038,7 +1038,7 @@
             {
                 "message_id": 38398,
                 "timestamp": "2018-04-07T10:55:00.000Z",
-                "message": "Your claim has been rejected: <ul><li>No indictment attached</li></ul>",
+                "message": "Your claim has been rejected: No indictment attached<br><br>We rejected your claim because you didn't attach the indictment. Please submit the claim again with the indictment. You can download a copy from the Digital Case System.",
                 "user_id": 2,
                 "user_name": "Caseworker 1",
                 "type": "caseworker"
@@ -1132,7 +1132,7 @@
             {
                 "message_id": 78365,
                 "timestamp": "2018-04-05T10:53:00.000Z",
-                "message": "You have not attached an indictment to the claim. Please can you provide an indictment within the next 48 hours or I will have to reject the claim.",
+                "message": "You have not attached a representation order to the claim. Please can you provide a representation order within the next 48 hours or I will have to reject the claim.",
                 "user_id": 2,
                 "user_name": "Caseworker 1",
                 "type": "caseworker"
@@ -1148,7 +1148,7 @@
             {
                 "message_id": 89826,
                 "timestamp": "2018-04-07T10:55:00.000Z",
-                "message": "Your claim has been rejected: <ul><li>Other: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li></ul>",
+                "message": "Your claim has been rejected: No representation order<br><br>We rejected your claim because you didn’t attach the representation order. Please submit the claim again with the representation order. You can get a copy from the Magistrates' Court where it was issued.",
                 "user_id": 2,
                 "user_name": "Caseworker 1",
                 "type": "caseworker"
