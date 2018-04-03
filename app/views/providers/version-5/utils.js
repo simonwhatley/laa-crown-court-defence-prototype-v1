@@ -11,6 +11,7 @@ var travelTypes = require('./data/travel_types.json')
 var travelReasons = require('./data/travel_reasons.json')
 var messages = require('./data/messages.json')
 var advocateClaims = require('./data/claims_advocates.json')
+var litigatorClaims = require('./data/claims_litigators.json')
 
 module.exports = {
 
@@ -197,19 +198,35 @@ module.exports = {
 		return travelReasons
 	},
 
+	// TODO: refactor
 	getClaims: function(fee_scheme) {
 		if(!fee_scheme) return null
 
-		return advocateClaims;
+		if (fee_scheme == 'agfs') {
+			return advocateClaims;
+		}
+
+		if (fee_scheme == 'lgfs') {
+			return litigatorClaims;
+		}
 	},
 
-	getClaim: function(claim_id) {
+	// TODO: refactor
+	getClaim: function(fee_scheme, claim_id) {
 
 		if(!claim_id) return null
 
-		var claimObj = advocateClaims.filter(function (obj) {
-  			 return (obj.id == claim_id)
-		});
+		if (fee_scheme == 'agfs') {
+			var claimObj = advocateClaims.filter(function (obj) {
+	  			 return (obj.id == claim_id)
+			});
+		}
+
+		if (fee_scheme == 'lgfs') {
+			var claimObj = litigatorClaims.filter(function (obj) {
+	  			 return (obj.id == claim_id)
+			});
+		}
 
 		return claimObj[0];
 	},

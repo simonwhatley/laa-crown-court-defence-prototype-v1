@@ -56,18 +56,18 @@ router.get('/sign-out', function(req, res) {
 // ==============================================
 
 router.get('/data/offences/9/categories', function (req, res) {
-    var data = { output: utils.getOffenceCategoriesScheme9(req.session.data.class[0]) , selected: req.session.data.offence_category }
-    res.json(data)
+    var data = { output: utils.getOffenceCategoriesScheme9(req.session.data.class[0]) , selected: req.session.data.offence_category };
+    res.json(data);
 })
 
 router.get('/data/offences/10/bands', function (req, res) {
-    var data = { output: utils.getOffenceBandsScheme10(req.session.data.class[0]) , selected: req.session.data.offence_band }
-    res.json(data)
+    var data = { output: utils.getOffenceBandsScheme10(req.session.data.class[0]) , selected: req.session.data.offence_band };
+    res.json(data);
 })
 
 router.get('/data/offences/10/categories', function (req, res) {
-    var data = { output: utils.getOffenceCategoriesScheme10(req.session.data.class[0], req.session.data.band[0]) , selected: req.session.data.offence_category }
-    res.json(data)
+    var data = { output: utils.getOffenceCategoriesScheme10(req.session.data.class[0], req.session.data.band[0]) , selected: req.session.data.offence_category };
+    res.json(data);
 })
 
 // ==============================================
@@ -88,7 +88,7 @@ router.get('/advocates/', function(req, res) {
 });
 
 router.get('/advocates/start', function(req, res) {
-    req.session.destroy()
+    req.session.destroy();
     res.redirect(`/${req.feature}/${req.version}/advocates/bill-type`);
 });
 
@@ -507,7 +507,7 @@ router.get('/advocates/:claim_id([0-9]+)/details', function(req, res) {
             links: {
                 'home' : req.baseUrl + '/advocates/'
             },
-            claim: utils.getClaim(req.params.claim_id)
+            claim: utils.getClaim('agfs', req.params.claim_id)
         });
 });
 
@@ -524,12 +524,12 @@ router.get('/litigators/', function(req, res) {
                 'outstanding': req.baseUrl + '/litigators/outstanding',
                 'authorised': req.baseUrl + '/litigators/authorised'
             },
-            claims: []
+            claims: utils.getClaims('lgfs')
         });
 });
 
 router.get('/litigators/start', function(req, res) {
-    req.session.destroy()
+    req.session.destroy();
     res.redirect(`/${req.feature}/${req.version}/litigators/bill-type`);
 });
 

@@ -97,69 +97,78 @@
 	<div class="grid-row">
 		<div class="column-full">
 
-			<table>
-				<thead>
-					<tr>
-						<th scope="col">Bill type</th>
-						<th scope="col">Case number</th>
-						<th scope="col">Defendants</th>
-						<th class="numeric" scope="col">Claimed</th>
-						<th class="numeric" scope="col">Assessed</th>
-						<th scope="col">Status</th>
-						<th scope="col">Date submitted</th>
-						<th scope="col">Messages</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr id="claim-12345">
-						<td aria-label="Bill type">Final</td>
-						<th aria-label="Case number" scope="row">
-							<a href="#noop">T20180101</a><br>
-							<span class="font-xsmall">SW/T2018ABC</span>
-						</th>
-						<td aria-label="Defendants">Joseph Anderson</td>
-						<td aria-label="Claimed amount" class="numeric">£0.00</td>
-						<td aria-label="Assessed amount" class="numeric">&ndash;</td>
-						<td aria-label="Claim status">
-							<span class="status status-draft">Draft</span>
-						</td>
-						<td aria-label="Date submitted">&ndash;</td>
-						<td aria-label="Messages">&ndash;</td>
-					</tr>
-					<tr id="claim-12346">
-						<td aria-label="Bill type">Interim</td>
-						<th aria-label="Case number" scope="row">
-							<a href="#noop">A20180101</a>
-						</th>
-						<td aria-label="Defendants">Dee Fence, Jacqueline Weaver</td>
-						<td aria-label="Claimed amount" class="numeric">£1,033.71</td>
-						<td aria-label="Assessed amount" class="numeric">&ndash;</td>
-						<td aria-label="Claim status">
-							<span class="status status-submitted">Submitted</span>
-						</td>
-						<td aria-label="Date submitted">01/02/2018</td>
-						<td aria-label="Messages">
-							<a href="#">View (2 new)</a>
-						</td>
-					</tr>
-					<tr id="claim-12347">
-						<td aria-label="Bill type">Transfer</td>
-						<th aria-label="Case number" scope="row">
-							<a href="#noop">S20180101</a>
-						</th>
-						<td aria-label="Defendants">Larry David</td>
-						<td aria-label="Claimed amount" class="numeric">£804.00</td>
-						<td aria-label="Assessed amount" class="numeric">£804.00</td>
-						<td aria-label="Claim status">
-							<span class="status status-authorised">Authorised</span>
-						</td>
-						<td aria-label="Date submitted">01/02/2018</td>
-						<td aria-label="Messages" class="messages">
-							<span class="none">No messages</span>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Bill type</th>
+							<th scope="col">Case number</th>
+							<th scope="col">Defendants</th>
+							<th class="numeric" scope="col">Claimed</th>
+							<th class="numeric" scope="col">Assessed</th>
+							<th scope="col">Status</th>
+							<th scope="col">Date submitted</th>
+							<th scope="col">Messages</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						{% for claim in claims %}
+
+						<tr id="claim-{{claim.id}}">
+							<td aria-label="Bill type">{{claim.bill_type | replace('litigator_','') | capitalize}}</td>
+							<th aria-label="Case number" scope="row">
+								{% if claim.status == 'draft' -%}
+								<a href="#noop"><!-- ./{{claim.id}}/summary -->
+								{% else %}
+								<a href="./{{claim.id}}/details">
+								{%- endif %}
+									{{claim.case_number}}
+								</a>
+								<br>
+								<span class="font-xsmall font-grey">{{claim.reference_number}}</span>
+							</th>
+							<td aria-label="Defendants">
+								<ul>
+								{% for defendant in claim.defendants %}
+									<li>{{defendant.first_name}} {{defendant.last_name}}</li>
+								{% endfor %}
+								</ul>
+							</td>
+							<td aria-label="Claimed amount" class="numeric">
+								&pound;{{claim.totals.claimed.gross_amount | numeral('0,0.00')}}
+							</td>
+							<td aria-label="Assessed amount" class="numeric">
+								{% if claim.status in ['draft','submitted','allocated'] -%}
+								&ndash;
+								{% else %}
+								&pound;{{claim.totals.assessed.gross_amount | numeral('0,0.00')}}
+								{%- endif %}
+							</td>
+							<td aria-label="Claim status">
+								<span class="status status-{{claim.status | replace('_','-')}}">{{claim.status | replace('_',' ') | capitalize}}</span>
+							</td>
+							<td aria-label="Date submitted">
+								{% if claim.status == 'draft' -%}
+								&ndash;
+								{% else %}
+								{{claim.dates.submitted | date('DD/MM/YYYY')}}
+								{%- endif %}
+							</td>
+							<td aria-label="Messages" class="font-grey">
+								{% if claim.messages.length -%}
+									<a href="./{{claim.id}}/details">View {{claim.messages.length}} message{% if claim.messages.length > 1 -%}s{%- endif %}</a>
+								{% else %}
+									No messages
+								{%- endif %}
+							</td>
+						</tr>
+
+						{% endfor %}
+
+					</tbody>
+				</table>
+			</div>
 
 		</div>
 	</div>
