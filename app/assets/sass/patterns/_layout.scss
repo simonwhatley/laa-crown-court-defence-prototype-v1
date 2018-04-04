@@ -1,0 +1,39 @@
+/* --------------------------------------- */
+/* Layout styles */
+/* --------------------------------------- */
+
+.column-one-quarter {
+  @include grid-column(1 / 4);
+}
+
+.column-three-quarters {
+  @include grid-column(3 / 4);
+}
+
+/* --------------------------------------- */
+/* Width styles */
+/* --------------------------------------- */
+
+.width-full {
+  width: 100%;
+}
+
+.width-half, .width-one-half {
+  width: 50%;
+}
+
+.width-quarter, .width-one-quarter {
+  width: 25%;
+}
+
+.width-three-quarters {
+  width: 75%;
+}
+
+.width-third, .width-one-third {
+  width: 33.3333333%;
+}
+
+.width-two-thirds {
+  width: 66.6666666%;
+}

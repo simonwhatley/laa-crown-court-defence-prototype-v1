@@ -1,0 +1,24 @@
+/* --------------------------------------- */
+/* Basic button styles */
+/* --------------------------------------- */
+
+.button-secondary {
+  @include button ($light-blue);
+}
+
+.button-tertiary {
+  @include button ($grey-2);
+}
+
+.button-delete {
+  @include button ($red);
+}
+
+.button-ghost {
+  @include button ($grey-4);
+}
+
+.form-buttons *{
+  margin-right: 10px;
+  display: inline-block;
+}
