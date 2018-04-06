@@ -3,7 +3,7 @@
         "key": "aylesbury",
         "name": "Aylesbury",
         "address": {
-            "post_code": "HP21 7FT"
+            "postcode": "HP21 7FT"
         },
         "location": {
             "latitude": 0,
@@ -17,7 +17,7 @@
         "key": "basildon",
         "name": "Basildon",
         "address": {
-            "post_code": "SS14 2EW"
+            "postcode": "SS14 2EW"
         },
         "location": {
             "latitude": 51.5725704870882,
@@ -31,7 +31,7 @@
         "key": "birmingham",
         "name": "Birmingham",
         "address": {
-            "post_code": "B4 7NA"
+            "postcode": "B4 7NA"
         },
         "location": {
             "latitude": 52.4830916620748,
@@ -45,7 +45,7 @@
         "key": "blackfriars",
         "name": "Blackfriars",
         "address": {
-            "post_code": "SE1 0BT"
+            "postcode": "SE1 0BT"
         },
         "location": {
             "latitude": 51.5025563574404,
@@ -59,7 +59,7 @@
         "key": "bolton",
         "name": "Bolton",
         "address": {
-            "post_code": "BL1 1SU"
+            "postcode": "BL1 1SU"
         },
         "location": {
             "latitude": 53.5782069865149,
@@ -73,7 +73,7 @@
         "key": "bournemouth",
         "name": "Bournemouth",
         "address": {
-            "post_code": "BH7 7DS"
+            "postcode": "BH7 7DS"
         },
         "location": {
             "latitude": 50.7479457172472,
@@ -87,7 +87,7 @@
         "key": "bradford",
         "name": "Bradford",
         "address": {
-            "post_code": "BD1 1JA"
+            "postcode": "BD1 1JA"
         },
         "location": {
             "latitude": 53.7925769520648,
@@ -101,7 +101,7 @@
         "key": "bristol",
         "name": "Bristol",
         "address": {
-            "post_code": "BS1 1DA"
+            "postcode": "BS1 1DA"
         },
         "location": {
             "latitude": 51.4547964396741,
@@ -115,7 +115,7 @@
         "key": "burnley",
         "name": "Burnley",
         "address": {
-            "post_code": "BB11 1XD"
+            "postcode": "BB11 1XD"
         },
         "location": {
             "latitude": 53.7877303801683,
@@ -129,7 +129,7 @@
         "key": "caernarfon",
         "name": "Caernarfon",
         "address": {
-            "post_code": "LL55 2DF"
+            "postcode": "LL55 2DF"
         },
         "location": {
             "latitude": 53.1407287883649,
@@ -143,7 +143,7 @@
         "key": "cambridge",
         "name": "Cambridge",
         "address": {
-            "post_code": "CB1 1BT"
+            "postcode": "CB1 1BT"
         },
         "location": {
             "latitude": 52.2068096702358,
@@ -157,7 +157,7 @@
         "key": "canterbury",
         "name": "Canterbury",
         "address": {
-            "post_code": "CT1 1ZA"
+            "postcode": "CT1 1ZA"
         },
         "location": {
             "latitude": 51.2818940025355,
@@ -171,7 +171,7 @@
         "key": "cardiff",
         "name": "Cardiff",
         "address": {
-            "post_code": "CF10 3PG"
+            "postcode": "CF10 3PG"
         },
         "location": {
             "latitude": 51.4845524681798,
@@ -185,7 +185,7 @@
         "key": "carlisle",
         "name": "Carlisle",
         "address": {
-            "post_code": "CA1 1DJ"
+            "postcode": "CA1 1DJ"
         },
         "location": {
             "latitude": 54.893435679732,
@@ -199,7 +199,7 @@
         "key": "central_criminal_court",
         "name": "Central Criminal Court",
         "address": {
-            "post_code": "EC4M 7EH"
+            "postcode": "EC4M 7EH"
         },
         "location": {
             "latitude": 51.515491528262,
@@ -213,7 +213,7 @@
         "key": "chelmsford",
         "name": "Chelmsford",
         "address": {
-            "post_code": "CM1 1EL"
+            "postcode": "CM1 1EL"
         },
         "location": {
             "latitude": 51.7424914438681,
@@ -227,7 +227,7 @@
         "key": "chester",
         "name": "Chester",
         "address": {
-            "post_code": "CH1 2AN"
+            "postcode": "CH1 2AN"
         },
         "location": {
             "latitude": 53.1858923485779,
@@ -241,11 +241,11 @@
         "key": "chichester",
         "name": "Chichester",
         "address": {
-            "post_code": "PO19 1SX"
+            "postcode": "PO19 1SX"
         },
         "location": {
-            "latitude": 0,
-            "longitude": 0
+            "latitude": 50.832554,
+            "longitude": 0.779876
         },
         "court_code": 172,
         "other_names": ["Chichester Combined Court Centre"],
@@ -255,7 +255,7 @@
         "key": "coventry",
         "name": "Coventry",
         "address": {
-            "post_code": "CV1 2SN"
+            "postcode": "CV1 2SN"
         },
         "location": {
             "latitude": 52.4055860889745,
@@ -269,7 +269,7 @@
         "key": "croydon",
         "name": "Croydon",
         "address": {
-            "post_code": "CR9 5AB"
+            "postcode": "CR9 5AB"
         },
         "location": {
             "latitude": 51.3733376742269,
@@ -283,7 +283,7 @@
         "key": "derby",
         "name": "Derby",
         "address": {
-            "post_code": "DE1 2XE"
+            "postcode": "DE1 2XE"
         },
         "location": {
             "latitude": 52.9224351570004,
@@ -297,7 +297,7 @@
         "key": "doncaster_north",
         "name": "Doncaster (North)",
         "address": {
-            "post_code": "DN1 3HS"
+            "postcode": "DN1 3HS"
         },
         "location": {
             "latitude": 53.5189921764188,
@@ -311,7 +311,7 @@
         "key": "doncaster_south",
         "name": "Doncaster (South)",
         "address": {
-            "post_code": "DN1 3HS"
+            "postcode": "DN1 3HS"
         },
         "location": {
             "latitude": 53.5189921764188,
@@ -325,7 +325,7 @@
         "key": "durham",
         "name": "Durham",
         "address": {
-            "post_code": "DH1 3HW"
+            "postcode": "DH1 3HW"
         },
         "location": {
             "latitude": 54.7740855852911,
@@ -339,7 +339,7 @@
         "key": "exeter",
         "name": "Exeter",
         "address": {
-            "post_code": "EX1 1UH"
+            "postcode": "EX1 1UH"
         },
         "location": {
             "latitude": 50.7212787671321,
@@ -353,7 +353,7 @@
         "key": "gloucester",
         "name": "Gloucester",
         "address": {
-            "post_code": "GL1 2TS"
+            "postcode": "GL1 2TS"
         },
         "location": {
             "latitude": 51.8659967035368,
@@ -367,7 +367,7 @@
         "key": "grimsby",
         "name": "Grimsby",
         "address": {
-            "post_code": "DN31 1HX"
+            "postcode": "DN31 1HX"
         },
         "location": {
             "latitude": 53.5648519620682,
@@ -381,7 +381,7 @@
         "key": "guildford",
         "name": "Guildford",
         "address": {
-            "post_code": "GU1 4ST"
+            "postcode": "GU1 4ST"
         },
         "location": {
             "latitude": 51.2387590335801,
@@ -395,7 +395,7 @@
         "key": "harrow",
         "name": "Harrow",
         "address": {
-            "post_code": "HA1 4TU"
+            "postcode": "HA1 4TU"
         },
         "location": {
             "latitude": 51.5938155822479,
@@ -409,7 +409,7 @@
         "key": "hull",
         "name": "Hull",
         "address": {
-            "post_code": "HU1 1RD"
+            "postcode": "HU1 1RD"
         },
         "location": {
             "latitude": 53.74106329227,
@@ -423,7 +423,7 @@
         "key": "inner_london",
         "name": "Inner London",
         "address": {
-            "post_code": "SE1 6AZ"
+            "postcode": "SE1 6AZ"
         },
         "location": {
             "latitude": 51.4981822462243,
@@ -437,7 +437,7 @@
         "key": "ipswich",
         "name": "Ipswich",
         "address": {
-            "post_code": "IP1 2AG"
+            "postcode": "IP1 2AG"
         },
         "location": {
             "latitude": 52.0535339057717,
@@ -451,7 +451,7 @@
         "key": "isleworth",
         "name": "Isleworth",
         "address": {
-            "post_code": "TW7 5LP"
+            "postcode": "TW7 5LP"
         },
         "location": {
             "latitude": 51.4792164294163,
@@ -465,7 +465,7 @@
         "key": "kingston_upon_thames",
         "name": "Kingston Upon Thames",
         "address": {
-            "post_code": "KT1 2BB"
+            "postcode": "KT1 2BB"
         },
         "location": {
             "latitude": 51.4058949642193,
@@ -479,7 +479,7 @@
         "key": "leeds",
         "name": "Leeds",
         "address": {
-            "post_code": "LS1 3BG"
+            "postcode": "LS1 3BG"
         },
         "location": {
             "latitude": 53.8003781366327,
@@ -493,7 +493,7 @@
         "key": "leicester",
         "name": "Leicester",
         "address": {
-            "post_code": "LE1 6HG"
+            "postcode": "LE1 6HG"
         },
         "location": {
             "latitude": 52.6299124937924,
@@ -507,7 +507,7 @@
         "key": "lewes",
         "name": "Lewes",
         "address": {
-            "post_code": "BN7 1YB"
+            "postcode": "BN7 1YB"
         },
         "location": {
             "latitude": 50.8730858584157,
@@ -521,7 +521,7 @@
         "key": "lincoln",
         "name": "Lincoln",
         "address": {
-            "post_code": "LN1 3GA"
+            "postcode": "LN1 3GA"
         },
         "location": {
             "latitude": 53.235224125584,
@@ -535,7 +535,7 @@
         "key": "liverpool",
         "name": "Liverpool",
         "address": {
-            "post_code": "L2 1XA"
+            "postcode": "L2 1XA"
         },
         "location": {
             "latitude": 53.4040667663389,
@@ -549,7 +549,7 @@
         "key": "luton",
         "name": "Luton",
         "address": {
-            "post_code": "LU1 2AA"
+            "postcode": "LU1 2AA"
         },
         "location": {
             "latitude": 51.8780269954415,
@@ -563,7 +563,7 @@
         "key": "maidstone",
         "name": "Maidstone",
         "address": {
-            "post_code": "ME16 8EQ"
+            "postcode": "ME16 8EQ"
         },
         "location": {
             "latitude": 51.2709856044174,
@@ -577,7 +577,7 @@
         "key": "manchester_crown_square",
         "name": "Manchester (Crown Square)",
         "address": {
-            "post_code": "M3 3FL"
+            "postcode": "M3 3FL"
         },
         "location": {
             "latitude": 53.4801157281972,
@@ -591,7 +591,7 @@
         "key": "manchester_minshull_street",
         "name": "Manchester (Minshull Street)",
         "address": {
-            "post_code": "M1 3FS"
+            "postcode": "M1 3FS"
         },
         "location": {
             "latitude": 53.4786763638985,
@@ -605,7 +605,7 @@
         "key": "merthyr_tydfil",
         "name": "Merthyr Tydfil",
         "address": {
-            "post_code": "CF47 8BH"
+            "postcode": "CF47 8BH"
         },
         "location": {
             "latitude": 51.7477732687062,
@@ -619,11 +619,11 @@
         "key": "middlesex_guildhall",
         "name": "Middlesex Guildhall",
         "address": {
-            "post_code": ""
+            "postcode": "SW1P 3BD"
         },
         "location": {
-            "latitude": 0,
-            "longitude": 0
+            "latitude": 51.50033509,
+            "longitude": -0.1280427091
         },
         "court_code": 464,
         "other_names": ["Middlesex Guildhall Crown Court", "Supreme Court of the United Kingdom"],
@@ -633,7 +633,7 @@
         "key": "mold",
         "name": "Mold",
         "address": {
-            "post_code": "CH7 1AE"
+            "postcode": "CH7 1AE"
         },
         "location": {
             "latitude": 53.1769977097904,
@@ -647,7 +647,7 @@
         "key": "newcastle",
         "name": "Newcastle",
         "address": {
-            "post_code": "NE1 3LA"
+            "postcode": "NE1 3LA"
         },
         "location": {
             "latitude": 54.9697252351941,
@@ -661,7 +661,7 @@
         "key": "newport",
         "name": "Newport",
         "address": {
-            "post_code": "NP20 4PR"
+            "postcode": "NP20 4PR"
         },
         "location": {
             "latitude": 51.5883859951196,
@@ -675,11 +675,11 @@
         "key": "newport_iow",
         "name": "Newport (IOW)",
         "address": {
-            "post_code": ""
+            "postcode": "PO30 5YT"
         },
         "location": {
-            "latitude": 0,
-            "longitude": 0
+            "latitude": 50.70136996,
+            "longitude": -1.291445346
         },
         "court_code": 478,
         "other_names": ["Isle of Wight Combined Court"],
@@ -689,7 +689,7 @@
         "key": "northampton",
         "name": "Northampton",
         "address": {
-            "post_code": "NN1 3HQ"
+            "postcode": "NN1 3HQ"
         },
         "location": {
             "latitude": 52.2408044699868,
@@ -703,7 +703,7 @@
         "key": "norwich",
         "name": "Norwich",
         "address": {
-            "post_code": "NR3 1UR"
+            "postcode": "NR3 1UR"
         },
         "location": {
             "latitude": 52.6341463590337,
@@ -717,7 +717,7 @@
         "key": "nottingham",
         "name": "Nottingham",
         "address": {
-            "post_code": "NG1 7EL"
+            "postcode": "NG1 7EL"
         },
         "location": {
             "latitude": 52.9485418227735,
@@ -731,7 +731,7 @@
         "key": "oxford",
         "name": "Oxford",
         "address": {
-            "post_code": "OX1 1TL"
+            "postcode": "OX1 1TL"
         },
         "location": {
             "latitude": 51.748172493341,
@@ -745,7 +745,7 @@
         "key": "peterborough",
         "name": "Peterborough",
         "address": {
-            "post_code": "PE1 1EJ"
+            "postcode": "PE1 1EJ"
         },
         "location": {
             "latitude": 52.5698909822282,
@@ -759,7 +759,7 @@
         "key": "plymouth",
         "name": "Plymouth",
         "address": {
-            "post_code": "PL1 2ER"
+            "postcode": "PL1 2ER"
         },
         "location": {
             "latitude": 50.369200794385,
@@ -773,7 +773,7 @@
         "key": "portsmouth",
         "name": "Portsmouth",
         "address": {
-            "post_code": "PO1 2EB"
+            "postcode": "PO1 2EB"
         },
         "location": {
             "latitude": 50.7957545909478,
@@ -787,7 +787,7 @@
         "key": "preston",
         "name": "Preston",
         "address": {
-            "post_code": "PR1 2PD"
+            "postcode": "PR1 2PD"
         },
         "location": {
             "latitude": 53.7595609766745,
@@ -801,7 +801,7 @@
         "key": "reading",
         "name": "Reading",
         "address": {
-            "post_code": "RG1 3EH"
+            "postcode": "RG1 3EH"
         },
         "location": {
             "latitude": 51.4561392014212,
@@ -815,7 +815,7 @@
         "key": "salisbury",
         "name": "Salisbury",
         "address": {
-            "post_code": "SP2 7EP"
+            "postcode": "SP2 7EP"
         },
         "location": {
             "latitude": 51.073379725385,
@@ -829,7 +829,7 @@
         "key": "sheffield",
         "name": "Sheffield",
         "address": {
-            "post_code": "S3 8PH"
+            "postcode": "S3 8PH"
         },
         "location": {
             "latitude": 53.3855580903425,
@@ -843,7 +843,7 @@
         "key": "shrewsbury",
         "name": "Shrewsbury",
         "address": {
-            "post_code": "SY2 6LU"
+            "postcode": "SY2 6LU"
         },
         "location": {
             "latitude": 52.7046219817023,
@@ -857,7 +857,7 @@
         "key": "snaresbrook",
         "name": "Snaresbrook",
         "address": {
-            "post_code": "E11 1QW"
+            "postcode": "E11 1QW"
         },
         "location": {
             "latitude": 51.5810171717876,
@@ -871,7 +871,7 @@
         "key": "southampton",
         "name": "Southampton",
         "address": {
-            "post_code": "SO15 2XQ"
+            "postcode": "SO15 2XQ"
         },
         "location": {
             "latitude": 50.913707953546,
@@ -885,7 +885,7 @@
         "key": "southwark",
         "name": "Southwark",
         "address": {
-            "post_code": "SE1 2HU"
+            "postcode": "SE1 2HU"
         },
         "location": {
             "latitude": 51.5057178019167,
@@ -899,7 +899,7 @@
         "key": "stafford",
         "name": "Stafford",
         "address": {
-            "post_code": "ST16 2QQ"
+            "postcode": "ST16 2QQ"
         },
         "location": {
             "latitude": 52.805431673,
@@ -913,7 +913,7 @@
         "key": "st_albans",
         "name": "St Albans",
         "address": {
-            "post_code": "AL1 3JW"
+            "postcode": "AL1 3JW"
         },
         "location": {
             "latitude": 51.7518479641539,
@@ -927,7 +927,7 @@
         "key": "stoke_on_trent",
         "name": "Stoke on Trent",
         "address": {
-            "post_code": "ST1 3BP"
+            "postcode": "ST1 3BP"
         },
         "location": {
             "latitude": 53.0220398543417,
@@ -941,7 +941,7 @@
         "key": "swansea",
         "name": "Swansea",
         "address": {
-            "post_code": "SA1 4PF"
+            "postcode": "SA1 4PF"
         },
         "location": {
             "latitude": 51.6144446120671,
@@ -955,7 +955,7 @@
         "key": "swindon",
         "name": "Swindon",
         "address": {
-            "post_code": "SN1 2HG"
+            "postcode": "SN1 2HG"
         },
         "location": {
             "latitude": 51.5611061010577,
@@ -969,7 +969,7 @@
         "key": "taunton",
         "name": "Taunton",
         "address": {
-            "post_code": "TA1 4EU"
+            "postcode": "TA1 4EU"
         },
         "location": {
             "latitude": 51.0127734952394,
@@ -983,7 +983,7 @@
         "key": "teesside_combined_court",
         "name": "Teesside",
         "address": {
-            "post_code": "TS1 2AE"
+            "postcode": "TS1 2AE"
         },
         "location": {
             "latitude": 54.5752108617994,
@@ -997,7 +997,7 @@
         "key": "teesside_justice_centre",
         "name": "Teesside",
         "address": {
-            "post_code": "TS1 2AS"
+            "postcode": "TS1 2AS"
         },
         "location": {
             "latitude": 54.5735245038242,
@@ -1011,7 +1011,7 @@
         "key": "truro",
         "name": "Truro",
         "address": {
-            "post_code": "TR1 2PB"
+            "postcode": "TR1 2PB"
         },
         "location": {
             "latitude": 50.2656342988352,
@@ -1025,7 +1025,7 @@
         "key": "warrington",
         "name": "Warrington",
         "address": {
-            "post_code": "WA1 1UR"
+            "postcode": "WA1 1UR"
         },
         "location": {
             "latitude": 53.3906759247184,
@@ -1039,7 +1039,7 @@
         "key": "warwick",
         "name": "Warwick",
         "address": {
-            "post_code": "CV32 4EL"
+            "postcode": "CV32 4EL"
         },
         "location": {
             "latitude": 52.2883911670227,
@@ -1053,7 +1053,7 @@
         "key": "weymouth_and_dorcester",
         "name": "Weymouth and Dorcester",
         "address": {
-            "post_code": "DT4 8BS"
+            "postcode": "DT4 8BS"
         },
         "location": {
             "latitude": 50.6084056337918,
@@ -1067,7 +1067,7 @@
         "key": "winchester",
         "name": "Winchester",
         "address": {
-            "post_code": "SO23 9EL"
+            "postcode": "SO23 9EL"
         },
         "location": {
             "latitude": 51.0624500042699,
@@ -1081,7 +1081,7 @@
         "key": "wolverhampton",
         "name": "Wolverhampton",
         "address": {
-            "post_code": "WV1 3LQ"
+            "postcode": "WV1 3LQ"
         },
         "location": {
             "latitude": 52.5843648165989,
@@ -1095,7 +1095,7 @@
         "key": "wood_green",
         "name": "Wood Green",
         "address": {
-            "post_code": "N22 5LF"
+            "postcode": "N22 5LF"
         },
         "location": {
             "latitude": 51.5988217392883,
@@ -1109,7 +1109,7 @@
         "key": "woolwich",
         "name": "Woolwich",
         "address": {
-            "post_code": "SE28 0EY"
+            "postcode": "SE28 0EY"
         },
         "location": {
             "latitude": 51.496496049117,
@@ -1123,7 +1123,7 @@
         "key": "worcester",
         "name": "Worcester",
         "address": {
-            "post_code": "WR1 1EQ"
+            "postcode": "WR1 1EQ"
         },
         "location": {
             "latitude": 52.1969528418992,
@@ -1137,7 +1137,7 @@
         "key": "york",
         "name": "York",
         "address": {
-            "post_code": "YO1 9WZ"
+            "postcode": "YO1 9WZ"
         },
         "location": {
             "latitude": 53.9552745602961,
