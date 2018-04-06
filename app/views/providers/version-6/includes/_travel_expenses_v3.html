@@ -1,0 +1,185 @@
+{% for i in range(0, data['actual_trial_length']) -%}
+<div class="form-section" data-item-number="{{loop.index}}">
+
+	<h3 class="heading-medium">
+		Expense {{loop.index}}
+		<a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this expense</span>
+		</a>
+	</h3>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group">
+			    <label class="form-label-bold" for="expense-type">
+			        Type of expense
+			        <!-- <span class="form-hint">Something</span> -->
+			    </label>
+			    <select id="travel-expense-{{loop.index}}-type" class="form-control form-control-3-4 fx-select-expense-type" name="travel_expense_{{loop.index}}_type">
+			        <option value=""></option>
+			        {% for type in travel_types %}
+
+			        <option
+			        	data-cost="{{type.attributes.cost}}"
+			        	data-date="{{type.attributes.date}}"
+			        	data-destination="{{type.attributes.destination}}"
+			        	data-distance="{{type.attributes.distance}}"
+			        	data-hours="{{type.attributes.hours}}"
+			        	data-location="{{type.attributes.location}}"
+			        	data-mileage="{{type.attributes.mileage}}"
+			        	data-reason="{{type.attributes.reason}}"
+			        	data-net-amount="{{type.attributes.net}}"
+			        	data-vat-amount="{{type.attributes.vat}}"
+			        	value="{{type.key}}"
+			        	{% if data['travel_expense_' + loop.index + '_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
+			        {%- endfor %}
+			    </select>
+			</div>
+
+		</div>
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-reason">
+				<fieldset>
+					<legend class="form-label-bold">
+						Reason
+		            	<!-- <span class="form-hint">Something</span> -->
+					</legend>
+					<select id="travel-expense-{{loop.index}}-reason" class="form-control form-control-3-4" name="travel_expense_{{loop.index}}_reason">
+						<option value=""></option>
+						{% for reason in travel_reasons -%}
+							<option value="{{reason.key}}" {% if data['travel_expense_' + loop.index + '_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+						{%- endfor %}
+					</select>
+				</fieldset>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-destination">
+				<label class="form-label-bold" for="travel-expense-{{loop.index}}-destination">
+		            Destination
+		            <!-- <span class="form-hint">Something</span> -->
+		        </label>
+		        <input class="form-control form-control-3-4" id="travel-expense-{{loop.index}}-destination" type="text" name="travel_expense_{{loop.index}}_destination" value="{{ data['travel_expense_' + loop.index + '_destination']}}" autocomplete="off" autocapitalize="off">
+			</div>
+
+			<div class="form-group fx-travel-location">
+				<label class="form-label-bold" for="travel-expense-{{loop.index}}-location">
+		            Location
+		            <!-- <span class="form-hint">Something</span> -->
+		        </label>
+		        <input class="form-control form-control-3-4" id="travel-expense-{{loop.index}}-location" type="text" name="travel_expense_{{loop.index}}_location" value="{{ data['travel_expense_' + loop.index + '_location']}}" autocomplete="off" autocapitalize="off">
+			</div>
+
+		</div>
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-hours">
+			    <label class="form-label-bold" for="travel-expense-{{loop.index}}-hours">
+			        Hours
+			    </label>
+			    <input class="form-control form-control-1-8" id="travel-expense-{{loop.index}}-hours" name="travel_expense_{{loop.index}}_hours" type="number" max="999.00" min="0.00" step="0.25" value="{{data['travel_expense_' + loop.index + '_hours']}}">
+			</div>
+
+			<div class="form-group fx-travel-distance">
+			    <label class="form-label-bold" for="travel-expense-{{loop.index}}-distance">
+			        Distance
+			    </label>
+			    <input class="form-control form-control-1-4" id="travel-expense-{{loop.index}}-distance" name="travel_expense_{{loop.index}}_distance" type="number" max="9999.00" min="0.00" step="0.01" value="{{data['travel_expense_' + loop.index + '_distance']}}">
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+		
+		<div class="column-full">
+
+			<div class="form-group fx-travel-cost">
+		    	<fieldset class="inline">
+				    <legend class="form-label-bold" for="travel-expense-{{loop.index}}-net-amount">
+				        Cost per mile
+				    </legend>
+				    <div class="multiple-choice">
+						<input id="cost-per-mile-1" type="radio" name="travel_expense_{{loop.index}}_cost_per_mile" value="25" {{ checked('travel_expense_{{loop.index}}_cost_per_mile','25') }}>
+						<label for="cost-per-mile-1"><abbr title="25 pence">25p</abbr> per mile</label>
+					</div>
+					<div class="multiple-choice">
+						<input id="cost-per-mile-2" type="radio" name="travel_expense_{{loop.index}}_cost_per_mile" value="45" {{ checked('travel_expense_{{loop.index}}_cost_per_mile','45') }}>
+						<label for="cost-per-mile-2"><abbr title="25 pence">45p</abbr> per mile</label>
+					</div>
+				</fieldset>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<div class="grid-row">
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-date">
+		        <fieldset>
+		            <legend class="form-label-bold">
+		                Date of expense
+		                <span class="form-hint">
+		                    For example, 31 3 2017
+		                </span>
+		            </legend>
+		            <div class="form-date">
+		                <div class="form-group form-group-day">
+		                    <label class="form-label" for="travel-expense-{{loop.index}}-date-day">
+		                        Day
+		                    </label>
+		                    <input class="form-control" id="travel-expense-{{loop.index}}-date-day" max="31" min="1" name="travel_expense_{{loop.index}}_date_day" pattern="[0-9]*" type="number" value="{{data['travel_expense_' + loop.index + '_date_day']}}">
+		                </div>
+		                <div class="form-group form-group-month">
+		                    <label class="form-label" for="travel-expense-{{loop.index}}-date-month">
+		                        Month
+		                    </label>
+		                    <input class="form-control" id="travel-expense-{{loop.index}}-date-month" max="12" min="1" name="travel_expense_{{loop.index}}_date_month" pattern="[0-9]*" type="number" value="{{data['travel_expense_' + loop.index + '_date_month']}}">
+		                </div>
+		                <div class="form-group form-group-year">
+		                    <label class="form-label" for="travel-expense-{{loop.index}}-date-year">
+		                        Year
+		                    </label>
+		                    <input class="form-control" id="travel-expense-{{loop.index}}-date-year" max="2019" min="1900" name="travel_expense_{{loop.index}}_date_year" pattern="[0-9]*" type="number" value="{{data['travel_expense_' + loop.index + '_date_year']}}">
+		                </div>
+		            </div>
+		        </fieldset>
+		    </div>
+
+		</div>
+
+		<div class="column-half">
+
+			<div class="form-group fx-travel-net-amount">
+			    <label class="form-label-bold" for="travel-expense-{{loop.index}}-net-amount">
+			        Net amount
+			    </label>
+			    <span class="form-input-denote">
+			        &pound;
+			    </span>
+			    <input class="form-control form-input-denote__input" id="travel-expense-{{loop.index}}-net-amount" name="travel_expense_{{loop.index}}_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['travel_expense_' + loop.index + '_net_amount']}}">
+			</div>
+
+		</div>
+
+	</div>
+	
+</div>
+{% endfor %}

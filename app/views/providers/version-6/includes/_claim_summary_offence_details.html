@@ -1,0 +1,28 @@
+{% if offence.category_label.length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Offence class
+			</th>
+			<td>{{offence.class_label}}</td>
+		</tr>
+		{% if data['bill_type'] in ['advocate_final','advocate_interim'] and data['fee_scheme_version'] == 10 -%}
+		<tr>
+			<th class="bold" scope="row">
+				Offence band
+			</th>
+			<td>{{offence.band_label}}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Offence category
+			</th>
+			<td>{{offence.category_label}}</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no offence details for this claim.</p>
+{%- endif %}

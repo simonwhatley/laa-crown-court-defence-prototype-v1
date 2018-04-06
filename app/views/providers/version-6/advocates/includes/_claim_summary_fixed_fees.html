@@ -1,0 +1,51 @@
+{% if data['fixed_fee_1_type'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Fee 1
+			</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Type of fee</th>
+							<td>{{data['fixed_fee_1_type']|replace('_',' ')|capitalize}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Quantity</th>
+							<td>{{data['fixed_fee_1_quantity']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Date of hearing{% if data['fixed_fee_1_quantity'] > 1 -%}s{%- endif %}</th>
+							<td>
+								<ul><!--  class="list list-bullet" -->
+									{% for i in range(0, data['fixed_fee_1_quantity']) -%}
+										{% if data['fixed_fee_' + loop.index + '_date_1_day'].length and data['fixed_fee_' + loop.index + '_date_1_month'] and data['fixed_fee_' + loop.index + '_date_1_year'] -%}
+
+											<li>{{data['fixed_fee_' + loop.index + '_date_1_day']}}/{{data['fixed_fee_' + loop.index + '_date_1_month']}}/{{data['fixed_fee_' + loop.index + '_date_1_year']}}</li>
+
+										{%- endif %}
+									{% endfor %}
+								</ul>
+							</td>
+						</tr>
+						{% if data['fixed_fee_1_type'] in ["appeals_to_the_crown_court_against_conviction_uplift","appeals_to_the_crown_court_against_sentence_uplift","breach_of_a_crown_court_order_uplift","committal_for_sentence_hearings_uplift","cracked_case_discontinued_uplift","elected_case_not_proceeded_uplift","number_of_cases_uplift"] -%}
+						<tr>
+							<th class="bold" scope="row">Additional case numbers</th>
+							<td>{% if data['fixed_fee_1_additional_case_numbers'].length -%}{{data['fixed_fee_1_additional_case_numbers']}}{% else %}None provided{%- endif %}</td>
+						</tr>
+						{%- endif %}
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['fixed_fee_1_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no fixed fees for this claim.</p>
+{%- endif %}

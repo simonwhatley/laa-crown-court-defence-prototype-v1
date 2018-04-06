@@ -1,0 +1,49 @@
+<div class="form-group">
+    <fieldset>
+        <div class="form-group">
+        	<span class="bold">
+                Case type
+            </span>
+            <p>{{data['case_type']|replace('_',' ')|capitalize}}</p>
+        </div>
+        <div class="form-group">
+        	<span class="bold">
+                Offence
+            </span>
+            <ul class="list list-bullet">
+            	<li><span class="bold">Class</span>: {{ offence.class_label }}</li>
+            	{% if offence.band_label.length -%}<li><span class="bold">Band</span>: {{ offence.band_label }}</li>{%- endif %}
+            	<li><span class="bold">Category</span>: {{ offence.category_label }}</li>
+            </ul>
+        </div>
+        <div class="form-group">
+            <label class="form-label-bold" for="witnesses-net-amount">
+                Net amount
+            </label>
+            <span class="form-input-denote">
+                &pound;
+            </span>
+            <input class="form-control form-control-1-4 form-input-denote__input" id="witnesses-net-amount" name="witnesses_net_amount" type="number" max="999999.99" min="0.00" step="0.00" value="{{data['witnesses_net_amount']}}">
+        </div>
+        <details>
+            <summary>
+                <span class="summary">Help with basic fees</span>
+            </summary>
+            <div class="panel panel-border-narrow">
+                <p>Basic fees include:</p>
+                {% if data['fee_scheme_version'] == 10 -%}
+                <ul class="list list-bullet">
+                    <li>1 daily attendance fee</li>
+                </ul>
+                {% else %}
+                <ul class="list list-bullet">
+                    <li>2 daily attendance fees</li>
+                    <li>4 standard appearance fees</li>
+                    <li>1 plea and trial preparation hearing (<abbr title="plea and trial preparation hearing">PTPH</abbr>)</li>
+                    <li>3 conferences and views</li>
+                </ul>
+                {%- endif %}
+            </div>
+        </details>
+    </fieldset>
+</div>

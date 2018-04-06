@@ -1,0 +1,303 @@
+<div class="grid-row">
+	<div class="column-full">
+
+        <h2 class="heading-large">
+            Claim details
+        </h2>
+
+        <h3 class="heading-medium">
+            Certification
+        </h3>
+
+        <table class="summary">
+            <tbody>
+                <tr>
+                    <th class="bold" scope="row">
+                        Certified by
+                    </th>
+                    <td>{{claim.certification.certified_by}}</td>
+                </tr>
+                <tr>
+                    <th class="bold" scope="row">
+                        Date certified
+                    </th>
+                    <td>{{claim.certification.certified_date|date('DD/MM/YYYY')}} at {{claim.certification.certified_date|date('hh:mm a')}}</td>
+                </tr>
+                <tr>
+                    <th class="bold" scope="row">
+                        Reason
+                    </th>
+                    <td>{{claim.certification.reason}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="heading-medium">
+        	Case details
+        </h3>
+
+        <table class="summary">
+            <tbody>
+                <tr>
+                    <th class="bold" scope="row">
+                        Instructed advocate
+                    </th>
+                    <td>{{claim['instructed_advocate']['first_name']}} {{claim['instructed_advocate']['last_name']}} ({{claim['instructed_advocate']['code']}})</td>
+                </tr>
+                <tr>
+                    <th class="bold" scope="row">
+                        Reference number
+                    </th>
+                    <td>{{claim['reference_number']}}</td>
+                </tr>
+                {% if claim['bill_type'] == 'advocate_final' -%}
+                <tr>
+                    <th class="bold" scope="row">
+                        Case type
+                    </th>
+                    <td>{{claim['case_type']|replace('_',' ')|title}}</td>
+                </tr>
+                {%- endif %}
+                <tr>
+                    <th class="bold" scope="row">
+                        Court
+                    </th>
+                    <td>{{claim['court']|replace('_',' ')|title}}</td>
+                </tr>
+                <tr>
+                    <th class="bold" scope="row">
+                        Case number
+                    </th>
+                    <td>{{claim['case_number']|upper}}</td>
+                </tr>
+                {% if claim['transfer_court_option'] == 'yes' -%}
+                <tr>
+                    <th class="bold" scope="row">
+                        Transfer court
+                    </th>
+                    <td>{{claim['transfer_court']|replace('_',' ')|title}}</td>
+                </tr>
+                <tr>
+                    <th class="bold" scope="row">
+                        Transfer case number
+                    </th>
+                    <td>{{claim['transfer_case_number']|upper}}</td>
+                </tr>
+                {%- endif %}
+
+            </tbody>
+        </table>
+
+        {% if claim.case_type in ['trial','retrial'] -%}
+        <h3 class="heading-medium">
+        	Trial details
+        </h3>
+        {%- endif %}
+
+        {% if claim.case_type == 'retrial' -%}
+        <h3 class="heading-medium">
+        	Retrial details
+        </h3>
+        {%- endif %}
+
+        {% if claim.case_type == 'cracked_trial' -%}
+        <h3 class="heading-medium">
+        	Cracked trial details
+        </h3>
+        {%- endif %}
+
+        {% if claim.case_type == 'cracked_before_retrial' -%}
+        <h3 class="heading-medium">
+        	Cracked before retrial details
+        </h3>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+        	Defendant details
+        </h3>
+        {% if claim.defendants.length -%}
+
+        <table class="summary">
+            <tbody>
+
+                {% for defendant in claim.defendants %}
+
+                <tr>
+                    <th class="bold" scope="row">
+                        Defendant {{loop.index}}
+                    </th>
+                    <td>
+                        <table class="nested-summary">
+                            <tbody>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        First name
+                                    </th>
+                                    <td>{{defendant.first_name}}</td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Last name
+                                    </th>
+                                    <td>{{defendant.last_name}}</td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Date of birth
+                                    </th>
+                                    <td>
+                                        {{defendant.date_of_birth|date('DD/MM/YYYY')}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Order for judicial apportionment
+                                    </th>
+                                    <td>{{defendant.judicial_apportionment|capitalize}}</td>
+                                </tr>
+                                {% for representation_order in defendant.representation_orders %}
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Representation order date
+                                    </th>
+                                    <td>
+                                        {{representation_order.representation_order_date|date('DD/MM/YYYY')}}
+                                    </td>
+                                </tr>
+                                {% if claim.case_type != 'breach_of_crown_court_order' -%}
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        <abbr title="means assessment administration tool">MAAT</abbr> reference
+                                    </th>
+                                    <td>{{representation_order.maat_reference}}</td>
+                                </tr>
+                                {%- endif %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                {% endfor %}
+
+                <!-- <tr>
+                    <th class="bold" scope="row">
+                        Defendant 1
+                    </th>
+                    <td>
+                        <table class="nested-summary">
+                            <tbody>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        First name
+                                    </th>
+                                    <td>{{claim['first_name']}}</td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Last name
+                                    </th>
+                                    <td>{{claim['last_name']}}</td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Date of birth
+                                    </th>
+                                    <td>
+                                        {% if claim['defendant_1_date_of_birth_day'].length and claim['defendant_1_date_of_birth_year'].length and claim['defendant_1_date_of_birth_year'].length -%}
+                                        {{claim['defendant_1_date_of_birth_day']}}/{{claim['defendant_1_date_of_birth_month']}}/{{claim['defendant_1_date_of_birth_year']}}
+                                        {%- endif %}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Order for judicial apportionment
+                                    </th>
+                                    <td>{% if claim['judicial_apportionment'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
+                                </tr>
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        Representation order date
+                                    </th>
+                                    <td>
+                                        {% if claim['defendant_1_representation_order_date_1_day'].length and claim['defendant_1_representation_order_date_1_month'].length and claim['defendant_1_representation_order_date_1_year'].length -%}
+                                        {{claim['defendant_1_representation_order_date_1_day']}}/{{claim['defendant_1_representation_order_date_1_month']}}/{{claim['defendant_1_representation_order_date_1_year']}}
+                                        {%- endif %}
+                                    </td>
+                                </tr>
+                                {% if claim['case_type'] != 'breach_of_crown_court_order' -%}
+                                <tr>
+                                    <th class="bold" scope="row">
+                                        <abbr title="means assessment administration tool">MAAT</abbr> reference
+                                    </th>
+                                    <td>{{claim['defendant_1_maat_reference_1']}}</td>
+                                </tr>
+                                {%- endif %}
+                            </tbody>
+                        </table>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        {% else %}
+        <p>There are no defendants for this claim.</p>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+        	Offence details
+        </h3>
+        {% if claim.offence.length -%}
+
+        {% else %}
+        <p>There are no offence details for this claim.</p>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+            {{claim.fee_type|capitalize}} fees
+        </h3>
+        {% if claim.fees.length -%}
+
+        {% else %}
+        <p>There are no {{claim.fee_type|lower}} fees for this claim.</p>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+        	Miscellaneous fees
+        </h3>
+        {% if claim.miscellaneous_fees.length -%}
+
+        {% else %}
+        <p>There are no miscellaneous fees for this claim.</p>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+        	Travel expenses
+        </h3>
+        {% if claim.miscellaneous_fees.length -%}
+
+        {% else %}
+        <p>There are no travel expenses for this claim.</p>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+        	Supporting evidence
+        </h3>
+        {% if claim.miscellaneous_fees.length -%}
+
+        {% else %}
+        <p>There is no supporting evidence for this claim.</p>
+        {%- endif %}
+
+        <h3 class="heading-medium">
+        	Additional information
+
+        </h3>
+        {% if claim.miscellaneous_fees.length -%}
+
+        {% else %}
+        <p>There is no additional information for this claim.</p>
+        {%- endif %}
+
+	</div>
+</div>

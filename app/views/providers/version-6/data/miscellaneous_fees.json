@@ -1,0 +1,434 @@
+[
+    {
+        "key": "abuse_of_process_hearings_half_day",
+        "name": "Abuse of process hearings (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["APH"]
+    },
+    {
+        "key": "abuse_of_process_hearings_half_day_uplift",
+        "name": "Abuse of process hearings (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["APU"]
+    },
+    {
+        "key": "abuse_of_process_hearings_whole_day",
+        "name": "Abuse of process hearings (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["APW"]
+    },
+    {
+        "key": "abuse_of_process_hearings_whole_day_uplift",
+        "name": "Abuse of process hearings (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["AWU"]
+    },
+    {
+        "key": "adjourned_appeals",
+        "name": "Adjourned appeals",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "application_to_dismiss_a_charge_half_day",
+        "name": "Application to dismiss a charge (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "application_to_dismiss_a_charge_half_day_uplift",
+        "name": "Application to dismiss a charge (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "application_to_dismiss_a_charge_whole_day",
+        "name": "Application to dismiss a charge (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "application_to_dismiss_a_charge_whole_day_uplift",
+        "name": "Application to dismiss a charge (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "case_uplift",
+        "name": "Case uplift",
+        "scheme": ["lgfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "confiscation_hearings_half_day",
+        "name": "Confiscation hearings (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["DTH","PCH"]
+    },
+    {
+        "key": "confiscation_hearings_half_day_uplift",
+        "name": "Confiscation hearings (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["DHU","CHU"]
+    },
+    {
+        "key": "confiscation_hearings_whole_day",
+        "name": "Confiscation hearings (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["DTW","PCW"]
+    },
+    {
+        "key": "confiscation_hearings_whole_day_uplift",
+        "name": "Confiscation hearings (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["DWU","CWU"]
+    },
+    {
+        "key": "costs_judge_application",
+        "name": "Costs judge application",
+        "scheme": ["lgfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "costs_judge_preparation",
+        "name": "Costs judge preparation",
+        "scheme": ["lgfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "deferred_sentence_hearings",
+        "name": "Deferred sentence hearings",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["DSE"]
+    },
+    {
+        "key": "deferred_sentence_hearings_uplift",
+        "name": "Deferred sentence hearings uplift",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["DSU"]
+    },
+    {
+        "key": "evidence_provision_fee",
+        "name": "Evidence provision fee",
+        "scheme": ["lgfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "further_case_management_hearing_fcmh",
+        "name": "Further case management hearing (FCMH)",
+        "scheme": ["agfs"],
+        "scheme_version": ["10"],
+        "other_names": [],
+        "abbreviations": ["FCMH"]
+    },
+    {
+        "key": "ground_rules_hearing",
+        "name": "Ground rules hearing",
+        "scheme": ["agfs"],
+        "scheme_version": ["10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "hearings_relating_to_admissibility_of_evidence_half_day",
+        "name": "Hearings relating to admissibility of evidence (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["AEH","PAH"]
+    },
+    {
+        "key": "hearings_relating_to_admissibility_of_evidence_half_day_uplift",
+        "name": "Hearings relating to admissibility of evidence (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["EHU","PHU"]
+    },
+    {
+        "key": "hearings_relating_to_admissibility_of_evidence_whole_day",
+        "name": "Hearings relating to admissibility of evidence (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["AEW","PAW"]
+    },
+    {
+        "key": "hearings_relating_to_admissibility_of_evidence_whole_day_uplift",
+        "name": "Hearings relating to admissibility of evidence (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["EWU","PWU"]
+    },
+    {
+        "key": "hearings_relating_to_disclosure_half_day",
+        "name": "Hearings relating to disclosure (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["HDH"]
+    },
+    {
+        "key": "hearings_relating_to_disclosure_half_day_uplift",
+        "name": "Hearings relating to disclosure (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["HHU"]
+    },
+    {
+        "key": "hearings_relating_to_disclosure_whole_day",
+        "name": "Hearings relating to disclosure (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["HDW"]
+    },
+    {
+        "key": "hearings_relating_to_disclosure_whole_day_uplift",
+        "name": "Hearings relating to disclosure (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["HWU"]
+    },
+    {
+        "key": "noting_brief_fee",
+        "name": "Noting brief fee",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["NBR"]
+    },
+    {
+        "key": "paper_plea_case_management_hearing",
+        "name": "Paper plea & case management hearing",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": ["PPC"]
+    },
+    {
+        "key": "paper_plea_case_management_hearing_uplift",
+        "name": "Paper plea & case management hearing uplift",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "other_names": [],
+        "abbreviations": ["PCU"]
+    },
+    {
+        "key": "proceeds_of_crime_hearings_half_day",
+        "name": "Proceeds of crime hearings (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "proceeds_of_crime_hearings_half_day_uplift",
+        "name": "Proceeds of crime hearings (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "proceeds_of_crime_hearings_whole_day",
+        "name": "Proceeds of crime hearings (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "proceeds_of_crime_hearings_whole_day_uplift",
+        "name": "Proceeds of crime hearings (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "public_interest_immunity_hearings_half_day",
+        "name": "Public interest immunity hearings (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "public_interest_immunity_hearings_half_day_uplift",
+        "name": "Public interest immunity hearings (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "public_interest_immunity_hearings_whole_day",
+        "name": "Public interest immunity hearings (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "public_interest_immunity_hearings_whole_day_uplift",
+        "name": "Public interest immunity hearings (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "research_of_very_unusual_or_novel_factual_issue",
+        "name": "Research of very unusual or novel factual issue",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "research_of_very_unusual_or_novel_point_of_law",
+        "name": "Research of very unusual or novel point of law",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "sentence_hearings",
+        "name": "Sentence hearings",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "sentence_hearings_uplift",
+        "name": "Sentence hearings uplift",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "special_preparation_fee",
+        "name": "Special preparation fee",
+        "scheme": ["agfs","lgfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["SPF"]
+    },
+    {
+        "key": "standard_appearance_fee_uplift",
+        "name": "Standard appearance fee uplift",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": ["SAU"]
+    },
+    {
+        "key": "trial_not_proceed",
+        "name": "Trial not proceed",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "trial_not_proceed_uplift",
+        "name": "Trial not proceed uplift",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "unsuccessful_application_to_vacate_a_guilty_plea_half_day",
+        "name": "Unsuccessful application to vacate a guilty plea (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "unsuccessful_application_to_vacate_a_guilty_plea_half_day_uplift",
+        "name": "Unsuccessful application to vacate a guilty plea (half day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "unsuccessful_application_to_vacate_a_guilty_plea_whole_day",
+        "name": "Unsuccessful application to vacate a guilty plea (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "unsuccessful_application_to_vacate_a_guilty_plea_whole_day_uplift",
+        "name": "Unsuccessful application to vacate a guilty plea (whole day uplift)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "wasted_preparation_fee",
+        "name": "Wasted preparation fee",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": ["Wasted prep fee"],
+        "abbreviations": ["WPF"]
+    },
+    {
+        "key": "written_oral_advice",
+        "name": "Written / oral advice",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "other_names": ["Written or oral advice"],
+        "abbreviations": ["WOA","RNF","RNL"]
+    }
+]

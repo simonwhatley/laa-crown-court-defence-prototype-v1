@@ -1,0 +1,29 @@
+{#
+<!-- <script src="/public/javascripts/dependent-dropdown.min.js"></script> -->
+<script>
+$("#offence-band").depdrop({
+	depends: ['offence-class'],
+    url: '../data/offences/10/bands',
+    loadingText: '',
+    parentParam: 'class',
+    idParam: 'key'
+    {%- if data['offence_class'].length %}, initialize: true{%- endif %}
+});
+$("#offence-category").depdrop({
+	depends: ['offence-band'],
+    url: '../data/offences/10/categories',
+    loadingText: '',
+    parentParam: 'band',
+    idParam: 'key'
+    {%- if data['offence_band'].length %}, initialize: true{%- endif %}
+});
+</script>
+#}
+<script src="/public/javascripts/jquery.hideseek.min.js"></script>
+<script>
+$('#search').hideseek({
+    highlight: true,
+    min_chars: 3,
+    nodata: "No results found."
+});
+</script>

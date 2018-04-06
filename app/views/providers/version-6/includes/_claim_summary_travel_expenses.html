@@ -1,0 +1,95 @@
+{% if data['travel_expense_1_type'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Expense 1
+			</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">
+								Type of expense
+							</th>
+							<td>{{data['travel_expense_1_type']|replace('_',' ')|capitalize}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Reason for travel
+							</th>
+							<td>{{data['travel_expense_1_reason']|replace('_',' ')|capitalize}}</td>
+						</tr>
+						{% if data['travel_expense_1_type'] in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","travel_expense_1_time"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Destination
+							</th>
+							<td>{% for destination in data['travel_expense_1_destination'] -%}{{destination}}{%- endfor %}</td>
+						</tr>
+						{%- endif %}
+						{% if data['travel_expense_1_type'] in ["hotel_accommodation","subsistence"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Location
+							</th>
+							<td>{% for location in data['travel_expense_1_location'] -%}{{location}}{%- endfor %}</td>
+						</tr>
+						{%- endif %}
+						{% if data['travel_expense_1_type'] in ["bike_travel","car_travel"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Distance
+							</th>
+							<td>{% for distance in data['travel_expense_1_distance'] -%}{{distance}}{%- endfor %}</td>
+						</tr>
+						{%- endif %}
+						{% if data['travel_expense_1_type'] in ["travel_expense_1_time"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Hours
+							</th>
+							<td>{{data['travel_expense_1_hours']}}</td>
+						</tr>
+						{%- endif %}
+						<tr>
+							<th class="bold" scope="row">
+								Date of expense
+							</th>
+							<td>
+								{% if data['travel_expense_1_date_day'].length and data['travel_expense_1_date_month'].length and data['travel_expense_1_date_year'].length -%}
+								{{data['travel_expense_1_date_day']}}/{{data['travel_expense_1_date_month']}}/{{data['travel_expense_1_date_year']}}
+								{%- endif %}
+							</td>
+						</tr>
+						{% if data['travel_expense_1_type'] in ["bike_travel","car_travel"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Cost per mile
+							</th>
+							<td>{{data['travel_expense_1_cost_per_mile']}}p per mile</td>
+						</tr>
+						{%- endif %}
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>&pound;{{data['travel_expense_1_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+						{% if data['travel_expense_1_vat_amount'].length -%}
+						<tr>
+							<th class="bold" scope="row">
+								<abbr title="value added tax">VAT</abbr> amount
+							</th>
+							<td>&pound;{{data['travel_expense_1_vat_amount']|numeral('0,0.00')}}</td>
+						</tr>
+						{%- endif %}
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no travel expenses for this claim.</p>
+{%- endif %}

@@ -1,0 +1,81 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "../includes/_page_scripts_offence_details_scheme_10.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			{% if data['offence_class'].length %}
+			<div class="grid-row">
+				<div class="column-two-thirds">
+					{% include "../includes/_offences_scheme_10_selected.html" %}
+				</div>
+			</div>
+			{% endif %}
+
+			<div class="grid-row">
+				<div class="column-full">
+
+					<h2 id="section-heading" class="heading-large">
+						Offence details
+					</h2>
+
+					<div class="form-section">
+
+						<div id="search-field" class="form-group">
+						    <label class="form-label-bold" for="search">
+						        Search for the offence
+						        <span class="form-hint">
+						            For example by class, band, offence or act name
+						        </span>
+						    </label>
+						    <input id="search" class="form-control form-control-2-3" name="search" placeholder="" type="text" data-list="#offence-list" autocomplete="off">
+						</div>
+
+						{% include "./includes/_help_offence_details.html" %}
+
+					</div>
+
+					{% if type %}
+	                <p class="column-two-thirds">
+	                    {% if type == "class" -%}
+	                        Showing offences in the <span class="bold">{{offences[0].class_label}}</span> class. <a href="{{links.filter}}">Clear filter</a>
+	                    {% elif type == "band" %}
+	                        Showing offences in <span class="bold">{{offences[0].band_label}}</span> in the <span class="bold">{{offences[0].class_label}}</span> class. <a href="{{links.filter}}">Clear filter</a>
+	                    {% elif type == "act" %}
+	                        Showing offences in the <span class="bold">{{offences[0].act_label}}</span> act. <a href="{{links.filter}}">Clear filter</a>
+	                    {% endif -%}
+	                </p>
+	                {% endif %}
+
+					{% include "../includes/_offences_scheme_10_list.html" %}
+
+
+					{#% include "./includes/_help.html" %#}
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

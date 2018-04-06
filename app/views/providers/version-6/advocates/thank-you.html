@@ -1,0 +1,54 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.home}}">Home</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					<div class="confirmation">
+						<h2 class="heading-large">
+							Thank you for submitting your claim
+						</h2>
+						<p>Your claim reference is <span class="bold">{{data['case_number']|upper}}/11234</span></p>
+					</div>
+
+					<h2 id="section-heading" class="heading-large">
+						What happens next?
+					</h2>
+
+					<p>
+						A case worker will assess your claim. You will be notified by email when your claim has been processed. You can also check the status of your claim at any time in the <a href="{{links.home}}">Your claims</a> view.
+					</p>
+
+					<div class="form-section">
+						<div class="form-group form-buttons">
+							<a href="{{links.new}}" class="button" role="button">Submit a new claim</a>
+							<a href="{{links.home}}" class="button button-tertiary" role="button">View your claims</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

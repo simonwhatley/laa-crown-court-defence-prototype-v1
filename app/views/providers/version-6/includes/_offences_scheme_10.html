@@ -1,0 +1,35 @@
+<input type="hidden" name="fee_scheme_version" value="10">
+
+<div class="form-group" data-required="true" data-error="Offence class is required">
+  <label class="form-label-bold" for="offence-class">
+  Offence class
+  <!-- <span class="form-hint">Something</span> -->
+  </label>
+  <select id="offence-class" name="offence_class" class="form-control">
+    <option value=""></option>
+    {% for class in offences -%}
+    <option value="{{class.key}}" {%- if data['offence_class'] == class.key %}selected="selected"{%- endif %}>{{class.key}} – {{class.name | capitalize}}</option>
+    {%- endfor %}
+  </select>
+
+</div>
+
+<div class="form-group">
+  <label class="form-label-bold" for="offence-category">
+    Offence band
+    <!-- <span class="form-hint">Something...</span> -->
+  </label>
+  <select id="offence-band" name="offence_band" class="form-control">
+    <option value=""></option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label class="form-label-bold" for="offence-category">
+    Offence category
+    <!-- <span class="form-hint">Something...</span> -->
+  </label>
+  <select id="offence-category" name="offence_category" class="form-control">
+    <option value=""></option>
+  </select>
+</div>

@@ -1,0 +1,141 @@
+<div class="form-group">
+    <fieldset>
+        <legend class="heading-small">
+            Litigator type
+            <!-- <span class="form-hint">
+                Please choose a relevant option
+            </span> -->
+        </legend>
+
+        <div class="multiple-choice" data-target="original-litigator-panel">
+            <input aria-controls="original-litigator-panel" aria-expanded="false" id="original-litigator" name="transfer_type" type="radio" value="original_litigator" {{ checked('transfer_type','original_litigator') }}>
+            <label for="original-litigator">
+                Original
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="original-litigator-panel">
+            <div class="form-group">
+                <label class="form-label-bold">
+                    When did you stop acting?
+                </label>
+                <select id="stop-acting-reason" class="form-control" name="stop_acting_reason">
+                    <option value=""></option>
+
+                    {% for reason in transfer_reasons -%}
+                        <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['stop_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+                    {%- endfor %}
+
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date you stopped acting
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-stopped-acting-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="date-stopped-acting-day" max="31" min="1" name="date_stopped_acting_day" pattern="[0-9]*" type="number" value="{{data['date_stopped_acting_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-stopped-acting-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="date-stopped-acting-month" max="12" min="1" name="date_stopped_acting_month" pattern="[0-9]*" type="number" value="{{data['date_stopped_acting_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-stopped-acting-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="date-stopped-acting-year" max="2019" min="1900" name="date_stopped_acting_year" pattern="[0-9]*" type="number" value="{{data['date_stopped_acting_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="multiple-choice" data-target="new-litigator-panel">
+            <input aria-controls="new-litigator-panel" aria-expanded="false" id="new-litigator" name="transfer_type" type="radio" value="new_litigator" {{ checked('transfer_type','new_litigator') }}>
+            <label for="new-litigator">
+                New
+            </label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="new-litigator-panel">
+            <div class="form-group">
+                <label class="form-label-bold">
+                    When did you start acting?
+                </label>
+                <select id="start-acting-reason" class="form-control" name="start_acting_reason">
+                    <option value=""></option>
+
+                    {% for reason in transfer_reasons -%}
+                        <option value="{{reason.key}}" {% if reason.abbreviations.length -%}data-abbreviations="{{reason.abbreviations}}" {%- endif %}{% if reason.other_names.length -%}data-other-names="{{reason.other_names}}" {%- endif %} {% if data['start_acting_reason'] == reason.key %}selected="selected"{% endif %}>{{reason.name}}</option>
+                    {%- endfor %}
+
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label-bold">
+                        Date you started acting
+                        <span class="form-hint">
+                            For example, 31 3 2017
+                        </span>
+                    </legend>
+                    <div class="form-date">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-started-acting-day">
+                                Day
+                            </label>
+                            <input class="form-control" id="date-started-acting-day" max="31" min="1" name="date_started_acting_day" pattern="[0-9]*" type="number" value="{{data['date_started_acting_day']}}">
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-started-acting-month">
+                                Month
+                            </label>
+                            <input class="form-control" id="date-started-acting-month" max="12" min="1" name="date_started_acting_month" pattern="[0-9]*" type="number" value="{{data['date_started_acting_month']}}">
+                        </div>
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-started-acting-year">
+                                Year
+                            </label>
+                            <input class="form-control" id="date-started-acting-year" max="2019" min="1900" name="date_started_acting_year" pattern="[0-9]*" type="number" value="{{data['date_started_acting_year']}}">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+
+<div class="form-group">
+    <fieldset>
+        <legend class="heading-small">
+            Was the case elected?
+            <!-- <span class="form-hint">
+                Please choose a relevant option
+            </span> -->
+        </legend>
+
+        <div class="multiple-choice">
+            <input aria-expanded="false" id="case-elected-yes" name="case_elected" type="radio" value="yes" {{ checked('case_elected','yes') }}>
+            <label for="case-elected-yes">
+                Yes
+            </label>
+        </div>
+
+        <div class="multiple-choice">
+            <input aria-expanded="false" id="case-elected-no" name="case_elected" type="radio" value="no" {{ checked('case_elected','no') }}>
+            <label for="case-elected-no">
+                No
+            </label>
+        </div>
+
+    </fieldset>
+</div>

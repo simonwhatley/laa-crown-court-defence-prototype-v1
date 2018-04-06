@@ -1,0 +1,42 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+<script src="/public/javascripts/dropzone.js"></script>
+<script type="text/javascript">
+$("div#dropzone").dropzone({ url: "/file/post" });
+</script>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<a class="link-back" href="{{links.home}}">Home</a>
+
+	{% include "./includes/_claim_details_overview.html" %}
+
+	{% include "./includes/_claim_details_messages.html" %}
+
+	{% if claim.status in ['draft','submitted','allocated'] -%}
+
+		{% include "./includes/_claim_details_summary.html" %}
+
+	{% else %}
+
+		{% include "./includes/_claim_details_assessment_summary.html" %}
+
+	{%- endif %}
+
+	{% include "./includes/_claim_details.html" %}
+
+	{#% include "./includes/_help.html" %#}
+
+</main>
+
+{% endblock %}

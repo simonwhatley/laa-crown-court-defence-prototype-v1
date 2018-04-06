@@ -1,0 +1,109 @@
+<div class="form-group">
+    <fieldset>
+        <legend class="form-label-bold">
+            Notice of 1st fixed/warned issued
+            <span class="form-hint">
+                For example, 31 3 2017
+            </span>
+        </legend>
+        <div class="form-date">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="cracked-before-retrial-notice-of-fixed-warned-trial-issued-day">
+                    Day
+                </label>
+                <input class="form-control" id="cracked-before-retrial-notice-of-fixed-warned-trial-issued-day" max="31" min="1" name="cracked_before_retrial_notice_of_fixed_warned_trial_issued_day" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_notice_of_fixed_warned_trial_issued_day']}}">
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="cracked-before-retrial-notice-of-fixed-warned-trial-issued-month">
+                    Month
+                </label>
+                <input class="form-control" id="cracked-before-retrial-notice-of-fixed-warned-trial-issued-month" max="12" min="1" name="cracked_before_retrial_notice_of_fixed_warned_trial_issued_month" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_notice_of_fixed_warned_trial_issued_month']}}">
+            </div>
+            <div class="form-group form-group-year">
+                <label class="form-label" for="cracked-before-retrial-notice-of-fixed-warned-trial-issued-year">
+                    Year
+                </label>
+                <input class="form-control" id="cracked-before-retrial-notice-of-fixed-warned-trial-issued-year" max="2019" min="1900" name="cracked_before_retrial_notice_of_fixed_warned_trial_issued_year" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_notice_of_fixed_warned_trial_issued_year']}}">
+            </div>
+        </div>
+    </fieldset>
+</div>
+<div class="form-group">
+    <fieldset>
+        <legend class="form-label-bold">
+            1st fixed/warned trial
+            <span class="form-hint">
+                For example, 31 3 2017
+            </span>
+        </legend>
+        <div class="form-date">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="cracked-before-retrial-fixed-warned-trial-day">
+                    Day
+                </label>
+                <input class="form-control" id="cracked-before-retrial-fixed-warned-trial-day" max="31" min="1" name="cracked_before_retrial_fixed_warned_trial_day" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_fixed_warned_trial_day']}}">
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="cracked-before-retrial-fixed-warned-trial-month">
+                    Month
+                </label>
+                <input class="form-control" id="cracked-before-retrial-fixed-warned-trial-month" max="12" min="1" name="cracked_before_retrial_fixed_warned_trial_month" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_fixed_warned_trial_month']}}">
+            </div>
+            <div class="form-group form-group-year">
+                <label class="form-label" for="cracked-before-retrial-fixed-warned-trial-year">
+                    Year
+                </label>
+                <input class="form-control" id="cracked-before-retrial-fixed-warned-trial-year" max="2019" min="1900" name="cracked_before_retrial_fixed_warned_trial_year" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_fixed_warned_trial_year']}}">
+            </div>
+        </div>
+    </fieldset>
+</div>
+<div class="form-group">
+    <fieldset>
+        <legend class="form-label-bold">
+            Case cracked on
+            <span class="form-hint">
+                For example, 31 3 2017
+            </span>
+        </legend>
+        <div class="form-date">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="cracked-before-retrial-case-cracked-on-day">
+                    Day
+                </label>
+                <input class="form-control" id="cracked-before-retrial-case-cracked-on-day" max="31" min="1" name="cracked_before_retrial_case_cracked_on_day" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_case_cracked_on_day']}}">
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="cracked-before-retrial-case-cracked-on-month">
+                    Month
+                </label>
+                <input class="form-control" id="cracked-before-retrial-case-cracked-on-month" max="12" min="1" name="cracked_before_retrial_case_cracked_on_month" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_case_cracked_on_month']}}">
+            </div>
+            <div class="form-group form-group-year">
+                <label class="form-label" for="cracked-before-retrial-case-cracked-on-year">
+                    Year
+                </label>
+                <input class="form-control" id="cracked-before-retrial-case-cracked-on-year" max="2019" min="1900" name="cracked_before_retrial_case_cracked_on_year" pattern="[0-9]*" type="number" value="{{data['cracked_before_retrial_case_cracked_on_year']}}">
+            </div>
+        </div>
+    </fieldset>
+</div>
+<div class="form-group">
+    <fieldset>
+        <legend class="form-label-bold" for="case-cracked-1">
+            Case cracked in
+        </legend>
+        <div class="multiple-choice">
+            <input id="cracked-before-retrial-case-cracked-1" type="radio" name="cracked_before_retrial_case_cracked" value="first_third" {{ checked('cracked_before_retrial_case_cracked','first_third') }}>
+            <label for="cracked-before-retrial-case-cracked-1">First third</label>
+        </div>
+        <div class="multiple-choice">
+            <input id="cracked-before-retrial-case-cracked-2" type="radio" name="cracked_before_retrial_case_cracked" value="second_third" {{ checked('cracked_before_retrial_case_cracked','second_third') }}>
+            <label for="cracked-before-retrial-case-cracked-2">Second third</label>
+        </div>
+        <div class="multiple-choice">
+            <input id="cracked-before-retrial-case-cracked-3" type="radio" name="cracked_before_retrial_case_cracked" value="final_third" {{ checked('cracked_before_retrial_case_cracked','final_third') }}>
+            <label for="cracked-before-retrial-case-cracked-3">Final third</label>
+        </div>
+    </fieldset>
+</div>

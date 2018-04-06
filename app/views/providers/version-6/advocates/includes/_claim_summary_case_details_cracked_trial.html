@@ -1,0 +1,28 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Notice of 1st fixed/warned issued
+			</th>
+			<td>{{data['notice_of_fixed_warned_trial_issued_day']}}/{{data['notice_of_fixed_warned_trial_issued_month']}}/{{data['notice_of_fixed_warned_trial_issued_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				1st fixed/warned trial
+			</th>
+			<td>{{data['fixed_warned_trial_day']}}/{{data['fixed_warned_trial_month']}}/{{data['fixed_warned_trial_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Case cracked on
+			</th>
+			<td>{{data['case_cracked_on_day']}}/{{data['case_cracked_on_month']}}/{{data['case_cracked_on_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Case cracked in
+			</th>
+			<td>{{data['case_cracked']|replace('_',' ')|capitalize}}</td>
+		</tr>
+	</tbody>
+</table>

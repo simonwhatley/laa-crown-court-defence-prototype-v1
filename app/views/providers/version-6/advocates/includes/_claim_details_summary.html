@@ -1,0 +1,51 @@
+<div class="grid-row">
+	<div class="column-full">
+
+        <h2 class="heading-large">
+            Claim summary
+        </h2>
+
+        <div class="table-container">
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">Description</th>
+						<th class="numeric" scope="col">Net amount</th>
+						<th class="numeric" scope="col"><abbr title="Value Added Tax">VAT</abbr></th>
+						<th class="numeric" scope="col">Gross amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td aria-label="Description" scope="row">Fees</td>
+						<!-- TODO: If provider isn't VAT registered, hide Net and VAT columns? -->
+						<td aria-label="Net amount" class="numeric">&pound;{{claim.totals.claimed.fees|numeral('0,0.00')}}</td>
+						<td aria-label="VAT amount" class="numeric">&pound;{{(claim.totals.claimed.fees*0.2)|numeral('0,0.00')}}</td>
+						<td aria-label="Gross amount" class="numeric">&pound;{{(claim.totals.claimed.fees*1.2)|numeral('0,0.00')}}</td>
+					</tr>
+					<tr>
+						<td aria-label="Description" scope="row">Miscellaneous fees</td>
+						<td aria-label="Net amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+						<td aria-label="VAT amount" class="numeric">&pound;{{(claim.totals.claimed.miscellaneous_fees*0.2)|numeral('0,0.00')}}</td>
+						<td aria-label="Gross amount" class="numeric">&pound;{{(claim.totals.claimed.miscellaneous_fees*1.2)|numeral('0,0.00')}}</td>
+					</tr>
+					<tr>
+						<td aria-label="Description" scope="row">Travel expenses</td>
+						<td aria-label="Net amount" class="numeric">&pound;{{claim.totals.claimed.expenses|numeral('0,0.00')}}</td>
+						<td aria-label="VAT amount" class="numeric">&pound;{{(claim.totals.claimed.expenses*0.2)|numeral('0,0.00')}}</td>
+						<td aria-label="Gross amount" class="numeric">&pound;{{(claim.totals.claimed.expenses*1.2)|numeral('0,0.00')}}</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td aria-label="Description" scope="row" class="bold">Claim total</td>
+						<td aria-label="Net amount" class="bold numeric">&pound;{{claim.totals.claimed.net_amount|numeral('0,0.00')}}</td>
+						<td aria-label="VAT amount" class="bold numeric">&pound;{{claim.totals.claimed.vat_amount|numeral('0,0.00')}}</td>
+						<td aria-label="Gross amount" class="bold numeric">&pound;{{claim.totals.claimed.gross_amount|numeral('0,0.00')}}</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+	</div>
+</div>
