@@ -1,3 +1,5 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHZYFDLX6xDaMgEvHq9NMiIp9RbsmbrM" type="text/javascript"></script>
+<script src="/public/javascripts/jquery.distancecalculator.js"></script>
 <script type="text/javascript">
 $(function(){
 
@@ -68,28 +70,67 @@ $(function(){
 
   });
 
-
-  // TODO: if court is the travel reason, show court dropdown, else show destination text
-
   $('.fx-select-travel-reason').on('change', function(e){
     e.preventDefault();
 
     var otherState = $(this).find(':selected').attr('data-other');
+    var reasonState = $(this).find(':selected').val();
+
+    console.log(reasonState);
 
     $('.fx-travel-reason-other').is(function(){
       var $el = $(this);
       otherState == "true" ? $el.show() : $el.hide();
     });
 
+    $('.fx-travel-court').is(function(){
+      var $el = $(this);
+      reasonState == "court_hearing" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-destination').is(function(){
+      var $el = $(this);
+      reasonState == "court_hearing" ? $el.hide() : $el.show();
+    });
+
+    console.log($('#travel-expense-1-distance').val());
+
+    if (reasonState != 'court_hearing') {
+      $('#travel-expense-1-distance').val();
+    }
+
   });
 
-if ($('.fx-select-expense-type').val()) {
-  $('.fx-select-expense-type').trigger('change');
-}
+  if ($('.fx-select-expense-type').val()) {
+    $('.fx-select-expense-type').trigger('change');
+  }
 
-if ($('.fx-select-travel-reason').val()) {
-  $('.fx-select-travel-reason').trigger('change');
-}
+  if ($('.fx-select-travel-reason').val()) {
+    $('.fx-select-travel-reason').trigger('change');
+  }
+
+  if ($('.fx-select-court').val()) {
+    $('.fx-select-court').trigger('change');
+  }
+
+  $('.fx-travel-court').on('change', function(e) {
+    e.preventDefault();
+
+    var origin = $('#origin_postcode').val();
+    var destination = $(this).find(':selected').attr('data-postcode');
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    $('#travel-expense-1-distance').distancecalculator({
+      start_address: origin,
+      end_address: destination,
+      units: "mile",
+      travel_mode: "DRIVING",
+      result_container_type: "textbox"
+     });
+
+  });
 
 });
 </script>

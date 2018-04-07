@@ -1,5 +1,7 @@
 <div class="form-section" data-item-number="1">
 
+	<input id="origin_postcode" type="hidden" name="origin" value="HP5 2RZ">
+
 	<h3 class="heading-medium">
 		Expense 1
 		<a href="#noop" class="link-remove">
@@ -86,14 +88,19 @@
 		        <input class="form-control form-control-3-4" id="travel-expense-1-destination" type="text" name="travel_expense_1_destination" value="{{ data['travel_expense_1_destination']}}" autocomplete="off" autocapitalize="off">
 			</div>
 
-			<div class="form-group fx-travel-court-select">
+			<div class="form-group fx-travel-court">
 				<legend class="form-label-bold">
 					Court
 				</legend>
 				<select id="travel-expense-1-court" class="form-control form-control-3-4 fx-select-court" name="travel_expense_1_court">
 					<option value=""></option>
 					{% for court in courts -%}
-						<option value="{{court.key}}" {% if court.abbreviations.length -%}data-abbreviations="{{court.abbreviations}}" {%- endif %}{% if court.other_names.length -%}data-other-names="{{court.other_names}}" {%- endif %}{% if court.other_names.length -%}data-postcode="{{court.address.postcode}}" {%- endif %} {%- if data['court'] == court.key %}selected="selected"{%- endif %}>{{court.name}}</option>
+						<option
+							{% if court.abbreviations.length -%}data-abbreviations="{{court.abbreviations}}" {%- endif %}
+							{% if court.other_names.length -%}data-other-names="{{court.other_names}}" {%- endif %}
+							{% if court.address.postcode.length -%}data-postcode="{{court.address.postcode}}" {%- endif %}
+							value="{{court.key}}"
+							{%- if data['travel_expense_1_court'] == court.key %}selected="selected"{%- endif %}>{{court.name}}</option>
 					{%- endfor %}
 				</select>
 			</div>
