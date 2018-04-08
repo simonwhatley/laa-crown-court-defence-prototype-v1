@@ -1,5 +1,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHZYFDLX6xDaMgEvHq9NMiIp9RbsmbrM" type="text/javascript"></script>
 <script src="/public/javascripts/jquery.distancecalculator.js"></script>
+
 <script type="text/javascript">
 $(function(){
 
@@ -76,7 +77,7 @@ $(function(){
     var otherState = $(this).find(':selected').attr('data-other');
     var reasonState = $(this).find(':selected').val();
 
-    console.log(reasonState);
+    // console.log(reasonState);
 
     $('.fx-travel-reason-other').is(function(){
       var $el = $(this);
@@ -93,25 +94,16 @@ $(function(){
       reasonState == "court_hearing" ? $el.hide() : $el.show();
     });
 
-    console.log($('#travel-expense-1-distance').val());
+    // console.log($('#travel-expense-1-distance').val());
 
-    if (reasonState != 'court_hearing') {
-      $('#travel-expense-1-distance').val();
-    }
+    // if (reasonState != 'court_hearing') {
+    //   $('#travel-expense-1-distance').val('');
+    // }
 
   });
 
-  if ($('.fx-select-expense-type').val()) {
-    $('.fx-select-expense-type').trigger('change');
-  }
 
-  if ($('.fx-select-travel-reason').val()) {
-    $('.fx-select-travel-reason').trigger('change');
-  }
 
-  if ($('.fx-select-court').val()) {
-    $('.fx-select-court').trigger('change');
-  }
 
   $('.fx-travel-court').on('change', function(e) {
     e.preventDefault();
@@ -125,12 +117,95 @@ $(function(){
     $('#travel-expense-1-distance').distancecalculator({
       start_address: origin,
       end_address: destination,
-      units: "mile",
-      travel_mode: "DRIVING",
-      result_container_type: "textbox"
-     });
+      units: 'mile',
+      travel_mode: 'DRIVING',
+      result_container_type: 'textbox'
+    });
+
+
+    if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
+
+      setTimeout(function () {
+
+        // console.log($('.travel-expense-1-cost-per-mile:checked').val());
+
+        var distance = $('#travel-expense-1-distance').val();
+
+        // TODO get the selected option. If there is one selected, do the math
+        var cost_per_mile = $('.travel-expense-1-cost-per-mile').val();
+
+        var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+        var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+        $('#travel-expense-1-net-amount').val(net_amount);
+        $('#travel-expense-1-vat-amount').val(vat_amount);
+
+      }, 750);
+
+    }
+
+    // setTimeout(function calcCost() {
+    //   if ($('.travel-expense-1-cost-per-mile').val()) {
+    //     var distance = $('#travel-expense-1-distance').val();
+
+    //     var net_amount = parseFloat(distance * $('.travel-expense-1-cost-per-mile').val()).toFixed(2);;
+    //     var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+    //     $('#travel-expense-1-net-amount').val(net_amount);
+    //     $('#travel-expense-1-vat-amount').val(vat_amount);
+    //   }
+    // }, 500);
+
+    // if ($('.travel-expense-1-cost-per-mile').val()) {
+    //   $('.travel-expense-1-cost-per-mile').trigger('change');
+    // }
 
   });
+
+  $('.travel-expense-1-cost-per-mile').on('change', function(e){
+    e.preventDefault();
+
+    var $el = $(this);
+
+    var distance = $('#travel-expense-1-distance').val();
+
+    // TODO get the selected option. If there is one selected, do the math
+    var cost_per_mile = $el.val();
+
+    var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+    var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+    $('#travel-expense-1-net-amount').val(net_amount);
+    $('#travel-expense-1-vat-amount').val(vat_amount);
+
+  });
+
+  // $('#travel-expense-1-distance').on('input', function(e){
+  //   e.preventDefault();
+
+  //   var $el = $(this);
+
+  //   var distance = $el.val();
+
+  //   var net_amount = parseFloat(distance * $('.travel-expense-1-cost-per-mile').val()).toFixed(2);;
+  //   var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+  //   $('#travel-expense-1-net-amount').val(net_amount);
+  //   $('#travel-expense-1-vat-amount').val(vat_amount);
+
+  // });
+
+  if ($('.fx-select-expense-type').val()) {
+    $('.fx-select-expense-type').trigger('change');
+  }
+
+  if ($('.fx-select-travel-reason').val()) {
+    $('.fx-select-travel-reason').trigger('change');
+  }
+
+  if ($('.fx-select-court').val()) {
+    $('.fx-select-court').trigger('change');
+  }
 
 });
 </script>
