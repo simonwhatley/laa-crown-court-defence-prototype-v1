@@ -69,6 +69,12 @@ $(function(){
       vatAmountState == "true" ? $el.show() : $el.hide();
     });
 
+    if ($('.fx-select-expense-type').val() == 'car_travel' || $('.fx-select-expense-type').val() == 'bike_travel') {
+      $('.fx-select-travel-reason').trigger('change');
+    } else {
+      $('.fx-travel-court').hide();
+    }
+
   });
 
   $('.fx-select-travel-reason').on('change', function(e){
@@ -114,11 +120,17 @@ $(function(){
     // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
     // Result container: container (default), textbox
 
+    if ($('.fx-select-expense-type').val() == 'bike_travel') {
+      var travel_mode = 'BICYCLING'
+    } else {
+      var travel_mode = 'DRIVING'
+    }
+
     $('#travel-expense-1-distance').distancecalculator({
       start_address: origin,
       end_address: destination,
       units: 'mile',
-      travel_mode: 'DRIVING',
+      travel_mode: travel_mode,
       result_container_type: 'textbox'
     });
 
