@@ -1,19 +1,50 @@
-var courts = require('./data/crown_courts.json')
-var caseTypes = require('./data/case_types.json')
-var offencesScheme10 = require('./data/scheme_10_offences.json')
-var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json')
-var offencesScheme9 = require('./data/scheme_9_offences.json')
-var miscellaneousFees = require('./data/miscellaneous_fees.json')
-var fixedFees = require('./data/fixed_fees.json')
-var disbursements = require('./data/disbursements.json')
-var transferReasons = require('./data/transfer_reasons.json')
-var travelTypes = require('./data/travel_types.json')
-var travelReasons = require('./data/travel_reasons.json')
-var messages = require('./data/messages.json')
-var advocateClaims = require('./data/claims_advocates.json')
-var litigatorClaims = require('./data/claims_litigators.json')
+var courts = require('./data/crown_courts.json');
+var caseTypes = require('./data/case_types.json');
+var offencesScheme10 = require('./data/scheme_10_offences.json');
+var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json');
+var offencesScheme9 = require('./data/scheme_9_offences.json');
+var miscellaneousFees = require('./data/miscellaneous_fees.json');
+var fixedFees = require('./data/fixed_fees.json');
+var disbursements = require('./data/disbursements.json');
+var transferReasons = require('./data/transfer_reasons.json');
+var travelTypes = require('./data/travel_types.json');
+var travelReasons = require('./data/travel_reasons.json');
+var messages = require('./data/messages.json');
+var advocateClaims = require('./data/claims_advocates.json');
+var litigatorClaims = require('./data/claims_litigators.json');
+var providers = require('./data/providers.json');
 
 module.exports = {
+
+	getProviders: function(type) {
+		return providers
+	},
+
+	getProvider: function(provider_id) {
+
+		if (!provider_id) return null
+
+		var providerObj = providers.filter( function(obj) {
+			return (obj.id == provider_id)
+		})
+
+		return providerObj[0]
+
+	},
+
+	getSupplier: function(provider_id, supplier_number) {
+
+		if (!provider_id) return null
+
+		if (!supplier_number) return null
+
+		var offices = this.getProvider(provider_id).offices;
+
+		return offices.filter( function(obj) {
+	        return !!~obj.code.indexOf(supplier_number)
+	    })
+
+	},
 
 	getCourts: function() {
 		return courts

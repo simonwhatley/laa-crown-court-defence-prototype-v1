@@ -41,11 +41,20 @@
 										<span class="form-hint">Please choose a relevant supplier</span>
 									</legend>
 
-									{% for supplier in ['5A000Z','6B111Y','7C222X','8D333W','9E444V'] -%}
+									{#% for supplier in ['5A000Z','6B111Y','7C222X','8D333W','9E444V'] -%}
 
 										<div class="multiple-choice">
 											<input id="supplier-number-{{loop.index}}" type="radio" name="supplier_number" value="{{supplier}}" {{ checked('supplier_number', supplier) }}>
 											<label for="supplier-number-{{loop.index}}">{{supplier}}</label>
+										</div>
+
+									{%- endfor %#}
+
+									{% for supplier in provider.offices -%}
+
+										<div class="multiple-choice">
+											<input id="supplier-number-{{loop.index}}" type="radio" name="supplier_number" value="{{supplier.code}}" {{ checked('supplier_number', supplier.code) }}>
+											<label for="supplier-number-{{loop.index}}">{{supplier.name}} ({{supplier.code}})</label>
 										</div>
 
 									{%- endfor %}

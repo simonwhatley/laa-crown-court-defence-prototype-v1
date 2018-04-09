@@ -597,8 +597,8 @@ router.get('/litigators/case-details', function(req, res) {
                 'cancel' : req.baseUrl + '/litigators/cancel'
             },
             case_types: utils.getCaseTypesByFeeScheme(req.session.data.fee_scheme),
-            courts: utils.getCourts()
-
+            courts: utils.getCourts(),
+            provider: utils.getProvider(12345)
     	});
 });
 
@@ -769,6 +769,8 @@ router.get('/litigators/travel-expenses', function(req, res) {
 
     }
 
+    console.log(utils.getSupplier(12345,req.session.data.supplier_number))
+
     res.render(`${req.feature}/${req.version}/litigators/travel-expenses`,
     	{
             links: {
@@ -778,6 +780,7 @@ router.get('/litigators/travel-expenses', function(req, res) {
             },
             travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
             travel_reasons: utils.getTravelReasons(),
+            travel_origin: utils.getSupplier(12345,req.session.data.supplier_number)[0].address.postcode,
             courts: utils.getCourts()
     	});
 });
