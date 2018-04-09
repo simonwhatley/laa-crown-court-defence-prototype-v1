@@ -132,7 +132,7 @@ $(function(){
         var distance = $('#travel-expense-1-distance').val();
 
         // TODO get the selected option. If there is one selected, do the math
-        var cost_per_mile = $('.travel-expense-1-cost-per-mile').val();
+        var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
 
         var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
         var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
