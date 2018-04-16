@@ -31,7 +31,7 @@
 			<th class="bold" scope="row">
 				Case number
 			</th>
-			<td>{{data['case_number']}}</td>
+			<td>{{data['case_number']|upper}}</td>
 		</tr>
 		{% if data['transfer_court_option'] == 'yes' -%}
 		<tr>
@@ -44,14 +44,20 @@
 			<th class="bold" scope="row">
 				Transfer case number
 			</th>
-			<td>{{data['transfer_case_number']}}</td>
+			<td>{{data['transfer_case_number']|upper}}</td>
 		</tr>
 		{%- endif %}
 		<tr>
 			<th class="bold" scope="row">
 				Date case concluded
 			</th>
-			<td>{{data['date_case_concluded_day']}}/{{data['date_case_concluded_month']}}/{{data['date_case_concluded_year']}}</td>
+			<td>
+				{% if data['date_case_concluded_day'].length and data['date_case_concluded_month'].length and data['date_case_concluded_year'].length -%}
+					{{data['date_case_concluded_day']}}/{{data['date_case_concluded_month']}}/{{data['date_case_concluded_year']}}
+				{% else %}
+					No date provided
+				{%- endif %}
+			</td>
 		</tr>
 	</tbody>
 </table>

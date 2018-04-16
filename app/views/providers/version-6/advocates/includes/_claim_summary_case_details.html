@@ -31,7 +31,7 @@
 			<th class="bold" scope="row">
 				Case number
 			</th>
-			<td>{{data['case_number']}}</td>
+			<td>{{data['case_number']|upper}}</td>
 		</tr>
 		{% if data['transfer_court_option'] == 'yes' -%}
 		<tr>
@@ -44,7 +44,7 @@
 			<th class="bold" scope="row">
 				Transfer case number
 			</th>
-			<td>{{data['transfer_case_number']}}</td>
+			<td>{{data['transfer_case_number']|upper}}</td>
 		</tr>
 		{%- endif %}
 
