@@ -178,7 +178,7 @@ module.exports = {
 			var fee_scheme_version = "9"
 
 		return fixedFees.filter( (obj) =>
-	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	        !!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
 	    )
 
 	},
@@ -192,7 +192,7 @@ module.exports = {
 			var fee_scheme_version = "9"
 
 		return miscellaneousFees.filter( (obj) =>
-	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	        !!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
 	    )
 
 	},
@@ -206,7 +206,7 @@ module.exports = {
 			var fee_scheme_version = "9"
 
 		return disbursements.filter( (obj) =>
-	        !!~obj.scheme.indexOf(fee_scheme) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	        !!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
 	    )
 
 	},
@@ -220,7 +220,7 @@ module.exports = {
 		if(!fee_scheme) return travelTypes
 
 		return travelTypes.filter( function(obj) {
-	        return !!~obj.scheme.indexOf(fee_scheme)
+	        return !!~obj.scheme.indexOf(fee_scheme.toLowerCase())
 	    });
 
 	},
