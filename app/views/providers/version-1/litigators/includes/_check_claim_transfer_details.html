@@ -1,0 +1,44 @@
+{% if data['litigator_type'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Litigator type
+			</th>
+			<td>
+				{{data['litigator_type']|capitalize}}
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Was the case elected?
+			</th>
+			<td>
+				{{data['case_elected']|capitalize}}
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				When did you {% if data['litigator_type'] == 'original' -%}stop{% else %}start{%- endif %} acting?
+			</th>
+			<td>
+				{{data['acting_reason']|replace('_',' ')|capitalize|replace('ptph','PTPH')}}
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Date you {% if data['litigator_type'] == 'original' -%}stopped{% else %}started{%- endif %} acting
+			</th>
+			<td>
+				{% if data['date_acting_day'].length and data['date_acting_month'].length and data['date_acting_year'].length -%}
+				{{data['date_acting_day']}}/{{data['date_acting_month']}}/{{data['date_acting_year']}}
+				{% else %}
+				No date provided
+				{%- endif %}
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no transfer details for this claim.</p>
+{%- endif %}

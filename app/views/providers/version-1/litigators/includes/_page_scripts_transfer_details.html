@@ -1,0 +1,24 @@
+<script type="text/javascript">
+$(function(){
+
+  $('.litigator-type').on('change', function(e){
+    e.preventDefault();
+
+    if ($('.litigator-type:checked').val() == 'original') {
+    	$('.fx-stop-start-when-label').html('When did you stop acting?');
+    	$('.fx-stop-start-date-label').html('Date you stopped acting');
+    }
+
+    if ($('.litigator-type:checked').val() == 'new') {
+    	$('.fx-stop-start-when-label').html('When did you start acting?');
+    	$('.fx-stop-start-date-label').html('Date you started acting');
+    }
+
+  });
+
+  if ($('.litigator-type:checked')) {
+    $('.litigator-type').trigger('change');
+  }
+
+});
+</script>
