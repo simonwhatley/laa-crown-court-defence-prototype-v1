@@ -474,8 +474,6 @@ router.get('/litigators/travel-expenses', function(req, res) {
 
 router.get('/litigators/supporting-evidence', function(req, res) {
 
-    console.log(req)
-
     res.render(`${req.feature}/${req.version}/litigators/supporting-evidence`,
     	{
             links: {
@@ -501,7 +499,8 @@ router.get('/litigators/claim-summary', function(req, res) {
             links: {
                 'next' : req.baseUrl + '/litigators/certify-claim',
                 'previous' : req.baseUrl + '/litigators/additional-information'
-            }
+            },
+            offence: { "category_label": utils.getOffenceCategoryName(req.session.data.offence_category), "class_label": utils.getOffenceClassName(req.session.data.offence_class, req.session.data.offence_category) }
     	});
 });
 
