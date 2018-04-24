@@ -106,6 +106,23 @@
 				</select>
 			</div>
 
+			<div class="form-group fx-travel-prison">
+				<legend class="form-label-bold">
+					Prison
+				</legend>
+				<select id="travel-expense-1-prison" class="form-control form-control-3-4 fx-select-prison" name="travel_expense_1_prison">
+					<option value=""></option>
+					{% for prison in prisons -%}
+						<option
+							{% if prison.abbreviations.length -%}data-abbreviations="{{prison.abbreviations}}" {%- endif %}
+							{% if prison.other_names.length -%}data-other-names="{{prison.other_names}}" {%- endif %}
+							{% if prison.address.postcode.length -%}data-postcode="{{prison.address.postcode}}" {%- endif %}
+							value="{{prison.key}}"
+							{%- if data['travel_expense_1_prison'] == prison.key %}selected="selected"{%- endif %}>{{prison.name}}</option>
+					{%- endfor %}
+				</select>
+			</div>
+
 			<div class="form-group fx-travel-location">
 				<label class="form-label-bold" for="travel-expense-1-location">
 		            Location

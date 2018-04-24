@@ -15,6 +15,11 @@
 	    "scheme": ["agfs", "lgfs"]
 	},
 	{
+	    "key": "prison_visit",
+	    "name": "Prison visit",
+	    "scheme": ["agfs", "lgfs"]
+	},
+	{
 	    "key": "view_of_crime_scene",
 	    "name": "View of crime scene",
 	    "scheme": ["agfs", "lgfs"]
