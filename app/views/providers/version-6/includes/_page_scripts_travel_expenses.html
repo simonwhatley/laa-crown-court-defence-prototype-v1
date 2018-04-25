@@ -35,7 +35,6 @@ $(function(){
     var vatAmountState = $(this).find(':selected').attr('data-vat-amount');
     var grossAmountState = $(this).find(':selected').attr('data-gross-amount');
 
-
     $('.fx-travel-cost').is(function(){
       var $el = $(this);
       costState == "true" ? $el.show() : $el.hide();
@@ -110,8 +109,6 @@ $(function(){
     var otherState = $(this).find(':selected').attr('data-other');
     var reasonState = $(this).find(':selected').val();
 
-    // console.log(reasonState);
-
     $('.fx-travel-reason-other').is(function(){
       var $el = $(this);
       otherState == "true" ? $el.show() : $el.hide();
@@ -120,11 +117,13 @@ $(function(){
     $('.fx-travel-court').is(function(){
       var $el = $(this);
       reasonState == "court_hearing" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
     });
 
     $('.fx-travel-prison').is(function(){
       var $el = $(this);
       reasonState == "prison_visit" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
     });
 
     $('.fx-travel-destination').is(function(){
@@ -140,6 +139,9 @@ $(function(){
 
   $('.fx-travel-court').on('change', function(e) {
     e.preventDefault();
+
+    // Clear selected prison as irrelevant
+    $('#travel-expense-1-prison').prop('selectedIndex',0);
 
     // TODO split distance calculation into separate function
     var origin = $('#origin_postcode').val();
@@ -189,6 +191,9 @@ $(function(){
 
   $('.fx-travel-prison').on('change', function(e) {
     e.preventDefault();
+
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-court').prop('selectedIndex',0);
 
     // TODO split distance calculation into separate function
     var origin = $('#origin_postcode').val();
