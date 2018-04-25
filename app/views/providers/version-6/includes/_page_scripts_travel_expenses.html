@@ -4,8 +4,24 @@
 <script type="text/javascript">
 $(function(){
 
+  // ============================================
+  // Expense type
+  // ============================================
+
   $('.fx-select-expense-type').on('change', function(e){
     e.preventDefault();
+
+    if ($('.fx-select-travel-reason').val()) {
+      $('.fx-select-travel-reason').trigger('change');
+    }
+
+    if ($('.fx-select-court').val()) {
+      $('.fx-select-court').trigger('change');
+    }
+
+    if ($('.fx-select-prison').val()) {
+      $('.fx-select-prison').trigger('change');
+    }
 
     var costState = $(this).find(':selected').attr('data-cost');
     var dateState = $(this).find(':selected').attr('data-date');
@@ -84,6 +100,10 @@ $(function(){
 
   });
 
+  // ============================================
+  // Travel reason
+  // ============================================
+
   $('.fx-select-travel-reason').on('change', function(e){
     e.preventDefault();
 
@@ -114,9 +134,14 @@ $(function(){
 
   });
 
+  // ============================================
+  // Travel court
+  // ============================================
+
   $('.fx-travel-court').on('change', function(e) {
     e.preventDefault();
 
+    // TODO split distance calculation into separate function
     var origin = $('#origin_postcode').val();
     var destination = $(this).find(':selected').attr('data-postcode');
 
@@ -137,16 +162,13 @@ $(function(){
       result_container_type: 'textbox'
     });
 
-
+    // TODO split amount calculation into separate function
     if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
 
       setTimeout(function () {
 
-        // console.log($('.travel-expense-1-cost-per-mile:checked').val());
-
         var distance = $('#travel-expense-1-distance').val();
 
-        // TODO get the selected option. If there is one selected, do the math
         var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
 
         var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
@@ -161,9 +183,14 @@ $(function(){
 
   });
 
+  // ============================================
+  // Travel prison
+  // ============================================
+
   $('.fx-travel-prison').on('change', function(e) {
     e.preventDefault();
 
+    // TODO split distance calculation into separate function
     var origin = $('#origin_postcode').val();
     var destination = $(this).find(':selected').attr('data-postcode');
 
@@ -184,16 +211,13 @@ $(function(){
       result_container_type: 'textbox'
     });
 
-
+    // TODO split amount calculation into separate function
     if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
 
       setTimeout(function () {
 
-        // console.log($('.travel-expense-1-cost-per-mile:checked').val());
-
         var distance = $('#travel-expense-1-distance').val();
 
-        // TODO get the selected option. If there is one selected, do the math
         var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
 
         var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
