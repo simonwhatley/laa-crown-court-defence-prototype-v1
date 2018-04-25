@@ -171,7 +171,11 @@ $(function(){
 
         var distance = $('#travel-expense-1-distance').val();
 
-        var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
 
         var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
         var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
@@ -223,7 +227,11 @@ $(function(){
 
         var distance = $('#travel-expense-1-distance').val();
 
-        var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
 
         var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
         var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
