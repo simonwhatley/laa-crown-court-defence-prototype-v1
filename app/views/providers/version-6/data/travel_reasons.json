@@ -10,13 +10,18 @@
 	    "scheme": ["agfs", "lgfs"]
 	},
 	{
-	    "key": "pre_trial_conference_defendant",
-	    "name": "Pre-trial conference defendant",
+	    "key": "prison_visit",
+	    "name": "Pre-trial conference defendant (prison)",
 	    "scheme": ["agfs", "lgfs"]
 	},
 	{
-	    "key": "prison_visit",
-	    "name": "Prison visit",
+	    "key": "secure_hospital_visit",
+	    "name": "Pre-trial conference defendant (hospital)",
+	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "pre_trial_conference_defendant",
+	    "name": "Pre-trial conference defendant (other)",
 	    "scheme": ["agfs", "lgfs"]
 	},
 	{

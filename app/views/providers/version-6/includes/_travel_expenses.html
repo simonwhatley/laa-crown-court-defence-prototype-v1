@@ -123,6 +123,23 @@
 				</select>
 			</div>
 
+			<div class="form-group fx-travel-hospital">
+				<legend class="form-label-bold">
+					Secure hospital
+				</legend>
+				<select id="travel-expense-1-hospital" class="form-control form-control-3-4 fx-select-hospital" name="travel_expense_1_hospital">
+					<option value=""></option>
+					{% for hospital in hospitals -%}
+						<option
+							{% if hospital.abbreviations.length -%}data-abbreviations="{{hospital.abbreviations}}" {%- endif %}
+							{% if hospital.other_names.length -%}data-other-names="{{hospital.other_names}}" {%- endif %}
+							{% if hospital.address.postcode.length -%}data-postcode="{{hospital.address.postcode}}" {%- endif %}
+							value="{{hospital.key}}"
+							{%- if data['travel_expense_1_hospital'] == hospital.key %}selected="selected"{%- endif %}>{{hospital.name}}</option>
+					{%- endfor %}
+				</select>
+			</div>
+
 			<div class="form-group fx-travel-location">
 				<label class="form-label-bold" for="travel-expense-1-location">
 		            Location

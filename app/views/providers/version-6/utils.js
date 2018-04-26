@@ -1,5 +1,6 @@
 var courts = require('./data/crown_courts.json');
 var prisons = require('./data/prisons.json');
+var secureHospitals = require('./data/secure_hospitals.json');
 var caseTypes = require('./data/case_types.json');
 var offencesScheme10 = require('./data/scheme_10_offences.json');
 var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json');
@@ -53,6 +54,10 @@ module.exports = {
 
 	getPrisons: function() {
 		return prisons
+	},
+
+	getSecureHospitals: function() {
+		return secureHospitals
 	},
 
 	getCaseTypesByFeeScheme: function(fee_scheme) {

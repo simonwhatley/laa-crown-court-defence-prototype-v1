@@ -410,7 +410,8 @@ router.get('/advocates/travel-expenses', function(req, res) {
             travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
             travel_reasons: utils.getTravelReasons(),
             courts: utils.getCourts(),
-            prisons: utils.getPrisons()
+            prisons: utils.getPrisons(),
+            hospitals: utils.getSecureHospitals()
     	});
 });
 
@@ -781,7 +782,8 @@ router.get('/litigators/travel-expenses', function(req, res) {
             travel_reasons: utils.getTravelReasons(),
             travel_origin: utils.getSupplier(12345,req.session.data.supplier_number)[0].address.postcode,
             courts: utils.getCourts(),
-            prisons: utils.getPrisons()
+            prisons: utils.getPrisons(),
+            hospitals: utils.getSecureHospitals()
     	});
 });
 

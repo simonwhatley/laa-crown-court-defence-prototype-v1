@@ -23,6 +23,10 @@ $(function(){
       $('.fx-select-prison').trigger('change');
     }
 
+    if ($('.fx-select-hospital').val()) {
+      $('.fx-select-hospital').trigger('change');
+    }
+
     var costState = $(this).find(':selected').attr('data-cost');
     var dateState = $(this).find(':selected').attr('data-date');
     var destinationState = $(this).find(':selected').attr('data-destination');
@@ -95,6 +99,7 @@ $(function(){
     } else {
       $('.fx-travel-court').hide();
       $('.fx-travel-prison').hide();
+      $('.fx-travel-hospital').hide();
     }
 
   });
@@ -126,9 +131,15 @@ $(function(){
       $('#travel-expense-1-distance').val('');
     });
 
+    $('.fx-travel-hospital').is(function(){
+      var $el = $(this);
+      reasonState == "secure_hospital_visit" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
+    });
+
     $('.fx-travel-destination').is(function(){
       var $el = $(this);
-      reasonState == "court_hearing" || reasonState == "prison_visit" ? $el.hide() : $el.show();
+      reasonState == "court_hearing" || reasonState == "prison_visit" || reasonState == "secure_hospital_visit" ? $el.hide() : $el.show();
     });
 
   });
@@ -142,6 +153,8 @@ $(function(){
 
     // Clear selected prison as irrelevant
     $('#travel-expense-1-prison').prop('selectedIndex',0);
+    // Clear selected hospital as irrelevant
+    $('#travel-expense-1-hospital').prop('selectedIndex',0);
 
     // TODO split distance calculation into separate function
     var origin = $('#origin_postcode').val();
@@ -198,6 +211,66 @@ $(function(){
 
     // Clear selected court as irrelevant
     $('#travel-expense-1-court').prop('selectedIndex',0);
+    // Clear selected hospital as irrelevant
+    $('#travel-expense-1-hospital').prop('selectedIndex',0);
+
+    // TODO split distance calculation into separate function
+    var origin = $('#origin_postcode').val();
+    var destination = $(this).find(':selected').attr('data-postcode');
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    if ($('.fx-select-expense-type').val() == 'bike_travel') {
+      var travel_mode = 'BICYCLING'
+    } else {
+      var travel_mode = 'DRIVING'
+    }
+
+    $('#travel-expense-1-distance').distancecalculator({
+      start_address: origin,
+      end_address: destination,
+      units: 'mile',
+      travel_mode: travel_mode,
+      result_container_type: 'textbox'
+    });
+
+    // TODO split amount calculation into separate function
+    if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
+
+      setTimeout(function () {
+
+        var distance = $('#travel-expense-1-distance').val();
+
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
+
+        var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+        var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+        $('#travel-expense-1-net-amount').val(net_amount);
+        $('#travel-expense-1-vat-amount').val(vat_amount);
+
+      }, 1000);
+
+    }
+
+  });
+
+  // ============================================
+  // Travel secure hospital
+  // ============================================
+
+  $('.fx-travel-hospital').on('change', function(e) {
+    e.preventDefault();
+
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-court').prop('selectedIndex',0);
+    // Clear selected prison as irrelevant
+    $('#travel-expense-1-prison').prop('selectedIndex',0);
 
     // TODO split distance calculation into separate function
     var origin = $('#origin_postcode').val();
@@ -278,6 +351,10 @@ $(function(){
 
   if ($('.fx-select-prison').val()) {
     $('.fx-select-prison').trigger('change');
+  }
+
+  if ($('.fx-select-hospital').val()) {
+    $('.fx-select-hospital').trigger('change');
   }
 
 });
