@@ -16,7 +16,7 @@
             "longitude": -2.915374943
         },
         "type": ["psychiatric"],
-        "category": [],
+        "category": ["high_secure"],
         "other_names": [],
         "abbreviations": []
     },
@@ -37,7 +37,7 @@
             "longitude": -0.7809998878
         },
         "type": ["psychiatric"],
-        "category": [],
+        "category": ["high_secure"],
         "other_names": [],
         "abbreviations": []
     },
@@ -58,7 +58,7 @@
             "longitude": -0.8382126721
         },
         "type": ["psychiatric"],
-        "category": [],
+        "category": ["high_secure"],
         "other_names": [],
         "abbreviations": []
     }
