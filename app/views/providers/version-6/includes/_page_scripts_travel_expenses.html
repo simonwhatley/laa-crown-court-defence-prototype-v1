@@ -123,18 +123,27 @@ $(function(){
       var $el = $(this);
       reasonState == "court_hearing" ? $el.show() : $el.hide();
       $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
     });
 
     $('.fx-travel-prison').is(function(){
       var $el = $(this);
       reasonState == "prison_visit" ? $el.show() : $el.hide();
       $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
     });
 
     $('.fx-travel-hospital').is(function(){
       var $el = $(this);
       reasonState == "secure_hospital_visit" ? $el.show() : $el.hide();
       $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
     });
 
     $('.fx-travel-destination').is(function(){
