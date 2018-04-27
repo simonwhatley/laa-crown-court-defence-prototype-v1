@@ -121,7 +121,7 @@ router.get('/advocates/case-details', function(req, res) {
                 'save' : req.baseUrl + '/advocates/'
             },
             case_types: utils.getCaseTypesByFeeScheme(req.session.data.fee_scheme),
-            courts: utils.getCourts()
+            courts: utils.getCrownCourts()
         });
 });
 
@@ -409,7 +409,8 @@ router.get('/advocates/travel-expenses', function(req, res) {
             },
             travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
             travel_reasons: utils.getTravelReasons('lgfs'),
-            courts: utils.getCourts(),
+            crown_courts: utils.getCrownCourts(),
+            magistrates_courts: utils.getMagistratesCourts(),
             prisons: utils.getPrisons(),
             hospitals: utils.getSecureHospitals()
     	});
@@ -599,7 +600,7 @@ router.get('/litigators/case-details', function(req, res) {
                 'cancel' : req.baseUrl + '/litigators/cancel'
             },
             case_types: utils.getCaseTypesByFeeScheme(req.session.data.fee_scheme),
-            courts: utils.getCourts(),
+            courts: utils.getCrownCourts(),
             provider: utils.getProvider(12345)
     	});
 });
@@ -781,7 +782,8 @@ router.get('/litigators/travel-expenses', function(req, res) {
             travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
             travel_reasons: utils.getTravelReasons('lgfs'),
             travel_origin: utils.getSupplier(12345,req.session.data.supplier_number)[0].address.postcode,
-            courts: utils.getCourts(),
+            crown_courts: utils.getCrownCourts(),
+            magistrates_courts: utils.getMagistratesCourts(),
             prisons: utils.getPrisons(),
             hospitals: utils.getSecureHospitals()
     	});
