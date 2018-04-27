@@ -235,8 +235,13 @@ module.exports = {
 
 	},
 
-	getTravelReasons: function() {
-		return travelReasons
+	getTravelReasons: function(fee_scheme) {
+
+		if(!fee_scheme) return travelReasons
+
+		return travelReasons.filter( function(obj) {
+	        return !!~obj.scheme.indexOf(fee_scheme)
+	    })
 	},
 
 	// TODO: refactor

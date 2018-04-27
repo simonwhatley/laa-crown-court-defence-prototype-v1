@@ -1,8 +1,13 @@
 [
 	{
 	    "key": "court_hearing",
-	    "name": "Court hearing",
+	    "name": "Court hearing (Crown court)",
 	    "scheme": ["agfs", "lgfs"]
+	},
+	{
+	    "key": "court_hearing_magistrates",
+	    "name": "Court hearing (Magistrates' court)",
+	    "scheme": ["lgfs"]
 	},
 	{
 	    "key": "pre_trial_conference_expert_witnesses",
