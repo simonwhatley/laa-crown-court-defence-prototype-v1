@@ -1,7 +1,7 @@
 [
 	{
 	    "key": "bike_travel",
-	    "name": "Bike travel",
+	    "name": "Bicycle travel",
 	    "scheme": ["agfs", "lgfs"],
 	    "attributes": {
 	    	"cost": false,
