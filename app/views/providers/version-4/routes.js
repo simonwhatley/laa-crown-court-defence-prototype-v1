@@ -239,7 +239,7 @@ router.get('/advocates/offence-details/act/:act([0-9]+)', function(req, res) {
 
 });
 
-router.get('/advocates/fees', function(req, res) {
+router.get('/advocates/fees-v1', function(req, res) {
 
     if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
@@ -306,7 +306,7 @@ router.get('/advocates/fees', function(req, res) {
 
 });
 
-router.get('/advocates/fees-v2', function(req, res) {
+router.get('/advocates/fees', function(req, res) {
 
     if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
