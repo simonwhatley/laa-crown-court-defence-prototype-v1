@@ -37,6 +37,10 @@
 							<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
 						</div>
 
+						{% if data['bill_type'] == 'litigator_final' -%}
+							{% include "../includes/_warrant_fees.html" %}
+						{%- endif %}
+
 						{% include "./includes/_form_actions.html" %}
 
 					</form>
