@@ -233,6 +233,21 @@
 
 						</div>
 
+						{% if data['bill_type'] == 'litigator_final' -%}
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Warrant fees
+								<a href="{{links.miscellaneous_fees}}#warrant-fees" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;warrant fees</span>
+								</a>
+							</h3>
+
+							{% include "../includes/_claim_summary_warrant_fees.html" %}
+
+						</div>
+						{%- endif %}
+
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Disbursements
