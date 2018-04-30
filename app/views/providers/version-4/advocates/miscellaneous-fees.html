@@ -41,6 +41,12 @@
 							<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
 						</div>
 
+						{% if data['bill_type'] == 'advocate_final' -%}
+							{% if data['defendant_1_representation_order_date_1_year'] >= 2018 and data['defendant_1_representation_order_date_1_month'] >= 7 and data['defendant_1_representation_order_date_1_day'] >= 1 -%}
+								{% include "../includes/_warrant_fees.html" %}
+							{%- endif %}
+						{%- endif %}
+
 						{% include "./includes/_form_actions.html" %}
 
 					</form>
