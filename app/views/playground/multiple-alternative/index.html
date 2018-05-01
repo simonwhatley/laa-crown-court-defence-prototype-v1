@@ -4,6 +4,14 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+{% include "./_page_scripts_add_items_to_list.html" %}
+{% endblock %}
+
+{% block page_styles %}
+{% include "./_page_styles_add_items_to_list.html" %}
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -20,58 +28,54 @@
 	    	<a href="https://dwp-patterns.herokuapp.com/additemstoalist">https://dwp-patterns.herokuapp.com/additemstoalist</a>
 	    </p>
 
-		<!-- <form>
-			<div class="grid-row">
+		<form>
+			<div class="list-item-wrapper-vertical">
+				<div id="item-row" class="grid-row">
+					<div class="column-two-thirds">
+						<div class="form-group-compound">
+							<h2 class="heading-medium">Item 1</h2>
 
-				<div class="form-group-compound list-item-wrapper">
-					<h2 class="heading-medium">Item 1</h2>
-
-					<fieldset>
-						<div class="column-one-third no-padding">
-							<div class="form-group list-item">
+							<div class="form-group">
 								<label class="form-label" for="field-1">
 									Field label
 								</label>
+
 								<input type="text" class="form-control" id="field-1" name="field-1">
 							</div>
-						</div>
 
-						<div class="column-one-third no-padding">
-							<div class="form-group list-item">
+							<div class="form-group">
 								<label class="form-label" for="field-2">
 									Field label
 								</label>
+
 								<input type="text" class="form-control" id="field-2" name="field-2">
 							</div>
-						</div>
 
-						<div class="column-one-third no-padding">
-							<div class="list-item">
+							<div class="form-group">
+								<label class="form-label" for="field-3">
+									Field label
+								</label>
+
+								<input type="text" class="form-control" id="field-3" name="field-3">
 							</div>
 						</div>
-					</fieldset>
+					</div>
 
-					<hr />
+					<div class="column-one-third">
+					</div>
 				</div>
-			</div>
 
-			<div class="grid-row">
-				<div class="column-two-thirds">
-					<div class="form-group">
-						<button id="add-button" class="button button-secondary">Add another</button>
+				<hr />
+
+				<div class="grid-row">
+					<div class="column-two-thirds">
+						<div class="form-group">
+							<button id="add-button" class="button button-add-another-vertical">Add another</button>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="grid-row">
-				<div class="column-two-thirds">
-					<div class="form-group">
-						<button type="submit" class="button">Save and continue</button>
-					</div>
-				</div>
-			</div>
-
-		</form> -->
+		</form>
 
     </div>
   </div>

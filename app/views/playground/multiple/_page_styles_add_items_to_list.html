@@ -1,0 +1,46 @@
+<style type="text/css">
+.item-wrapper {
+  @extend %grid-row;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (max-width: 640px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.remove-list-item {
+  display: inline-block;
+  margin-top: 1.6em;
+}
+
+.list-item-wrapper {
+  padding-left: 15px;
+  padding-right: 20px;
+
+  .heading-small,
+  .heading-medium,
+  .heading-large,
+  .heading-xlarge {
+    margin-top: 0;
+  }
+
+  .column-one-third {
+    .list-item {
+      width: 100%;
+    }
+
+    input {
+      width: 90%;
+
+      @media (max-width: 640px) {
+        width: 100%;
+      }
+    }
+  }
+}
+</style>
