@@ -1,78 +1,83 @@
 <script type="text/javascript">
 $(document).on('click', '.button-add-another-vertical', function (e) {
-      e.preventDefault();
-      var beforeThis = $(this).parents('.list-item-wrapper-vertical').find('#item-row').last();
-      $(beforeThis).before(
-        '<div id="item-row" class="grid-row">' +
-          '<div class="column-two-thirds">' +
-            '<div class="form-group-compound">' +
-              '<h2 class="heading-medium">Item 1</h2>' +
-              '<div class="form-group">' +
-                '<label class="form-label" for="field-1">' +
-                  'Field label' +
-                '</label>' +
-                '<input type="text" class="form-control" id="field-1" name="field-1">' +
-              '</div>' +
-              '<div class="form-group">' +
-                '<label class="form-label" for="field-2">' +
-                  'Field label' +
-                '</label>' +
-                '<input type="text" class="form-control" id="field-2" name="field-2">' +
-              '</div>' +
-              '<div class="form-group">' +
-                '<label class="form-label" for="field-3">' +
-                  'Field label' +
-                '</label>' +
-                '<input type="text" class="form-control" id="field-3" name="field-3">' +
-              '</div>' +
-            '</div>' +
-          '</div>' +
-          '<div class="column-one-third">' +
-          '</div>' +
-        '</div>' +
-        '<hr />'
-      );
-      sortFieldsVertical();
-    });
+  var beforeThis = $(this).parents('.list-item-wrapper-vertical').find('#item-row').last();
+  e.preventDefault();
+  insertFields(beforeThis);
+  sortFieldsVertical();
+});
 
-    function sortFieldsVertical() {
-      var listCounter = 1;
-      var inputCounter = 1;
+$(document).on('click', '.remove-list-item-vertical', function (e) {
+  e.preventDefault();
+  $(this).parents('#item-row').next('hr').remove();
+  $(this).parents('#item-row').remove();
+  sortFieldsVertical();
+});
 
-      $(document).find('.list-item-wrapper-vertical .grid-row').each(function () {
-        $(this).find('h2').text('Item ' + listCounter);
+function insertFields(element) {
+	element.before(
+		'<div id="item-row" class="grid-row">' +
+	      '<div class="column-two-thirds">' +
+	        '<div class="form-group-compound">' +
+	          '<h2 class="heading-medium">Item 1</h2>' +
+	          '<div class="form-group">' +
+	            '<label class="form-label-bold" for="field-1">' +
+	              'Field label' +
+                '<span class="form-hint">Something...</span>' +
+	            '</label>' +
+	            '<input type="text" class="form-control" id="field-1" name="field-1">' +
+	          '</div>' +
+	          '<div class="form-group">' +
+	            '<label class="form-label-bold" for="field-2">' +
+	              'Field label' +
+                '<span class="form-hint">Something...</span>' +
+	            '</label>' +
+	            '<input type="text" class="form-control" id="field-2" name="field-2">' +
+	          '</div>' +
+	          '<div class="form-group">' +
+	            '<label class="form-label-bold" for="field-3">' +
+	              'Field label' +
+                '<span class="form-hint">Something...</span>' +
+	            '</label>' +
+	            '<input type="text" class="form-control" id="field-3" name="field-3">' +
+	          '</div>' +
+	        '</div>' +
+	      '</div>' +
+	      '<div class="column-one-third">' +
+	      '</div>' +
+	    '</div>' +
+	    '<hr />'
+	);
+}
 
-        if ($(this).find('.remove-list-item-vertical').length === 0) {
-          $(this).find('.column-one-third:last').append('<a id="remove-item-vertical-' + listCounter + '" class="remove-list-item-vertical" href="#">Remove this</a>');
-        } else {
-          $(this).find('.remove-list-item-vertical').attr('id', 'remove-item-vertical-' + listCounter);
-        }
+function sortFieldsVertical() {
+  var listCounter = 1;
+  var inputCounter = 1;
 
-        $(this).find('label').each(function () {
-          $(this).attr('for', 'field-' + inputCounter);
-          inputCounter++;
-        });
+  $(document).find('.list-item-wrapper-vertical .grid-row').each(function () {
+    $(this).find('h2').text('Item ' + listCounter);
 
-        $(this).find('input').each(function () {
-          var num = $(this).parent().find('label').attr('for').split('-').pop();
-          $(this).attr('id', 'field-' + num);
-          $(this).attr('name', 'field-' + num);
-        });
-
-        listCounter++;
-      });
-
-      if ($(document).find('.list-item-wrapper-vertical .grid-row').length === 2) {
-        $('.remove-list-item-vertical').remove();
-      }
+    if ($(this).find('.remove-list-item-vertical').length === 0) {
+      $(this).find('.column-one-third:last').append('<a id="remove-item-vertical-' + listCounter + '" class="remove-list-item-vertical" href="#">Remove this</a>');
+    } else {
+      $(this).find('.remove-list-item-vertical').attr('id', 'remove-item-vertical-' + listCounter);
     }
 
-    $(document).on('click', '.remove-list-item-vertical', function (e) {
-      e.preventDefault();
-      // $(this).parents('.grid-row').prev('hr').remove();
-      // $(this).parents('.grid-row').remove();
-      $(this).parents('.list-item-wrapper-vertical').remove();
-      sortFieldsVertical();
+    $(this).find('label').each(function () {
+      $(this).attr('for', 'field-' + inputCounter);
+      inputCounter++;
     });
 
+    $(this).find('input').each(function () {
+      var num = $(this).parent().find('label').attr('for').split('-').pop();
+      $(this).attr('id', 'field-' + num);
+      $(this).attr('name', 'field-' + num);
+    });
+
+    listCounter++;
+  });
+
+  if ($(document).find('.list-item-wrapper-vertical .grid-row').length === 2) {
+    $('.remove-list-item-vertical').remove();
+  }
+}
 </script>
