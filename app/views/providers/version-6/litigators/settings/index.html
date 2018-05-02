@@ -1,0 +1,123 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	{# include "./includes/navigation.html" #}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h1 class="heading-xlarge">
+				Settings
+			</h1>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h2 class="heading-large">
+				Provider details
+			</h2>
+
+			<table class="summary">
+	            <tbody>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        Provider name
+	                    </th>
+	                    <td>Petty &amp; France LLP</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        API key
+	                    </th>
+	                    <td>d5ab1c8d-a2af-427c-acd9-c2482ed31237</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        <abbr onclick="" title="Advocate Graduated Fee Scheme" tabindex="0">AGFS</abbr> supplier number
+	                    </th>
+	                    <td>002YQ</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr> supplier numbers
+	                    </th>
+	                    <td>2N932G, 2N929D, 2N923X, 2N920U, 2N933H</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        VAT registered?
+	                    </th>
+	                    <td>Yes</td>
+	                </tr>
+	            </tbody>
+	        </table>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form-group">
+				<button type="submit" class="button">Edit provider details</button>
+				<button type="submit" class="button button-tertiary">Generate new API key</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h2 class="heading-large">
+				User details
+			</h2>
+
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Firstname</th>
+							<th scope="col">Lastname</th>
+							<th scope="col">Supplier number</th>
+							<th scope="col">Email</th>
+							<th scope="col">Notifications</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Simon</td>
+							<td>Whatley</td>
+							<td>002YQ</td>
+							<td>simon.whatley@pettyfrance.com</td>
+							<td>On</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form-group">
+				<br>
+				<button type="submit" class="button">Add user to provider</button>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}
