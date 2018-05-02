@@ -1,8 +1,8 @@
 <script type="text/javascript">
 $(document).on('click', '.button-add-another-vertical', function (e) {
-  var beforeThis = $(this).parents('.list-item-wrapper-vertical').find('#item-row').last();
+  var position = $(this).parents('.list-item-wrapper-vertical').find('#item-row').last();
   e.preventDefault();
-  insertFields(beforeThis);
+  insertFields(position);
   sortFieldsVertical();
 });
 
@@ -14,7 +14,8 @@ $(document).on('click', '.remove-list-item-vertical', function (e) {
 });
 
 function insertFields(element) {
-	element.before(
+	element.after(
+		'<hr />' +
 		'<div id="item-row" class="grid-row">' +
 	      '<div class="column-two-thirds">' +
 	        '<div class="form-group-compound">' +
@@ -44,8 +45,7 @@ function insertFields(element) {
 	      '</div>' +
 	      '<div class="column-one-third">' +
 	      '</div>' +
-	    '</div>' +
-	    '<hr />'
+	    '</div>'
 	);
 }
 
@@ -76,7 +76,7 @@ function sortFieldsVertical() {
     listCounter++;
   });
 
-  if ($(document).find('.list-item-wrapper-vertical .grid-row').length === 2) {
+  if ($(document).find('.list-item-wrapper-vertical #item-row').length === 1) {
     $('.remove-list-item-vertical').remove();
   }
 }
