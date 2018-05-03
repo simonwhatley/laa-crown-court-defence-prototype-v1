@@ -1,0 +1,19 @@
+{% if not (data['court'].length and data['case_number'].length) -%}
+<div class="panel panel-border-wide">
+	<h3 class="heading-small">Warning: Missing information</h3>
+	<p>You must complete the following sections before submitting the claim:</p>
+	<ul class="list list-bullet">
+		{% if data['bill_type'] == 'litigator_transfer' %}
+			<li>transfer details</li>
+		{%- endif %}
+		<li>case details</li>
+		<li>defendant details</li>
+		{% if data['fee_type'] == 'graduated' -%}
+			<li>offence details</li>
+			<li>graduated fees</li>
+		{% else %}
+			<li>fixed fees</li>
+		{%- endif %}
+	</ul>
+</div>
+{%- endif %}
