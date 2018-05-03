@@ -32,7 +32,9 @@
 
 						<p>Check all the information below is correct before submitting your claim.</p>
 
-						{% if data['bill_type'] == "litigator_transfer" %}
+						{% include "./includes/_check_claim_message_warning.html" %}
+
+						{% if data['bill_type'] == 'litigator_transfer' %}
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Transfer details
@@ -60,22 +62,6 @@
 
 						</div>
 
-
-						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == "graduated") or data['bill_type'] == 'litigator_interim' -%}
-							<div class="form-section">
-								<h3 class="heading-medium">
-									Offence details
-									<a href="#noop" class="link-change">
-										Change
-										<span class="visually-hidden">&nbsp;offence details</span>
-									</a>
-								</h3>
-
-								{% include "../includes/_check_claim_offence_details.html" %}
-
-							</div>
-						{%- endif %}
-
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Defendant details
@@ -89,7 +75,32 @@
 
 						</div>
 
-						{% if data['bill_type'] == "litigator_interim" %}
+						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == 'graduated') or data['bill_type'] == 'litigator_interim' -%}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Offence details
+									{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
+									<a href="{{links.offence_details}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;offence details</span>
+									</a>
+									{%- endif %}
+								</h3>
+
+								{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
+
+									{% include "../includes/_check_claim_offence_details.html" %}
+								
+								{% else %}
+
+									{% include "../includes/_check_claim_offence_details_message_warning.html" %}
+									
+								{%- endif %}
+
+							</div>
+						{%- endif %}
+
+						{% if data['bill_type'] == 'litigator_interim' %}
 
 							<div class="form-section">
 								<h3 class="heading-medium">
@@ -104,7 +115,7 @@
 
 							</div>
 
-						{% elif data['bill_type'] == "litigator_transfer" %}
+						{% elif data['bill_type'] == 'litigator_transfer' %}
 
 							<div class="form-section">
 								<h3 class="heading-medium">
@@ -121,18 +132,28 @@
 
 						{% else %}
 
-							{% if data['fee_type'] == "fixed" -%}
+							{% if data['fee_type'] == 'fixed' -%}
 
 								<div class="form-section">
 									<h3 class="heading-medium">
 										Fixed fees
+										{% if data['case_type'].length -%}
 										<a href="{{links.fees}}" class="link-change">
 											Change
 											<span class="visually-hidden">&nbsp;fixed fees</span>
 										</a>
+										{%- endif %}
 									</h3>
 
-									{% include "./includes/_check_claim_fixed_fees.html" %}
+									{% if data['case_type'].length -%}
+
+										{% include "./includes/_check_claim_fixed_fees.html" %}
+
+									{% else %}
+
+										{% include "./includes/_check_claim_fixed_fees_message_warning.html" %}
+									
+									{%- endif %}
 
 								</div>
 
@@ -141,13 +162,23 @@
 								<div class="form-section">
 									<h3 class="heading-medium">
 										Graduated fees
+										{% if data['case_type'].length and data['offence_category'].length and data['offence_class'].length -%}
 										<a href="{{links.fees}}" class="link-change">
 											Change
 											<span class="visually-hidden">&nbsp;graduated fees</span>
 										</a>
+										{%- endif %}
 									</h3>
 
-									{% include "./includes/_check_claim_graduated_fees.html" %}
+									{% if data['case_type'].length and data['offence_category'].length and data['offence_class'].length -%}
+
+										{% include "./includes/_check_claim_graduated_fees.html" %}
+
+									{% else %}
+
+										{% include "./includes/_check_claim_graduated_fees_message_warning.html" %}
+									
+									{%- endif %}
 
 								</div>
 
@@ -194,7 +225,7 @@
 
 						</div>
 
-						{% if data['bill_type'] == "litigator_final" %}
+						{% if data['bill_type'] == 'litigator_final' %}
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Warrant fees

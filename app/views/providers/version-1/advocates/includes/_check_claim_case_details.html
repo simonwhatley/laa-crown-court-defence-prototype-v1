@@ -17,14 +17,12 @@
 			</th>
 			<td>{{data['reference_number']}}</td>
 		</tr>
-		{% if data['bill_type'] == 'advocate_final' -%}
 		<tr>
 			<th class="bold" scope="row">
 				Case type
 			</th>
 			<td>{{data['case_type']|replace('_',' ')|title}}</td>
 		</tr>
-		{%- endif %}
 		<tr>
 			<th class="bold" scope="row">
 				Court

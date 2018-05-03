@@ -1,0 +1,15 @@
+{% if data['interim_fee_type'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Type of fee
+			</th>
+			<td>{{data['interim_fee_type']|replace('_',' ')|capitalize}}</td>
+		</tr>
+		
+	</tbody>
+</table>
+{% else %}
+<p>There are no interim fees for this claim.</p>
+{%- endif %}
