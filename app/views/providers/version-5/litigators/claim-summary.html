@@ -28,12 +28,12 @@
 					<div class="column-one-quarter">
 						<h3 class="heading-large">
 							<span class="heading-secondary">
-								{% if data['bill_type'] == "litigator_interim" -%}
+								{% if data['bill_type'] == 'litigator_interim' -%}
 									Interim fees
-								{% elif data['bill_type'] == "litigator_transfer" %}
+								{% elif data['bill_type'] == 'litigator_transfer' %}
 									Transfer fees
 								{% else %}
-									{% if data['fee_type'] == "graduated" -%}
+									{% if data['fee_type'] == 'graduated' -%}
 										Graduated fees
 									{% else %}
 										Fixed fees
@@ -96,7 +96,9 @@
 							Claim summary
 						</h2>
 
-						{% if data['bill_type'] == "litigator_transfer" %}
+						{% include "./includes/_claim_summary_message_warning.html" %}
+
+						{% if data['bill_type'] == 'litigator_transfer' %}
 						<div class="form-section">
 							<h3 class="heading-medium">
 								Transfer details
@@ -137,24 +139,32 @@
 
 						</div>
 
-						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == "graduated") or data['bill_type'] in ['litigator_interim','litigator_transfer'] -%}
-
+						{% if (data['bill_type'] == 'litigator_final' and data['fee_type'] == 'graduated') or data['bill_type'] in ['litigator_interim','litigator_transfer'] -%}
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Offence details
+									{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
 									<a href="{{links.offence_details}}" class="link-change">
 										Change
 										<span class="visually-hidden">&nbsp;offence details</span>
 									</a>
+									{%- endif %}
 								</h3>
 
-								{% include "../includes/_claim_summary_offence_details.html" %}
+								{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
+
+									{% include "../includes/_claim_summary_offence_details.html" %}
+								
+								{% else %}
+
+									{% include "../includes/_claim_summary_offence_details_message_warning.html" %}
+									
+								{%- endif %}
 
 							</div>
-
 						{%- endif %}
 
-						{% if data['bill_type'] == "litigator_interim" %}
+						{% if data['bill_type'] == 'litigator_interim' %}
 
 							<div class="form-section">
 								<h3 class="heading-medium">
@@ -169,7 +179,7 @@
 
 							</div>
 
-						{% elif data['bill_type'] == "litigator_transfer" %}
+						{% elif data['bill_type'] == 'litigator_transfer' %}
 
 							<div class="form-section">
 								<h3 class="heading-medium">
@@ -186,18 +196,28 @@
 
 						{% else %}
 
-							{% if data['fee_type'] == "fixed" -%}
+							{% if data['fee_type'] == 'fixed' -%}
 
 								<div class="form-section">
 									<h3 class="heading-medium">
 										Fixed fees
+										{% if data['case_type'].length -%}
 										<a href="{{links.fees}}" class="link-change">
 											Change
 											<span class="visually-hidden">&nbsp;fixed fees</span>
 										</a>
+										{%- endif %}
 									</h3>
 
-									{% include "./includes/_claim_summary_fixed_fees.html" %}
+									{% if data['case_type'].length -%}
+
+										{% include "./includes/_claim_summary_fixed_fees.html" %}
+
+									{% else %}
+
+										{% include "./includes/_claim_summary_fixed_fees_message_warning.html" %}
+									
+									{%- endif %}
 
 								</div>
 
@@ -206,13 +226,23 @@
 								<div class="form-section">
 									<h3 class="heading-medium">
 										Graduated fees
+										{% if data['case_type'].length and data['offence_category'].length and data['offence_class'].length -%}
 										<a href="{{links.fees}}" class="link-change">
 											Change
 											<span class="visually-hidden">&nbsp;graduated fees</span>
 										</a>
+										{%- endif %}
 									</h3>
 
-									{% include "./includes/_claim_summary_graduated_fees.html" %}
+									{% if data['case_type'].length and data['offence_category'].length and data['offence_class'].length -%}
+
+										{% include "./includes/_claim_summary_graduated_fees.html" %}
+
+									{% else %}
+
+										{% include "./includes/_claim_summary_graduated_fees_message_warning.html" %}
+									
+									{%- endif %}
 
 								</div>
 
