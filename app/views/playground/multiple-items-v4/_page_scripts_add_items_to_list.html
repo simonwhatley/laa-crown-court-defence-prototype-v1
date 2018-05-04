@@ -1,0 +1,13 @@
+<script type="text/javascript">
+$('.add_input').click(function(){
+   $(this).parents('.input_add_delete').clone(true, true).removeClass('first').insertAfter($(this).parents('.input_add_delete')).find("input").val("").siblings('label').remove();
+});
+
+$('.input_add_delete input').focus(function(){
+   $(this).parent('.mdl-textfield').addClass('is-dirty');
+});
+
+$('.delete_input').click(function(){
+   $(this).parents('.input_add_delete').remove();
+});
+</script>

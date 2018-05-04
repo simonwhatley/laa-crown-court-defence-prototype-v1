@@ -1,0 +1,118 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  var max_divs = 11;
+  var divs_present = 0;
+
+  $("#add-another").click(function(e) {
+    //prevent scroll
+    e.preventDefault();
+
+    //generate a new div based on div0 and attach the event handlers
+
+    //console.log($("#wrapper :last-child"));
+    //get the last generated div
+    var last_div = $("div[id^='div']:last");
+
+    //slice off the number at the end of the last div id for example 0 from div0
+   
+    //var last_div_id_num = last_div.attr("id").slice(-1);
+    var last_div_id_num = parseInt(last_div.attr("id").replace( /^\D+/g, ''));
+
+    //console.log($("#wrapper :last-child").attr("id"));
+    //add one to the old id number and prefix div to get the id of the new div
+    var new_id_num = (parseInt(last_div_id_num) + 1);
+    var new_div_id = "div" + new_id_num;
+
+    //clone div0
+    var new_div = $("#div0").clone();
+
+    //new_div.show();
+    //change the id of the new div as calculated above
+    new_div.attr("id", new_div_id);
+
+    //find the system dropdown inside the new div etc
+    var new_system = new_div.find(".system");
+    var new_serial_div = new_div.find(".serial-div");
+    var new_serial = new_div.find(".serial");
+    var new_licensekey_div = new_div.find(".licensekey-div");
+    var new_licensekey = new_div.find(".licensekey");
+    var remove_btn_div = new_div.find(".remove-btn-div");
+    var remove_btn = new_div.find(".remove-btn");
+
+    //attach event handler: once system is selected, show the serial number field
+    new_system.on("change", function() {
+      console.log(new_div.find(".system :selected").text().length);
+      if(new_div.find(".system :selected").text().trim() == "Select system"){
+        //console.log("Compared");
+        new_serial.val("");
+        new_serial_div.hide();
+        new_licensekey.val("");
+        new_licensekey_div.hide();
+      }else{
+        new_serial_div.show();
+      }
+      //console.log("Im here!");
+    });
+
+
+    //attach event handler: once something is entered in the serial number field, show the next field
+    new_serial.on("keyup", function() {
+      //Please add validation as required here
+      //console.log("Im here too!");
+      if (new_serial.val().length > 0) {
+        new_licensekey_div.show();
+      }else{
+        new_licensekey.val("");
+        new_licensekey_div.hide();
+          
+      }
+    });
+    
+    new_serial.on("change", function(){
+      if(new_serial.val().length == 0){
+        new_licensekey.val("");
+        new_licensekey_div.hide();
+      }
+    });
+    
+    /*new_licensekey.on("keyup", function(){
+      if(new_licensekey.val().length > 0){
+        remove_btn_div.show();
+      }
+    });*/
+
+    remove_btn.on("click", function(e){
+      //prevent scroll
+      e.preventDefault();
+      --divs_present;
+      new_div.remove();
+      if(divs_present<max_divs){
+        $("#add-another").show();
+      }
+    });
+    
+    
+    //append the new div to the wrapper div
+    $("#wrapper").append(new_div);
+    //finally, show the new div
+    new_div.show();
+    
+    ++divs_present;
+    
+    //show the remove button
+    if(divs_present>1){
+      remove_btn_div.show();
+    }
+    
+    if(divs_present==max_divs){
+      $("#add-another").hide();
+    }
+
+  });
+
+  //trigger a click to generate the first div
+  $("#add-another").trigger('click');
+  //$("#system1").trigger('change');
+
+});
+</script>

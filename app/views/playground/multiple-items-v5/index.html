@@ -1,0 +1,88 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./_page_scripts_add_items_to_list.html" %}
+{% endblock %}
+
+{% block page_styles %}
+{% include "./_page_styles_add_items_to_list.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      Multiple items (v5)
+	    </h1>
+
+	    <!-- https://bootsnipp.com/snippets/featured/dynamic-form-fields-add-amp-remove -->
+
+		<form method="get">
+
+			<div class="list-item-wrapper">
+			
+				<div class="grid-row">
+					<div class="column-one-third">
+						<div class="form-group">
+							<label class="form-label-bold" for="field1">
+								Label 1
+								<span class="form-hint">Something...</span>
+							</label>
+							<input class="form-control form-control-2-3" id="field-1" name="field_1" type="text" autocomplete="off" value="{{data.field_1}}">
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="grid-row button-row">
+					<div class="column-one-third">
+						<button class="button button-secondary add-more" type="button">Add more</button>
+					</div>
+				</div>
+
+			</div>
+
+			
+			<!-- <div class="container">
+				<div class="row">
+					
+			        <div class="control-group" id="fields">
+			            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
+			            <div class="controls" id="profs">
+			                    <div id="field">
+			                    	<input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8">
+			                    	<button id="b1" class="button button-secondary add-more" type="button">Add more</button>
+			                    </div>
+			            </div>
+			        </div>
+				</div>
+			</div> -->
+
+			<div class="grid-row">
+				<div class="column-one-third">
+					<br>
+					<div class="form-group">
+						<input class="button" type="submit" value="Save items">
+					</div>
+				</div>
+			</div>
+
+			
+
+		</form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
