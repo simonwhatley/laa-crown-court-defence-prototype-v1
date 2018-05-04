@@ -516,7 +516,7 @@ router.get('/advocates/:claim_id([0-9]+)/details', function(req, res) {
 });
 
 // ==============================================
-// LITIGATORS
+// LITIGATORS – Claims
 // ==============================================
 
 router.get('/litigators/', function(req, res) {
@@ -868,6 +868,53 @@ router.get('/litigators/claim-details', function(req, res) {
                 // 'home' : req.baseUrl + '/litigators/'
             },
             messages: []
+        });
+});
+
+// ==============================================
+// LITIGATORS – Settings
+// ==============================================
+
+router.get('/litigators/settings', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/settings/index`,
+        {
+            links: {
+                'edit_provider' : req.baseUrl + '/litigators/settings/provider',
+                'edit_user' : req.baseUrl + '/litigators/settings/user',
+                'add_user' : req.baseUrl + '/litigators/settings/user/add'
+            }
+        });
+});
+
+router.get('/litigators/settings/provider', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/settings/provider-form`,
+        {
+            links: {
+                'save' : req.baseUrl + '/litigators/',
+                'cancel' : req.baseUrl + '/litigators/'
+            },
+            provider: []
+        });
+});
+
+router.get('/litigators/settings/user/:claim_id([0-9]+)/', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/settings/user-form`,
+        {
+            links: {
+                'save' : req.baseUrl + '/litigators/',
+                'cancel' : req.baseUrl + '/litigators/'
+            },
+            user: []
+        });
+});
+
+router.get('/litigators/settings/user/add', function(req, res) {
+    res.render(`${req.feature}/${req.version}/litigators/settings/user-form`,
+        {
+            links: {
+                'save' : req.baseUrl + '/litigators/',
+                'cancel' : req.baseUrl + '/litigators/'
+            }
         });
 });
 

@@ -67,14 +67,18 @@
 		</div>
 	</div>
 
-	<div class="grid-row">
-		<div class="column-two-thirds">
-			<div class="form-group">
-				<button type="submit" class="button">Edit provider details</button>
-				<button type="submit" class="button button-tertiary">Generate new API key</button>
+	<form class="form" method="post">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Edit provider details" formaction="{{links.edit_provider}}">
+						<input type="submit" class="button button-tertiary" value="Generate new API key">
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</form>
 
 	<div class="grid-row">
 		<div class="column-full">
@@ -92,6 +96,7 @@
 							<th scope="col">Supplier number</th>
 							<th scope="col">Email</th>
 							<th scope="col">Notifications</th>
+							<th scope="col">&nbsp;</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -101,22 +106,28 @@
 							<td>002YQ</td>
 							<td>simon.whatley@pettyfrance.com</td>
 							<td>On</td>
+							<td>
+								<a href="{{links.edit_user}}/12345">Change</a>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-
+			<br>
 		</div>
 	</div>
 
-	<div class="grid-row">
-		<div class="column-two-thirds">
-			<div class="form-group">
-				<br>
-				<button type="submit" class="button">Add user to provider</button>
+	<form class="form" method="post">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Add user to provider" formaction="{{links.add_user}}">
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</form>
 
 </main>
 
