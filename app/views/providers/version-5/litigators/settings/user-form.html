@@ -1,0 +1,47 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.back}}">Back</a>
+
+			<h1 class="heading-xlarge">
+				Settings
+			</h1>
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					<h2 id="section-heading" class="heading-large">
+						User details
+					</h2>
+
+					<form class="form" method="post">
+
+
+						{% include "./_form_actions.html" %}
+
+					</form>
+
+					{% include "./_help.html" %}
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	{# include "./includes/navigation.html" #}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h1 class="heading-xlarge">
+				Settings
+			</h1>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			{#% if messages %}
+	        <div class="success-summary" role="alert" aria-labelledby="success-summary-heading-example-1" tabindex="-1">
+
+	            <h1 class="heading-medium success-summary-heading" id="success-summary-heading-example-1">
+	                Message to alert the user to a success goes here
+	            </h1>
+
+	            <p>
+		        	Optional description of the success
+		      	</p>
+
+	            <ul class="success-summary-list">
+	                {% for key, value in messages %}
+	                    <li><a href="#{{ key }}">{{ value }}</a></li>
+	                {% endfor %}
+	            </ul>
+
+		    </div>
+		    {% endif %#}
+
+
+
+			<h2 class="heading-large">
+				Provider details
+			</h2>
+
+			<table class="summary">
+	            <tbody>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        Provider name
+	                    </th>
+	                    <td>Petty &amp; France LLP</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        API key
+	                    </th>
+	                    <td>d5ab1c8d-a2af-427c-acd9-c2482ed31237</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        <abbr onclick="" title="Advocate Graduated Fee Scheme" tabindex="0">AGFS</abbr> supplier number
+	                    </th>
+	                    <td>002YQ</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr> supplier numbers
+	                    </th>
+	                    <td>2N932G, 2N929D, 2N923X, 2N920U, 2N933H</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        VAT registered?
+	                    </th>
+	                    <td>Yes</td>
+	                </tr>
+	            </tbody>
+	        </table>
+
+		</div>
+	</div>
+
+	<form class="form" method="post">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Edit provider details" formaction="{{links.edit_provider}}">
+						<input type="submit" class="button button-tertiary" value="Generate new API key">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h2 class="heading-large">
+				User details
+			</h2>
+
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Firstname</th>
+							<th scope="col">Lastname</th>
+							<th scope="col">Supplier number</th>
+							<th scope="col">Email</th>
+							<th scope="col">Notifications</th>
+							<th scope="col">&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Simon</td>
+							<td>Whatley</td>
+							<td>002YQ</td>
+							<td>simon.whatley@pettyfrance.com</td>
+							<td>On</td>
+							<td>
+								<a href="{{links.edit_user}}/12345">Change</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br>
+		</div>
+	</div>
+
+	<form class="form" method="post">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Add user to provider" formaction="{{links.add_user}}">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</main>
+
+{% endblock %}

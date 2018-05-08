@@ -1,0 +1,192 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./_page_scripts_edit_provider.html" %}
+{% endblock %}
+
+{% block page_styles %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.back}}">Back</a>
+
+			<h1 class="heading-xlarge">
+				Settings
+			</h1>
+
+			<div class="grid-row">
+				<div class="column-full">
+
+					<h2 id="section-heading" class="heading-large">
+						Edit provider details
+					</h2>
+
+					<form class="form" method="post">
+
+						<div class="form-group" data-required="true" data-error="Add a provider name">
+							<label class="form-label-bold" for="reference-number">
+								Provider name
+								<span class="form-hint">Something...</span>
+							</label>
+							<input class="form-control form-control-1-2" id="provider-name" type="text" name="provider_name" value="{{ data['provider_name']}}" autocomplete="off" autocapitalize="off">
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Choose a provider type">
+
+							<fieldset class="inline">
+
+								<legend class="form-label-bold" for="radio-1">
+									Provider type
+									<span class="form-hint">Something...</span>
+								</legend>
+
+								<div class="multiple-choice">
+									<input id="provider-type-chamber" type="radio" name="provider_type" value="chamber" {{ checked('provider_type', 'chamber') }}>
+									<label for="provider-type-chamber">Chamber</label>
+								</div>
+
+								<div class="multiple-choice">
+									<input id="provider-type-firm" type="radio" name="provider_type" value="firm" {{ checked('provider_type', 'firm') }}>
+									<label for="provider-type-firm">Firm</label>
+								</div>
+
+							</fieldset>
+
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Choose at least one fee scheme">
+						    <fieldset>
+						        <legend class="heading-small">
+						            Fee scheme
+						            <span class="form-hint">
+						                Please choose all relevant options
+						            </span>
+						        </legend>
+
+								<div class="multiple-choice" data-target="fee-scheme-agfs-panel">
+						            <input aria-controls="fee-scheme-agfs-panel" aria-expanded="false" id="fee-scheme-agfs" name="fee_scheme_checklist" type="checkbox" value="agfs" {% if (data['fee_scheme_checklist'] and 'agfs' in data['fee_scheme_checklist']) -%}checked="checked"{%- endif %}>
+						            <label for="fee-scheme-agfs">
+						                <abbr onclick="" title="Advocate Graduated Fee Scheme" tabindex="0">AGFS</abbr>
+						            </label>
+						        </div>
+						        <div class="panel panel-border-narrow js-hidden" id="fee-scheme-agfs-panel">
+						            <div class="grid-row">
+						        		<div class="column-two-thirds">
+
+								            <div class="form-group">
+								                <label class="form-label-bold" for="agfs-supplier-number">
+								                    Supplier number
+													<span class="form-hint">For example, 123AB</span>
+								                </label>
+								                <input class="form-control form-control-1-3" id="agfs-supplier-number" name="agfs_supplier_number" type="text" value="{{data['agfs_supplier_number']}}">
+								            </div>
+
+								        </div>
+								    </div>
+						        </div>
+
+								<div class="multiple-choice" data-target="fee-scheme-lgfs-panel">
+						            <input aria-controls="fee-scheme-lgfs-panel" aria-expanded="false" id="fee-scheme-lgfs" name="fee_scheme_checklist" type="checkbox" value="lgfs" {% if (data['fee_scheme_checklist'] and 'lgfs' in data['fee_scheme_checklist']) -%}checked="checked"{%- endif %}>
+						            <label for="fee-scheme-lgfs">
+						                <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr>
+						            </label>
+						        </div>
+
+						        <div class="panel panel-border-narrow js-hidden" id="fee-scheme-lgfs-panel">
+
+						        	<div class="grid-row list-item-row">
+
+						        		<div class="column-two-thirds">
+
+						        			<h2 class="heading-small list-item-heading">
+												Supplier 1
+											</h2>
+
+								        	<div class="form-group">
+												<label class="form-label-bold" for="supplier-number-1">
+													Supplier number
+													<span class="form-hint">For example, 1A234B</span>
+												</label>
+												<input type="text" class="form-control form-control-1-3" id="supplier-number-1" name="supplier_number_1" value="">
+											</div>
+
+								        	<!-- <div class="form-group">
+												<label class="form-label-bold" for="supplier-postcode-1">
+													Supplier postcode
+													<span class="form-hint">For example, SW11 1AA</span>
+												</label>
+												<input type="text" class="form-control form-control-1-3" id="supplier-postcode-1" name="supplier_postcode_1" value="">
+											</div> -->
+
+											<hr style="margin-bottom:30px;">
+
+										</div>
+
+									</div>
+
+									<div class="grid-row">
+										<div class="column-two-thirds">
+											<div class="form-group">
+												<!-- <br> -->
+												<button id="add-button" class="button button-secondary button-add-another">Add another</button>
+											</div>
+										</div>
+									</div>
+
+						        </div>
+
+						    </fieldset>
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Choose a VAT registered status">
+
+							<fieldset class="inline">
+
+								<legend class="form-label-bold" for="radio-1">
+									Is the provider <abbr onclick="" title="Value Added Tax" tabindex="0">VAT</abbr> registered?
+									<span class="form-hint">Something...</span>
+								</legend>
+
+								<div class="multiple-choice inline">
+									<input id="vat-registered-yes" type="radio" name="vat_registered" value="yes" {{ checked('vat_registered', 'yes') }}>
+									<label for="vat-registered-yes">Yes</label>
+								</div>
+
+								<div class="multiple-choice">
+									<input id="vat-registered-no" type="radio" name="vat_registered" value="no" {{ checked('vat_registered', 'no') }}>
+									<label for="vat-registered-no">No</label>
+								</div>
+
+							</fieldset>
+
+						</div>
+
+						{% include "./_form_actions.html" %}
+
+					</form>
+
+					{% include "./_help.html" %}
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}
