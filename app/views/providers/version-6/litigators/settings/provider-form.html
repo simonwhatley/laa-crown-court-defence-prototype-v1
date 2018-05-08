@@ -21,7 +21,7 @@
 	<div class="grid-row">
 		<div class="column-full">
 
-			<a class="link-back" href="{{links.previous}}">Back</a>
+			<a class="link-back" href="{{links.back}}">Back</a>
 
 			<h1 class="heading-xlarge">
 				Settings
@@ -115,21 +115,30 @@
 												Supplier 1
 											</h2>
 
-								        	<div class="form-group">
+											<div class="form-group supplier-name">
+												<label class="form-label-bold" for="supplier-name-1">
+													Name
+													<span class="form-hint">For example, the city or street name</span>
+												</label>
+												<input type="text" class="form-control form-control-1-3" id="supplier-name-1" name="supplier_name_1" value="" autocomplete="off" autocapitalize="off">
+											</div>
+
+											<div class="form-group supplier-postcode">
+												<label class="form-label-bold" for="supplier-postcode-1">
+													Postcode
+													<span class="form-hint">For example, SW11 1AA</span>
+												</label>
+												<input type="text" class="form-control form-control-1-3" id="supplier-postcode-1" name="supplier_postcode_1" value="" autocomplete="off" autocapitalize="off">
+
+											</div>
+
+								        	<div class="form-group supplier-number">
 												<label class="form-label-bold" for="supplier-number-1">
 													Supplier number
 													<span class="form-hint">For example, 1A234B</span>
 												</label>
-												<input type="text" class="form-control form-control-1-3" id="supplier-number-1" name="supplier_number_1" value="">
+												<input type="text" class="form-control form-control-1-3" id="supplier-number-1" name="supplier_number_1" value="" autocomplete="off" autocapitalize="off">
 											</div>
-
-								        	<!-- <div class="form-group">
-												<label class="form-label-bold" for="supplier-postcode-1">
-													Supplier postcode
-													<span class="form-hint">For example, SW11 1AA</span>
-												</label>
-												<input type="text" class="form-control form-control-1-3" id="supplier-postcode-1" name="supplier_postcode_1" value="">
-											</div> -->
 
 											<hr style="margin-bottom:30px;">
 
@@ -141,14 +150,34 @@
 										<div class="column-two-thirds">
 											<div class="form-group">
 												<!-- <br> -->
-												<button id="add-button" class="button button-secondary button-add-another">Add another</button>
+												<button id="add-button" class="button button-secondary button-add-another">Add another supplier</button>
 											</div>
 										</div>
 									</div>
 
+
+
 						        </div>
 
 						    </fieldset>
+						</div>
+
+						<div class="form-group">
+							<details>
+								<summary>
+									<span class="summary">Help with adding LGFS suppliers</span>
+								</summary>
+								<div class="panel panel-border-narrow">
+									<p class="bold">Why do we need your postcode?</p>
+									<p>
+									We use the postcode to automatically calculate the distance between
+									<br />
+									your supplier address and the destination, eg prison or court.
+									<br />
+									The distance can be automatically overriden in the expenses form.
+									</p>
+								</div>
+							</details>
 						</div>
 
 						<div class="form-group" data-required="true" data-error="Choose a VAT registered status">

@@ -882,6 +882,15 @@ router.get('/litigators/settings', function(req, res) {
                 'edit_provider' : req.baseUrl + '/litigators/settings/provider',
                 'edit_user' : req.baseUrl + '/litigators/settings/user',
                 'add_user' : req.baseUrl + '/litigators/settings/user/add'
+            },
+            messages: {
+                text: 'Huzzah! You saved the provider details'
+            },
+            errors: {
+                text: 'Boo! Something went wrong'
+            },
+            warnings: {
+                text: 'Umm! Something wasn\'t quite right, but no matter'
             }
         });
 });
@@ -890,8 +899,9 @@ router.get('/litigators/settings/provider', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/settings/provider-form`,
         {
             links: {
-                'save' : req.baseUrl + '/litigators/',
-                'cancel' : req.baseUrl + '/litigators/'
+                'save' : req.baseUrl + '/litigators/settings' + '?success=true',
+                'cancel' : req.baseUrl + '/litigators/settings',
+                'back' : req.baseUrl + '/litigators/settings'
             },
             provider: []
         });
@@ -901,8 +911,9 @@ router.get('/litigators/settings/user/:claim_id([0-9]+)/', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/settings/user-form`,
         {
             links: {
-                'save' : req.baseUrl + '/litigators/',
-                'cancel' : req.baseUrl + '/litigators/'
+                'save' : req.baseUrl + '/litigators/settings' + '?success=true',
+                'cancel' : req.baseUrl + '/litigators/settings',
+                'back' : req.baseUrl + '/litigators/settings'
             },
             user: []
         });
@@ -912,8 +923,9 @@ router.get('/litigators/settings/user/add', function(req, res) {
     res.render(`${req.feature}/${req.version}/litigators/settings/user-form`,
         {
             links: {
-                'save' : req.baseUrl + '/litigators/',
-                'cancel' : req.baseUrl + '/litigators/'
+                'save' : req.baseUrl + '/litigators/settings' + '?success=true',
+                'cancel' : req.baseUrl + '/litigators/settings',
+                'back' : req.baseUrl + '/litigators/settings'
             }
         });
 });

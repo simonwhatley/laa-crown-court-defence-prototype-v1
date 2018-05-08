@@ -25,6 +25,28 @@
 	<div class="grid-row">
 		<div class="column-full">
 
+			{#% if messages %}
+	        <div class="success-summary" role="alert" aria-labelledby="success-summary-heading-example-1" tabindex="-1">
+
+	            <h1 class="heading-medium success-summary-heading" id="success-summary-heading-example-1">
+	                Message to alert the user to a success goes here
+	            </h1>
+
+	            <p>
+		        	Optional description of the success
+		      	</p>
+
+	            <ul class="success-summary-list">
+	                {% for key, value in messages %}
+	                    <li><a href="#{{ key }}">{{ value }}</a></li>
+	                {% endfor %}
+	            </ul>
+
+		    </div>
+		    {% endif %#}
+
+
+
 			<h2 class="heading-large">
 				Provider details
 			</h2>
