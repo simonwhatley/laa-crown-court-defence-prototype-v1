@@ -1,6 +1,15 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
+  // $('.provider-type').on('change', function(e) {
+  //   e.preventDefault();
+  //   if ($(this).val() == 'chamber') {
+  //     $('#fee-scheme-lgfs').attr('disabled','disabled');
+  //   } else {
+  //     $('#fee-scheme-lgfs').removeAttr('disabled');
+  //   }
+  // });
+
   $(document).on('click', '.button-add-another', function (e) {
     e.preventDefault();
     insertFields();
@@ -57,6 +66,7 @@ $(document).ready(function(){
         $(this).find('.remove-list-item').attr('id', 'remove-item-' + listCounter);
       }
 
+      // Label counter
       $(this).find('.supplier-name').children('label').each(function () {
         $(this).attr('for', 'supplier-name-' + listCounter);
       });
@@ -69,6 +79,7 @@ $(document).ready(function(){
         $(this).attr('for', 'supplier-number-' + listCounter);
       });
 
+      // Input counter
       $(this).find('.supplier-name').children('input').each(function () {
         $(this).attr('id', 'supplier-name-' + listCounter);
         $(this).attr('name', 'supplier_name_' + listCounter);
