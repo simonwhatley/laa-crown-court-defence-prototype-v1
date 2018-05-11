@@ -45,6 +45,7 @@
 		    </div>
 		    {% endif %#}
 
+		    {#{data|dump|safe}#}
 
 
 			<h2 class="heading-large">
@@ -63,25 +64,31 @@
 	                    <th class="bold" scope="row">
 	                        API key
 	                    </th>
-	                    <td>d5ab1c8d-a2af-427c-acd9-c2482ed31237</td>
+	                    <td>{{data['settings']['api_key']}}</td>
 	                </tr>
 	                <tr>
 	                    <th class="bold" scope="row">
 	                        <abbr onclick="" title="Advocate Graduated Fee Scheme" tabindex="0">AGFS</abbr> supplier number
 	                    </th>
-	                    <td>002YQ</td>
+	                    <td>{{data['settings']['agfs_account_number']}}</td>
 	                </tr>
 	                <tr>
 	                    <th class="bold" scope="row">
-	                        <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr> supplier numbers
+	                        <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr> supplier number{% if data['settings']['suppliers'].length > 1 -%}s{%- endif %}
 	                    </th>
-	                    <td>2N932G, 2N929D, 2N923X, 2N920U, 2N933H</td>
+	                    <td>
+	                    	<ul>
+	                    	{% for supplier in data['settings']['suppliers'] %}
+	                    		<li>{{supplier.name}} – {{supplier.lgfs_account_number}}</li>
+	                    	{% endfor %}
+	                    	<ul>
+	                	</td>
 	                </tr>
 	                <tr>
 	                    <th class="bold" scope="row">
 	                        VAT registered?
 	                    </th>
-	                    <td>Yes</td>
+	                    <td>{% if data['settings']['vat_number'] >= 1 -%}Yes{% else %}No{%- endif %}</td>
 	                </tr>
 	            </tbody>
 	        </table>
@@ -122,16 +129,18 @@
 						</tr>
 					</thead>
 					<tbody>
+						{% for user in data['settings']['users'] %}
 						<tr>
-							<td>Simon</td>
-							<td>Whatley</td>
-							<td>002YQ</td>
-							<td>simon.whatley@pettyfrance.com</td>
-							<td>On</td>
+							<td>{{user.first_name}}</td>
+							<td>{{user.last_name}}</td>
+							<td>{{user.account_number}}</td>
+							<td>{{user.email_address}}</td>
+							<td>{% if user.notifications == true -%}On{% else %}Off{%- endif %}</td>
 							<td>
-								<a href="{{links.edit_user}}/12345">Change</a>
+								<a href="{{links.edit_user}}/{{user.id}}">Change</a>
 							</td>
 						</tr>
+						{% endfor %}
 					</tbody>
 				</table>
 			</div>

@@ -50,11 +50,11 @@
 
 									{%- endfor %#}
 
-									{% for supplier in provider.offices -%}
+									{% for supplier in data['settings']['suppliers'] -%}
 
 										<div class="multiple-choice">
-											<input id="supplier-number-{{loop.index}}" type="radio" name="supplier_number" value="{{supplier.code}}" {{ checked('supplier_number', supplier.code) }}>
-											<label for="supplier-number-{{loop.index}}">{{supplier.name}} ({{supplier.code}})</label>
+											<input id="supplier-number-{{loop.index}}" type="radio" name="supplier_number" value="{{supplier.lgfs_account_number}}">
+											<label for="supplier-number-{{loop.index}}">{{supplier.lgfs_account_number}} – {{supplier.name}}</label>
 										</div>
 
 									{%- endfor %}

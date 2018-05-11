@@ -41,7 +41,7 @@
 								Provider name
 								<span class="form-hint">The trading name of the Chamber or Firm</span>
 							</label>
-							<input class="form-control form-control-1-2" id="provider-name" type="text" name="provider_name" value="{{data['provider_name']}}" autocomplete="off" autocapitalize="off">
+							<input class="form-control form-control-1-2" id="provider-name" type="text" name="provider_name" value="{{data['settings']['provider_name']}}" autocomplete="off" autocapitalize="off">
 						</div>
 
 						<div class="form-group" data-required="true" data-error="Choose a provider type">
@@ -54,12 +54,12 @@
 								</legend>
 
 								<div class="multiple-choice">
-									<input id="provider-type-chamber" class="provider-type" type="radio" name="provider_type" value="chamber" {{ checked('provider_type', 'chamber') }}>
+									<input id="provider-type-chamber" class="provider-type" type="radio" name="provider_type" value="chamber" {% if data['settings']['provider_type'] == 'chamber' -%}checked="checked"{%- endif %}>
 									<label for="provider-type-chamber">Chamber</label>
 								</div>
 
 								<div class="multiple-choice">
-									<input id="provider-type-firm" class="provider-type" type="radio" name="provider_type" value="firm" {{ checked('provider_type', 'firm') }}>
+									<input id="provider-type-firm" class="provider-type" type="radio" name="provider_type" value="firm" {% if data['settings']['provider_type'] == 'firm' -%}checked="checked"{%- endif %}>
 									<label for="provider-type-firm">Firm</label>
 								</div>
 
@@ -77,7 +77,7 @@
 						        </legend>
 
 								<div class="multiple-choice" data-target="fee-scheme-agfs-panel">
-						            <input aria-controls="fee-scheme-agfs-panel" aria-expanded="false" id="fee-scheme-agfs" name="fee_scheme_checklist" type="checkbox" value="agfs" {% if (data['fee_scheme_checklist'] and 'agfs' in data['fee_scheme_checklist']) -%}checked="checked"{%- endif %}>
+						            <input aria-controls="fee-scheme-agfs-panel" aria-expanded="false" id="fee-scheme-agfs" name="fee_scheme" type="checkbox" value="AGFS" {% if (data['settings']['fee_scheme'] and 'AGFS' in data['settings']['fee_scheme']) -%}checked="checked"{%- endif %}>
 						            <label for="fee-scheme-agfs">
 						                <abbr onclick="" title="Advocate Graduated Fee Scheme" tabindex="0">AGFS</abbr>
 						            </label>
@@ -91,7 +91,7 @@
 								                    Supplier number
 													<span class="form-hint">For example, 123AB</span>
 								                </label>
-								                <input class="form-control form-control-1-3" id="agfs-supplier-number" name="agfs_supplier_number" type="text" value="{{data['agfs_supplier_number']}}">
+								                <input class="form-control form-control-1-3" id="agfs-supplier-number" name="agfs_account_number" type="text" value="{{data['settings']['agfs_account_number']}}">
 								            </div>
 
 								        </div>
@@ -99,7 +99,7 @@
 						        </div>
 
 								<div class="multiple-choice" data-target="fee-scheme-lgfs-panel">
-						            <input aria-controls="fee-scheme-lgfs-panel" aria-expanded="false" id="fee-scheme-lgfs" name="fee_scheme_checklist" type="checkbox" value="lgfs" {% if (data['fee_scheme_checklist'] and 'lgfs' in data['fee_scheme_checklist']) -%}checked="checked"{%- endif %}>
+						            <input aria-controls="fee-scheme-lgfs-panel" aria-expanded="false" id="fee-scheme-lgfs" name="fee_scheme" type="checkbox" value="AGFS" {% if (data['settings']['fee_scheme'] and 'LGFS' in data['settings']['fee_scheme']) -%}checked="checked"{%- endif %}>
 						            <label for="fee-scheme-lgfs">
 						                <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr>
 						            </label>
@@ -107,12 +107,18 @@
 
 						        <div class="panel panel-border-narrow js-hidden" id="fee-scheme-lgfs-panel">
 
+
+						        	{% for supplier in data['settings']['suppliers'] %}
+
 						        	<div class="grid-row list-item-row">
 
 						        		<div class="column-two-thirds">
 
 						        			<h2 class="heading-small list-item-heading">
-												Supplier 1
+												Supplier {{loop.index}}
+												{% if data['settings']['suppliers'].length > 1 -%}
+												<a id="remove-item-{{loop.index}}" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this supplier</span></a>
+												{%- endif %}
 											</h2>
 
 											<div class="form-group supplier-name">
@@ -120,7 +126,7 @@
 													Name
 													<span class="form-hint">For example, the city or street name</span>
 												</label>
-												<input type="text" class="form-control form-control-1-3" id="supplier-name-1" name="supplier_name_1" value="" autocomplete="off" autocapitalize="off">
+												<input type="text" class="form-control form-control-2-3" id="supplier-name-1" name="supplier_name_1" value="{{supplier.name}}" autocomplete="off" autocapitalize="off">
 											</div>
 
 											<div class="form-group supplier-postcode">
@@ -128,7 +134,7 @@
 													Postcode
 													<span class="form-hint">For example, SW11 1AA</span>
 												</label>
-												<input type="text" class="form-control form-control-1-3" id="supplier-postcode-1" name="supplier_postcode_1" value="" autocomplete="off" autocapitalize="off">
+												<input type="text" class="form-control form-control-1-3" id="supplier-postcode-1" name="supplier_postcode_1" value="{{supplier.address.postcode}}" autocomplete="off" autocapitalize="off">
 
 											</div>
 
@@ -137,7 +143,7 @@
 													Supplier number
 													<span class="form-hint">For example, 1A234B</span>
 												</label>
-												<input type="text" class="form-control form-control-1-3" id="supplier-number-1" name="supplier_number_1" value="" autocomplete="off" autocapitalize="off">
+												<input type="text" class="form-control form-control-1-3" id="supplier-number-1" name="supplier_number_1" value="{{supplier.lgfs_account_number}}" autocomplete="off" autocapitalize="off">
 											</div>
 
 											<hr style="margin-bottom:30px;">
@@ -145,6 +151,8 @@
 										</div>
 
 									</div>
+
+									{% endfor %}
 
 									<div class="grid-row">
 										<div class="column-two-thirds">
@@ -186,12 +194,12 @@
 								</legend>
 
 								<div class="multiple-choice inline">
-									<input id="vat-registered-yes" type="radio" name="vat_registered" value="yes" {{ checked('vat_registered', 'yes') }}>
+									<input id="vat-registered-yes" type="radio" name="vat_registered" value="yes" {% if data['settings']['vat_number'] >= 1 -%}checked="checked"{%- endif %}>
 									<label for="vat-registered-yes">Yes</label>
 								</div>
 
 								<div class="multiple-choice">
-									<input id="vat-registered-no" type="radio" name="vat_registered" value="no" {{ checked('vat_registered', 'no') }}>
+									<input id="vat-registered-no" type="radio" name="vat_registered" value="no" {% if data['settings']['vat_number'] < 1 -%}checked="checked"{%- endif %}>
 									<label for="vat-registered-no">No</label>
 								</div>
 

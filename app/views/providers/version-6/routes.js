@@ -27,6 +27,8 @@ router.get('/auth', function(req, res) {
 
     } else if (utils.authenticate("provider", req.session.data.username) == "litigators") {
 
+        req.session.data.settings = utils.getDummyProvider(1078);
+
         res.redirect(`/${req.feature}/${req.version}/litigators/`);
 
     } else {
@@ -520,6 +522,7 @@ router.get('/advocates/:claim_id([0-9]+)/details', function(req, res) {
 // ==============================================
 
 router.get('/litigators/', function(req, res) {
+    req.session.data.settings = utils.getDummyProvider(1078);
     res.render(`${req.feature}/${req.version}/litigators/index`,
         {
             links: {
@@ -538,6 +541,7 @@ router.get('/litigators/start', function(req, res) {
 });
 
 router.get('/litigators/bill-type', function(req, res) {
+    req.session.data.settings = utils.getDummyProvider(1078);
     res.render(`${req.feature}/${req.version}/litigators/bill-type`,
     	{
             links: {
@@ -772,6 +776,8 @@ router.get('/litigators/travel-expenses', function(req, res) {
 
     }
 
+    console.log(utils.getDummySupplier(1078,req.session.data.supplier_number));
+
     res.render(`${req.feature}/${req.version}/litigators/travel-expenses`,
     	{
             links: {
@@ -781,7 +787,7 @@ router.get('/litigators/travel-expenses', function(req, res) {
             },
             travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
             travel_reasons: utils.getTravelReasons('lgfs'),
-            travel_origin: utils.getSupplier(12345,req.session.data.supplier_number)[0].address.postcode,
+            travel_origin: utils.getDummySupplier(1078,req.session.data.supplier_number)[0].address.postcode,
             crown_courts: utils.getCrownCourts(),
             magistrates_courts: utils.getMagistratesCourts(),
             prisons: utils.getPrisons(),
@@ -856,7 +862,8 @@ router.get('/litigators/thank-you', function(req, res) {
 });
 
 router.get('/litigators/cancel', function(req, res) {
-    req.session.destroy()
+    req.session.destroy();
+    req.session.data.settings = utils.getDummyProvider(1078);
     res.redirect(`/${req.feature}/${req.version}/litigators/`);
 });
 
@@ -882,16 +889,17 @@ router.get('/litigators/settings', function(req, res) {
                 'edit_provider' : req.baseUrl + '/litigators/settings/provider',
                 'edit_user' : req.baseUrl + '/litigators/settings/user',
                 'add_user' : req.baseUrl + '/litigators/settings/user/add'
-            },
-            messages: {
-                text: 'Huzzah! You saved the provider details'
-            },
-            errors: {
-                text: 'Boo! Something went wrong'
-            },
-            warnings: {
-                text: 'Umm! Something wasn\'t quite right, but no matter'
             }
+            // ,
+            // messages: {
+            //     text: 'Huzzah! You saved the provider details'
+            // },
+            // errors: {
+            //     text: 'Boo! Something went wrong'
+            // },
+            // warnings: {
+            //     text: 'Umm! Something wasn\'t quite right, but no matter'
+            // }
         });
 });
 
@@ -902,8 +910,7 @@ router.get('/litigators/settings/provider', function(req, res) {
                 'save' : req.baseUrl + '/litigators/settings' + '?success=true',
                 'cancel' : req.baseUrl + '/litigators/settings',
                 'back' : req.baseUrl + '/litigators/settings'
-            },
-            provider: []
+            }
         });
 });
 

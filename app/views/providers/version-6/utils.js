@@ -16,8 +16,39 @@ var messages = require('./data/messages.json');
 var advocateClaims = require('./data/claims_advocates.json');
 var litigatorClaims = require('./data/claims_litigators.json');
 var providers = require('./data/providers.json');
+var providersLGFS = require('./data/providers_lgfs.json');
 
 module.exports = {
+
+	getDummyProvider: function(provider_id) {
+
+		if (!provider_id) return null
+
+		var providerObj = providersLGFS.filter( function(obj) {
+			return (obj.id == provider_id)
+		});
+
+		return providerObj[0];
+
+	},
+
+	getDummyUser: function(user_id) {
+
+	},
+
+	getDummySupplier: function(provider_id, supplier_number) {
+
+		if (!provider_id) return null
+
+		if (!supplier_number) return null
+
+		var suppliers = this.getDummyProvider(provider_id).suppliers;
+
+		return suppliers.filter( function(obj) {
+	        return !!~obj.lgfs_account_number.indexOf(supplier_number);
+	    });
+
+	},
 
 	getProviders: function(type) {
 		return providers
