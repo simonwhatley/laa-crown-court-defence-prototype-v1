@@ -4,6 +4,33 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{% block page_scripts %}
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('.generate-key').on('click', function (e) {
+    e.preventDefault();
+    console.log('hello');
+    $('.api-key').html(generateUUID());
+  });
+
+  function generateUUID() {
+    var d = new Date().getTime();
+    if(Date.now){
+        d = Date.now(); //high-precision timer
+    }
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+  };
+
+});
+</script>
+{% endblock %}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -64,7 +91,7 @@
 	                    <th class="bold" scope="row">
 	                        API key
 	                    </th>
-	                    <td>{{data['settings']['api_key']}}</td>
+	                    <td class="api-key">{{data['settings']['api_key']}}</td>
 	                </tr>
 	                <tr>
 	                    <th class="bold" scope="row">
@@ -102,7 +129,7 @@
 				<div class="form-section">
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Edit provider details" formaction="{{links.edit_provider}}">
-						<input type="submit" class="button button-tertiary" value="Generate new API key">
+						<input type="button" class="button button-tertiary generate-key" value="Generate new API key">
 					</div>
 				</div>
 			</div>
