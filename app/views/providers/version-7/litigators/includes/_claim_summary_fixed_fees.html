@@ -1,0 +1,26 @@
+{% if data['pages_of_evidence_net_amount'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Date of hearing
+			</th>
+			<td>
+				{% if data['date_of_hearing_day'].length and data['date_of_hearing_month'].length and data['date_of_hearing_year'].length -%}
+					{{data['date_of_hearing_day']}}/{{data['date_of_hearing_month']}}/{{data['date_of_hearing_year']}}
+				{% else %}
+					Date not provided
+				{%- endif %}
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Net amount
+			</th>
+			<td>&pound;{{data['pages_of_evidence_net_amount']|numeral('0,0.00')}}</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no fixed fees for this claim.</p>
+{%- endif %}

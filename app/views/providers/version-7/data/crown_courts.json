@@ -1,0 +1,1150 @@
+[
+    {
+        "key": "aylesbury",
+        "name": "Aylesbury",
+        "address": {
+            "postcode": "HP21 7FT"
+        },
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "court_code": 401,
+        "other_names": ["Aylesbury Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "basildon",
+        "name": "Basildon",
+        "address": {
+            "postcode": "SS14 2EW"
+        },
+        "location": {
+            "latitude": 51.5725704870882,
+            "longitude": 0.454792763854896
+        },
+        "court_code": 461,
+        "other_names": ["Basildon Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "birmingham",
+        "name": "Birmingham",
+        "address": {
+            "postcode": "B4 7NA"
+        },
+        "location": {
+            "latitude": 52.4830916620748,
+            "longitude": -1.89415636255881
+        },
+        "court_code": 404,
+        "other_names": ["Birmingham Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "blackfriars",
+        "name": "Blackfriars",
+        "address": {
+            "postcode": "SE1 0BT"
+        },
+        "location": {
+            "latitude": 51.5025563574404,
+            "longitude": -0.100647177718272
+        },
+        "court_code": 428,
+        "other_names": ["Blackfriars Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "bolton",
+        "name": "Bolton",
+        "address": {
+            "postcode": "BL1 1SU"
+        },
+        "location": {
+            "latitude": 53.5782069865149,
+            "longitude": -2.43368919024495
+        },
+        "court_code": 470,
+        "other_names": ["Bolton Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "bournemouth",
+        "name": "Bournemouth",
+        "address": {
+            "postcode": "BH7 7DS"
+        },
+        "location": {
+            "latitude": 50.7479457172472,
+            "longitude": -1.81626576970749
+        },
+        "court_code": 406,
+        "other_names": ["Bournemouth Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "bradford",
+        "name": "Bradford",
+        "address": {
+            "postcode": "BD1 1JA"
+        },
+        "location": {
+            "latitude": 53.7925769520648,
+            "longitude": -1.74935927078404
+        },
+        "court_code": 402,
+        "other_names": ["Bradford Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "bristol",
+        "name": "Bristol",
+        "address": {
+            "postcode": "BS1 1DA"
+        },
+        "location": {
+            "latitude": 51.4547964396741,
+            "longitude": -2.59500233767775
+        },
+        "court_code": 408,
+        "other_names": ["Bristol Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "burnley",
+        "name": "Burnley",
+        "address": {
+            "postcode": "BB11 1XD"
+        },
+        "location": {
+            "latitude": 53.7877303801683,
+            "longitude": -2.24715358500878
+        },
+        "court_code": 154,
+        "other_names": ["Burnley Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "caernarfon",
+        "name": "Caernarfon",
+        "address": {
+            "postcode": "LL55 2DF"
+        },
+        "location": {
+            "latitude": 53.1407287883649,
+            "longitude": -4.26406731606224
+        },
+        "court_code": 755,
+        "other_names": ["Caernarfon Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "cambridge",
+        "name": "Cambridge",
+        "address": {
+            "postcode": "CB1 1BT"
+        },
+        "location": {
+            "latitude": 52.2068096702358,
+            "longitude": 0.136809436452224
+        },
+        "court_code": 410,
+        "other_names": ["Cambridge Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "canterbury",
+        "name": "Canterbury",
+        "address": {
+            "postcode": "CT1 1ZA"
+        },
+        "location": {
+            "latitude": 51.2818940025355,
+            "longitude": 1.09498000444547
+        },
+        "court_code": 163,
+        "other_names": ["Canterbury Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "cardiff",
+        "name": "Cardiff",
+        "address": {
+            "postcode": "CF10 3PG"
+        },
+        "location": {
+            "latitude": 51.4845524681798,
+            "longitude": -3.18027112103559
+        },
+        "court_code": 411,
+        "other_names": ["Cardiff Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "carlisle",
+        "name": "Carlisle",
+        "address": {
+            "postcode": "CA1 1DJ"
+        },
+        "location": {
+            "latitude": 54.893435679732,
+            "longitude": -2.93152574181485
+        },
+        "court_code": 412,
+        "other_names": ["Carlisle Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "central_criminal_court",
+        "name": "Central Criminal Court",
+        "address": {
+            "postcode": "EC4M 7EH"
+        },
+        "location": {
+            "latitude": 51.515491528262,
+            "longitude": -0.101997216196
+        },
+        "court_code": 413,
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "key": "chelmsford",
+        "name": "Chelmsford",
+        "address": {
+            "postcode": "CM1 1EL"
+        },
+        "location": {
+            "latitude": 51.7424914438681,
+            "longitude": 0.500601883244749
+        },
+        "court_code": 414,
+        "other_names": ["Chelmsford Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "chester",
+        "name": "Chester",
+        "address": {
+            "postcode": "CH1 2AN"
+        },
+        "location": {
+            "latitude": 53.1858923485779,
+            "longitude": -2.89179395128739
+        },
+        "court_code": 415,
+        "other_names": ["Chester Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "chichester",
+        "name": "Chichester",
+        "address": {
+            "postcode": "PO19 1SX"
+        },
+        "location": {
+            "latitude": 50.832554,
+            "longitude": 0.779876
+        },
+        "court_code": 172,
+        "other_names": ["Chichester Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "coventry",
+        "name": "Coventry",
+        "address": {
+            "postcode": "CV1 2SN"
+        },
+        "location": {
+            "latitude": 52.4055860889745,
+            "longitude": -1.50643976744468
+        },
+        "court_code": 180,
+        "other_names": ["Coventry Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "croydon",
+        "name": "Croydon",
+        "address": {
+            "postcode": "CR9 5AB"
+        },
+        "location": {
+            "latitude": 51.3733376742269,
+            "longitude": -0.0921491712278724
+        },
+        "court_code": 418,
+        "other_names": ["Coydon Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "derby",
+        "name": "Derby",
+        "address": {
+            "postcode": "DE1 2XE"
+        },
+        "location": {
+            "latitude": 52.9224351570004,
+            "longitude": -1.47306907024208
+        },
+        "court_code": 419,
+        "other_names": ["Derby Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "doncaster_north",
+        "name": "Doncaster (North)",
+        "address": {
+            "postcode": "DN1 3HS"
+        },
+        "location": {
+            "latitude": 53.5189921764188,
+            "longitude": -1.12956276053974
+        },
+        "court_code": 2771,
+        "other_names": ["Doncaster Justice Centre North"],
+        "abbreviations": []
+    },
+    {
+        "key": "doncaster_south",
+        "name": "Doncaster (South)",
+        "address": {
+            "postcode": "DN1 3HS"
+        },
+        "location": {
+            "latitude": 53.5189921764188,
+            "longitude": -1.12956276053974
+        },
+        "court_code": 420,
+        "other_names": ["Doncaster Justice Centre South"],
+        "abbreviations": []
+    },
+    {
+        "key": "durham",
+        "name": "Durham",
+        "address": {
+            "postcode": "DH1 3HW"
+        },
+        "location": {
+            "latitude": 54.7740855852911,
+            "longitude": -1.56790943245914
+        },
+        "court_code": 422,
+        "other_names": ["Durham Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "exeter",
+        "name": "Exeter",
+        "address": {
+            "postcode": "EX1 1UH"
+        },
+        "location": {
+            "latitude": 50.7212787671321,
+            "longitude": -3.52523012822691
+        },
+        "court_code": 423,
+        "other_names": ["Exeter Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "gloucester",
+        "name": "Gloucester",
+        "address": {
+            "postcode": "GL1 2TS"
+        },
+        "location": {
+            "latitude": 51.8659967035368,
+            "longitude": -2.24926613446246
+        },
+        "court_code": 424,
+        "other_names": ["Gloucester Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "grimsby",
+        "name": "Grimsby",
+        "address": {
+            "postcode": "DN31 1HX"
+        },
+        "location": {
+            "latitude": 53.5648519620682,
+            "longitude": -0.0822233324957824
+        },
+        "court_code": 425,
+        "other_names": ["Great Grimsby Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "guildford",
+        "name": "Guildford",
+        "address": {
+            "postcode": "GU1 4ST"
+        },
+        "location": {
+            "latitude": 51.2387590335801,
+            "longitude": -0.57895174878235
+        },
+        "court_code": 474,
+        "other_names": ["Guildford Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "harrow",
+        "name": "Harrow",
+        "address": {
+            "postcode": "HA1 4TU"
+        },
+        "location": {
+            "latitude": 51.5938155822479,
+            "longitude": -0.339824086138869
+        },
+        "court_code": 468,
+        "other_names": ["Harrow Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "hull",
+        "name": "Hull",
+        "address": {
+            "postcode": "HU1 1RD"
+        },
+        "location": {
+            "latitude": 53.74106329227,
+            "longitude": -0.333155165813487
+        },
+        "court_code": 1943,
+        "other_names": ["Hull and Holderness Magistrates' Court and Hearing Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "inner_london",
+        "name": "Inner London",
+        "address": {
+            "postcode": "SE1 6AZ"
+        },
+        "location": {
+            "latitude": 51.4981822462243,
+            "longitude": -0.09653563552485
+        },
+        "court_code": 440,
+        "other_names": ["Inner London Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "ipswich",
+        "name": "Ipswich",
+        "address": {
+            "postcode": "IP1 2AG"
+        },
+        "location": {
+            "latitude": 52.0535339057717,
+            "longitude": 1.14359663073752
+        },
+        "court_code": 426,
+        "other_names": ["Ipswich Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "isleworth",
+        "name": "Isleworth",
+        "address": {
+            "postcode": "TW7 5LP"
+        },
+        "location": {
+            "latitude": 51.4792164294163,
+            "longitude": -0.340330610562263
+        },
+        "court_code": 475,
+        "other_names": ["Isleworth Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "kingston_upon_thames",
+        "name": "Kingston Upon Thames",
+        "address": {
+            "postcode": "KT1 2BB"
+        },
+        "location": {
+            "latitude": 51.4058949642193,
+            "longitude": -0.304698003707056
+        },
+        "court_code": 427,
+        "other_names": ["Kingston Upon Thames Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "leeds",
+        "name": "Leeds",
+        "address": {
+            "postcode": "LS1 3BG"
+        },
+        "location": {
+            "latitude": 53.8003781366327,
+            "longitude": -1.55175512913355
+        },
+        "court_code": 243,
+        "other_names": ["Leeds Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "leicester",
+        "name": "Leicester",
+        "address": {
+            "postcode": "LE1 6HG"
+        },
+        "location": {
+            "latitude": 52.6299124937924,
+            "longitude": -1.12737419637536
+        },
+        "court_code": 430,
+        "other_names": ["Leicester Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "lewes",
+        "name": "Lewes",
+        "address": {
+            "postcode": "BN7 1YB"
+        },
+        "location": {
+            "latitude": 50.8730858584157,
+            "longitude": 0.00974478900181434
+        },
+        "court_code": 431,
+        "other_names": ["Lewes Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "lincoln",
+        "name": "Lincoln",
+        "address": {
+            "postcode": "LN1 3GA"
+        },
+        "location": {
+            "latitude": 53.235224125584,
+            "longitude": -0.541738665330067
+        },
+        "court_code": 432,
+        "other_names": ["Lincoln Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "liverpool",
+        "name": "Liverpool",
+        "address": {
+            "postcode": "L2 1XA"
+        },
+        "location": {
+            "latitude": 53.4040667663389,
+            "longitude": -2.98968556300077
+        },
+        "court_code": 433,
+        "other_names": ["Liverpool Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "luton",
+        "name": "Luton",
+        "address": {
+            "postcode": "LU1 2AA"
+        },
+        "location": {
+            "latitude": 51.8780269954415,
+            "longitude": -0.414277876664374
+        },
+        "court_code": 769,
+        "other_names": ["Luton Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "maidstone",
+        "name": "Maidstone",
+        "address": {
+            "postcode": "ME16 8EQ"
+        },
+        "location": {
+            "latitude": 51.2709856044174,
+            "longitude": 0.518683761668935
+        },
+        "court_code": 434,
+        "other_names": ["Maidstone Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "manchester_crown_square",
+        "name": "Manchester (Crown Square)",
+        "address": {
+            "postcode": "M3 3FL"
+        },
+        "location": {
+            "latitude": 53.4801157281972,
+            "longitude": -2.25220132039793
+        },
+        "court_code": 435,
+        "other_names": ["Manchester Crown Court (Crown Square)"],
+        "abbreviations": []
+    },
+    {
+        "key": "manchester_minshull_street",
+        "name": "Manchester (Minshull Street)",
+        "address": {
+            "postcode": "M1 3FS"
+        },
+        "location": {
+            "latitude": 53.4786763638985,
+            "longitude": -2.23516638748469
+        },
+        "court_code": 436,
+        "other_names": ["Manchester Crown Court (Minshull Street)"],
+        "abbreviations": []
+    },
+    {
+        "key": "merthyr_tydfil",
+        "name": "Merthyr Tydfil",
+        "address": {
+            "postcode": "CF47 8BH"
+        },
+        "location": {
+            "latitude": 51.7477732687062,
+            "longitude": -3.38102617081996
+        },
+        "court_code": 3270,
+        "other_names": ["Merthyr Tydfil Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "middlesex_guildhall",
+        "name": "Middlesex Guildhall",
+        "address": {
+            "postcode": "SW1P 3BD"
+        },
+        "location": {
+            "latitude": 51.50033509,
+            "longitude": -0.1280427091
+        },
+        "court_code": 464,
+        "other_names": ["Middlesex Guildhall Crown Court", "Supreme Court of the United Kingdom"],
+        "abbreviations": []
+    },
+    {
+        "key": "mold",
+        "name": "Mold",
+        "address": {
+            "postcode": "CH7 1AE"
+        },
+        "location": {
+            "latitude": 53.1769977097904,
+            "longitude": -3.1371708218017
+        },
+        "court_code": 769,
+        "other_names": ["Mold Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "newcastle",
+        "name": "Newcastle",
+        "address": {
+            "postcode": "NE1 3LA"
+        },
+        "location": {
+            "latitude": 54.9697252351941,
+            "longitude": -1.6036775065579
+        },
+        "court_code": 278,
+        "other_names": ["Newcastle upon Tyne Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "newport",
+        "name": "Newport",
+        "address": {
+            "postcode": "NP20 4PR"
+        },
+        "location": {
+            "latitude": 51.5883859951196,
+            "longitude": -3.0049375919773
+        },
+        "court_code": 441,
+        "other_names": ["Newport (South Wales) Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "newport_iow",
+        "name": "Newport (IOW)",
+        "address": {
+            "postcode": "PO30 5YT"
+        },
+        "location": {
+            "latitude": 50.70136996,
+            "longitude": -1.291445346
+        },
+        "court_code": 478,
+        "other_names": ["Isle of Wight Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "northampton",
+        "name": "Northampton",
+        "address": {
+            "postcode": "NN1 3HQ"
+        },
+        "location": {
+            "latitude": 52.2408044699868,
+            "longitude": -0.893639968368177
+        },
+        "court_code": 282,
+        "other_names": ["Northampton Crown Court, County Court and Family Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "norwich",
+        "name": "Norwich",
+        "address": {
+            "postcode": "NR3 1UR"
+        },
+        "location": {
+            "latitude": 52.6341463590337,
+            "longitude": 1.30103596207782
+        },
+        "court_code": 443,
+        "other_names": ["Norwich Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "nottingham",
+        "name": "Nottingham",
+        "address": {
+            "postcode": "NG1 7EL"
+        },
+        "location": {
+            "latitude": 52.9485418227735,
+            "longitude": -1.14665062833698
+        },
+        "court_code": 444,
+        "other_names": ["Nottingham Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "oxford",
+        "name": "Oxford",
+        "address": {
+            "postcode": "OX1 1TL"
+        },
+        "location": {
+            "latitude": 51.748172493341,
+            "longitude": -1.25707221578904
+        },
+        "court_code": 291,
+        "other_names": ["Oxford Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "peterborough",
+        "name": "Peterborough",
+        "address": {
+            "postcode": "PE1 1EJ"
+        },
+        "location": {
+            "latitude": 52.5698909822282,
+            "longitude": -0.239916760061136
+        },
+        "court_code": 294,
+        "other_names": ["Peterborough Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "plymouth",
+        "name": "Plymouth",
+        "address": {
+            "postcode": "PL1 2ER"
+        },
+        "location": {
+            "latitude": 50.369200794385,
+            "longitude": -4.14169479878621
+        },
+        "court_code": 296,
+        "other_names": ["Plymouth Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "portsmouth",
+        "name": "Portsmouth",
+        "address": {
+            "postcode": "PO1 2EB"
+        },
+        "location": {
+            "latitude": 50.7957545909478,
+            "longitude": -1.09116292221139
+        },
+        "court_code": 302,
+        "other_names": ["Portsmouth Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "preston",
+        "name": "Preston",
+        "address": {
+            "postcode": "PR1 2PD"
+        },
+        "location": {
+            "latitude": 53.7595609766745,
+            "longitude": -2.6985266819629
+        },
+        "court_code": 448,
+        "other_names": ["Preston Crown Court and Family Court (Sessions House)"],
+        "abbreviations": []
+    },
+    {
+        "key": "reading",
+        "name": "Reading",
+        "address": {
+            "postcode": "RG1 3EH"
+        },
+        "location": {
+            "latitude": 51.4561392014212,
+            "longitude": -0.967403375305064
+        },
+        "court_code": 449,
+        "other_names": ["Reading Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "salisbury",
+        "name": "Salisbury",
+        "address": {
+            "postcode": "SP2 7EP"
+        },
+        "location": {
+            "latitude": 51.073379725385,
+            "longitude": -1.81038594846605
+        },
+        "court_code": 480,
+        "other_names": ["Salisbury Law Courts"],
+        "abbreviations": []
+    },
+    {
+        "key": "sheffield",
+        "name": "Sheffield",
+        "address": {
+            "postcode": "S3 8PH"
+        },
+        "location": {
+            "latitude": 53.3855580903425,
+            "longitude": -1.46873912881678
+        },
+        "court_code": 320,
+        "other_names": ["Sheffield Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "shrewsbury",
+        "name": "Shrewsbury",
+        "address": {
+            "postcode": "SY2 6LU"
+        },
+        "location": {
+            "latitude": 52.7046219817023,
+            "longitude": -2.73113637211779
+        },
+        "court_code": 452,
+        "other_names": ["Shrewsbury Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "snaresbrook",
+        "name": "Snaresbrook",
+        "address": {
+            "postcode": "E11 1QW"
+        },
+        "location": {
+            "latitude": 51.5810171717876,
+            "longitude": 0.0172837193585965
+        },
+        "court_code": 453,
+        "other_names": ["Snaresbrook Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "southampton",
+        "name": "Southampton",
+        "address": {
+            "postcode": "SO15 2XQ"
+        },
+        "location": {
+            "latitude": 50.913707953546,
+            "longitude": -1.40297700526084
+        },
+        "court_code": 454,
+        "other_names": ["Southampton Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "southwark",
+        "name": "Southwark",
+        "address": {
+            "postcode": "SE1 2HU"
+        },
+        "location": {
+            "latitude": 51.5057178019167,
+            "longitude": -0.082172100329841
+        },
+        "court_code": 471,
+        "other_names": ["Southwark Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "stafford",
+        "name": "Stafford",
+        "address": {
+            "postcode": "ST16 2QQ"
+        },
+        "location": {
+            "latitude": 52.805431673,
+            "longitude": -2.11942945377652
+        },
+        "court_code": 455,
+        "other_names": ["Stafford Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "st_albans",
+        "name": "St Albans",
+        "address": {
+            "postcode": "AL1 3JW"
+        },
+        "location": {
+            "latitude": 51.7518479641539,
+            "longitude": -0.335151398888085
+        },
+        "court_code": 450,
+        "other_names": ["St Albans Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "stoke_on_trent",
+        "name": "Stoke on Trent",
+        "address": {
+            "postcode": "ST1 3BP"
+        },
+        "location": {
+            "latitude": 53.0220398543417,
+            "longitude": -2.17575418049657
+        },
+        "court_code": 338,
+        "other_names": ["Stoke-on-Trent Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "swansea",
+        "name": "Swansea",
+        "address": {
+            "postcode": "SA1 4PF"
+        },
+        "location": {
+            "latitude": 51.6144446120671,
+            "longitude": -3.95754186935881
+        },
+        "court_code": 457,
+        "other_names": ["Swansea Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "swindon",
+        "name": "Swindon",
+        "address": {
+            "postcode": "SN1 2HG"
+        },
+        "location": {
+            "latitude": 51.5611061010577,
+            "longitude": -1.78191108420037
+        },
+        "court_code": 345,
+        "other_names": ["Swindon Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "taunton",
+        "name": "Taunton",
+        "address": {
+            "postcode": "TA1 4EU"
+        },
+        "location": {
+            "latitude": 51.0127734952394,
+            "longitude": -3.10770961737398
+        },
+        "court_code": 459,
+        "other_names": ["Taunton Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "teesside_combined_court",
+        "name": "Teesside",
+        "address": {
+            "postcode": "TS1 2AE"
+        },
+        "location": {
+            "latitude": 54.5752108617994,
+            "longitude": -1.23123226553245
+        },
+        "court_code": 460,
+        "other_names": ["Teesside Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "teesside_justice_centre",
+        "name": "Teesside",
+        "address": {
+            "postcode": "TS1 2AS"
+        },
+        "location": {
+            "latitude": 54.5735245038242,
+            "longitude": -1.23457436754436
+        },
+        "court_code": 1249,
+        "other_names": ["Teesside Justice Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "truro",
+        "name": "Truro",
+        "address": {
+            "postcode": "TR1 2PB"
+        },
+        "location": {
+            "latitude": 50.2656342988352,
+            "longitude": -5.05640976223722
+        },
+        "court_code": 477,
+        "other_names": ["Truro Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "warrington",
+        "name": "Warrington",
+        "address": {
+            "postcode": "WA1 1UR"
+        },
+        "location": {
+            "latitude": 53.3906759247184,
+            "longitude": -2.59880659136263
+        },
+        "court_code": "",
+        "other_names": ["Warrington Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "warwick",
+        "name": "Warwick",
+        "address": {
+            "postcode": "CV32 4EL"
+        },
+        "location": {
+            "latitude": 52.2883911670227,
+            "longitude": -1.53345723984609
+        },
+        "court_code": 361,
+        "other_names": ["Warwick Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "weymouth_and_dorcester",
+        "name": "Weymouth and Dorcester",
+        "address": {
+            "postcode": "DT4 8BS"
+        },
+        "location": {
+            "latitude": 50.6084056337918,
+            "longitude": -2.46010538388167
+        },
+        "court_code": 1530,
+        "other_names": ["Weymouth Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "winchester",
+        "name": "Winchester",
+        "address": {
+            "postcode": "SO23 9EL"
+        },
+        "location": {
+            "latitude": 51.0624500042699,
+            "longitude": -1.31898495842922
+        },
+        "court_code": 376,
+        "other_names": ["Winchester Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "wolverhampton",
+        "name": "Wolverhampton",
+        "address": {
+            "postcode": "WV1 3LQ"
+        },
+        "location": {
+            "latitude": 52.5843648165989,
+            "longitude": -2.1221323944738
+        },
+        "court_code": 378,
+        "other_names": ["Wolverhampton Combined Court Centre"],
+        "abbreviations": []
+    },
+    {
+        "key": "wood_green",
+        "name": "Wood Green",
+        "address": {
+            "postcode": "N22 5LF"
+        },
+        "location": {
+            "latitude": 51.5988217392883,
+            "longitude": -0.105138017084144
+        },
+        "court_code": 469,
+        "other_names": ["Wood Green Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "woolwich",
+        "name": "Woolwich",
+        "address": {
+            "postcode": "SE28 0EY"
+        },
+        "location": {
+            "latitude": 51.496496049117,
+            "longitude": 0.0901378035644679
+        },
+        "court_code": 472,
+        "other_names": ["Woolwich Crown Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "worcester",
+        "name": "Worcester",
+        "address": {
+            "postcode": "WR1 1EQ"
+        },
+        "location": {
+            "latitude": 52.1969528418992,
+            "longitude": -2.22188361945163
+        },
+        "court_code": 380,
+        "other_names": ["Worcester Combined Court"],
+        "abbreviations": []
+    },
+    {
+        "key": "york",
+        "name": "York",
+        "address": {
+            "postcode": "YO1 9WZ"
+        },
+        "location": {
+            "latitude": 53.9552745602961,
+            "longitude": -1.07964699865979
+        },
+        "court_code": 467,
+        "other_names": ["York Crown Court"],
+        "abbreviations": []
+    }
+]

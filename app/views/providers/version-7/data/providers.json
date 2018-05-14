@@ -1,0 +1,94 @@
+[
+	{
+		"id": 12345,
+		"name": "Petty & France LLP",
+		"code": "1Z999A",
+		"type": ["litigator"],
+		"scheme": ["LGFS"],
+		"offices": [
+			{
+				"name": "Bristol",
+				"code": "5A000Z",
+				"address": {
+					"city": "Bristol",
+					"postcode": "BS1 6TY"
+				},
+				"location": {
+					"latitude": 51.44925378,
+					"longitude": -2.608011095
+				}
+			},
+			{
+				"name": "Liverpool",
+				"code": "6B111Y",
+				"address": {
+					"city": "Liverpool",
+					"postcode": "L3 1HU"
+				},
+				"location": {
+					"latitude": 53.40598382,
+					"longitude": -2.995882459
+				}
+			},
+			{
+				"name": "London",
+				"code": "7C222X",
+				"address": {
+					"city": "London",
+					"postcode": "EC4Y 7BB"
+				},
+				"location": {
+					"latitude": 51.51345921,
+					"longitude": -0.1097922035
+				}
+			},
+			{
+				"name": "Nottingham",
+				"code": "8D333W",
+				"address": {
+					"city": "Nottingham",
+					"postcode": "NG1 6EL"
+				},
+				"location": {
+					"latitude": 52.94965975,
+					"longitude": -1.154650855
+				}
+			},
+			{
+				"name": "Sheffield",
+				"code": "9E444V",
+				"address": {
+					"city": "Sheffield",
+					"postcode": "S1 2LG"
+				},
+				"location": {
+					"latitude": 53.38069641,
+					"longitude": -1.469010077
+				}
+			}
+		],
+		"users": []
+	},
+	{
+		"id": 67890,
+		"name": "Equity Court",
+		"code": "",
+		"type": ["advocate"],
+		"scheme": ["AGFS"],
+		"offices": [
+			{
+				"name": "London",
+				"code": "",
+				"address": {
+					"city": "London",
+					"postcode": "EC4Y 7BL"
+				},
+				"location": {
+					"latitude": 51.5134743,
+					"longitude": -0.1107283697
+				}
+			}
+		],
+		"users": []
+	}
+]

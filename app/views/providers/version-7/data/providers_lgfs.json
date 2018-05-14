@@ -1,0 +1,491 @@
+[
+  {
+    "id": 1078,
+    "agfs_account_number": "002YQ",
+    "api_key": "d5ab1c8d-a2af-427c-acd9-c2482ed31256",
+    "provider_name": "Petty & France LLP",
+    "vat_number": 403564279,
+    "organisation_type": {
+      "code": "LLP",
+      "description": "Limited Liability Partnership"
+    },
+    "provider_type": "firm",
+    "fee_scheme": [
+      "AGFS",
+      "LGFS"
+    ],
+    "account_status": "active",
+    "suppliers": [
+      {
+        "name": "Birmingham (Corporation Street)",
+        "lgfs_account_number": "1K905R",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "210 Corporation Street",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Birmingham",
+          "county": "",
+          "postcode": "B4 6QB"
+        },
+        "location": {
+          "latitude": 52.4836566625297,
+          "longitude": -1.89263830110957
+        },
+        "region": "West Midlands",
+        "dx": {
+          "reference": 23519,
+          "centre": "BIRMINGHAM 3"
+        }
+      },
+      {
+        "name": "Birmingham (Hodge Hill)",
+        "lgfs_account_number": "2M410C",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "9A Coleshill Road",
+          "address_line_2": "Hodge Hill",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Birmingham",
+          "county": "",
+          "postcode": "B36 8DT"
+        },
+        "location": {
+          "latitude": 52.4941727215117,
+          "longitude": -1.81743672265755
+        },
+        "region": "West Midlands",
+        "dx": {
+          "reference": 23519,
+          "centre": "BIRMINGHAM 3"
+        }
+      },
+      {
+        "name": "Birmingham (Northfield)",
+        "lgfs_account_number": "2F741Q",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "896 Bristol Road",
+          "address_line_2": "Northfield",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Birmingham",
+          "county": "",
+          "postcode": "B31 2NS"
+        },
+        "location": {
+          "latitude": 52.4137507462409,
+          "longitude": -1.97187523967601
+        },
+        "region": "West Midlands",
+        "dx": {
+          "reference": 23519,
+          "centre": "BIRMINGHAM 3"
+        }
+      },
+      {
+        "name": "Brighton",
+        "lgfs_account_number": "2N915N",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "Basement",
+          "address_line_2": "44 Grand Parade",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Brighton",
+          "county": "East Sussex",
+          "postcode": "BN2 9QA"
+        },
+        "location": {
+          "latitude": 50.8249431996396,
+          "longitude": -0.135392860987331
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Bury",
+        "lgfs_account_number": "2M411D",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "18 Bolton Street",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Bury",
+          "county": "",
+          "postcode": "BL9 0LQ"
+        },
+        "location": {
+          "latitude": 53.5936649228857,
+          "longitude": -2.2993967391912
+        },
+        "region": "North West",
+        "dx": {
+          "reference": 14451,
+          "centre": "MANCHESTER 2"
+        }
+      },
+      {
+        "name": "Chatham (King Street)",
+        "lgfs_account_number": "2N826R",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "The Old Ragged School",
+          "address_line_2": "King Street",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Chatham",
+          "county": "Kent",
+          "postcode": "ME4 4LY"
+        },
+        "location": {
+          "latitude": 51.383334,
+          "longitude": 0.529146
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Chatham (Maidstone Road)",
+        "lgfs_account_number": "2P418K",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "F25, Innovation Centre",
+          "address_line_2": "Maidstone Road",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Chatham",
+          "county": "Kent",
+          "postcode": "ME5 9FD"
+        },
+        "location": {
+          "latitude": 51.3475928491759,
+          "longitude": 0.507401775211086
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Dartford",
+        "lgfs_account_number": "2N827T",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "Haselmere",
+          "address_line_2": "4 Summerhill Road",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Dartford",
+          "county": "Kent",
+          "postcode": "DA1 2LP"
+        },
+        "location": {
+          "latitude": 51.4432301544385,
+          "longitude": 0.211247386385093
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Hastings",
+        "lgfs_account_number": "2P417J",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "45 Robertson Road",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Hastings",
+          "county": "",
+          "postcode": "TN34 1HL"
+        },
+        "location": {
+          "latitude": 50.8552127280787,
+          "longitude": 0.57797231415013
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "London (Brixton)",
+        "lgfs_account_number": "2L705L",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "516 Brixton Road",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "London",
+          "county": "",
+          "postcode": "SW9 8EN"
+        },
+        "location": {
+          "latitude": 51.4615994964175,
+          "longitude": -0.11596656815823
+        },
+        "region": "London",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "London (Camberwell)",
+        "lgfs_account_number": "2L669X",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "18 Camberwell Church Street",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "London",
+          "county": "",
+          "postcode": "SE5 8QU"
+        },
+        "location": {
+          "latitude": 51.473799856002,
+          "longitude": -0.0913445054467451
+        },
+        "region": "London",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "London (Leyton)",
+        "lgfs_account_number": "2M413F",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "601 High Road",
+          "address_line_2": "Leyton",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "London",
+          "county": "",
+          "postcode": "E10 6RF"
+        },
+        "location": {
+          "latitude": 51.5693101488964,
+          "longitude": -0.00858818905046797
+        },
+        "region": "London",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "London (Newham)",
+        "lgfs_account_number": "2P419L",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "66A Green Street",
+          "address_line_2": "Newham",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "London",
+          "county": "",
+          "postcode": "E7 8JG"
+        },
+        "location": {
+          "latitude": 51.5442002166908,
+          "longitude": 0.0319374829212736
+        },
+        "region": "London",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "London (Warren Street)",
+        "lgfs_account_number": "0M058V",
+        "lead_office": true,
+        "address": {
+          "address_line_1": "39 Warren Street",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "London",
+          "county": "",
+          "postcode": "W1T 6AF"
+        },
+        "location": {
+          "latitude": 51.5238128352609,
+          "longitude": -0.14207203049262
+        },
+        "region": "London",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Manchester",
+        "lgfs_account_number": "0V774G",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "63-65 Mosley Street",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Manchester",
+          "county": "",
+          "postcode": "M2 3HZ"
+        },
+        "location": {
+          "latitude": 53.4795190637065,
+          "longitude": -2.24079137807018
+        },
+        "region": "North West",
+        "dx": {
+          "reference": 14451,
+          "centre": "MANCHESTER 2"
+        }
+      },
+      {
+        "name": "Margate",
+        "lgfs_account_number": "2P208G",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "14 The Centre",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Margate",
+          "county": "Kent",
+          "postcode": "CT9 1JG"
+        },
+        "location": {
+          "latitude": 51.3871406986345,
+          "longitude": 1.38174710118798
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Rainham",
+        "lgfs_account_number": "2N828U",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "24 Longley Road",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Rainham",
+          "county": "Kent",
+          "postcode": "ME8 7RT"
+        },
+        "location": {
+          "latitude": 51.3650551485176,
+          "longitude": 0.608823647057416
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Stoke On Trent",
+        "lgfs_account_number": "2P048H",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "1-5 Birch Terrace",
+          "address_line_2": "Hanley",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Stoke On Trent",
+          "county": "Staffordshire",
+          "postcode": "ST1 3JN"
+        },
+        "location": {
+          "latitude": 53.0231681635387,
+          "longitude": -2.1725683777385
+        },
+        "region": "West Midlands",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Swanley",
+        "lgfs_account_number": "2N829V",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "23 Station Road",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Swanley",
+          "county": "Kent",
+          "postcode": "BR8 8ES"
+        },
+        "location": {
+          "latitude": 51.3945771522793,
+          "longitude": 0.175247509406883
+        },
+        "region": "South East",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      },
+      {
+        "name": "Taunton",
+        "lgfs_account_number": "2P420M",
+        "lead_office": false,
+        "address": {
+          "address_line_1": "12-14 The Crescent",
+          "address_line_2": "",
+          "address_line_3": "",
+          "address_line_4": "",
+          "city": "Taunton",
+          "county": "Somerset",
+          "postcode": "TA1 4EB"
+        },
+        "location": {
+          "latitude": 51.0124455413004,
+          "longitude": -3.10530693912933
+        },
+        "region": "South West",
+        "dx": {
+          "reference": 2102,
+          "centre": "EUSTON"
+        }
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "first_name": "Simon",
+        "last_name": "Whatley",
+        "account_number": " 001YZ",
+        "email_address": "simon.whatley@example.com",
+        "notifications": true
+      }
+    ]
+  }
+]

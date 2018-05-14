@@ -1,0 +1,99 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% if data['defendant_1_representation_order_date_1_year'] >= 2018 and data['defendant_1_representation_order_date_1_month'] >= 4 and data['defendant_1_representation_order_date_1_day'] >= 1 -%}
+{% include "../includes/_page_scripts_offence_details_scheme_10.html" %}
+{% else %}
+{% include "../includes/_page_scripts_offence_details_scheme_9.html" %}
+{%- endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					{#% if data['representation_order_date_year'] >= 2018 and data['representation_order_date_month'] >= 4 and data['representation_order_date_day'] >= 1 -%}
+
+						<h2 id="section-heading" class="heading-large">
+							Offence details
+						</h2>
+
+						<form class="form" method="post">
+
+							<div class="form-section">
+
+								{% include "../includes/_offences_scheme_10.html" %}
+
+							</div>
+
+							{% include "./includes/_form_actions.html" %}
+
+						</form>
+
+					{% else %#}
+
+						{% if data['bill_type'] == 'advocate_interim' -%}
+
+							<h2 id="section-heading" class="heading-large">
+								Sorry!
+							</h2>
+
+							<p>You cannot submit an interim bill for claims with the earliest representation order before 1 April 2018.</p>
+
+							<div class="form-group form-buttons">
+								<a href="{{links.new}}" class="button" role="button">Submit a new claim</a>
+								<a href="{{links.home}}" class="button button-tertiary" role="button">View your claims</a>
+							</div>
+
+						{% else %}
+
+							<h2 id="section-heading" class="heading-large">
+								Offence details
+							</h2>
+
+							<form class="form" method="post">
+
+								<div class="form-section">
+
+									{% include "../includes/_offences_scheme_9.html" %}
+
+								</div>
+
+								{% include "./includes/_form_actions.html" %}
+
+							</form>
+
+						{%- endif %}
+
+					{#%- endif %#}
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+
+				{# include "./includes/_sidebar.html" #}
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

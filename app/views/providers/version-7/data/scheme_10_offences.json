@@ -1,0 +1,4049 @@
+{
+    "classes": [{
+        "key": "1",
+        "name": "Murder and Manslaughter",
+        "bands": [{
+            "key": "1.1",
+            "name": "Band 1.1",
+            "description": "Killing of a child (16 years old or under); killing of two or more persons; killing of a police officer, prison officer or equivalent public servant in the course of their duty; killing of a patient in a medical or nursing care context; corporate manslaughter; manslaughter by gross negligence; missing body killing.",
+            "categories": [{
+                "key": "1.1.1",
+                "name": "Murder"
+            }, {
+                "key": "1.1.2",
+                "name": "Manslaughter"
+            }, {
+                "key": "1.1.3",
+                "name": "Corporate Manslaughter"
+            }, {
+                "key": "1.1.4",
+                "name": "Conspiracy to commit murder"
+            }, {
+                "key": "1.1.5",
+                "name": "Child destruction"
+            }, {
+                "key": "1.1.6",
+                "name": "Infanticide"
+            }]
+        }, {
+            "key": "1.2",
+            "name": "Band 1.2",
+            "description": "Killing done with a firearm; defendant has a previous conviction for murder; body is dismembered (literally), or destroyed by fire or other means by the offender; the defendant is a child (16 or under).",
+            "categories": [{
+                "key": "1.2.1",
+                "name": "Murder"
+            }, {
+                "key": "1.2.2",
+                "name": "Manslaughter"
+            }, {
+                "key": "1.2.3",
+                "name": "Conspiracy to commit murder"
+            }]
+        }, {
+            "key": "1.3",
+            "name": "Band 1.3",
+            "description": "All other cases of murder.",
+            "categories": [{
+                "key": "1.3.1",
+                "name": "Murder"
+            }, {
+                "key": "1.3.2",
+                "name": "Conspiracy to commit murder"
+            }, {
+                "key": "1.3.3",
+                "name": "Soliciting to commit murder"
+            }]
+        }, {
+            "key": "1.4",
+            "name": "Band 1.4",
+            "description": "All other cases of manslaughter.",
+            "categories": [{
+                "key": "1.4.1",
+                "name": "Manslaughter"
+            }]
+        }]
+    }, {
+        "key": "2",
+        "name": "Terrorism",
+        "bands": [{
+            "key": "2.1",
+            "name": "Band 2.1",
+            "description": "Terrorist murder (S63B Terrorism Act 2000); Explosive Substances Act 1883 offences – especially S2&3; preparation for terrorism, S5 Terrorism Act 2000, disseminating terrorist publications, S2 Terrorism Act 2006; possession of material for the purpose of terrorism, S57 Terrorism Act 2000.",
+            "categories": [{
+                "key": "2.1.1",
+                "name": "Use etc. of nuclear weapons"
+            }, {
+                "key": "2.1.2",
+                "name": "Hijacking"
+            }, {
+                "key": "2.1.3",
+                "name": "Hijacking, destroying or damaging Channel Tunnel train or system "
+            }, {
+                "key": "2.1.4",
+                "name": "Use etc. of chemical weapons"
+            }, {
+                "key": "2.1.5",
+                "name": "Premises or equipment for producing chemical weapons"
+            }, {
+                "key": "2.1.6",
+                "name": "Conspiracy to commit offences outside the United Kingdom"
+            }, {
+                "key": "2.1.7",
+                "name": "Torture"
+            }, {
+                "key": "2.1.8",
+                "name": "Causing explosion likely to endanger life or property"
+            }, {
+                "key": "2.1.9",
+                "name": "Attempt to cause explosion, or making or keeping explosive with intent to endanger life or property"
+            }, {
+                "key": "2.1.10",
+                "name": "Punishment for making or possession of explosive under suspicious circumstances"
+            }, {
+                "key": "2.1.11",
+                "name": "Placing gunpowder near a building, with intent to do bodily injury to any person"
+            }, {
+                "key": "2.1.12",
+                "name": "Making or having gunpowder, &c., with intent to commit any felony against this Act"
+            }, {
+                "key": "2.1.13",
+                "name": "Hostage-taking"
+            }, {
+                "key": "2.1.14",
+                "name": "Encouragement of terrorism"
+            }, {
+                "key": "2.1.15",
+                "name": "Dissemination of terrorist publications"
+            }, {
+                "key": "2.1.16",
+                "name": "Preparation of terrorist acts"
+            }, {
+                "key": "2.1.17",
+                "name": "Training for terrorism"
+            }, {
+                "key": "2.1.18",
+                "name": "Attendance at a place used for terrorist training"
+            }, {
+                "key": "2.1.19",
+                "name": "Making and possession of devices and materials"
+            }, {
+                "key": "2.1.20",
+                "name": "Misuse of devices or material and misuse and damage of facilities"
+            }, {
+                "key": "2.1.21",
+                "name": "Terrorist make threat to use radioactive device/material"
+            }, {
+                "key": "2.1.22",
+                "name": "Terrorist threats relating to devices, materials or facilities"
+            }]
+        }, {
+            "key": "2.2",
+            "name": "Band 2.2",
+            "description": "All other terrorist offences.",
+            "categories": [{
+                "key": "2.2.1",
+                "name": "Contravene prohibition on disclosure on information. "
+            }, {
+                "key": "2.2.2",
+                "name": "Contravene prohibition on dealing with funds/economic resources."
+            }, {
+                "key": "2.2.3",
+                "name": "Contravene prohibition on making available funds/economic resources."
+            }, {
+                "key": "2.2.4",
+                "name": "Knowingly & intentionally participate in activities to circumvent an Article 7 or 8 prohibition."
+            }, {
+                "key": "2.2.5",
+                "name": "Fail to comply with a condition attached to an Article 7 or 9 exemption licence "
+            }, {
+                "key": "2.2.6",
+                "name": "Knowingly/recklessly give any information/produce any document which is false in a material particular to Treasury."
+            }, {
+                "key": "2.2.7",
+                "name": "With intent to evade provisions of Schedule 1, destroy/mutilate/deface/conceal /remove any document."
+            }, {
+                "key": "2.2.8",
+                "name": "Person discloses any information in contravention of direction made under Section 18"
+            }, {
+                "key": "2.2.9",
+                "name": "Assisting or inducing certain weapons-related acts overseas"
+            }, {
+                "key": "2.2.10",
+                "name": "Knowingly or recklessly make false or misleading statements for purpose of obtaining or opposing the variation or withdrawal of authorisation for the purposes of Section 47 and 50"
+            }, {
+                "key": "2.2.11",
+                "name": "Occupier fails to comply with any duty or direction imposed on him by or under Part 7; person knowingly or recklessly makes a statement which is false or misleading"
+            }, {
+                "key": "2.2.12",
+                "name": "Prohibition of disclosures relating to nuclear security"
+            }, {
+                "key": "2.2.13",
+                "name": "Prohibition of disclosures of uranium enrichment technology"
+            }, {
+                "key": "2.2.14",
+                "name": "Use of noxious substances or things to cause harm and intimidate"
+            }, {
+                "key": "2.2.15",
+                "name": "Hoaxes involving noxious substances or things"
+            }, {
+                "key": "2.2.16",
+                "name": "Failure to comply with prohibition imposed by order; engages in an activity knowing or intending that it will enable or facilitate the commission by another person of an offence"
+            }, {
+                "key": "2.2.17",
+                "name": "Offences in relation to notification requirements"
+            }, {
+                "key": "2.2.18",
+                "name": "Travel restriction"
+            }, {
+                "key": "2.2.19",
+                "name": "Failure to Comply with a requirement imposed under Schedule 7"
+            }, {
+                "key": "2.2.20",
+                "name": "Knowingly or recklessly providing false information or a document to obtain grant of an exemption license"
+            }, {
+                "key": "2.2.21",
+                "name": "Manufacture and supply of scheduled substance"
+            }, {
+                "key": "2.2.22",
+                "name": "Contravention or failure to comply with a license"
+            }, {
+                "key": "2.2.23",
+                "name": "Piracy with violence"
+            }, {
+                "key": "2.2.24",
+                "name": "Public order offences in relation to terrorism"
+            }, {
+                "key": "2.2.25",
+                "name": "Failure to disclose knowledge gained in the course of business"
+            }, {
+                "key": "2.2.26",
+                "name": "Tipping off: regulated sector"
+            }, {
+                "key": "2.2.27",
+                "name": "Failure to disclose information about acts of terrorism"
+            }, {
+                "key": "2.2.28",
+                "name": "Eliciting publishing or communicating information about members of armed forces etc"
+            }, {
+                "key": "2.2.29",
+                "name": "Contravening Terrorism Prevention Measures"
+            }, {
+                "key": "2.2.30",
+                "name": "TEW Offences"
+            }, {
+                "key": "2.2.31",
+                "name": "Disclose without lawful authority confidential information provided by the Treasury"
+            }, {
+                "key": "2.2.32",
+                "name": "Not under authority of a licence dealt with funds/economic resources belonging to/owned/held by an Art 7(2) person"
+            }, {
+                "key": "2.2.33",
+                "name": "Make funds/economic resources/financial services available directly to/indirectly to/for the benefit of Art 7(2) person"
+            }, {
+                "key": "2.2.34",
+                "name": "Participate, knowingly and intentionally, in activities to circumvent Article 7(1) or 8(1) prohibition, or, to enable or facilitate an offence under Article 7 or 8"
+            }, {
+                "key": "2.2.35",
+                "name": "Make a statement or furnish a document or information which is false in a material to obtain a Treasury licence"
+            }, {
+                "key": "2.2.36",
+                "name": "Gives false information or documents or destroys, mutilates, etc, documents. "
+            }, {
+                "key": "2.2.37",
+                "name": "Attacks and threats of attack on United Nations workers, premises and vehicles"
+            }]
+        }]
+    }, {
+        "key": "3",
+        "name": "Serious Violence",
+        "bands": [{
+            "key": "3.1",
+            "name": "Band 3.1",
+            "description": "Attempted murder of a child, two or more persons, police officer nursing/medical contact or any violent offence committed with a live firearm.",
+            "categories": [{
+                "key": "3.1.1",
+                "name": "Attempted murder"
+            }, {
+                "key": "3.1.2",
+                "name": "Causing or Allowing Death of Child or Vulnerable Person"
+            }]
+        }, {
+            "key": "3.2",
+            "name": "Band 3.2",
+            "description": "All other attempted murder.",
+            "categories": [{
+                "key": "3.2.1",
+                "name": "Attempted murder"
+            }, {
+                "key": "3.2.2",
+                "name": "Maliciously administering poison, etc, so as to endanger life or inflict grievous bodily harm"
+            }]
+        }, {
+            "key": "3.3",
+            "name": "Band 3.3",
+            "description": "S18.",
+            "categories": [{
+                "key": "3.3.1",
+                "name": "Maliciously administering poison, etc, so as to endanger life or inflict grievous bodily harm"
+            }, {
+                "key": "3.3.2",
+                "name": "Wounding with intent to do grievous bodily harm"
+            }, {
+                "key": "3.3.3",
+                "name": "Racially or Religiously Aggravated wounding or grievous bodily harm"
+            }, {
+                "key": "3.3.4",
+                "name": "Offences relating to female genital mutilation"
+            }, {
+                "key": "3.3.5",
+                "name": "Causing explosions, sending explosive substance or throwing corrosive fluids with intent to do grievous bodily harm"
+            }]
+        }, {
+            "key": "3.4",
+            "name": "Band 3.4",
+            "description": "All other serious violence (unless standard, or specified in Band 3.5).",
+            "categories": [{
+                "key": "3.4.1",
+                "name": "Cruelty to and neglect of children"
+            }, {
+                "key": "3.4.2",
+                "name": "Exposing child to risk of burning"
+            }, {
+                "key": "3.4.3",
+                "name": "Racially or Religiously Aggravated Stalking with fear of violence"
+            }, {
+                "key": "3.4.4",
+                "name": "Owner or person in charge allowing dog to be dangerously out of control injuring any person"
+            }, {
+                "key": "3.4.5",
+                "name": "Ill treatment or neglect of a person lacking capacity by anyone responsible for that persons care"
+            }, {
+                "key": "3.4.6",
+                "name": "Ill treatment of patients"
+            }, {
+                "key": "3.4.7",
+                "name": "Impeding the saving of life from shipwreck"
+            }, {
+                "key": "3.4.8",
+                "name": "Racially aggravated malicious wounding:- wounding or inflicting grievous bodily harm"
+            }, {
+                "key": "3.4.9",
+                "name": "Attempting to choke etc. in order to commit indictable offence"
+            }, {
+                "key": "3.4.10",
+                "name": "Using chloroform etc. to commit indictable offence"
+            }, {
+                "key": "3.4.11",
+                "name": "Administering poison with intent to injure or annoy"
+            }, {
+                "key": "3.4.12",
+                "name": "Abandoning child under two years"
+            }, {
+                "key": "3.4.13",
+                "name": "Causing bodily injury by explosion"
+            }, {
+                "key": "3.4.14",
+                "name": "Setting spring guns etc with intent to inflict grievous bodily harm"
+            }, {
+                "key": "3.4.15",
+                "name": "Administering drugs or using instruments to procure abortion"
+            }, {
+                "key": "3.4.16",
+                "name": "Make / manufacture / possess an explosive / a thing / machine / engine / instrument / with intent to commit an offence"
+            }]
+        }, {
+            "key": "3.5",
+            "name": "Band 3.5",
+            "description": "s.20 Offences Against the Persons Act cases, s.47 cases (Actual Bodily Harm), and Threats to Kill.",
+            "categories": [{
+                "key": "3.5.1",
+                "name": "Racially or Religiously Aggravated assault occasioning actual bodily harm"
+            }, {
+                "key": "3.5.2",
+                "name": "Threats to Kill"
+            }, {
+                "key": "3.5.3",
+                "name": "Inflicting bodily injury, with or without a weapon"
+            }, {
+                "key": "3.5.4",
+                "name": "Assault occasioning actual bodily harm"
+            }]
+        }]
+    }, {
+        "key": "4",
+        "name": "Sexual Offences (Children)",
+        "bands": [{
+            "key": "4.1",
+            "name": "Band 4.1",
+            "description": "Rape / Assault by penetration.",
+            "categories": [{
+                "key": "4.1.1",
+                "name": "Rape"
+            }, {
+                "key": "4.1.2",
+                "name": "Intercourse with a girl under thirteen"
+            }, {
+                "key": "4.1.3",
+                "name": "Intercourse with a girl between thirteen and sixteen"
+            }, {
+                "key": "4.1.4",
+                "name": "Intercourse with a defective"
+            }, {
+                "key": "4.1.5",
+                "name": "Buggery"
+            }, {
+                "key": "4.1.6",
+                "name": "Assault with intent to commit buggery"
+            }, {
+                "key": "4.1.7",
+                "name": "Rape"
+            }, {
+                "key": "4.1.8",
+                "name": "Assault by penetration"
+            }, {
+                "key": "4.1.9",
+                "name": "Rape of a child under 13"
+            }, {
+                "key": "4.1.10",
+                "name": "Assault of a child under 13 by penetration"
+            }, {
+                "key": "4.1.11",
+                "name": "Causing or inciting a child under 13 to engage in sexual activity"
+            }, {
+                "key": "4.1.12",
+                "name": "Sexual activity with a child"
+            }, {
+                "key": "4.1.13",
+                "name": "Causing or inciting a child to engage in sexual activity"
+            }, {
+                "key": "4.1.14",
+                "name": "Sexual activity with a child family member"
+            }, {
+                "key": "4.1.15",
+                "name": "Inciting a child family member to engage in sexual activity"
+            }, {
+                "key": "4.1.16",
+                "name": "Sexual activity with a person with a mental disorder impeding choice"
+            }, {
+                "key": "4.1.17",
+                "name": "Causing or inciting a person, with a mental disorder impeding choice, to engage in sexual activity"
+            }, {
+                "key": "4.1.18",
+                "name": "Inducement, threat or deception to procure sexual activity with a person with a mental disorder"
+            }, {
+                "key": "4.1.19",
+                "name": "Causing a person with a mental disorder to engage in sexual activity by inducement, threat or deception"
+            }, {
+                "key": "4.1.20",
+                "name": "Care workers : Sexual activity with a person with a mental disorder"
+            }, {
+                "key": "4.1.21",
+                "name": "Care workers : Causing or inciting sexual activity"
+            }, {
+                "key": "4.1.22",
+                "name": "Paying for the sexual services of a child"
+            }]
+        }, {
+            "key": "4.2",
+            "name": "Band 4.2",
+            "description": "Sexual Assault.",
+            "categories": [{
+                "key": "4.2.1",
+                "name": "Sexual assault of a child under 13"
+            }, {
+                "key": "4.2.2",
+                "name": "Causing or inciting a child under 13 to engage in sexual activity"
+            }, {
+                "key": "4.2.3",
+                "name": "Sexual activity with a child"
+            }, {
+                "key": "4.2.4",
+                "name": "Causing or inciting a child under 13 to engage in sexual activity"
+            }, {
+                "key": "4.2.5",
+                "name": "Arranging or facilitating commission of a child sex offence"
+            }, {
+                "key": "4.2.6",
+                "name": "Abuse of position of trust: sexual activity with a child"
+            }, {
+                "key": "4.2.7",
+                "name": "Abuse of position of trust: causing or inciting a child to engage in sexual activity"
+            }, {
+                "key": "4.2.8",
+                "name": "Sexual activity with a child family member"
+            }, {
+                "key": "4.2.9",
+                "name": "Inciting a child family member to engage in sexual activity"
+            }, {
+                "key": "4.2.10",
+                "name": "Sexual activity with a person with a mental disorder impeding choice"
+            }, {
+                "key": "4.2.11",
+                "name": "Causing or inciting a person, with a mental disorder impeding choice, to engage in sexual activity"
+            }, {
+                "key": "4.2.12",
+                "name": "Inducement, threat or deception to procure sexual activity with a person with a mental disorder"
+            }, {
+                "key": "4.2.13",
+                "name": "Causing a person with a mental disorder to engage in sexual activity by inducement, threat or deception"
+            }, {
+                "key": "4.2.14",
+                "name": "Care workers : Sexual activity with a person with a mental disorder"
+            }, {
+                "key": "4.2.15",
+                "name": "Care workers : Causing or inciting sexual activity"
+            }, {
+                "key": "4.2.16",
+                "name": "Paying for the sexual services of a child"
+            }, {
+                "key": "4.2.17",
+                "name": "Causing or inciting [sexual exploitation of a child]"
+            }, {
+                "key": "4.2.18",
+                "name": "Controlling a child [in relation to sexual exploitation]"
+            }, {
+                "key": "4.2.19",
+                "name": "Arranging or facilitating [sexual exploitation of a child] "
+            }]
+        }, {
+            "key": "4.3",
+            "name": "Band 4.3",
+            "description": "All other offences (unless standard).",
+            "categories": [{
+                "key": "4.3.1",
+                "name": "Possession of prohibited images of children"
+            }, {
+                "key": "4.3.2",
+                "name": "Possession of indecent photograph of child"
+            }, {
+                "key": "4.3.3",
+                "name": "Indecent photographs of children"
+            }, {
+                "key": "4.3.4",
+                "name": "Procurement of a defective"
+            }, {
+                "key": "4.3.5",
+                "name": "Incest by a man"
+            }, {
+                "key": "4.3.6",
+                "name": "Incest by a woman"
+            }, {
+                "key": "4.3.7",
+                "name": "Abduction of unmarried girl under eighteen from parent or guardian"
+            }, {
+                "key": "4.3.8",
+                "name": "Abduction of unmarried girl under sixteen from parent or guardian"
+            }, {
+                "key": "4.3.9",
+                "name": "Abduction of defective from parent or guardian"
+            }, {
+                "key": "4.3.10",
+                "name": "Permitting girl under thirteen to use premises for intercourse"
+            }, {
+                "key": "4.3.11",
+                "name": "Permitting girl between thirteen and sixteen to use premises for intercourse"
+            }, {
+                "key": "4.3.12",
+                "name": "Permitting defective to use premises for intercourse"
+            }, {
+                "key": "4.3.13",
+                "name": "Causing or encouraging prostitution of, intercourse with, or indecent assault on, girl under sixteen"
+            }, {
+                "key": "4.3.14",
+                "name": "Causing or encouraging prostitution of defective"
+            }, {
+                "key": "4.3.15",
+                "name": "Engaging in sexual activity in the presence of a child"
+            }, {
+                "key": "4.3.16",
+                "name": "Causing a child to watch a sexual act"
+            }, {
+                "key": "4.3.17",
+                "name": "Child sex offences committed by children or young persons"
+            }, {
+                "key": "4.3.18",
+                "name": "Meeting a child following sexual grooming etc."
+            }, {
+                "key": "4.3.19",
+                "name": "Abuse of position of trust: sexual activity in the presence of a child"
+            }, {
+                "key": "4.3.20",
+                "name": "Abuse of position of trust: causing a child to watch a sexual act"
+            }, {
+                "key": "4.3.21",
+                "name": "Engaging in sexual activity in the presence of a person with a mental disorder impeding choice"
+            }, {
+                "key": "4.3.22",
+                "name": "Causing a person, with a mental disorder impeding choice, to watch a sexual act"
+            }, {
+                "key": "4.3.23",
+                "name": "Engaging in sexual activity in the presence, procured by inducement, threat or deception of a person with mental disorder"
+            }, {
+                "key": "4.3.24",
+                "name": "Causing a person with a mental disorder to watch a sexual act by inducement, threat or deception"
+            }, {
+                "key": "4.3.25",
+                "name": "Care workers : Sexual activity in the presence of a person with a mental disorder "
+            }, {
+                "key": "4.3.26",
+                "name": "Care workers : Causing a person with a mental disorder to watch a sexual act"
+            }]
+        }]
+    }, {
+        "key": "5",
+        "name": "Sexual Offences (Adult)",
+        "bands": [{
+            "key": "5.1",
+            "name": "Band 5.1",
+            "description": "Rape / Assault by penetration.",
+            "categories": [{
+                "key": "5.1.1",
+                "name": "Rape"
+            }, {
+                "key": "5.1.2",
+                "name": "Buggery"
+            }, {
+                "key": "5.1.3",
+                "name": "Assault with intent to commit buggery"
+            }, {
+                "key": "5.1.4",
+                "name": "Rape"
+            }, {
+                "key": "5.1.5",
+                "name": "Assault by penetration"
+            }]
+        }, {
+            "key": "5.2",
+            "name": "Band 5.2",
+            "description": "Sexual Assault.",
+            "categories": [{
+                "key": "5.2.1",
+                "name": "Sexual assault"
+            }, {
+                "key": "5.2.2",
+                "name": "Causing a person to engage in sexual activity without consent"
+            }, {
+                "key": "5.2.3",
+                "name": "Administering drugs to obtain or facilitate intercourse"
+            }, {
+                "key": "5.2.4",
+                "name": "Indecent assault on a woman"
+            }, {
+                "key": "5.2.5",
+                "name": "Indecent assault on a man"
+            }, {
+                "key": "5.2.6",
+                "name": "Causing a person to engage in sexual activity without consent"
+            }, {
+                "key": "5.2.7",
+                "name": "Administering a substance with intent"
+            }]
+        }, {
+            "key": "5.3",
+            "name": "Band 5.3",
+            "description": "All other offences (unless standard).",
+            "categories": [{
+                "key": "5.3.1",
+                "name": "Possession of extreme pornographic images"
+            }, {
+                "key": "5.3.2",
+                "name": "Conspiracy to commit certain sexual acts outside the United Kingdom"
+            }, {
+                "key": "5.3.3",
+                "name": "To have protected material, or copy of it, in his possession otherwise than while inspecting it"
+            }, {
+                "key": "5.3.4",
+                "name": "Give that material or any copy of it, or otherwise reveal its contents, to any other person"
+            }, {
+                "key": "5.3.5",
+                "name": "Procurement of woman by false pretences"
+            }, {
+                "key": "5.3.6",
+                "name": "Incest by a man"
+            }, {
+                "key": "5.3.7",
+                "name": "Incest by a woman"
+            }, {
+                "key": "5.3.8",
+                "name": "Indecency between men"
+            }, {
+                "key": "5.3.9",
+                "name": "Abduction of a woman by force or for the sake of her property"
+            }, {
+                "key": "5.3.10",
+                "name": "Causing prostitution of a woman"
+            }, {
+                "key": "5.3.11",
+                "name": "Procuration of girl under twenty-one"
+            }, {
+                "key": "5.3.12",
+                "name": "Detention of woman in brothel or other premises"
+            }, {
+                "key": "5.3.13",
+                "name": "Man living on earnings of prostitution"
+            }, {
+                "key": "5.3.14",
+                "name": "Woman exercising control over prostitute"
+            }, {
+                "key": "5.3.15",
+                "name": "Keeping a brothel"
+            }, {
+                "key": "5.3.16",
+                "name": "Keeping a brothel used for prostitution"
+            }, {
+                "key": "5.3.17",
+                "name": "Landlord letting premises for use as a brothel"
+            }, {
+                "key": "5.3.18",
+                "name": "Tenant permitting premises to be used as a brothel"
+            }, {
+                "key": "5.3.19",
+                "name": "Tenant permitting premises to be used for prostitution"
+            }, {
+                "key": "5.3.20",
+                "name": "Causing or inciting prostitution for gain"
+            }, {
+                "key": "5.3.21",
+                "name": "Controlling prostitution for gain"
+            }, {
+                "key": "5.3.22",
+                "name": "Paying for sexual services of a prostitute subjected to force etc."
+            }, {
+                "key": "5.3.23",
+                "name": "Committing an offence with intent to commit a sexual offence"
+            }, {
+                "key": "5.3.24",
+                "name": "Trespass with intent to commit a sexual offence"
+            }, {
+                "key": "5.3.25",
+                "name": "Sex with an adult relative: penetration"
+            }, {
+                "key": "5.3.26",
+                "name": "Sex with an adult relative: consenting to penetration"
+            }, {
+                "key": "5.3.27",
+                "name": "Voyeurism"
+            }, {
+                "key": "5.3.28",
+                "name": "Intercourse with an animal"
+            }, {
+                "key": "5.3.29",
+                "name": "Sexual penetration of a corpse"
+            }, {
+                "key": "5.3.30",
+                "name": "Failure to comply with, or notify police, under Notification Order, with false information"
+            }]
+        }]
+    }, {
+        "key": "6",
+        "name": "Dishonesty Offences",
+        "bands": [{
+            "key": "6.1",
+            "name": "Band 6.1",
+            "description": "Over £10m or over 20,000 pages.",
+            "categories": [{
+                "key": "6.1.1",
+                "name": "Cheating the public revenue"
+            }, {
+                "key": "6.1.2",
+                "name": "Conspiracy to defraud"
+            }, {
+                "key": "6.1.3",
+                "name": "Dishonestly obtaining electronic communication services"
+            }, {
+                "key": "6.1.4",
+                "name": "Offence of fraudulent trading"
+            }, {
+                "key": "6.1.5",
+                "name": "Insider Dealing"
+            }, {
+                "key": "6.1.6",
+                "name": "Fraudulent evasion of duty"
+            }, {
+                "key": "6.1.7",
+                "name": "Fraudulently obtaining credit"
+            }, {
+                "key": "6.1.8",
+                "name": "Cartel Offence"
+            }, {
+                "key": "6.1.9",
+                "name": "Non-compliance, false, misleading or reckless statements"
+            }, {
+                "key": "6.1.10",
+                "name": "Fraudulent evasion of tax"
+            }, {
+                "key": "6.1.11",
+                "name": "Falsification of documents"
+            }, {
+                "key": "6.1.12",
+                "name": "Acknowledging bail in false name"
+            }, {
+                "key": "6.1.13",
+                "name": "Destroying, injuring, forging or falsifying registers of births, baptisms, marriages, deaths or burials or certified copies"
+            }, {
+                "key": "6.1.14",
+                "name": "Making false entries in copies of registers of baptisms, marriages, or burials, directed to be sent to any registrar, or destroying or concealing copies of registers"
+            }, {
+                "key": "6.1.15",
+                "name": "Forgery"
+            }, {
+                "key": "6.1.16",
+                "name": "Copying a false instrument"
+            }, {
+                "key": "6.1.17",
+                "name": "Use or copy of a false instrument"
+            }, {
+                "key": "6.1.18",
+                "name": "Possess false instrument or materials to make false instrument"
+            }, {
+                "key": "6.1.19",
+                "name": "Counterfeiting notes and coins"
+            }, {
+                "key": "6.1.20",
+                "name": "Passing etc counterfeit notes and coins"
+            }, {
+                "key": "6.1.21",
+                "name": "Custody or control of counterfeit notes and coins"
+            }, {
+                "key": "6.1.22",
+                "name": "Making or custody or control of counterfeiting materials and implements"
+            }, {
+                "key": "6.1.23",
+                "name": "Reproducing or making etc of British notes and coins"
+            }, {
+                "key": "6.1.24",
+                "name": "Fraud by false representation"
+            }, {
+                "key": "6.1.25",
+                "name": "Fraud by failing to disclose information"
+            }, {
+                "key": "6.1.26",
+                "name": "Fraud by abuse of position "
+            }, {
+                "key": "6.1.27",
+                "name": "Possession etc of articles for use in frauds"
+            }, {
+                "key": "6.1.28",
+                "name": "Making or supplying articles for use in frauds "
+            }, {
+                "key": "6.1.29",
+                "name": "Participating in fraudulent business carried on by sole trader etc"
+            }, {
+                "key": "6.1.30",
+                "name": "Obtaining services dishonestly"
+            }, {
+                "key": "6.1.31",
+                "name": "Breach of requirements, lack of qualification, falsification etc."
+            }, {
+                "key": "6.1.32",
+                "name": "Counterfeiting etc. of dies or marks"
+            }, {
+                "key": "6.1.33",
+                "name": "Fraud, etc in anticipation of winding up"
+            }, {
+                "key": "6.1.34",
+                "name": "Privity to fraud in anticipation of winding up; fraud, or privity to fraud, after commencement of winding up"
+            }, {
+                "key": "6.1.35",
+                "name": "Transactions in fraud of creditors"
+            }, {
+                "key": "6.1.36",
+                "name": "Misconduct in course of winding up"
+            }, {
+                "key": "6.1.37",
+                "name": "Falsification of company’s books"
+            }, {
+                "key": "6.1.38",
+                "name": "Bankrupt failing to disclose property or disposals to official receiver or trustee"
+            }, {
+                "key": "6.1.39",
+                "name": "Bankrupt failing to deliver property to, or concealing property from, official receiver or trustee"
+            }, {
+                "key": "6.1.40",
+                "name": "Bankrupt removing property which he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.1.41",
+                "name": "Bankrupt failing to account for loss of substantial part of property"
+            }, {
+                "key": "6.1.42",
+                "name": "Bankrupt failing to deliver books, papers or records to official receiver or trustee"
+            }, {
+                "key": "6.1.43",
+                "name": "Bankrupt concealing destroying etc. books, papers or records or making  false entries in them"
+            }, {
+                "key": "6.1.44",
+                "name": "Bankrupt disposing of, or altering, books, papers or records relating to his estate or affairs"
+            }, {
+                "key": "6.1.45",
+                "name": "Bankrupt making material omission in statement relating to his affairs"
+            }, {
+                "key": "6.1.46",
+                "name": "Bankrupt making false statement, or failing to inform trustee, where false debt proved"
+            }, {
+                "key": "6.1.47",
+                "name": "Bankrupt fraudulently disposing of property"
+            }, {
+                "key": "6.1.48",
+                "name": "Bankrupt absconding with property he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.1.49",
+                "name": "Fraudulent dealing with property obtained on credit"
+            }, {
+                "key": "6.1.50",
+                "name": "Bankrupt disposing of property obtained on credit and not paid for"
+            }, {
+                "key": "6.1.51",
+                "name": "Bankrupt obtaining credit or engaging in business without disclosing his status or name in which he was made bankrupt"
+            }, {
+                "key": "6.1.52",
+                "name": "Person made bankrupt in Scotland or Northern Ireland obtaining credit etc. in England and Wales"
+            }, {
+                "key": "6.1.53",
+                "name": "Frauds in connection with sale of land etc"
+            }, {
+                "key": "6.1.54",
+                "name": "Providing false or misleading information for allowance claims"
+            }, {
+                "key": "6.1.55",
+                "name": "Concealing etc. criminal property"
+            }, {
+                "key": "6.1.56",
+                "name": "Arrangements - concerned in arrangement, knows or suspects, facilitates acquisition, retention, use or control of criminal property by, or on behalf of another person"
+            }, {
+                "key": "6.1.57",
+                "name": "Acquisition, use & possession"
+            }, {
+                "key": "6.1.58",
+                "name": "Nominated officer; must not give consent to the doing of a prohibited act"
+            }, {
+                "key": "6.1.59",
+                "name": "Dishonest representation for obtaining benefit etc."
+            }, {
+                "key": "6.1.60",
+                "name": "Fraudulently printing, mutilating or re-issuing stamps etc."
+            }, {
+                "key": "6.1.61",
+                "name": "Fraudulent use of telecommunication system"
+            }, {
+                "key": "6.1.62",
+                "name": "Theft"
+            }, {
+                "key": "6.1.63",
+                "name": "False Accounting"
+            }, {
+                "key": "6.1.64",
+                "name": "Handling stolen goods"
+            }, {
+                "key": "6.1.65",
+                "name": "Dishonestly retaining a wrongful credit"
+            }, {
+                "key": "6.1.66",
+                "name": "Subject of debt relief order fraudulently dispose of property"
+            }, {
+                "key": "6.1.67",
+                "name": "Subject of debt relief order dispose of property not paid for by them or obtain property in respect of which money is owed."
+            }, {
+                "key": "6.1.68",
+                "name": "VAT Offences"
+            }]
+        }, {
+            "key": "6.2",
+            "name": "Band 6.2",
+            "description": "Over £1m or over 10,000 pages.",
+            "categories": [{
+                "key": "6.2.1",
+                "name": "Cheating the public revenue"
+            }, {
+                "key": "6.2.2",
+                "name": "Conspiracy to defraud"
+            }, {
+                "key": "6.2.3",
+                "name": "Dishonestly obtaining electronic communication services"
+            }, {
+                "key": "6.2.4",
+                "name": "Offence of fraudulent trading"
+            }, {
+                "key": "6.2.5",
+                "name": "Insider Dealing"
+            }, {
+                "key": "6.2.6",
+                "name": "Fraudulent evasion of duty"
+            }, {
+                "key": "6.2.7",
+                "name": "Fraudulently obtaining credit"
+            }, {
+                "key": "6.2.8",
+                "name": "Cartel Offence"
+            }, {
+                "key": "6.2.9",
+                "name": "Non-compliance, false, misleading or reckless statements"
+            }, {
+                "key": "6.2.10",
+                "name": "Fraudulent evasion of tax"
+            }, {
+                "key": "6.2.11",
+                "name": "Falsification of documents"
+            }, {
+                "key": "6.2.12",
+                "name": "Acknowledging bail in false name"
+            }, {
+                "key": "6.2.13",
+                "name": "Destroying, injuring, forging or falsifying registers of births, baptisms, marriages, deaths or burials or certified copies"
+            }, {
+                "key": "6.2.14",
+                "name": "Making false entries in copies of registers of baptisms, marriages, or burials, directed to be sent to any registrar, or destroying or concealing copies of registers"
+            }, {
+                "key": "6.2.15",
+                "name": "Forgery"
+            }, {
+                "key": "6.2.16",
+                "name": "Copying a false instrument"
+            }, {
+                "key": "6.2.17",
+                "name": "Use or copy of a false instrument"
+            }, {
+                "key": "6.2.18",
+                "name": "Possess false instrument or materials to make false instrument"
+            }, {
+                "key": "6.2.19",
+                "name": "Counterfeiting notes and coins"
+            }, {
+                "key": "6.2.20",
+                "name": "Passing etc counterfeit notes and coins"
+            }, {
+                "key": "6.2.21",
+                "name": "Custody or control of counterfeit notes and coins"
+            }, {
+                "key": "6.2.22",
+                "name": "Making or custody or control of counterfeiting materials and implements"
+            }, {
+                "key": "6.2.23",
+                "name": "Reproducing or making etc of British notes and coins"
+            }, {
+                "key": "6.2.24",
+                "name": "Fraud by false representation"
+            }, {
+                "key": "6.2.25",
+                "name": "Fraud by failing to disclose information"
+            }, {
+                "key": "6.2.26",
+                "name": "Fraud by abuse of position "
+            }, {
+                "key": "6.2.27",
+                "name": "Possession etc of articles for use in frauds"
+            }, {
+                "key": "6.2.28",
+                "name": "Making or supplying articles for use in frauds "
+            }, {
+                "key": "6.2.29",
+                "name": "Participating in fraudulent business carried on by sole trader etc"
+            }, {
+                "key": "6.2.30",
+                "name": "Obtaining services dishonestly"
+            }, {
+                "key": "6.2.31",
+                "name": "Breach of requirements, lack of qualification, falsification etc."
+            }, {
+                "key": "6.2.32",
+                "name": "Counterfeiting etc. of dies or marks"
+            }, {
+                "key": "6.2.33",
+                "name": "Fraud, etc in anticipation of winding up"
+            }, {
+                "key": "6.2.34",
+                "name": "Privity to fraud in anticipation of winding up; fraud, or privity to fraud, after commencement of winding up"
+            }, {
+                "key": "6.2.35",
+                "name": "Transactions in fraud of creditors"
+            }, {
+                "key": "6.2.36",
+                "name": "Misconduct in course of winding up"
+            }, {
+                "key": "6.2.37",
+                "name": "Falsification of company’s books"
+            }, {
+                "key": "6.2.38",
+                "name": "Bankrupt failing to disclose property or disposals to official receiver or trustee"
+            }, {
+                "key": "6.2.39",
+                "name": "Bankrupt failing to deliver property to, or concealing property from, official receiver or trustee"
+            }, {
+                "key": "6.2.40",
+                "name": "Bankrupt removing property which he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.2.41",
+                "name": "Bankrupt failing to account for loss of substantial part of property"
+            }, {
+                "key": "6.2.42",
+                "name": "Bankrupt failing to deliver books, papers or records to official receiver or trustee"
+            }, {
+                "key": "6.2.43",
+                "name": "Bankrupt concealing destroying etc. books, papers or records or making  false entries in them"
+            }, {
+                "key": "6.2.44",
+                "name": "Bankrupt disposing of, or altering, books, papers or records relating to his estate or affairs"
+            }, {
+                "key": "6.2.45",
+                "name": "Bankrupt making material omission in statement relating to his affairs"
+            }, {
+                "key": "6.2.46",
+                "name": "Bankrupt making false statement, or failing to inform trustee, where false debt proved"
+            }, {
+                "key": "6.2.47",
+                "name": "Bankrupt fraudulently disposing of property"
+            }, {
+                "key": "6.2.48",
+                "name": "Bankrupt absconding with property he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.2.49",
+                "name": "Fraudulent dealing with property obtained on credit"
+            }, {
+                "key": "6.2.50",
+                "name": "Bankrupt disposing of property obtained on credit and not paid for"
+            }, {
+                "key": "6.2.51",
+                "name": "Bankrupt obtaining credit or engaging in business without disclosing his status or name in which he was made bankrupt"
+            }, {
+                "key": "6.2.52",
+                "name": "Person made bankrupt in Scotland or Northern Ireland obtaining credit etc. in England and Wales"
+            }, {
+                "key": "6.2.53",
+                "name": "Frauds in connection with sale of land etc"
+            }, {
+                "key": "6.2.54",
+                "name": "Providing false or misleading information for allowance claims"
+            }, {
+                "key": "6.2.55",
+                "name": "Concealing etc. criminal property"
+            }, {
+                "key": "6.2.56",
+                "name": "Arrangements - concerned in arrangement, knows or suspects, facilitates acquisition, retention, use or control of criminal property by, or on behalf of another person"
+            }, {
+                "key": "6.2.57",
+                "name": "Acquisition, use & possession"
+            }, {
+                "key": "6.2.58",
+                "name": "Nominated officer; must not give consent to the doing of a prohibited act"
+            }, {
+                "key": "6.2.59",
+                "name": "Dishonest representation for obtaining benefit etc."
+            }, {
+                "key": "6.2.60",
+                "name": "Fraudulently printing, mutilating or re-issuing stamps etc."
+            }, {
+                "key": "6.2.61",
+                "name": "Fraudulent use of telecommunication system"
+            }, {
+                "key": "6.2.62",
+                "name": "Theft"
+            }, {
+                "key": "6.2.63",
+                "name": "False Accounting"
+            }, {
+                "key": "6.2.64",
+                "name": "Handling stolen goods"
+            }, {
+                "key": "6.2.65",
+                "name": "Dishonestly retaining a wrongful credit"
+            }, {
+                "key": "6.2.66",
+                "name": "Subject of debt relief order fraudulently dispose of property"
+            }, {
+                "key": "6.2.67",
+                "name": "Subject of debt relief order dispose of property not paid for by them or obtain property in respect of which money is owed."
+            }, {
+                "key": "6.2.68",
+                "name": "VAT Offences"
+            }]
+        }, {
+            "key": "6.3",
+            "name": "Band 6.3",
+            "description": "Over £100,000.",
+            "categories": [{
+                "key": "6.3.1",
+                "name": "Cheating the public revenue"
+            }, {
+                "key": "6.3.2",
+                "name": "Conspiracy to defraud"
+            }, {
+                "key": "6.3.3",
+                "name": "Dishonestly obtaining electronic communication services"
+            }, {
+                "key": "6.3.4",
+                "name": "Offence of fraudulent trading"
+            }, {
+                "key": "6.3.5",
+                "name": "Insider Dealing"
+            }, {
+                "key": "6.3.6",
+                "name": "Fraudulent evasion of duty"
+            }, {
+                "key": "6.3.7",
+                "name": "Fraudulently obtaining credit"
+            }, {
+                "key": "6.3.8",
+                "name": "Cartel Offence"
+            }, {
+                "key": "6.3.9",
+                "name": "Non-compliance, false, misleading or reckless statements"
+            }, {
+                "key": "6.3.10",
+                "name": "Fraudulent evasion of tax"
+            }, {
+                "key": "6.3.11",
+                "name": "Falsification of documents"
+            }, {
+                "key": "6.3.12",
+                "name": "Acknowledging bail in false name"
+            }, {
+                "key": "6.3.13",
+                "name": "Destroying, injuring, forging or falsifying registers of births, baptisms, marriages, deaths or burials or certified copies"
+            }, {
+                "key": "6.3.14",
+                "name": "Making false entries in copies of registers of baptisms, marriages, or burials, directed to be sent to any registrar, or destroying or concealing copies of registers"
+            }, {
+                "key": "6.3.15",
+                "name": "Forgery"
+            }, {
+                "key": "6.3.16",
+                "name": "Copying a false instrument"
+            }, {
+                "key": "6.3.17",
+                "name": "Use or copy of a false instrument"
+            }, {
+                "key": "6.3.18",
+                "name": "Possess false instrument or materials to make false instrument"
+            }, {
+                "key": "6.3.19",
+                "name": "Counterfeiting notes and coins"
+            }, {
+                "key": "6.3.20",
+                "name": "Passing etc counterfeit notes and coins"
+            }, {
+                "key": "6.3.21",
+                "name": "Custody or control of counterfeit notes and coins"
+            }, {
+                "key": "6.3.22",
+                "name": "Making or custody or control of counterfeiting materials and implements"
+            }, {
+                "key": "6.3.23",
+                "name": "Reproducing or making etc of British notes and coins"
+            }, {
+                "key": "6.3.24",
+                "name": "Fraud by false representation"
+            }, {
+                "key": "6.3.25",
+                "name": "Fraud by failing to disclose information"
+            }, {
+                "key": "6.3.26",
+                "name": "Fraud by abuse of position "
+            }, {
+                "key": "6.3.27",
+                "name": "Possession etc of articles for use in frauds"
+            }, {
+                "key": "6.3.28",
+                "name": "Making or supplying articles for use in frauds "
+            }, {
+                "key": "6.3.29",
+                "name": "Participating in fraudulent business carried on by sole trader etc"
+            }, {
+                "key": "6.3.30",
+                "name": "Obtaining services dishonestly"
+            }, {
+                "key": "6.3.31",
+                "name": "Breach of requirements, lack of qualification, falsification etc."
+            }, {
+                "key": "6.3.32",
+                "name": "Counterfeiting etc. of dies or marks"
+            }, {
+                "key": "6.3.33",
+                "name": "Fraud, etc in anticipation of winding up"
+            }, {
+                "key": "6.3.34",
+                "name": "Privity to fraud in anticipation of winding up; fraud, or privity to fraud, after commencement of winding up"
+            }, {
+                "key": "6.3.35",
+                "name": "Transactions in fraud of creditors"
+            }, {
+                "key": "6.3.36",
+                "name": "Misconduct in course of winding up"
+            }, {
+                "key": "6.3.37",
+                "name": "Falsification of company’s books"
+            }, {
+                "key": "6.3.38",
+                "name": "Bankrupt failing to disclose property or disposals to official receiver or trustee"
+            }, {
+                "key": "6.3.39",
+                "name": "Bankrupt failing to deliver property to, or concealing property from, official receiver or trustee"
+            }, {
+                "key": "6.3.40",
+                "name": "Bankrupt removing property which he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.3.41",
+                "name": "Bankrupt failing to account for loss of substantial part of property"
+            }, {
+                "key": "6.3.42",
+                "name": "Bankrupt failing to deliver books, papers or records to official receiver or trustee"
+            }, {
+                "key": "6.3.43",
+                "name": "Bankrupt concealing destroying etc. books, papers or records or making  false entries in them"
+            }, {
+                "key": "6.3.44",
+                "name": "Bankrupt disposing of, or altering, books, papers or records relating to his estate or affairs"
+            }, {
+                "key": "6.3.45",
+                "name": "Bankrupt making material omission in statement relating to his affairs"
+            }, {
+                "key": "6.3.46",
+                "name": "Bankrupt making false statement, or failing to inform trustee, where false debt proved"
+            }, {
+                "key": "6.3.47",
+                "name": "Bankrupt fraudulently disposing of property"
+            }, {
+                "key": "6.3.48",
+                "name": "Bankrupt absconding with property he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.3.49",
+                "name": "Fraudulent dealing with property obtained on credit"
+            }, {
+                "key": "6.3.50",
+                "name": "Bankrupt disposing of property obtained on credit and not paid for"
+            }, {
+                "key": "6.3.51",
+                "name": "Bankrupt obtaining credit or engaging in business without disclosing his status or name in which he was made bankrupt"
+            }, {
+                "key": "6.3.52",
+                "name": "Person made bankrupt in Scotland or Northern Ireland obtaining credit etc. in England and Wales"
+            }, {
+                "key": "6.3.53",
+                "name": "Frauds in connection with sale of land etc"
+            }, {
+                "key": "6.3.54",
+                "name": "Providing false or misleading information for allowance claims"
+            }, {
+                "key": "6.3.55",
+                "name": "Concealing etc. criminal property"
+            }, {
+                "key": "6.3.56",
+                "name": "Arrangements - concerned in arrangement, knows or suspects, facilitates acquisition, retention, use or control of criminal property by, or on behalf of another person"
+            }, {
+                "key": "6.3.57",
+                "name": "Acquisition, use & possession"
+            }, {
+                "key": "6.3.58",
+                "name": "Nominated officer; must not give consent to the doing of a prohibited act"
+            }, {
+                "key": "6.3.59",
+                "name": "Dishonest representation for obtaining benefit etc."
+            }, {
+                "key": "6.3.60",
+                "name": "Fraudulently printing, mutilating or re-issuing stamps etc."
+            }, {
+                "key": "6.3.61",
+                "name": "Fraudulent use of telecommunication system"
+            }, {
+                "key": "6.3.62",
+                "name": "Theft"
+            }, {
+                "key": "6.3.63",
+                "name": "False Accounting"
+            }, {
+                "key": "6.3.64",
+                "name": "Handling stolen goods"
+            }, {
+                "key": "6.3.65",
+                "name": "Dishonestly retaining a wrongful credit"
+            }, {
+                "key": "6.3.66",
+                "name": "Subject of debt relief order fraudulently dispose of property"
+            }, {
+                "key": "6.3.67",
+                "name": "Subject of debt relief order dispose of property not paid for by them or obtain property in respect of which money is owed."
+            }, {
+                "key": "6.3.68",
+                "name": "VAT Offences"
+            }]
+        }, {
+            "key": "6.4",
+            "name": "Band 6.4",
+            "description": "Under £100,000.",
+            "categories": [{
+                "key": "6.4.1",
+                "name": "Cheating the public revenue"
+            }, {
+                "key": "6.4.2",
+                "name": "Conspiracy to defraud"
+            }, {
+                "key": "6.4.3",
+                "name": "Dishonestly obtaining electronic communication services"
+            }, {
+                "key": "6.4.4",
+                "name": "Offence of fraudulent trading"
+            }, {
+                "key": "6.4.5",
+                "name": "Insider Dealing"
+            }, {
+                "key": "6.4.6",
+                "name": "Fraudulent evasion of duty"
+            }, {
+                "key": "6.4.7",
+                "name": "Fraudulently obtaining credit"
+            }, {
+                "key": "6.4.8",
+                "name": "Cartel Offence"
+            }, {
+                "key": "6.4.9",
+                "name": "Non-compliance, false, misleading or reckless statements"
+            }, {
+                "key": "6.4.10",
+                "name": "Fraudulent evasion of tax"
+            }, {
+                "key": "6.4.11",
+                "name": "Falsification of documents"
+            }, {
+                "key": "6.4.12",
+                "name": "Acknowledging bail in false name"
+            }, {
+                "key": "6.4.13",
+                "name": "Destroying, injuring, forging or falsifying registers of births, baptisms, marriages, deaths or burials or certified copies"
+            }, {
+                "key": "6.4.14",
+                "name": "Making false entries in copies of registers of baptisms, marriages, or burials, directed to be sent to any registrar, or destroying or concealing copies of registers"
+            }, {
+                "key": "6.4.15",
+                "name": "Forgery"
+            }, {
+                "key": "6.4.16",
+                "name": "Copying a false instrument"
+            }, {
+                "key": "6.4.17",
+                "name": "Use or copy of a false instrument"
+            }, {
+                "key": "6.4.18",
+                "name": "Possess false instrument or materials to make false instrument"
+            }, {
+                "key": "6.4.19",
+                "name": "Counterfeiting notes and coins"
+            }, {
+                "key": "6.4.20",
+                "name": "Passing etc counterfeit notes and coins"
+            }, {
+                "key": "6.4.21",
+                "name": "Custody or control of counterfeit notes and coins"
+            }, {
+                "key": "6.4.22",
+                "name": "Making or custody or control of counterfeiting materials and implements"
+            }, {
+                "key": "6.4.23",
+                "name": "Reproducing or making etc of British notes and coins"
+            }, {
+                "key": "6.4.24",
+                "name": "Fraud by false representation"
+            }, {
+                "key": "6.4.25",
+                "name": "Fraud by failing to disclose information"
+            }, {
+                "key": "6.4.26",
+                "name": "Fraud by abuse of position "
+            }, {
+                "key": "6.4.27",
+                "name": "Possession etc of articles for use in frauds"
+            }, {
+                "key": "6.4.28",
+                "name": "Making or supplying articles for use in frauds "
+            }, {
+                "key": "6.4.29",
+                "name": "Participating in fraudulent business carried on by sole trader etc"
+            }, {
+                "key": "6.4.30",
+                "name": "Obtaining services dishonestly"
+            }, {
+                "key": "6.4.31",
+                "name": "Breach of requirements, lack of qualification, falsification etc."
+            }, {
+                "key": "6.4.32",
+                "name": "Counterfeiting etc. of dies or marks"
+            }, {
+                "key": "6.4.33",
+                "name": "Fraud, etc in anticipation of winding up"
+            }, {
+                "key": "6.4.34",
+                "name": "Privity to fraud in anticipation of winding up; fraud, or privity to fraud, after commencement of winding up"
+            }, {
+                "key": "6.4.35",
+                "name": "Transactions in fraud of creditors"
+            }, {
+                "key": "6.4.36",
+                "name": "Misconduct in course of winding up"
+            }, {
+                "key": "6.4.37",
+                "name": "Falsification of company’s books"
+            }, {
+                "key": "6.4.38",
+                "name": "Bankrupt failing to disclose property or disposals to official receiver or trustee"
+            }, {
+                "key": "6.4.39",
+                "name": "Bankrupt failing to deliver property to, or concealing property from, official receiver or trustee"
+            }, {
+                "key": "6.4.40",
+                "name": "Bankrupt removing property which he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.4.41",
+                "name": "Bankrupt failing to account for loss of substantial part of property"
+            }, {
+                "key": "6.4.42",
+                "name": "Bankrupt failing to deliver books, papers or records to official receiver or trustee"
+            }, {
+                "key": "6.4.43",
+                "name": "Bankrupt concealing destroying etc. books, papers or records or making  false entries in them"
+            }, {
+                "key": "6.4.44",
+                "name": "Bankrupt disposing of, or altering, books, papers or records relating to his estate or affairs"
+            }, {
+                "key": "6.4.45",
+                "name": "Bankrupt making material omission in statement relating to his affairs"
+            }, {
+                "key": "6.4.46",
+                "name": "Bankrupt making false statement, or failing to inform trustee, where false debt proved"
+            }, {
+                "key": "6.4.47",
+                "name": "Bankrupt fraudulently disposing of property"
+            }, {
+                "key": "6.4.48",
+                "name": "Bankrupt absconding with property he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.4.49",
+                "name": "Fraudulent dealing with property obtained on credit"
+            }, {
+                "key": "6.4.50",
+                "name": "Bankrupt disposing of property obtained on credit and not paid for"
+            }, {
+                "key": "6.4.51",
+                "name": "Bankrupt obtaining credit or engaging in business without disclosing his status or name in which he was made bankrupt"
+            }, {
+                "key": "6.4.52",
+                "name": "Person made bankrupt in Scotland or Northern Ireland obtaining credit etc. in England and Wales"
+            }, {
+                "key": "6.4.53",
+                "name": "Frauds in connection with sale of land etc"
+            }, {
+                "key": "6.4.54",
+                "name": "Providing false or misleading information for allowance claims"
+            }, {
+                "key": "6.4.55",
+                "name": "Concealing etc. criminal property"
+            }, {
+                "key": "6.4.56",
+                "name": "Arrangements - concerned in arrangement, knows or suspects, facilitates acquisition, retention, use or control of criminal property by, or on behalf of another person"
+            }, {
+                "key": "6.4.57",
+                "name": "Acquisition, use & possession"
+            }, {
+                "key": "6.4.58",
+                "name": "Nominated officer; must not give consent to the doing of a prohibited act"
+            }, {
+                "key": "6.4.59",
+                "name": "Dishonest representation for obtaining benefit etc."
+            }, {
+                "key": "6.4.60",
+                "name": "Fraudulently printing, mutilating or re-issuing stamps etc."
+            }, {
+                "key": "6.4.61",
+                "name": "Fraudulent use of telecommunication system"
+            }, {
+                "key": "6.4.62",
+                "name": "Theft"
+            }, {
+                "key": "6.4.63",
+                "name": "False Accounting"
+            }, {
+                "key": "6.4.64",
+                "name": "Handling stolen goods"
+            }, {
+                "key": "6.4.65",
+                "name": "Dishonestly retaining a wrongful credit"
+            }, {
+                "key": "6.4.66",
+                "name": "Subject of debt relief order fraudulently dispose of property"
+            }, {
+                "key": "6.4.67",
+                "name": "Subject of debt relief order dispose of property not paid for by them or obtain property in respect of which money is owed."
+            }, {
+                "key": "6.4.68",
+                "name": "VAT Offences"
+            }]
+        }, {
+            "key": "6.5",
+            "name": "Band 6.5",
+            "description": "Under £30,000.",
+            "categories": [{
+                "key": "6.5.1",
+                "name": "Cheating the public revenue"
+            }, {
+                "key": "6.5.2",
+                "name": "Conspiracy to defraud"
+            }, {
+                "key": "6.5.3",
+                "name": "Dishonestly obtaining electronic communication services"
+            }, {
+                "key": "6.5.4",
+                "name": "Offence of fraudulent trading"
+            }, {
+                "key": "6.5.5",
+                "name": "Insider Dealing"
+            }, {
+                "key": "6.5.6",
+                "name": "Fraudulent evasion of duty"
+            }, {
+                "key": "6.5.7",
+                "name": "Fraudulently obtaining credit"
+            }, {
+                "key": "6.5.8",
+                "name": "Cartel Offence"
+            }, {
+                "key": "6.5.9",
+                "name": "Non-compliance, false, misleading or reckless statements"
+            }, {
+                "key": "6.5.10",
+                "name": "Fraudulent evasion of tax"
+            }, {
+                "key": "6.5.11",
+                "name": "Falsification of documents"
+            }, {
+                "key": "6.5.12",
+                "name": "Acknowledging bail in false name"
+            }, {
+                "key": "6.5.13",
+                "name": "Destroying, injuring, forging or falsifying registers of births, baptisms, marriages, deaths or burials or certified copies"
+            }, {
+                "key": "6.5.14",
+                "name": "Making false entries in copies of registers of baptisms, marriages, or burials, directed to be sent to any registrar, or destroying or concealing copies of registers"
+            }, {
+                "key": "6.5.15",
+                "name": "Forgery"
+            }, {
+                "key": "6.5.16",
+                "name": "Copying a false instrument"
+            }, {
+                "key": "6.5.17",
+                "name": "Use or copy of a false instrument"
+            }, {
+                "key": "6.5.18",
+                "name": "Possess false instrument or materials to make false instrument"
+            }, {
+                "key": "6.5.19",
+                "name": "Counterfeiting notes and coins"
+            }, {
+                "key": "6.5.20",
+                "name": "Passing etc counterfeit notes and coins"
+            }, {
+                "key": "6.5.21",
+                "name": "Custody or control of counterfeit notes and coins"
+            }, {
+                "key": "6.5.22",
+                "name": "Making or custody or control of counterfeiting materials and implements"
+            }, {
+                "key": "6.5.23",
+                "name": "Reproducing or making etc of British notes and coins"
+            }, {
+                "key": "6.5.24",
+                "name": "Fraud by false representation"
+            }, {
+                "key": "6.5.25",
+                "name": "Fraud by failing to disclose information"
+            }, {
+                "key": "6.5.26",
+                "name": "Fraud by abuse of position "
+            }, {
+                "key": "6.5.27",
+                "name": "Possession etc of articles for use in frauds"
+            }, {
+                "key": "6.5.28",
+                "name": "Making or supplying articles for use in frauds "
+            }, {
+                "key": "6.5.29",
+                "name": "Participating in fraudulent business carried on by sole trader etc"
+            }, {
+                "key": "6.5.30",
+                "name": "Obtaining services dishonestly"
+            }, {
+                "key": "6.5.31",
+                "name": "Breach of requirements, lack of qualification, falsification etc."
+            }, {
+                "key": "6.5.32",
+                "name": "Counterfeiting etc. of dies or marks"
+            }, {
+                "key": "6.5.33",
+                "name": "Fraud, etc in anticipation of winding up"
+            }, {
+                "key": "6.5.34",
+                "name": "Privity to fraud in anticipation of winding up; fraud, or privity to fraud, after commencement of winding up"
+            }, {
+                "key": "6.5.35",
+                "name": "Transactions in fraud of creditors"
+            }, {
+                "key": "6.5.36",
+                "name": "Misconduct in course of winding up"
+            }, {
+                "key": "6.5.37",
+                "name": "Falsification of company’s books"
+            }, {
+                "key": "6.5.38",
+                "name": "Bankrupt failing to disclose property or disposals to official receiver or trustee"
+            }, {
+                "key": "6.5.39",
+                "name": "Bankrupt failing to deliver property to, or concealing property from, official receiver or trustee"
+            }, {
+                "key": "6.5.40",
+                "name": "Bankrupt removing property which he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.5.41",
+                "name": "Bankrupt failing to account for loss of substantial part of property"
+            }, {
+                "key": "6.5.42",
+                "name": "Bankrupt failing to deliver books, papers or records to official receiver or trustee"
+            }, {
+                "key": "6.5.43",
+                "name": "Bankrupt concealing destroying etc. books, papers or records or making  false entries in them"
+            }, {
+                "key": "6.5.44",
+                "name": "Bankrupt disposing of, or altering, books, papers or records relating to his estate or affairs"
+            }, {
+                "key": "6.5.45",
+                "name": "Bankrupt making material omission in statement relating to his affairs"
+            }, {
+                "key": "6.5.46",
+                "name": "Bankrupt making false statement, or failing to inform trustee, where false debt proved"
+            }, {
+                "key": "6.5.47",
+                "name": "Bankrupt fraudulently disposing of property"
+            }, {
+                "key": "6.5.48",
+                "name": "Bankrupt absconding with property he is required to deliver to official receiver or trustee"
+            }, {
+                "key": "6.5.49",
+                "name": "Fraudulent dealing with property obtained on credit"
+            }, {
+                "key": "6.5.50",
+                "name": "Bankrupt disposing of property obtained on credit and not paid for"
+            }, {
+                "key": "6.5.51",
+                "name": "Bankrupt obtaining credit or engaging in business without disclosing his status or name in which he was made bankrupt"
+            }, {
+                "key": "6.5.52",
+                "name": "Person made bankrupt in Scotland or Northern Ireland obtaining credit etc. in England and Wales"
+            }, {
+                "key": "6.5.53",
+                "name": "Frauds in connection with sale of land etc"
+            }, {
+                "key": "6.5.54",
+                "name": "Providing false or misleading information for allowance claims"
+            }, {
+                "key": "6.5.55",
+                "name": "Concealing etc. criminal property"
+            }, {
+                "key": "6.5.56",
+                "name": "Arrangements - concerned in arrangement, knows or suspects, facilitates acquisition, retention, use or control of criminal property by, or on behalf of another person"
+            }, {
+                "key": "6.5.57",
+                "name": "Acquisition, use & possession"
+            }, {
+                "key": "6.5.58",
+                "name": "Nominated officer; must not give consent to the doing of a prohibited act"
+            }, {
+                "key": "6.5.59",
+                "name": "Dishonest representation for obtaining benefit etc."
+            }, {
+                "key": "6.5.60",
+                "name": "Fraudulently printing, mutilating or re-issuing stamps etc."
+            }, {
+                "key": "6.5.61",
+                "name": "Fraudulent use of telecommunication system"
+            }, {
+                "key": "6.5.62",
+                "name": "Theft"
+            }, {
+                "key": "6.5.63",
+                "name": "False Accounting"
+            }, {
+                "key": "6.5.64",
+                "name": "Handling stolen goods"
+            }, {
+                "key": "6.5.65",
+                "name": "Dishonestly retaining a wrongful credit"
+            }, {
+                "key": "6.5.66",
+                "name": "Subject of debt relief order fraudulently dispose of property"
+            }, {
+                "key": "6.5.67",
+                "name": "Subject of debt relief order dispose of property not paid for by them or obtain property in respect of which money is owed."
+            }, {
+                "key": "6.5.68",
+                "name": "VAT Offences"
+            }]
+        }]
+    }, {
+        "key": "7",
+        "name": "Property Damage",
+        "bands": [{
+            "key": "7.1",
+            "name": "Band 7.1",
+            "description": "Arson with intent to endanger life/reckless as to endanger life.",
+            "categories": [{
+                "key": "7.1.1",
+                "name": "Acts endangering or likely to endanger safe navigation"
+            }, {
+                "key": "7.1.2",
+                "name": "Destroying, damaging etc. a Channel Tunnel train or the Tunnel system or committing acts of violence likely to endanger safety of operation "
+            }, {
+                "key": "7.1.3",
+                "name": "Arson intending or being reckless as to endanger life"
+            }, {
+                "key": "7.1.4",
+                "name": "Aggravated criminal damage"
+            }]
+        }, {
+            "key": "7.2",
+            "name": "Band 7.2",
+            "description": "Simple arson and criminal damage over £30,000.",
+            "categories": [{
+                "key": "7.2.1",
+                "name": "Aggravated criminal damage"
+            }, {
+                "key": "7.2.2",
+                "name": "Arson"
+            }, {
+                "key": "7.2.3",
+                "name": "Criminal damage"
+            }, {
+                "key": "7.2.4",
+                "name": "Criminal damage to ancient monuments"
+            }, {
+                "key": "7.2.5",
+                "name": "Racially or Religiously Aggravated Criminal Damage (not endangering life)"
+            }, {
+                "key": "7.2.6",
+                "name": "Criminal damage and obstructing railways etc."
+            }, {
+                "key": "7.2.7",
+                "name": "Prohibition of use of explosives, poisons, electrical devices, and the destruction of Dams"
+            }]
+        }, {
+            "key": "7.3",
+            "name": "Band 7.3",
+            "description": "All other offences (unless standard).",
+            "categories": [{
+                "key": "7.3.1",
+                "name": "Aggravated criminal damage"
+            }, {
+                "key": "7.3.2",
+                "name": "Criminal damage"
+            }, {
+                "key": "7.3.3",
+                "name": "Criminal damage to ancient monuments"
+            }, {
+                "key": "7.3.4",
+                "name": "Racially or Religiously Aggravated Criminal Damage (not endangering life)"
+            }, {
+                "key": "7.3.5",
+                "name": "Criminal damage and obstructing railways etc."
+            }, {
+                "key": "7.3.6",
+                "name": "Prohibition of use of explosives, poisons, electrical devices, and the destruction of Dams"
+            }, {
+                "key": "7.3.7",
+                "name": "Endangering safety of aircraft"
+            }, {
+                "key": "7.3.8",
+                "name": "Endangering safety of any person or property"
+            }, {
+                "key": "7.3.9",
+                "name": "Endangering safety at aerodromes"
+            }, {
+                "key": "7.3.10",
+                "name": "Destroying, damaging or endangering safety or aircraft"
+            }, {
+                "key": "7.3.11",
+                "name": "Endangering the safety of railway passengers"
+            }, {
+                "key": "7.3.12",
+                "name": "Endangering ship, life or limb on shipboard by breach of duty"
+            }, {
+                "key": "7.3.13",
+                "name": "Aggravated vehicle taking where injury or damage was caused"
+            }]
+        }]
+    }, {
+        "key": "8",
+        "name": "Offences Against the Public Interest",
+        "bands": [{
+            "key": "8.1",
+            "name": "Band 8.1",
+            "description": "All offences against the public interest (unless standard).",
+            "categories": [{
+                "key": "8.1.1",
+                "name": "Incitement to sedition etc."
+            }, {
+                "key": "8.1.2",
+                "name": "Offences relating to offering, promising or giving bribes"
+            }, {
+                "key": "8.1.3",
+                "name": "Offences relating to requesting, agreeing to receive and accepting bribes"
+            }, {
+                "key": "8.1.4",
+                "name": "Bribery of foreign public officials"
+            }, {
+                "key": "8.1.5",
+                "name": "Attempting to Pervert the Course of Public Justice"
+            }, {
+                "key": "8.1.6",
+                "name": "Committing or conspiring to commit, an act outraging public decency"
+            }, {
+                "key": "8.1.7",
+                "name": "Common Law offences not listed separately"
+            }, {
+                "key": "8.1.8",
+                "name": "Conspiracy to corrupt public morals"
+            }, {
+                "key": "8.1.9",
+                "name": "Misconduct in a public offence by act or commission"
+            }, {
+                "key": "8.1.10",
+                "name": "Obstructing coroner in the execution of his duty "
+            }, {
+                "key": "8.1.11",
+                "name": "Offence of disclosure"
+            }, {
+                "key": "8.1.12",
+                "name": "Harming or threatening to harm a witness"
+            }, {
+                "key": "8.1.13",
+                "name": "Assist offender"
+            }, {
+                "key": "8.1.14",
+                "name": "Seduction of members of HM Forces from their duty or allegiance"
+            }, {
+                "key": "8.1.15",
+                "name": "Prohibition on publication of obscene article or possession of obscene article for gain"
+            }, {
+                "key": "8.1.16",
+                "name": "Commit act prejudicial to safety or interest of the State"
+            }, {
+                "key": "8.1.17",
+                "name": "Unauthorised use of uniforms; falsification of reports, forgery, personation and false documents.  Interfering with officers of the police or members of His Majesty's forces. Duty of giving information as to commission of offences."
+            }, {
+                "key": "8.1.18",
+                "name": "Serving member/former member of Security or intelligence services disclosing information relating to security or intelligence. Person notified as subject to security or intelligence provisions unlawfully disclosing information relating to security or intelligence"
+            }, {
+                "key": "8.1.19",
+                "name": "Former or current Crown Servant/Government Contractor making damaging disclosure relating to security or intelligence."
+            }, {
+                "key": "8.1.20",
+                "name": "Former or current Crown Servant/Government Contractor making damaging disclosure relating to defence matter."
+            }, {
+                "key": "8.1.21",
+                "name": "Former or current Crown Servant/Government Contractor making damaging disclosure or confidential matter from Foreign State or relating to international relations."
+            }, {
+                "key": "8.1.22",
+                "name": "Former or current Crown Servant/Government Contractor disclosing information resulting in commission of offence/facilitating escape from custody/ facilitating act prejudicial to safekeeping of person in custody / impending prevention / detection of offence, apprehension / prosecution of suspected offender etc"
+            }, {
+                "key": "8.1.23",
+                "name": "Making damaging disclosure of protected information or information or disclosing information gained in contravention of s.1 of Official Secrets Act 1911"
+            }, {
+                "key": "8.1.24",
+                "name": "Making damaging disclosure of information entrusted to other State of organisation"
+            }, {
+                "key": "8.1.25",
+                "name": "Disclosing information which can be used to gain access to protected information "
+            }, {
+                "key": "8.1.26",
+                "name": "Perjury"
+            }, {
+                "key": "8.1.27",
+                "name": "Use of words or behaviour or display of written material (Acts intended to stir up religious hatred). "
+            }, {
+                "key": "8.1.28",
+                "name": "Public performance of a play (Acts intended to stir up religious hatred). "
+            }, {
+                "key": "8.1.29",
+                "name": "Producer, Director, Provider or user of programme or broadcasting (acts intended to stir up hatred on religious or sexual orientation grounds). "
+            }, {
+                "key": "8.1.30",
+                "name": "Contamination of or interference with goods with intention of causing public alarm, anxiety, economic loss, etc."
+            }, {
+                "key": "8.1.31",
+                "name": "Bribery, Treating and undue influence"
+            }, {
+                "key": "8.1.32",
+                "name": "Offences in connection with disclosure notices or search warrants"
+            }, {
+                "key": "8.1.33",
+                "name": "Prohibition of presentation of obscene performances of plays"
+            }, {
+                "key": "8.1.34",
+                "name": "Attempting to injure or alarm the sovereign etc"
+            }, {
+                "key": "8.1.35",
+                "name": "Declared felonies against the Crown"
+            }]
+        }]
+    }, {
+        "key": "9",
+        "name": "Drugs Offences",
+        "bands": [{
+            "key": "9.1",
+            "name": "Band 9.1",
+            "description": "Class A: Importation S3 Misuse of Drugs Act/ S170 Customs and Excise Management Act; Or over 5,000 pages of evidence; Or weight over: 5 kg heroin or cocaine, 10,000 ecstasy tablets, 250,000 squares of LSD.",
+            "categories": [{
+                "key": "9.1.1",
+                "name": "Carrying or concealing on a ship a controlled drug for import or export - Class A"
+            }, {
+                "key": "9.1.2",
+                "name": "Improper importation of goods and evasion of duty - Class A"
+            }, {
+                "key": "9.1.3",
+                "name": "Exportation of prohibited or restricted goods - Class A"
+            }, {
+                "key": "9.1.4",
+                "name": "Restriction of importation or exportation of controlled drugs - Class A"
+            }, {
+                "key": "9.1.5",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class A"
+            }, {
+                "key": "9.1.6",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class A"
+            }, {
+                "key": "9.1.7",
+                "name": "Possession of a controlled drug with intent to supply - Class A"
+            }, {
+                "key": "9.1.8",
+                "name": "Offences relating to opium"
+            }, {
+                "key": "9.1.9",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.1.10",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.1.11",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.1.12",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }]
+        }, {
+            "key": "9.2",
+            "name": "Band 9.2",
+            "description": "Class B: Importation S3 Misuse of Drugs Act/ S170 Customs and Excise Management Act; Or over 5,000 pages of evidence; Or weight over: 20kg amphetamine, 200kg cannabis, 5kg ketamine.",
+            "categories": [{
+                "key": "9.2.1",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.2.2",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.2.3",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.2.4",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }, {
+                "key": "9.2.5",
+                "name": "Carrying or concealing on a ship a controlled drug for import or export - Class B"
+            }, {
+                "key": "9.2.6",
+                "name": "Improper importation of goods and evasion of duty - Class B"
+            }, {
+                "key": "9.2.7",
+                "name": "Exportation of prohibited or restricted goods - Class B"
+            }, {
+                "key": "9.2.8",
+                "name": "Restriction of importation or exportation of controlled drugs - Class B"
+            }, {
+                "key": "9.2.9",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class B"
+            }, {
+                "key": "9.2.10",
+                "name": "Possession of a controlled drug with intent to supply - Class B"
+            }, {
+                "key": "9.2.11",
+                "name": "Restrictions of cultivation of cannabis plant"
+            }, {
+                "key": "9.2.12",
+                "name": "Supply Psychoactive Substances"
+            }]
+        }, {
+            "key": "9.3",
+            "name": "Band 9.3",
+            "description": "Class C: Importation S3 Misuse of Drugs Act/ S170 Customs and Excise Management Act; Or over 5,000 pages of evidence.",
+            "categories": [{
+                "key": "9.3.1",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.3.2",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.3.3",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.3.4",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }, {
+                "key": "9.3.5",
+                "name": "Supply Psychoactive Substances"
+            }, {
+                "key": "9.3.6",
+                "name": "Carrying or concealing on a ship a controlled drug for import or export - Class C"
+            }, {
+                "key": "9.3.7",
+                "name": "Improper importation of goods and evasion of duty - Class C"
+            }, {
+                "key": "9.3.8",
+                "name": "Exportation of prohibited or restricted goods - Class C"
+            }, {
+                "key": "9.3.9",
+                "name": "Restriction of importation or exportation of controlled drugs - Class C"
+            }, {
+                "key": "9.3.10",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class C"
+            }, {
+                "key": "9.3.11",
+                "name": "Possession of a controlled drug with intent to supply - Class C"
+            }]
+        }, {
+            "key": "9.4",
+            "name": "Band 9.4",
+            "description": "Class A: 1,000 pages of evidence; Or weight over: 1kg Heroin or Cocaine, 2,000 ecstasy tablets, 2,5000 squares of LSD.",
+            "categories": [{
+                "key": "9.4.1",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class A"
+            }, {
+                "key": "9.4.2",
+                "name": "Possession of a controlled drug with intent to supply - Class A"
+            }, {
+                "key": "9.4.3",
+                "name": "Offences relating to opium"
+            }, {
+                "key": "9.4.4",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.4.5",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.4.6",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.4.7",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }]
+        }, {
+            "key": "9.5",
+            "name": "Band 9.5",
+            "description": "Class B: 1,000 pages of evidence; Or weight over: 4 kg of amphetamine, 40 kg of cannabis, 1 kg ketamine.",
+            "categories": [{
+                "key": "9.5.1",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.5.2",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.5.3",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.5.4",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }, {
+                "key": "9.5.5",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class B"
+            }, {
+                "key": "9.5.6",
+                "name": "Possession of a controlled drug with intent to supply - Class B"
+            }, {
+                "key": "9.5.7",
+                "name": "Restrictions of cultivation of cannabis plant"
+            }, {
+                "key": "9.5.8",
+                "name": "Supply Psychoactive Substances"
+            }]
+        }, {
+            "key": "9.6",
+            "name": "Band 9.6",
+            "description": "Class C: 1,000 pages of evidence",
+            "categories": [{
+                "key": "9.6.1",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.6.2",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.6.3",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.6.4",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }, {
+                "key": "9.6.5",
+                "name": "Supply Psychoactive Substances"
+            }]
+        }, {
+            "key": "9.7",
+            "name": "Band 9.7",
+            "description": "All other drugs cases of any class (unless standard).",
+            "categories": [{
+                "key": "9.7.1",
+                "name": "Possession of a controlled drug with intent to supply - Class A"
+            }, {
+                "key": "9.7.2",
+                "name": "Offences relating to opium"
+            }, {
+                "key": "9.7.3",
+                "name": "Supply etc. of articles for administering or preparing controlled drugs "
+            }, {
+                "key": "9.7.4",
+                "name": "Incite another to supply a controlled drug "
+            }, {
+                "key": "9.7.5",
+                "name": "Offences against Misuse of Drugs Regulations etc"
+            }, {
+                "key": "9.7.6",
+                "name": "Assisting in or inducing commission of drug offence outside United Kingdom"
+            }, {
+                "key": "9.7.7",
+                "name": "Production, supply or offer to supply, or being concerned in the production - Class B"
+            }, {
+                "key": "9.7.8",
+                "name": "Possession of a controlled drug with intent to supply - Class B"
+            }, {
+                "key": "9.7.9",
+                "name": "Restrictions of cultivation of cannabis plant"
+            }, {
+                "key": "9.7.10",
+                "name": "Supply Psychoactive Substances"
+            }, {
+                "key": "9.7.11",
+                "name": "Permitting premises to be used for unlawful purposes"
+            }]
+        }]
+    }, {
+        "key": "10",
+        "name": "Driving Offences",
+        "bands": [{
+            "key": "10.1",
+            "name": "Band 10.1",
+            "description": "Death and serious injury by driving cases (unless standard).",
+            "categories": [{
+                "key": "10.1.1",
+                "name": "Causing injury by wanton or furious driving or racing"
+            }, {
+                "key": "10.1.2",
+                "name": "Causing death by dangerous driving "
+            }, {
+                "key": "10.1.3",
+                "name": "Serious injury by dangerous driving"
+            }, {
+                "key": "10.1.4",
+                "name": "Causing death by careless, or inconsiderate, driving"
+            }, {
+                "key": "10.1.5",
+                "name": "Causing death by careless driving  when under the influence of drink or drugs "
+            }, {
+                "key": "10.1.6",
+                "name": "Causing death by driving: unlicensed, uninsured, or disqualified drivers "
+            }, {
+                "key": "10.1.7",
+                "name": "Causing death by aggravated vehicle taking"
+            }]
+        }]
+    }, {
+        "key": "11",
+        "name": "Burglary and Robbery",
+        "bands": [{
+            "key": "11.1",
+            "name": "Band 11.1",
+            "description": "Aggravated burglary, burglary with intent to GBH or rape, and armed robbery.",
+            "categories": [{
+                "key": "11.1.1",
+                "name": "Armed Robbery"
+            }, {
+                "key": "11.1.2",
+                "name": "Burglary with intent to inflict grievous bodily harm"
+            }, {
+                "key": "11.1.3",
+                "name": "Aggravated burglary"
+            }]
+        }, {
+            "key": "11.2",
+            "name": "Band 11.2",
+            "description": "Indictable only burglary; other robberies.",
+            "categories": [{
+                "key": "11.2.1",
+                "name": "Robbery (other than armed robbery)"
+            }, {
+                "key": "11.2.2",
+                "name": "Assault with intent to rob"
+            }, {
+                "key": "11.2.3",
+                "name": "Burglary (domestic)"
+            }, {
+                "key": "11.2.4",
+                "name": "Burglary (non-domestic)"
+            }]
+        }]
+    }, {
+        "key": "12",
+        "name": "Firearms Offences",
+        "bands": [{
+            "key": "12.1",
+            "name": "Band 12.1",
+            "description": "Possession or supply of a firearm/ammunition with any ulterior intent or any offence for which the maximum penalty is life imprisonment.",
+            "categories": [{
+                "key": "12.1.1",
+                "name": "Offence in connection with a prohibition or restriction on the importation of any weapon or ammunition of a kind mentioned in section 5(1)(a), (ab), (aba), (ac), (ad), (ae), (af) or (c) or (1A)(a) of the Firearms Act 1968"
+            }, {
+                "key": "12.1.2",
+                "name": "Offence in connection with a prohibition or restriction on the exportation of any weapon or ammunition of a kind mentioned in section 5(1)(a), (ab), (aba), (ac), (ad), (ae), (af) or (c) or (1A)(a) of the Firearms Act 1968"
+            }, {
+                "key": "12.1.3",
+                "name": "Firing upon a vessel, aircraft or vehicle while it is engaged in the prevention of smuggling"
+            }, {
+                "key": "12.1.4",
+                "name": "Trading in firearms without being registered as a firearms dealer "
+            }, {
+                "key": "12.1.5",
+                "name": "Conversion of firearms "
+            }, {
+                "key": "12.1.6",
+                "name": "Possession of firearm with intent to endanger life"
+            }, {
+                "key": "12.1.7",
+                "name": "Possessing firearm or imitation firearm with intent to cause fear of violence "
+            }, {
+                "key": "12.1.8",
+                "name": "Use of firearm to resist arrest "
+            }, {
+                "key": "12.1.9",
+                "name": "Possessing firearm or imitation firearm while committing or being arrested for specified offence"
+            }, {
+                "key": "12.1.10",
+                "name": "Carrying firearm with criminal intent"
+            }, {
+                "key": "12.1.11",
+                "name": "Supplying firearms or ammunition to person prohibited from possession"
+            }]
+        }, {
+            "key": "12.2",
+            "name": "Band 12.2",
+            "description": "Minimum sentence offence.",
+            "categories": [{
+                "key": "12.2.1",
+                "name": "Shortening the barrel of a shotgun"
+            }, {
+                "key": "12.2.2",
+                "name": "Possessing or acquiring prohibited weapons or ammunition"
+            }, {
+                "key": "12.2.3",
+                "name": "Possessing or acquiring firearm disguised as another object; or other prohibited weapons"
+            }, {
+                "key": "12.2.4",
+                "name": "Possessing, manufacturing or distributing prohibited weapons"
+            }, {
+                "key": "12.2.5",
+                "name": "Trespassing with firearm or imitation firearm in a building  "
+            }, {
+                "key": "12.2.6",
+                "name": "Possession of firearms by persons previously convicted of crime"
+            }, {
+                "key": "12.2.7",
+                "name": "Using someone to mind a weapon"
+            }]
+        }, {
+            "key": "12.3",
+            "name": "Band 12.3",
+            "description": "All other offences (unless standard).",
+            "categories": [{
+                "key": "12.3.1",
+                "name": "Producing a false certificate or making a false statement with a view to acquisition, testing or repair of firearm or ammunition"
+            }, {
+                "key": "12.3.2",
+                "name": "Carrying firearm, imitation firearm or air weapon in a public place"
+            }]
+        }]
+    }, {
+        "key": "13",
+        "name": "Other Offences Against the Person",
+        "bands": [{
+            "key": "13.1",
+            "name": "Band 13.1",
+            "description": "Kidnapping; false imprisonment; blackmail (unless standard).",
+            "categories": [{
+                "key": "13.1.1",
+                "name": "Abduction of a child by parent, etc"
+            }, {
+                "key": "13.1.2",
+                "name": "Abduction of child by other persons"
+            }, {
+                "key": "13.1.3",
+                "name": "False imprisonment"
+            }, {
+                "key": "13.1.4",
+                "name": "Kidnapping"
+            }, {
+                "key": "13.1.5",
+                "name": "Blackmail"
+            }]
+        }]
+    }, {
+        "key": "14",
+        "name": "Exploitation and Human Trafficking Offences",
+        "bands": [{
+            "key": "14.1",
+            "name": "Band 14.1",
+            "description": "All exploitation / human trafficking offences (unless standard).",
+            "categories": [{
+                "key": "14.1.1",
+                "name": "Bring or cause another to bring a child into the UK in breach of specified conditions"
+            }, {
+                "key": "14.1.2",
+                "name": "Training a child aged 12 or under to take part in dangerous performances"
+            }, {
+                "key": "14.1.3",
+                "name": "Procuring a child to go abroad to perform by means of false pretence or representation"
+            }, {
+                "key": "14.1.4",
+                "name": "Acting as a gangmaster in contravention of Section 6 (prohibition of unlicensed activities)"
+            }, {
+                "key": "14.1.5",
+                "name": "Assisting unlawful immigration to member state"
+            }, {
+                "key": "14.1.6",
+                "name": "Assisting entry to UK in breach of deportation or exclusion order"
+            }, {
+                "key": "14.1.7",
+                "name": "Employing a person knowing that they are an adult subject to immigration control who has not been granted leave to enter or remain, or whose leave to remain is invalid etc."
+            }, {
+                "key": "14.1.8",
+                "name": "Slavery, servitude and forced or compulsory labour"
+            }, {
+                "key": "14.1.9",
+                "name": "Human trafficking"
+            }, {
+                "key": "14.1.10",
+                "name": "Trafficking into the UK for sexual exploitation"
+            }, {
+                "key": "14.1.11",
+                "name": "Trafficking within the UK for sexual exploitation"
+            }, {
+                "key": "14.1.12",
+                "name": "Trafficking out of the UK for sexual exploitation"
+            }]
+        }]
+    }, {
+        "key": "15",
+        "name": "Public Order Offences",
+        "bands": [{
+            "key": "15.1",
+            "name": "Band 15.1",
+            "description": "Riot and prison mutiny/riot.",
+            "categories": [{
+                "key": "15.1.1",
+                "name": "Prison mutiny"
+            }, {
+                "key": "15.1.2",
+                "name": "Riot"
+            }]
+        }, {
+            "key": "15.2",
+            "name": "Band 15.2",
+            "description": "Violent disorder.",
+            "categories": [{
+                "key": "15.2.1",
+                "name": "Interfering or failing to comply with requirements, directions, notices or restrictions in connection with the Channel Tunnel"
+            }, {
+                "key": "15.2.2",
+                "name": "Violent disorder"
+            }, {
+                "key": "15.2.3",
+                "name": "Threaten or claim contamination of or interference with goods with intention of causing public alarm or anxiety, etc"
+            }]
+        }, {
+            "key": "15.3",
+            "name": "Band 15.3",
+            "description": "Affray.",
+            "categories": [{
+                "key": "15.3.1",
+                "name": "Affray"
+            }]
+        }]
+    }, {
+        "key": "16",
+        "name": "Regulatory Offences",
+        "bands": [{
+            "key": "16.1",
+            "name": "Band 16.1",
+            "description": "Health and Safety or environmental cases involving one or more fatalities or defined by the HSE or EA as a category or Stage 1 \"major incident\"; Death of a child; A major accident at a site regulated by the Control of Major Accident Hazards Regulations 1999 (as amended); large scale explosion.",
+            "categories": [{
+                "key": "16.1.1",
+                "name": "Contravening health and safety requirements or failing to comply with regulations"
+            }]
+        }, {
+            "key": "16.2",
+            "name": "Band 16.2",
+            "description": "Health and Safety or environmental cases not falling within Band 1 but involving: Serious and permanent personal injury/disability and/or widespread destruction of property (other than that owned or occupied by the defendant); Extensive pollution/irreparable damage to the environment; Toxic gas release (e.g. carbon monoxide, chlorine gas); Cases involving incidents governed by mining/railways/aviation legislation.",
+            "categories": [{
+                "key": "16.2.2",
+                "name": "Contravening health and safety requirements or failing to comply with regulations"
+            }, {
+                "key": "16.2.3",
+                "name": "Discharge of oil from ships into certain UK waters"
+            }, {
+                "key": "16.2.4",
+                "name": "Discharge of certain oils from pipe-lines or as the result of exploration etc. in designated areas"
+            }]
+        }, {
+            "key": "16.3",
+            "name": "Band 16.3",
+            "description": "All other offences (unless standard).",
+            "categories": [{
+                "key": "16.3.1",
+                "name": "Contravening health and safety requirements or failing to comply with regulations"
+            }, {
+                "key": "16.3.2",
+                "name": "TEW offences"
+            }, {
+                "key": "16.3.3",
+                "name": "Importation of animals and carcasses"
+            }, {
+                "key": "16.3.4",
+                "name": "Failure to comply with requirements, restrictions, directions and notices in connection with air and sea travel"
+            }, {
+                "key": "16.3.5",
+                "name": "Failure of commercial organisations to prevent bribery"
+            }, {
+                "key": "16.3.6",
+                "name": "Operator failing to comply with obligations impost by Articles 5 (documentation), Article 7 (labelling) and Article 8 (notification of the Community Regulation"
+            }, {
+                "key": "16.3.7",
+                "name": "Making false or misleading statements; and falsifying, concealing or destruction etc. of documents"
+            }, {
+                "key": "16.3.8",
+                "name": "Dealing in tainted cultural objects"
+            }, {
+                "key": "16.3.9",
+                "name": "Use of site in absence of approved programme"
+            }, {
+                "key": "16.3.10",
+                "name": "Failing to comply approved programme"
+            }, {
+                "key": "16.3.11",
+                "name": "Disclosing information without permission"
+            }, {
+                "key": "16.3.12",
+                "name": "Supplying false or misleading information"
+            }, {
+                "key": "16.3.13",
+                "name": "Contravention of disclosure requirements"
+            }, {
+                "key": "16.3.14",
+                "name": "Carrying on a process without authority or not complying with conditions of granted authority"
+            }, {
+                "key": "16.3.15",
+                "name": "Failing to comply with requirements imposed in connection with suspension of a licence otherwise than in relation to special waste"
+            }, {
+                "key": "16.3.16",
+                "name": "Failing to comply with requirements imposed in connection with suspension of a licence in relation to special waste"
+            }, {
+                "key": "16.3.17",
+                "name": "Contravening s.6(1) of the Environmental Protection Act 1990"
+            }, {
+                "key": "16.3.18",
+                "name": "Provision of false or misleading information, disclosing confidential information"
+            }, {
+                "key": "16.3.19",
+                "name": "Prohibition of commercial dealings in human material for transplantation"
+            }, {
+                "key": "16.3.20",
+                "name": "Prohibition of activities without consent etc."
+            }, {
+                "key": "16.3.21",
+                "name": "Use or store donated material not for a qualifying purpose"
+            }, {
+                "key": "16.3.22",
+                "name": "Material omissions from statement relating to company’s affairs"
+            }, {
+                "key": "16.3.23",
+                "name": "Failure of owner of ship to take all reasonable steps to secure that the ship is operated in a safe manner"
+            }, {
+                "key": "16.3.24",
+                "name": "Conduct endangering ships, structures or individuals"
+            }, {
+                "key": "16.3.25",
+                "name": "Failing to assist another ship in case of collision"
+            }, {
+                "key": "16.3.26",
+                "name": "Failing to assist aircraft in distress"
+            }, {
+                "key": "16.3.27",
+                "name": "Dangerously unsafe ships"
+            }, {
+                "key": "16.3.28",
+                "name": "Using unsafe lighter, barge or like vessel"
+            }, {
+                "key": "16.3.29",
+                "name": "Contravening directions prohibiting prescribing, supply etc of controlled drugs by practitioners etc"
+            }, {
+                "key": "16.3.30",
+                "name": "Giving false information by doctors, pharmacists, etc"
+            }, {
+                "key": "16.3.31",
+                "name": "Prohibition of sale of medical practices."
+            }, {
+                "key": "16.3.32",
+                "name": "Obstructing, interfering or failing to comply with request in connection to rights of access, search etc by Agency inspectors"
+            }, {
+                "key": "16.3.33",
+                "name": "Being unfit for duty"
+            }, {
+                "key": "16.3.34",
+                "name": "Making false statement"
+            }]
+        }]
+    }, {
+        "key": "17",
+        "name": "Standard Offences",
+        "bands": [{
+            "key": "17.1",
+            "name": "Band 17.1",
+            "description": "Standard cases. Those cases not falling under the above categories of offence will be defined as 'Standard Cases'.",
+            "categories": [{
+                "key": "17.1.1",
+                "name": "Burglary (domestic)"
+            }, {
+                "key": "17.1.2",
+                "name": "Burglary (non-domestic)"
+            }, {
+                "key": "17.1.3",
+                "name": "Disclosure of information for enforcing warrants"
+            }, {
+                "key": "17.1.4",
+                "name": "Failing to hold a licence as required or failing to  act in accordance with a licence"
+            }, {
+                "key": "17.1.5",
+                "name": "Making a false statement for the purposes of obtaining or holding a licence"
+            }, {
+                "key": "17.1.6",
+                "name": "Frauds by farmers in connection with agricultural charges"
+            }, {
+                "key": "17.1.7",
+                "name": "Contravening provisions of a scheme for sale of regulated products or disclosing information"
+            }, {
+                "key": "17.1.8",
+                "name": "Disclosing information otherwise than in accordance with s.55(4)"
+            }, {
+                "key": "17.1.9",
+                "name": "Offences in connection with farm capital grants and animal diseases"
+            }, {
+                "key": "17.1.10",
+                "name": "Drunkenness in aircraft"
+            }, {
+                "key": "17.1.11",
+                "name": "Unlicensed or unauthorised air traffic controllers"
+            }, {
+                "key": "17.1.12",
+                "name": "Failing to comply with requirements in relation to certificate of airworthiness"
+            }, {
+                "key": "17.1.13",
+                "name": "Removing object of archaeological or historical interest discovered by use of a metal detector in a protected place"
+            }, {
+                "key": "17.1.14",
+                "name": "Control of works affecting scheduled monuments"
+            }, {
+                "key": "17.1.15",
+                "name": "Failing to comply with license requirements in respect of regulated procedures concerning animals "
+            }, {
+                "key": "17.1.16",
+                "name": "Obstructing an officer in the exercise of powers of entry, search or seizure"
+            }, {
+                "key": "17.1.17",
+                "name": "Aiding or abetting etc desertion or absence without leave"
+            }, {
+                "key": "17.1.18",
+                "name": "Aiding or abetting etc malingering"
+            }, {
+                "key": "17.1.19",
+                "name": "Failing to produce an immigration document at a leave or asylum interview"
+            }, {
+                "key": "17.1.20",
+                "name": "Failing to produce an immigration document in respect of a dependent child at a leave or asylum interview"
+            }, {
+                "key": "17.1.21",
+                "name": "Failing to take action specified by the Secretary of State"
+            }, {
+                "key": "17.1.22",
+                "name": "Disclosing debtor information without authority"
+            }, {
+                "key": "17.1.23",
+                "name": "Threats likely to endanger safe navigation or ship or safety of fixed platform"
+            }, {
+                "key": "17.1.24",
+                "name": "Failing to provide information or making false statement relating to ship or harbour area"
+            }, {
+                "key": "17.1.25",
+                "name": "Assisting commission of offence relating to safety of ship, cargo or sea platform outside UK "
+            }, {
+                "key": "17.1.26",
+                "name": "Offences in relation to certain dangerous articles"
+            }, {
+                "key": "17.1.27",
+                "name": "Offences in relation to the exercise of powers"
+            }, {
+                "key": "17.1.28",
+                "name": "Failing to comply with enforcement notice"
+            }, {
+                "key": "17.1.29",
+                "name": "Interfering with any building, works, or thing installed on land in compliance with an enforcement notice"
+            }, {
+                "key": "17.1.30",
+                "name": "Failing to comply with a detention direction or obstructing an authorised person"
+            }, {
+                "key": "17.1.31",
+                "name": "Agreeing to indemnify sureties in criminal proceedings"
+            }, {
+                "key": "17.1.32",
+                "name": "Taking steps with a view to the fraudulent evasion of bingo duty, promoting bingo without being on the register, failing to comply with relevant provisions of Sch.3"
+            }, {
+                "key": "17.1.33",
+                "name": "Disclosing customs information"
+            }, {
+                "key": "17.1.34",
+                "name": "False/misleading statement"
+            }, {
+                "key": "17.1.35",
+                "name": "Misleading advertising"
+            }, {
+                "key": "17.1.36",
+                "name": "Protection of occupiers against eviction and harassment, false information etc."
+            }, {
+                "key": "17.1.37",
+                "name": "Obstruction etc"
+            }, {
+                "key": "17.1.38",
+                "name": "Failing to comply with requirements in relation to ear tags"
+            }, {
+                "key": "17.1.39",
+                "name": "Failing to register animal in accordance with requirements"
+            }, {
+                "key": "17.1.40",
+                "name": "Failing to comply with requirements in relation to cattle passports"
+            }, {
+                "key": "17.1.41",
+                "name": "Failing to comply with requirements in relation to movement of cattle using passports"
+            }, {
+                "key": "17.1.42",
+                "name": "Failing to comply with requirements in relation to notification of movement or death"
+            }, {
+                "key": "17.1.43",
+                "name": "Failing to comply with requirements in relation to records"
+            }, {
+                "key": "17.1.44",
+                "name": "Disclosing census information"
+            }, {
+                "key": "17.1.45",
+                "name": "Failing to provide for safety of children at entertainments"
+            }, {
+                "key": "17.1.46",
+                "name": "Allowing persons under 16 to take part in performances endangering life or limb"
+            }, {
+                "key": "17.1.47",
+                "name": "Allowing persons under sixteen to be in brothels"
+            }, {
+                "key": "17.1.48",
+                "name": "Failing to comply with directions, insurance obligations, providing false information, obstructing officers"
+            }, {
+                "key": "17.1.49",
+                "name": "Disclosing information"
+            }, {
+                "key": "17.1.50",
+                "name": "Contravening provisions restricting use of land for purpose of securing safety at aerodromes"
+            }, {
+                "key": "17.1.51",
+                "name": "Using aircraft for carriage for reward of passengers or cargo without a licence or failing to comply with terms of licence"
+            }, {
+                "key": "17.1.52",
+                "name": "Air transport licensing"
+            }, {
+                "key": "17.1.53",
+                "name": "Contravening provisions relating to provision of accommodation in aircraft"
+            }, {
+                "key": "17.1.54",
+                "name": "Refusing to furnish information or furnishing false information for the CAA and Secretary of State"
+            }, {
+                "key": "17.1.55",
+                "name": "Certifying copies of records and documentary evidence"
+            }, {
+                "key": "17.1.56",
+                "name": "Making false statements"
+            }, {
+                "key": "17.1.57",
+                "name": "Offences relating to civil partnership schedule"
+            }, {
+                "key": "17.1.58",
+                "name": "Offences relating to Registrar General's licence & recording of civil partnerships  "
+            }, {
+                "key": "17.1.59",
+                "name": "Melting or breaking of metal coins without a licence"
+            }, {
+                "key": "17.1.60",
+                "name": "Assaulting an officer of Revenue and Customs"
+            }, {
+                "key": "17.1.61",
+                "name": "Absconding from lawful custody"
+            }, {
+                "key": "17.1.62",
+                "name": "Duty to aid constables"
+            }, {
+                "key": "17.1.63",
+                "name": "Embracery"
+            }, {
+                "key": "17.1.64",
+                "name": "Preventing the burial of a corpse"
+            }, {
+                "key": "17.1.65",
+                "name": "Public nuisance"
+            }, {
+                "key": "17.1.66",
+                "name": "Removing corpse from grave"
+            }, {
+                "key": "17.1.67",
+                "name": "Rescuing a prisoner in custody"
+            }, {
+                "key": "17.1.68",
+                "name": "Possession or supply of apparatus etc for contravening s.125"
+            }, {
+                "key": "17.1.69",
+                "name": "Offences in connection with information requirements"
+            }, {
+                "key": "17.1.70",
+                "name": "Failing to comply with provisions in connection with requests for or disclosure of information from the register of members"
+            }, {
+                "key": "17.1.71",
+                "name": "Failing to comply with provisions in relation to duty to keep accounting records"
+            }, {
+                "key": "17.1.72",
+                "name": "Failing to comply with requirements as to keeping of accounting records"
+            }, {
+                "key": "17.1.73",
+                "name": "Failing to comply with requirements as to approval and signing of accounts"
+            }, {
+                "key": "17.1.74",
+                "name": "Acting in contravention of a disqualification order or undertaking or in contravention of s.12(2), 12A or 12B"
+            }, {
+                "key": "17.1.75",
+                "name": "Undischarged bankrupt acting as a director or taking part in the promotion, formation or management of a company"
+            }, {
+                "key": "17.1.76",
+                "name": "Providing regulated claims management services otherwise than in accordance with s.4, pretending to be authorised etc."
+            }, {
+                "key": "17.1.77",
+                "name": "Unauthorised access with intent to commit or facilitate commission of further offences"
+            }, {
+                "key": "17.1.78",
+                "name": "Unauthorised acts with intent to impair, or recklessness as to impairing, operation of computer, etc"
+            }, {
+                "key": "17.1.79",
+                "name": "Making, supplying or obtaining articles for use in offence under sections 1 or 3"
+            }, {
+                "key": "17.1.80",
+                "name": "Unauthorised access to computer material"
+            }, {
+                "key": "17.1.81",
+                "name": "Furnishing false information in response to notice, or to enforcement officer"
+            }, {
+                "key": "17.1.82",
+                "name": "Engaging in a commercial practice contravening requirements of professional diligence etc"
+            }, {
+                "key": "17.1.83",
+                "name": "Engaging in a commercial practice which is a misleading action"
+            }, {
+                "key": "17.1.84",
+                "name": "Engaging in a commercial practice which is a misleading omission"
+            }, {
+                "key": "17.1.85",
+                "name": "Engaging in a commercial practice which is aggressive"
+            }, {
+                "key": "17.1.86",
+                "name": "Engage in commercial practice set out in any of paragraphs 1 to 10, 12 to 27 and 29 to 31 of Schedule 1"
+            }, {
+                "key": "17.1.87",
+                "name": "Offences by person with custody or control of oil where there is a contravention of requirements in Regulations 3 to 5, or, a notice under Regulation 7"
+            }, {
+                "key": "17.1.88",
+                "name": "Failing to comply with a notice or making a false statement"
+            }, {
+                "key": "17.1.89",
+                "name": "Offences relating to the purchase and sale of specimens listed in Annex A to Council Regulations (EC) No 338/97"
+            }, {
+                "key": "17.1.90",
+                "name": "Wildlife Offences"
+            }, {
+                "key": "17.1.91",
+                "name": "Making or dealing with infringing articles etc"
+            }, {
+                "key": "17.1.92",
+                "name": "Making, dealing with or using illicit recordings"
+            }, {
+                "key": "17.1.93",
+                "name": "Failing to comply with a publicity order"
+            }, {
+                "key": "17.1.94",
+                "name": "Failing to comply with a publicity order"
+            }, {
+                "key": "17.1.95",
+                "name": "Giving a false certificate of summons or other process"
+            }, {
+                "key": "17.1.96",
+                "name": "Assaulting an officer of the county court"
+            }, {
+                "key": "17.1.97",
+                "name": "Assaulting a court security officer"
+            }, {
+                "key": "17.1.98",
+                "name": "Contravening provisions in relation to tying-in arrangements"
+            }, {
+                "key": "17.1.99",
+                "name": "Making a false representation or false certificate with a view to the burning of any human remains"
+            }, {
+                "key": "17.1.100",
+                "name": "Making false or misleading statements in relation to interim possession orders"
+            }, {
+                "key": "17.1.101",
+                "name": "Racially or religiously aggravated common assault"
+            }, {
+                "key": "17.1.102",
+                "name": "Racially or religiously aggravated intentional harassment, alarm or distress"
+            }, {
+                "key": "17.1.103",
+                "name": "Racially or religiously aggravated harassment, alarm or distress"
+            }, {
+                "key": "17.1.104",
+                "name": "Racially or religiously aggravated harassment and stalking"
+            }, {
+                "key": "17.1.105",
+                "name": "Making a false statement in purported compliance with a customer information order"
+            }, {
+                "key": "17.1.106",
+                "name": "Disclosing information specified in s.42(3)"
+            }, {
+                "key": "17.1.107",
+                "name": "Interference with a motor vehicle"
+            }, {
+                "key": "17.1.108",
+                "name": "Threats to destroy or damage property"
+            }, {
+                "key": "17.1.109",
+                "name": "Possessing anything with intent to destroy or damage property"
+            }, {
+                "key": "17.1.110",
+                "name": "Harbouring escaped prisoner"
+            }, {
+                "key": "17.1.111",
+                "name": "False statement to obtain passport"
+            }, {
+                "key": "17.1.112",
+                "name": "Common assault and battery"
+            }, {
+                "key": "17.1.113",
+                "name": "Resisting or wilfully obstructing court security officer"
+            }, {
+                "key": "17.1.114",
+                "name": "Assault on prisoner custody officer"
+            }, {
+                "key": "17.1.115",
+                "name": "Resisting or wilfully obstructing a prisoner custody officer "
+            }, {
+                "key": "17.1.116",
+                "name": "Having an article with a blade or point in a public place"
+            }, {
+                "key": "17.1.117",
+                "name": "Possession of offensive weapon on school premises"
+            }, {
+                "key": "17.1.118",
+                "name": "Threatening with an article with blade or point or offensive weapon"
+            }, {
+                "key": "17.1.119",
+                "name": "Failure to comply with prohibition, restriction or condition in violent offender order or interim violent offender order"
+            }, {
+                "key": "17.1.120",
+                "name": "Fail to comply with notification requirements of s.108(1), 109(1), s.110(1) and 112(4)"
+            }, {
+                "key": "17.1.121",
+                "name": "Notify false information to police in purported compliance with s.108(1), 109(1), 110(1) or regulations under s.111(1)"
+            }, {
+                "key": "17.1.122",
+                "name": "Leaving UK when prohibited to do so by travel restriction order"
+            }, {
+                "key": "17.1.123",
+                "name": "Failure to be in UK when  prohibition in travel restriction order suspended"
+            }, {
+                "key": "17.1.124",
+                "name": "Intimidation of witnesses"
+            }, {
+                "key": "17.1.125",
+                "name": "Harassment etc. of a person in his home"
+            }, {
+                "key": "17.1.126",
+                "name": "Intimidation of witnesses, jurors and others"
+            }, {
+                "key": "17.1.127",
+                "name": "Assault on custody officer"
+            }, {
+                "key": "17.1.128",
+                "name": "Resisting or wilfully obstructing a custody officer"
+            }, {
+                "key": "17.1.129",
+                "name": "Harming witnesses, jurors and others"
+            }, {
+                "key": "17.1.130",
+                "name": "Failure to comply with regulations made by the Secretary of State as regards documentation, record keeping, labelling etc"
+            }, {
+                "key": "17.1.131",
+                "name": "Having in possession or concerned in carrying or concealing a controlled drug on a ship"
+            }, {
+                "key": "17.1.132",
+                "name": "Concealment of offences"
+            }, {
+                "key": "17.1.133",
+                "name": "Wrongful disclosure of information relating to persons detained in youth detention accommodation"
+            }, {
+                "key": "17.1.134",
+                "name": "Assisting offenders"
+            }, {
+                "key": "17.1.135",
+                "name": "Causing bomb hoaxes"
+            }, {
+                "key": "17.1.136",
+                "name": "Untrue declarations etc to Customs and Excise"
+            }, {
+                "key": "17.1.137",
+                "name": "Obstructing the Information Commissioner in inspection of overseas information systems"
+            }, {
+                "key": "17.1.138",
+                "name": "Using data for unauthorised purpose; disclosing data to unauthorised person etc.\n"
+            }, {
+                "key": "17.1.139",
+                "name": "Breach of non-molestation order"
+            }, {
+                "key": "17.1.140",
+                "name": "Breach of requirements relating to conformity assessments, declarations of conformity etc."
+            }, {
+                "key": "17.1.141",
+                "name": "Neglecting the cleanliness of a pupil by parent"
+            }, {
+                "key": "17.1.142",
+                "name": "TEW offences relating to inspection of schools, childminding, nursery education, training of persons working in education etc."
+            }, {
+                "key": "17.1.143",
+                "name": "Unauthorised disclosure of information in relation to education"
+            }, {
+                "key": "17.1.144",
+                "name": "Using false documents and making false statements"
+            }, {
+                "key": "17.1.145",
+                "name": "Providing false information or making a false statement"
+            }, {
+                "key": "17.1.146",
+                "name": "Ensuring components of vehicles on the market do not contain lead, mercury, cadmium or hexavalent chromium except as permitted "
+            }, {
+                "key": "17.1.147",
+                "name": "Failure to comply with direction under s.10 - importation and storage of combustible gas"
+            }, {
+                "key": "17.1.148",
+                "name": "Carrying on unlicensed activities - storage of carbon dioxide"
+            }, {
+                "key": "17.1.149",
+                "name": "Breach of licence conditions - storage of carbon dioxide"
+            }, {
+                "key": "17.1.150",
+                "name": "Making a statement known to be false or recklessly making statement which is false to obtain license or consent or licensing authority - storage of carbon dioxide"
+            }, {
+                "key": "17.1.151",
+                "name": "Failure to disclose information which is known or ought to be known to be relevant to an application for license or consent of licensing authority - storage of carbon dioxide"
+            }, {
+                "key": "17.1.152",
+                "name": "Failure to comply with a direction under S.24 - storage of carbon dioxide"
+            }, {
+                "key": "17.1.153",
+                "name": "Carrying on unlicensed activities - importation and storage of combustible gas"
+            }, {
+                "key": "17.1.154",
+                "name": "Breach of licence conditions - importation and storage of combustible gas"
+            }, {
+                "key": "17.1.155",
+                "name": "Making a statement which the person knows to be false or recklessly making statement which is false to obtain license or consent of relevant authority - importation and storage of combustible gas "
+            }, {
+                "key": "17.1.156",
+                "name": "Failure to disclose information which is known or ought to be known to be relevant to an application for licence or consent of relevant authority - importation and storage of combustible gas"
+            }, {
+                "key": "17.1.157",
+                "name": "Assaulting or obstructing an authorised person in the execution of his powers under s.109"
+            }, {
+                "key": "17.1.158",
+                "name": "Failing to conduct risk assessments or comply with notification requirements in connection with genetically modified organisms "
+            }, {
+                "key": "17.1.159",
+                "name": "Failing to comply with consent requirements in connection with genetically modified organisms"
+            }, {
+                "key": "17.1.160",
+                "name": "Failing to identify risks of importing or acquiring genetically modified organisms, importing or acquiring modified organisms despite the risks, not taking all reasonable steps to prevent risk of damage to the environment as a result of keeping modified organisms. Releasing or marketing modified organisms without regard to the risks of damage to the environment"
+            }, {
+                "key": "17.1.161",
+                "name": "Failing to keep a record of a risk assessment or failing to give the  Secretary of State further information"
+            }, {
+                "key": "17.1.162",
+                "name": "Contravening a prohibition notice"
+            }, {
+                "key": "17.1.163",
+                "name": "Obstructing an inspector where he believes imminent danger is involved"
+            }, {
+                "key": "17.1.164",
+                "name": "Failing to comply with any requirement to provide relevant information"
+            }, {
+                "key": "17.1.165",
+                "name": "Making a false statement"
+            }, {
+                "key": "17.1.166",
+                "name": "Making a false entry in any required record"
+            }, {
+                "key": "17.1.167",
+                "name": "Forging or using a document issued under s.111 with intention to deceive, to make or possess a document so closely resembling it as to be likely to deceive"
+            }, {
+                "key": "17.1.168",
+                "name": "Depositing, causing the deposition or permitting the deposition, treating, keeping or disposing of controlled (but not special) waste in or on land without a licence"
+            }, {
+                "key": "17.1.169",
+                "name": "Depositing, causing the deposition or permitting the deposition of controlled special waste in or on land without a licence"
+            }, {
+                "key": "17.1.170",
+                "name": "Failure to take such measures as available to secure transfer of household waste to authorised person or persons authorised for transport purposes"
+            }, {
+                "key": "17.1.171",
+                "name": "Making a false statement in purported compliance with a requirement under the Act or an application concerning a licence"
+            }, {
+                "key": "17.1.172",
+                "name": "Failing without reasonable excuse to provide any information required by a waste regulation or waste collection authority or the Secretary of State"
+            }, {
+                "key": "17.1.173",
+                "name": "Unauthorised or harmful depositing, treatment or disposal of waste"
+            }, {
+                "key": "17.1.174",
+                "name": "Depositing waste (not controlled waste) in an area that is not authorised for the purpose"
+            }, {
+                "key": "17.1.175",
+                "name": "Forgery, alteration or use etc. of a relevant document"
+            }, {
+                "key": "17.1.176",
+                "name": "Knowingly being concerned in activity prohibited by parts 2, 3, or 4 of the Order with intent to evade the relevant prohibition"
+            }, {
+                "key": "17.1.177",
+                "name": "TEW offences"
+            }, {
+                "key": "17.1.178",
+                "name": "Being concerned with provision of technical assistance with intent to avoid a prohibition or restriction"
+            }, {
+                "key": "17.1.179",
+                "name": "Makes a false statement or furnishes a false document for the purpose of obtaining a licence"
+            }, {
+                "key": "17.1.180",
+                "name": "Failure to comply with licence conditions"
+            }, {
+                "key": "17.1.181",
+                "name": "Issues circulates or distributes an advertisement, prospectus, circular or notice in contravention of regulations made under s.119(1)"
+            }, {
+                "key": "17.1.182",
+                "name": "Contravenes any regulations under sub-section (2) of section 119(2)"
+            }, {
+                "key": "17.1.183",
+                "name": "Participant in trading scheme makes payment for the benefit of the promoter(s) or a participant in the trading scheme"
+            }, {
+                "key": "17.1.184",
+                "name": "Promoter in trading scheme makes payment for benefit of participant in scheme"
+            }, {
+                "key": "17.1.185",
+                "name": "Disclosing information held in the exercise of tax or other function by authorised person"
+            }, {
+                "key": "17.1.186",
+                "name": "All TEW offences except those under classification 95/08"
+            }, {
+                "key": "17.1.187",
+                "name": "Obtaining an award or a sum by deliberately committing an act or making an omission"
+            }, {
+                "key": "17.1.188",
+                "name": "Failure to transfer firearms or ammunition in person"
+            }, {
+                "key": "17.1.189",
+                "name": "Failure to give notice in writing to the Chief Officer of Police of transfers involving firearms"
+            }, {
+                "key": "17.1.190",
+                "name": "Failure by certificate holder to notify in writing Chief Officer of Police of deactivation, destruction or loss of firearms or ammunition"
+            }, {
+                "key": "17.1.191",
+                "name": "Failure by certificate holder to notify in writing Chief Officer of Police of events taking place outside Great Britain involving firearms and ammunition (sold or otherwise disposed of, lost etc)."
+            }, {
+                "key": "17.1.192",
+                "name": "Possessing etc. firearms or ammunition without firearm certificate     "
+            }, {
+                "key": "17.1.193",
+                "name": "Possessing etc. shotgun without certificate "
+            }, {
+                "key": "17.1.194",
+                "name": "Selling etc., firearm, ammunition or shotgun to person without a certificate. "
+            }, {
+                "key": "17.1.195",
+                "name": "Repairing, testing etc. firearm for person without a certificate"
+            }, {
+                "key": "17.1.196",
+                "name": "Unauthorised disclosure of information"
+            }, {
+                "key": "17.1.197",
+                "name": "Contravention of order regulating access to British fisheries"
+            }, {
+                "key": "17.1.198",
+                "name": "Rendering food injurious to health"
+            }, {
+                "key": "17.1.199",
+                "name": "Selling food not of the nature or substance or quality demanded"
+            }, {
+                "key": "17.1.200",
+                "name": "Falsely describing or presenting food"
+            }, {
+                "key": "17.1.201",
+                "name": "Obstruction etc. of officers; furnishing false information"
+            }, {
+                "key": "17.1.202",
+                "name": "Admitting football spectators to unlicensed premises"
+            }, {
+                "key": "17.1.203",
+                "name": "Cheating at gambling or enabling or assisting person to cheat"
+            }, {
+                "key": "17.1.204",
+                "name": "Carrying out controlled operations without required consent, failure to comply with an order or notice"
+            }, {
+                "key": "17.1.205",
+                "name": "Conveying gas without a licence; altering, suppressing or destroying a document; making a false statement; impersonating an officer of gas transporter, supplier or shipper "
+            }, {
+                "key": "17.1.206",
+                "name": "TEW offences"
+            }, {
+                "key": "17.1.207",
+                "name": "Forgery, false statements, falsification of consignment notes and records; forgery of documents; forgery of licence"
+            }, {
+                "key": "17.1.208",
+                "name": "Applying prohibited descriptions to unhallmarked article;"
+            }, {
+                "key": "17.1.209",
+                "name": "Unauthorised striking of sponsor’s mark;  "
+            }, {
+                "key": "17.1.210",
+                "name": "Making unauthorised alterations to hallmarked article"
+            }, {
+                "key": "17.1.211",
+                "name": "Supplying article with unauthorised mark"
+            }, {
+                "key": "17.1.212",
+                "name": "Making a false or misleading statement in purported compliance with requirement under the regulations"
+            }, {
+                "key": "17.1.213",
+                "name": "Making a false entry on a record or register required to be kept by the regulations"
+            }, {
+                "key": "17.1.214",
+                "name": "Failure by employees to take reasonable care for health and safety at work"
+            }, {
+                "key": "17.1.215",
+                "name": "Failure by employers and manufacturers to take reasonable care for health and safety at work"
+            }, {
+                "key": "17.1.216",
+                "name": "Charging employees for things done to meet statutory requirements"
+            }, {
+                "key": "17.1.217",
+                "name": "Interfering with or misusing anything provided in the interests of health, safety or welfare"
+            }, {
+                "key": "17.1.218",
+                "name": "Contravene improvement or prohibition notice"
+            }, {
+                "key": "17.1.219",
+                "name": "Contravene requirement of inspector under s.20 or  under s.25"
+            }, {
+                "key": "17.1.220",
+                "name": "Make false statements, false entries in records and use of a document with intent to deceive"
+            }, {
+                "key": "17.1.221",
+                "name": "Contravene order under s.42 (cause of offence to be remedied)"
+            }, {
+                "key": "17.1.222",
+                "name": "Intentionally/recklessly remove, cause or permit the removal of a hedgerow in contravention of regulation 5(1) or (9)"
+            }, {
+                "key": "17.1.223",
+                "name": "Disclosing manufacturing process or trade secrets"
+            }, {
+                "key": "17.1.224",
+                "name": "Obtain/give gift/money as inducement/reward for procuring/assisting in the grant of an honour."
+            }, {
+                "key": "17.1.225",
+                "name": "TEW Offences"
+            }, {
+                "key": "17.1.226",
+                "name": "Failure to do anything required by a notice under s.235 (requirement to produce documents); intentionally alter/suppress/destroy document required to be produced under s.235 notice"
+            }, {
+                "key": "17.1.227",
+                "name": "Supply unauthorised medicines"
+            }, {
+                "key": "17.1.228",
+                "name": "Breach of licence requirement"
+            }, {
+                "key": "17.1.229",
+                "name": "Possession of anatomical specimens away from licensed premises"
+            }, {
+                "key": "17.1.230",
+                "name": "Possession of former anatomical specimens away from licensed premises"
+            }, {
+                "key": "17.1.231",
+                "name": "Non-consensual analysis of DNA"
+            }, {
+                "key": "17.1.232",
+                "name": "Use or supply of duty-free oil in contravention of restrictions"
+            }, {
+                "key": "17.1.233",
+                "name": "Misuse of rebated heavy oil"
+            }, {
+                "key": "17.1.234",
+                "name": "Misuse of rebated light oil"
+            }, {
+                "key": "17.1.235",
+                "name": "Have in possession or  control identity documents with improper intent"
+            }, {
+                "key": "17.1.236",
+                "name": "Make or have in possession or control apparatus / article / material designed / adapted for making false identity documents"
+            }, {
+                "key": "17.1.237",
+                "name": "Have in possess or control a false / improperly obtained / another person's identity document or apparatus for making false identity documents"
+            }, {
+                "key": "17.1.238",
+                "name": "Non British Citizen, by means including deception, obtains or seeks to obtain leave to enter or remain in the UK or, postponement, avoidance or revocation of enforcement action against him"
+            }, {
+                "key": "17.1.239",
+                "name": "Helping asylum seeker to enter UK"
+            }, {
+                "key": "17.1.240",
+                "name": "Makes/uses or attempts to use a false registration card, alters a registration card, makes article designed to be used in making false registration card or altering card etc.; has in possession a false registration card or article as above"
+            }, {
+                "key": "17.1.241",
+                "name": "Possession of Immigration Stamp"
+            }, {
+                "key": "17.1.242",
+                "name": "Assaulting a detainee custody officer"
+            }, {
+                "key": "17.1.243",
+                "name": "Providing immigration advice (unqualified)"
+            }, {
+                "key": "17.1.244",
+                "name": "Obtain benefits or advantage for self or anyone else by making dishonest representations"
+            }, {
+                "key": "17.1.245",
+                "name": "Disclosure by certain persons employed at detention centres or in accordance with escort arrangement, of information relating to detained persons"
+            }, {
+                "key": "17.1.246",
+                "name": "Publicly displaying indecent matter"
+            }, {
+                "key": "17.1.247",
+                "name": "Knowingly or recklessly furnishes return etc. which is false; wilfully makes false entry in any record; discloses information without required consent"
+            }, {
+                "key": "17.1.248",
+                "name": "Fraud etc. in anticipation of company winding up [Knowingly taking in pawn or pledge, or otherwise receiving, company  property]"
+            }, {
+                "key": "17.1.249",
+                "name": "False representations or fraud for purpose of obtaining creditors’ consent to an agreement in connection with winding up "
+            }, {
+                "key": "17.1.250",
+                "name": "Contravening restrictions on re-use of name of company in insolvent liquidation"
+            }, {
+                "key": "17.1.251",
+                "name": "Making false representations or omissions in connection with (application for) debt relief order"
+            }, {
+                "key": "17.1.252",
+                "name": "Failure to comply with duty in connection with (application for) debt relief order "
+            }, {
+                "key": "17.1.253",
+                "name": "Failure to provide, concealing, destroying, falsification etc. of documents "
+            }, {
+                "key": "17.1.254",
+                "name": "Obtaining credit/engaging in business without disclosing status/name while being subject to debt relief order"
+            }, {
+                "key": "17.1.255",
+                "name": "Make a false representation, fraudulently do / omit to do a thing for the purpose of obtaining approval of creditors. "
+            }, {
+                "key": "17.1.256",
+                "name": "Acting as insolvency practitioner when not qualified"
+            }, {
+                "key": "17.1.257",
+                "name": "Disclosure of information obtained under the Act without consent"
+            }, {
+                "key": "17.1.258",
+                "name": "Marketing of knives in a way likely to encourage violent behaviour"
+            }, {
+                "key": "17.1.259",
+                "name": "Publishing material in connection with a knife which is likely to encourage violent behaviour"
+            }, {
+                "key": "17.1.260",
+                "name": "Improper alteration of registers"
+            }, {
+                "key": "17.1.261",
+                "name": "TEW Offences "
+            }, {
+                "key": "17.1.262",
+                "name": "Making a false written statement tendered in evidence"
+            }, {
+                "key": "17.1.263",
+                "name": "Sending letters etc with intent to cause distress or anxiety"
+            }, {
+                "key": "17.1.264",
+                "name": "Obstructing engine or carriage on railway"
+            }, {
+                "key": "17.1.265",
+                "name": "Failure to comply with a requirement or direction by an enforcement officer"
+            }, {
+                "key": "17.1.266",
+                "name": "Contravening byelaws or orders under the Act"
+            }, {
+                "key": "17.1.267",
+                "name": "Obstructing or assaulting an enforcement officer in the performance of the officer's functions "
+            }, {
+                "key": "17.1.268",
+                "name": "TEW offences"
+            }, {
+                "key": "17.1.269",
+                "name": "Adulterating or selling substandard medicinal products"
+            }, {
+                "key": "17.1.270",
+                "name": "Making a false statement to a person authorised to enter premises under the Act"
+            }, {
+                "key": "17.1.271",
+                "name": "Disclosure of information obtained under the Act"
+            }, {
+                "key": "17.1.272",
+                "name": "Giving false warranties"
+            }, {
+                "key": "17.1.273",
+                "name": "TEW  Offences"
+            }, {
+                "key": "17.1.274",
+                "name": "Make a false statement in an application for registration of document for lasting power of attorney or for registration of enduring power of attorney at actual/impending incapacity of donor"
+            }, {
+                "key": "17.1.275",
+                "name": "Having a false document, making or having a forged document, making or using a false entry or statement in any document to be made for the purposes of the Act"
+            }, {
+                "key": "17.1.276",
+                "name": "Inducing or assisting a person liable to be detained in a hospital to absent himself without leave or to escape from custody, harbouring a patient who is absent without leave or preventing such person being taken to custody hospital          "
+            }, {
+                "key": "17.1.277",
+                "name": "Navigating a ship in contravention of Regulations"
+            }, {
+                "key": "17.1.278",
+                "name": "Operating a vessel in contravention of Regulations"
+            }, {
+                "key": "17.1.279",
+                "name": "Fishing in unregistered vessel, making or procuring false or fraudulent fishing vessel certificate"
+            }, {
+                "key": "17.1.280",
+                "name": "Concerted disobedience, neglect of duty, impeding navigation of ship"
+            }, {
+                "key": "17.1.281",
+                "name": "Ship entering or remaining in a temporary exclusion zone without necessary authorisation"
+            }, {
+                "key": "17.1.282",
+                "name": "Failure to comply with prescribed standards in respect of ship in respect of which trans-shipment licence is in force"
+            }, {
+                "key": "17.1.283",
+                "name": "Making a false entry in an oil record book"
+            }, {
+                "key": "17.1.284",
+                "name": "Selling abroad wreck found in British waters"
+            }, {
+                "key": "17.1.285",
+                "name": "Failure to comply with direction under Schedule 3A"
+            }, {
+                "key": "17.1.286",
+                "name": "Failure to produce information or providing false information relating to disused tips "
+            }, {
+                "key": "17.1.287",
+                "name": "Possession of controlled drugs"
+            }, {
+                "key": "17.1.288",
+                "name": "Contravention of directions relating to safe custody of controlled drugs"
+            }, {
+                "key": "17.1.289",
+                "name": "Failure to comply with notice requiring information relating to  prescribing, supply etc. of drugs  "
+            }, {
+                "key": "17.1.290",
+                "name": "Obstructing an authorised person in exercise of powers of search in relation to controlled drugs, or concealing material relating to such drugs etc"
+            }, {
+                "key": "17.1.291",
+                "name": "Changing or interfering with operation of unique device identifier"
+            }, {
+                "key": "17.1.292",
+                "name": "Possession or supply of anything which may be used for the purpose of changing or interfering with the operation of a unique device identifier"
+            }, {
+                "key": "17.1.293",
+                "name": "Making false statement following notice to produce documents"
+            }, {
+                "key": "17.1.294",
+                "name": "Disclosure of information other than for a lawful purpose, failure to protect personal information disclosed for purpose of proceedings"
+            }, {
+                "key": "17.1.295",
+                "name": "Wrongful Disclosure of information received from HMRC relating to an identifiable person"
+            }, {
+                "key": "17.1.296",
+                "name": "False representations as to the National Lottery"
+            }, {
+                "key": "17.1.297",
+                "name": "Restriction on disclosure"
+            }, {
+                "key": "17.1.298",
+                "name": "Giving false or misleading information"
+            }, {
+                "key": "17.1.299",
+                "name": "Neglecting to provide for apprentice or servant"
+            }, {
+                "key": "17.1.300",
+                "name": "Obstructing, assaulting or arresting upon civil process, clergyman performing services"
+            }, {
+                "key": "17.1.301",
+                "name": "Assault on person preserving wreck"
+            }, {
+                "key": "17.1.302",
+                "name": "Assault with intent to resist apprehension"
+            }, {
+                "key": "17.1.303",
+                "name": "Bigamy"
+            }, {
+                "key": "17.1.304",
+                "name": "Procuring drugs etc. to cause abortion"
+            }, {
+                "key": "17.1.305",
+                "name": "Concealment of birth"
+            }, {
+                "key": "17.1.306",
+                "name": "Infringement of the Olympic Association right"
+            }, {
+                "key": "17.1.307",
+                "name": "Offences arising from breach of Regulations 20 and 21"
+            }, {
+                "key": "17.1.308",
+                "name": "Providing false or misleading information"
+            }, {
+                "key": "17.1.309",
+                "name": "False unsworn statements"
+            }, {
+                "key": "17.1.310",
+                "name": "False statements on oath not in judicial proceeding"
+            }, {
+                "key": "17.1.311",
+                "name": "False statements etc. - marriage"
+            }, {
+                "key": "17.1.312",
+                "name": "False statements etc. - births or deaths"
+            }, {
+                "key": "17.1.313",
+                "name": "False statutory statements etc. without oath"
+            }, {
+                "key": "17.1.314",
+                "name": "False declarations etc. to obtain registration"
+            }, {
+                "key": "17.1.315",
+                "name": "Contravention of hazardous substances control"
+            }, {
+                "key": "17.1.316",
+                "name": "Failure to comply with Listed Building enforcement notice."
+            }, {
+                "key": "17.1.317",
+                "name": "Failure to comply with conditions of Listed Building consent"
+            }, {
+                "key": "17.1.318",
+                "name": "Assault on a constable"
+            }, {
+                "key": "17.1.319",
+                "name": "Assault on person assisting a constable"
+            }, {
+                "key": "17.1.320",
+                "name": "Causing disaffection among the police"
+            }, {
+                "key": "17.1.321",
+                "name": "Assaulting a designated or accredited person in the execution of their duty"
+            }, {
+                "key": "17.1.322",
+                "name": "Resisting or wilfully obstructing a designated or accredited person in the execution of their duty"
+            }, {
+                "key": "17.1.323",
+                "name": "Prohibition on the importation of false identity documents"
+            }, {
+                "key": "17.1.324",
+                "name": "TEW offences"
+            }, {
+                "key": "17.1.325",
+                "name": "Refuses or neglects to furnish information giving false statement, information obtained for the Act should not be disclosed"
+            }, {
+                "key": "17.1.326",
+                "name": "Interfering with the mail: postal operators"
+            }, {
+                "key": "17.1.327",
+                "name": "Prohibition on sending certain articles by post"
+            }, {
+                "key": "17.1.328",
+                "name": "Possession of an offensive weapon"
+            }, {
+                "key": "17.1.329",
+                "name": "Assisting a prisoner to escape"
+            }, {
+                "key": "17.1.330",
+                "name": "Conveyance etc. of List A articles into or out of prison"
+            }, {
+                "key": "17.1.331",
+                "name": "Conveyance etc. of List B articles into or out of prison"
+            }, {
+                "key": "17.1.332",
+                "name": "Using unlicensed security operative"
+            }, {
+                "key": "17.1.333",
+                "name": "Right to use approved status"
+            }, {
+                "key": "17.1.334",
+                "name": "Imposition of requirements for approval"
+            }, {
+                "key": "17.1.335",
+                "name": "Failure to disclose; another person involved in money laundering - regulated sector"
+            }, {
+                "key": "17.1.336",
+                "name": "Failure to disclose; another person involved in money laundering - nominated officer in the regulated field"
+            }, {
+                "key": "17.1.337",
+                "name": "Failure to disclose; another person involved in money laundering - other nominated officer in the regulated field"
+            }, {
+                "key": "17.1.338",
+                "name": "Offences of prejudicing an investigation disclosures likely to prejudice investigation; Falsifies, conceals, destroys or otherwise disposes of etc. documents relevant to investigation"
+            }, {
+                "key": "17.1.339",
+                "name": "If in purported compliance with requirement imposed under a disclosure order, makes or recklessly makes a false or misleading statement"
+            }, {
+                "key": "17.1.340",
+                "name": "Financial institution fails to comply with the requirement imposed under customer information order"
+            }, {
+                "key": "17.1.341",
+                "name": "Unlawful eviction and harassment of occupier"
+            }, {
+                "key": "17.1.342",
+                "name": "Harassment"
+            }, {
+                "key": "17.1.343",
+                "name": "Breach of conditions of injunction against harassment "
+            }, {
+                "key": "17.1.344",
+                "name": "Putting people in fear of violence"
+            }, {
+                "key": "17.1.345",
+                "name": "Stalking involving fear of violence or serious alarm or distress"
+            }, {
+                "key": "17.1.346",
+                "name": "Breach of a restraining order"
+            }, {
+                "key": "17.1.347",
+                "name": "Failure to hand over a Euro note or coin believing it to be counterfeit"
+            }, {
+                "key": "17.1.348",
+                "name": "Failure to withdraw from circulation a Euro note or coin which is believed to be counterfeit"
+            }, {
+                "key": "17.1.349",
+                "name": "TEW offences"
+            }, {
+                "key": "17.1.350",
+                "name": "Fear or provocation of violence"
+            }, {
+                "key": "17.1.351",
+                "name": "Causing intentional harassment, alarm or distress"
+            }, {
+                "key": "17.1.352",
+                "name": "Harassment, alarm or distress"
+            }, {
+                "key": "17.1.353",
+                "name": "Use of words or behaviour or display or written material "
+            }, {
+                "key": "17.1.354",
+                "name": "Publishing or distributing written material"
+            }, {
+                "key": "17.1.355",
+                "name": "Public performance of play "
+            }, {
+                "key": "17.1.356",
+                "name": "Distributing, showing or playing a recording "
+            }, {
+                "key": "17.1.357",
+                "name": "Broadcasting including programme in programme service"
+            }, {
+                "key": "17.1.358",
+                "name": "Possession of racially inflammatory material "
+            }, {
+                "key": "17.1.359",
+                "name": "Publishing or distributing written material"
+            }, {
+                "key": "17.1.360",
+                "name": "Distributing, showing or playing a recording"
+            }, {
+                "key": "17.1.361",
+                "name": "Possession of inflammatory material"
+            }, {
+                "key": "17.1.362",
+                "name": "Possession of materials to be used for contaminating goods or possession of contaminated goods"
+            }, {
+                "key": "17.1.363",
+                "name": "Forgery and misuse of documents etc"
+            }, {
+                "key": "17.1.364",
+                "name": "Taking marks from public stores"
+            }, {
+                "key": "17.1.365",
+                "name": "Failure to assist a railway investigation branch inspector when required to do so"
+            }, {
+                "key": "17.1.366",
+                "name": "Failure to comply with a direction given by Chief Inspector of Rail Accidents"
+            }, {
+                "key": "17.1.367",
+                "name": "Master, Pilot or Seamans ability to carry out duties impaired because of drink or drugs"
+            }, {
+                "key": "17.1.368",
+                "name": "Fail to disclose key to protected information"
+            }, {
+                "key": "17.1.369",
+                "name": "Disclose details of s.49 notice"
+            }, {
+                "key": "17.1.370",
+                "name": "Impersonation"
+            }, {
+                "key": "17.1.371",
+                "name": "Tampering with nomination papers, ballot papers etc"
+            }, {
+                "key": "17.1.372",
+                "name": "False statements in nomination papers"
+            }, {
+                "key": "17.1.373",
+                "name": "Make false declaration with a view to securing release of a vehicle from an immobilization device"
+            }, {
+                "key": "17.1.374",
+                "name": "Contravention of regulations in connection with immobilisation device"
+            }, {
+                "key": "17.1.375",
+                "name": "Contravention of regulations in connection with securing possession of vehicles"
+            }, {
+                "key": "17.1.376",
+                "name": "Causing danger to road-users"
+            }, {
+                "key": "17.1.377",
+                "name": "Tampering with motor vehicles"
+            }, {
+                "key": "17.1.378",
+                "name": "Forgery of documents, etc"
+            }, {
+                "key": "17.1.379",
+                "name": "False statements and withholding material information"
+            }, {
+                "key": "17.1.380",
+                "name": "Mishandling or faking parking documents "
+            }, {
+                "key": "17.1.381",
+                "name": "Barred person seeking, offering to engage or engaging in regulated activity"
+            }, {
+                "key": "17.1.382",
+                "name": "Permitting barred person to engage in regulated activity"
+            }, {
+                "key": "17.1.383",
+                "name": "Knowingly supply a barred individual to engage in regulated activity while acting/appearing to act for personnel supplier"
+            }, {
+                "key": "17.1.384",
+                "name": "Fishing with, or possessing, prohibited implements"
+            }, {
+                "key": "17.1.385",
+                "name": "Publication or disclosure of information"
+            }, {
+                "key": "17.1.386",
+                "name": "Failure to comply with a Serious Crime Prevention Order "
+            }, {
+                "key": "17.1.387",
+                "name": "Disclosure of protected information"
+            }, {
+                "key": "17.1.388",
+                "name": "Controlling or coercive behaviour"
+            }, {
+                "key": "17.1.389",
+                "name": "Disclosure of information about protection arrangements"
+            }, {
+                "key": "17.1.390",
+                "name": "Disclosure of information relating to persons assuming new identity"
+            }, {
+                "key": "17.1.391",
+                "name": "Interference with contractual relationships so as to harm animal research organisations"
+            }, {
+                "key": "17.1.392",
+                "name": "Intimidation of persons connected with animal research organisations"
+            }, {
+                "key": "17.1.393",
+                "name": "Person who has been given, or shown protected material, gives a copy or otherwise to any person other than the defendant"
+            }, {
+                "key": "17.1.394",
+                "name": "Person who has been given, or shown, protected material, gives a copy or otherwise to the defendant when not supposed to"
+            }, {
+                "key": "17.1.395",
+                "name": "Solicitation by men"
+            }, {
+                "key": "17.1.396",
+                "name": "Soliciting"
+            }, {
+                "key": "17.1.397",
+                "name": "Exposure"
+            }, {
+                "key": "17.1.398",
+                "name": "Failure to comply with a Notification Order"
+            }, {
+                "key": "17.1.399",
+                "name": "Breach Sexual Harm Prevention Order"
+            }, {
+                "key": "17.1.400",
+                "name": "Resisting a Sheriff in the execution of a writ"
+            }, {
+                "key": "17.1.401",
+                "name": "Fraudulent evasion of contributions"
+            }, {
+                "key": "17.1.402",
+                "name": "Administration of oath by person without jurisdiction"
+            }, {
+                "key": "17.1.403",
+                "name": "Intentionally doing an act capable of encouraging or assisting the suicide or attempted suicide of another "
+            }, {
+                "key": "17.1.404",
+                "name": "Fraudulent activity with a view to obtaining payments of tax credit"
+            }, {
+                "key": "17.1.405",
+                "name": "Disclosure of information"
+            }, {
+                "key": "17.1.406",
+                "name": "Disclosure of information"
+            }, {
+                "key": "17.1.407",
+                "name": "Contravention of Regulation 5 - Small vessels complying with Code of Practice"
+            }, {
+                "key": "17.1.408",
+                "name": "Knowingly harbouring spies"
+            }, {
+                "key": "17.1.409",
+                "name": "Making off without payment"
+            }, {
+                "key": "17.1.410",
+                "name": "Removal of articles from places open to the public"
+            }, {
+                "key": "17.1.411",
+                "name": "Taking of a motor vehicle or other conveyance without authority"
+            }, {
+                "key": "17.1.412",
+                "name": "Abstracting of electricity"
+            }, {
+                "key": "17.1.413",
+                "name": "False statements by company directors, etc."
+            }, {
+                "key": "17.1.414",
+                "name": "Suppression, etc of documents"
+            }, {
+                "key": "17.1.415",
+                "name": "Going equipped for stealing, etc"
+            }, {
+                "key": "17.1.416",
+                "name": "Prohibition of any sponsorship promoting a tobacco product"
+            }, {
+                "key": "17.1.417",
+                "name": "Publishes, or causes to be published, a tobacco advertisement"
+            }, {
+                "key": "17.1.418",
+                "name": "Prints, devises or distributes in UK a tobacco advertisement"
+            }, {
+                "key": "17.1.419",
+                "name": "Advertising of tobacco in newspapers and periodicals"
+            }, {
+                "key": "17.1.420",
+                "name": "Gives, or causes or permits, any product or coupon away to the public in the UK which promotes a tobacco product"
+            }, {
+                "key": "17.1.421",
+                "name": "Contravention of prohibition of restriction"
+            }, {
+                "key": "17.1.422",
+                "name": "Failure to comply or make false statement"
+            }, {
+                "key": "17.1.423",
+                "name": "Non-compliance with enforcement notice"
+            }, {
+                "key": "17.1.424",
+                "name": "Contravention of stop notice"
+            }, {
+                "key": "17.1.425",
+                "name": "Contravention of discontinuance of use etc. order"
+            }, {
+                "key": "17.1.426",
+                "name": "Make false statement or withhold information to procure a particular decision on application"
+            }, {
+                "key": "17.1.427",
+                "name": "Discloses information obtained while on land as to manufacturing process or trade secrets"
+            }, {
+                "key": "17.1.428",
+                "name": "Contravening tree preservation order"
+            }, {
+                "key": "17.1.429",
+                "name": "Unauthorised use of Trade Mark etc. in relation to goods and falsification of Register etc"
+            }, {
+                "key": "17.1.430",
+                "name": "Assault on a traffic officer"
+            }, {
+                "key": "17.1.431",
+                "name": "Resisting or wilfully obstructing a traffic officer in the execution of their duties"
+            }, {
+                "key": "17.1.432",
+                "name": "Fraud, forgery etc. associated with work records"
+            }, {
+                "key": "17.1.433",
+                "name": "Prohibition on disclosure of information gained under this part of the Act"
+            }, {
+                "key": "17.1.434",
+                "name": "Contravenes or fails to comply with direction, or makes a disclosure in contravention of a direction, made in the interests of national security etc."
+            }, {
+                "key": "17.1.435",
+                "name": "Provides particulars, or recklessly provides particulars, which he knows are false in a material particular"
+            }, {
+                "key": "17.1.436",
+                "name": "Contravenes or fails to comply with a Direction, given in times of severe international tension, great national emergency or actual or imminent hostilities."
+            }, {
+                "key": "17.1.437",
+                "name": "Obstructing a person exercising any power conferred on him (enforcement of licensing scheme)"
+            }, {
+                "key": "17.1.438",
+                "name": "Assaulting an immigration officer exercising S2 detention powers"
+            }, {
+                "key": "17.1.439",
+                "name": "Assaulting an immigration officer "
+            }, {
+                "key": "17.1.440",
+                "name": "Disclosing information relating to identity of persons which is specified in the disclosure or can be deducted from that disclosure"
+            }, {
+                "key": "17.1.441",
+                "name": "Directory entries"
+            }, {
+                "key": "17.1.442",
+                "name": "Vagrant violently resisting a constable"
+            }, {
+                "key": "17.1.443",
+                "name": "Forge/alter/use/lend/make document/authority to drive/card/licence/certificate with intent to\ndeceive"
+            }, {
+                "key": "17.1.444",
+                "name": "Knowingly make a false statement to obtain issue of a driver qualification card"
+            }, {
+                "key": "17.1.445",
+                "name": "Fraud, forgery etc. and false or misleading information associated with registration and licensing documents"
+            }, {
+                "key": "17.1.446",
+                "name": "Restriction of practice of veterinary surgery by unqualified persons"
+            }, {
+                "key": "17.1.447",
+                "name": "Prohibition of use of practitioners’ titles by unqualified persons"
+            }, {
+                "key": "17.1.448",
+                "name": "Supplying video recording of unclassified work"
+            }, {
+                "key": "17.1.449",
+                "name": "Possession of video recording of unclassified work for the purposes of supply"
+            }, {
+                "key": "17.1.450",
+                "name": "Offences under regulations under s.6 and s.7"
+            }, {
+                "key": "17.1.451",
+                "name": "Prohibition on unauthorised use of supply system or unauthorised introduction of water"
+            }, {
+                "key": "17.1.452",
+                "name": "Failure to give assistance/information to an inspector"
+            }, {
+                "key": "17.1.453",
+                "name": "Prohibition of catching or treating whales within United Kingdom waters"
+            }, {
+                "key": "17.1.454",
+                "name": "Release or allow to escape into the wild any animal which is of a kind which is not ordinarily resident in and is not a regular visitor to Great Britain in a wild state"
+            }, {
+                "key": "17.1.455",
+                "name": "Falsely pretending , with intent to deceive, to be a wildlife inspector."
+            }, {
+                "key": "17.1.456",
+                "name": "Carrying out any operation likely to damage a site of special scientific interest"
+            }, {
+                "key": "17.1.457",
+                "name": "Remove or disturb limestone on designated land"
+            }, {
+                "key": "17.1.458",
+                "name": "Establish/install/use a wireless telegraphy station/apparatus without a S.8 licence."
+            }, {
+                "key": "17.1.459",
+                "name": "Possess/control wireless telegraphy station/apparatus with intent for self/another to use it to contravene s.8 and s.35(2). "
+            }, {
+                "key": "17.1.460",
+                "name": "Having charge of premises knowingly cause/permit/fail to prevent use of premises for unlawful broadcasting."
+            }, {
+                "key": "17.1.461",
+                "name": "Facilitate unauthorised broadcasting."
+            }, {
+                "key": "17.1.462",
+                "name": "Send/attempt to send false/misleading message by wireless telegraphy likely to endanger personal safety/ship/aircraft/vehicle."
+            }, {
+                "key": "17.1.463",
+                "name": "Use apparatus for the purpose of interfering with wireless telegraphy."
+            }, {
+                "key": "17.1.464",
+                "name": "Broadcast, etc from a ship/aircraft while it is in /over the UK/external waters, or from a British registered ship/aircraft while it is not in/over the UK/external waters."
+            }, {
+                "key": "17.1.465",
+                "name": "Broadcasting from structure/non-ship object affixed to/supported by a bed of waters."
+            }, {
+                "key": "17.1.466",
+                "name": "Ship owner/master make/procure broadcast capable of receipt in UK or cause wireless telegraphy interference in UK from non-British registered ship in prescribed area of high seas."
+            }, {
+                "key": "17.1.467",
+                "name": "British person broadcast from non-British ship/aircraft/structure/object while on high seas."
+            }, {
+                "key": "17.1.468",
+                "name": "Manage/finance/operate/run a broadcasting station by which broadcasts are made contravening S.77,78,79 or 80."
+            }, {
+                "key": "17.1.469",
+                "name": "Facilitating broadcasting from ships or aircraft."
+            }, {
+                "key": "17.1.470",
+                "name": "Facilitating broadcasting from structures or objects."
+            }, {
+                "key": "17.1.471",
+                "name": "Repair/maintain wireless apparatus knowing that broadcasts are to be made contrary to S.77,78,79 or 80."
+            }, {
+                "key": "17.1.472",
+                "name": "Offences relating to unlawful broadcasts."
+            }, {
+                "key": "17.1.473",
+                "name": "Procure person in UK to commit a s.82-85 offence abroad."
+            }, {
+                "key": "17.1.474",
+                "name": "Assault/obstruct enforcement officer acting under s.89/90 or fail/refuse to comply with s.89(4e-f) requirement"
+            }, {
+                "key": "17.1.475",
+                "name": "Disclose information in contravention of s.111"
+            }, {
+                "key": "17.1.476",
+                "name": "Contravening a requirement or prohibition imposed by an improvement or prohibitive notice"
+            }]
+        }]
+    }]
+}

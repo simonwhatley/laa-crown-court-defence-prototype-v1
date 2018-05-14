@@ -1,0 +1,76 @@
+<script type="text/javascript">
+// $(function(){
+//   $('#case-type').on('blur', function(){
+//       alert($(this).val().toLowerCase());
+//   });
+// });
+
+$(function(){
+  $('#case-type').on('blur', function(e){
+    e.preventDefault();
+
+    var type = $(this).val().toLowerCase().replace(/\s/g, '_');
+  
+    $('.fx-case-details-trial').is(function(){
+      var $el = $(this);
+      type == "trial" || type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-retrial').is(function(){
+      var $el = $(this);
+      type == "retrial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-trial').is(function(){
+      var $el = $(this);
+      type == "cracked_trial" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-case-details-cracked-before-retrial').is(function(){
+      var $el = $(this);
+      type == "cracked_before_retrial" ? $el.show() : $el.hide();
+    });
+
+  });
+});
+
+{% if data['case_type'] == 'trial' -%}
+  $('.fx-case-details-trial').show();
+{% elif data['case_type'] == 'retrial' %}
+  $('.fx-case-details-trial').show();
+  $('.fx-case-details-retrial').show();
+{% elif data['case_type'] == 'cracked_trial' %}
+  $('.fx-case-details-cracked-trial').show();
+{% elif data['case_type'] == 'cracked_before_retrial' %}
+  $('.fx-case-details-cracked-before-retrial').show();
+{%- endif %}
+
+// $(function(){
+//   $('.fx-select-case-type').on('change', function(e){
+//     e.preventDefault();
+
+//     var type = $(this).find(':selected').attr('value');
+  
+//     $('.fx-case-details-trial').is(function(){
+//       var $el = $(this);
+//       type == "trial" || type == "retrial" ? $el.show() : $el.hide();
+//     });
+
+//     $('.fx-case-details-retrial').is(function(){
+//       var $el = $(this);
+//       type == "retrial" ? $el.show() : $el.hide();
+//     });
+
+//     $('.fx-case-details-cracked-trial').is(function(){
+//       var $el = $(this);
+//       type == "cracked_trial" ? $el.show() : $el.hide();
+//     });
+
+//     $('.fx-case-details-cracked-before-retrial').is(function(){
+//       var $el = $(this);
+//       type == "cracked_before_retrial" ? $el.show() : $el.hide();
+//     });
+
+//   });
+// });
+</script>

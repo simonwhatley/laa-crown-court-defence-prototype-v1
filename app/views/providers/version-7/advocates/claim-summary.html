@@ -1,0 +1,411 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+	    <div class="column-full">
+
+	    	<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+	    	<form class="form" method="post">
+
+				<h2 id="section-heading" class="heading-large">
+					Cost summary
+				</h2>
+
+				<div class="grid-row">
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">
+								{% if data['bill_type'] == "advocate_interim" -%}
+									Interim fees
+								{% else %}
+									{% if data['fee_type'] == 'graduated' -%}
+										Graduated fees
+									{% else %}
+										Fixed fees
+									{%- endif %}
+								{%- endif %}
+							</span>
+							£99,999.00
+						</h3>
+						<a href="{{links.fees}}">
+							Change fees
+						</a>
+					</div>
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">Miscellaneous fees</span>
+							£99,999.00
+						</h3>
+						<a href="{{links.fees}}">
+							Change fees
+						</a>
+					</div>
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">Travel expenses</span>
+							£99,999.00
+						</h3>
+						<a href="{{links.travel}}">
+							Change expenses
+						</a>
+					</div>
+
+					<!-- <div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">VAT</span>
+							£199,999.80
+						</h3>
+						<p>&nbsp;</p>
+					</div> -->
+
+					<div class="column-one-quarter">
+						<h3 class="heading-large">
+							<span class="heading-secondary">Total claimed</span>
+							£99,999.00
+						</h3>
+						<p class="font-grey">VAT £99,999.00</p>
+					</div>
+
+				</div>
+
+				<div class="grid-row">
+					<div class="column-full">
+						<div class="form-section">
+							<div class="form-group form-buttons">
+								<input type="submit" class="button" value="Save and continue" formaction="{{links.next}}">
+								<input type="submit" class="button button-tertiary" value="Save as draft" formaction="{{links.save}}">
+								<a href="#noop" class="link-delete" role="button">Delete this claim</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid-row">
+					<div class="column-full">
+
+						<h2 class="heading-large">
+							Claim summary
+						</h2>
+
+						{% include "./includes/_claim_summary_message_warning.html" %}
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Case details
+								<a href="{{links.case_details}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;case details</span>
+								</a>
+							</h3>
+
+							{% include "./includes/_claim_summary_case_details.html" %}
+
+						</div>
+
+						{% if data['case_type'] in ['trial','retrial'] -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Trial details
+								<a href="{{links.case_details}}#trial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;trial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_trial.html" %}
+
+						</div>
+						{%- endif %}
+
+						{% if data['case_type'] == 'retrial' -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Retrial details
+								<a href="{{links.case_details}}#retrial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;retrial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_retrial.html" %}
+
+						</div>
+						{%- endif %}
+
+						{% if data['case_type'] == 'cracked_trial' -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Cracked trial details
+								<a href="{{links.case_details}}#cracked-trial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;cracked trial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_cracked_trial.html" %}
+
+						</div>
+						{%- endif %}
+
+						{% if data['case_type'] == 'cracked_before_retrial' -%}
+						<div class="form-section">
+							<h2 class="heading-medium">
+								Cracked before retrial details
+								<a href="{{links.case_details}}#cracked-before-retrial-details" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;cracked trial details</span>
+								</a>
+							</h2>
+
+							{% include "./includes/_claim_summary_case_details_cracked_before_retrial.html" %}
+
+						</div>
+						{%- endif %}
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Defendant details
+								<a href="{{links.defendant_details}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;defendant details</span>
+								</a>
+							</h3>
+
+							{% include "../includes/_claim_summary_defendant_details.html" %}
+
+						</div>
+
+						{% if data['fee_type'] == 'graduated' -%}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Offence details
+									{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
+									<a href="{{links.offence_details}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;offence details</span>
+									</a>
+									{%- endif %}
+								</h3>
+
+								{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
+
+									{% include "../includes/_claim_summary_offence_details.html" %}
+								
+								{% else %}
+
+									{% include "../includes/_claim_summary_offence_details_message_warning.html" %}
+									
+								{%- endif %}
+
+							</div>
+						{%- endif %}
+
+						{% if data['bill_type'] == "advocate_interim" %}
+
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Interim fees
+									<a href="{{links.fees}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;interim fees</span>
+									</a>
+								</h3>
+
+								{% include "./includes/_claim_summary_interim_fees.html" %}
+
+							</div>
+
+						{% else %}
+
+							{% if data['fee_type'] == 'graduated' -%}
+
+								<div class="form-section">
+									<h3 class="heading-medium">
+										Graduated fees
+										{% if data['case_type'].length and data['offence_category'].length and data['offence_class'].length -%}
+										<a href="{{links.fees}}" class="link-change">
+											Change
+											<span class="visually-hidden">&nbsp;graduated fees</span>
+										</a>
+										{%- endif %}
+									</h3>
+
+									{% if data['case_type'].length and data['offence_category'].length and data['offence_class'].length -%}
+
+										{% include "./includes/_claim_summary_graduated_fees.html" %}
+
+									{% else %}
+
+										{% include "./includes/_claim_summary_graduated_fees_message_warning.html" %}
+									
+									{%- endif %}
+
+								</div>
+
+								{% if data['fee_scheme_version'] != 10 -%}
+									<div class="form-section">
+										<h3 class="heading-medium">
+											Prosecution witnesses
+											<a href="{{links.fees}}#prosecution-witnesses" class="link-change">
+												Change
+												<span class="visually-hidden">&nbsp;witnesses fees</span>
+											</a>
+										</h3>
+
+										{% include "./includes/_claim_summary_graduated_fees_witnesses.html" %}
+
+									</div>
+								{%- endif %}
+
+								{% if data['fee_scheme_version'] != 10 or (data['offence_class'] == 6 or data['offence_class'] == 9) -%}
+									<div class="form-section">
+										<h3 class="heading-medium">
+											Pages of prosecution evidence (<abbr title="pages of prosecution evidence">PPE</abbr>)
+											<a href="{{links.fees}}#prosecution-evidence" class="link-change">
+												Change
+												<span class="visually-hidden">&nbsp;evidence fees</span>
+											</a>
+										</h3>
+
+										{% include "./includes/_claim_summary_graduated_fees_prosecution_evidence.html" %}
+
+									</div>
+								{%- endif %}
+
+							{% else %}
+
+								<div class="form-section">
+									<h3 class="heading-medium">
+										Fixed fees
+										{% if data['case_type'].length -%}
+										<a href="{{links.fees}}" class="link-change">
+											Change
+											<span class="visually-hidden">&nbsp;fixed fees</span>
+										</a>
+										{%- endif %}
+									</h3>
+
+									{% if data['case_type'].length -%}
+
+										{% include "./includes/_claim_summary_fixed_fees.html" %}
+
+									{% else %}
+
+										{% include "./includes/_claim_summary_fixed_fees_message_warning.html" %}
+									
+									{%- endif %}
+
+								</div>
+
+							{%- endif %}
+
+						{%- endif %}
+
+						{% if data['fee_scheme_version'] != 10 -%}
+							<div class="form-section">
+								<h3 class="heading-medium">
+									Miscellaneous fees
+									<a href="{{links.miscellaneous_fees}}" class="link-change">
+										Change
+										<span class="visually-hidden">&nbsp;miscellaneous</span>
+									</a>
+								</h3>
+
+								{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
+
+							</div>
+						{%- endif %}
+
+						{% if data['bill_type'] == 'advocate_final' -%}
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Warrant fees
+								<a href="{{links.miscellaneous_fees}}#warrant-fees" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;warrant fees</span>
+								</a>
+							</h3>
+
+							{% include "../includes/_claim_summary_warrant_fees.html" %}
+
+						</div>
+						{%- endif %}
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Travel expenses
+								<a href="{{links.travel_expenses}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;travel expenses</span>
+								</a>
+							</h3>
+
+							{% include "../includes/_claim_summary_travel_expenses.html" %}
+
+						</div>
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Supporting evidence
+								<a href="{{links.supporting_evidence}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;supporting evidence</span>
+								</a>
+							</h3>
+
+							{% include "../includes/_claim_summary_supporting_evidence.html" %}
+
+						</div>
+
+						<div class="form-section">
+							<h3 class="heading-medium">
+								Additional information
+								<a href="{{links.additional_information}}" class="link-change">
+									Change
+									<span class="visually-hidden">&nbsp;additional information</span>
+								</a>
+							</h3>
+
+							{% include "../includes/_claim_summary_additional_information.html" %}
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="grid-row">
+					<div class="column-full">
+						<div class="form-section">
+							<div class="form-group form-buttons">
+								<input type="submit" class="button" value="Save and continue" formaction="{{links.next}}">
+								<input type="submit" class="button button-tertiary" value="Save as draft" formaction="{{links.save}}">
+								<a href="#noop" class="link-delete" role="button">Delete this claim</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+			{% include "./includes/_help.html" %}
+
+	    </div>
+	</div>
+</main>
+
+{% endblock %}

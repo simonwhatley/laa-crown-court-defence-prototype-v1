@@ -1,0 +1,74 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.home}}">Home</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-one-half">
+
+					<h2 id="section-heading" class="heading-large">
+						What would you like to do?
+					</h2>
+
+					<form class="form" method="post">
+						<input type="hidden" name="fee_scheme" value="lgfs">
+
+						<div class="form-section">
+							<div class="form-group">
+								<fieldset>
+
+									<legend>
+										<h3 class="heading-medium">Choose your bill type</h3>
+									</legend>
+
+									<div class="multiple-choice">
+										<input id="bill-type-1" type="radio" name="bill_type" value="litigator_final" {{ checked('bill_type','litigator_final') }}>
+										<label for="bill-type-1">Litigator final fee</label>
+									</div>
+									<div class="multiple-choice">
+										<input id="bill-type-2" type="radio" name="bill_type" value="litigator_interim" {{ checked('bill_type','litigator_interim') }}>
+										<label for="bill-type-2">Litigator interim fee</label>
+									</div>
+									<div class="multiple-choice">
+										<input id="bill-type-3" type="radio" name="bill_type" value="litigator_transfer" {{ checked('bill_type','litigator_transfer') }}>
+										<label for="bill-type-3">Litigator transfer fee</label>
+									</div>
+
+								</fieldset>
+							</div>
+						</div>
+
+						<div class="form-section">
+						  	<div class="form-group form-buttons">
+						   		<input type="submit" class="button" value="Continue" formaction="{{links.next}}">
+						    	<a id="cancel" class="link-secondary" href="{{links.cancel}}">Cancel</a>
+						  	</div>
+						</div>
+
+					</form>
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

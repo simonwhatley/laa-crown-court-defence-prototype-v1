@@ -1,0 +1,3894 @@
+[
+    {
+        "court_code": 1,
+        "key": "aberystwyth_justice_centre",
+        "name": "Aberystwyth Justice Centre",
+        "address": {
+            "address_line_1": "Y Lanfa",
+            "address_line_2": "Trefechan",
+            "city": "Aberystwyth",
+            "postcode": "SY23 1AS"
+        },
+        "location": {
+            "latitude": 52.4090753868126,
+            "longitude": -4.08711487903911
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Aberystwyth Justice Centre"]
+    },
+    {
+        "court_code": 2,
+        "key": "aldershot_magistrates_court",
+        "name": "Aldershot Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Civic Centre",
+            "city": "Aldershot",
+            "postcode": "GU11 1NY"
+        },
+        "location": {
+            "latitude": 51.2504974463005,
+            "longitude": -0.768949238063146
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Aldershot Magistrates' Court"]
+    },
+    {
+        "court_code": 3,
+        "key": "amersham_law_courts",
+        "name": "Amersham Law Courts",
+        "address": {
+            "address_line_1": "King George V Road",
+            "city": "Amersham",
+            "postcode": "HP6 5AJ"
+        },
+        "location": {
+            "latitude": 51.6746702906238,
+            "longitude": -0.602852636904231
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Amersham Law Courts"]
+    },
+    {
+        "court_code": 4,
+        "key": "aylesbury_magistrates_court_and_family_court",
+        "name": "Aylesbury Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Walton Street",
+            "city": "Aylesbury",
+            "postcode": "HP21 7QZ"
+        },
+        "location": {
+            "latitude": 51.81078,
+            "longitude": -0.808171
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Aylesbury Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 5,
+        "key": "banbury_magistrates_court_and_family_court",
+        "name": "Banbury Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Warwick Road",
+            "city": "Banbury",
+            "postcode": "OX16 2AW"
+        },
+        "location": {
+            "latitude": 52.0638778286969,
+            "longitude": -1.34084307657911
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Banbury Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 6,
+        "key": "barkingside_magistrates_court",
+        "name": "Barkingside Magistrates' Court",
+        "address": {
+            "address_line_1": "850 Cranbrook Road",
+            "address_line_2": "Barkingside",
+            "city": "Ilford",
+            "postcode": "IG6 1HW"
+        },
+        "location": {
+            "latitude": 51.5877116582541,
+            "longitude": 0.0814161529215032
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Barkingside Magistrates' Court"]
+    },
+    {
+        "court_code": 7,
+        "key": "barnstaple_magistrates_court",
+        "name": "Barnstaple Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Civic Centre",
+            "city": "Barnstaple",
+            "postcode": "EX31 1DX"
+        },
+        "location": {
+            "latitude": 51.0812717338402,
+            "longitude": -4.06545562468087
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Barnstaple Magistrates’ Court - North and East Devon"]
+    },
+    {
+        "court_code": 8,
+        "key": "barrow_in_furness_magistrates_court",
+        "name": "Barrow-in-Furness Magistrates' Court",
+        "address": {
+            "address_line_1": "Abbey Road",
+            "city": "Barrow-in-Furness",
+            "postcode": "LA14 5QX"
+        },
+        "location": {
+            "latitude": 54.1165259501882,
+            "longitude": -3.22759295400245
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Barrow-in-Furness Magistrates' Court"]
+    },
+    {
+        "court_code": 9,
+        "key": "basildon_magistrates_court_and_family_court",
+        "name": "Basildon Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Great Oaks",
+            "city": "Basildon",
+            "postcode": "SS14 1EH"
+        },
+        "location": {
+            "latitude": 51.5717701015634,
+            "longitude": 0.458227705141134
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Basildon Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 10,
+        "key": "basingstoke_magistrates_court",
+        "name": "Basingstoke Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "London Road",
+            "city": "Basingstoke",
+            "postcode": "RG21 4AB"
+        },
+        "location": {
+            "latitude": 51.2632178070466,
+            "longitude": -1.08320919716577
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Basingstoke Magistrates' Court"]
+    },
+    {
+        "court_code": 11,
+        "key": "bath_magistrates_court",
+        "name": "Bath Magistrates' Court",
+        "address": {
+            "address_line_1": "North Parade Road",
+            "city": "Bath",
+            "postcode": "BA1 5AF"
+        },
+        "location": {
+            "latitude": 51.3811734041448,
+            "longitude": -2.35231823786305
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Bath Magistrates' Court"]
+    },
+    {
+        "court_code": 12,
+        "key": "bedford_and_mid_beds_magistrates_court_and_family_court",
+        "name": "Bedford and Mid Beds Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Shire Hall",
+            "address_line_2": "3 St Paul's Square",
+            "city": "Bedford",
+            "postcode": "MK40 1SQ"
+        },
+        "location": {
+            "latitude": 52.1350717494818,
+            "longitude": -0.466958373595602
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Bedford and Mid Beds Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 13,
+        "key": "belmarsh_magistrates_court",
+        "name": "Belmarsh Magistrates' Court",
+        "address": {
+            "address_line_1": "4 Belmarsh Road",
+            "address_line_2": "Thamesmead",
+            "city": "London",
+            "postcode": "SE28 0FG"
+        },
+        "location": {
+            "latitude": 51.497246315317,
+            "longitude": 0.0969724419503986
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Belmarsh Magistrates' Court"]
+    },
+    {
+        "court_code": 14,
+        "key": "berwick_upon_tweed_magistrates_court",
+        "name": "Berwick upon Tweed Magistrates' Court",
+        "address": {
+            "address_line_1": "40 Church Street",
+            "city": "Berwick upon Tweed",
+            "postcode": "TD15 1DX"
+        },
+        "location": {
+            "latitude": 55.7698383334097,
+            "longitude": -2.00191901358729
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Berwick upon Tweed Magistrates' Court"]
+    },
+    {
+        "court_code": 15,
+        "key": "beverley_magistrates_court_and_family_court",
+        "name": "Beverley Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Champney Road",
+            "city": "Beverley",
+            "postcode": "HU17 9EJ"
+        },
+        "location": {
+            "latitude": 53.8404134862794,
+            "longitude": -0.428582369050879
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Beverley Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 16,
+        "key": "bexley_magistrates_court_and_family_court",
+        "name": "Bexley Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Norwich Place",
+            "city": "Bexleyheath",
+            "postcode": "DA6 7ND"
+        },
+        "location": {
+            "latitude": 51.4551818470341,
+            "longitude": 0.147899624062815
+        },
+        "region": "London",
+        "type": ["family", "magistrates"],
+        "other_names": ["Bexley Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 17,
+        "key": "bicester_magistrates_court_and_family_court",
+        "name": "Bicester Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Waverley House",
+            "address_line_2": "Queens Avenue",
+            "city": "Bicester",
+            "postcode": "OX26 2NZ"
+        },
+        "location": {
+            "latitude": 51.8991668315436,
+            "longitude": -1.15783357362002
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Bicester Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 18,
+        "key": "birmingham_magistrates_court",
+        "name": "Birmingham Magistrates' Court",
+        "address": {
+            "address_line_1": "Victoria Law Courts",
+            "address_line_2": "Corporation Street",
+            "city": "Birmingham",
+            "postcode": "B4 6QA"
+        },
+        "location": {
+            "latitude": 52.4836397845977,
+            "longitude": -1.89386054387585
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Birmingham Magistrates' Court"]
+    },
+    {
+        "court_code": 19,
+        "key": "blackburn_magistrates_court",
+        "name": "Blackburn Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Northgate",
+            "city": "Blackburn",
+            "postcode": "BB2 1AA"
+        },
+        "location": {
+            "latitude": 53.7497519724347,
+            "longitude": -2.48636236853467
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Blackburn Magistrates' Court"]
+    },
+    {
+        "court_code": 20,
+        "key": "blackpool_magistrates_court",
+        "name": "Blackpool Magistrates' Court",
+        "address": {
+            "address_line_1": "Civic Centre",
+            "address_line_2": "Chapel Street",
+            "city": "Blackpool",
+            "postcode": "FY1 5DQ"
+        },
+        "location": {
+            "latitude": 53.8118021208469,
+            "longitude": -3.05383687030797
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Blackpool Magistrates' Court"]
+    },
+    {
+        "court_code": 21,
+        "key": "bodmin_magistrates_court",
+        "name": "Bodmin Magistrates' Court",
+        "address": {
+            "address_line_1": "Launceston Road",
+            "city": "Bodmin",
+            "postcode": "PL31 2AL"
+        },
+        "location": {
+            "latitude": 50.4695348600718,
+            "longitude": -4.70886601957934
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Bodmin Magistrates' Court"]
+    },
+    {
+        "court_code": 22,
+        "key": "bolton_magistrates_court",
+        "name": "Bolton Magistrates' Court",
+        "address": {
+            "address_line_1": "The Courts",
+            "address_line_2": "Le Mans Crescent",
+            "city": "Bolton",
+            "postcode": "BL1 1UA"
+        },
+        "location": {
+            "latitude": 53.5785909860169,
+            "longitude": -2.43189584290173
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Bolton Magistrates' Court"]
+    },
+    {
+        "court_code": 23,
+        "key": "boston_magistrates_court",
+        "name": "Boston Magistrates' Court",
+        "address": {
+            "address_line_1": "55 Norfolk Street",
+            "city": "Boston",
+            "postcode": "PE21 6PE"
+        },
+        "location": {
+            "latitude": 52.9830404712685,
+            "longitude": -0.0249384197200089
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Boston Magistrates' Court"]
+    },
+    {
+        "court_code": 24,
+        "key": "bournemouth_magistrates_court",
+        "name": "Bournemouth Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Stafford Road",
+            "city": "Bournemouth",
+            "postcode": "BH1 1JH"
+        },
+        "location": {
+            "latitude": 50.7231160684846,
+            "longitude": -1.86889261916373
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Bournemouth Magistrates' Court"]
+    },
+    {
+        "court_code": 25,
+        "key": "bradford_and_keighley_magistrates_court",
+        "name": "Bradford and Keighley Magistrates' Court",
+        "address": {
+            "address_line_1": "The Tyrls",
+            "city": "Bradford",
+            "postcode": "BD1 1LA"
+        },
+        "location": {
+            "latitude": 53.7917690122882,
+            "longitude": -1.75417600764164
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["magistrates"],
+        "other_names": ["Bradford and Keighley Magistrates' Court"]
+    },
+    {
+        "court_code": 26,
+        "key": "bridlington_magistrates_court_and_family_court",
+        "name": "Bridlington Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Quay Road",
+            "city": "Bridlington",
+            "postcode": "YO16 4EJ"
+        },
+        "location": {
+            "latitude": 54.085194679078,
+            "longitude": -0.200187859413484
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Bridlington Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 27,
+        "key": "brighton_magistrates_court_and_family_court",
+        "name": "Brighton Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Edward Street",
+            "city": "Brighton",
+            "postcode": "BN2 0LG"
+        },
+        "location": {
+            "latitude": 50.8232259125291,
+            "longitude": -0.134297003089224
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Brighton Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 28,
+        "key": "bristol_magistrates_court",
+        "name": "Bristol Magistrates' Court",
+        "address": {
+            "address_line_1": "Marlborough Street",
+            "city": "Bristol",
+            "postcode": "BS1 3NU"
+        },
+        "location": {
+            "latitude": 51.459482137771,
+            "longitude": -2.59301940317771
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Bristol Magistrates' Court"]
+    },
+    {
+        "court_code": 29,
+        "key": "bromley_magistrates_court",
+        "name": "Bromley Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "1 London Road",
+            "city": "Bromley",
+            "postcode": "BR1 1RA"
+        },
+        "location": {
+            "latitude": 51.4077190748622,
+            "longitude": 0.0109698453614508
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Bromley Magistrates' Court"]
+    },
+    {
+        "court_code": 30,
+        "key": "burnley_magistrates_court",
+        "name": "Burnley Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Parker Lane",
+            "city": "Burnley",
+            "postcode": "BB11 2BS"
+        },
+        "location": {
+            "latitude": 53.7870755281877,
+            "longitude": -2.24212585355089
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Burnley Magistrates' Court"]
+    },
+    {
+        "court_code": 31,
+        "key": "bury_and_rochdale_magistrates_court",
+        "name": "Bury and Rochdale Magistrates' Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Tenters Street",
+            "city": "Bury",
+            "postcode": "BL9 0HX"
+        },
+        "location": {
+            "latitude": 53.5930384531871,
+            "longitude": -2.30543561792077
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Bury and Rochdale Magistrates' Court"]
+    },
+    {
+        "court_code": 32,
+        "key": "bury_st_edmunds_magistrates_court_and_family_court",
+        "name": "Bury St Edmunds Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Shire Hall",
+            "address_line_2": "Honey Hill",
+            "city": "Bury St Edmunds",
+            "postcode": "IP33 1HF"
+        },
+        "location": {
+            "latitude": 52.242503,
+            "longitude": 0.719563
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Bury St Edmunds Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 33,
+        "key": "buxton_magistrates_court_and_family_court",
+        "name": "Buxton Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Peak Buildings",
+            "address_line_2": "Terrace Road",
+            "city": "Buxton",
+            "postcode": "SK17 6DY"
+        },
+        "location": {
+            "latitude": 53.256792,
+            "longitude": -1.913081
+        },
+        "region": "North West",
+        "type": ["family", "magistrates"],
+        "other_names": ["Buxton Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 34,
+        "key": "caernarfon_magistrates_court_and_family_court",
+        "name": "Caernarfon Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Llanberis Road",
+            "city": "Caernarfon",
+            "postcode": "LL55 2DF"
+        },
+        "location": {
+            "latitude": 53.1407287883649,
+            "longitude": -4.26406731606224
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Caernarfon Magistrates' Court and Family Court", "Caernarfon Criminal Justice Centre"]
+    },
+    {
+        "court_code": 35,
+        "key": "caerphilly_magistrates_court",
+        "name": "Caerphilly Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Mountain Road",
+            "city": "Caerphilly",
+            "postcode": "CF83 1HG"
+        },
+        "location": {
+            "latitude": 51.5694967889034,
+            "longitude": -3.21740237817922
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Caerphilly Magistrates' Court"]
+    },
+    {
+        "court_code": 36,
+        "key": "calderdale_halifax_magistrates_court_and_family_court",
+        "name": "Calderdale (Halifax) Magistrates’ Court and Family Court",
+        "address": {
+            "address_line_1": "Harrison Road",
+            "city": "Halifax",
+            "postcode": "HX1 2AN"
+        },
+        "location": {
+            "latitude": 53.72018,
+            "longitude": -1.863336
+        },
+        "region": "North West",
+        "type": ["family", "magistrates"],
+        "other_names": ["Calderdale (Halifax) Magistrates’ Court and Family Court", "Calderdale Magistrates’ Court and Family Court Hearing Centre"]
+    },
+    {
+        "court_code": 37,
+        "key": "camberwell_green_magistrates_court",
+        "name": "Camberwell Green Magistrates' Court",
+        "address": {
+            "address_line_1": "15 D'Eynsford Road",
+            "address_line_2": "Camberwell Green",
+            "city": "London",
+            "postcode": "SE5 7UP"
+        },
+        "location": {
+            "latitude": 51.473914310548,
+            "longitude": -0.0967252217530696
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Camberwell Green Magistrates' Court"]
+    },
+    {
+        "court_code": 38,
+        "key": "cambridge_magistrates_court",
+        "name": "Cambridge Magistrates' Court",
+        "address": {
+            "address_line_1": "12 St Andrews Street",
+            "city": "Cambridge",
+            "postcode": "CB2 3AX"
+        },
+        "location": {
+            "latitude": 52.2043892520582,
+            "longitude": 0.122453110249081
+        },
+        "region": "East of England",
+        "type": ["magistrates"],
+        "other_names": ["Cambridge Magistrates' Court"]
+    },
+    {
+        "court_code": 39,
+        "key": "cannock_magistrates_court",
+        "name": "Cannock Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Wolverhampton Road",
+            "city": "Cannock",
+            "postcode": "WS11 1AT"
+        },
+        "location": {
+            "latitude": 52.68478377777,
+            "longitude": -2.03548996734156
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Cannock Magistrates' Court"]
+    },
+    {
+        "court_code": 40,
+        "key": "canterbury_magistrates_court_and_family_court",
+        "name": "Canterbury Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Broad Street",
+            "city": "Canterbury",
+            "postcode": "CT1 2UE"
+        },
+        "location": {
+            "latitude": 51.2787012678776,
+            "longitude": 1.08577323914301
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Canterbury Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 41,
+        "key": "cardiff_magistrates_court",
+        "name": "Cardiff Magistrates' Court",
+        "address": {
+            "address_line_1": "Fitzalan Place",
+            "city": "Cardiff",
+            "postcode": "CF24 0RZ"
+        },
+        "location": {
+            "latitude": 51.4821097546597,
+            "longitude": -3.16648370411602
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Cardiff Magistrates' Court", "Cardiff and the Vale Magistrates Court"]
+    },
+    {
+        "court_code": 42,
+        "key": "carlisle_magistrates_court",
+        "name": "Carlisle Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Rickergate",
+            "city": "Carlisle",
+            "postcode": "CA3 8QH"
+        },
+        "location": {
+            "latitude": 54.897520798023,
+            "longitude": -2.93553395201371
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Carlisle Magistrates' Court"]
+    },
+    {
+        "court_code": 43,
+        "key": "carmarthen_magistrates_court_and_family_court",
+        "name": "Carmarthen Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Guildhall",
+            "address_line_2": "Guildhall Square",
+            "city": "Carmarthen",
+            "postcode": "SA31 1PR"
+        },
+        "location": {
+            "latitude": 51.856166535551,
+            "longitude": -4.30764493185697
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Carmarthen Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 44,
+        "key": "central_buckinghamshire_magistrates_court_and_family_court",
+        "name": "Central Buckinghamshire Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Walton Street",
+            "city": "Aylesbury",
+            "postcode": "HP21 7QZ"
+        },
+        "location": {
+            "latitude": 51.81078,
+            "longitude": -0.808171
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Central Buckinghamshire Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 45,
+        "key": "chatham_magistrates_court_and_family_court",
+        "name": "Chatham Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "The Brook",
+            "city": "Chatham",
+            "postcode": "ME4 4JZ"
+        },
+        "location": {
+            "latitude": 51.3841282311678,
+            "longitude": 0.526904890039546
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Chatham Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 46,
+        "key": "chelmsford_magistrates_court_and_family_court",
+        "name": "Chelmsford Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "10 New Street",
+            "city": "Chelmsford",
+            "postcode": "CM1 1NT"
+        },
+        "location": {
+            "latitude": 51.7359048069179,
+            "longitude": 0.473167165567051
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Chelmsford Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 47,
+        "key": "cheltenham_magistrates_court_and_family_court",
+        "name": "Cheltenham Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Cheltenham Courthouse",
+            "address_line_2": "St Georges Road",
+            "city": "Cheltenham",
+            "postcode": "GL50 3PF"
+        },
+        "location": {
+            "latitude": 51.8989852079482,
+            "longitude": -2.08317190598645
+        },
+        "region": "South West",
+        "type": ["family", "magistrates"],
+        "other_names": ["Cheltenham Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 48,
+        "key": "chester_magistrates_court",
+        "name": "Chester Magistrates’ Court",
+        "address": {
+            "address_line_1": "Grosvenor Street",
+            "city": "Chester",
+            "postcode": "CH1 2XA"
+        },
+        "location": {
+            "latitude": 53.1876413973099,
+            "longitude": -2.89350642709621
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Chester Magistrates’ Court"]
+    },
+    {
+        "court_code": 49,
+        "key": "chester_le_street_magistrates_court",
+        "name": "Chester-le-Street Magistrates' Court",
+        "address": {
+            "address_line_1": "Newcastle Road",
+            "city": "Chester-le-Street",
+            "postcode": "DH3 3UA"
+        },
+        "location": {
+            "latitude": 54.8613978431576,
+            "longitude": -1.57278788500003
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Chester-le-Street Magistrates' Court"]
+    },
+    {
+        "court_code": 50,
+        "key": "chichester_magistrates_court",
+        "name": "Chichester Magistrates' Court",
+        "address": {
+            "address_line_1": "6 Market Avenue",
+            "city": "Chichester",
+            "postcode": "PO19 1YE"
+        },
+        "location": {
+            "latitude": 50.8332526954007,
+            "longitude": -0.779516631682969
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Chichester Magistrates' Court"]
+    },
+    {
+        "court_code": 51,
+        "key": "chippenham_trowbridge_law_courts",
+        "name": "Chippenham & Trowbridge Law Courts",
+        "address": {
+            "address_line_1": "Chippenham Law Courts",
+            "address_line_2": "Pewsham Way",
+            "city": "Chippenham",
+            "postcode": "SN15 3BF"
+        },
+        "location": {
+            "latitude": 51.4526121533279,
+            "longitude": -2.11112377318773
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Chippenham & Trowbridge Law Courts"]
+    },
+    {
+        "court_code": 52,
+        "key": "chorley_magistrates_court",
+        "name": "Chorley Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "St Thomas’s Square",
+            "city": "Chorley",
+            "postcode": "PR7 1RZ"
+        },
+        "location": {
+            "latitude": 53.6539543442294,
+            "longitude": -2.6345179517824
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Chorley Magistrates' Court"]
+    },
+    {
+        "court_code": 53,
+        "key": "city_of_london_magistrates_court",
+        "name": "City of London Magistrates' Court",
+        "address": {
+            "address_line_1": "1 Queen Victoria Street",
+            "city": "London",
+            "postcode": "EC4N 4XY"
+        },
+        "location": {
+            "latitude": 51.5131125683464,
+            "longitude": -0.0900620165115576
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["City of London Magistrates' Court"]
+    },
+    {
+        "court_code": 54,
+        "key": "colchester_magistrates_court",
+        "name": "Colchester Magistrates' Court",
+        "address": {
+            "address_line_1": "St Botolphs Circus",
+            "address_line_2": "Magdelen Street",
+            "city": "Colchester",
+            "postcode": "CO2 7EF"
+        },
+        "location": {
+            "latitude": 51.8865072786854,
+            "longitude": 0.904373576980759
+        },
+        "region": "East of England",
+        "type": ["magistrates"],
+        "other_names": ["Colchester Magistrates' Court"]
+    },
+    {
+        "court_code": 55,
+        "key": "consett_magistrates_court",
+        "name": "Consett Magistrates' Court",
+        "address": {
+            "address_line_1": "Ashdale Road",
+            "city": "Consett",
+            "postcode": "DH8 6LY"
+        },
+        "location": {
+            "latitude": 54.8575641015141,
+            "longitude": -1.83020990665522
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Consett Magistrates' Court"]
+    },
+    {
+        "court_code": 56,
+        "key": "corby_magistrates_court",
+        "name": "Corby Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Elizabeth Street",
+            "city": "Corby",
+            "postcode": "NN17 1SH"
+        },
+        "location": {
+            "latitude": 52.4878272774705,
+            "longitude": -0.699043429131889
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Corby Magistrates' Court"]
+    },
+    {
+        "court_code": 57,
+        "key": "coventry_magistrates_court",
+        "name": "Coventry Magistrates' Court",
+        "address": {
+            "address_line_1": "Little Park Street",
+            "city": "Coventry",
+            "postcode": "CV1 2SQ"
+        },
+        "location": {
+            "latitude": 52.4058337754168,
+            "longitude": -1.50762766690948
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Coventry Magistrates' Court"]
+    },
+    {
+        "court_code": 58,
+        "key": "crawley_magistrates_court_and_family_court",
+        "name": "Crawley Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Woodfield Road",
+            "city": "Crawley",
+            "postcode": "RH10 8BF"
+        },
+        "location": {
+            "latitude": 51.1175106524707,
+            "longitude": -0.182707662432878
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Crawley Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 59,
+        "key": "crewe_south_cheshire_magistrates_court",
+        "name": "Crewe (South Cheshire) Magistrates’ Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Civic Centre",
+            "city": "Crewe",
+            "postcode": "CW1 2DT"
+        },
+        "location": {
+            "latitude": 53.0976871625111,
+            "longitude": -2.43875501168615
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Crewe (South Cheshire) Magistrates’ Court"]
+    },
+    {
+        "court_code": 60,
+        "key": "croydon_magistrates_court_and_family_court",
+        "name": "Croydon Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Barclay Road",
+            "city": "Croydon",
+            "postcode": "CR9 3NG"
+        },
+        "location": {
+            "latitude": 51.3723963304599,
+            "longitude": -0.0939842818387834
+        },
+        "region": "London",
+        "type": ["family", "magistrates"],
+        "other_names": ["Croydon Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 61,
+        "key": "cwmbran_magistrates_court",
+        "name": "Cwmbran Magistrates' Court",
+        "address": {
+            "address_line_1": "Tudor Road",
+            "city": "Cwmbran Torfaen",
+            "postcode": "NP44 3YA"
+        },
+        "location": {
+            "latitude": 51.6513030941258,
+            "longitude": -3.0212747884515
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Cwmbran Magistrates' Court"]
+    },
+    {
+        "court_code": 62,
+        "key": "darlington_magistrates_court_and_family_court",
+        "name": "Darlington Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Parkgate",
+            "city": "Darlington",
+            "postcode": "DL1 1RU"
+        },
+        "location": {
+            "latitude": 54.5240080352284,
+            "longitude": -1.54984934493695
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Darlington Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 63,
+        "key": "dartford_magistrates_court_and_family_court",
+        "name": "Dartford Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Session House",
+            "address_line_2": "Highfield Road",
+            "city": "Dartford",
+            "postcode": "DA1 2JW"
+        },
+        "location": {
+            "latitude": 51.444585,
+            "longitude": 0.211917
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Dartford Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 64,
+        "key": "derby_magistrates_court",
+        "name": "Derby Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "St Mary’s Gate",
+            "city": "Derby",
+            "postcode": "DE1 3JR"
+        },
+        "location": {
+            "latitude": 52.9245763871537,
+            "longitude": -1.47958793123249
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Derby Magistrates' Court"]
+    },
+    {
+        "court_code": 65,
+        "key": "dolgellau_magistrates_court_and_family_court",
+        "name": "Dolgellau Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Courtroom",
+            "address_line_2": "County Hall",
+            "city": "Dolgellau",
+            "postcode": "LL40 1AU"
+        },
+        "location": {
+            "latitude": 52.743753736301,
+            "longitude": -3.88520438105748
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Dolgellau Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 66,
+        "key": "doncaster_magistrates_court_and_family_court",
+        "name": "Doncaster Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "College Road",
+            "city": "Doncaster",
+            "postcode": "DN1 3HS"
+        },
+        "location": {
+            "latitude": 53.5189921764188,
+            "longitude": -1.12956276053974
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Doncaster Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 67,
+        "key": "dover_magistrates_court",
+        "name": "Dover Magistrates' Court",
+        "address": {
+            "address_line_1": "Pencester Road",
+            "city": "Dover",
+            "postcode": "CT16 1BS"
+        },
+        "location": {
+            "latitude": 51.1279055680311,
+            "longitude": 1.3136853064009
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Dover Magistrates' Court"]
+    },
+    {
+        "court_code": 68,
+        "key": "dudley_magistrates_court",
+        "name": "Dudley Magistrates' Court",
+        "address": {
+            "address_line_1": "Dudley Courthouse",
+            "address_line_2": "The Inhedge",
+            "city": "Dudley",
+            "postcode": "DY1 1RY"
+        },
+        "location": {
+            "latitude": 52.5099231310745,
+            "longitude": -2.0880075784501
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Dudley Magistrates' Court"]
+    },
+    {
+        "court_code": 69,
+        "key": "durham_magistrates_court",
+        "name": "Durham Magistrates' Court",
+        "address": {
+            "address_line_1": "Old Elvet",
+            "city": "Durham",
+            "postcode": "DH1 3HW"
+        },
+        "location": {
+            "latitude": 54.7740855852911,
+            "longitude": -1.56790943245914
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Durham Magistrates' Court"]
+    },
+    {
+        "court_code": 70,
+        "key": "ealing_magistrates_court",
+        "name": "Ealing Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Green Man Lane",
+            "city": "London",
+            "postcode": "W13 0SD"
+        },
+        "location": {
+            "latitude": 51.5112543392973,
+            "longitude": -0.323141495231958
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Ealing Magistrates' Court"]
+    },
+    {
+        "court_code": 71,
+        "key": "east_berkshire_magistrates_court_maidenhead",
+        "name": "East Berkshire Magistrates' Court, Maidenhead",
+        "address": {
+            "address_line_1": "Bridge Road",
+            "city": "Maidenhead",
+            "postcode": "SL6 8PB"
+        },
+        "location": {
+            "latitude": 51.5249433777343,
+            "longitude": -0.714297351103572
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["East Berkshire Magistrates' Court, Maidenhead"]
+    },
+    {
+        "court_code": 72,
+        "key": "east_berkshire_magistrates_court_slough",
+        "name": "East Berkshire Magistrates' Court, Slough",
+        "address": {
+            "address_line_1": "Law Courts",
+            "address_line_2": "Chalvey Park",
+            "address_line_3": "Off Windsor Road",
+            "city": "Slough",
+            "postcode": "SL1 2HJ"
+        },
+        "location": {
+            "latitude": 51.5074086856538,
+            "longitude": -0.598103732969459
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["East Berkshire Magistrates' Court, Slough"]
+    },
+    {
+        "court_code": 73,
+        "key": "eastbourne_magistrates_court_and_family_court",
+        "name": "Eastbourne Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Old Orchard Road",
+            "city": "Eastbourne",
+            "postcode": "BN21 4UN"
+        },
+        "location": {
+            "latitude": 50.7675466272627,
+            "longitude": 0.277740011356164
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Eastbourne Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 74,
+        "key": "exeter_magistrates_court",
+        "name": "Exeter Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Heavitree Road",
+            "city": "Exeter",
+            "postcode": "EX1 2LS"
+        },
+        "location": {
+            "latitude": 50.7241359987841,
+            "longitude": -3.51716219979112
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Exeter Magistrates' Court"]
+    },
+    {
+        "court_code": 75,
+        "key": "fareham_magistrates_court",
+        "name": "Fareham Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Trinity Street",
+            "city": "Fareham",
+            "postcode": "PO16 7SB"
+        },
+        "location": {
+            "latitude": 50.853339,
+            "longitude": -1.183139
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Fareham Magistrates' Court"]
+    },
+    {
+        "court_code": 76,
+        "key": "feltham_magistrates_court",
+        "name": "Feltham Magistrates' Court",
+        "address": {
+            "address_line_1": "Hanworth Road",
+            "city": "Feltham",
+            "postcode": "TW13 5AF"
+        },
+        "location": {
+            "latitude": 51.4475390021043,
+            "longitude": -0.405965148450177
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Feltham Magistrates' Court"]
+    },
+    {
+        "court_code": 77,
+        "key": "fleetwood_magistrates_court_and_family_court",
+        "name": "Fleetwood Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Esplanade",
+            "city": "Fleetwood",
+            "postcode": "FY7 6BN"
+        },
+        "location": {
+            "latitude": 53.9279743368724,
+            "longitude": -3.00903232799479
+        },
+        "region": "North West",
+        "type": ["family", "magistrates"],
+        "other_names": ["Fleetwood Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 78,
+        "key": "folkestone_magistrates_court_and_family_court",
+        "name": "Folkestone Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Castle Hill Avenue",
+            "city": "Folkestone",
+            "postcode": "CT20 2DH"
+        },
+        "location": {
+            "latitude": 51.0788432485475,
+            "longitude": 1.16922021519308
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Folkestone Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 79,
+        "key": "gateshead_magistrates_court_and_family_court",
+        "name": "Gateshead Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Warwick Street",
+            "city": "Gateshead",
+            "postcode": "NE8 1DT"
+        },
+        "location": {
+            "latitude": 54.9589845621308,
+            "longitude": -1.60030068981076
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Gateshead Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 80,
+        "key": "gloucester_magistrates_court",
+        "name": "Gloucester Magistrates' Court",
+        "address": {
+            "address_line_1": "Gloucester Courthouse",
+            "address_line_2": "Barbican Way",
+            "city": "Gloucester",
+            "postcode": "GL1 2JH"
+        },
+        "location": {
+            "latitude": 51.8654465067672,
+            "longitude": -2.25009088019249
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Gloucester Magistrates' Court"]
+    },
+    {
+        "court_code": 81,
+        "key": "grantham_magistrates_court",
+        "name": "Grantham Magistrates' Court",
+        "address": {
+            "address_line_1": "Harlaxton Road",
+            "city": "Grantham",
+            "postcode": "NG31 7SB"
+        },
+        "location": {
+            "latitude": 52.90406,
+            "longitude": -0.650168
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Grantham Magistrates' Court"]
+    },
+    {
+        "court_code": 82,
+        "key": "great_yarmouth_magistrates_court_and_family_court",
+        "name": "Great Yarmouth Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Magistrates’ Courthouse",
+            "address_line_2": "North Quay",
+            "city": "Great Yarmouth",
+            "postcode": "NR30 1PW"
+        },
+        "location": {
+            "latitude": 52.6131703117956,
+            "longitude": 1.72493236855081
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Great Yarmouth Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 83,
+        "key": "greenwich_magistrates_court",
+        "name": "Greenwich Magistrates' Court",
+        "address": {
+            "address_line_1": "9 Blackheath Road",
+            "address_line_2": "Greenwich",
+            "city": "London",
+            "postcode": "SE10 8PE"
+        },
+        "location": {
+            "latitude": 51.4737015192651,
+            "longitude": -0.019278001513373
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Greenwich Magistrates' Court"]
+    },
+    {
+        "court_code": 84,
+        "key": "grimsby_magistrates_court_and_family_court",
+        "name": "Grimsby Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "19 Victoria Street",
+            "city": "Grimsby",
+            "postcode": "DN31 1NR"
+        },
+        "location": {
+            "latitude": 53.5678017501034,
+            "longitude": -0.0789336018113545
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Grimsby Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 85,
+        "key": "guildford_magistrates_court_and_family_court",
+        "name": "Guildford Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Mary Road",
+            "city": "Guildford",
+            "postcode": "GU1 4PS"
+        },
+        "location": {
+            "latitude": 51.2389322603417,
+            "longitude": -0.576926528348874
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Guildford Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 86,
+        "key": "hammersmith_magistrates_court",
+        "name": "Hammersmith Magistrates' Court",
+        "address": {
+            "address_line_1": "181 Talgarth Road",
+            "city": "London",
+            "postcode": "W6 8DN"
+        },
+        "location": {
+            "latitude": 51.4907522499093,
+            "longitude": -0.219474095730932
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Hammersmith Magistrates' Court"]
+    },
+    {
+        "court_code": 87,
+        "key": "harrogate_magistrates_court_and_family_court",
+        "name": "Harrogate Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Victoria Avenue",
+            "city": "Harrogate",
+            "postcode": "HG1 1EL"
+        },
+        "location": {
+            "latitude": 53.9902556002874,
+            "longitude": -1.53966875688782
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Harrogate Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 88,
+        "key": "hartlepool_magistrates_court_and_family_hearing_court",
+        "name": "Hartlepool Magistrates' Court and Family Hearing Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Victoria Road",
+            "city": "Hartlepool",
+            "postcode": "TS24 8AG"
+        },
+        "location": {
+            "latitude": 54.6857838976916,
+            "longitude": -1.21400528873368
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Hartlepool Magistrates' Court and Family Hearing Court"]
+    },
+    {
+        "court_code": 89,
+        "key": "hastings_magistrates_court_and_family_court",
+        "name": "Hastings Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Horntye Park",
+            "address_line_3": "Bohemia Road",
+            "city": "Hastings",
+            "postcode": "TN34 1ND"
+        },
+        "location": {
+            "latitude": 50.859393,
+            "longitude": 0.566692
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Hastings Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 90,
+        "key": "hatfield_magistrates_court",
+        "name": "Hatfield Magistrates' Court",
+        "address": {
+            "address_line_1": "Comet Way",
+            "city": "Hatfield",
+            "postcode": "AL10 9SJ"
+        },
+        "location": {
+            "latitude": 51.7659083182022,
+            "longitude": -0.238101978596971
+        },
+        "region": "East of England",
+        "type": ["magistrates"],
+        "other_names": ["Hatfield Magistrates' Court"]
+    },
+    {
+        "court_code": 91,
+        "key": "haverfordwest_magistrates_court",
+        "name": "Haverfordwest Magistrates' Court",
+        "address": {
+            "address_line_1": "Penffynnon",
+            "address_line_2": "Hawthorn Rise",
+            "city": "Haverfordwest",
+            "postcode": "SA61 2AX"
+        },
+        "location": {
+            "latitude": 51.8010076471048,
+            "longitude": -4.98059527402437
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Haverfordwest Magistrates' Court"]
+    },
+    {
+        "court_code": 92,
+        "key": "hendon_magistrates_court",
+        "name": "Hendon Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "The Hyde",
+            "address_line_3": "Hendon",
+            "city": "London",
+            "postcode": "NW9 7BY"
+        },
+        "location": {
+            "latitude": 51.5816699203838,
+            "longitude": -0.245453629231811
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Hendon Magistrates' Court"]
+    },
+    {
+        "court_code": 93,
+        "key": "hereford_magistrates_court",
+        "name": "Hereford Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Bath Street",
+            "city": "Hereford",
+            "postcode": "HR1 2HE"
+        },
+        "location": {
+            "latitude": 52.0570843645942,
+            "longitude": -2.71099009552298
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Hereford Magistrates' Court, Hereford Justice Centre"]
+    },
+    {
+        "court_code": 94,
+        "key": "hertford_magistrates_court_and_family_court",
+        "name": "Hertford Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Shire Hall",
+            "address_line_2": "Fore Street",
+            "city": "Hertford",
+            "postcode": "SG14 1DH"
+        },
+        "location": {
+            "latitude": 51.7963415325563,
+            "longitude": -0.0771458409222222
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Hertford Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 95,
+        "key": "high_peak_magistrates_court",
+        "name": "High Peak Magistrates' Court",
+        "address": {
+            "address_line_1": "Peak Buildings",
+            "address_line_2": "Terrace Road",
+            "city": "Buxton",
+            "postcode": "SK17 6DY"
+        },
+        "location": {
+            "latitude": 53.256792,
+            "longitude": -1.913081
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["High Peak Magistrates' Court"]
+    },
+    {
+        "court_code": 96,
+        "key": "high_wycombe_magistrates_court_and_family_court",
+        "name": "High Wycombe Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Law Courts",
+            "address_line_2": "Easton Street",
+            "city": "High Wycombe",
+            "postcode": "HP11 1LR"
+        },
+        "location": {
+            "latitude": 51.6276421074677,
+            "longitude": -0.746142523090353
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["High Wycombe Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 97,
+        "key": "highbury_corner_magistrates_court",
+        "name": "Highbury Corner Magistrates' Court",
+        "address": {
+            "address_line_1": "51 Holloway Road",
+            "city": "London",
+            "postcode": "N7 8JA"
+        },
+        "location": {
+            "latitude": 51.5470575138047,
+            "longitude": -0.105472206748167
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Highbury Corner Magistrates' Court"]
+    },
+    {
+        "court_code": 98,
+        "key": "hinckley_magistrates_court",
+        "name": "Hinckley Magistrates' Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Upper Bond Street",
+            "city": "Hinckley",
+            "postcode": "LE10 1NZ"
+        },
+        "location": {
+            "latitude": 52.544706,
+            "longitude": -1.373657
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Hinckley Magistrates' Court"]
+    },
+    {
+        "court_code": 99,
+        "key": "holyhead_magistrates_court_and_family_court",
+        "name": "Holyhead Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Stanley Street",
+            "city": "Holyhead",
+            "postcode": "LL65 1HG"
+        },
+        "location": {
+            "latitude": 53.3115219422457,
+            "longitude": -4.63295089347593
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Holyhead Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 100,
+        "key": "horsham_magistrates_court_and_family_court",
+        "name": "Horsham Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Hurst Road",
+            "city": "Horsham",
+            "postcode": "RH12 2ET"
+        },
+        "location": {
+            "latitude": 51.0685496025101,
+            "longitude": -0.322662089999816
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Horsham Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 101,
+        "key": "hull_and_holderness_magistrates_court_and_family_court",
+        "name": "Hull and Holderness Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Market Place",
+            "city": "Kingston-upon-Hull",
+            "postcode": "HU1 1RD"
+        },
+        "location": {
+            "latitude": 53.74106329227,
+            "longitude": -0.333155165813487
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Hull and Holderness Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 102,
+        "key": "ipswich_magistrates_court_and_family_court",
+        "name": "Ipswich Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Elm Street",
+            "city": "Ipswich",
+            "postcode": "IP1 2AP"
+        },
+        "location": {
+            "latitude": 52.0568640193474,
+            "longitude": 1.14889329194645
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Ipswich Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 103,
+        "key": "isles_of_scilly_magistrates_court",
+        "name": "Isles of Scilly Magistrates' Court",
+        "address": {
+            "address_line_1": "Old Wesleyan Chapel",
+            "address_line_2": "Garrison Lane",
+            "city": "Hugh Town",
+            "postcode": "TR21 0JD"
+        },
+        "location": {
+            "latitude": 49.9146114068822,
+            "longitude": -6.31723261622449
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Isles of Scilly Magistrates' Court"]
+    },
+    {
+        "court_code": 104,
+        "key": "kendal_magistrates_court",
+        "name": "Kendal Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Burneside Road",
+            "city": "Kendal",
+            "postcode": "LA9 4TJ"
+        },
+        "location": {
+            "latitude": 54.33469865984,
+            "longitude": -2.74796770647109
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Kendal Magistrates' Court"]
+    },
+    {
+        "court_code": 105,
+        "key": "kettering_magistrates_court",
+        "name": "Kettering Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "London Road",
+            "city": "Kettering",
+            "postcode": "NN15 7QP"
+        },
+        "location": {
+            "latitude": 52.3972939682483,
+            "longitude": -0.725649567480104
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Kettering Magistrates' Court"]
+    },
+    {
+        "court_code": 106,
+        "key": "kidderminster_magistrates_court",
+        "name": "Kidderminster Magistrates' Court",
+        "address": {
+            "address_line_1": "Comberton Place",
+            "city": "Kidderminster",
+            "postcode": "DY10 1QQ"
+        },
+        "location": {
+            "latitude": 52.3842008098033,
+            "longitude": -2.24089370723487
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Kidderminster Magistrates' Court"]
+    },
+    {
+        "court_code": 107,
+        "key": "king_s_lynn_magistrates_court_and_family_court",
+        "name": "King's Lynn Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "College Lane",
+            "city": "King's Lynn",
+            "postcode": "PE30 1PQ"
+        },
+        "location": {
+            "latitude": 52.7517122699026,
+            "longitude": 0.393988957450444
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["King's Lynn Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 108,
+        "key": "kingston_upon_hull_magistrates_court_and_hearing_centre",
+        "name": "Kingston-upon-Hull Magistrates' Court and Hearing Centre",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Market Place",
+            "city": "Kingston-upon-Hull",
+            "postcode": "HU1 1RD"
+        },
+        "location": {
+            "latitude": 53.74106329227,
+            "longitude": -0.333155165813487
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["magistrates"],
+        "other_names": ["Kingston-upon-Hull Magistrates' Court and Hearing Centre"]
+    },
+    {
+        "court_code": 109,
+        "key": "lancaster_magistrates_court",
+        "name": "Lancaster Magistrates' Court",
+        "address": {
+            "address_line_1": "George Street",
+            "city": "Lancaster",
+            "postcode": "LA1 1XZ"
+        },
+        "location": {
+            "latitude": 54.0465261702697,
+            "longitude": -2.7973810872147
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Lancaster Magistrates' Court"]
+    },
+    {
+        "court_code": 110,
+        "key": "lavender_hill_magistrates_court",
+        "name": "Lavender Hill Magistrates’ Court",
+        "address": {
+            "address_line_1": "176a Lavender Hill",
+            "address_line_2": "Battersea",
+            "city": "London",
+            "postcode": "SW11 1JU"
+        },
+        "location": {
+            "latitude": 51.4646128269261,
+            "longitude": -0.162473377785937
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Lavender Hill Magistrates’ Court"]
+    },
+    {
+        "court_code": 111,
+        "key": "leamington_spa_magistrates_court",
+        "name": "Leamington Spa Magistrates' Court",
+        "address": {
+            "address_line_1": "Newbold Terrace",
+            "city": "Leamington Spa",
+            "postcode": "CV32 4EL"
+        },
+        "location": {
+            "latitude": 52.2883911670227,
+            "longitude": -1.53345723984609
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Leamington Spa Magistrates' Court"]
+    },
+    {
+        "court_code": 112,
+        "key": "leeds_magistrates_court_and_family_court",
+        "name": "Leeds Magistrates’ Court and Family Court",
+        "address": {
+            "address_line_1": "Westgate",
+            "city": "Leeds",
+            "postcode": "LS1 3BY"
+        },
+        "location": {
+            "latitude": 53.8010114103794,
+            "longitude": -1.55285673915639
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Leeds Magistrates’ Court and Family Court"]
+    },
+    {
+        "court_code": 113,
+        "key": "leicester_magistrates_court",
+        "name": "Leicester Magistrates' Court",
+        "address": {
+            "address_line_1": "15 Pocklingtons Walk",
+            "city": "Leicester",
+            "postcode": "LE1 6BT"
+        },
+        "location": {
+            "latitude": 52.6322117872393,
+            "longitude": -1.13443552287217
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Leicester Magistrates' Court"]
+    },
+    {
+        "court_code": 114,
+        "key": "lincoln_magistrates_court",
+        "name": "Lincoln Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "358 High Street",
+            "city": "Lincoln",
+            "postcode": "LN5 7QA"
+        },
+        "location": {
+            "latitude": 53.2245930706764,
+            "longitude": -0.542039921383405
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Lincoln Magistrates' Court"]
+    },
+    {
+        "court_code": 115,
+        "key": "liverpool_and_knowsley_magistrates_court",
+        "name": "Liverpool and Knowsley Magistrates’ Court",
+        "address": {
+            "address_line_1": "Queen Elizabeth II Law Courts",
+            "address_line_2": "Derby Square",
+            "city": "Liverpool",
+            "postcode": "L2 1XA"
+        },
+        "location": {
+            "latitude": 53.4040667663389,
+            "longitude": -2.98968556300077
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Liverpool and Knowsley Magistrates’ Court"]
+    },
+    {
+        "court_code": 116,
+        "key": "llandrindod_wells_magistrates_and_family_court",
+        "name": "Llandrindod Wells Magistrates' and Family Court",
+        "address": {
+            "address_line_1": "Noyadd Parks",
+            "city": "Llandrindod Wells",
+            "postcode": "LD1 5DF"
+        },
+        "location": {
+            "latitude": 52.252030136978,
+            "longitude": -3.36975508156248
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Llandrindod Wells Magistrates' and Family Court"]
+    },
+    {
+        "court_code": 117,
+        "key": "llandudno_magistrates_court_and_family_court",
+        "name": "Llandudno Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Conwy Road",
+            "city": "Llandudno",
+            "postcode": "LL30 1GA"
+        },
+        "location": {
+            "latitude": 53.3201866405241,
+            "longitude": -3.82329218955549
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Llandudno Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 118,
+        "key": "llanelli_magistrates_court_and_family_court",
+        "name": "Llanelli Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Town Hall Square",
+            "city": "Llanelli",
+            "postcode": "SA15 3AW"
+        },
+        "location": {
+            "latitude": 51.6821111407308,
+            "longitude": -4.16314353802633
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Llanelli Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 119,
+        "key": "loughborough_magistrates_court",
+        "name": "Loughborough Magistrates' Court",
+        "address": {
+            "address_line_1": "60 Pinfold Gate",
+            "city": "Loughborough",
+            "postcode": "LE11 1AZ"
+        },
+        "location": {
+            "latitude": 52.7722008090635,
+            "longitude": -1.20218968890941
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Loughborough Magistrates' Court"]
+    },
+    {
+        "court_code": 120,
+        "key": "lowestoft_magistrates_court_and_family_court",
+        "name": "Lowestoft Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Old Nelson Street",
+            "city": "Lowestoft",
+            "postcode": "NR32 1HJ"
+        },
+        "location": {
+            "latitude": 52.478351,
+            "longitude": 1.755875
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Lowestoft Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 121,
+        "key": "luton_and_south_bedfordshire_magistrates_court_and_family_court",
+        "name": "Luton and South Bedfordshire Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Stuart Street",
+            "city": "Luton",
+            "postcode": "LU1 5BL"
+        },
+        "location": {
+            "latitude": 51.8782336947433,
+            "longitude": -0.420285209646105
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Luton and South Bedfordshire Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 122,
+        "key": "macclesfield_magistrates_court",
+        "name": "Macclesfield Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "6-8 Hibel Road",
+            "city": "Macclesfield",
+            "postcode": "SK10 2AB"
+        },
+        "location": {
+            "latitude": 53.2635203827435,
+            "longitude": -2.12497731810504
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Macclesfield Magistrates' Court"]
+    },
+    {
+        "court_code": 123,
+        "key": "maidstone_magistrates_court_and_family_court",
+        "name": "Maidstone Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Palace Avenue",
+            "city": "Maidstone",
+            "postcode": "ME15 6LL"
+        },
+        "location": {
+            "latitude": 51.2714165688477,
+            "longitude": 0.523309694204225
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Maidstone Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 124,
+        "key": "manchester_and_salford_magistrates_court",
+        "name": "Manchester and Salford Magistrates' Court",
+        "address": {
+            "address_line_1": "Crown Square",
+            "city": "Manchester",
+            "postcode": "M60 1PR"
+        },
+        "location": {
+            "latitude": 53.4801157281972,
+            "longitude": -2.25220132039793
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Manchester and Salford Magistrates' Court"]
+    },
+    {
+        "court_code": 125,
+        "key": "mansfield_magistrates_court_county_court_and_family_court",
+        "name": "Mansfield Magistrates' Court, County Court and Family Court",
+        "address": {
+            "address_line_1": "Rosemary Street",
+            "city": "Mansfield",
+            "postcode": "NG19 6EE"
+        },
+        "location": {
+            "latitude": 53.1487114365987,
+            "longitude": -1.20562274277606
+        },
+        "region": "East Midlands",
+        "type": ["family", "magistrates"],
+        "other_names": ["Mansfield Magistrates' Court, County Court and Family Court"]
+    },
+    {
+        "court_code": 126,
+        "key": "margate_magistrates_court",
+        "name": "Margate Magistrates' Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Cecil Square",
+            "city": "Margate",
+            "postcode": "CT9 1RL"
+        },
+        "location": {
+            "latitude": 51.3875617400944,
+            "longitude": 1.38180692227974
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Margate Magistrates' Court"]
+    },
+    {
+        "court_code": 127,
+        "key": "medway_magistrates_court_and_family_court",
+        "name": "Medway Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "The Brook",
+            "city": "Chatham",
+            "postcode": "ME4 4JZ"
+        },
+        "location": {
+            "latitude": 51.3841282311678,
+            "longitude": 0.526904890039546
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Medway Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 128,
+        "key": "milton_keynes_magistrates_court_and_family_court",
+        "name": "Milton Keynes Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "301 Silbury Boulevard",
+            "address_line_2": "Witan Gate East",
+            "city": "Milton Keynes",
+            "postcode": "MK9 2AJ"
+        },
+        "location": {
+            "latitude": 52.0410391408135,
+            "longitude": -0.766292229691255
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Milton Keynes Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 129,
+        "key": "mold_magistrates_court_and_family_court",
+        "name": "Mold Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "city": "Mold",
+            "postcode": "CH7 1AE"
+        },
+        "location": {
+            "latitude": 53.1769977097904,
+            "longitude": -3.1371708218017
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Mold Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 130,
+        "key": "newcastle_upon_tyne_magistrates_court",
+        "name": "Newcastle-Upon-Tyne Magistrates' Court",
+        "address": {
+            "address_line_1": "Market Street",
+            "city": "Newcastle-upon-Tyne",
+            "postcode": "NE99 1AU"
+        },
+        "location": {
+            "latitude": 54.9674623225524,
+            "longitude": -1.61538331366439
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Newcastle-Upon-Tyne Magistrates' Court"]
+    },
+    {
+        "court_code": 131,
+        "key": "newport_magistrates_court",
+        "name": "Newport Magistrates' Court",
+        "address": {
+            "address_line_1": "Usk Way",
+            "city": "Newport",
+            "postcode": "NP20 2GE"
+        },
+        "location": {
+            "latitude": 51.5824194351721,
+            "longitude": -2.98646196943077
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Newport Magistrates' Court"]
+    },
+    {
+        "court_code": 132,
+        "key": "newton_abbot_magistrates_court",
+        "name": "Newton Abbot Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Newfoundland Way",
+            "city": "Newton Abbot",
+            "postcode": "TQ12 1NG"
+        },
+        "location": {
+            "latitude": 50.5286417731034,
+            "longitude": -3.6124688052263
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Newton Abbot Magistrates' Court"]
+    },
+    {
+        "court_code": 133,
+        "key": "newton_aycliffe_magistrates_court_and_family_court",
+        "name": "Newton Aycliffe Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Central Avenue",
+            "city": "Newton Aycliffe",
+            "postcode": "DL5 5RT"
+        },
+        "location": {
+            "latitude": 54.6203654050703,
+            "longitude": -1.56963175635184
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Newton Aycliffe Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 134,
+        "key": "north_avon_magistrates_court",
+        "name": "North Avon Magistrates' Court",
+        "address": {
+            "address_line_1": "Kennedy Way",
+            "address_line_2": "Yate",
+            "city": "Bristol",
+            "postcode": "BS37 4PY"
+        },
+        "location": {
+            "latitude": 51.539722,
+            "longitude": -2.41684
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["North Avon Magistrates' Court"]
+    },
+    {
+        "court_code": 135,
+        "key": "north_somerset_magistrates_court",
+        "name": "North Somerset Magistrates' Court",
+        "address": {
+            "address_line_1": "The Hedges",
+            "address_line_2": "St Georges",
+            "city": "Weston-Super-Mare",
+            "postcode": "BS22 7BB"
+        },
+        "location": {
+            "latitude": 51.3607181099385,
+            "longitude": -2.90507908899869
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["North Somerset Magistrates' Court"]
+    },
+    {
+        "court_code": 136,
+        "key": "north_staffordshire_justice_centre",
+        "name": "North Staffordshire Justice Centre",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Ryecroft",
+            "city": "Newcastle-under-Lyme",
+            "postcode": "ST5 2AA"
+        },
+        "location": {
+            "latitude": 53.013308855183,
+            "longitude": -2.2252330550161
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["North Staffordshire Justice Centre"]
+    },
+    {
+        "court_code": 137,
+        "key": "north_tyneside_magistrates_court",
+        "name": "North Tyneside Magistrates' Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Tynemouth Road",
+            "city": "North Shields",
+            "postcode": "NE30 1AG"
+        },
+        "location": {
+            "latitude": 55.0114315388728,
+            "longitude": -1.44330156946486
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["North Tyneside Magistrates' Court"]
+    },
+    {
+        "court_code": 138,
+        "key": "northallerton_magistrates_court_and_family_court",
+        "name": "Northallerton Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "3 Racecourse Lane",
+            "city": "Northallerton",
+            "postcode": "DL7 8QZ"
+        },
+        "location": {
+            "latitude": 54.3334880505377,
+            "longitude": -1.43588500000482
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Northallerton Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 139,
+        "key": "northampton_magistrates_court",
+        "name": "Northampton Magistrates' Court",
+        "address": {
+            "address_line_1": "Campbell Square",
+            "city": "Northampton",
+            "postcode": "NN1 3EB"
+        },
+        "location": {
+            "latitude": 52.2412999257392,
+            "longitude": -0.895663394303948
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Northampton Magistrates' Court"]
+    },
+    {
+        "court_code": 140,
+        "key": "norwich_magistrates_court_and_family_court",
+        "name": "Norwich Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Bishopgate",
+            "city": "Norwich",
+            "postcode": "NR3 1UP"
+        },
+        "location": {
+            "latitude": 52.6341463590337,
+            "longitude": 1.30103596207782
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Norwich Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 141,
+        "key": "nottingham_justice_centre",
+        "name": "Nottingham Justice Centre",
+        "address": {
+            "address_line_1": "Carrington Street",
+            "city": "Nottingham",
+            "postcode": "NG2 1EE"
+        },
+        "location": {
+            "latitude": 52.9471861403981,
+            "longitude": -1.14940083117284
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Nottingham Justice Centre"]
+    },
+    {
+        "court_code": 142,
+        "key": "nuneaton_magistrates_court",
+        "name": "Nuneaton Magistrates' Court",
+        "address": {
+            "address_line_1": "Vicarage Street",
+            "city": "Nuneaton",
+            "postcode": "CV11 4JU"
+        },
+        "location": {
+            "latitude": 52.5229582507756,
+            "longitude": -1.46259038414449
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Nuneaton Magistrates' Court, Warwickshire Justice Centre"]
+    },
+    {
+        "court_code": 143,
+        "key": "oldham_magistrates_court",
+        "name": "Oldham Magistrates' Court",
+        "address": {
+            "address_line_1": "St Domingo Place",
+            "address_line_2": "West Street",
+            "city": "Oldham",
+            "postcode": "OL1 1QE"
+        },
+        "location": {
+            "latitude": 53.541739,
+            "longitude": -2.116999
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Oldham Magistrates' Court"]
+    },
+    {
+        "court_code": 144,
+        "key": "ormskirk_magistrates_court",
+        "name": "Ormskirk Magistrates' Court",
+        "address": {
+            "address_line_1": "Derby Street",
+            "city": "Ormskirk",
+            "postcode": "L39 2BJ"
+        },
+        "location": {
+            "latitude": 53.5687557575528,
+            "longitude": -2.8834476118529
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Ormskirk Magistrates' Court"]
+    },
+    {
+        "court_code": 145,
+        "key": "oxford_and_southern_oxfordshire_magistrates_court_and_family_court",
+        "name": "Oxford and Southern Oxfordshire Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Speedwell Street",
+            "city": "Oxford",
+            "postcode": "OX1 1RZ"
+        },
+        "location": {
+            "latitude": 51.750233164259,
+            "longitude": -1.26736686710806
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Oxford and Southern Oxfordshire Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 146,
+        "key": "peterborough_magistrates_court",
+        "name": "Peterborough Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Bridge Street",
+            "city": "Peterborough",
+            "postcode": "PE1 1ED"
+        },
+        "location": {
+            "latitude": 52.5698072619713,
+            "longitude": -0.241543269146229
+        },
+        "region": "East of England",
+        "type": ["magistrates"],
+        "other_names": ["Peterborough Magistrates' Court"]
+    },
+    {
+        "court_code": 147,
+        "key": "peterlee_magistrates_court",
+        "name": "Peterlee Magistrates' Court",
+        "address": {
+            "address_line_1": "St Aidans Way",
+            "city": "Peterlee",
+            "postcode": "SR8 1QR"
+        },
+        "location": {
+            "latitude": 54.7557976296771,
+            "longitude": -1.33691066619024
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Peterlee Magistrates' Court"]
+    },
+    {
+        "court_code": 148,
+        "key": "plymouth_magistrates_court",
+        "name": "Plymouth Magistrates' Court",
+        "address": {
+            "address_line_1": "St Andrews Street",
+            "city": "Plymouth",
+            "postcode": "PL1 2DP"
+        },
+        "location": {
+            "latitude": 50.3692937829192,
+            "longitude": -4.13957549963845
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Plymouth Magistrates' Court"]
+    },
+    {
+        "court_code": 149,
+        "key": "pontypridd_magistrates_court_and_family_court",
+        "name": "Pontypridd Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Union Street",
+            "city": "Pontypridd",
+            "postcode": "CF37 1SD"
+        },
+        "location": {
+            "latitude": 51.598377,
+            "longitude": -3.340797
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Pontypridd Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 150,
+        "key": "poole_magistrates_court",
+        "name": "Poole Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Park Road",
+            "city": "Poole",
+            "postcode": "BH15 2NS"
+        },
+        "location": {
+            "latitude": 50.722068083054,
+            "longitude": -1.96093405236828
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Poole Magistrates' Court"]
+    },
+    {
+        "court_code": 151,
+        "key": "portsmouth_magistrates_court",
+        "name": "Portsmouth Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Winston Churchill Avenue",
+            "city": "Portsmouth",
+            "postcode": "PO1 2DQ"
+        },
+        "location": {
+            "latitude": 50.7958618577812,
+            "longitude": -1.08992640295625
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Portsmouth Magistrates' Court"]
+    },
+    {
+        "court_code": 152,
+        "key": "prestatyn_magistrates_court_and_family_court",
+        "name": "Prestatyn Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Victoria Road",
+            "city": "Prestatyn",
+            "postcode": "LL19 7TE"
+        },
+        "location": {
+            "latitude": 53.3365801948908,
+            "longitude": -3.41643156179344
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Prestatyn Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 153,
+        "key": "preston_magistrates_court",
+        "name": "Preston Magistrates' Court",
+        "address": {
+            "address_line_1": "Lawson Street",
+            "city": "Preston",
+            "postcode": "PR1 2QT"
+        },
+        "location": {
+            "latitude": 53.7634843485273,
+            "longitude": -2.7023690697393
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Preston Magistrates' Court"]
+    },
+    {
+        "court_code": 154,
+        "key": "reading_magistrates_court_and_family_court",
+        "name": "Reading Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Civic Centre",
+            "city": "Reading",
+            "postcode": "RG1 7TQ"
+        },
+        "location": {
+            "latitude": 51.4533439362055,
+            "longitude": -0.975741817755166
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Reading Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 155,
+        "key": "redditch_magistrates_court",
+        "name": "Redditch Magistrates' Court",
+        "address": {
+            "address_line_1": "Grove Street",
+            "city": "Redditch",
+            "postcode": "B98 8DB"
+        },
+        "location": {
+            "latitude": 52.3061254495792,
+            "longitude": -1.93724225333824
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Redditch Magistrates' Court"]
+    },
+    {
+        "court_code": 156,
+        "key": "redhill_magistrates_court_and_family_court",
+        "name": "Redhill Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Hatchlands Road",
+            "city": "Redhill",
+            "postcode": "RH1 6DH"
+        },
+        "location": {
+            "latitude": 51.2385174149804,
+            "longitude": -0.181997544670292
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Redhill Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 157,
+        "key": "reedley_magistrates_court_and_family_court",
+        "name": "Reedley Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Colne Road",
+            "city": "Reedley",
+            "postcode": "BB10 2LJ"
+        },
+        "location": {
+            "latitude": 53.8180626741105,
+            "longitude": -2.23478603741534
+        },
+        "region": "North West",
+        "type": ["family", "magistrates"],
+        "other_names": ["Reedley Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 158,
+        "key": "richmond_upon_thames_magistrates_court",
+        "name": "Richmond-upon-Thames Magistrates' Court",
+        "address": {
+            "address_line_1": "Parkshot",
+            "city": "Richmond-upon-Thames",
+            "postcode": "TW9 2RF"
+        },
+        "location": {
+            "latitude": 51.463815,
+            "longitude": -0.303474
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Richmond-upon-Thames Magistrates' Court"]
+    },
+    {
+        "court_code": 159,
+        "key": "romford_magistrates_court",
+        "name": "Romford Magistrates' Court",
+        "address": {
+            "address_line_1": "Main Road",
+            "city": "Romford",
+            "postcode": "RM1 3BH"
+        },
+        "location": {
+            "latitude": 51.5817595212286,
+            "longitude": 0.185705943315852
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Romford Magistrates' Court"]
+    },
+    {
+        "court_code": 160,
+        "key": "rotherham_magistrates_court_and_family_court",
+        "name": "Rotherham Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Statutes",
+            "city": "Rotherham",
+            "postcode": "S60 1RX"
+        },
+        "location": {
+            "latitude": 53.4303959954523,
+            "longitude": -1.36097427176679
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Rotherham Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 161,
+        "key": "runcorn_halton_magistrates_court",
+        "name": "Runcorn (Halton) Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Halton Lea",
+            "city": "Runcorn",
+            "postcode": "WA7 2HA"
+        },
+        "location": {
+            "latitude": 53.3290956077575,
+            "longitude": -2.69621726078305
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Runcorn (Halton) Magistrates' Court"]
+    },
+    {
+        "court_code": 162,
+        "key": "salisbury_law_courts",
+        "name": "Salisbury Law Courts",
+        "address": {
+            "address_line_1": "Wilton Road",
+            "city": "Salisbury",
+            "postcode": "SP2 7EP"
+        },
+        "location": {
+            "latitude": 51.073379725385,
+            "longitude": -1.81038594846605
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Salisbury Law Courts"]
+    },
+    {
+        "court_code": 163,
+        "key": "sandwell_magistrates_court",
+        "name": "Sandwell Magistrates’ Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Oldbury Ringway",
+            "city": "Oldbury",
+            "postcode": "B69 4JN"
+        },
+        "location": {
+            "latitude": 52.5022240255931,
+            "longitude": -2.0113587552761
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Sandwell Magistrates’ Court"]
+    },
+    {
+        "court_code": 164,
+        "key": "scarborough_justice_centre",
+        "name": "Scarborough Justice Centre",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Northway",
+            "city": "Scarborough",
+            "postcode": "YO12 7AE"
+        },
+        "location": {
+            "latitude": 54.2815205079813,
+            "longitude": -0.40803257609615
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["magistrates"],
+        "other_names": ["Scarborough Justice Centre"]
+    },
+    {
+        "court_code": 165,
+        "key": "scunthorpe_magistrates_court_and_family_court",
+        "name": "Scunthorpe Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Laneham Street",
+            "city": "Scunthorpe",
+            "postcode": "DN15 6RY"
+        },
+        "location": {
+            "latitude": 53.5900276582738,
+            "longitude": -0.64828931749889
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["Scunthorpe Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 166,
+        "key": "sefton_magistrates_court",
+        "name": "Sefton Magistrates' Court",
+        "address": {
+            "address_line_1": "29 Merton Road",
+            "address_line_2": "Bootle",
+            "city": "Merseyside",
+            "postcode": "L20 3XX"
+        },
+        "location": {
+            "latitude": 53.4489262306065,
+            "longitude": -2.98910213712867
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Sefton Magistrates' Court"]
+    },
+    {
+        "court_code": 167,
+        "key": "sevenoaks_magistrates_court_and_family_court",
+        "name": "Sevenoaks Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Morewood Close",
+            "address_line_3": "London Road",
+            "city": "Sevenoaks",
+            "postcode": "TN13 2HU"
+        },
+        "location": {
+            "latitude": 51.2800838459736,
+            "longitude": 0.17727590366439
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Sevenoaks Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 168,
+        "key": "sheffield_magistrates_court",
+        "name": "Sheffield Magistrates' Court",
+        "address": {
+            "address_line_1": "Castle Street",
+            "city": "Sheffield",
+            "postcode": "S3 8LU"
+        },
+        "location": {
+            "latitude": 53.3851909720783,
+            "longitude": -1.46503012067223
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["magistrates"],
+        "other_names": ["Sheffield Magistrates' Court"]
+    },
+    {
+        "court_code": 169,
+        "key": "shrewsbury_magistrates_court",
+        "name": "Shrewsbury Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Preston Street",
+            "city": "Shrewsbury",
+            "postcode": "SY2 5NX"
+        },
+        "location": {
+            "latitude": 52.7049537877675,
+            "longitude": -2.72980991814724
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Shrewsbury Magistrates' Court"]
+    },
+    {
+        "court_code": 170,
+        "key": "skegness_magistrates_court",
+        "name": "Skegness Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Park Avenue",
+            "city": "Skegness",
+            "postcode": "PE25 1BH"
+        },
+        "location": {
+            "latitude": 53.148591,
+            "longitude": 0.34484
+        },
+        "region": "North East",
+        "type": ["magistrates"],
+        "other_names": ["Skegness Magistrates' Court"]
+    },
+    {
+        "court_code": 171,
+        "key": "skipton_magistrates_court",
+        "name": "Skipton Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Otley Street",
+            "city": "Skipton",
+            "postcode": "BD23 1RH"
+        },
+        "location": {
+            "latitude": 53.9613149578518,
+            "longitude": -2.01320863140421
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["magistrates"],
+        "other_names": ["Skipton Magistrates' Court"]
+    },
+    {
+        "court_code": 172,
+        "key": "solihull_magistrates_court",
+        "name": "Solihull Magistrates' Court",
+        "address": {
+            "city": "Solihull",
+            "postcode": "UNKNOWN"
+        },
+        "location": {
+            "latitude": 52.483555,
+            "longitude": -1.893413
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Solihull Magistrates' Court"]
+    },
+    {
+        "court_code": 173,
+        "key": "south_tyneside_magistrates_court_and_family_court",
+        "name": "South Tyneside Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Millbank",
+            "address_line_2": "Secretan Way",
+            "city": "South Shields",
+            "postcode": "NE33 1RG"
+        },
+        "location": {
+            "latitude": 54.9931241170002,
+            "longitude": -1.4388815857841
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["South Tyneside Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 174,
+        "key": "south_worcestershire_magistrates_court",
+        "name": "South Worcestershire Magistrates' Court",
+        "address": {
+            "address_line_1": "Castle Street",
+            "city": "Worcester",
+            "postcode": "WR1 3QZ"
+        },
+        "location": {
+            "latitude": 52.1969302126691,
+            "longitude": -2.22434141615802
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["South Worcestershire Magistrates' Court"]
+    },
+    {
+        "court_code": 175,
+        "key": "southend_magistrates_court_and_family_court",
+        "name": "Southend Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "80 Victoria Avenue",
+            "city": "Southend-on-Sea",
+            "postcode": "SS2 6EU"
+        },
+        "location": {
+            "latitude": 51.5437272474125,
+            "longitude": 0.709728677078864
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["Southend Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 176,
+        "key": "st_albans_magistrates_court_and_family_court",
+        "name": "St Albans Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Civic Centre",
+            "address_line_2": "St Peter's Street",
+            "city": "St Albans",
+            "postcode": "AL1 3LB"
+        },
+        "location": {
+            "latitude": 51.7524916653007,
+            "longitude": -0.336793822209929
+        },
+        "region": "East of England",
+        "type": ["family", "magistrates"],
+        "other_names": ["St. Albans Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 177,
+        "key": "st_helens_magistrates_court",
+        "name": "St Helens Magistrates' Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Corporation Street",
+            "city": "St Helens",
+            "postcode": "WA10 1SZ"
+        },
+        "location": {
+            "latitude": 53.4549378406233,
+            "longitude": -2.73675166119247
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["St. Helens Magistrates' Court"]
+    },
+    {
+        "court_code": 178,
+        "key": "stafford_magistrates_court",
+        "name": "Stafford Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "South Walls",
+            "city": "Stafford",
+            "postcode": "ST16 3DW"
+        },
+        "location": {
+            "latitude": 52.805928,
+            "longitude": -2.113645
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Stafford Magistrates' Court"]
+    },
+    {
+        "court_code": 179,
+        "key": "staffs_central_finance_and_enforcement_unit",
+        "name": "Staffs Central Finance and Enforcement Unit",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Bryans Lane",
+            "city": "Rugeley",
+            "postcode": "WS15 2FX"
+        },
+        "location": {
+            "latitude": 52.7618196234494,
+            "longitude": -1.93238336611554
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Staffs Central Finance and Enforcement Unit"]
+    },
+    {
+        "court_code": 180,
+        "key": "staines_magistrates_court_and_family_court",
+        "name": "Staines Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Knowle Green",
+            "city": "Staines",
+            "postcode": "TW18 1XH"
+        },
+        "location": {
+            "latitude": 51.4290985228085,
+            "longitude": -0.498095614077665
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Staines Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 181,
+        "key": "stevenage_magistrates_court",
+        "name": "Stevenage Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Danesgate",
+            "city": "Stevenage",
+            "postcode": "SG1 1XH"
+        },
+        "location": {
+            "latitude": 51.901155279649,
+            "longitude": -0.204136224144578
+        },
+        "region": "East of England",
+        "type": ["magistrates"],
+        "other_names": ["Stevenage Magistrates' Court"]
+    },
+    {
+        "court_code": 182,
+        "key": "stockport_magistrates_court_and_family_court",
+        "name": "Stockport Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Courthouse",
+            "address_line_2": "Edward Street",
+            "city": "Stockport",
+            "postcode": "SK1 3DQ"
+        },
+        "location": {
+            "latitude": 53.4063686009126,
+            "longitude": -2.15525485054043
+        },
+        "region": "North West",
+        "type": ["family", "magistrates"],
+        "other_names": ["Stockport Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 183,
+        "key": "stratford_magistrates_court_and_family_court",
+        "name": "Stratford Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "389-397 High Street",
+            "address_line_3": "Stratford",
+            "city": "London",
+            "postcode": "E15 4SB"
+        },
+        "location": {
+            "latitude": 51.53915948604,
+            "longitude": 0.000305034029961331
+        },
+        "region": "London",
+        "type": ["family", "magistrates"],
+        "other_names": ["Stratford Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 184,
+        "key": "stroud_magistrates_court",
+        "name": "Stroud Magistrates' Court",
+        "address": {
+            "address_line_1": "Stroud Courthouse",
+            "address_line_2": "Parliament Street",
+            "city": "Stroud",
+            "postcode": "GL5 1ET"
+        },
+        "location": {
+            "latitude": 51.745583,
+            "longitude": -2.214158
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Stroud Magistrates' Court"]
+    },
+    {
+        "court_code": 185,
+        "key": "sunderland_magistrates_court_and_family_court",
+        "name": "Sunderland Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Gillbridge Avenue",
+            "city": "Sunderland",
+            "postcode": "SR1 3AP"
+        },
+        "location": {
+            "latitude": 54.9071821837747,
+            "longitude": -1.38754785027509
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Sunderland Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 186,
+        "key": "swansea_magistrates_court_and_family_court",
+        "name": "Swansea Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Grove Place",
+            "city": "Swansea",
+            "postcode": "SA1 5DB"
+        },
+        "location": {
+            "latitude": 51.6218857660867,
+            "longitude": -3.94538030567425
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Swansea Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 187,
+        "key": "swindon_magistrates_court",
+        "name": "Swindon Magistrates' Court",
+        "address": {
+            "address_line_1": "Princes Street",
+            "city": "Swindon",
+            "postcode": "SN1 2JB"
+        },
+        "location": {
+            "latitude": 51.5610146576651,
+            "longitude": -1.78108927040058
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Swindon Magistrates' Court"]
+    },
+    {
+        "court_code": 188,
+        "key": "tameside_magistrates_court",
+        "name": "Tameside Magistrates' Court",
+        "address": {
+            "address_line_1": "Henry Square",
+            "city": "Ashton-Under-Lyne",
+            "postcode": "OL6 7TP"
+        },
+        "location": {
+            "latitude": 53.4857043137122,
+            "longitude": -2.10219685003402
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Tameside Magistrates' Court"]
+    },
+    {
+        "court_code": 189,
+        "key": "taunton_magistrates_court",
+        "name": "Taunton Magistrates' Court",
+        "address": {
+            "address_line_1": "St John’s Road",
+            "city": "Taunton",
+            "postcode": "TA1 4AX"
+        },
+        "location": {
+            "latitude": 51.0143016076138,
+            "longitude": -3.10967055503789
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Taunton Magistrates' Court"]
+    },
+    {
+        "court_code": 190,
+        "key": "teesside_magistrates_court_and_family_court",
+        "name": "Teesside Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Victoria Square",
+            "city": "Middlesborough",
+            "postcode": "TS1 2AS"
+        },
+        "location": {
+            "latitude": 54.5735245038242,
+            "longitude": -1.23457436754436
+        },
+        "region": "North East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Teesside Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 191,
+        "key": "telford_magistrates_court",
+        "name": "Telford Magistrates' Court",
+        "address": {
+            "address_line_1": "Telford Square",
+            "address_line_2": "Malinsgate",
+            "city": "Telford",
+            "postcode": "TF3 4HX"
+        },
+        "location": {
+            "latitude": 52.6779623435883,
+            "longitude": -2.450849324187
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Telford Magistrates' Court"]
+    },
+    {
+        "court_code": 192,
+        "key": "thames_magistrates_court",
+        "name": "Thames Magistrates' Court",
+        "address": {
+            "address_line_1": "58 Bow Road",
+            "city": "London",
+            "postcode": "E3 4DJ"
+        },
+        "location": {
+            "latitude": 51.5271362889642,
+            "longitude": -0.0235625812676926
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Thames Magistrates' Court"]
+    },
+    {
+        "court_code": 193,
+        "key": "torquay_magistrates_court",
+        "name": "Torquay Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Union Street",
+            "city": "Torquay",
+            "postcode": "TQ1 4BP"
+        },
+        "location": {
+            "latitude": 50.469436822674,
+            "longitude": -3.53393566368521
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Torquay Magistrates' Court"]
+    },
+    {
+        "court_code": 194,
+        "key": "tottenham_magistrates_court",
+        "name": "Tottenham Magistrates’ Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Lordship Lane",
+            "address_line_3": "Tottenham",
+            "city": "London",
+            "postcode": "N17 6RT"
+        },
+        "location": {
+            "latitude": 51.5981717423514,
+            "longitude": -0.0729516176932983
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Tottenham Magistrates’ Court"]
+    },
+    {
+        "court_code": 195,
+        "key": "trafford_magistrates_court",
+        "name": "Trafford Magistrates' Court",
+        "address": {
+            "address_line_1": "Ashton Lane",
+            "city": "Sale",
+            "postcode": "M33 7NR"
+        },
+        "location": {
+            "latitude": 53.4263136424225,
+            "longitude": -2.32527688540599
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Trafford Magistrates' Court"]
+    },
+    {
+        "court_code": 196,
+        "key": "truro_magistrates_court",
+        "name": "Truro Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Tremorvah Wood Lane",
+            "address_line_3": "Mitchell Hill",
+            "city": "Truro",
+            "postcode": "TR1 1HZ"
+        },
+        "location": {
+            "latitude": 50.2683345639104,
+            "longitude": -5.04402154362181
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Truro Magistrates' Court"]
+    },
+    {
+        "court_code": 197,
+        "key": "uxbridge_magistrates_court",
+        "name": "Uxbridge Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Harefield Road",
+            "city": "Uxbridge",
+            "postcode": "UB8 1PQ"
+        },
+        "location": {
+            "latitude": 51.5494710483444,
+            "longitude": -0.481587326969189
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Uxbridge Magistrates' Court"]
+    },
+    {
+        "court_code": 198,
+        "key": "vale_of_glamorgan_magistrates_court",
+        "name": "Vale of Glamorgan Magistrates' Court",
+        "address": {
+            "address_line_1": "Thompson Street",
+            "city": "Barry",
+            "postcode": "CF63 4SX"
+        },
+        "location": {
+            "latitude": 51.404359,
+            "longitude": -3.269483
+        },
+        "region": "Wales",
+        "type": ["magistrates"],
+        "other_names": ["Vale of Glamorgan Magistrates' Court"]
+    },
+    {
+        "court_code": 199,
+        "key": "wakefield_pontefract_magistrates_court",
+        "name": "Wakefield & Pontefract Magistrates' Court",
+        "address": {
+            "address_line_1": "1 Mulberry Way",
+            "city": "Wakefield",
+            "postcode": "WF1 2QN"
+        },
+        "location": {
+            "latitude": 53.6832815310821,
+            "longitude": -1.50619902908756
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["magistrates"],
+        "other_names": ["Wakefield & Pontefract Magistrates' Court"]
+    },
+    {
+        "court_code": 200,
+        "key": "walsall_magistrates_court",
+        "name": "Walsall Magistrates' Court",
+        "address": {
+            "address_line_1": "Stafford Street",
+            "city": "Walsall",
+            "postcode": "WS2 8HA"
+        },
+        "location": {
+            "latitude": 52.5889308873253,
+            "longitude": -1.98562446413036
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Walsall Magistrates' Court"]
+    },
+    {
+        "court_code": 201,
+        "key": "waltham_forest_magistrates_court",
+        "name": "Waltham Forest Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "1 Farnan Avenue",
+            "address_line_3": "Walthamstow",
+            "city": "London",
+            "postcode": "E17 4NX"
+        },
+        "location": {
+            "latitude": 51.5906915751117,
+            "longitude": -0.0147849870349865
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Waltham Forest Magistrates' Court"]
+    },
+    {
+        "court_code": 202,
+        "key": "warrington_magistrates_court",
+        "name": "Warrington Magistrates' Court",
+        "address": {
+            "address_line_1": "Arpley Street",
+            "city": "Warrington",
+            "postcode": "WA1 1LQ"
+        },
+        "location": {
+            "latitude": 53.386265,
+            "longitude": -2.60097
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Warrington Magistrates' Court, North Cheshire Magistrates’ Court"]
+    },
+    {
+        "court_code": 203,
+        "key": "watford_magistrates_court_and_family_court",
+        "name": "Watford Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Clarendon Road",
+            "city": "Watford",
+            "postcode": "WD17 1ST"
+        },
+        "location": {
+            "latitude": 51.661808,
+            "longitude": -0.397691
+        },
+        "region": "South East",
+        "type": ["family", "magistrates"],
+        "other_names": ["Watford Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 204,
+        "key": "wellingborough_magistrates_court_and_family_court",
+        "name": "Wellingborough Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Midland Road",
+            "city": "Wellingborough",
+            "postcode": "NN8 1HF"
+        },
+        "location": {
+            "latitude": 52.3015744476334,
+            "longitude": -0.689109374729499
+        },
+        "region": "East Midlands",
+        "type": ["family", "magistrates"],
+        "other_names": ["Wellingborough Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 205,
+        "key": "welshpool_magistrates_court_and_family_court",
+        "name": "Welshpool Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Mansion House",
+            "address_line_2": "24 Severn Street",
+            "city": "Welshpool",
+            "postcode": "SY21 7UX"
+        },
+        "location": {
+            "latitude": 52.6590271854854,
+            "longitude": -3.14628387735794
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Welshpool Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 206,
+        "key": "west_berkshire_magistrates_court_newbury",
+        "name": "West Berkshire Magistrates' Court, Newbury",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Mill Lane",
+            "city": "Newbury",
+            "postcode": "RG14 5QS"
+        },
+        "location": {
+            "latitude": 51.4008950309059,
+            "longitude": -1.31805512319853
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["West Berkshire Magistrates' Court, Newbury"]
+    },
+    {
+        "court_code": 207,
+        "key": "west_hampshire_magistrates_court",
+        "name": "West Hampshire Magistrates' Court",
+        "address": {
+            "address_line_1": "Southampton Courthouse",
+            "address_line_2": "100 The Avenue",
+            "city": "Southampton",
+            "postcode": "SO17 1EY"
+        },
+        "location": {
+            "latitude": 50.914337094357,
+            "longitude": -1.40291206035461
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["West Hampshire Magistrates' Court"]
+    },
+    {
+        "court_code": 208,
+        "key": "west_somerset_magistrates_court",
+        "name": "West Somerset Magistrates' Court",
+        "address": {
+            "address_line_1": "St John's Road",
+            "city": "Taunton",
+            "postcode": "TA1 4AX"
+        },
+        "location": {
+            "latitude": 51.0143016076138,
+            "longitude": -3.10967055503789
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["West Somerset Magistrates' Court"]
+    },
+    {
+        "court_code": 209,
+        "key": "westminster_magistrates_court",
+        "name": "Westminster Magistrates' Court",
+        "address": {
+            "address_line_1": "181 Marylebone Road",
+            "city": "London",
+            "postcode": "NW1 5BR"
+        },
+        "location": {
+            "latitude": 51.5207078579915,
+            "longitude": -0.16418031707559
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Westminster Magistrates' Court"]
+    },
+    {
+        "court_code": 210,
+        "key": "weymouth_magistrates_court",
+        "name": "Weymouth Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Westwey Road",
+            "city": "Weymouth",
+            "postcode": "DT4 8BS"
+        },
+        "location": {
+            "latitude": 50.6084056337918,
+            "longitude": -2.46010538388167
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Weymouth Magistrates' Court"]
+    },
+    {
+        "court_code": 211,
+        "key": "wigan_and_leigh_magistrates_court",
+        "name": "Wigan and Leigh Magistrates' Court",
+        "address": {
+            "address_line_1": "Darlington Street",
+            "city": "Wigan",
+            "postcode": "WN1 1DW"
+        },
+        "location": {
+            "latitude": 53.5429990143209,
+            "longitude": -2.62642813715234
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Wigan and Leigh Magistrates' Court"]
+    },
+    {
+        "court_code": 212,
+        "key": "willesden_magistrates_court",
+        "name": "Willesden Magistrates' Court",
+        "address": {
+            "address_line_1": "448 High Road",
+            "address_line_2": "Willesden",
+            "city": "London",
+            "postcode": "NW10 2DZ"
+        },
+        "location": {
+            "latitude": 51.5493593075294,
+            "longitude": -0.247778701477629
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Willesden Magistrates' Court"]
+    },
+    {
+        "court_code": 213,
+        "key": "wimbledon_magistrates_court",
+        "name": "Wimbledon Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "Alexandra Road",
+            "address_line_3": "Wimbledon",
+            "city": "London",
+            "postcode": "SW19 7JP"
+        },
+        "location": {
+            "latitude": 51.4236328218293,
+            "longitude": -0.203600950672765
+        },
+        "region": "London",
+        "type": ["magistrates"],
+        "other_names": ["Wimbledon Magistrates' Court"]
+    },
+    {
+        "court_code": 214,
+        "key": "wirral_magistrates_court",
+        "name": "Wirral Magistrates' Court",
+        "address": {
+            "address_line_1": "Chester Street",
+            "city": "Birkenhead",
+            "postcode": "CH41 5HW"
+        },
+        "location": {
+            "latitude": 53.3929636072413,
+            "longitude": -3.01347355154725
+        },
+        "region": "North West",
+        "type": ["magistrates"],
+        "other_names": ["Wirral Magistrates' Court"]
+    },
+    {
+        "court_code": 215,
+        "key": "wolverhampton_magistrates_court",
+        "name": "Wolverhampton Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "North Street",
+            "city": "Wolverhampton",
+            "postcode": "WV1 1RA"
+        },
+        "location": {
+            "latitude": 52.586181135221,
+            "longitude": -2.13021099258018
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Wolverhampton Magistrates' Court"]
+    },
+    {
+        "court_code": 216,
+        "key": "worcester_magistrates_court",
+        "name": "Worcester Magistrates' Court",
+        "address": {
+            "address_line_1": "Castle Street",
+            "city": "Worcester",
+            "postcode": "WR1 3QZ"
+        },
+        "location": {
+            "latitude": 52.1969302126691,
+            "longitude": -2.22434141615802
+        },
+        "region": "West Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Worcester Magistrates' Court"]
+    },
+    {
+        "court_code": 217,
+        "key": "worksop_magistrates_court",
+        "name": "Worksop Magistrates' Court",
+        "address": {
+            "address_line_1": "The Court House",
+            "address_line_2": "30 Potter Street",
+            "city": "Worksop",
+            "postcode": "S80 2AJ"
+        },
+        "location": {
+            "latitude": 53.301973,
+            "longitude": -1.122231
+        },
+        "region": "East Midlands",
+        "type": ["magistrates"],
+        "other_names": ["Worksop Magistrates' Court"]
+    },
+    {
+        "court_code": 218,
+        "key": "worthing_magistrates_court",
+        "name": "Worthing Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Christchurch Road",
+            "city": "Worthing",
+            "postcode": "BN11 1JE"
+        },
+        "location": {
+            "latitude": 50.8141606222306,
+            "longitude": -0.374064813974857
+        },
+        "region": "South East",
+        "type": ["magistrates"],
+        "other_names": ["Worthing Magistrates' Court"]
+    },
+    {
+        "court_code": 219,
+        "key": "wrexham_magistrates_court_and_family_court",
+        "name": "Wrexham Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Civic Centre",
+            "city": "Mold",
+            "postcode": "CH7 1AE"
+        },
+        "location": {
+            "latitude": 53.1769977097904,
+            "longitude": -3.1371708218017
+        },
+        "region": "Wales",
+        "type": ["family", "magistrates"],
+        "other_names": ["Wrexham Magistrates' Court and Family Court"]
+    },
+    {
+        "court_code": 220,
+        "key": "yeovil_magistrates_court",
+        "name": "Yeovil Magistrates' Court",
+        "address": {
+            "address_line_1": "The Law Courts",
+            "address_line_2": "Petters Way",
+            "city": "Yeovil",
+            "postcode": "BA20 1SW"
+        },
+        "location": {
+            "latitude": 50.9396275137987,
+            "longitude": -2.63378762362072
+        },
+        "region": "South West",
+        "type": ["magistrates"],
+        "other_names": ["Yeovil Magistrates' Court"]
+    },
+    {
+        "court_code": 221,
+        "key": "york_magistrates_court_and_family_court",
+        "name": "York Magistrates' Court and Family Court",
+        "address": {
+            "address_line_1": "Law Courts",
+            "address_line_2": "Clifford Street",
+            "city": "York",
+            "postcode": "YO1 9RE"
+        },
+        "location": {
+            "latitude": 53.9564153666047,
+            "longitude": -1.0819078616142
+        },
+        "region": "Yorkshire and The Humber",
+        "type": ["family", "magistrates"],
+        "other_names": ["York Magistrates' Court and Family Court"]
+    }
+]

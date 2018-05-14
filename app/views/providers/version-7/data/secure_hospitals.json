@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "key": "ashworth_hospital",
+        "name": "Ashworth Hospital",
+        "address": {
+            "address_line_1": "Parkbourn",
+            "address_line_2": "Maghull",
+            "address_line_3": "",
+            "city": "Liverpool",
+            "postcode": "L31 1HW"
+        },
+        "region": "North West",
+        "location": {
+            "latitude": 53.51867348,
+            "longitude": -2.915374943
+        },
+        "type": ["psychiatric"],
+        "category": ["high_secure"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "id": 2,
+        "key": "broadmoor_hospital",
+        "name": "Broadmoor Hospital",
+        "address": {
+            "address_line_1": "",
+            "address_line_2": "",
+            "address_line_3": "",
+            "city": "Crowthorne",
+            "postcode": "RG45 7EG"
+        },
+        "region": "South East",
+        "location": {
+            "latitude": 51.3690868,
+            "longitude": -0.7809998878
+        },
+        "type": ["psychiatric"],
+        "category": ["high_secure"],
+        "other_names": [],
+        "abbreviations": []
+    },
+    {
+        "id": 3,
+        "key": "rampton_hospital",
+        "name": "Rampton Hospital",
+        "address": {
+            "address_line_1": "Woodbeck",
+            "address_line_2": "",
+            "address_line_3": "",
+            "city": "Retford",
+            "postcode": "DN22 0PD"
+        },
+        "region": "East Midlands",
+        "location": {
+            "latitude": 53.29038669,
+            "longitude": -0.8382126721
+        },
+        "type": ["psychiatric"],
+        "category": ["high_secure"],
+        "other_names": [],
+        "abbreviations": []
+    }
+]
