@@ -1,0 +1,382 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+
+{% endblock %}
+
+{% block page_styles %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  	<div class="grid-row">
+	    <div class="column-two-thirds">
+
+	    	<a class="link-back" href="../">Back</a>
+
+		    <h1 class="heading-xlarge">
+		      Data v2
+		    </h1>
+
+		    <p class="lede">Structuring a form to consume and output complex data</p>
+
+			<form action="./" method="post">
+
+				<div class="form-section" data-item-number="1">
+
+				    <h3 class="heading-medium">
+				        Defendant 1
+				        <a href="#noop" class="link-remove">
+				            Remove
+				            <span class="visually-hidden">&nbsp;this defendant</span>
+				        </a>
+				    </h3>
+				    
+				    <div class="form-group">
+				        <label class="form-label-bold " for="defendant-1-first-name">
+				            First name
+				        </label>
+				        <input class="form-control" id="defendant-1-first-name" name="defendants[0][first_name]" type="text" value="{{data['defendants'][0]['first_name']}}" autocomplete="off">
+				    </div>
+
+				    <div class="form-group">
+				        <label class="form-label-bold" for="defendant-1-last-name">
+				            Last name
+				        </label>
+				        <input class="form-control" id="defendant-1-last-name" name="defendants[0][last_name]" type="text" value="{{data['defendants'][0]['last_name']}}" autocomplete="off">
+				    </div>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <legend class="form-label-bold">
+				                Date of birth
+				                <span class="form-hint">
+				                    For example, 31 3 1980
+				                </span>
+				            </legend>
+				            <div class="form-date">
+				                <div class="form-group form-group-day">
+				                    <label class="form-label" for="defendant-1-date-of-birth-day">
+				                        Day
+				                    </label>
+				                    <input class="form-control" id="defendant-1-date-of-birth-day" max="31" min="1" name="defendants[0][date_of_birth][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['date_of_birth']['day']}}">
+				                </div>
+				                <div class="form-group form-group-month">
+				                    <label class="form-label" for="defendant-1-date-of-birth-month">
+				                        Month
+				                    </label>
+				                    <input class="form-control" id="defendant-1-date-of-birth-month" max="12" min="1" name="defendants[0][date_of_birth][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['date_of_birth']['month']}}">
+				                </div>
+				                <div class="form-group form-group-year">
+				                    <label class="form-label" for="defendant-1-date-of-birth-year">
+				                        Year
+				                    </label>
+				                    <input class="form-control" id="defendant-1-date-of-birth-year" max="2018" min="1900" name="defendants[0][date_of_birth][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['date_of_birth']['year']}}">
+				                </div>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <div class="multiple-choice">
+				                <input id="defendant-1-order-judicial-apportionment" name="defendants[0][order_judicial_apportionment]" type="checkbox" value="yes" {% if data['defendants'][0]['order_judicial_apportionment'][1] == 'yes' -%}checked="checked"{%- endif %}>
+				                    <label for="order-judicial-apportionment">
+				                        Order for judicial apportionment
+				                    </label>
+				                </input>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <details>
+				            <summary>
+				                <span class="summary">Help with judicial apportionment</span>
+				            </summary>
+				            <div class="panel panel-border-narrow">
+				                <p>
+				                Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
+				                </p>
+				            </div>
+				        </details>
+				    </div>
+
+				    <h3 class="heading-medium">
+				        Representation order details
+				    </h3>
+
+				    <h3 class="heading-small">
+				        Representation order 1
+				        <a href="#noop" class="link-remove">
+				            Remove
+				            <span class="visually-hidden">&nbsp;this representation order</span>
+				        </a>
+				    </h3>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <legend class="form-label">
+				                Representation order date
+				                <span class="form-hint">
+				                    For example, 31 3 2017
+				                </span>
+				            </legend>
+				            <div class="form-date">
+				                <div class="form-group form-group-day">
+				                    <label class="form-label" for="defendant-1-representation-order-1-date-day">
+				                        Day
+				                    </label>
+				                    <input class="form-control" id="defendant-1-representation-order-1-date-day" max="31" min="1" name="defendants[0][representation_order][0][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['day']}}">
+				                </div>
+				                <div class="form-group form-group-month">
+				                    <label class="form-label" for="defendant-1-representation-order-1-date-month">
+				                        Month
+				                    </label>
+				                    <input class="form-control" id="defendant-1-representation-order-1-date-month" max="12" min="1" name="defendants[0][representation_order][0][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['month']}}">
+				                </div>
+				                <div class="form-group form-group-year">
+				                    <label class="form-label" for="defendant-1-representation-order-1-date-year">
+				                        Year
+				                    </label>
+				                    <input class="form-control" id="defendant-1-representation-order-1-date-year" max="2018" min="2010" name="defendants[0][representation_order][0][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['year']}}">
+				                </div>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <label class="form-label-bold " for="defendant-1-representation-order-1-maat-reference">
+				            MAAT Reference
+				            <span class="form-hint">
+				                For example 123456789
+				            </span>
+				        </label>
+				        <input class="form-control" id="defendant-1-representation-order-1-maat-reference" name="defendants[0][representation_order][0][maat_reference]" type="text" value="{{data['defendants'][0]['representation_order'][0]['maat_reference']}}" autocomplete="off">
+				    </div>
+
+				    <hr>
+
+				    <h3 class="heading-small">
+				        Representation order 2
+				        <a href="#noop" class="link-remove">
+				            Remove
+				            <span class="visually-hidden">&nbsp;this representation order</span>
+				        </a>
+				    </h3>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <legend class="form-label">
+				                Representation order date
+				                <span class="form-hint">
+				                    For example, 31 3 2017
+				                </span>
+				            </legend>
+				            <div class="form-date">
+				                <div class="form-group form-group-day">
+				                    <label class="form-label" for="defendant-1-representation-order-2-date-day">
+				                        Day
+				                    </label>
+				                    <input class="form-control" id="defendant-1-representation-order-2-date-day" max="31" min="1" name="defendants[0][representation_order][1][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][1]['date']['day']}}">
+				                </div>
+				                <div class="form-group form-group-month">
+				                    <label class="form-label" for="defendant-1-representation-order-2-date-month">
+				                        Month
+				                    </label>
+				                    <input class="form-control" id="defendant-1-representation-order-2-date-month" max="12" min="1" name="defendants[0][representation_order][1][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][1]['date']['month']}}">
+				                </div>
+				                <div class="form-group form-group-year">
+				                    <label class="form-label" for="defendant-1-representation-order-2-date-year">
+				                        Year
+				                    </label>
+				                    <input class="form-control" id="defendant-1-representation-order-2-date-year" max="2018" min="2010" name="defendants[0][representation_order][1][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][1]['date']['year']}}">
+				                </div>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <label class="form-label-bold " for="defendant-1-representation-order-2-maat-reference">
+				            MAAT Reference
+				            <span class="form-hint">
+				                For example 123456789
+				            </span>
+				        </label>
+				        <input class="form-control" id="defendant-1-representation-order-2-maat-reference" name="defendants[0][representation_order][1][maat_reference]" type="text" value="{{data['defendants'][0]['representation_order'][1]['maat_reference']}}" autocomplete="off">
+				    </div>
+
+				    <hr>
+
+				    <a href="#noop">
+				        Add another representation order
+				    </a>
+
+				</div>
+
+				<div class="form-section" data-item-number="2">
+
+				    <h3 class="heading-medium">
+				        Defendant 2
+				        <a href="#noop" class="link-remove">
+				            Remove
+				            <span class="visually-hidden">&nbsp;this defendant</span>
+				        </a>
+				    </h3>
+				    
+				    <div class="form-group">
+				        <label class="form-label-bold " for="defendant-2-first-name">
+				            First name
+				        </label>
+				        <input class="form-control" id="defendant-2-first-name" name="defendants[1][first_name]" type="text" value="{{data['defendants'][1]['first_name']}}" autocomplete="off">
+				    </div>
+
+				    <div class="form-group">
+				        <label class="form-label-bold" for="defendant-2-last-name">
+				            Last name
+				        </label>
+				        <input class="form-control" id="defendant-2-last-name" name="defendants[1][last_name]" type="text" value="{{data['defendants'][1]['last_name']}}" autocomplete="off">
+				    </div>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <legend class="form-label-bold">
+				                Date of birth
+				                <span class="form-hint">
+				                    For example, 31 3 1980
+				                </span>
+				            </legend>
+				            <div class="form-date">
+				                <div class="form-group form-group-day">
+				                    <label class="form-label" for="defendant-2-date-of-birth-day">
+				                        Day
+				                    </label>
+				                    <input class="form-control" id="defendant-2-date-of-birth-day" max="31" min="1" name="defendants[1][date_of_birth][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][1]['date_of_birth']['day']}}">
+				                </div>
+				                <div class="form-group form-group-month">
+				                    <label class="form-label" for="defendant-2-date-of-birth-month">
+				                        Month
+				                    </label>
+				                    <input class="form-control" id="defendant-2-date-of-birth-month" max="12" min="1" name="defendants[1][date_of_birth][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][1]['date_of_birth']['month']}}">
+				                </div>
+				                <div class="form-group form-group-year">
+				                    <label class="form-label" for="defendant-2-date-of-birth-year">
+				                        Year
+				                    </label>
+				                    <input class="form-control" id="defendant-2-date-of-birth-year" max="2018" min="1900" name="defendants[1][date_of_birth][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][1]['date_of_birth']['year']}}">
+				                </div>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <div class="multiple-choice">
+				                <input id="defendant-2-order-judicial-apportionment" name="defendants[1][order_judicial_apportionment]" type="checkbox" value="yes" {% if data['defendants'][1]['order_judicial_apportionment'][1] == 'yes' -%}checked="checked"{%- endif %}>
+				                    <label for="order-judicial-apportionment">
+				                        Order for judicial apportionment
+				                    </label>
+				                </input>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <details>
+				            <summary>
+				                <span class="summary">Help with judicial apportionment</span>
+				            </summary>
+				            <div class="panel panel-border-narrow">
+				                <p>
+				                Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
+				                </p>
+				            </div>
+				        </details>
+				    </div>
+
+				    <h3 class="heading-medium">
+				        Representation order details
+				    </h3>
+
+				    <h3 class="heading-small">
+				        Representation order 1
+				        <a href="#noop" class="link-remove">
+				            Remove
+				            <span class="visually-hidden">&nbsp;this representation order</span>
+				        </a>
+				    </h3>
+
+				    <div class="form-group">
+				        <fieldset>
+				            <legend class="form-label">
+				                Representation order date
+				                <span class="form-hint">
+				                    For example, 31 3 2017
+				                </span>
+				            </legend>
+				            <div class="form-date">
+				                <div class="form-group form-group-day">
+				                    <label class="form-label" for="defendant-2-representation-order-1-date-day">
+				                        Day
+				                    </label>
+				                    <input class="form-control" id="defendant-2-representation-order-1-date-day" max="31" min="1" name="defendants[1][representation_order][0][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][1]['representation_order'][0]['date']['day']}}">
+				                </div>
+				                <div class="form-group form-group-month">
+				                    <label class="form-label" for="defendant-2-representation-order-1-date-month">
+				                        Month
+				                    </label>
+				                    <input class="form-control" id="defendant-2-representation-order-1-date-month" max="12" min="1" name="defendants[1][representation_order][0][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][1]['representation_order'][0]['date']['month']}}">
+				                </div>
+				                <div class="form-group form-group-year">
+				                    <label class="form-label" for="defendant-2-representation-order-1-date-year">
+				                        Year
+				                    </label>
+				                    <input class="form-control" id="defendant-2-representation-order-1-date-year" max="2018" min="2010" name="defendants[1][representation_order][0][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][1]['representation_order'][0]['date']['year']}}">
+				                </div>
+				            </div>
+				        </fieldset>
+				    </div>
+
+				    <div class="form-group">
+				        <label class="form-label-bold " for="defendant-2-representation-order-1-maat-reference">
+				            MAAT Reference
+				            <span class="form-hint">
+				                For example 123456789
+				            </span>
+				        </label>
+				        <input class="form-control" id="defendant-2-representation-order-1-maat-reference" name="defendants[1][representation_order][0][maat_reference]" type="text" value="{{data['defendants'][1]['representation_order'][0]['maat_reference']}}" autocomplete="off">
+				    </div>
+
+				    <hr>
+
+				    <a href="#noop">
+				        Add another representation order
+				    </a>
+
+				</div>
+				
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Save and continue">
+						<input type="button" class="button button-tertiary" value="Add another defendant">
+						<a id="cancel" class="link-secondary">Cancel</a>
+					</div>
+				</div>
+
+			</form>
+
+		      <div class="form-section">
+		      	<p class="heading-medium">The data:</p>
+		        {{data|dump('\t')|safe}}
+		      </div>
+		</div>
+	</div>
+</main>
+
+{% endblock %}
