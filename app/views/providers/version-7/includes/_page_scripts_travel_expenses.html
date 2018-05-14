@@ -42,6 +42,7 @@ $(function(){
     var netAmountState = $(this).find(':selected').attr('data-net-amount');
     var vatAmountState = $(this).find(':selected').attr('data-vat-amount');
     var grossAmountState = $(this).find(':selected').attr('data-gross-amount');
+    var additionalInfoState = $(this).find(':selected').attr('data-additional-info');
 
     $('.fx-travel-cost').is(function(){
       var $el = $(this);
@@ -96,6 +97,11 @@ $(function(){
     $('.fx-travel-gross-amount').is(function(){
       var $el = $(this);
       grossAmountState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-additional-info').is(function(){
+      var $el = $(this);
+      additionalInfoState == "true" ? $el.show() : $el.hide();
     });
 
     if ($('.fx-select-expense-type').val() == 'car_travel' || $('.fx-select-expense-type').val() == 'bike_travel') {

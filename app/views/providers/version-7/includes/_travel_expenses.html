@@ -36,6 +36,7 @@
 				        	data-net-amount="{{type.attributes.net}}"
 				        	data-vat-amount="{{type.attributes.vat}}"
 				        	data-gross-amount="{{type.attributes.gross}}"
+				        	data-additional-info="{{type.attributes.info}}"
 				        	value="{{type.key}}"
 				        	{% if data['travel_expense_1_type'] == type.key %}selected="selected"{% endif %}>{{type.name}}</option>
 				        {%- endfor %}
@@ -176,12 +177,24 @@
 			    <input class="form-control form-control-1-8" id="travel-expense-1-hours" name="travel_expense_1_hours" type="number" max="999.00" min="0.00" step="0.25" value="{{data['travel_expense_1_hours']}}">
 			</div>
 
-			<div class="form-group fx-travel-distance">
+			<div class="form-group-compound fx-travel-distance">
 			    <label class="form-label-bold" for="travel-expense-1-distance">
 			        Distance
 			        <span class="form-hint">Total distance for the return journey</span>
 			    </label>
 			    <input class="form-control form-control-1-4" id="travel-expense-1-distance" name="travel_expense_1_distance" type="number" max="9999.00" min="0.00" step="0.01" value="{{data['travel_expense_1_distance']}}">
+			</div>
+			<div class="form-group fx-travel-distance">
+				<details>
+					<summary>
+						<span class="summary">How we calculate the distance</span>
+					</summary>
+					<div class="panel panel-border-narrow">
+						<p>
+						We use the postcode associated with your supplier number to automatically calculate the distance between your address and the destination, eg court or prison.
+						</p>
+					</div>
+				</details>
 			</div>
 
 		</div>
@@ -295,6 +308,20 @@
 
 		</div>
 
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+			
+			<div class="form-group fx-additional-info">
+				<label class="form-label-bold" for="travel-expense-1-additional-information">
+					Additional information
+					<span class="form-hint">Something...</span>
+				</label>
+				<textarea id="travel-expense-1-additional-information" class="form-control form-control-full" name="travel_expense_1_additional_information" rows="2"></textarea>
+			</div>
+
+		</div>
 	</div>
 
 </div>

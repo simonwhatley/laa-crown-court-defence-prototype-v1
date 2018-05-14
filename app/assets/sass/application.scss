@@ -17,6 +17,7 @@ $path: "/public/images/";
 @import 'patterns/claim-statuses';
 @import 'patterns/collections';
 @import 'patterns/denote';
+@import 'patterns/forms';
 @import 'patterns/layout';
 @import 'patterns/links';
 @import 'patterns/messages';
@@ -91,7 +92,8 @@ $path: "/public/images/";
 .fx-case-details-retrial,
 .fx-case-details-cracked-trial,
 .fx-case-details-cracked-before-retrial,
-.fx-travel-reason-other {
+.fx-travel-reason-other,
+.fx-additional-info {
   display: none;
 }
 
