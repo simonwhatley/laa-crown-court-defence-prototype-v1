@@ -194,12 +194,12 @@
 								</legend>
 
 								<div class="multiple-choice inline">
-									<input id="vat-registered-yes" type="radio" name="vat_registered" value="yes" {% if data['settings']['vat_number'] >= 1 -%}checked="checked"{%- endif %}>
+									<input id="vat-registered-yes" type="radio" name="vat_registered" value="yes" {% if data['settings']['vat_registered'] == true -%}checked="checked"{%- endif %}>
 									<label for="vat-registered-yes">Yes</label>
 								</div>
 
 								<div class="multiple-choice">
-									<input id="vat-registered-no" type="radio" name="vat_registered" value="no" {% if data['settings']['vat_number'] < 1 -%}checked="checked"{%- endif %}>
+									<input id="vat-registered-no" type="radio" name="vat_registered" value="no" {% if data['settings']['vat_registered'] == false -%}checked="checked"{%- endif %}>
 									<label for="vat-registered-no">No</label>
 								</div>
 

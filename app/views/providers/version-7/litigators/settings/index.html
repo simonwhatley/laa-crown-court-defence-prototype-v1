@@ -84,7 +84,7 @@ $(document).ready(function(){
 	                    <th class="bold" scope="row">
 	                        Provider name
 	                    </th>
-	                    <td>Petty &amp; France LLP</td>
+	                    <td>{{data['settings']['provider_name']}}</td>
 	                </tr>
 	                <tr>
 	                    <th class="bold" scope="row">
@@ -114,7 +114,7 @@ $(document).ready(function(){
 	                    <th class="bold" scope="row">
 	                        VAT registered?
 	                    </th>
-	                    <td>{% if data['settings']['vat_number'] >= 1 -%}Yes{% else %}No{%- endif %}</td>
+	                    <td>{% if data['settings']['vat_registered'] == true -%}Yes{% else %}No{%- endif %}</td>
 	                </tr>
 	            </tbody>
 	        </table>
