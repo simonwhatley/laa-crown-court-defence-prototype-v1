@@ -88,6 +88,12 @@ $(document).ready(function(){
 	                </tr>
 	                <tr>
 	                    <th class="bold" scope="row">
+	                        Provider type
+	                    </th>
+	                    <td>{{data['settings']['provider_type']|capitalize}}</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
 	                        API key
 	                    </th>
 	                    <td class="api-key">{{data['settings']['api_key']}}</td>
@@ -114,7 +120,7 @@ $(document).ready(function(){
 	                    <th class="bold" scope="row">
 	                        VAT registered?
 	                    </th>
-	                    <td>{% if data['settings']['vat_registered'] == true -%}Yes{% else %}No{%- endif %}</td>
+	                    <td>{% if data['settings']['vat_registered'] == true or data['settings']['vat_registered'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
 	                </tr>
 	            </tbody>
 	        </table>
