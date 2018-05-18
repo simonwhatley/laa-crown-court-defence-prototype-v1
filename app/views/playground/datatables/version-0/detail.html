@@ -1,0 +1,33 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+{#% include "./includes/_page_styles.html" %#}
+{% endblock %}
+
+{% block page_scripts %}
+{#% include "./includes/_page_scripts.html" %#}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-full">
+
+            <a class="link-back" href="../">Back</a>
+
+            <h1 class="heading-xlarge">
+                View provider
+            </h1>
+            
+            {{provider|dump|safe}}
+   
+        </div>
+    </div>
+
+</main>
+{% endblock %}
