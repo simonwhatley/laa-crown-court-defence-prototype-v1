@@ -44,7 +44,7 @@ module.exports = {
 				break;
 			case 'scheme':
 				// TODO
-				
+
 				break;
 			case 'status':
 				// TODO sort by status and provider name...remove items that aren't the correct status???
@@ -77,6 +77,10 @@ module.exports = {
 
 		return providerObj[0];
 
+	},
+
+	getProviderCount: function() {
+		return parseInt(providers.length);
 	}
-	
+
 }
