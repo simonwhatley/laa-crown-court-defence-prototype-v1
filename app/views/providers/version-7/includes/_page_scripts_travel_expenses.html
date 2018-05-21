@@ -1,5 +1,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHZYFDLX6xDaMgEvHq9NMiIp9RbsmbrM" type="text/javascript"></script>
-<script src="/public/javascripts/jquery.distancecalculator.js"></script>
+<script src="/public/javascripts/jquery.Google.DirectionsService.js"></script>
 
 <script type="text/javascript">
 $(function(){
@@ -200,11 +200,12 @@ $(function(){
       var travel_mode = 'DRIVING'
     }
 
-    $('#travel-expense-1-distance').distancecalculator({
+    $('#travel-expense-1-distance').directionsService({
       start_address: origin,
       end_address: destination,
-      units: 'mile',
+      units: 'miles',
       travel_mode: travel_mode,
+      journey_type: 'return',
       result_container_type: 'textbox'
     });
 
@@ -260,11 +261,12 @@ $(function(){
       var travel_mode = 'DRIVING'
     }
 
-    $('#travel-expense-1-distance').distancecalculator({
+    $('#travel-expense-1-distance').directionsService({
       start_address: origin,
       end_address: destination,
-      units: 'mile',
+      units: 'miles',
       travel_mode: travel_mode,
+      journey_type: 'return',
       result_container_type: 'textbox'
     });
 
@@ -320,11 +322,12 @@ $(function(){
       var travel_mode = 'DRIVING'
     }
 
-    $('#travel-expense-1-distance').distancecalculator({
+    $('#travel-expense-1-distance').directionsService({
       start_address: origin,
       end_address: destination,
-      units: 'mile',
+      units: 'miles',
       travel_mode: travel_mode,
+      journey_type: 'return',
       result_container_type: 'textbox'
     });
 
@@ -380,11 +383,12 @@ $(function(){
       var travel_mode = 'DRIVING'
     }
 
-    $('#travel-expense-1-distance').distancecalculator({
+    $('#travel-expense-1-distance').directionsService({
       start_address: origin,
       end_address: destination,
-      units: 'mile',
+      units: 'miles',
       travel_mode: travel_mode,
+      journey_type: 'return',
       result_container_type: 'textbox'
     });
 

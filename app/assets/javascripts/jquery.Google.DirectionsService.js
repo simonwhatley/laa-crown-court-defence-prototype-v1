@@ -6,22 +6,24 @@
         // https://developers.google.com/maps/documentation/javascript/directions
 
         var directionsService = new google.maps.DirectionsService();
+        var element = this;
 
         // Define default options
         var settings = $.extend({
-            start_address: "",
-            end_address: "",
-            waypoints: "",
-            result_container_type: "container",
-            units: "miles",
-            travel_mode: "DRIVING",
+            start_address: '',
+            end_address: '',
+            waypoints: '',
+            result_container_type: 'container',
+            units: 'miles',
+            travel_mode: 'DRIVING',
+            journey_type: 'single'
         }, options );
 
         //Create waypoints array & fill it with all locations entered by user
-        var waypts = new Array();
-        if (settings.waypoints!=""){
+        var waypoints = new Array();
+        if (settings.waypoints != ''){
             $.each(settings.waypoints, function(index, value) {
-                waypts.push({
+                waypoints.push({
                     location : value,
                     stopover : true
                 });
@@ -29,25 +31,33 @@
         }
 
         // Define travel mode
-        var travel_mode = "";
-        if (settings.travel_mode == 'BICYCLING') {
+        var travel_mode = '';
+        if (settings.travel_mode == 'BICYCLING' || settings.travel_mode == 'CYCLING') {
             travel_mode = google.maps.DirectionsTravelMode.BICYCLING
         }
         else if (settings.travel_mode == 'DRIVING') {
             travel_mode = google.maps.DirectionsTravelMode.DRIVING
         }
-        else if (settings.travel_mode == 'TRANSIT') {
+        else if (settings.travel_mode == 'TRANSIT' || settings.travel_mode == 'PUBLIC_TRANSPORT') {
             travel_mode = google.maps.DirectionsTravelMode.TRANSIT
         }
         else if (settings.travel_mode == 'WALKING') {
             travel_mode = google.maps.DirectionsTravelMode.WALKING
         }
 
+        // var unit_system = '';
+        // if (settings.unit_system == 'imperial') {
+        //     unit_system = google.maps.UnitSystem.IMPERIAL;
+        // }
+        // else {
+        //     unit_system = google.maps.UnitSystem.METRIC;
+        // }
+
         // Create a Direction Request variable
         var request = {
             origin: settings.start_address,
             destination: settings.end_address,
-            waypoints: waypts,
+            waypoints: waypoints,
             optimizeWaypoints: true,
             unitSystem: google.maps.UnitSystem.IMPERIAL,
             travelMode: travel_mode
@@ -57,6 +67,7 @@
         directionsService.route(request, function(response, status) {
 
             if (status == google.maps.DirectionsStatus.OK) {
+
                 var route = response.routes[0];
 
                 // calculate total distance and duration
@@ -64,44 +75,50 @@
                 var time = 0;
 
                 for (var i = 0; i < route.legs.length; i++) {
-                    var theLeg = route.legs[i];
-                    distance += theLeg.distance.value;
-                    time += theLeg.duration.value;
+                    var leg = route.legs[i];
+                    distance += leg.distance.value;
+                    time += leg.duration.value;
                 }
 
-                var final_distance = convertDistance(distance, settings.units);
+                var final_distance = convertDistance(distance, settings.units, settings.journey_type);
 
                 if (settings.result_container_type == 'container') {
-                    return this.html(final_distance);
+                    return element.html(final_distance);
                 }
                 else {
-                    return this.val(final_distance);
+                    return element.val(final_distance);
                 }
             }
             else {
                 var statusText = getDirectionStatusText(status);
                 if (settings.result_container_type == 'container') {
-                    return this.html(statusText);
+                    return element.html(statusText);
                 }
                 else {
-                    return this.val(statusText);
+                    return element.val(statusText);
                 }
             }
         });
 
-        // Show distance in different measurements
-        function convertDistance(distance, units) {
-            if (units == 'miles') {
-                // return (((distance*0.621371192)/100) / 10).toFixed(1);
-                return Math.round((((distance*0.621371192)/100) / 10));
+        // Return distance depending on metric or imperial units, and single or return journey
+        function convertDistance(distance, units, type) {
+            var result = 0;
+
+            if (units == 'miles' || units == 'mile') {
+                result = Math.round((((distance*0.621371192)/100) / 10));
             }
-            else if (units == 'kilometers') {
-                // return ((((distance*0.621371192)/100) / 10) * 1.609344).toFixed(1);
-                return Math.round(((((distance*0.621371192)/100) / 10) * 1.609344));
+            else if (units == 'kilometers' || units == 'kilometer' || units == 'km') {
+                result = Math.round(((((distance*0.621371192)/100) / 10) * 1.609344));
             }
             else {
-                return distance.toFixed(1);
+                result = distance.toFixed(1);
             }
+
+            if (type == 'return') {
+                return result * 2;
+            }
+
+            return result;
         }
 
         // Get the Map direction status message
