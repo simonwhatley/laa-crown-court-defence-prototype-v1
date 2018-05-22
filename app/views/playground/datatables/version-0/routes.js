@@ -19,20 +19,27 @@ router.get('/', function (req, res) {
 router.get('/providers', function (req, res) {
 
   var count = utils.getProviderCount();
-  var limit = (req.query.limit) ? req.query.limit : 100;
+
+  var limit = 100;
+  if ([10,25,50,100].indexOf(parseInt(req.query.limit)) !== -1) {
+    var limit = (req.query.limit) ? parseInt(req.query.limit) : 100;
+  }
+  
+  var sort_by = (req.query.sort) ? req.query.sort : 'name';
+  var sort_order = (req.query.sort) ? req.query.sort : 'asc';
+
+  var page = (req.query.page) ? parseInt(req.query.page) : 1;
 
   var page_count = Math.ceil(count / limit);
 
-  var start_page = 1;
-  var end_page = 5;
+  var start_page = (page > 3) ? (page - 2) : 1;
+  var end_page = (page > 3) ? (page + 2) : 5;
 
-  var prev_page = parseInt(req.query.page) - 1;
-  var next_page = parseInt(req.query.page) + 1;
-
-  if (req.query.page > 3) {
-    start_page = parseInt(req.query.page) - 2;
-    end_page = parseInt(req.query.page) + 2;
-  }
+  var prev_page = page - 1;
+  var next_page = page + 1;
+  
+  var start_item = (page == 1) ? page : ((page*limit)-limit)+1;
+  var end_item = (page == 1) ? (page*limit) : ((start_item+limit)-1);
 
   res.render(`${req.section}/${req.feature}/${req.version}/list`,
     {
@@ -40,15 +47,21 @@ router.get('/providers', function (req, res) {
           'list' : req.baseUrl + '/providers',
           'view' : req.baseUrl + '/provider/'
       },
-      providers: utils.getProviders(req.session.data.sort,req.session.data.order,limit,req.session.data.page),
       pagination: {
         total_count: count,
+        start_item: start_item,
+        end_item: end_item,
         page_count: page_count,
+        current_page: page,
         start_page: start_page,
         end_page: end_page,
         prev_page: prev_page,
-        next_page: next_page
-      }
+        next_page: next_page,
+        limit: limit,
+        sort_by: sort_by,
+        sort_order: sort_order
+      },
+      providers: utils.getProviders(sort_by,sort_order,limit,page)
     });
 
 });

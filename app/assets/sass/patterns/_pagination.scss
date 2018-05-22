@@ -1,9 +1,13 @@
 /*
 * From https://home-office-digital-patterns.herokuapp.com/components/pagination
 */
+.pagination {
+  @media (min-width: 642px) {
+      float: right;
+    }
+}
 
 .pagination .pagination_list-items {
-
   li {
     display: inline-block;
     a {
@@ -36,10 +40,12 @@
 .pagination {
   padding: 0;
 }
+
 .pagination__item {
   display: inline-block;
   list-style: none;
 }
+
 .pagination__link {
   display: block;
   padding: 5px 10px;
@@ -69,6 +75,6 @@
   padding: 8px 0  ;
 
   @media (min-width: 642px) {
-    float: right;
+    float: left;
   }
 }

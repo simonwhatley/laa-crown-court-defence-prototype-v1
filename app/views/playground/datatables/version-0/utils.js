@@ -29,7 +29,7 @@ module.exports = {
 		if (!page) page = 1;
 
 		var start = (page == 1) ? 0 : ((page * limit)-limit);
-		var end = ((page * limit)-1);
+		var end = (page * limit);
 
 		var order = (sort_order == 'desc') ? true : false;
 
