@@ -52,8 +52,10 @@ router.get('/home', function(req, res) {
 // Route for provider list
 router.get('/providers', function (req, res) {
 
+  // Total number of providers
   var count = utils.getProviderCount();
 
+  // Prevent users putting in a limit not in the pre-defined set: 10, 25, 50, 100
   var limit = 100;
   if ([10,25,50,100].indexOf(parseInt(req.query.limit)) !== -1) {
     var limit = (req.query.limit) ? parseInt(req.query.limit) : 100;
@@ -62,12 +64,26 @@ router.get('/providers', function (req, res) {
   var sort_by = (req.query.sort) ? req.query.sort : 'name';
   var sort_order = (req.query.sort) ? req.query.sort : 'asc';
 
+  // Current page
   var page = (req.query.page) ? parseInt(req.query.page) : 1;
 
+  // Total number of pages
   var page_count = Math.ceil(count / limit);
 
-  var start_page = (page > 3) ? (page - 2) : 1;
-  var end_page = (page > 3) ? (page + 2) : 5;
+  var start_page = 1;
+  var end_page = 5;
+
+  // First five pages
+  if (page > 3) {
+  	start_page = page - 2;
+  	end_page = page + 2;
+  }
+
+  // Last five pages
+  if (page > (page_count - 3)) {
+  	start_page = page_count - 4;
+  	end_page = page_count;
+  }
 
   var prev_page = page - 1;
   var next_page = page + 1;
