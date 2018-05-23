@@ -36,12 +36,14 @@
                 </div>
             </fieldset>
         </div>
+        {% if data['case_type'] == 'trial' -%}
         <div class="form-group">
             <label class="form-label-bold " for="actual-trial-length">
                 Actual trial length
             </label>
             <input class="form-control form-control-1-4" id="actual-trial-length" name="actual_trial_length" type="number" max="9999" min="0" step="1" value="{{data['actual_trial_length']}}" autocomplete="off">
         </div>
+        {%- endif %}
         <div class="form-group">
             <label class="form-label-bold" for="pages-of-evidence-net-amount">
                 Net amount

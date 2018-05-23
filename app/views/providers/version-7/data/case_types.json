@@ -82,7 +82,7 @@
 	{
 	    "key": "guilty_plea",
 	    "name": "Guilty Plea",
-	    "scheme": ["agfs"],
+	    "scheme": ["agfs","lgfs"],
 	    "type": "graduated",
 	    "other_names": [],
 	    "abbreviations": []
