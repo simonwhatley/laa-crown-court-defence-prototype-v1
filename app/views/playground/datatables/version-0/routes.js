@@ -28,7 +28,7 @@ router.get('/providers', function (req, res) {
   }
   
   var sort_by = (req.query.sort) ? req.query.sort : 'name';
-  var sort_order = (req.query.sort) ? req.query.sort : 'asc';
+  var sort_order = (req.query.order) ? req.query.order : 'asc';
 
   // Current page
   var page = (req.query.page) ? parseInt(req.query.page) : 1;
