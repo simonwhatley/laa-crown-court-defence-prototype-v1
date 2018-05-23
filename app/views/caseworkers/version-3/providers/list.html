@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block page_scripts %}
-{% include "../includes/_pagination_page_scripts.html" %}
+{% include "../includes/_page_scripts_pagination.html" %}
 {% endblock %}
 
 {% block content %}
@@ -18,11 +18,15 @@
     <div class="grid-row">
         <div class="column-full">
 
-            <a class="link-back" href="../">Back</a>
+            <a class="link-back" href="{{links.back}}">Back</a>
 
             <h1 class="heading-xlarge">
                 Providers
             </h1>
+
+            <!-- <form method="post" action="{{links.provider.add}}">
+                <input type="submit" class="button button-primary" value="Add provider">
+            </form> -->
 
             {% include "../includes/_pagination_summary.html" %}
 
@@ -90,7 +94,7 @@
                                 <tr id="provider-{{provider.id}}">
                                     <!-- <td aria-label="Provider identity number">{{provider.id}}</td> -->
                                     <td aria-label="Provider name" scope="row">
-                                        <a href="{{links.view}}{{provider.id}}">
+                                        <a href="{{links.provider.view}}/{{provider.id}}/">
                                             {{provider.provider_name}}
                                         </a>
                                     </td>

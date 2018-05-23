@@ -79,6 +79,22 @@ module.exports = {
 
 	getProviderCount: function() {
 		return parseInt(providers.length);
+	},
+
+	getProviderUsers: function(provider_id) {
+
+		if (!provider_id) return null
+
+		var userObj = users.filter( function(obj) {
+			return (obj.provider_id == provider_id);
+		});
+
+		return userObj[0];
+
+	},
+
+	getUser: function(user_id) {
+		
 	}
 
 }
