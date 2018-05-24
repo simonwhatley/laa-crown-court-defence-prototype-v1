@@ -35,6 +35,7 @@
                     </h2>
 
                     <form class="form" method="post">
+                        <input type="hidden" name="provider[id]" value="{{provider.id}}">
 
                         <div class="form-group" data-required="true" data-error="Add a provider name">
                             <label class="form-label-bold" for="provider-name">
@@ -208,7 +209,7 @@
                                 </div>
 
                                 <div class="multiple-choice">
-                                    <input id="vat-registered-no" type="radio" name="setting[vat_registered]" value="no" {% if provider.vat_registered == false or provider.vat_registered == 'no' -%}checked="checked"{%- endif %}>
+                                    <input id="vat-registered-no" type="radio" name="provider[vat_registered]" value="no" {% if provider.vat_registered == false or provider.vat_registered == 'no' -%}checked="checked"{%- endif %}>
                                     <label for="vat-registered-no">No</label>
                                 </div>
 

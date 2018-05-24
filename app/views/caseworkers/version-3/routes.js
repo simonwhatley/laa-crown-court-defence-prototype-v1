@@ -127,12 +127,20 @@ router.get('/providers', function (req, res) {
 // Route for single provider
 router.get('/provider/:provider_id([0-9]+)/', function (req, res) {
 
-  if (req.session.data.provider) {
-  	var provider = req.session.data.provider;
-  }
-  else {
+  if (typeof(req.session.data.provider) === 'undefined') {
   	var provider = utils.getProvider(req.params.provider_id);
   }
+  else {
+
+  	if (parseInt(req.params.provider_id) === parseInt(req.session.data.provider.id)) {
+  		var provider = req.session.data.provider;
+  	}
+  	else {
+  		var provider = utils.getProvider(req.params.provider_id);
+  	}
+  }
+
+  console.log(provider);
 
   res.render(`${req.feature}/${req.version}/providers/view`,
     {
@@ -170,11 +178,17 @@ router.get('/provider/add', function (req, res) {
 // Route for single provider
 router.get('/provider/:provider_id([0-9]+)/edit', function (req, res) {
   
-  if (req.session.data.provider) {
-  	var provider = req.session.data.provider;
+  if (typeof(req.session.data.provider) === 'undefined') {
+  	var provider = utils.getProvider(req.params.provider_id);
   }
   else {
-  	var provider = utils.getProvider(req.params.provider_id);
+
+  	if (parseInt(req.params.provider_id) === parseInt(req.session.data.provider.id)) {
+  		var provider = req.session.data.provider;
+  	}
+  	else {
+  		var provider = utils.getProvider(req.params.provider_id);
+  	}
   }
 
   res.render(`${req.feature}/${req.version}/providers/edit`,
