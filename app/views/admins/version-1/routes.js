@@ -21,7 +21,7 @@ router.get('/sign-in', function(req, res) {
 
 router.get('/auth', function(req, res) {
 
-	res.redirect(`/${req.feature}/${req.version}/home`);
+	res.redirect(`/${req.feature}/${req.version}/providers`);
 
     
 
@@ -37,12 +37,13 @@ router.get('/sign-out', function(req, res) {
 // ==============================================
 
 router.get('/home', function(req, res) {
-    res.render(`${req.feature}/${req.version}/home`,
-        {
-            links: {
+    // res.render(`${req.feature}/${req.version}/home`,
+    //     {
+    //         links: {
                 
-            }
-        });
+    //         }
+    //     });
+    res.redirect(`/${req.feature}/${req.version}/providers`);
 });
 
 // ==============================================
