@@ -107,7 +107,7 @@ $(document).ready(function(){
                         <td>
                             <ul>
                             {% for supplier in provider.suppliers %}
-                                <li>{{supplier.lgfs_account_number}} – {{supplier.name}}</li>
+                                <li>{{supplier.lgfs_account_number}} – {% if supplier.name.length -%}{{supplier.name}}{% else %}{{supplier.address.postcode}}{%- endif %}</li>
                             {% endfor %}
                             <ul>
                         </td>

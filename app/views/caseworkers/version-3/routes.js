@@ -140,8 +140,6 @@ router.get('/provider/:provider_id([0-9]+)/', function (req, res) {
   	}
   }
 
-  console.log(provider);
-
   res.render(`${req.feature}/${req.version}/providers/view`,
     {
       links: {
