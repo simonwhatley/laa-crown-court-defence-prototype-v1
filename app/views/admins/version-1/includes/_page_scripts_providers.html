@@ -1,0 +1,142 @@
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $(document).on('keyup','.lgfs-supplier-number', function (e) {
+    e.preventDefault();
+    $(this).val($(this).val().toUpperCase());
+  });
+
+  $(document).on('keyup','.agfs-supplier-number', function (e) {
+    e.preventDefault();
+    $(this).val($(this).val().toUpperCase());
+  });
+
+  $(document).on('keyup','.lgfs-supplier-postcode', function (e) {
+    e.preventDefault();
+    $(this).val($(this).val().toUpperCase());
+  });
+
+  // $('.provider-type').on('change', function(e) {
+  //   e.preventDefault();
+  //   if ($(this).val() == 'chamber') {
+  //     $('#fee-scheme-lgfs').attr('disabled','disabled');
+  //   } else {
+  //     $('#fee-scheme-lgfs').removeAttr('disabled');
+  //   }
+  // });
+
+  $(document).on('click', '.button-add-another', function (e) {
+    e.preventDefault();
+    insertFields();
+    sortFields();
+  });
+
+  $(document).on('click', '.remove-list-item', function (e) {
+    e.preventDefault();
+    $(this).parents('.list-item-row').remove();
+    sortFields();
+  });
+
+  function insertFields() {
+    $('.list-item-row:last').after(
+      '<div class="grid-row list-item-row">' +
+      '<div class="column-two-thirds">' +
+      '<h2 class="heading-small list-item-heading">Supplier 1</h2>' +
+      '<div class="form-group supplier-name">' +
+      '<label class="form-label-bold" for="supplier-name-x">' +
+      'Name (optional)' +
+      '<span class="form-hint">For example, the city or street name</span>' +
+      '</label>' +
+      '<input type="text" class="form-control form-control-2-3" id="supplier-name-x" name="provider[suppliers][x][name]" value="" autocomplete="off" autocapitalize="off">' +
+      '</div>' +
+      '<div class="form-group supplier-postcode">' +
+      '<label class="form-label-bold" for="supplier-postcode-x">' +
+      'Postcode' +
+      '<span class="form-hint">For example, SW11 1AA</span>' +
+      '</label>' +
+      '<input type="text" class="form-control form-control-1-3 lgfs-supplier-postcode" id="supplier-postcode-x" name="provider[suppliers][x][address][postcode]" value="" pattern="^([A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]? {1,2}[0-9][ABD-HJLN-UW-Z]{2}|GIR 0AA)$" autocomplete="off" autocapitalize="off">' +
+      '</div>' +
+      '<div class="form-group supplier-number">' +
+      '<label class="form-label-bold" for="supplier-number-x">' +
+      'Supplier number' +
+      '<span class="form-hint">For example, 1A234B</span>' +
+      '</label>' +
+      '<input type="text" class="form-control form-control-1-3 lgfs-supplier-number" id="supplier-number-x" name="provider[suppliers][x][lgfs_account_number]" value="" pattern="[0-9][A-Z][0-9]{3}[A-Z]" autocomplete="off" autocapitalize="off">' +
+      '</div>' +
+      '<hr style="margin-bottom:30px;">' +
+      '</div>' +
+      '</div>'
+    );
+  }
+
+  function sortFields() {
+    var listCounter = 1;
+    var fieldCounter = 0;
+
+    $(document).find('.list-item-row').each(function () {
+      $(this).find('h2').text('Supplier ' + listCounter);
+
+      if ($(this).find('.remove-list-item').length === 0) {
+        $(this).find('.list-item-heading:last').append('<a id="remove-item-' + listCounter + '" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this supplier</span></a>');
+      } else {
+        $(this).find('.remove-list-item').attr('id', 'remove-item-' + listCounter);
+      }
+
+      // Label counter
+      $(this).find('.supplier-name').children('label').each(function () {
+        $(this).attr('for', 'supplier-name-' + listCounter);
+      });
+
+      $(this).find('.supplier-postcode').children('label').each(function () {
+        $(this).attr('for', 'supplier-postcode-' + listCounter);
+      });
+
+      $(this).find('.supplier-number').children('label').each(function () {
+        $(this).attr('for', 'supplier-number-' + listCounter);
+      });
+
+      // Input counter
+      $(this).find('.supplier-name').children('input').each(function () {
+        $(this).attr('id', 'supplier-name-' + listCounter);
+        $(this).attr('name', ('provider[suppliers][' + fieldCounter + '][name]'));
+      });
+
+      $(this).find('.supplier-postcode').children('input').each(function () {
+        $(this).attr('id', 'supplier-postcode-' + listCounter);
+        $(this).attr('name', ('provider[suppliers][' + fieldCounter + '][address][postcode]'));
+      });
+
+      $(this).find('.supplier-number').children('input').each(function () {
+        $(this).attr('id', 'supplier-number-' + listCounter);
+        $(this).attr('name', ('provider[suppliers][' + fieldCounter + '][lgfs_account_number]'));
+      });
+
+      listCounter++;
+      fieldCounter++;
+    });
+
+    if ($(document).find('.list-item-row').length === 1) {
+      $('.remove-list-item').remove();
+    }
+  }
+
+  $('.generate-key').on('click', function (e) {
+    e.preventDefault();
+    $('#api-key').val(generateUUID());
+  });
+
+  function generateUUID() {
+    var d = new Date().getTime();
+    if(Date.now){
+        d = Date.now(); //high-precision timer
+    }
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+  };
+
+});
+</script>

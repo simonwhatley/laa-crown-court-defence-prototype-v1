@@ -1,0 +1,135 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+{#% include "./includes/_page_styles.html" %#}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "../includes/_page_scripts_pagination.html" %}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+    <div class="grid-row">
+        <div class="column-full">
+
+            <a class="link-back" href="{{links.back}}">Back</a>
+
+            <h1 class="heading-xlarge">
+                Providers
+            </h1>
+
+            <!-- <form method="post" action="{{links.provider.add}}">
+                <input type="submit" class="button button-primary" value="Add provider">
+            </form> -->
+
+            {% include "../includes/_pagination_summary.html" %}
+
+            <div class="grid-row">
+                <div class="column-full">
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <!-- <th scope="col">#</th> -->
+                                    <th scope="col">
+                                        {% if not (data['sort'].length and data['order'].length) -%}
+                                            <a href="{{links.list}}?sort=name&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% elif data['sort'] == 'name' and data['order'] == 'asc' %}
+                                            <a href="{{links.list}}?sort=name&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=name&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %}
+                                            Provider name
+                                        </a>
+                                    </th>
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'type' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=type&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            Provider type
+                                        <!-- </a> -->
+                                    </th>
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'scheme' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=scheme&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=scheme&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            Fee schemes
+                                        <!-- </a> -->
+                                    </th>
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'vat' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=vat&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=vat&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            VAT registered
+                                        <!-- </a> -->
+                                    </th>
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'status' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=status&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=status&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            Status
+                                        <!-- </a> -->
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for provider in providers %}
+
+                                <tr id="provider-{{provider.id}}">
+                                    <!-- <td aria-label="Provider identity number">{{provider.id}}</td> -->
+                                    <td aria-label="Provider name" scope="row">
+                                        <a href="{{links.provider.view}}/{{provider.id}}/">
+                                            {{provider.provider_name}}
+                                        </a>
+                                    </td>
+                                    <th aria-label="Provider type">
+                                        {{provider.provider_type|capitalize}}
+                                    </th>
+                                    <td aria-label="Fee schemes">
+                                        {{provider.fee_scheme|sort}}
+                                    </td>
+                                    <td aria-label="VAT registered">
+                                        {% if provider.vat_registered == true or provider.vat_registered == 'yes' -%}Yes{% else %}No{%- endif %}
+                                    </td>
+                                    <td aria-label="Status">
+                                        {{provider.account_status|capitalize}}
+                                    </td>
+                                    <!-- <td aria-label="Manage users">
+                                        <a href="#noop">Manage users</a>
+                                    </td> -->
+                                </tr>
+
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <br>
+
+                </div>
+            </div>
+
+            {% include "../includes/_pagination_limit.html" %}
+
+        </div>
+    </div>
+
+</main>
+{% endblock %}
