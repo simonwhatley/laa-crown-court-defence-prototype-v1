@@ -20,7 +20,7 @@
     <div class="grid-row">
         <div class="column-full">
 
-            <a class="link-back" href="{{links.back}}">Back</a>
+            <a class="link-back" href="{{links.home}}">Home</a>
 
             <h1 class="heading-xlarge">
                 Providers
@@ -29,6 +29,8 @@
             <!-- <form method="post" action="{{links.provider.add}}">
                 <input type="submit" class="button button-primary" value="Add provider">
             </form> -->
+
+            <a id="add-provider" class="button button-primary" role="button" href="{{links.provider.add}}">Add provider</a><br><br>
 
             {% include "../includes/_pagination_summary.html" %}
 

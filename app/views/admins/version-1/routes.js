@@ -104,7 +104,7 @@ router.get('/providers', function (req, res) {
       	  	'edit' : req.baseUrl + '/provider/' + req.params.provider_id + '/user/'
       	  },
       	  'list': req.baseUrl + '/providers',
-          'back': req.baseUrl + '/home'
+          'home': req.baseUrl + '/home'
       },
       pagination: {
         total_count: count,
