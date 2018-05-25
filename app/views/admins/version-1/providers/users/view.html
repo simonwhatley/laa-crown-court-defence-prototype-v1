@@ -1,0 +1,110 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{#% block page_scripts %}
+{% include "../../includes/_page_scripts_users.html" %}
+{% endblock %#}
+
+{#% block page_styles %}
+
+{% endblock %#}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    {% include "../../includes/_banner.html" %}
+
+    <div class="grid-row">
+        <div class="column-full">
+
+            <a class="link-back" href="{{links.back}}">Back</a>
+
+            <h1 class="heading-xlarge">
+                <span class="heading-secondary">{{provider.provider_name}}</span>
+                {{user.first_name}} {{user.last_name}}
+            </h1>
+
+            <h2 class="heading-large">
+                User details
+            </h2>
+
+            <table class="summary">
+                <tbody>
+                    <tr>
+                        <th class="bold" scope="row">
+                            First name
+                        </th>
+                        <td>{{user.first_name}}</td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Last name
+                        </th>
+                        <td>{{user.last_name}}</td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Email address
+                        </th>
+                        <td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Supplier number
+                        </th>
+                        <td>
+                            {% if user.supplier_number.length %}
+                            {{user.supplier_number}}
+                            {% else %}
+                            Not provided
+                            {%- endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Notifications
+                        </th>
+                        <td>{% if user.notifications == true or user.notifications == 'on' -%}On{% else %}Off{%- endif %}</td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Role
+                        </th>
+                        <td>{{user.role|capitalize}}</td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Type
+                        </th>
+                        <td>{{user.type|capitalize}}</td>
+                    </tr>
+                    <tr>
+                        <th class="bold" scope="row">
+                            Account status
+                        </th>
+                        <td>{% if user.status == 'active' -%}Active{% else %}Disabled{%- endif %}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form action="{{links.edit}}" method="post">
+
+                <div class="form-section">
+                    <div class="form-group form-buttons">
+                        <input type="submit" class="button button-primary" value="Edit details">
+                        <a id="cancel" class="link-secondary" href="{{links.cancel}}">Cancel</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

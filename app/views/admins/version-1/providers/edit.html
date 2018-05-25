@@ -8,19 +8,15 @@
 {% include "../includes/_page_scripts_providers.html" %}
 {% endblock %}
 
-{% block page_styles %}
-<style type="text/css">
-.lgfs-supplier-number {
-    text-transform: uppercase;
-}
-</style>
-{% endblock %}
+{#% block page_styles %}
+
+{% endblock %#}
 
 {% block content %}
 
 <main id="content" role="main">
 
-    {#% include "../includes/_banner.html" %#}
+    {% include "../includes/_banner.html" %}
 
     <div class="grid-row">
         <div class="column-full">
@@ -255,7 +251,7 @@
 
                     </form>
 
-                    {#% include "./_help.html" %#}
+                    {% include "../includes/_help.html" %}
 
                 <!-- </div>
 

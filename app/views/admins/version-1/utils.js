@@ -95,6 +95,35 @@ module.exports = {
 
 	getUser: function(user_id) {
 		
+		// var data = [{
+		// 	id: 3072,
+		// 	name: "1 Law",
+		// 	users: [{
+		// 		id: 1,
+		// 		firstname: "Simon",
+		// 		Lastname: "Whatley",
+		// 		email: "simon.whatley@example.com",
+		// 		type: "admin",
+		// 		role: "admin",
+		// 		notifications: true,
+		// 		status: "active"
+		// 	}]
+		// }];
+
+		var data = {
+				id: 1,
+				supplier_number: "123SW",
+				first_name: "Simon",
+				last_name: "Whatley",
+				email: "simon.whatley@example.com",
+				type: "admin",
+				role: "admin",
+				notifications: true,
+				status: "active"
+			};
+
+		return data;
+
 	}
 
 }

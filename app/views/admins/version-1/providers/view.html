@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 <main id="content" role="main">
 
-    {#% include "../includes/_banner.html" %#}
+    {% include "../includes/_banner.html" %}
 
     {# include "./includes/navigation.html" #}
 
@@ -150,25 +150,38 @@ $(document).ready(function(){
                         <tr>
                             <th scope="col">Firstname</th>
                             <th scope="col">Lastname</th>
-                            <th scope="col">Supplier number</th>
                             <th scope="col">Email</th>
+                            <th scope="col">Supplier number</th>
                             <th scope="col">Notifications</th>
                             <th scope="col">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {% if provider.users.length > 0 -%}
                         {% for user in provider.users %}
                         <tr>
                             <td>{{user.first_name}}</td>
                             <td>{{user.last_name}}</td>
-                            <td>{{user.account_number}}</td>
                             <td>{{user.email_address}}</td>
+                            <td>{{user.supplier_number}}</td>
                             <td>{% if user.notifications == true -%}On{% else %}Off{%- endif %}</td>
                             <td>
                                 <a href="{{links.user.edit}}/{{user.id}}">Change</a>
                             </td>
                         </tr>
                         {% endfor %}
+                        {% else %}
+                        <tr>
+                            <td>Simon</td>
+                            <td>Whatley</td>
+                            <td>simon.whatley@example.com</td>
+                            <td>123SW</td>
+                            <td>On</td>
+                            <td>
+                                <a href="{{links.user.edit}}/1">Change</a>
+                            </td>
+                        </tr>
+                        {%- endif %}
                     </tbody>
                 </table>
             </div>

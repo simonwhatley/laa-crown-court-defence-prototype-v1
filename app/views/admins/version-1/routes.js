@@ -150,7 +150,7 @@ router.get('/provider/:provider_id([0-9]+)/', function (req, res) {
       	  },
       	  user: {
       	  	'add' : req.baseUrl + '/provider/' + req.params.provider_id + '/user/add',
-      	  	'edit' : req.baseUrl + '/provider/' + req.params.provider_id + '/user/'
+      	  	'edit' : req.baseUrl + '/provider/' + req.params.provider_id + '/user'
       	  },
           'back': req.baseUrl + '/providers'
       },
@@ -221,18 +221,29 @@ router.get('/provider/:provider_id([0-9]+)/users', function (req, res) {
 });
 
 // Route for single user
-router.get('/provider/:provider_id([0-9]+)/user/:user_id([0-9]+)/view', function (req, res) {
+router.get('/provider/:provider_id([0-9]+)/user/:user_id([0-9]+)/', function (req, res) {
 
-  req.session.data.user = utils.getUser(req.params.user_id)
+  if (typeof(req.session.data.user) === 'undefined') {
+    var user = utils.getUser(req.params.user_id);
+  }
+  else {
+
+    if (parseInt(req.params.user_id) === parseInt(req.session.data.user.id)) {
+      var user = req.session.data.user;
+    }
+    else {
+      var user = utils.getUser(req.params.user_id);
+    }
+  }
 
   res.render(`${req.feature}/${req.version}/providers/users/view`,
     {
       links: {
-          'save' : req.baseUrl + '/provider/' + req.params.provider_id + '/',
-          'cancel': req.baseUrl + '/provider/' + req.params.provider_id + '/',
+          'edit' : req.baseUrl + '/provider/' + req.params.provider_id + '/user/' + req.params.user_id + '/edit',
           'back': req.baseUrl + '/provider/' + req.params.provider_id + '/'
       },
-      user: req.session.data.user
+      provider: utils.getProvider(req.params.provider_id),
+      user: user
     });
 
 });
@@ -256,15 +267,28 @@ router.get('/provider/:provider_id([0-9]+)/user/add', function (req, res) {
 // Route for single user
 router.get('/provider/:provider_id([0-9]+)/user/:user_id([0-9]+)/edit', function (req, res) {
 
+  if (typeof(req.session.data.user) === 'undefined') {
+    var user = utils.getUser(req.params.user_id);
+  }
+  else {
+
+    if (parseInt(req.params.user_id) === parseInt(req.session.data.user.id)) {
+      var user = req.session.data.user;
+    }
+    else {
+      var user = utils.getUser(req.params.user_id);
+    }
+  }
+
   res.render(`${req.feature}/${req.version}/providers/users/edit`,
     {
       links: {
-          'save' : req.baseUrl + '/provider/' + req.params.provider_id + '/',
-          'cancel': req.baseUrl + '/provider/' + req.params.provider_id + '/',
-          'back': req.baseUrl + '/provider/' + req.params.provider_id + '/'
-      }
-      // ,
-      // user: utils.getUser(req.params.user_id)
+          'save' : req.baseUrl + '/provider/' + req.params.provider_id + '/user/' + req.params.user_id,
+          'cancel': req.baseUrl + '/provider/' + req.params.provider_id + '/user/' + req.params.user_id,
+          'back': req.baseUrl + '/provider/' + req.params.provider_id + '/user/' + req.params.user_id
+      },
+      provider: utils.getProvider(req.params.provider_id),
+      user: user
     });
 
 });

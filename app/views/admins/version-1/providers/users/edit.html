@@ -1,0 +1,190 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "../../includes/_page_scripts_users.html" %}
+{% endblock %}
+
+{#% block page_styles %}
+
+{% endblock %#}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    {% include "../../includes/_banner.html" %}
+
+    <div class="grid-row">
+        <div class="column-full">
+
+            <a class="link-back" href="{{links.back}}">Back</a>
+
+            <h1 class="heading-xlarge">
+                <span class="heading-secondary">{{provider.provider_name}}</span>
+                {{user.first_name}} {{user.last_name}}
+            </h1>
+
+            <!-- <div class="grid-row">
+                <div class="column-full"> -->
+
+                    <h2 class="heading-large">
+                        Edit user details
+                    </h2>
+
+                    <form class="form" method="post">
+                        <input type="hidden" name="provider[id]" value="{{provider.id}}">
+                        <input type="hidden" name="user[id]" value="{{user.id}}">
+
+                        <div class="form-section">
+
+                            <div class="form-group" data-required="true" data-error="Add a first name">
+                                <label class="form-label-bold" for="first-name">
+                                    First name
+                                </label>
+                                <input class="form-control form-control-1-2" id="first-name" type="text" name="user[first_name]" value="{{user.first_name}}" autocomplete="off" autocapitalize="off">
+                            </div>
+
+                            <div class="form-group" data-required="true" data-error="Add a last name">
+                                <label class="form-label-bold" for="last-name">
+                                    Last name
+                                </label>
+                                <input class="form-control form-control-1-2" id="last-name" type="text" name="user[last_name]" value="{{user.last_name}}" autocomplete="off" autocapitalize="off">
+                            </div>
+
+                            <div class="form-group" data-required="true" data-error="Add an email address">
+                                <label class="form-label-bold" for="email-address">
+                                    Email address
+                                </label>
+                                <input class="form-control form-control-1-2" id="email-address" type="text" name="user[email]" value="{{user.email}}" autocomplete="off" autocapitalize="off">
+                            </div>
+
+                            <div class="form-group" data-required="true" data-error="Add a supplier number">
+                                <label class="form-label-bold" for="supplier-number">
+                                    Supplier number
+                                    <span class="form-hint">For example, 123AB</span>
+                                </label>
+                                <input class="form-control form-control-1-4 agfs-supplier-number" id="supplier-number" type="text" name="user[supplier_number]" value="{{user.supplier_number}}" pattern="[0-9A-Z]{5}" autocomplete="off" autocapitalize="on">
+                            </div>
+
+
+                            <div class="form-group" data-required="true" data-error="Choose a user role">
+
+                                <fieldset>
+
+                                    <legend class="form-label-bold">
+                                        User role
+                                        <!-- <span class="form-hint">Something...</span> -->
+                                    </legend>
+
+                                    <div class="multiple-choice">
+                                        <input id="user-role-user" class="user-role" type="radio" name="user[role]" value="user" {% if user.role == 'user' -%}checked="checked"{%- endif %}>
+                                        <label for="user-role-user">User</label>
+                                    </div>
+
+                                    <div class="multiple-choice">
+                                        <input id="user-role-admin" class="user-role" type="radio" name="user[role]" value="admin" {% if user.role == 'admin' -%}checked="checked"{%- endif %}>
+                                        <label for="user-role-admin">Admin</label>
+                                    </div>
+
+                                </fieldset>
+
+                            </div>
+
+                            <div class="form-group" data-required="true" data-error="Choose a user type">
+
+                                <fieldset>
+
+                                    <legend class="form-label-bold">
+                                        User type
+                                        <!-- <span class="form-hint">Something...</span> -->
+                                    </legend>
+
+                                    <div class="multiple-choice">
+                                        <input id="user-type-clerk" class="user-type" type="radio" name="user[type]" value="admin" {% if user.type == 'admin' -%}checked="checked"{%- endif %}>
+                                        <label for="user-type-clerk">Clerk or administrator</label>
+                                    </div>
+
+                                    <div class="multiple-choice">
+                                        <input id="user-type-advocate" class="user-type" type="radio" name="user[type]" value="advocate" {% if user.type == 'advocate' -%}checked="checked"{%- endif %}>
+                                        <label for="user-type-advocate">Advocate</label>
+                                    </div>
+
+                                </fieldset>
+
+                            </div>
+
+                            <div class="form-group" data-required="true" data-error="Choose a notification option">
+
+                                <fieldset>
+
+                                    <legend class="form-label-bold">
+                                        Get email notifications
+                                        <span class="form-hint">This allows the <abbr onclick="" title="Legal Aid Agency" tabindex="-1">LAA</abbr> to message the user on claims they have created</span>
+                                    </legend>
+
+                                    <div class="multiple-choice">
+                                        <input id="notifications-on" class="notifications" type="radio" name="user[notifications]" value="on" {% if user.notifications == true or user.notifications == 'on' -%}checked="checked"{%- endif %}>
+                                        <label for="notifications-on">On</label>
+                                    </div>
+
+                                    <div class="multiple-choice">
+                                        <input id="notifications-off" class="notifications" type="radio" name="user[notifications]" value="off" {% if user.notifications == false or user.notifications == 'off' -%}checked="checked"{%- endif %}>
+                                        <label for="notifications-off">Off</label>
+                                    </div>
+
+                                </fieldset>
+
+                            </div>
+
+                            <div class="form-group" data-required="true" data-error="Choose an account status">
+
+                                <fieldset>
+
+                                    <legend class="form-label-bold">
+                                        Account status
+                                        <!-- <span class="form-hint">Something...</span> -->
+                                    </legend>
+
+                                    <div class="multiple-choice">
+                                        <input id="status-active" class="status" type="radio" name="user[status]" value="active" {% if user.status == 'active' -%}checked="checked"{%- endif %}>
+                                        <label for="status-active">Active</label>
+                                    </div>
+
+                                    <div class="multiple-choice">
+                                        <input id="status-disabled" class="status" type="radio" name="user[status]" value="disabled" {% if user.status == 'disabled' -%}checked="checked"{%- endif %}>
+                                        <label for="status-disabled">Disabled</label>
+                                    </div>
+
+                                </fieldset>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-group form-buttons">
+                                <input type="submit" class="button" value="Save details" formaction="{{links.save}}">
+                                <a id="cancel" class="link-secondary" href="{{links.cancel}}">Cancel</a>
+                            </div>
+                        </div>
+
+                        {#% include "./_form_actions.html" %#}
+
+                    </form>
+
+                    {% include "../../includes/_help.html" %}
+
+                <!-- </div>
+
+            </div> -->
+
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}
