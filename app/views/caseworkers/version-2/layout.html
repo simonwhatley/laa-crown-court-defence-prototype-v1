@@ -22,11 +22,13 @@
           {% endblock %}
         </a>
         
+        {% if proposition_links != "hide" -%}
         <ul id="proposition-links">
-          <li><a href="">Claims</a></li>
-          <li><a href="">Settings</a></li>
-          <li><a href="../sign-in">Sign out</a></li>
+          <li><a href="./claims">Claims</a></li>
+          <li><a href="#noop">Settings</a></li>
+          <li><a href="./sign-in">Sign out</a></li>
         </ul>
+        {%- endif %}
         
       </nav>
     </div>
@@ -34,9 +36,9 @@
 
 {% endblock %}
 
-{% block header_class %}
+{% block header_class -%}
   with-proposition
-{% endblock %}
+{%- endblock %}
 
 {% block footer_support_links %}
   {% if useAutoStoreData %}
@@ -54,4 +56,5 @@
     {% block page_scripts %}{% endblock %}
   {% endblock %}
   <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+  <!-- {{data|dump|safe}} -->
 {% endblock %}
