@@ -1,0 +1,64 @@
+<table class="summary">
+    <tbody>
+
+        {% for defendant in claim.defendants %}
+
+        <tr>
+            <th class="bold" scope="row">
+                Defendant {{loop.index}}
+            </th>
+            <td>
+                <table class="nested-summary">
+                    <tbody>
+                        <tr>
+                            <th class="bold" scope="row">
+                                First name
+                            </th>
+                            <td>{{defendant.first_name}}</td>
+                        </tr>
+                        <tr>
+                            <th class="bold" scope="row">
+                                Last name
+                            </th>
+                            <td>{{defendant.last_name}}</td>
+                        </tr>
+                        <tr>
+                            <th class="bold" scope="row">
+                                Date of birth
+                            </th>
+                            <td>
+                                {{defendant.date_of_birth|date('DD/MM/YYYY')}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="bold" scope="row">
+                                Order for judicial apportionment
+                            </th>
+                            <td>{{defendant.judicial_apportionment|capitalize}}</td>
+                        </tr>
+                        {% for representation_order in defendant.representation_orders %}
+                        <tr>
+                            <th class="bold" scope="row">
+                                Representation order date
+                            </th>
+                            <td>
+                                {{representation_order.representation_order_date|date('DD/MM/YYYY')}}
+                            </td>
+                        </tr>
+                        {% if claim.case_type != 'breach_of_crown_court_order' -%}
+                        <tr>
+                            <th class="bold" scope="row">
+                                <abbr title="means assessment administration tool">MAAT</abbr> reference
+                            </th>
+                            <td>{{representation_order.maat_reference}}</td>
+                        </tr>
+                        {%- endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>

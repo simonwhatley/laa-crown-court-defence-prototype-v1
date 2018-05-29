@@ -1,0 +1,22 @@
+<table class="summary">
+    <tbody>
+        <tr>
+            <th class="bold" scope="row">
+                Certified by
+            </th>
+            <td>{{claim.certification.certified_by}}</td>
+        </tr>
+        <tr>
+            <th class="bold" scope="row">
+                Date certified
+            </th>
+            <td>{{claim.certification.certified_date|date('DD/MM/YYYY')}} at {{claim.certification.certified_date|date('hh:mm a')}}</td>
+        </tr>
+        <tr>
+            <th class="bold" scope="row">
+                Reason
+            </th>
+            <td>{{claim.certification.reason}}</td>
+        </tr>
+    </tbody>
+</table>

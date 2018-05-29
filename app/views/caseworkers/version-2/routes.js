@@ -81,7 +81,9 @@ router.get('/claims', function(req, res) {
   res.render(`${req.feature}/${req.version}/claims/list`,
     {
       links: {
-      	  
+      	  claim: {
+      	  	'view': req.baseUrl + '/claim'
+      	  }
       },
       pagination: {
         total_count: count,
@@ -106,9 +108,13 @@ router.get('/claim/:claim_id([0-9]+)', function(req, res) {
     res.render(`${req.feature}/${req.version}/claims/detail`,
         {
             links: {
-                
+      	  		'back': req.baseUrl + '/claims'
             },
-            claim: []
+            claim: utils.getClaim(req.param.claim_id),
+            reasons: {
+            	'rejected': utils.getRejectReasons(),
+            	'refused' : utils.getRefusalReasons()
+            }
         });
 });
 

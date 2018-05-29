@@ -1,4 +1,6 @@
 var claims = require('./data/claims.json');
+var refusalReasons = require('./data/refusal_reasons.json');
+var rejectReasons = require('./data/reject_reasons.json');
 
 module.exports = {
 
@@ -71,14 +73,66 @@ module.exports = {
 
 	getClaim: function(claim_id) {
 
-		if (!claim_id) return null
+		// if (!claim_id) return null
 
-		var claimObj = claims.filter( function(obj) {
-			return (obj.id == claim_id);
-		});
+		// var claimObj = claims.filter( function(obj) {
+		// 	return (obj.id == claim_id);
+		// });
 
-		return claimObj[0];
+		// return claimObj[0];
 
+		var data =  [
+    {
+      "id": 12345,
+      "case_number": "T20180101",
+      "court": "Cardiff",
+      "fee_scheme": "agfs",
+      "fee_scheme_version": 9,
+      "bill_type": "advocate_final",
+      "case_type": "trial",
+      "fee_type": "graduated",
+      "date_submitted": "2018-02-01T10:30:00.000Z",
+      "status": "allocated",
+      "reference_number": "HR/PS/72852849",
+      "total_amount": 99999,
+      "defendants": [
+        {
+          "urn": 12345,
+          "first_name": "Philippine",
+          "last_name": "Struttman",
+          "date_of_birth": "1973-06-05T00:00:00.000Z",
+          "judicial_apportionment": "yes",
+          "representation_orders": [
+            {
+              "maat_reference": 72852849,
+              "representation_order_date": "2017-09-24T00:00:00.000Z"
+            }
+          ]
+        }
+      ],
+      "certification": {
+        "certified_by": "Rufus Titterington",
+        "certified_date": "2018-02-01T10:30:00.000Z",
+        "reason": "I attended the main hearing (1st day of trial)"
+      },
+      "instructed_advocate": {
+        "code": "001PY",
+        "first_name": "Horace",
+        "last_name": "Rumpole"
+      }
+    }
+  ];
+
+		return data[0];
+
+	},
+
+	getRefusalReasons: function() {
+		return refusalReasons;
+	},
+
+	getRejectReasons: function() {
+		return rejectReasons;
 	}
 
 }
