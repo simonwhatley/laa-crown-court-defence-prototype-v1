@@ -1,0 +1,28 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Notice of 1st fixed/warned issued
+			</th>
+			<td>{% if claim.notice_of_fixed_warned_trial_issued -%}{{claim.notice_of_fixed_warned_trial_issued|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				1st fixed/warned trial
+			</th>
+			<td>{% if claim.fixed_warned_trial -%}{{claim.fixed_warned_trial|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Case cracked on
+			</th>
+			<td>{% if claim.case_cracked_on -%}{{claim.case_cracked_on|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Case cracked in
+			</th>
+			<td>{% if claim.case_cracked_in -%}{{claim.case_cracked_in|replace('_',' ')|capitalize}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+	</tbody>
+</table>

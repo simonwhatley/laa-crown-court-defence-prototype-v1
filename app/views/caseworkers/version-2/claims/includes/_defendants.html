@@ -3,6 +3,7 @@
 
         {% for defendant in claim.defendants %}
 
+        {% if claim.defendants.length > 1 -%}
         <tr>
             <th class="bold" scope="row">
                 Defendant {{loop.index}}
@@ -10,6 +11,8 @@
             <td>
                 <table class="nested-summary">
                     <tbody>
+        {%- endif %}
+        
                         <tr>
                             <th class="bold" scope="row">
                                 First name
@@ -39,7 +42,7 @@
                         {% for representation_order in defendant.representation_orders %}
                         <tr>
                             <th class="bold" scope="row">
-                                Representation order date
+                                Representation order date {% if defendant.representation_orders.length > 1 -%}{{loop.index}}{%- endif %}
                             </th>
                             <td>
                                 {{representation_order.representation_order_date|date('DD/MM/YYYY')}}
@@ -48,16 +51,19 @@
                         {% if claim.case_type != 'breach_of_crown_court_order' -%}
                         <tr>
                             <th class="bold" scope="row">
-                                <abbr title="means assessment administration tool">MAAT</abbr> reference
+                                <abbr onclick="" title="Means Assessment Administration Tool" tabindex="-1">MAAT</abbr> reference {% if defendant.representation_orders.length > 1 -%}{{loop.index}}{%- endif %}
                             </th>
                             <td>{{representation_order.maat_reference}}</td>
                         </tr>
                         {%- endif %}
                         {% endfor %}
+
+         {% if claim.defendants.length > 1 -%}
                     </tbody>
                 </table>
             </td>
         </tr>
+        {%- endif %}
 
         {% endfor %}
     </tbody>

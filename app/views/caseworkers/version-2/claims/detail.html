@@ -102,7 +102,7 @@
 				        <h3 class="heading-medium">
 				        	Cracked before retrial details
 				        </h3>
-				        {% include "./includes/_cracked_before_rerial_details.html" %}
+				        {% include "./includes/_cracked_before_retrial_details.html" %}
 			        {%- endif %}
 
 			        <h3 class="heading-medium">
@@ -117,7 +117,7 @@
 			        <h3 class="heading-medium">
 			        	Offence details
 			        </h3>
-			        {% if claim.offence.length -%}
+			        {% if claim.offence.class.length -%}
 			        	{% include "./includes/_offence_details.html" %}
 			        {% else %}
 			        	<p>There are no offence details for this claim.</p>
@@ -160,25 +160,27 @@
 			        <h3 class="heading-medium">
 			        	Warrant details
 			        </h3>
-			        {% if claim.warrant_details.length -%}
+			        {% if claim.warrants.length -%}
 			        	{% include "./includes/_warrant_details.html" %}
 			        {% else %}
 			        	<p>There are no warrant details for this claim.</p>
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
-			        	Disbursements
-			        </h3>
-			        {% if claim.miscellaneous_fees.length -%}
-			        	{% include "./includes/_disbursements.html" %}
-			        {% else %}
-			        	<p>There are no disbursements for this claim.</p>
+			        {% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
+				        <h3 class="heading-medium">
+				        	Disbursements
+				        </h3>
+				        {% if claim.disbursements.length -%}
+				        	{% include "./includes/_disbursements.html" %}
+				        {% else %}
+				        	<p>There are no disbursements for this claim.</p>
+				        {%- endif %}
 			        {%- endif %}
 
 			        <h3 class="heading-medium">
 			        	Travel expenses
 			        </h3>
-			        {% if claim.miscellaneous_fees.length -%}
+			        {% if claim.expenses.length -%}
 			        	{% include "./includes/_travel_expenses.html" %}
 			        {% else %}
 			        	<p>There are no travel expenses for this claim.</p>
@@ -187,7 +189,7 @@
 			        <h3 class="heading-medium">
 			        	Supporting evidence
 			        </h3>
-			        {% if claim.miscellaneous_fees.length -%}
+			        {% if claim.evidence.checklist.length -%}
 			        	{% include "./includes/_supporting_evidence.html" %}
 			        {% else %}
 			        	<p>There is no supporting evidence for this claim.</p>
