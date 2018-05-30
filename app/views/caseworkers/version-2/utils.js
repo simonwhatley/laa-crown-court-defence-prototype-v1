@@ -197,7 +197,25 @@ module.exports = {
 					        "electronic_evidence": "no",
 					        "checklist": ["representation_order", "invoices"]
 					    },
-					    "additional_information": ""
+					    "additional_information": "",
+				        "messages": [
+				            {
+				                "message_id": 61347,
+				                "timestamp": "2018-03-29T10:50:00.000Z",
+				                "message": "Your claim has been submitted",
+				                "user_id": 1,
+				                "user_name": "System",
+				                "type": "system"
+				            },
+				            {
+				                "message_id": 69230,
+				                "timestamp": "2018-03-29T10:53:00.000Z",
+				                "message": "Your claim has been allocated",
+				                "user_id": 1,
+				                "user_name": "System",
+				                "type": "system"
+				            }
+				        ],
 					}];
 
 		return data[0];
