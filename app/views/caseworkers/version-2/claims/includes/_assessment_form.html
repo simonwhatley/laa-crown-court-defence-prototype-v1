@@ -50,6 +50,7 @@
 										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-miscellaneous-fees" name="claim[totals][assessed][miscellaneous_fees]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.miscellaneous_fees|numeral('0.00')}}">
 										</td>
 									</tr>
+									{% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
 									<tr>
 										<td aria-label="Miscellaneous fees" scope="row">
 											<label class="form-label" for="assessment-decision-authorised-disbursements">Disbursements</label>
@@ -62,6 +63,7 @@
 										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-disbursements" name="claim[totals][assessed][disbursements]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.disbursements|numeral('0.00')}}">
 										</td>
 									</tr>
+									{%- endif %}
 									<tr>
 										<td aria-label="Travel expenses" scope="row">
 											<label class="form-label" for="assessment-decision-authorised-travel-expenses">Travel expenses</label>
