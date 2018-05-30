@@ -1,3 +1,5 @@
+{#{claim.expenses|dump|safe}#}
+
 <table class="summary">
 	<tbody>
 		
@@ -46,7 +48,7 @@
 							<th class="bold" scope="row">
 								Distance
 							</th>
-							<td>{% for distance in expense.distance -%}{{distance}}{%- endfor %}</td>
+							<td>{% for distance in expense.distance -%}{{distance}} miles{%- endfor %}</td>
 						</tr>
 						{%- endif %}
 						{% if expense.type in ["time"] -%}
