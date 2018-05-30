@@ -1,0 +1,221 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	<!-- <div class="grid-row">
+    	<div class="column-full"> -->
+
+            <a class="link-back" href="{{links.back}}">Back</a>
+
+			<!-- <h1 class="heading-xlarge">
+		      Claim {{claim.id}}
+		    </h1> -->
+
+		    {% include "./includes/_overview.html" %}
+
+		    <div class="grid-row">
+				<div class="column-full">
+
+					<h2 class="heading-large">
+			            Claim messages
+			        </h2>
+
+			        {% include "./includes/_messages.html" %}
+
+				</div>
+			</div>
+
+		    <div class="grid-row">
+				<div class="column-full">
+
+					<h2 class="heading-large">
+			            Assessment details
+			        </h2>
+
+			        {% if claim.status == 'allocated' -%}
+			        	{% include "./includes/_assessment_form.html" %}
+			        {%- endif %}
+
+			        {% if claim.status in ['authorised','part_authorised','rejected','refused'] -%}
+			        	{% include "./includes/_assessment_details.html" %}
+			        {%- endif %}
+
+				</div>
+			</div>
+
+	    	<div class="grid-row">
+				<div class="column-full">
+
+			        <h2 class="heading-large">
+			            Claim details
+			        </h2>
+
+			        <h3 class="heading-medium">
+			            Certification
+			        </h3>
+
+			        {% include "./includes/_certification.html" %}
+
+			        {% if claim.bill_type == 'litigator_transfer' -%}
+				        <h3 class="heading-medium">
+				        	Transfer details
+				        </h3>
+				        {% include "./includes/_transfer_details.html" %}
+				    {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Case details
+			        </h3>
+			        {% include "./includes/_case_details.html" %}
+
+			        {% if claim.bill_type in ['advocate_final','advocate_interim'] -%}
+
+				        {% if claim.case_type in ['trial','retrial'] -%}
+					        <h3 class="heading-medium">
+					        	Trial details
+					        </h3>
+				        	{% include "./includes/_trial_details.html" %}
+				        {%- endif %}
+
+				        {% if claim.case_type == 'retrial' -%}
+					        <h3 class="heading-medium">
+					        	Retrial details
+					        </h3>
+				        	{% include "./includes/_retrial_details.html" %}
+				        {%- endif %}
+
+				        {% if claim.case_type == 'cracked_trial' -%}
+					        <h3 class="heading-medium">
+					        	Cracked trial details
+					        </h3>
+				        	{% include "./includes/_cracked_trial_details.html" %}
+				        {%- endif %}
+
+				        {% if claim.case_type == 'cracked_before_retrial' -%}
+					        <h3 class="heading-medium">
+					        	Cracked before retrial details
+					        </h3>
+					        {% include "./includes/_cracked_before_retrial_details.html" %}
+				        {%- endif %}
+
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Defendant details
+			        </h3>
+			        {% if claim.defendants.length -%}
+			        	{% include "./includes/_defendants.html" %}
+			        {% else %}
+			        	<p>There are no defendants for this claim.</p>
+			        {%- endif %}
+
+			        {% if claim.fee_type == 'graduated' -%}
+
+				        <h3 class="heading-medium">
+				        	Offence details
+				        </h3>
+				        {% if claim.offence.class.length -%}
+				        	{% include "./includes/_offence_details.html" %}
+				        {% else %}
+				        	<p>There are no offence details for this claim.</p>
+				        {%- endif %}
+
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			            {% if claim.fee_type.length -%}
+			            	{{claim.fee_type|capitalize}} fees
+			            {% else %}
+			            	Fees
+			            {%- endif %}
+			        </h3>
+			        {% if claim.fees.length -%}
+
+			        	{% if claim.fee_type == 'fixed' -%}
+			        		{% include "./includes/_fixed_fees.html" %}
+			        	{% elif claim.fee_type == 'graduated' -%}
+			        		{% include "./includes/_graduated_fees.html" %}
+			        	{% elif claim.fee_type == 'interim' -%}
+			        		{% include "./includes/_interim_fees.html" %}
+			        	{% elif claim.fee_type == 'transfer' -%}
+			        		{% include "./includes/_transfer_fees.html" %}
+			        	{% else %}
+			        		<p>There are no fees for this claim.</p>
+			        	{%- endif %}
+
+			        {% else %}
+			        	<p>There are no {{claim.fee_type|lower}} fees for this claim.</p>
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Miscellaneous fees
+			        </h3>
+			        {% if claim.miscellaneous_fees.length -%}
+			        	{% include "./includes/_miscellaneous_fees.html" %}
+			        {% else %}
+			        	<p>There are no miscellaneous fees for this claim.</p>
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Warrant details
+			        </h3>
+			        {% if claim.warrants.length -%}
+			        	{% include "./includes/_warrant_details.html" %}
+			        {% else %}
+			        	<p>There are no warrant details for this claim.</p>
+			        {%- endif %}
+
+			        {% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
+				        <h3 class="heading-medium">
+				        	Disbursements
+				        </h3>
+				        {% if claim.disbursements.length -%}
+				        	{% include "./includes/_disbursements.html" %}
+				        {% else %}
+				        	<p>There are no disbursements for this claim.</p>
+				        {%- endif %}
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Travel expenses
+			        </h3>
+			        {% if claim.expenses.length -%}
+			        	{% include "./includes/_travel_expenses.html" %}
+			        {% else %}
+			        	<p>There are no travel expenses for this claim.</p>
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Supporting evidence
+			        </h3>
+			        {% if claim.evidence.checklist.length -%}
+			        	{% include "./includes/_supporting_evidence.html" %}
+			        {% else %}
+			        	<p>There is no supporting evidence for this claim.</p>
+			        {%- endif %}
+
+			        <h3 class="heading-medium">
+			        	Additional information
+			        </h3>
+			        {% if claim.additional_information.length -%}
+			        	{% include "./includes/_additional_information.html" %}
+			        {% else %}
+			        	<p>There is no additional information for this claim.</p>
+			        {%- endif %}
+
+				</div>
+			</div>
+
+		<!-- </div>
+	</div> -->
+</main>
+
+{% endblock %}

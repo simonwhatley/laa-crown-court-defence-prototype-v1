@@ -1,0 +1,71 @@
+<div class="grid-row">
+    <div class="column-full">
+
+        <!-- <h2 class="heading-medium">
+            Messages
+        </h2> -->
+
+        <div class="messages-container no-print">
+            <div class="messages-list">
+
+                {% for message in claim.messages -%}
+
+                {% if previous_date != message.timestamp | date('DD/MM/YYYY') -%}
+
+                <fieldset class="single-date">
+                    <legend class="visually-hidden">
+                        {{ message.timestamp | date('DD/MM/YYYY') }}
+                    </legend>
+                    <div class="event-date">
+                        {{ message.timestamp | date('DD/MM/YYYY') }}
+                    </div>
+
+                {%- endif %}
+
+                    <div class="grid-row {% if message.type == 'system' -%}history{% else %}message{%- endif %}" id="message_{{message.message_id}}">
+                        {% if message.type in ['caseworker','system'] -%}<div class="column-one-third">&nbsp;</div>{%- endif %}
+                        <div class="column-two-thirds">
+                            <div class="{% if message.type == 'provider' -%}message-left{% else %}message-right{%- endif %}">
+                                <div class="message-container">
+                                    <div class="message-body">
+                                        <p>
+                                            {{ message.message | safe }}
+                                        </p>
+                                        <span class="message-audit">
+                                            {{ message.user_name }} at {{ message.timestamp | date('hh:mm') }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% if message.type == 'provider' -%}<div class="column-one-third">&nbsp;</div>{%- endif %}
+                    </div>
+                </fieldset>
+
+                {% set previous_date = message.timestamp | date('DD/MM/YYYY') %}
+
+                {%- endfor %}
+
+            </div>
+            <div class="messages-print-link">
+                <a href="#noop" target="_blank">
+                    Print all messages
+                </a>
+            </div>
+            <div class="message-status">
+                Status:
+                <span class="message-success">
+                </span>
+                <span class="message-error">
+                </span>
+            </div>
+        </div>
+
+        {% if claim.status != 'authorised' -%}
+
+        {% include "./_messages_form.html" %}
+
+        {%- endif %}
+
+    </div>
+</div>

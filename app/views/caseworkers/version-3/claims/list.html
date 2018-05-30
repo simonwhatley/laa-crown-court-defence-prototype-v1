@@ -1,0 +1,154 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	<div class="grid-row">
+    	<div class="column-full">
+
+			<h1 class="heading-xlarge">
+		      Claims
+		    </h1>
+
+		    {% include "../includes/_pagination_summary.html" %}
+
+            <div class="grid-row">
+                <div class="column-full">
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <!-- <th scope="col">#</th> -->
+                                    <th scope="col">
+                                        {% if not (data['sort'].length and data['order'].length) -%}
+                                            <a href="{{links.list}}?sort=bill_type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% elif data['sort'] == 'bill_type' and data['order'] == 'asc' %}
+                                            <a href="{{links.list}}?sort=bill_type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=bill_type&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %}
+                                            Bill type
+                                        </a>
+                                    </th>
+                                    <th scope="col">
+                                        {% if not (data['sort'].length and data['order'].length) -%}
+                                            <a href="{{links.list}}?sort=case_number&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% elif data['sort'] == 'case_number' and data['order'] == 'asc' %}
+                                            <a href="{{links.list}}?sort=case_number&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=case_number&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %}
+                                            Case number
+                                        </a>
+                                    </th>
+                                    {# <th scope="col">
+                                        {% if data['sort'] == 'type' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=type&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %}
+                                            Advocate / litigator
+                                        </a>
+                                    </th>#}
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'type' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=type&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            Defendants
+                                        <!-- </a> -->
+                                    </th>
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'scheme' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=scheme&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=scheme&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            Claimed
+                                        <!-- </a> -->
+                                    </th>
+                                    <th scope="col">
+                                        {% if not (data['sort'].length and data['order'].length) -%}
+                                            <a href="{{links.list}}?sort=case_type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% elif data['sort'] == 'case_type' and data['order'] == 'asc' %}
+                                            <a href="{{links.list}}?sort=case_type&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=case_type&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %}
+                                            Case type
+                                        </a>
+                                    </th>
+                                    <th scope="col">
+                                        {#% if data['sort'] == 'status' and data['order'] == 'asc' -%}
+                                            <a href="{{links.list}}?sort=status&amp;order=desc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {% else %}
+                                            <a href="{{links.list}}?sort=status&amp;order=asc&amp;limit={{data['limit']}}&amp;page={{data['page']}}">
+                                        {%- endif %#}
+                                            Date submitted
+                                        <!-- </a> -->
+                                    </th>
+                                    <th scope="col">
+                                        Messages
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for claim in claims %}
+
+                                <tr id="claim-{{claim.id}}">
+                                    <td aria-label="">{{claim.fee_scheme|upper}} {{claim.bill_type|capitalize}}</td>
+                                    <td aria-label="" scope="row">
+                                        <a href="{{links.claim.view}}/{{claim.id}}/">
+                                            {{claim.case_number}}
+                                        </a>
+                                        <br><span class="font-xsmall">{{claim.reference_number}}</span>
+                                    </td>
+                                    <th aria-label="">
+                                        {{claim.defendant}}
+                                    </th>
+                                    <!-- <td aria-label="">
+                                        
+                                    </td> -->
+                                    <td aria-label="">
+                                        &pound;{{claim.total_amount|numeral('0,0.00')}}
+                                    </td>
+                                    <td aria-label="">
+                                        {{claim.case_type|replace('_',' ')|capitalize}}
+                                    </td>
+                                    <td aria-label="">
+                                        {{claim.date_submitted|date('DD/MM/YYYY')}}
+                                    </td>
+                                    <td aria-label="View messages">
+                                        <a href="#noop">View<span class="visually-hidden"> messages</span></a>
+                                    </td>
+                                </tr>
+
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <br>
+
+                </div>
+            </div>
+
+            {% include "../includes/_pagination_limit.html" %}
+		
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

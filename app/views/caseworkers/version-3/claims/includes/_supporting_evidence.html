@@ -1,0 +1,36 @@
+<table class="summary">
+	<tbody>
+		{% if claim.bill_type == 'advocate_final' -%}
+		<tr>
+			<th class="bold" scope="row">
+				Will you be sending disk evidence for this claim?
+			</th>
+			<td>{% if claim.evidence.electronic_evidence == 'yes' -%}Yes{% else %}No{%- endif %}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Supporting evidence
+			</th>
+			<td>
+				<ul>
+					{% for evidence in claim.evidence.checklist -%}
+					<li><a href="#noop">{{evidence|replace('_','-')}}.pdf</a></li>
+					{%- endfor %}
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Supporting evidence checklist
+			</th>
+			<td>
+				<ul>
+					{% for evidence in claim.evidence.checklist -%}
+					<li>{{evidence|replace('_',' ')|capitalize}}</li>
+					{%- endfor %}
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>

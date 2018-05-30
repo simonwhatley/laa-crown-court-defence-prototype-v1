@@ -1,0 +1,42 @@
+<table class="summary">
+	<tbody>
+
+		{% for fee in claim.miscellaneous_fees %}
+
+        {% if claim.miscellaneous_fees.length > 1 -%}
+        <tr>
+            <th class="bold" scope="row">
+                Fee {{loop.index}}
+            </th>
+            <td>
+                <table class="nested-summary">
+                    <tbody>
+        {%- endif %}
+						<tr>
+							<th class="bold" scope="row">
+								Type of fee
+							</th>
+							<td>{{fee.type|replace('_',' ')|capitalize}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Date of hearing</th>
+							<td>{{fee.date_of_hearing|date('DD/MM/YYYY')}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>&pound;{{fee.net_amount|numeral('0,0.00')}}</td>
+						</tr>
+
+		{% if claim.miscellaneous_fees.length > 1 -%}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        {%- endif %}
+
+        {% endfor %}
+
+	</tbody>
+</table>

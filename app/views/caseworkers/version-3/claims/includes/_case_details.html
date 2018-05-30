@@ -1,0 +1,61 @@
+<table class="summary">
+    <tbody>
+        {% if claim.bill_type in ['advocate_final','advocate_interim'] -%}
+            <tr>
+                <th class="bold" scope="row">
+                    Instructed advocate
+                </th>
+                <td>{{claim['instructed_advocate']['first_name']}} {{claim['instructed_advocate']['last_name']}} ({{claim['instructed_advocate']['code']}})</td>
+            </tr>
+        {%- endif %}
+        {% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
+            <tr>
+                <th class="bold" scope="row">
+                    Supplier number
+                </th>
+                <td>{{claim['supplier_number']}}</td>
+            </tr>
+        {%- endif %}
+        <tr>
+            <th class="bold" scope="row">
+                Reference number
+            </th>
+            <td>{{claim['reference_number']}}</td>
+        </tr>
+        {% if claim['bill_type'] in ['advocate_final','litigator_final'] -%}
+        <tr>
+            <th class="bold" scope="row">
+                Case type
+            </th>
+            <td>{{claim['case_type']|replace('_',' ')|title}}</td>
+        </tr>
+        {%- endif %}
+        <tr>
+            <th class="bold" scope="row">
+                Court
+            </th>
+            <td>{{claim['court']|replace('_',' ')|title}}</td>
+        </tr>
+        <tr>
+            <th class="bold" scope="row">
+                Case number
+            </th>
+            <td>{{claim['case_number']|upper}}</td>
+        </tr>
+        {% if claim['transfer_court_option'] == 'yes' -%}
+        <tr>
+            <th class="bold" scope="row">
+                Transfer court
+            </th>
+            <td>{{claim['transfer_court']|replace('_',' ')|title}}</td>
+        </tr>
+        <tr>
+            <th class="bold" scope="row">
+                Transfer case number
+            </th>
+            <td>{{claim['transfer_case_number']|upper}}</td>
+        </tr>
+        {%- endif %}
+
+    </tbody>
+</table>
