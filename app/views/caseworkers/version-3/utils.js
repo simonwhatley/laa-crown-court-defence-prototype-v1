@@ -190,9 +190,97 @@ module.exports = {
 					            "type": "crown_court",
 					            "name": "Wolverhampton"
 					        },
-					        "distance": 32,
+					        "distance": 42,
 					        "distance_calculated": 32,
 					        "date_of_expense": "2018-01-02T00:00:00.000Z",
+					        "cost_per_mile": 0.25,
+					        "net_amount": 10.5,
+					        "vat_amount": 2.1,
+					        "additional_information": "Lorem ispum dolor sit emet"
+					    }, {
+					        "type": "car_travel",
+					        "reason": {
+					            "key": "court_hearing",
+					            "label": "Court hearing (Crown court)"
+					        },
+					        "origin": {
+					            "label": "Birmingham (B4 6QB)",
+					            "postcode": "B4 6QB",
+					            "supplier_number": "1K905R"
+					        },
+					        "destination": {
+					            "type": "crown_court",
+					            "name": "Wolverhampton"
+					        },
+					        "distance": 37,
+					        "distance_calculated": 32,
+					        "date_of_expense": "2018-01-03T00:00:00.000Z",
+					        "cost_per_mile": 0.25,
+					        "net_amount": 9.25,
+					        "vat_amount": 1.85,
+					        "additional_information": "Lorem ispum dolor sit emet"
+					    }, {
+					        "type": "car_travel",
+					        "reason": {
+					            "key": "court_hearing",
+					            "label": "Court hearing (Crown court)"
+					        },
+					        "origin": {
+					            "label": "Birmingham (B4 6QB)",
+					            "postcode": "B4 6QB",
+					            "supplier_number": "1K905R"
+					        },
+					        "destination": {
+					            "type": "crown_court",
+					            "name": "Wolverhampton"
+					        },
+					        "distance": 33,
+					        "distance_calculated": 32,
+					        "date_of_expense": "2018-01-04T00:00:00.000Z",
+					        "cost_per_mile": 0.25,
+					        "net_amount": 8.25,
+					        "vat_amount": 1.65,
+					        "additional_information": "Lorem ispum dolor sit emet"
+					    }, {
+					        "type": "car_travel",
+					        "reason": {
+					            "key": "court_hearing",
+					            "label": "Court hearing (Crown court)"
+					        },
+					        "origin": {
+					            "label": "Birmingham (B4 6QB)",
+					            "postcode": "B4 6QB",
+					            "supplier_number": "1K905R"
+					        },
+					        "destination": {
+					            "type": "crown_court",
+					            "name": "Wolverhampton"
+					        },
+					        "distance": 42,
+					        "distance_calculated": 32,
+					        "date_of_expense": "2018-01-05T00:00:00.000Z",
+					        "cost_per_mile": 0.25,
+					        "net_amount": 10.5,
+					        "vat_amount": 2.1,
+					        "additional_information": "Lorem ispum dolor sit emet"
+					    }, {
+					        "type": "car_travel",
+					        "reason": {
+					            "key": "court_hearing",
+					            "label": "Court hearing (Crown court)"
+					        },
+					        "origin": {
+					            "label": "Birmingham (B4 6QB)",
+					            "postcode": "B4 6QB",
+					            "supplier_number": "1K905R"
+					        },
+					        "destination": {
+					            "type": "crown_court",
+					            "name": "Wolverhampton"
+					        },
+					        "distance": 32,
+					        "distance_calculated": 32,
+					        "date_of_expense": "2018-01-06T00:00:00.000Z",
 					        "cost_per_mile": 0.25,
 					        "net_amount": 8,
 					        "vat_amount": 1.6,
@@ -214,7 +302,7 @@ module.exports = {
 					        },
 					        "distance": 32,
 					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
+					        "date_of_expense": "2018-01-07T00:00:00.000Z",
 					        "cost_per_mile": 0.25,
 					        "net_amount": 8,
 					        "vat_amount": 1.6,
@@ -236,7 +324,7 @@ module.exports = {
 					        },
 					        "distance": 32,
 					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
+					        "date_of_expense": "2018-01-08T00:00:00.000Z",
 					        "cost_per_mile": 0.25,
 					        "net_amount": 8,
 					        "vat_amount": 1.6,
@@ -258,7 +346,7 @@ module.exports = {
 					        },
 					        "distance": 32,
 					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
+					        "date_of_expense": "2018-01-09T00:00:00.000Z",
 					        "cost_per_mile": 0.25,
 					        "net_amount": 8,
 					        "vat_amount": 1.6,
@@ -280,7 +368,7 @@ module.exports = {
 					        },
 					        "distance": 32,
 					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
+					        "date_of_expense": "2018-01-10T00:00:00.000Z",
 					        "cost_per_mile": 0.25,
 					        "net_amount": 8,
 					        "vat_amount": 1.6,
@@ -302,95 +390,7 @@ module.exports = {
 					        },
 					        "distance": 32,
 					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
-					        "cost_per_mile": 0.25,
-					        "net_amount": 8,
-					        "vat_amount": 1.6,
-					        "additional_information": "Lorem ispum dolor sit emet"
-					    }, {
-					        "type": "car_travel",
-					        "reason": {
-					            "key": "court_hearing",
-					            "label": "Court hearing (Crown court)"
-					        },
-					        "origin": {
-					            "label": "Birmingham (B4 6QB)",
-					            "postcode": "B4 6QB",
-					            "supplier_number": "1K905R"
-					        },
-					        "destination": {
-					            "type": "crown_court",
-					            "name": "Wolverhampton"
-					        },
-					        "distance": 32,
-					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
-					        "cost_per_mile": 0.25,
-					        "net_amount": 8,
-					        "vat_amount": 1.6,
-					        "additional_information": "Lorem ispum dolor sit emet"
-					    }, {
-					        "type": "car_travel",
-					        "reason": {
-					            "key": "court_hearing",
-					            "label": "Court hearing (Crown court)"
-					        },
-					        "origin": {
-					            "label": "Birmingham (B4 6QB)",
-					            "postcode": "B4 6QB",
-					            "supplier_number": "1K905R"
-					        },
-					        "destination": {
-					            "type": "crown_court",
-					            "name": "Wolverhampton"
-					        },
-					        "distance": 32,
-					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
-					        "cost_per_mile": 0.25,
-					        "net_amount": 8,
-					        "vat_amount": 1.6,
-					        "additional_information": "Lorem ispum dolor sit emet"
-					    }, {
-					        "type": "car_travel",
-					        "reason": {
-					            "key": "court_hearing",
-					            "label": "Court hearing (Crown court)"
-					        },
-					        "origin": {
-					            "label": "Birmingham (B4 6QB)",
-					            "postcode": "B4 6QB",
-					            "supplier_number": "1K905R"
-					        },
-					        "destination": {
-					            "type": "crown_court",
-					            "name": "Wolverhampton"
-					        },
-					        "distance": 32,
-					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
-					        "cost_per_mile": 0.25,
-					        "net_amount": 8,
-					        "vat_amount": 1.6,
-					        "additional_information": "Lorem ispum dolor sit emet"
-					    }, {
-					        "type": "car_travel",
-					        "reason": {
-					            "key": "court_hearing",
-					            "label": "Court hearing (Crown court)"
-					        },
-					        "origin": {
-					            "label": "Birmingham (B4 6QB)",
-					            "postcode": "B4 6QB",
-					            "supplier_number": "1K905R"
-					        },
-					        "destination": {
-					            "type": "crown_court",
-					            "name": "Wolverhampton"
-					        },
-					        "distance": 32,
-					        "distance_calculated": 32,
-					        "date_of_expense": "2018-01-02T00:00:00.000Z",
+					        "date_of_expense": "2018-01-11T00:00:00.000Z",
 					        "cost_per_mile": 0.25,
 					        "net_amount": 8,
 					        "vat_amount": 1.6,
