@@ -74,35 +74,38 @@
 			        <h3 class="heading-medium">
 			        	Case details
 			        </h3>
-
 			        {% include "./includes/_case_details.html" %}
 
-			        {% if claim.case_type in ['trial','retrial'] -%}
-				        <h3 class="heading-medium">
-				        	Trial details
-				        </h3>
-			        	{% include "./includes/_trial_details.html" %}
-			        {%- endif %}
+			        {% if claim.bill_type in ['advocate_final','advocate_interim'] -%}
 
-			        {% if claim.case_type == 'retrial' -%}
-				        <h3 class="heading-medium">
-				        	Retrial details
-				        </h3>
-			        	{% include "./includes/_retrial_details.html" %}
-			        {%- endif %}
+				        {% if claim.case_type in ['trial','retrial'] -%}
+					        <h3 class="heading-medium">
+					        	Trial details
+					        </h3>
+				        	{% include "./includes/_trial_details.html" %}
+				        {%- endif %}
 
-			        {% if claim.case_type == 'cracked_trial' -%}
-				        <h3 class="heading-medium">
-				        	Cracked trial details
-				        </h3>
-			        	{% include "./includes/_cracked_trial_details.html" %}
-			        {%- endif %}
+				        {% if claim.case_type == 'retrial' -%}
+					        <h3 class="heading-medium">
+					        	Retrial details
+					        </h3>
+				        	{% include "./includes/_retrial_details.html" %}
+				        {%- endif %}
 
-			        {% if claim.case_type == 'cracked_before_retrial' -%}
-				        <h3 class="heading-medium">
-				        	Cracked before retrial details
-				        </h3>
-				        {% include "./includes/_cracked_before_retrial_details.html" %}
+				        {% if claim.case_type == 'cracked_trial' -%}
+					        <h3 class="heading-medium">
+					        	Cracked trial details
+					        </h3>
+				        	{% include "./includes/_cracked_trial_details.html" %}
+				        {%- endif %}
+
+				        {% if claim.case_type == 'cracked_before_retrial' -%}
+					        <h3 class="heading-medium">
+					        	Cracked before retrial details
+					        </h3>
+					        {% include "./includes/_cracked_before_retrial_details.html" %}
+				        {%- endif %}
+
 			        {%- endif %}
 
 			        <h3 class="heading-medium">
@@ -114,13 +117,17 @@
 			        	<p>There are no defendants for this claim.</p>
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
-			        	Offence details
-			        </h3>
-			        {% if claim.offence.class.length -%}
-			        	{% include "./includes/_offence_details.html" %}
-			        {% else %}
-			        	<p>There are no offence details for this claim.</p>
+			        {% if claim.fee_type == 'graduated' -%}
+
+				        <h3 class="heading-medium">
+				        	Offence details
+				        </h3>
+				        {% if claim.offence.class.length -%}
+				        	{% include "./includes/_offence_details.html" %}
+				        {% else %}
+				        	<p>There are no offence details for this claim.</p>
+				        {%- endif %}
+
 			        {%- endif %}
 
 			        <h3 class="heading-medium">
