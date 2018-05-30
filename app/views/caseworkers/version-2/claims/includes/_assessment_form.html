@@ -35,7 +35,7 @@
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-fees" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.fees|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-fees" name="claim[totals][assessed][fees]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.fees|numeral('0.00')}}">
 										</td>
 									</tr>
 									<tr>
@@ -47,19 +47,19 @@
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-miscellaneous-fees" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-miscellaneous-fees" name="claim[totals][assessed][miscellaneous_fees]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.miscellaneous_fees|numeral('0.00')}}">
 										</td>
 									</tr>
 									<tr>
 										<td aria-label="Miscellaneous fees" scope="row">
 											<label class="form-label" for="assessment-decision-authorised-disbursements">Disbursements</label>
 										</td>
-										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.disbursements|numeral('0,0.00')}}</td>
 										<td aria-label="Assessed amount" class="numeric">
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-disbursements" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-disbursements" name="claim[totals][assessed][disbursements]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.disbursements|numeral('0.00')}}">
 										</td>
 									</tr>
 									<tr>
@@ -71,7 +71,7 @@
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-travel-expenses" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.expenses|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-travel-expenses" name="claim[totals][assessed][expenses]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.expenses|numeral('0.00')}}">
 										</td>
 									</tr>
 									<tr>
@@ -83,7 +83,7 @@
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-net-amount" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.net_amount|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-net-amount" name="claim[totals][assessed][net_amount]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.net_amount|numeral('0.00')}}">
 										</td>
 									</tr>
 									<!-- TODO: If provider isn't VAT registered, hide line? -->
@@ -96,7 +96,7 @@
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-vat" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.vat_amount|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-vat" name="claim[totals][assessed][vat_amount]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.vat_amount|numeral('0.00')}}">
 										</td>
 									</tr>
 								</tbody>
@@ -110,7 +110,7 @@
 										    <span class="form-input-denote">
 										        &pound;
 										    </span>
-										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-gross-amount" name="" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.gross_amount|numeral('0,0.00')}}">
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-gross-amount" name="claim[totals][assessed][gross_amount]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.gross_amount|numeral('0.00')}}">
 										</td>
 									</tr>
 								</tfoot>
@@ -164,6 +164,7 @@
 										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-miscellaneous-fees" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
 										</td>
 									</tr>
+									{% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
 									<tr>
 										<td aria-label="Miscellaneous fees" scope="row">
 											<label class="form-label" for="assessment-decision-part-authorised-disbursements">Disbursements</label>
@@ -176,6 +177,7 @@
 										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-disbursements" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
 										</td>
 									</tr>
+									{%- endif %}
 									<tr>
 										<td aria-label="Travel expenses" scope="row">
 											<label class="form-label" for="assessment-decision-part-authorised-travel-expenses">Travel expenses</label>
