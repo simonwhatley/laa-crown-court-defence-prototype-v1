@@ -108,7 +108,11 @@
                                 <tr id="claim-{{claim.id}}">
                                     <td aria-label="">{{claim.fee_scheme|upper}} {{claim.bill_type|capitalize}}</td>
                                     <td aria-label="" scope="row">
-                                        <a href="{{links.claim.view}}/{{claim.id}}/">
+                                        {% if loop.index == 1 -%}
+                                            <a href="{{links.claim.view}}/{{claim.id}}/">
+                                        {% else %}
+                                            <a href="#noop-{{loop.index}}">
+                                        {%- endif %}
                                             {{claim.case_number}}
                                         </a>
                                         <br><span class="font-xsmall">{{claim.reference_number}}</span>

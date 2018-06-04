@@ -19,6 +19,8 @@
 		      Claim {{claim.id}}
 		    </h1> -->
 
+		    {#% include "./includes/_travel_expenses_error_message.html" %#}
+
 		    {% include "./includes/_overview.html" %}
 
 		    <div class="grid-row">
@@ -188,6 +190,7 @@
 			        	Travel expenses
 			        </h3>
 			        {% if claim.expenses.length -%}
+			        	{% include "./includes/_travel_expenses_error_message.html" %}
 			        	{% include "./includes/_travel_expenses.html" %}
 			        {% else %}
 			        	<p>There are no travel expenses for this claim.</p>

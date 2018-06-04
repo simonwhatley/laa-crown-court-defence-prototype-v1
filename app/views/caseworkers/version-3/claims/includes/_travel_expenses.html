@@ -1,44 +1,10 @@
-{#{claim.expenses|dump|safe}#}
-
-<!-- <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-
-    <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-        There is a difference between claimed and calculated distances
-    </h1>
-
-    <p>
-    	The provider has claimed more mileage than was calculated via the <abbr onclick="" title="Application Programming Interface">API</abbr>. Please do something, something, something...
-  	</p>
-
-    <ul class="error-summary-list">
-        
-            <li><a href="#username">Enter a valid email address</a></li>
-        
-            <li><a href="#password">Enter a valid password</a></li>
-        
-    </ul>
-
-</div> -->
-
-<style type="text/css">
-.error-panel {
-    border-left-color: #b10e1e;
-    background-color: rgba(223, 48, 52, 0.1) !important;
-}
-</style>
-
-<div class="panel panel-border-wide error-panel" >
-    <p>There are problems with the travel expenses.</p>
-    <!-- <p>Lorem ispum dolor sit emet.</p> -->
-</div>
-
 <table class="summary">
 	<tbody>
 		
 		{% for expense in claim.expenses %}
 
         {% if claim.expenses.length > 1 -%}
-        <tr>
+        <tr id="expense-{{loop.index}}">
             <th class="bold" scope="row">
                 Expense {{loop.index}}
             </th>
@@ -62,9 +28,15 @@
 						{% if expense.type in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","time"] -%}
 						<tr>
 							<th class="bold" scope="row">
+								Origin
+							</th>
+							<td>{{expense.origin.name|replace(expense.origin.postcode,'')|replace('(','')|replace(')','')}} ({{expense.origin.postcode}})</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
 								Destination
 							</th>
-							<td>{{expense.destination.name}}{#% for destination in expense.destination -%}{{destination}}{%- endfor %#}</td>
+							<td>{{expense.destination.name}} {% if expense.destination.postcode.length -%}({{expense.destination.postcode}}){%- endif %}</td>
 						</tr>
 						{%- endif %}
 						{% if expense.type in ["hotel_accommodation","subsistence"] -%}
@@ -82,7 +54,7 @@
 							</th>
 							<td>
 								{{expense.distance}} miles
-								{% if expense.distance > expense.distance_calculated -%}<br><span style="color:#b10e1e;">The calculated distance is {{expense.distance_calculated}} miles</span>{%- endif %}
+								{% if expense.distance > expense.distance_calculated -%}<br><span style="color:#b10e1e;">The calculated distance is {{expense.distance_calculated}} miles.</span> <a href="https://www.google.co.uk/maps/dir/{{expense.origin.postcode}}/{{expense.destination.postcode}}/" target="_blank">View on a map <span class="visually-hidden">(opens in new window)</span></a>{%- endif %}
 							</td>
 						</tr>
 						{%- endif %}
@@ -123,7 +95,7 @@
 							</th>
 							<td>
 								&pound;{{expense.vat_amount|numeral('0,0.00')}}
-								{% if expense.distance > expense.distance_calculated -%}<br><span style="color:#b10e1e;">The calculated net amount is &pound;{{((expense.distance_calculated*expense.cost_per_mile)*0.2)|numeral('0,0.00')}}</span>{%- endif %}
+								{% if expense.distance > expense.distance_calculated -%}<br><span style="color:#b10e1e;">The calculated <abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount is &pound;{{((expense.distance_calculated*expense.cost_per_mile)*0.2)|numeral('0,0.00')}}</span>{%- endif %}
 							</td>
 						</tr>
 						<tr>

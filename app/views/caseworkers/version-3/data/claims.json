@@ -1,19 +1,19 @@
 [{
     "id": 1,
     "case_number": "T20180101",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "trial",
-    "date_submitted": "2018-02-01T10:30:00.000Z",
+    "date_submitted": "2018-03-29T10:50:00.000Z",
     "status": "Submitted",
-    "reference_number": "SW/12345",
-    "total_amount": 99999,
-    "defendant": "Cindra Heinzel"
+    "reference_number": "HR/PS/72852849",
+    "total_amount": 13294.80,
+    "defendant": "Philippine Struttman"
 }, {
     "id": 2,
     "case_number": "T20180102",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "retrial",
@@ -25,7 +25,7 @@
 }, {
     "id": 3,
     "case_number": "T20180103",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "cracked_trial",
@@ -37,7 +37,7 @@
 }, {
     "id": 4,
     "case_number": "T20180104",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "cracked_before_retrial",
@@ -49,7 +49,7 @@
 }, {
     "id": 5,
     "case_number": "T20180105",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "guilty_plea",
@@ -61,7 +61,7 @@
 }, {
     "id": 6,
     "case_number": "T20180106",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "trial",
@@ -73,7 +73,7 @@
 }, {
     "id": 7,
     "case_number": "T20180107",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "retrial",
@@ -85,7 +85,7 @@
 }, {
     "id": 8,
     "case_number": "T20180108",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "cracked_trial",
@@ -97,7 +97,7 @@
 }, {
     "id": 9,
     "case_number": "T20180109",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "cracked_before_retrial",
@@ -109,7 +109,7 @@
 }, {
     "id": 10,
     "case_number": "T20180110",
-    "fee_scheme": "agfs",
+    "fee_scheme": "lgfs",
     "fee_scheme_version": 9,
     "bill_type": "final",
     "case_type": "guilty_plea",
