@@ -1,0 +1,68 @@
+<table>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Type of expense</th>
+			<th>Reason for travel</th>
+			<th>Details</th>
+			<th>Date of expense</th>
+			<th>Net amount</th>
+			<th><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for expense in claim.expenses %}
+		<tr id="expense-{{loop.index}}">
+			<td>{{loop.index}}</td>
+			<td>{{expense.type|replace('_',' ')|capitalize}}</td>
+			<td>{{expense.reason.label}}</td>
+			<td>
+				<ul>
+					{% if expense.type in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","time"] -%}
+						<li>
+						<span class="bold">Origin:</span>
+						{{expense.origin.name|replace(expense.origin.postcode,'')|replace('(','')|replace(')','')}} ({{expense.origin.postcode}})
+						</li>
+						<li>
+						<span class="bold">Destination:</span>
+						{{expense.destination.name}} {% if expense.destination.postcode.length -%}({{expense.destination.postcode}}){%- endif %}
+						</li>
+					{%- endif %}
+					{% if expense.type in ["hotel_accommodation","subsistence"] -%}
+						<li>
+							<span class="bold">Location:</span>
+							{{expense.location}}
+						</li>
+					{%- endif %}
+					{% if expense.type in ["bike_travel","car_travel"] -%}
+						<li>
+							<span class="bold">Distance:</span>
+							{{expense.distance}} miles
+						</li>
+						{% if expense.distance > expense.distance_calculated -%}
+							<li class="error">
+								<span class="bold">Calculated distance:</span>
+								{{expense.distance_calculated}} miles
+								<a href="https://www.google.co.uk/maps/dir/{{expense.origin.postcode}}/{{expense.destination.postcode}}/" target="_blank">View on a map <span class="visually-hidden">(opens in new window)</span></a>
+							</li>
+						{%- endif %}
+						<li>
+							<span class="bold">Cost per mile:</span>
+							{{expense.cost_per_mile|replace('0.','')}}p per mile
+						</li>
+					{%- endif %}
+					{% if expense.type in ["time"] -%}
+						<li>
+							<span class="bold">Hours</span>
+							{{expense.hours}}
+						</li>
+					{%- endif %}
+				</ul>
+			</td>
+			<td>{{expense.date_of_expense|date('DD/MM/YYYY')}}</td>
+			<td>&pound;{{expense.net_amount|numeral('0,0.00')}}</td>
+			<td>&pound;{{expense.vat_amount|numeral('0,0.00')}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
