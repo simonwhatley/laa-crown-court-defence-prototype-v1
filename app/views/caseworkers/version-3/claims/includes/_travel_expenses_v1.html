@@ -2,11 +2,11 @@
 <table>
 	<thead>
 		<tr>
-			<th>#</th>
-			<th>Type of expense</th>
-			<th>Reason for travel</th>
+			<th><abbr onclick="" title="Number" tabindex="-1">#</abbr></th>
+			<th><a href="#noop">Type of expense</a></th>
+			<th><a href="#noop">Reason for travel</a></th>
 			<th>Details</th>
-			<th>Date of expense</th>
+			<th><a href="#noop">Date of expense</a></th>
 			<th>Net amount</th>
 			<th><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount</th>
 		</tr>
@@ -21,12 +21,12 @@
 				<ul>
 					{% if expense.type in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","time"] -%}
 						<li>
-						<span class="bold">Origin:</span>
-						{{expense.origin.name|replace(expense.origin.postcode,'')|replace('(','')|replace(')','')}} ({{expense.origin.postcode}})
+							<span class="bold">Origin:</span>
+							{{expense.origin.name|replace(expense.origin.postcode,'')|replace('(','')|replace(')','')}} ({{expense.origin.postcode}})
 						</li>
 						<li>
-						<span class="bold">Destination:</span>
-						{{expense.destination.name}} {% if expense.destination.postcode.length -%}({{expense.destination.postcode}}){%- endif %}
+							<span class="bold">Destination:</span>
+							{{expense.destination.name}} {% if expense.destination.postcode.length -%}({{expense.destination.postcode}}){%- endif %}
 						</li>
 					{%- endif %}
 					{% if expense.type in ["hotel_accommodation","subsistence"] -%}
@@ -54,7 +54,7 @@
 					{%- endif %}
 					{% if expense.type in ["time"] -%}
 						<li>
-							<span class="bold">Hours</span>
+							<span class="bold">Hours:</span>
 							{{expense.hours}}
 						</li>
 					{%- endif %}
