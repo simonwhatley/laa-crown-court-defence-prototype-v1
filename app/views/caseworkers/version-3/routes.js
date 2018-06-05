@@ -115,7 +115,7 @@ router.get('/claim/:claim_id([0-9]+)', function(req, res) {
             	'rejected': utils.getRejectReasons(),
             	'refused' : utils.getRefusalReasons()
             },
-            version: req.query.version
+            layout: req.query.layout
         });
 });
 

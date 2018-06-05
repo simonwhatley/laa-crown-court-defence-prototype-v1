@@ -192,10 +192,10 @@
 			        {% if claim.expenses.length -%}
 			        	{% include "./includes/_travel_expenses_error_message.html" %}
 			        	{% include "./includes/_travel_expenses_additional_information.html" %}
-			        	{% if version == 2 -%}
+			        	{% if layout == 2 -%}
 			        		{% include "./includes/_travel_expenses_v2.html" %}
 			        	{% else %}
-			        		{% include "./includes/_travel_expenses.html" %}
+			        		{% include "./includes/_travel_expenses_v1.html" %}
 			        	{%- endif %}
 			        {% else %}
 			        	<p>There are no travel expenses for this claim.</p>
