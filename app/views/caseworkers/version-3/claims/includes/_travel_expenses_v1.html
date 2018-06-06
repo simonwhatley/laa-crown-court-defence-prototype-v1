@@ -44,7 +44,7 @@
 							<li class="error">
 								<span class="bold">Calculated distance:</span>
 								{{expense.distance_calculated}} miles
-								<a href="https://www.google.co.uk/maps/dir/{{expense.origin.postcode}}/{{expense.destination.postcode}}/" target="_blank">View on a map <span class="visually-hidden">(opens in new window)</span></a>
+								<a href="https://www.google.co.uk/maps/dir/?api=1&amp;origin={{expense.origin.postcode}}&amp;destination={{expense.destination.postcode}}&amp;travelmode=driving" target="_blank">View on a map <span class="visually-hidden">(opens in new window)</span></a>
 							</li>
 						{%- endif %}
 						<li>
