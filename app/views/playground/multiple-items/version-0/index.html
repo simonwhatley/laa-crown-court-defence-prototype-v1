@@ -1,15 +1,15 @@
-{% extends "../../layout.html" %}
+{% extends "../../../layout.html" %}
 
 {% block page_title %}
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
 {% block page_scripts %}
-{% include "./_page_scripts_add_items_to_list.html" %}
+{% include "./includes/_page_scripts.html" %}
 {% endblock %}
 
 {% block page_styles %}
-{% include "./_page_styles_add_items_to_list.html" %}
+{% include "./includes/_page_styles.html" %}
 {% endblock %}
 
 {% block content %}
@@ -21,7 +21,7 @@
     	<a class="link-back" href="../">Back</a>
 
 	    <h1 class="heading-xlarge">
-	      Multiple items (v1) – Inline
+	      Multiple items – Inline
 	    </h1>
 
 	    <p>
