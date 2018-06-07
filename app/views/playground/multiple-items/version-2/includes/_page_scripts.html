@@ -16,8 +16,13 @@ $(document).ready(function(){
   $(document).on('click', '.add-sub-list-item', function (e) {
     e.preventDefault();
     // TODO pass in defendant data-item-number
+    console.log($(this).parents('.list-item-row').attr('data-item-number'));
+
+    var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
+    var fieldCounter = listCounter - 1;
+
     insertRepOrderFields();
-    sortRepOrderFields();
+    sortRepOrderFields(listCounter, fieldCounter);
   });
 
   $(document).on('click', '.remove-sub-list-item', function (e) {
@@ -184,6 +189,8 @@ $(document).ready(function(){
 
     $(document).find('.list-item-row').each(function () {
 
+      $(this).attr('data-item-number', listCounter);
+
       $(this).find('h3.list-item-heading').text('Defendant ' + listCounter);
 
       if ($(this).find('.remove-list-item').length === 0) {
@@ -252,6 +259,8 @@ $(document).ready(function(){
     var subFieldCounter = 0;
 
     $(document).find('.sub-list-item-row').each(function () {
+
+      $(this).attr('data-item-number', subListCounter);
 
       $(this).find('h4.sub-list-item-heading').text('Representation order ' + subListCounter);
 
