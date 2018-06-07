@@ -1,83 +1,246 @@
 <script type="text/javascript">
-$(document).on('click', '.button-add-another-vertical', function (e) {
-  var position = $(this).parents('.list-item-wrapper-vertical').find('#item-row').last();
-  e.preventDefault();
-  insertFields(position);
-  sortFieldsVertical();
-});
+$(document).ready(function(){
 
-$(document).on('click', '.remove-list-item-vertical', function (e) {
-  e.preventDefault();
-  $(this).parents('#item-row').next('hr').remove();
-  $(this).parents('#item-row').remove();
-  sortFieldsVertical();
-});
-
-function insertFields(element) {
-	element.after(
-		'<hr />' +
-		'<div id="item-row" class="grid-row">' +
-	      '<div class="column-two-thirds">' +
-	        '<div class="form-group-compound">' +
-	          '<h2 class="heading-medium">Item 1</h2>' +
-	          '<div class="form-group">' +
-	            '<label class="form-label-bold" for="field-1">' +
-	              'Field label' +
-                '<span class="form-hint">Something...</span>' +
-	            '</label>' +
-	            '<input type="text" class="form-control" id="field-1" name="field-1">' +
-	          '</div>' +
-	          '<div class="form-group">' +
-	            '<label class="form-label-bold" for="field-2">' +
-	              'Field label' +
-                '<span class="form-hint">Something...</span>' +
-	            '</label>' +
-	            '<input type="text" class="form-control" id="field-2" name="field-2">' +
-	          '</div>' +
-	          '<div class="form-group">' +
-	            '<label class="form-label-bold" for="field-3">' +
-	              'Field label' +
-                '<span class="form-hint">Something...</span>' +
-	            '</label>' +
-	            '<input type="text" class="form-control" id="field-3" name="field-3">' +
-	          '</div>' +
-	        '</div>' +
-	      '</div>' +
-	      '<div class="column-one-third">' +
-	      '</div>' +
-	    '</div>'
-	);
-}
-
-function sortFieldsVertical() {
-  var listCounter = 1;
-  var inputCounter = 1;
-
-  $(document).find('.list-item-wrapper-vertical .grid-row').each(function () {
-    $(this).find('h2').text('Item ' + listCounter);
-
-    if ($(this).find('.remove-list-item-vertical').length === 0) {
-      $(this).find('.column-one-third:last').append('<a id="remove-item-vertical-' + listCounter + '" class="remove-list-item-vertical" href="#">Remove this</a>');
-    } else {
-      $(this).find('.remove-list-item-vertical').attr('id', 'remove-item-vertical-' + listCounter);
-    }
-
-    $(this).find('label').each(function () {
-      $(this).attr('for', 'field-' + inputCounter);
-      inputCounter++;
-    });
-
-    $(this).find('input').each(function () {
-      var num = $(this).parent().find('label').attr('for').split('-').pop();
-      $(this).attr('id', 'field-' + num);
-      $(this).attr('name', 'field-' + num);
-    });
-
-    listCounter++;
+  $(document).on('click', '.button-add-another', function (e) {
+    e.preventDefault();
+    insertDefendantFields();
+    sortDefendantFields();
   });
 
-  if ($(document).find('.list-item-wrapper-vertical #item-row').length === 1) {
-    $('.remove-list-item-vertical').remove();
+  $(document).on('click', '.remove-list-item', function (e) {
+    e.preventDefault();
+    $(this).parents('.list-item-row').remove();
+    sortDefendantFields();
+  });
+
+  $(document).on('click', '.add-sub-list-item', function (e) {
+    e.preventDefault();
+    insertRepOrderFields();
+    sortRepOrderFields();
+  });
+
+  $(document).on('click', '.remove-sub-list-item', function (e) {
+    e.preventDefault();
+    $(this).parents('.sub-list-item-row').remove();
+    sortRepOrderFields();
+  });
+
+  function insertDefendantFields() {
+  	$('.list-item-row:last').after(
+        '<div class="form-section list-item-row" data-item-number="x">' +
+            '<h3 class="heading-medium list-item-heading">' +
+                'Defendant x' +
+                '<a id="remove-item-x" href="#" class="link-remove remove-list-item" title="Remove this defendant">' +
+                    'Remove' +
+                    '<span class="visually-hidden">&nbsp;this defendant</span>' +
+                '</a>' +
+            '</h3>' +
+            '<div class="form-group first-name">' +
+                '<label class="form-label-bold " for="defendant-x-first-name">First name</label>' +
+                '<input class="form-control" id="defendant-x-first-name" name="defendants[x][first_name]" type="text" autocomplete="off">' +
+            '</div>' +
+            '<div class="form-group last-name">' +
+                '<label class="form-label-bold" for="defendant-x-last-name">Last name</label>' +
+                '<input class="form-control" id="defendant-x-last-name" name="defendants[x][last_name]" type="text" autocomplete="off">' +
+            '</div>' +
+            '<div class="form-group">' +
+                '<fieldset>' +
+                    '<legend class="form-label-bold">' +
+                        'Date of birth' +
+                        '<span class="form-hint">For example, 31 3 1980</span>' +
+                    '</legend>' +
+                    '<div class="form-date date-of-birth">' +
+                        '<div class="form-group form-group-day">' +
+                            '<label class="form-label" for="defendant-x-date-of-birth-day">Day</label>' +
+                            '<input class="form-control" id="defendant-x-date-of-birth-day" max="31" min="1" name="defendants[x][date_of_birth][day]" pattern="[0-9]*" type="number">' +
+                        '</div>' +
+                        '<div class="form-group form-group-month">' +
+                            '<label class="form-label" for="defendant-x-date-of-birth-month">Month</label>' +
+                            '<input class="form-control" id="defendant-x-date-of-birth-month" max="12" min="1" name="defendants[x][date_of_birth][month]" pattern="[0-9]*" type="number">' +
+                        '</div>' +
+                        '<div class="form-group form-group-year">' +
+                            '<label class="form-label" for="defendant-x-date-of-birth-year">Year</label>' +
+                            '<input class="form-control" id="defendant-x-date-of-birth-year" max="2018" min="1900" name="defendants[x][date_of_birth][year]" pattern="[0-9]*" type="number">' +
+                        '</div>' +
+                    '</div>' +
+                '</fieldset>' +
+            '</div>' +
+            '<div class="form-group order-judicial-apportionment">' +
+                '<fieldset>' +
+                    '<div class="multiple-choice">' +
+                        '<input id="defendant-x-order-judicial-apportionment" name="defendants[x][order_judicial_apportionment]" type="checkbox" value="yes">' +
+                            '<label for="defendant-x-order-judicial-apportionment">Order for judicial apportionment</label>' +
+                        '</input>' +
+                    '</div>' +
+                '</fieldset>' +
+            '</div>' +
+            '<div class="form-group">' +
+                '<details>' +
+                    '<summary>' +
+                        '<span class="summary">Help with judicial apportionment</span>' +
+                    '</summary>' +
+                    '<div class="panel panel-border-narrow">' +
+                        '<p>Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of '+
+                         'their defence costs. If applicable, please ensure you upload a copy of the order to your claim.</p>' +
+                    '</div>' +
+                '</details>' +
+            '</div>' +
+            '<div class="form-section sub-list-item-row" data-item-number="1">' +
+              '<h3 class="heading-medium">Representation order details</h3>' +
+              '<h4 class="heading-small">' +
+                  'Representation order' +
+                  // '<a href="#noop" class="link-remove" title="Remove this representation order">' +
+                  //     'Remove' +
+                  //     '<span class="visually-hidden">&nbsp;this representation order</span>' +
+                  // '</a>' +
+              '</h4>' +
+              '<div class="form-group">' +
+                  '<fieldset>' +
+                      '<legend class="form-label">' +
+                          'Representation order date' +
+                          '<span class="form-hint">For example, 31 3 2017</span>' +
+                      '</legend>' +
+                      '<div class="form-date representation-order-date">' +
+                          '<div class="form-group form-group-day">' +
+                              '<label class="form-label" for="defendant-x-representation-order-x-date-day">Day</label>' +
+                              '<input class="form-control" id="defendant-x-representation-order-x-date-day" max="31" min="1" name="defendants[x][representation_order][x][date][day]" pattern="[0-9]*" type="number">' +
+                          '</div>' +
+                          '<div class="form-group form-group-month">' +
+                              '<label class="form-label" for="defendant-x-representation-order-x-date-month">Month</label>' +
+                              '<input class="form-control" id="defendant-x-representation-order-x-date-month" max="12" min="1" name="defendants[x][representation_order][x][date][month]" pattern="[0-9]*" type="number">' +
+                          '</div>' +
+                          '<div class="form-group form-group-year">' +
+                              '<label class="form-label" for="defendant-x-representation-order-x-date-year">Year</label>' +
+                              '<input class="form-control" id="defendant-x-representation-order-x-date-year" max="2018" min="2010" name="defendants[x][representation_order][x][date][year]" pattern="[0-9]*" type="number">' +
+                          '</div>' +
+                      '</div>' +
+                  '</fieldset>' +
+              '</div>' +
+              '<div class="form-group maat-reference">' +
+                  '<label class="form-label-bold " for="defendant-x-representation-order-x-maat-reference">' +
+                      'MAAT Reference' +
+                      '<span class="form-hint">For example 123456789</span>' +
+                  '</label>' +
+                  '<input class="form-control" id="defendant-x-representation-order-x-maat-reference" name="defendants[x][representation_order][x][maat_reference]" type="text" autocomplete="off">' +
+              '</div>' +
+              '<a href="#noop">Add another representation order</a>' +
+              '<hr>' +
+            '</div>' +
+        '</div>'
+  	);
   }
-}
+
+  function insertRepOrderFields() {
+    $('.sub-list-item-row:last').after(
+
+    );
+  }
+
+  function sortDefendantFields() {
+    var listCounter = 1;
+    var fieldCounter = 0;
+
+    $(document).find('.list-item-row').each(function () {
+
+      $(this).find('h3.list-item-heading').text('Defendant ' + listCounter);
+
+      if ($(this).find('.remove-list-item').length === 0) {
+        $(this).find('.list-item-heading:last').append('<a id="remove-item-' + listCounter + '" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this defendant</span></a>');
+      } else {
+        $(this).find('.remove-list-item').attr('id', 'remove-item-' + listCounter);
+      }
+
+      // Label counter
+      $(this).find('.first-name').children('label').each(function () {
+        $(this).attr('for', ('defendant-' + listCounter + '-first-name'));
+      });
+
+      $(this).find('.last-name').children('label').each(function () {
+        $(this).attr('for', ('defendant-' + listCounter + '-last-name'));
+      });
+
+      $(this).find('.date-of-birth .form-group').children('label').each(function () {
+        $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-day'));
+        $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-month'));
+        $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-year'));
+      });
+
+      $(this).find('.order-judicial-apportionment .multiple-choice').children('label').each(function () {
+        $(this).attr('for', ('defendant-' + listCounter + '-order-judicial-apportionment'));
+      });
+
+      // Input counter
+      $(this).find('.first-name').children('input').each(function () {
+        $(this).attr('id', ('defendant-' + listCounter + '-first-name'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][first_name]'));
+      });
+
+      $(this).find('.last-name').children('input').each(function () {
+        $(this).attr('id', ('defendant-' + listCounter + '-last-name'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][last_name]'));
+      });
+
+      $(this).find('.date-of-birth .form-group').children('input').each(function () {
+        $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-day'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][day]'));
+        $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-month'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][month]'));
+        $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-year'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][year]'));
+      });
+
+      $(this).find('.order-judicial-apportionment .multiple-choice').children('input').each(function () {
+        $(this).attr('id', ('defendant-' + listCounter + '-order-judicial-apportionment'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][order_judicial_apportionment]'));
+      });
+
+      sortRepOrderFields(listCounter, fieldCounter);
+
+      listCounter++;
+      fieldCounter++;
+    });
+
+    if ($(document).find('.list-item-row').length === 1) {
+      $('.remove-list-item').remove();
+    }
+  }
+
+  function sortRepOrderFields(listCounter, fieldCounter) {
+    var subListCounter = 1;
+    var subFieldCounter = 0;
+
+    $(document).find('.sub-list-item-row').each(function () {
+
+      $(this).find('.representation-order-date .form-group').children('label').each(function () {
+        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-day'));
+        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-month'));
+        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-year'));
+      });
+
+      $(this).find('.maat-reference').children('label').each(function () {
+        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-maat-reference'));
+      });
+
+      $(this).find('.representation-order-date .form-group').children('input').each(function () {
+        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-day'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][date][day]'));
+        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-month'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][date][month]'));
+        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-year'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][date][year]'));
+      });
+
+      $(this).find('.maat-reference').children('input').each(function () {
+        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-maat-reference'));
+        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][maat_reference]'));
+      });
+
+    });
+
+    if ($(document).find('.sub-list-item-row').length === 1) {
+      $('.remove-sub-list-item').remove();
+    }
+  }
+
+});
 </script>

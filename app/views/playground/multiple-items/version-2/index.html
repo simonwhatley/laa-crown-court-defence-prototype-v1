@@ -28,14 +28,14 @@
 
 			<form method="get">
 
-				<div class="form-section" data-item-number="1">
+				<div class="form-section list-item-row" data-item-number="1">
 
-				    <h3 class="heading-medium">
-				        Defendant 1
-				        <a href="#noop" class="link-remove" title="Remove this defendant">
+				    <h3 class="heading-medium list-item-heading">
+				        Defendant<!--  1 -->
+				        <!-- <a id="remove-defendant-1" href="#" class="link-remove remove-list-item" title="Remove this defendant">
 				            Remove
 				            <span class="visually-hidden">&nbsp;this defendant</span>
-				        </a>
+				        </a> -->
 				    </h3>
 				    
 				    <div class="form-group">
@@ -87,9 +87,7 @@
 				        <fieldset>
 				            <div class="multiple-choice">
 				                <input id="defendant-1-order-judicial-apportionment" name="defendants[0][order_judicial_apportionment]" type="checkbox" value="yes" {% if data['defendants'][0]['order_judicial_apportionment'][1] == 'yes' -%}checked="checked"{%- endif %}>
-				                    <label for="order-judicial-apportionment">
-				                        Order for judicial apportionment
-				                    </label>
+									<label for="defendant-1-order-judicial-apportionment">Order for judicial apportionment</label>
 				                </input>
 				            </div>
 				        </fieldset>
@@ -108,115 +106,68 @@
 				        </details>
 				    </div>
 
-				    <h3 class="heading-medium">
-				        Representation order details
-				    </h3>
+				    <div class="form-section sub-list-item-row" data-item-number="1">
 
-				    <h3 class="heading-small">
-				        Representation order 1
-				        <a href="#noop" class="link-remove" title="Remove this representation order">
-				            Remove
-				            <span class="visually-hidden">&nbsp;this representation order</span>
-				        </a>
-				    </h3>
+					    <h3 class="heading-medium">
+					        Representation order details
+					    </h3>
 
-				    <div class="form-group">
-				        <fieldset>
-				            <legend class="form-label">
-				                Representation order date
-				                <span class="form-hint">
-				                    For example, 31 3 2017
-				                </span>
-				            </legend>
-				            <div class="form-date">
-				                <div class="form-group form-group-day">
-				                    <label class="form-label" for="defendant-1-representation-order-1-date-day">
-				                        Day
-				                    </label>
-				                    <input class="form-control" id="defendant-1-representation-order-1-date-day" max="31" min="1" name="defendants[0][representation_order][0][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['day']}}">
-				                </div>
-				                <div class="form-group form-group-month">
-				                    <label class="form-label" for="defendant-1-representation-order-1-date-month">
-				                        Month
-				                    </label>
-				                    <input class="form-control" id="defendant-1-representation-order-1-date-month" max="12" min="1" name="defendants[0][representation_order][0][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['month']}}">
-				                </div>
-				                <div class="form-group form-group-year">
-				                    <label class="form-label" for="defendant-1-representation-order-1-date-year">
-				                        Year
-				                    </label>
-				                    <input class="form-control" id="defendant-1-representation-order-1-date-year" max="2018" min="2010" name="defendants[0][representation_order][0][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['year']}}">
-				                </div>
-				            </div>
-				        </fieldset>
-				    </div>
+					    <h4 class="heading-small">
+					        Representation order<!--  1 -->
+					        <!-- <a id="remove-defendant-1-representation-order-1" href="#" class="link-remove" title="Remove this representation order">
+					            Remove
+					            <span class="visually-hidden">&nbsp;this representation order</span>
+					        </a> -->
+					    </h4>
 
-				    <div class="form-group">
-				        <label class="form-label-bold " for="defendant-1-representation-order-1-maat-reference">
-				            MAAT Reference
-				            <span class="form-hint">
-				                For example 123456789
-				            </span>
-				        </label>
-				        <input class="form-control" id="defendant-1-representation-order-1-maat-reference" name="defendants[0][representation_order][0][maat_reference]" type="text" value="{{data['defendants'][0]['representation_order'][0]['maat_reference']}}" autocomplete="off">
-				    </div>
+					    <div class="form-group">
+					        <fieldset>
+					            <legend class="form-label">
+					                Representation order date
+					                <span class="form-hint">
+					                    For example, 31 3 2017
+					                </span>
+					            </legend>
+					            <div class="form-date">
+					                <div class="form-group form-group-day">
+					                    <label class="form-label" for="defendant-1-representation-order-1-date-day">
+					                        Day
+					                    </label>
+					                    <input class="form-control" id="defendant-1-representation-order-1-date-day" max="31" min="1" name="defendants[0][representation_order][0][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['day']}}">
+					                </div>
+					                <div class="form-group form-group-month">
+					                    <label class="form-label" for="defendant-1-representation-order-1-date-month">
+					                        Month
+					                    </label>
+					                    <input class="form-control" id="defendant-1-representation-order-1-date-month" max="12" min="1" name="defendants[0][representation_order][0][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['month']}}">
+					                </div>
+					                <div class="form-group form-group-year">
+					                    <label class="form-label" for="defendant-1-representation-order-1-date-year">
+					                        Year
+					                    </label>
+					                    <input class="form-control" id="defendant-1-representation-order-1-date-year" max="2018" min="2010" name="defendants[0][representation_order][0][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['year']}}">
+					                </div>
+					            </div>
+					        </fieldset>
+					    </div>
 
-				    <hr>
+					    <div class="form-group">
+					        <label class="form-label-bold " for="defendant-1-representation-order-1-maat-reference">
+					            MAAT Reference
+					            <span class="form-hint">
+					                For example 123456789
+					            </span>
+					        </label>
+					        <input class="form-control" id="defendant-1-representation-order-1-maat-reference" name="defendants[0][representation_order][0][maat_reference]" type="text" value="{{data['defendants'][0]['representation_order'][0]['maat_reference']}}" autocomplete="off">
+					    </div>
 
-				    <!-- <h3 class="heading-small">
-				        Representation order 2
-				        <a href="#noop" class="link-remove" title="Remove this representation order">
-				            Remove
-				            <span class="visually-hidden">&nbsp;this representation order</span>
-				        </a>
-				    </h3>
+					    <a href="#noop">
+					        Add another representation order
+					    </a>
 
-				    <div class="form-group">
-				        <fieldset>
-				            <legend class="form-label">
-				                Representation order date
-				                <span class="form-hint">
-				                    For example, 31 3 2017
-				                </span>
-				            </legend>
-				            <div class="form-date">
-				                <div class="form-group form-group-day">
-				                    <label class="form-label" for="defendant-1-representation-order-2-date-day">
-				                        Day
-				                    </label>
-				                    <input class="form-control" id="defendant-1-representation-order-2-date-day" max="31" min="1" name="defendants[0][representation_order][1][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][1]['date']['day']}}">
-				                </div>
-				                <div class="form-group form-group-month">
-				                    <label class="form-label" for="defendant-1-representation-order-2-date-month">
-				                        Month
-				                    </label>
-				                    <input class="form-control" id="defendant-1-representation-order-2-date-month" max="12" min="1" name="defendants[0][representation_order][1][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][1]['date']['month']}}">
-				                </div>
-				                <div class="form-group form-group-year">
-				                    <label class="form-label" for="defendant-1-representation-order-2-date-year">
-				                        Year
-				                    </label>
-				                    <input class="form-control" id="defendant-1-representation-order-2-date-year" max="2018" min="2010" name="defendants[0][representation_order][1][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][1]['date']['year']}}">
-				                </div>
-				            </div>
-				        </fieldset>
-				    </div>
+					    <hr>
 
-				    <div class="form-group">
-				        <label class="form-label-bold " for="defendant-1-representation-order-2-maat-reference">
-				            MAAT Reference
-				            <span class="form-hint">
-				                For example 123456789
-				            </span>
-				        </label>
-				        <input class="form-control" id="defendant-1-representation-order-2-maat-reference" name="defendants[0][representation_order][1][maat_reference]" type="text" value="{{data['defendants'][0]['representation_order'][1]['maat_reference']}}" autocomplete="off">
-				    </div>
-
-				    <hr> -->
-
-				    <a href="#noop">
-				        Add another representation order
-				    </a>
+					</div>
 
 				</div>
 
@@ -225,7 +176,7 @@
 				<div class="form-section">
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
-						<input type="button" class="button button-tertiary" value="Add another defendant">
+						<input type="button" id="add-button" class="button button-tertiary button-add-another" value="Add another defendant">
 						<a id="cancel" class="link-secondary">Cancel</a>
 					</div>
 				</div>

@@ -10,12 +10,12 @@ router.use('/', (req, res, next) => {
   next();
 });
 
-router.get('/', function (req, res) {
+router.get('/', (req, res) => {
 	req.session.destroy();
 	res.redirect(`/${req.section}/${req.feature}/${req.version}/form`);
 })
 
-router.get('/form', function (req, res) {
+router.get('/form', (req, res) => {
 	res.render(`${req.section}/${req.feature}/${req.version}/index`);
 });
 
