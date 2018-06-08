@@ -1,249 +1,140 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-  $(document).on('click', '.button-add-another', function (e) {
+  $(document).on('click', '.add-list-item', function (e) {
     e.preventDefault();
-    insertDefendantFields();
-    sortDefendantFields();
+    insertParentFields();
+    sortParentFields();
   });
 
   $(document).on('click', '.remove-list-item', function (e) {
     e.preventDefault();
     $(this).parents('.list-item-row').remove();
-    sortDefendantFields();
+    sortParentFields();
   });
 
-  $(document).on('click', '.add-sub-list-item', function (e) {
+  $(document).on('click', '.add-child-list-item', function (e) {
     e.preventDefault();
-    // TODO pass in defendant data-item-number
-    console.log($(this).parents('.list-item-row').attr('data-item-number'));
-
+    
     var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
     var fieldCounter = listCounter - 1;
 
-    insertRepOrderFields();
-    sortRepOrderFields(listCounter, fieldCounter);
+    insertChildFields(listCounter);
+    sortChildFields(listCounter, fieldCounter);
   });
 
-  $(document).on('click', '.remove-sub-list-item', function (e) {
+  $(document).on('click', '.remove-child-list-item', function (e) {
     e.preventDefault();
-    $(this).parents('.sub-list-item-row').remove();
-    sortRepOrderFields();
+    $(this).parents('.child-list-item-row').remove();
+
+    var listCounter = $(this).parents('.child-list-item-row').attr('data-item-number');
+    var fieldCounter = listCounter - 1;
+
+    sortChildFields(listCounter, fieldCounter);
   });
 
-  function insertDefendantFields() {
-  	$('.list-item-row:last').after(
-        '<div class="form-section list-item-row" data-item-number="x">' +
-            '<h3 class="heading-medium list-item-heading">' +
-                'Defendant' +
-                '<a id="remove-item-x" href="#" class="link-remove remove-list-item" title="Remove this defendant">' +
-                    'Remove' +
-                    '<span class="visually-hidden">&nbsp;this defendant</span>' +
-                '</a>' +
-            '</h3>' +
-            '<div class="form-group first-name">' +
-                '<label class="form-label-bold " for="defendant-x-first-name">First name</label>' +
-                '<input class="form-control" id="defendant-x-first-name" name="defendants[x][first_name]" type="text" autocomplete="off">' +
+  function insertParentFields() {
+    $('.list-item-row:last').after(
+        '<div id="list-item-row-x" class="form-section list-item-row" data-item-number="x">' +
+            '<h3 class="heading-medium list-item-heading">Parent item</h3>' +
+            '<div class="form-group field-name-1">' +
+                '<label class="form-label-bold" for="parent-x-field-name-1">' +
+                    'Field name 1' +
+                    '<span class="form-hint">Something...</span>' +
+                '</label>' +
+                '<input class="form-control" id="parent-x-field-name-1" name="parent-x-field-name-1" type="text" autocomplete="off">' +
             '</div>' +
-            '<div class="form-group last-name">' +
-                '<label class="form-label-bold" for="defendant-x-last-name">Last name</label>' +
-                '<input class="form-control" id="defendant-x-last-name" name="defendants[x][last_name]" type="text" autocomplete="off">' +
+            '<div class="form-group field-name-2">' +
+                '<label class="form-label-bold" for="parent-x-field-name-2">' +
+                    'Field name 2' +
+                    '<span class="form-hint">Something...</span>' +
+                '</label>' +
+                '<input class="form-control" id="parent-x-field-name-2" name="parent-x-field-name-2" type="text" autocomplete="off">' +
             '</div>' +
-            '<div class="form-group">' +
-                '<fieldset>' +
-                    '<legend class="form-label-bold">' +
-                        'Date of birth' +
-                        '<span class="form-hint">For example, 31 3 1980</span>' +
-                    '</legend>' +
-                    '<div class="form-date date-of-birth">' +
-                        '<div class="form-group form-group-day">' +
-                            '<label class="form-label" for="defendant-x-date-of-birth-day">Day</label>' +
-                            '<input class="form-control" id="defendant-x-date-of-birth-day" max="31" min="1" name="defendants[x][date_of_birth][day]" pattern="[0-9]*" type="number">' +
-                        '</div>' +
-                        '<div class="form-group form-group-month">' +
-                            '<label class="form-label" for="defendant-x-date-of-birth-month">Month</label>' +
-                            '<input class="form-control" id="defendant-x-date-of-birth-month" max="12" min="1" name="defendants[x][date_of_birth][month]" pattern="[0-9]*" type="number">' +
-                        '</div>' +
-                        '<div class="form-group form-group-year">' +
-                            '<label class="form-label" for="defendant-x-date-of-birth-year">Year</label>' +
-                            '<input class="form-control" id="defendant-x-date-of-birth-year" max="2018" min="1900" name="defendants[x][date_of_birth][year]" pattern="[0-9]*" type="number">' +
-                        '</div>' +
-                    '</div>' +
-                '</fieldset>' +
-            '</div>' +
-            '<div class="form-group order-judicial-apportionment">' +
-                '<fieldset>' +
-                    '<div class="multiple-choice">' +
-                        '<input id="defendant-x-order-judicial-apportionment" name="defendants[x][order_judicial_apportionment]" type="checkbox" value="yes">' +
-                            '<label for="defendant-x-order-judicial-apportionment">Order for judicial apportionment</label>' +
-                        '</input>' +
-                    '</div>' +
-                '</fieldset>' +
-            '</div>' +
-            '<div class="form-group">' +
-                '<details>' +
-                    '<summary>' +
-                        '<span class="summary">Help with judicial apportionment</span>' +
-                    '</summary>' +
-                    '<div class="panel panel-border-narrow">' +
-                        '<p>Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of '+
-                         'their defence costs. If applicable, please ensure you upload a copy of the order to your claim.</p>' +
-                    '</div>' +
-                '</details>' +
-            '</div>' +
-            '<h3 class="heading-medium">Representation order details</h3>' +
-            '<div class="form-section-compound sub-list-item-row" data-item-number="1">' +
-              '<h4 class="heading-small sub-list-item-heading">' +
-                  'Representation order' +
-                  '<a id="remove-sub-list-item-x" href="#" class="link-remove remove-sub-list-item" title="Remove this representation order">' +
-                      'Remove' +
-                      '<span class="visually-hidden">&nbsp;this representation order</span>' +
-                  '</a>' +
-              '</h4>' +
-              '<div class="form-group">' +
-                  '<fieldset>' +
-                      '<legend class="form-label">' +
-                          'Representation order date' +
-                          '<span class="form-hint">For example, 31 3 2017</span>' +
-                      '</legend>' +
-                      '<div class="form-date representation-order-date">' +
-                          '<div class="form-group form-group-day">' +
-                              '<label class="form-label" for="defendant-x-representation-order-x-date-day">Day</label>' +
-                              '<input class="form-control" id="defendant-x-representation-order-x-date-day" max="31" min="1" name="defendants[x][representation_order][x][date][day]" pattern="[0-9]*" type="number">' +
-                          '</div>' +
-                          '<div class="form-group form-group-month">' +
-                              '<label class="form-label" for="defendant-x-representation-order-x-date-month">Month</label>' +
-                              '<input class="form-control" id="defendant-x-representation-order-x-date-month" max="12" min="1" name="defendants[x][representation_order][x][date][month]" pattern="[0-9]*" type="number">' +
-                          '</div>' +
-                          '<div class="form-group form-group-year">' +
-                              '<label class="form-label" for="defendant-x-representation-order-x-date-year">Year</label>' +
-                              '<input class="form-control" id="defendant-x-representation-order-x-date-year" max="2018" min="2010" name="defendants[x][representation_order][x][date][year]" pattern="[0-9]*" type="number">' +
-                          '</div>' +
-                      '</div>' +
-                  '</fieldset>' +
-              '</div>' +
-              '<div class="form-group maat-reference">' +
-                  '<label class="form-label-bold " for="defendant-x-representation-order-x-maat-reference">' +
-                      'MAAT Reference' +
-                      '<span class="form-hint">For example 123456789</span>' +
+            '<h3 class="heading-medium">Child thing details</h3>' +
+            '<div id="child-list-item-row-x" class="form-section-compound child-list-item-row" data-item-number="x">' +
+              '<h4 class="heading-small child-list-item-heading">Child item</h4>' +
+              '<div class="form-group child-field-name-1">' +
+                  '<label class="form-label" for="parent-x-child-x-field-name-1">' +
+                      'Field name 1' +
+                      '<span class="form-hint">Something...</span>' +
                   '</label>' +
-                  '<input class="form-control" id="defendant-x-representation-order-x-maat-reference" name="defendants[x][representation_order][x][maat_reference]" type="text" autocomplete="off">' +
+                  '<input class="form-control" id="parent-x-child-x-field-name-1" name="parent-x-child-x-field-name-1" type="text" autocomplete="off">' +
               '</div>' +
-            '</div>' +
-            '<a href="#noop">Add another representation order</a>' +
-            '<hr>' +
-        '</div>'
-  	);
-  }
-
-  // TODO pass in defendant item number
-  function insertRepOrderFields() {
-    $('.sub-list-item-row:last').after(
-        '<div class="form-section sub-list-item-row" data-item-number="1">' +
-          // '<h3 class="heading-medium">Representation order details</h3>' +
-          '<h4 class="heading-small sub-list-item-heading">' +
-              'Representation order' +
-              '<a id="remove-sub-list-item-x" href="#" class="link-remove remove-sub-list-item" title="Remove this representation order">' +
-                  'Remove' +
-                  '<span class="visually-hidden">&nbsp;this representation order</span>' +
-              '</a>' +
-          '</h4>' +
-          '<div class="form-group">' +
-              '<fieldset>' +
-                  '<legend class="form-label">' +
-                      'Representation order date' +
-                      '<span class="form-hint">For example, 31 3 2017</span>' +
-                  '</legend>' +
-                  '<div class="form-date representation-order-date">' +
-                      '<div class="form-group form-group-day">' +
-                          '<label class="form-label" for="defendant-x-representation-order-x-date-day">Day</label>' +
-                          '<input class="form-control" id="defendant-x-representation-order-x-date-day" max="31" min="1" name="defendants[x][representation_order][x][date][day]" pattern="[0-9]*" type="number">' +
-                      '</div>' +
-                      '<div class="form-group form-group-month">' +
-                          '<label class="form-label" for="defendant-x-representation-order-x-date-month">Month</label>' +
-                          '<input class="form-control" id="defendant-x-representation-order-x-date-month" max="12" min="1" name="defendants[x][representation_order][x][date][month]" pattern="[0-9]*" type="number">' +
-                      '</div>' +
-                      '<div class="form-group form-group-year">' +
-                          '<label class="form-label" for="defendant-x-representation-order-x-date-year">Year</label>' +
-                          '<input class="form-control" id="defendant-x-representation-order-x-date-year" max="2018" min="2010" name="defendants[x][representation_order][x][date][year]" pattern="[0-9]*" type="number">' +
-                      '</div>' +
-                  '</div>' +
-              '</fieldset>' +
+              '<div class="form-group child-field-name-2">' +
+                  '<label class="form-label-bold" for="parent-x-child-x-field-name-2">' +
+                      'Field name 2' +
+                      '<span class="form-hint">Something...</span>' +
+                  '</label>' +
+                  '<input class="form-control" id="parent-x-child-x-field-name-2" name="parent-x-child-x-field-name-2" type="text" autocomplete="off">' +
+              '</div>' +
           '</div>' +
-          '<div class="form-group maat-reference">' +
-              '<label class="form-label-bold " for="defendant-x-representation-order-x-maat-reference">' +
-                  'MAAT Reference' +
-                  '<span class="form-hint">For example 123456789</span>' +
-              '</label>' +
-              '<input class="form-control" id="defendant-x-representation-order-x-maat-reference" name="defendants[x][representation_order][x][maat_reference]" type="text" autocomplete="off">' +
-          '</div>' +
-          // '<a href="#noop">Add another representation order</a>' +
-          // '<hr>' +
+          '<a id="add-link" class="add-child-list-item" href="#">Add another child</a>' +
+          '<hr>' +
         '</div>'
     );
   }
 
-  function sortDefendantFields() {
+  function insertChildFields(listCounter) {
+    $('#list-item-row-' + listCounter + '> .child-list-item-row:last').after(
+        '<div id="child-list-item-row-x" class="form-section-compound child-list-item-row" data-item-number="x">' +
+              '<h4 class="heading-small child-list-item-heading">Child item</h4>' +
+              '<div class="form-group child-field-name-1">' +
+                  '<label class="form-label-bold" for="parent-x-child-x-field-name-1">' +
+                      'Field name 1' +
+                      '<span class="form-hint">Something...</span>' +
+                  '</label>' +
+                  '<input class="form-control" id="parent-x-child-x-field-name-1" name="parent-x-child-x-field-name-1" type="text" autocomplete="off">' +
+              '</div>' +
+              '<div class="form-group child-field-name-2">' +
+                  '<label class="form-label-bold" for="parent-x-child-x-field-name-2">' +
+                      'Field name 2' +
+                      '<span class="form-hint">Something...</span>' +
+                  '</label>' +
+                  '<input class="form-control" id="parent-x-child-x-field-name-2" name="parent-x-child-x-field-name-2" type="text" autocomplete="off">' +
+              '</div>' +
+          '</div>'
+    );
+  }
+
+  function sortParentFields() {
     var listCounter = 1;
     var fieldCounter = 0;
 
     $(document).find('.list-item-row').each(function () {
 
+      $(this).attr('id', ('list-item-row-' + listCounter));
       $(this).attr('data-item-number', listCounter);
 
-      $(this).find('h3.list-item-heading').text('Defendant ' + listCounter);
+      $(this).find('h3.list-item-heading').text('Parent item ' + listCounter);
 
       if ($(this).find('.remove-list-item').length === 0) {
-        $(this).find('.list-item-heading:last').append('<a id="remove-item-' + listCounter + '" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this defendant</span></a>');
+        $(this).find('.list-item-heading:last').append('<a id="remove-item-' + listCounter + '" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this parent item</span></a>');
       } else {
-        $(this).find('.remove-list-item').attr('id', 'remove-item-' + listCounter);
+        $(this).find('.remove-list-item').attr('id', ('remove-item-' + listCounter));
       }
 
       // Label counter
-      $(this).find('.first-name').children('label').each(function () {
-        $(this).attr('for', ('defendant-' + listCounter + '-first-name'));
+      $(this).find('.field-name-1').children('label').each(function () {
+        $(this).attr('for', ('parent-' + listCounter + '-field-name-1'));
       });
 
-      $(this).find('.last-name').children('label').each(function () {
-        $(this).attr('for', ('defendant-' + listCounter + '-last-name'));
-      });
-
-      $(this).find('.date-of-birth .form-group').children('label').each(function () {
-        $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-day'));
-        $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-month'));
-        $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-year'));
-      });
-
-      $(this).find('.order-judicial-apportionment .multiple-choice').children('label').each(function () {
-        $(this).attr('for', ('defendant-' + listCounter + '-order-judicial-apportionment'));
+      $(this).find('.field-name-2').children('label').each(function () {
+        $(this).attr('for', ('parent-' + listCounter + '-field-name-2'));
       });
 
       // Input counter
-      $(this).find('.first-name').children('input').each(function () {
-        $(this).attr('id', ('defendant-' + listCounter + '-first-name'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][first_name]'));
+      $(this).find('.field-name-1').children('input').each(function () {
+        $(this).attr('id', ('parent-' + listCounter + '-field-name-1'));
+        $(this).attr('name', ('parent-' + listCounter + '-field-name-1'));
       });
 
-      $(this).find('.last-name').children('input').each(function () {
-        $(this).attr('id', ('defendant-' + listCounter + '-last-name'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][last_name]'));
+      $(this).find('.field-name-2').children('input').each(function () {
+        $(this).attr('id', ('parent-' + listCounter + '-field-name-2'));
+        $(this).attr('name', ('parent-' + listCounter + '-field-name-2'));
       });
 
-      $(this).find('.date-of-birth .form-group').children('input').each(function () {
-        $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-day'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][day]'));
-        $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-month'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][month]'));
-        $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-year'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][year]'));
-      });
-
-      $(this).find('.order-judicial-apportionment .multiple-choice').children('input').each(function () {
-        $(this).attr('id', ('defendant-' + listCounter + '-order-judicial-apportionment'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][order_judicial_apportionment]'));
-      });
-
-      sortRepOrderFields(listCounter, fieldCounter);
+      sortChildFields(listCounter, fieldCounter);
 
       listCounter++;
       fieldCounter++;
@@ -254,55 +145,51 @@ $(document).ready(function(){
     }
   }
 
-  function sortRepOrderFields(listCounter, fieldCounter) {
-    var subListCounter = 1;
-    var subFieldCounter = 0;
+  function sortChildFields(listCounter, fieldCounter) {
+    var childListCounter = 1;
+    var childFieldCounter = 0;
 
-    $(document).find('.sub-list-item-row').each(function () {
+    $(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').each(function () {
 
-      $(this).attr('data-item-number', subListCounter);
+      $(this).attr('id', ('child-list-item-row-' + childListCounter));
+      $(this).attr('data-item-number', childListCounter);
 
-      $(this).find('h4.sub-list-item-heading').text('Representation order ' + subListCounter);
+      $(this).find('h4.child-list-item-heading').text('Child item ' + childListCounter);
 
-      console.log($(this).find('.remove-sub-list-item').length);
-
-      if ($(this).find('.remove-sub-list-item').length === 0) {
-        $(this).find('.list-item-heading:last').append('<a id="remove-sub-list-item-' + subListCounter + '" class="link-remove remove-sub-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this defendant</span></a>');
+      if ($(this).find('.remove-child-list-item').length === 0) {
+        $(this).find('.child-list-item-heading:last').append('<a id="remove-child-list-item-' + childListCounter + '" class="link-remove remove-child-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this child item</span></a>');
       } else {
-        $(this).find('.remove-sub-list-item').attr('id', 'remove-sub-list-item-' + subListCounter);
+        $(this).find('.remove-child-list-item').attr('id', ('remove-child-list-item-' + childListCounter));
       }
 
-      $(this).find('.representation-order-date .form-group').children('label').each(function () {
-        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-day'));
-        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-month'));
-        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-year'));
+      // Label counter
+      $(this).find('.child-field-name-1').children('label').each(function () {
+        $(this).attr('for', ('parent-' + listCounter + '-child-' + childListCounter + '-field-name-1'));
       });
 
-      $(this).find('.maat-reference').children('label').each(function () {
-        $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-maat-reference'));
+      $(this).find('.child-field-name-2').children('label').each(function () {
+        $(this).attr('for', ('parent-' + listCounter + '-child-' + childListCounter + '-field-name-2'));
       });
 
-      $(this).find('.representation-order-date .form-group').children('input').each(function () {
-        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-day'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][date][day]'));
-        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-month'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][date][month]'));
-        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-date-year'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][date][year]'));
+      // Input counter
+      $(this).find('.child-field-name-1').children('input').each(function () {
+        $(this).attr('id', ('parent-' + listCounter + '-child-' + childListCounter + '-field-name-1'));
+        $(this).attr('name', ('parent-' + fieldCounter + '-child-' + childFieldCounter + '-field-name-1'));
       });
 
-      $(this).find('.maat-reference').children('input').each(function () {
-        $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + subListCounter + '-maat-reference'));
-        $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + subFieldCounter + '][maat_reference]'));
+      $(this).find('.child-field-name-2').children('input').each(function () {
+        $(this).attr('id', ('parent-' + listCounter + '-child-' + childListCounter + '-field-name-2'));
+        $(this).attr('name', ('parent-' + fieldCounter + '-child-' + childFieldCounter + '-field-name-2'));
       });
 
-      subListCounter++;
-      subFieldCounter++;
+      childListCounter++;
+      childFieldCounter++;
     });
-
-    if ($(document).find('.sub-list-item-row').length === 1) {
-      $('.remove-sub-list-item').remove();
+    
+    if ($(document).find('.child-list-item-row').length === 1) {
+      $('.remove-child-list-item').remove();
     }
+
   }
 
 });
