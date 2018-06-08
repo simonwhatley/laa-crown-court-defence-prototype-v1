@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   $(document).on('click', '.add-child-list-item', function (e) {
     e.preventDefault();
-    
+
     var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
     var fieldCounter = listCounter - 1;
 
@@ -185,7 +185,8 @@ $(document).ready(function(){
       childListCounter++;
       childFieldCounter++;
     });
-    
+
+    // if ($(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').length === 1) {
     if ($(document).find('.child-list-item-row').length === 1) {
       $('.remove-child-list-item').remove();
     }
