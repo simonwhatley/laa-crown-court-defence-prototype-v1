@@ -21,7 +21,7 @@
 	    	<a class="link-back" href="../">Back</a>
 
 		    <h1 class="heading-xlarge">
-		      <span class="heading-secondary">Multiple items</span>
+		      <!-- <span class="heading-secondary">Multiple items</span> -->
 		      Claim for Crown court fees
 		    </h1>
 
@@ -33,14 +33,10 @@
 
 			<form method="get">
 
-				<div class="form-section list-item-row" data-item-number="1">
+				<div id="list-item-row-1" class="form-section list-item-row" data-item-number="1">
 
 				    <h3 class="heading-medium list-item-heading">
-				        Defendant<!--  1 -->
-				        <!-- <a id="remove-defendant-1" href="#" class="link-remove remove-list-item" title="Remove this defendant">
-				            Remove
-				            <span class="visually-hidden">&nbsp;this defendant</span>
-				        </a> -->
+				        Defendant
 				    </h3>
 
 				    <div class="form-group">
@@ -98,31 +94,27 @@
 				        </fieldset>
 				    </div>
 
-				    <div class="form-group">
-				        <details>
-				            <summary>
-				                <span class="summary">Help with judicial apportionment</span>
-				            </summary>
-				            <div class="panel panel-border-narrow">
-				                <p>
-				                Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
-				                </p>
-				            </div>
-				        </details>
-				    </div>
+					<div class="form-group">
+						<details>
+							<summary>
+								<span class="summary">Help with judicial apportionment</span>
+							</summary>
+							<div class="panel panel-border-narrow">
+								<p>
+								Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
+								</p>
+							</div>
+						</details>
+					</div>
 
 				    <h3 class="heading-medium">
 				        Representation order details
 				    </h3>
 
-				    <div id="sub-list-item-row-1" class="form-section-compound sub-list-item-row" data-item-number="1">
+				    <div id="child-list-item-row-1" class="form-section-compound child-list-item-row" data-item-number="1">
 
-					    <h4 id="sub-list-item-heading" class="heading-small sub-list-item-heading">
-					        Representation order<!--  1 -->
-					        <!-- <a id="remove-defendant-1-representation-order-1" href="#" class="link-remove remove-sub-list-item" title="Remove this representation order">
-					            Remove
-					            <span class="visually-hidden">&nbsp;this representation order</span>
-					        </a> -->
+					    <h4 id="child-list-item-heading" class="heading-small child-list-item-heading">
+					        Representation order
 					    </h4>
 
 					    <div class="form-group">
@@ -168,30 +160,29 @@
 
 					</div>
 
-				    <a id="add-link" class="add-sub-list-item" href="#">
-				        Add another representation order
+				    <a id="add-link" class="add-child-list-item" href="#">
+				    	Add another representation order
 				    </a>
 
 				    <hr>
 
 				</div>
 
-
-
 				<div class="form-section">
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
-						<input type="button" id="add-button" class="button button-tertiary button-add-another" value="Add another defendant">
-						<a id="cancel" class="link-secondary">Cancel</a>
+						<input type="button" id="add-button" class="button button-secondary add-list-item" value="Add another defendant">
+						<input type="button" class="button button-tertiary" value="Save as draft">
+						<!-- <a id="cancel" class="link-secondary">Cancel</a> -->
 					</div>
 				</div>
 
 			</form>
-
+<!--
 		      <div class="form-section">
 		      	<p class="heading-medium">The data:</p>
 		        {{data|dump('\t')|safe}}
-		      </div>
+		      </div> -->
 		</div>
 	</div>
 </main>
