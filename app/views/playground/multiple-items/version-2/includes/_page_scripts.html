@@ -25,10 +25,13 @@ $(document).ready(function(){
 
   $(document).on('click', '.remove-child-list-item', function (e) {
     e.preventDefault();
-    $(this).parents('.child-list-item-row').remove();
 
-    var listCounter = $(this).parents('.child-list-item-row').attr('data-item-number');
+    var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
     var fieldCounter = listCounter - 1;
+
+    var childListCounter = $(this).parents('.child-list-item-row').attr('data-item-number');
+
+    $(this).parents('#child-list-item-row-' + childListCounter).remove();
 
     sortChildFields(listCounter, fieldCounter);
   });
@@ -157,7 +160,7 @@ $(document).ready(function(){
       $(this).find('h4.child-list-item-heading').text('Child item ' + childListCounter);
 
       if ($(this).find('.remove-child-list-item').length === 0) {
-        $(this).find('.child-list-item-heading:last').append('<a id="remove-child-list-item-' + childListCounter + '" class="link-remove remove-child-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this child item</span></a>');
+        $(this).find('.child-list-item-heading:last').append('<a id="remove-list-item-' + listCounter + '-child-' + childListCounter + '" class="link-remove remove-child-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this child item</span></a>');
       } else {
         $(this).find('.remove-child-list-item').attr('id', ('remove-child-list-item-' + childListCounter));
       }
@@ -186,9 +189,8 @@ $(document).ready(function(){
       childFieldCounter++;
     });
 
-    // if ($(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').length === 1) {
-    if ($(document).find('.child-list-item-row').length === 1) {
-      $('.remove-child-list-item').remove();
+    if ($(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').length === 1) {
+      $('#remove-list-item-' + listCounter + '-child-1').remove();
     }
 
   }
