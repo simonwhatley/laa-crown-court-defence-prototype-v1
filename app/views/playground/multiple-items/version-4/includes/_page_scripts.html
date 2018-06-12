@@ -4,14 +4,17 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-  autocomplete({
-    selectElement: document.getElementById('miscellaneous-fee-1-type-select'),
-    autoselect: false,
-    showAllValues: true,
-    defaultValue: ''
-  });
+  try {
+    autocomplete({
+      selectElement: document.getElementById('miscellaneous-fee-1-type'),
+      autoselect: false,
+      showAllValues: true,
+      defaultValue: ''
+    });
+  }
+  catch (e) {}
 
-  // var selectEl = document.querySelector('#miscellaneous-fee-1-type-select');
+  // var selectEl = document.querySelector('#miscellaneous-fee-1-type');
   // accessibleAutocomplete.enhanceSelectElement({
   //   autoselect: false,
   //   // defaultValue: selectEl.options[selectEl.options.selectedIndex].innerHTML,
@@ -29,7 +32,14 @@ $(document).ready(function(){
 
   $(document).on('click', '.remove-list-item', function (e) {
     e.preventDefault();
-    $(this).parents('.list-item-row').remove();
+
+    var item = $(this).parents('.list-item-row').attr('data-item-number');
+    console.log(item);
+    // $('#miscellaneous-fee-' + item + '-type').remove();
+
+    $('#list-item-row-' + item).remove();
+
+    // $(this).parents('.list-item-row').remove();
     sortParentFields();
   });
 
@@ -38,9 +48,9 @@ $(document).ready(function(){
       '<div id="list-item-row-x" class="form-section-compound list-item-row" data-item-number="x">' +
         '<h3 class="heading-medium list-item-heading">Miscellaneous fee</h3>' +
         '<div class="form-group fee-type">' +
-          '<fieldset id="miscellaneous-fee-x-type" class="miscellaneous-fee-type">' +
+          '<fieldset class="miscellaneous-fee-type">' +
             '<legend class="form-label-bold">Type of fee</legend>' +
-            '<select class="form-control" id="miscellaneous-fee-x-type-select" name="miscellaneous_fee_x_type" style="width:100%">' +
+            '<select class="form-control" id="miscellaneous-fee-x-type" name="miscellaneous_fee_x_type" style="width:100%">' +
               '<option></option><option data-abbreviations="APH" value="abuse_of_process_hearings_half_day">Abuse of process hearings (half day)</option><option data-abbreviations="APU" value="abuse_of_process_hearings_half_day_uplift">Abuse of process hearings (half day uplift)</option><option data-abbreviations="APW" value="abuse_of_process_hearings_whole_day">Abuse of process hearings (whole day)</option><option data-abbreviations="AWU" value="abuse_of_process_hearings_whole_day_uplift">Abuse of process hearings (whole day uplift)</option><option value="adjourned_appeals">Adjourned appeals</option><option value="application_to_dismiss_a_charge_half_day">Application to dismiss a charge (half day)</option><option value="application_to_dismiss_a_charge_half_day_uplift">Application to dismiss a charge (half day uplift)</option><option value="application_to_dismiss_a_charge_whole_day">Application to dismiss a charge (whole day)</option><option value="application_to_dismiss_a_charge_whole_day_uplift">Application to dismiss a charge (whole day uplift)</option><option data-abbreviations="DTH,PCH" value="confiscation_hearings_half_day">Confiscation hearings (half day)</option><option data-abbreviations="DHU,CHU" value="confiscation_hearings_half_day_uplift">Confiscation hearings (half day uplift)</option><option data-abbreviations="DTW,PCW" value="confiscation_hearings_whole_day">Confiscation hearings (whole day)</option><option data-abbreviations="DWU,CWU" value="confiscation_hearings_whole_day_uplift">Confiscation hearings (whole day uplift)</option><option data-abbreviations="DSE" value="deferred_sentence_hearings">Deferred sentence hearings</option><option data-abbreviations="DSU" value="deferred_sentence_hearings_uplift">Deferred sentence hearings uplift</option><option data-abbreviations="AEH,PAH" value="hearings_relating_to_admissibility_of_evidence_half_day">Hearings relating to admissibility of evidence (half day)</option><option data-abbreviations="EHU,PHU" value="hearings_relating_to_admissibility_of_evidence_half_day_uplift">Hearings relating to admissibility of evidence (half day uplift)</option><option data-abbreviations="AEW,PAW" value="hearings_relating_to_admissibility_of_evidence_whole_day">Hearings relating to admissibility of evidence (whole day)</option><option data-abbreviations="EWU,PWU" value="hearings_relating_to_admissibility_of_evidence_whole_day_uplift">Hearings relating to admissibility of evidence (whole day uplift)</option><option data-abbreviations="HDH" value="hearings_relating_to_disclosure_half_day">Hearings relating to disclosure (half day)</option><option data-abbreviations="HHU" value="hearings_relating_to_disclosure_half_day_uplift">Hearings relating to disclosure (half day uplift)</option><option data-abbreviations="HDW" value="hearings_relating_to_disclosure_whole_day">Hearings relating to disclosure (whole day)</option><option data-abbreviations="HWU" value="hearings_relating_to_disclosure_whole_day_uplift">Hearings relating to disclosure (whole day uplift)</option><option data-abbreviations="NBR" value="noting_brief_fee">Noting brief fee</option><option data-abbreviations="PPC" value="paper_plea_case_management_hearing">Paper plea &amp; case management hearing</option><option data-abbreviations="PCU" value="paper_plea_case_management_hearing_uplift">Paper plea &amp; case management hearing uplift</option><option value="proceeds_of_crime_hearings_half_day">Proceeds of crime hearings (half day)</option><option value="proceeds_of_crime_hearings_half_day_uplift">Proceeds of crime hearings (half day uplift)</option><option value="proceeds_of_crime_hearings_whole_day">Proceeds of crime hearings (whole day)</option><option value="proceeds_of_crime_hearings_whole_day_uplift">Proceeds of crime hearings (whole day uplift)</option><option value="public_interest_immunity_hearings_half_day">Public interest immunity hearings (half day)</option><option value="public_interest_immunity_hearings_half_day_uplift">Public interest immunity hearings (half day uplift)</option><option value="public_interest_immunity_hearings_whole_day">Public interest immunity hearings (whole day)</option><option value="public_interest_immunity_hearings_whole_day_uplift">Public interest immunity hearings (whole day uplift)</option><option value="research_of_very_unusual_or_novel_factual_issue">Research of very unusual or novel factual issue</option><option value="research_of_very_unusual_or_novel_point_of_law">Research of very unusual or novel point of law</option><option value="sentence_hearings">Sentence hearings</option><option value="sentence_hearings_uplift">Sentence hearings uplift</option><option data-abbreviations="SPF" value="special_preparation_fee">Special preparation fee</option><option data-abbreviations="SAU" value="standard_appearance_fee_uplift">Standard appearance fee uplift</option><option value="trial_not_proceed">Trial not proceed</option><option value="trial_not_proceed_uplift">Trial not proceed uplift</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_half_day">Unsuccessful application to vacate a guilty plea (half day)</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_half_day_uplift">Unsuccessful application to vacate a guilty plea (half day uplift)</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_whole_day">Unsuccessful application to vacate a guilty plea (whole day)</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_whole_day_uplift">Unsuccessful application to vacate a guilty plea (whole day uplift)</option><option data-abbreviations="WPF" data-other-names="Wasted prep fee" value="wasted_preparation_fee">Wasted preparation fee</option><option data-abbreviations="WOA,RNF,RNL" data-other-names="Written or oral advice" value="written_oral_advice">Written / oral advice</option>' +
             '</select>' +
           '</fieldset>' +
@@ -95,7 +105,7 @@ $(document).ready(function(){
         $(this).find('.remove-list-item').attr('id', ('remove-item-' + listCounter));
       }
 
-      $(this).find('fieldset.miscellaneous-fee-type').attr('id', ('miscellaneous-fee-' + listCounter + '-type'));
+      // $(this).find('fieldset.miscellaneous-fee-type').attr('id', ('miscellaneous-fee-' + listCounter + '-type'));
 
       $(this).find('.date-of-hearing .form-group').children('label').each(function () {
         $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-date-day'));
@@ -108,7 +118,7 @@ $(document).ready(function(){
       });
 
       $(this).find('.miscellaneous-fee-type').children('select').each(function () {
-        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-type-select'));
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-type'));
         $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_type'));
       });
 
@@ -128,7 +138,7 @@ $(document).ready(function(){
 
       try {
         autocomplete({
-          selectElement: document.getElementById('miscellaneous-fee-' + listCounter + '-type-select'),
+          selectElement: document.getElementById('miscellaneous-fee-' + listCounter + '-type'),
           autoselect: false,
           showAllValues: true,
           defaultValue: ''
