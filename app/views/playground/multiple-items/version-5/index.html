@@ -21,11 +21,8 @@
 	    	<a class="link-back" href="../">Back</a>
 
 		    <h1 class="heading-xlarge">
-		      <!-- <span class="heading-secondary">Multiple items</span> -->
 		      Claim for Crown court fees
 		    </h1>
-
-		    <!-- <p class="lede">Something...</p> -->
 
 		    <h2 class="heading-large">
 		    	Miscellaneous fees
@@ -40,7 +37,7 @@
 					</h3>
 
 					<div class="form-group">
-						<fieldset>
+						<fieldset id="miscellaneous-fee-1-type" class="miscellaneous-fee-type">
 							<legend class="form-label-bold">
 								Type of fee
 							</legend>
@@ -51,28 +48,28 @@
 							</div>
 							<div class="panel panel-border-narrow js-hidden" id="miscellaneous-fee-1-type-1-panel" aria-hidden="true">
 					            <div class="form-group">
-					                <label class="form-label-bold" for="miscellaneous-fee-1-additional-case-numbers">
+					                <label class="form-label-bold" for="miscellaneous-fee-1-type-1-additional-case-numbers">
 					                    Additional case numbers
 					                    <span class="form-hint">
 					                        Separate with commas
 					                    </span>
 					                </label>
-					                <input class="form-control form-control-3-4" id="miscellaneous-fee-1-additional-case-numbers" name="miscellaneous_fee_1_additional_case_numbers" type="text" value="" autocorrect="off" autocapitalize="off" spellcheck="false">
+					                <input class="form-control form-control-3-4" id="miscellaneous-fee-1-type-1-additional-case-numbers" name="miscellaneous_fee_1_type_1_additional_case_numbers" type="text" value="" autocorrect="off" autocapitalize="off" spellcheck="false">
 					            </div>
-					        </div><div class="multiple-choice" data-target="costs_judge_application-panel">
-								<input id="miscellaneous-fee-1-type-2" type="radio" name="miscellaneous_fee_1_type" value="costs_judge_application" autocorrect="off" autocapitalize="off" spellcheck="false">
+					        </div><div class="multiple-choice" data-target="miscellaneous-fee-1-type-2-panel">
+								<input id="miscellaneous-fee-1-type-2" type="radio" name="miscellaneous_fee_1_type" value="costs_judge_application" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-1-type-2-panel" aria-expanded="false">
 								<label for="miscellaneous-fee-1-type-2">Costs judge application</label>
 							</div>
-							<div class="multiple-choice" data-target="costs_judge_preparation-panel">
-								<input id="miscellaneous-fee-1-type-3" type="radio" name="miscellaneous_fee_1_type" value="costs_judge_preparation" autocorrect="off" autocapitalize="off" spellcheck="false">
+							<div class="multiple-choice" data-target="miscellaneous-fee-1-type-3-panel">
+								<input id="miscellaneous-fee-1-type-3" type="radio" name="miscellaneous_fee_1_type" value="costs_judge_preparation" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-1-type-3-panel" aria-expanded="false">
 								<label for="miscellaneous-fee-1-type-3">Costs judge preparation</label>
 							</div>
-							<div class="multiple-choice" data-target="evidence_provision_fee-panel">
-								<input id="miscellaneous-fee-1-type-4" type="radio" name="miscellaneous_fee_1_type" value="evidence_provision_fee" autocorrect="off" autocapitalize="off" spellcheck="false">
+							<div class="multiple-choice" data-target="miscellaneous-fee-1-type-4-panel">
+								<input id="miscellaneous-fee-1-type-4" type="radio" name="miscellaneous_fee_1_type" value="evidence_provision_fee" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-1-type-4-panel" aria-expanded="false">
 								<label for="miscellaneous-fee-1-type-4">Evidence provision fee</label>
 							</div>
-							<div class="multiple-choice" data-target="special_preparation_fee-panel">
-								<input id="miscellaneous-fee-1-type-5" type="radio" name="miscellaneous_fee_1_type" value="special_preparation_fee" autocorrect="off" autocapitalize="off" spellcheck="false">
+							<div class="multiple-choice" data-target="miscellaneous-fee-1-type-5-panel">
+								<input id="miscellaneous-fee-1-type-5" type="radio" name="miscellaneous_fee_1_type" value="special_preparation_fee" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-1-type-5-panel" aria-expanded="false">
 								<label for="miscellaneous-fee-1-type-5">Special preparation fee</label>
 							</div>
 
@@ -93,141 +90,6 @@
 
 				</div>
 
-				<!-- <div id="list-item-row-1" class="form-section list-item-row" data-item-number="1">
-
-				    <h3 class="heading-medium list-item-heading">
-				        Defendant
-				    </h3>
-
-				    <div class="form-group">
-				        <label class="form-label-bold " for="defendant-1-first-name">
-				            First name
-				        </label>
-				        <input class="form-control" id="defendant-1-first-name" name="defendants[0][first_name]" type="text" value="{{data['defendants'][0]['first_name']}}" autocomplete="off">
-				    </div>
-
-				    <div class="form-group">
-				        <label class="form-label-bold" for="defendant-1-last-name">
-				            Last name
-				        </label>
-				        <input class="form-control" id="defendant-1-last-name" name="defendants[0][last_name]" type="text" value="{{data['defendants'][0]['last_name']}}" autocomplete="off">
-				    </div>
-
-				    <div class="form-group">
-				        <fieldset>
-				            <legend class="form-label-bold">
-				                Date of birth
-				                <span class="form-hint">
-				                    For example, 31 3 1980
-				                </span>
-				            </legend>
-				            <div class="form-date">
-				                <div class="form-group form-group-day">
-				                    <label class="form-label" for="defendant-1-date-of-birth-day">
-				                        Day
-				                    </label>
-				                    <input class="form-control" id="defendant-1-date-of-birth-day" max="31" min="1" name="defendants[0][date_of_birth][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['date_of_birth']['day']}}">
-				                </div>
-				                <div class="form-group form-group-month">
-				                    <label class="form-label" for="defendant-1-date-of-birth-month">
-				                        Month
-				                    </label>
-				                    <input class="form-control" id="defendant-1-date-of-birth-month" max="12" min="1" name="defendants[0][date_of_birth][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['date_of_birth']['month']}}">
-				                </div>
-				                <div class="form-group form-group-year">
-				                    <label class="form-label" for="defendant-1-date-of-birth-year">
-				                        Year
-				                    </label>
-				                    <input class="form-control" id="defendant-1-date-of-birth-year" max="2018" min="1900" name="defendants[0][date_of_birth][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['date_of_birth']['year']}}">
-				                </div>
-				            </div>
-				        </fieldset>
-				    </div>
-
-				    <div class="form-group">
-				        <fieldset>
-				            <div class="multiple-choice">
-				                <input id="defendant-1-order-judicial-apportionment" name="defendants[0][order_judicial_apportionment]" type="checkbox" value="yes" {% if data['defendants'][0]['order_judicial_apportionment'][1] == 'yes' -%}checked="checked"{%- endif %}>
-									<label for="defendant-1-order-judicial-apportionment">Order for judicial apportionment</label>
-				                </input>
-				            </div>
-				        </fieldset>
-				    </div>
-
-					<div class="form-group">
-						<details>
-							<summary>
-								<span class="summary">Help with judicial apportionment</span>
-							</summary>
-							<div class="panel panel-border-narrow">
-								<p>
-								Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of their defence costs. If applicable, please ensure you upload a copy of the order to your claim.
-								</p>
-							</div>
-						</details>
-					</div>
-
-				    <h3 class="heading-medium">
-				        Representation order details
-				    </h3>
-
-				    <div id="child-list-item-row-1" class="form-section-compound child-list-item-row" data-item-number="1">
-
-					    <h4 id="child-list-item-heading" class="heading-small child-list-item-heading">
-					        Representation order
-					    </h4>
-
-					    <div class="form-group">
-					        <fieldset>
-					            <legend class="form-label">
-					                Representation order date
-					                <span class="form-hint">
-					                    For example, 31 3 2017
-					                </span>
-					            </legend>
-					            <div class="form-date">
-					                <div class="form-group form-group-day">
-					                    <label class="form-label" for="defendant-1-representation-order-1-date-day">
-					                        Day
-					                    </label>
-					                    <input class="form-control" id="defendant-1-representation-order-1-date-day" max="31" min="1" name="defendants[0][representation_order][0][date][day]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['day']}}">
-					                </div>
-					                <div class="form-group form-group-month">
-					                    <label class="form-label" for="defendant-1-representation-order-1-date-month">
-					                        Month
-					                    </label>
-					                    <input class="form-control" id="defendant-1-representation-order-1-date-month" max="12" min="1" name="defendants[0][representation_order][0][date][month]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['month']}}">
-					                </div>
-					                <div class="form-group form-group-year">
-					                    <label class="form-label" for="defendant-1-representation-order-1-date-year">
-					                        Year
-					                    </label>
-					                    <input class="form-control" id="defendant-1-representation-order-1-date-year" max="2018" min="2010" name="defendants[0][representation_order][0][date][year]" pattern="[0-9]*" type="number" value="{{data['defendants'][0]['representation_order'][0]['date']['year']}}">
-					                </div>
-					            </div>
-					        </fieldset>
-					    </div>
-
-					    <div class="form-group">
-					        <label class="form-label-bold " for="defendant-1-representation-order-1-maat-reference">
-					            MAAT Reference
-					            <span class="form-hint">
-					                For example 123456789
-					            </span>
-					        </label>
-					        <input class="form-control" id="defendant-1-representation-order-1-maat-reference" name="defendants[0][representation_order][0][maat_reference]" type="text" value="{{data['defendants'][0]['representation_order'][0]['maat_reference']}}" autocomplete="off">
-					    </div>
-
-					</div>
-
-				    <a id="add-link" class="add-child-list-item" href="#">
-				    	Add another representation order
-				    </a>
-
-				    <hr>
-
-				</div> -->
-
 				<div class="form-section">
 					<div class="form-group form-buttons">
 						<input type="submit" class="button" value="Save and continue">
@@ -237,11 +99,7 @@
 				</div>
 
 			</form>
-<!--
-		      <div class="form-section">
-		      	<p class="heading-medium">The data:</p>
-		        {{data|dump('\t')|safe}}
-		      </div> -->
+
 		</div>
 	</div>
 </main>

@@ -13,63 +13,40 @@ $(document).ready(function(){
     sortParentFields();
   });
 
-  $(document).on('click', '.add-child-list-item', function (e) {
-    e.preventDefault();
-
-    var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
-    var fieldCounter = listCounter - 1;
-
-    insertChildFields(listCounter);
-    sortChildFields(listCounter, fieldCounter);
-  });
-
-  $(document).on('click', '.remove-child-list-item', function (e) {
-    e.preventDefault();
-
-    var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
-    var fieldCounter = listCounter - 1;
-
-    var childListCounter = $(this).parents('.child-list-item-row').attr('data-item-number');
-
-    $(this).parents('#child-list-item-row-' + childListCounter).remove();
-
-    sortChildFields(listCounter, fieldCounter);
-  });
-
   function insertParentFields() {
     $('.list-item-row:last').after(
       '<div id="list-item-row-x" class="form-section-compound list-item-row" data-item-number="x">' +
         '<h3 class="heading-medium list-item-heading">Miscellaneous fee</h3>' +
         '<div class="form-group">' +
-          '<fieldset class="fee-type">' +
+          '<fieldset id="miscellaneous-fee-x-type" class="miscellaneous-fee-type">' +
             '<legend class="form-label-bold">Type of fee</legend>' +
             '<div class="multiple-choice" data-target="miscellaneous-fee-x-type-1-panel">' +
-              '<input id="miscellaneous-fee-x-type-1" type="radio" name="miscellaneous_fee_x_type" value="case_uplift" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-1-type-1-panel" aria-expanded="false">' +
+              '<input id="miscellaneous-fee-x-type-1" type="radio" name="miscellaneous_fee_x_type" value="case_uplift" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-x-type-1-panel" aria-expanded="false">' +
               '<label for="miscellaneous-fee-x-type-1">Case uplift</label>' +
             '</div>' +
             '<div class="panel panel-border-narrow js-hidden" id="miscellaneous-fee-x-type-1-panel" aria-hidden="true">' +
                 '<div class="form-group">' +
-                    '<label class="form-label-bold" for="miscellaneous-fee-x-additional-case-numbers">' +
+                    '<label class="form-label-bold" for="miscellaneous-fee-x-type-1-additional-case-numbers">' +
                         'Additional case numbers' +
                         '<span class="form-hint">Separate with commas</span>' +
                     '</label>' +
-                    '<input class="form-control form-control-3-4" id="miscellaneous-fee-x-additional-case-numbers" name="miscellaneous_fee_x_additional_case_numbers" type="text" value="" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+                    '<input class="form-control form-control-3-4" id="miscellaneous-fee-x-type-1-additional-case-numbers" name="miscellaneous_fee_x_type_1_additional_case_numbers" type="text" value="" autocorrect="off" autocapitalize="off" spellcheck="false">' +
                 '</div>' +
             '</div>' +
-            '<div class="multiple-choice" data-target="costs_judge_application-panel">' +
-              '<input id="miscellaneous-fee-x-type-2" type="radio" name="miscellaneous_fee_x_type" value="costs_judge_application" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+            '<div class="multiple-choice" data-target="miscellaneous-fee-x-type-2-panel">' +
+              '<input id="miscellaneous-fee-x-type-2" type="radio" name="miscellaneous_fee_x_type" value="costs_judge_application" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-x-type-2-panel" aria-expanded="false">' +
               '<label for="miscellaneous-fee-x-type-2">Costs judge application</label>' +
             '</div>' +
-            '<div class="multiple-choice" data-target="costs_judge_preparation-panel">' +
-              '<input id="miscellaneous-fee-x-type-3" type="radio" name="miscellaneous_fee_x_type" value="costs_judge_preparation" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+            '<div class="multiple-choice" data-target="miscellaneous-fee-x-type-3-panel">' +
+              '<input id="miscellaneous-fee-x-type-3" type="radio" name="miscellaneous_fee_x_type" value="costs_judge_preparation" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-x-type-3-panel" aria-expanded="false">' +
               '<label for="miscellaneous-fee-x-type-3">Costs judge preparation</label>' +
             '</div>' +
-            '<div class="multiple-choice" data-target="evidence_provision_fee-panel">' +
-              '<input id="miscellaneous-fee-x-type-4" type="radio" name="miscellaneous_fee_x_type" value="evidence_provision_fee" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+            '<div class="multiple-choice" data-target="miscellaneous-fee-x-type-4-panel">' +
+              '<input id="miscellaneous-fee-x-type-4" type="radio" name="miscellaneous_fee_x_type" value="evidence_provision_fee" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-x-type-4-panel" aria-expanded="false">' +
               '<label for="miscellaneous-fee-x-type-4">Evidence provision fee</label>' +
             '</div>' +
-            '<div class="multiple-choice" data-target="special_preparation_fee-panel">' +
-              '<input id="miscellaneous-fee-x-type-5" type="radio" name="miscellaneous_fee_x_type" value="special_preparation_fee" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+            '<div class="multiple-choice" data-target="miscellaneous-fee-x-type-5-panel">' +
+              '<input id="miscellaneous-fee-x-type-5" type="radio" name="miscellaneous_fee_x_type" value="special_preparation_fee" autocorrect="off" autocapitalize="off" spellcheck="false" aria-controls="miscellaneous-fee-x-type-5-panel" aria-expanded="false">' +
               '<label for="miscellaneous-fee-x-type-5">Special preparation fee</label>' +
             '</div>' +
           '</fieldset>' +
@@ -81,12 +58,6 @@ $(document).ready(function(){
         '</div>' +
         '<hr>' +
       '</div>'
-    );
-  }
-
-  function insertChildFields(listCounter) {
-    $('#list-item-row-' + listCounter + '> .child-list-item-row:last').after(
-      
     );
   }
 
@@ -107,64 +78,35 @@ $(document).ready(function(){
         $(this).find('.remove-list-item').attr('id', ('remove-item-' + listCounter));
       }
 
-      // Label counter
-      $(this).find('.fee-type > div.multiple-choice').children('label').each(function () {
-        var radioCounter = 1;
-        $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-type-' + radioCounter));
-        radioCounter++;
+      $(this).find('fieldset.miscellaneous-fee-type').attr('id', ('miscellaneous-fee-' + listCounter + '-type'));
+
+      var typeCounter = 1;
+      // $(this).find(('#miscellaneous-fee-' + listCounter + '-type > div.multiple-choice')).children('label').each(function () {
+      $(this).find(('.miscellaneous-fee-type > div.multiple-choice')).children('label').each(function () {
+        $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-type-' + typeCounter));
+        typeCounter++;
       });
 
       $(this).find('.net-amount').children('label').each(function () {
         $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-net-amount'));
       });
 
-      // $(this).find('.last-name').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-last-name'));
-      // });
-
-      // $(this).find('.date-of-birth .form-group').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-day'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-month'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-year'));
-      // });
-
-      // $(this).find('.order-judicial-apportionment .multiple-choice').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-order-judicial-apportionment'));
-      // });
-
-      // Input counter
-      $(this).find('.fee-type > div.multiple-choice').children('input').each(function () {
-        var radioCounter = 1;
-        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-type-' + radioCounter));
-        $(this).attr('aria-controls', ('miscellaneous-fee-' + listCounter + '-type-' + radioCounter + '-panel'));
-        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_type_' + radioCounter));
-        radioCounter++;
+      var typeCounter = 1;
+      // $(this).find(('#miscellaneous-fee-' + listCounter + '-type > div.multiple-choice')).children('input').each(function () {
+      $(this).find(('.miscellaneous-fee-type > div.multiple-choice')).children('input').each(function () {
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-type-' + typeCounter));
+        $(this).attr('aria-controls', ('miscellaneous-fee-' + listCounter + '-type-' + typeCounter + '-panel'));
+        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_type'));
+        $(this).parent().attr('data-target', ('miscellaneous-fee-' + listCounter + '-type-' + typeCounter + '-panel'));
+        typeCounter++;
       });
 
-      $(this).find('.fee-type > div.multiple-choice').attr('data-target', ('miscellaneous-fee-' + listCounter + '-type-1-panel'));
-
-      $(this).find('.fee-type > div.panel').attr('id', ('miscellaneous-fee-' + listCounter + '-type-1-panel'));
+      $(this).find(('#miscellaneous-fee-' + listCounter + '-type > div.panel')).attr('id', ('miscellaneous-fee-' + listCounter + '-type-1-panel'));
 
       $(this).find('.net-amount').children('input').each(function () {
         $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-net-amount'));
         $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_net_amount'));
       });
-
-      // $(this).find('.date-of-birth .form-group').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-day'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][day]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-month'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][month]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-year'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][year]'));
-      // });
-
-      // $(this).find('.order-judicial-apportionment .multiple-choice').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-order-judicial-apportionment'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][order_judicial_apportionment]'));
-      // });
-
-      // sortChildFields(listCounter, fieldCounter);
 
       listCounter++;
       fieldCounter++;
@@ -173,57 +115,6 @@ $(document).ready(function(){
     if ($(document).find('.list-item-row').length === 1) {
       $('.remove-list-item').remove();
     }
-  }
-
-  function sortChildFields(listCounter, fieldCounter) {
-    var childListCounter = 1;
-    var childFieldCounter = 0;
-
-    $(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').each(function () {
-
-      $(this).attr('id', ('child-list-item-row-' + childListCounter));
-      $(this).attr('data-item-number', childListCounter);
-
-      $(this).find('h4.child-list-item-heading').text('Representation order ' + childListCounter);
-
-      if ($(this).find('.remove-child-list-item').length === 0) {
-        $(this).find('.child-list-item-heading:last').append('<a id="remove-list-item-' + listCounter + '-child-' + childListCounter + '" class="link-remove remove-child-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this child item</span></a>');
-      } else {
-        $(this).find('.remove-child-list-item').attr('id', ('remove-child-list-item-' + childListCounter));
-      }
-
-      // $(this).find('.representation-order-date .form-group').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-day'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-month'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-year'));
-      // });
-
-      // $(this).find('.maat-reference').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-maat-reference'));
-      // });
-
-      // $(this).find('.representation-order-date .form-group').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-day'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][date][day]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-month'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][date][month]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-year'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][date][year]'));
-      // });
-
-      // $(this).find('.maat-reference').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-maat-reference'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][maat_reference]'));
-      // });
-
-      childListCounter++;
-      childFieldCounter++;
-    });
-
-    if ($(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').length === 1) {
-      $('#remove-list-item-' + listCounter + '-child-1').remove();
-    }
-
   }
 
 });
