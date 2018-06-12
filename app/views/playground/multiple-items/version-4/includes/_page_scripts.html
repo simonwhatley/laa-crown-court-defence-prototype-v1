@@ -1,5 +1,25 @@
+<script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script src="/public/javascripts/cccd-autocomplete.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
+
+  autocomplete({
+    selectElement: document.getElementById('miscellaneous-fee-1-type-select'),
+    autoselect: false,
+    showAllValues: true,
+    defaultValue: ''
+  });
+
+  // var selectEl = document.querySelector('#miscellaneous-fee-1-type-select');
+  // accessibleAutocomplete.enhanceSelectElement({
+  //   autoselect: false,
+  //   // defaultValue: selectEl.options[selectEl.options.selectedIndex].innerHTML,
+  //   defaultValue: '',
+  //   showAllValues: true,
+  //   // minLength: 2,
+  //   selectElement: selectEl
+  // });
 
   $(document).on('click', '.add-list-item', function (e) {
     e.preventDefault();
@@ -13,163 +33,49 @@ $(document).ready(function(){
     sortParentFields();
   });
 
-  $(document).on('click', '.add-child-list-item', function (e) {
-    e.preventDefault();
-
-    var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
-    var fieldCounter = listCounter - 1;
-
-    insertChildFields(listCounter);
-    sortChildFields(listCounter, fieldCounter);
-  });
-
-  $(document).on('click', '.remove-child-list-item', function (e) {
-    e.preventDefault();
-
-    var listCounter = $(this).parents('.list-item-row').attr('data-item-number');
-    var fieldCounter = listCounter - 1;
-
-    var childListCounter = $(this).parents('.child-list-item-row').attr('data-item-number');
-
-    $(this).parents('#child-list-item-row-' + childListCounter).remove();
-
-    sortChildFields(listCounter, fieldCounter);
-  });
-
   function insertParentFields() {
     $('.list-item-row:last').after(
-    //   '<div id="list-item-row-x" class="form-section list-item-row" data-item-number="x">' +
-    //     '<h3 class="heading-medium list-item-heading">' +
-    //         'Defendant' +
-    //     '</h3>' +
-    //     '<div class="form-group first-name">' +
-    //         '<label class="form-label-bold " for="defendant-x-first-name">First name</label>' +
-    //         '<input class="form-control" id="defendant-x-first-name" name="defendants[x][first_name]" type="text" autocomplete="off">' +
-    //     '</div>' +
-    //     '<div class="form-group last-name">' +
-    //         '<label class="form-label-bold" for="defendant-x-last-name">Last name</label>' +
-    //         '<input class="form-control" id="defendant-x-last-name" name="defendants[x][last_name]" type="text" autocomplete="off">' +
-    //     '</div>' +
-    //     '<div class="form-group">' +
-    //         '<fieldset>' +
-    //             '<legend class="form-label-bold">' +
-    //                 'Date of birth' +
-    //                 '<span class="form-hint">For example, 31 3 1980</span>' +
-    //             '</legend>' +
-    //             '<div class="form-date date-of-birth">' +
-    //                 '<div class="form-group form-group-day">' +
-    //                     '<label class="form-label" for="defendant-x-date-of-birth-day">Day</label>' +
-    //                     '<input class="form-control" id="defendant-x-date-of-birth-day" max="31" min="1" name="defendants[x][date_of_birth][day]" pattern="[0-9]*" type="number">' +
-    //                 '</div>' +
-    //                 '<div class="form-group form-group-month">' +
-    //                     '<label class="form-label" for="defendant-x-date-of-birth-month">Month</label>' +
-    //                     '<input class="form-control" id="defendant-x-date-of-birth-month" max="12" min="1" name="defendants[x][date_of_birth][month]" pattern="[0-9]*" type="number">' +
-    //                 '</div>' +
-    //                 '<div class="form-group form-group-year">' +
-    //                     '<label class="form-label" for="defendant-x-date-of-birth-year">Year</label>' +
-    //                     '<input class="form-control" id="defendant-x-date-of-birth-year" max="2018" min="1900" name="defendants[x][date_of_birth][year]" pattern="[0-9]*" type="number">' +
-    //                 '</div>' +
-    //             '</div>' +
-    //         '</fieldset>' +
-    //     '</div>' +
-    //     '<div class="form-group order-judicial-apportionment">' +
-    //         '<fieldset>' +
-    //             '<div class="multiple-choice">' +
-    //                 '<input id="defendant-x-order-judicial-apportionment" name="defendants[x][order_judicial_apportionment]" type="checkbox" value="yes">' +
-    //                     '<label for="defendant-x-order-judicial-apportionment">Order for judicial apportionment</label>' +
-    //                 '</input>' +
-    //             '</div>' +
-    //         '</fieldset>' +
-    //     '</div>' +
-    //     '<div class="form-group">' +
-    //         '<details>' +
-    //             '<summary>' +
-    //                 '<span class="summary">Help with judicial apportionment</span>' +
-    //             '</summary>' +
-    //             '<div class="panel panel-border-narrow">' +
-    //                 '<p>Judicial apportionment is when the defendant has applied for and received an order confirming they are not required to pay the full amount of '+
-    //                  'their defence costs. If applicable, please ensure you upload a copy of the order to your claim.</p>' +
-    //             '</div>' +
-    //         '</details>' +
-    //     '</div>' +
-    //     '<h3 class="heading-medium">Representation order details</h3>' +
-    //     '<div id="child-list-item-row-x" class="form-section-compound child-list-item-row" data-item-number="x">' +
-    //       '<h4 id="child-list-item-heading-x" class="heading-small child-list-item-heading">' +
-    //           'Representation order' +
-    //       '</h4>' +
-    //       '<div class="form-group">' +
-    //           '<fieldset>' +
-    //               '<legend class="form-label">' +
-    //                   'Representation order date' +
-    //                   '<span class="form-hint">For example, 31 3 2017</span>' +
-    //               '</legend>' +
-    //               '<div class="form-date representation-order-date">' +
-    //                   '<div class="form-group form-group-day">' +
-    //                       '<label class="form-label" for="defendant-x-representation-order-x-date-day">Day</label>' +
-    //                       '<input class="form-control" id="defendant-x-representation-order-x-date-day" max="31" min="1" name="defendants[x][representation_order][x][date][day]" pattern="[0-9]*" type="number">' +
-    //                   '</div>' +
-    //                   '<div class="form-group form-group-month">' +
-    //                       '<label class="form-label" for="defendant-x-representation-order-x-date-month">Month</label>' +
-    //                       '<input class="form-control" id="defendant-x-representation-order-x-date-month" max="12" min="1" name="defendants[x][representation_order][x][date][month]" pattern="[0-9]*" type="number">' +
-    //                   '</div>' +
-    //                   '<div class="form-group form-group-year">' +
-    //                       '<label class="form-label" for="defendant-x-representation-order-x-date-year">Year</label>' +
-    //                       '<input class="form-control" id="defendant-x-representation-order-x-date-year" max="2018" min="2010" name="defendants[x][representation_order][x][date][year]" pattern="[0-9]*" type="number">' +
-    //                   '</div>' +
-    //               '</div>' +
-    //           '</fieldset>' +
-    //       '</div>' +
-    //       '<div class="form-group maat-reference">' +
-    //           '<label class="form-label-bold " for="defendant-x-representation-order-x-maat-reference">' +
-    //               'MAAT Reference' +
-    //               '<span class="form-hint">For example 123456789</span>' +
-    //           '</label>' +
-    //           '<input class="form-control" id="defendant-x-representation-order-x-maat-reference" name="defendants[x][representation_order][x][maat_reference]" type="text" autocomplete="off">' +
-    //       '</div>' +
-    //     '</div>' +
-    //     '<a id="add-link" class="add-child-list-item" href="#">Add another representation order</a>' +
-    //     '<hr>' +
-    // '</div>'
+      '<div id="list-item-row-x" class="form-section-compound list-item-row" data-item-number="x">' +
+        '<h3 class="heading-medium list-item-heading">Miscellaneous fee</h3>' +
+        '<div class="form-group fee-type">' +
+          '<fieldset id="miscellaneous-fee-x-type" class="miscellaneous-fee-type">' +
+            '<legend class="form-label-bold">Type of fee</legend>' +
+            '<select class="form-control" id="miscellaneous-fee-x-type-select" name="miscellaneous_fee_x_type" style="width:100%">' +
+              '<option></option><option data-abbreviations="APH" value="abuse_of_process_hearings_half_day">Abuse of process hearings (half day)</option><option data-abbreviations="APU" value="abuse_of_process_hearings_half_day_uplift">Abuse of process hearings (half day uplift)</option><option data-abbreviations="APW" value="abuse_of_process_hearings_whole_day">Abuse of process hearings (whole day)</option><option data-abbreviations="AWU" value="abuse_of_process_hearings_whole_day_uplift">Abuse of process hearings (whole day uplift)</option><option value="adjourned_appeals">Adjourned appeals</option><option value="application_to_dismiss_a_charge_half_day">Application to dismiss a charge (half day)</option><option value="application_to_dismiss_a_charge_half_day_uplift">Application to dismiss a charge (half day uplift)</option><option value="application_to_dismiss_a_charge_whole_day">Application to dismiss a charge (whole day)</option><option value="application_to_dismiss_a_charge_whole_day_uplift">Application to dismiss a charge (whole day uplift)</option><option data-abbreviations="DTH,PCH" value="confiscation_hearings_half_day">Confiscation hearings (half day)</option><option data-abbreviations="DHU,CHU" value="confiscation_hearings_half_day_uplift">Confiscation hearings (half day uplift)</option><option data-abbreviations="DTW,PCW" value="confiscation_hearings_whole_day">Confiscation hearings (whole day)</option><option data-abbreviations="DWU,CWU" value="confiscation_hearings_whole_day_uplift">Confiscation hearings (whole day uplift)</option><option data-abbreviations="DSE" value="deferred_sentence_hearings">Deferred sentence hearings</option><option data-abbreviations="DSU" value="deferred_sentence_hearings_uplift">Deferred sentence hearings uplift</option><option data-abbreviations="AEH,PAH" value="hearings_relating_to_admissibility_of_evidence_half_day">Hearings relating to admissibility of evidence (half day)</option><option data-abbreviations="EHU,PHU" value="hearings_relating_to_admissibility_of_evidence_half_day_uplift">Hearings relating to admissibility of evidence (half day uplift)</option><option data-abbreviations="AEW,PAW" value="hearings_relating_to_admissibility_of_evidence_whole_day">Hearings relating to admissibility of evidence (whole day)</option><option data-abbreviations="EWU,PWU" value="hearings_relating_to_admissibility_of_evidence_whole_day_uplift">Hearings relating to admissibility of evidence (whole day uplift)</option><option data-abbreviations="HDH" value="hearings_relating_to_disclosure_half_day">Hearings relating to disclosure (half day)</option><option data-abbreviations="HHU" value="hearings_relating_to_disclosure_half_day_uplift">Hearings relating to disclosure (half day uplift)</option><option data-abbreviations="HDW" value="hearings_relating_to_disclosure_whole_day">Hearings relating to disclosure (whole day)</option><option data-abbreviations="HWU" value="hearings_relating_to_disclosure_whole_day_uplift">Hearings relating to disclosure (whole day uplift)</option><option data-abbreviations="NBR" value="noting_brief_fee">Noting brief fee</option><option data-abbreviations="PPC" value="paper_plea_case_management_hearing">Paper plea &amp; case management hearing</option><option data-abbreviations="PCU" value="paper_plea_case_management_hearing_uplift">Paper plea &amp; case management hearing uplift</option><option value="proceeds_of_crime_hearings_half_day">Proceeds of crime hearings (half day)</option><option value="proceeds_of_crime_hearings_half_day_uplift">Proceeds of crime hearings (half day uplift)</option><option value="proceeds_of_crime_hearings_whole_day">Proceeds of crime hearings (whole day)</option><option value="proceeds_of_crime_hearings_whole_day_uplift">Proceeds of crime hearings (whole day uplift)</option><option value="public_interest_immunity_hearings_half_day">Public interest immunity hearings (half day)</option><option value="public_interest_immunity_hearings_half_day_uplift">Public interest immunity hearings (half day uplift)</option><option value="public_interest_immunity_hearings_whole_day">Public interest immunity hearings (whole day)</option><option value="public_interest_immunity_hearings_whole_day_uplift">Public interest immunity hearings (whole day uplift)</option><option value="research_of_very_unusual_or_novel_factual_issue">Research of very unusual or novel factual issue</option><option value="research_of_very_unusual_or_novel_point_of_law">Research of very unusual or novel point of law</option><option value="sentence_hearings">Sentence hearings</option><option value="sentence_hearings_uplift">Sentence hearings uplift</option><option data-abbreviations="SPF" value="special_preparation_fee">Special preparation fee</option><option data-abbreviations="SAU" value="standard_appearance_fee_uplift">Standard appearance fee uplift</option><option value="trial_not_proceed">Trial not proceed</option><option value="trial_not_proceed_uplift">Trial not proceed uplift</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_half_day">Unsuccessful application to vacate a guilty plea (half day)</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_half_day_uplift">Unsuccessful application to vacate a guilty plea (half day uplift)</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_whole_day">Unsuccessful application to vacate a guilty plea (whole day)</option><option value="unsuccessful_application_to_vacate_a_guilty_plea_whole_day_uplift">Unsuccessful application to vacate a guilty plea (whole day uplift)</option><option data-abbreviations="WPF" data-other-names="Wasted prep fee" value="wasted_preparation_fee">Wasted preparation fee</option><option data-abbreviations="WOA,RNF,RNL" data-other-names="Written or oral advice" value="written_oral_advice">Written / oral advice</option>' +
+            '</select>' +
+          '</fieldset>' +
+        '</div>' +
+        '<div class="form-group">' +
+            '<fieldset>' +
+                '<legend class="form-label-bold">' +
+                    'Date of hearing' +
+                    '<span class="form-hint">For example, 31 3 2017</span>' +
+                '</legend>' +
+            '<div class="form-date date-of-hearing">' +
+                '<div class="form-group form-group-day">' +
+                    '<label class="form-label" for="miscellaneous-fee-x-date-day">Day</label>' +
+                    '<input class="form-control" id="miscellaneous-fee-x-date-day" max="31" min="1" name="miscellaneous_fee_x_date_day" pattern="[0-9]*" type="number" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+                '</div>' +
+                '<div class="form-group form-group-month">' +
+                    '<label class="form-label" for="miscellaneous-fee-x-date-month">Month</label>' +
+                    '<input class="form-control" id="miscellaneous-fee-x-date-month" max="12" min="1" name="miscellaneous_fee_x_date_month" pattern="[0-9]*" type="number" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+                '</div>' +
+                '<div class="form-group form-group-year">' +
+                    '<label class="form-label" for="miscellaneous-fee-x-date-year">Year</label>' +
+                    '<input class="form-control" id="miscellaneous-fee-x-date-year" max="2019" min="1900" name="miscellaneous_fee_x_date_year" pattern="[0-9]*" type="number" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+                '</div>' +
+            '</div>' +
+          '</fieldset>' +
+        '</div>' +
+        '<div class="form-group net-amount">' +
+            '<label class="form-label-bold" for="miscellaneous-fee-x-net-amount">Net amount</label>' +
+            '<span class="form-input-denote">&pound;</span>' +
+            '<input class="form-control form-control-1-4 form-input-denote__input" id="miscellaneous-fee-x-net-amount" name="miscellaneous_fee_x_net_amount" type="number" max="999999.99" min="0.00" step="0.01" autocorrect="off" autocapitalize="off" spellcheck="false">' +
+        '</div>' +
+        '<hr>' +
+      '</div>'
     );
-  }
 
-  function insertChildFields(listCounter) {
-    $('#list-item-row-' + listCounter + '> .child-list-item-row:last').after(
-      // '<div id="child-list-item-row-x" class="form-section-compound child-list-item-row" data-item-number="x">' +
-      //     '<h4 id="child-list-item-heading-x" class="heading-small child-list-item-heading">' +
-      //         'Representation order' +
-      //     '</h4>' +
-      //     '<div class="form-group">' +
-      //         '<fieldset>' +
-      //             '<legend class="form-label">' +
-      //                 'Representation order date' +
-      //                 '<span class="form-hint">For example, 31 3 2017</span>' +
-      //             '</legend>' +
-      //             '<div class="form-date representation-order-date">' +
-      //                 '<div class="form-group form-group-day">' +
-      //                     '<label class="form-label" for="defendant-x-representation-order-x-date-day">Day</label>' +
-      //                     '<input class="form-control" id="defendant-x-representation-order-x-date-day" max="31" min="1" name="defendants[x][representation_order][x][date][day]" pattern="[0-9]*" type="number">' +
-      //                 '</div>' +
-      //                 '<div class="form-group form-group-month">' +
-      //                     '<label class="form-label" for="defendant-x-representation-order-x-date-month">Month</label>' +
-      //                     '<input class="form-control" id="defendant-x-representation-order-x-date-month" max="12" min="1" name="defendants[x][representation_order][x][date][month]" pattern="[0-9]*" type="number">' +
-      //                 '</div>' +
-      //                 '<div class="form-group form-group-year">' +
-      //                     '<label class="form-label" for="defendant-x-representation-order-x-date-year">Year</label>' +
-      //                     '<input class="form-control" id="defendant-x-representation-order-x-date-year" max="2018" min="2010" name="defendants[x][representation_order][x][date][year]" pattern="[0-9]*" type="number">' +
-      //                 '</div>' +
-      //             '</div>' +
-      //         '</fieldset>' +
-      //     '</div>' +
-      //     '<div class="form-group maat-reference">' +
-      //         '<label class="form-label-bold " for="defendant-x-representation-order-x-maat-reference">' +
-      //             'MAAT Reference' +
-      //             '<span class="form-hint">For example 123456789</span>' +
-      //         '</label>' +
-      //         '<input class="form-control" id="defendant-x-representation-order-x-maat-reference" name="defendants[x][representation_order][x][maat_reference]" type="text" autocomplete="off">' +
-      //     '</div>' +
-      //   '</div>'
-    );
   }
 
   function sortParentFields() {
@@ -181,7 +87,7 @@ $(document).ready(function(){
       $(this).attr('id', ('list-item-row-' + listCounter));
       $(this).attr('data-item-number', listCounter);
 
-      $(this).find('h3.list-item-heading').text('Defendant ' + listCounter);
+      $(this).find('h3.list-item-heading').text('Miscellaneous fee ' + listCounter);
 
       if ($(this).find('.remove-list-item').length === 0) {
         $(this).find('.list-item-heading:last').append('<a id="remove-item-' + listCounter + '" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this parent item</span></a>');
@@ -189,51 +95,46 @@ $(document).ready(function(){
         $(this).find('.remove-list-item').attr('id', ('remove-item-' + listCounter));
       }
 
-      // Label counter
-      // $(this).find('.first-name').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-first-name'));
-      // });
+      $(this).find('fieldset.miscellaneous-fee-type').attr('id', ('miscellaneous-fee-' + listCounter + '-type'));
 
-      // $(this).find('.last-name').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-last-name'));
-      // });
+      $(this).find('.date-of-hearing .form-group').children('label').each(function () {
+        $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-date-day'));
+        $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-date-month'));
+        $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-date-year'));
+      });
 
-      // $(this).find('.date-of-birth .form-group').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-day'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-month'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-date-of-birth-year'));
-      // });
+      $(this).find('.net-amount').children('label').each(function () {
+        $(this).attr('for', ('miscellaneous-fee-' + listCounter + '-net-amount'));
+      });
 
-      // $(this).find('.order-judicial-apportionment .multiple-choice').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-order-judicial-apportionment'));
-      // });
+      $(this).find('.miscellaneous-fee-type').children('select').each(function () {
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-type-select'));
+        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_type'));
+      });
 
-      // Input counter
-      // $(this).find('.first-name').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-first-name'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][first_name]'));
-      // });
+      $(this).find('.date-of-hearing .form-group').children('input').each(function () {
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-date-day'));
+        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_date_day]'));
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-date-month'));
+        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_date_month]'));
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-date-year'));
+        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_date_year]'));
+      });
 
-      // $(this).find('.last-name').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-last-name'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][last_name]'));
-      // });
+      $(this).find('.net-amount').children('input').each(function () {
+        $(this).attr('id', ('miscellaneous-fee-' + listCounter + '-net-amount'));
+        $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_net_amount'));
+      });
 
-      // $(this).find('.date-of-birth .form-group').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-day'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][day]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-month'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][month]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-date-of-birth-year'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][date_of_birth][year]'));
-      // });
-
-      // $(this).find('.order-judicial-apportionment .multiple-choice').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-order-judicial-apportionment'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][order_judicial_apportionment]'));
-      // });
-
-      sortChildFields(listCounter, fieldCounter);
+      try {
+        autocomplete({
+          selectElement: document.getElementById('miscellaneous-fee-' + listCounter + '-type-select'),
+          autoselect: false,
+          showAllValues: true,
+          defaultValue: ''
+        });
+      }
+      catch (e) {}
 
       listCounter++;
       fieldCounter++;
@@ -242,57 +143,6 @@ $(document).ready(function(){
     if ($(document).find('.list-item-row').length === 1) {
       $('.remove-list-item').remove();
     }
-  }
-
-  function sortChildFields(listCounter, fieldCounter) {
-    var childListCounter = 1;
-    var childFieldCounter = 0;
-
-    $(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').each(function () {
-
-      $(this).attr('id', ('child-list-item-row-' + childListCounter));
-      $(this).attr('data-item-number', childListCounter);
-
-      $(this).find('h4.child-list-item-heading').text('Representation order ' + childListCounter);
-
-      if ($(this).find('.remove-child-list-item').length === 0) {
-        $(this).find('.child-list-item-heading:last').append('<a id="remove-list-item-' + listCounter + '-child-' + childListCounter + '" class="link-remove remove-child-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this child item</span></a>');
-      } else {
-        $(this).find('.remove-child-list-item').attr('id', ('remove-child-list-item-' + childListCounter));
-      }
-
-      // $(this).find('.representation-order-date .form-group').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-day'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-month'));
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-year'));
-      // });
-
-      // $(this).find('.maat-reference').children('label').each(function () {
-      //   $(this).attr('for', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-maat-reference'));
-      // });
-
-      // $(this).find('.representation-order-date .form-group').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-day'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][date][day]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-month'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][date][month]'));
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-date-year'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][date][year]'));
-      // });
-
-      // $(this).find('.maat-reference').children('input').each(function () {
-      //   $(this).attr('id', ('defendant-' + listCounter + '-representation-order-' + childListCounter + '-maat-reference'));
-      //   $(this).attr('name', ('defendants[' + fieldCounter + '][representation_order][' + childFieldCounter + '][maat_reference]'));
-      // });
-
-      childListCounter++;
-      childFieldCounter++;
-    });
-
-    if ($(document).find('#list-item-row-' + listCounter + ' > .child-list-item-row').length === 1) {
-      $('#remove-list-item-' + listCounter + '-child-1').remove();
-    }
-
   }
 
 });
