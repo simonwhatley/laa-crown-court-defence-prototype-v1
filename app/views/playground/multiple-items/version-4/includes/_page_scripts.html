@@ -4,15 +4,16 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-  try {
-    autocomplete({
-      selectElement: document.getElementById('miscellaneous-fee-1-type'),
-      autoselect: false,
-      showAllValues: true,
-      defaultValue: ''
-    });
+  if ($('#miscellaneous-fee-1-type').length === 1) {
+    // console.log('Init: #miscellaneous-fee-1-type');
+    // autocomplete({
+    //   selectElement: document.getElementById('miscellaneous-fee-1-type'),
+    //   autoselect: false,
+    //   showAllValues: true,
+    //   defaultValue: ''
+    // });
+    sortParentFields();
   }
-  catch (e) {}
 
   // var selectEl = document.querySelector('#miscellaneous-fee-1-type');
   // accessibleAutocomplete.enhanceSelectElement({
@@ -32,14 +33,7 @@ $(document).ready(function(){
 
   $(document).on('click', '.remove-list-item', function (e) {
     e.preventDefault();
-
-    var item = $(this).parents('.list-item-row').attr('data-item-number');
-    console.log(item);
-    // $('#miscellaneous-fee-' + item + '-type').remove();
-
-    $('#list-item-row-' + item).remove();
-
-    // $(this).parents('.list-item-row').remove();
+    $(this).parents('.list-item-row').remove();
     sortParentFields();
   });
 
@@ -97,7 +91,7 @@ $(document).ready(function(){
       $(this).attr('id', ('list-item-row-' + listCounter));
       $(this).attr('data-item-number', listCounter);
 
-      $(this).find('h3.list-item-heading').text('Miscellaneous fee ' + listCounter);
+      $(this).find('.list-item-heading').text('Miscellaneous fee ' + listCounter);
 
       if ($(this).find('.remove-list-item').length === 0) {
         $(this).find('.list-item-heading:last').append('<a id="remove-item-' + listCounter + '" class="link-remove remove-list-item" href="#">Remove <span class="visually-hidden">&nbsp;this parent item</span></a>');
@@ -136,6 +130,20 @@ $(document).ready(function(){
         $(this).attr('name', ('miscellaneous_fee_' + fieldCounter + '_net_amount'));
       });
 
+      // if ($('#miscellaneous-fee-0-type').length === 1) {
+      //   $('#miscellaneous-fee-0-type').remove();
+      // }
+
+      // if ($('#miscellaneous-fee-' + listCounter + '-type').length === 1) {
+      // console.log('Sort: #miscellaneous-fee-' + listCounter + '-type');
+      //   autocomplete({
+      //     selectElement: document.getElementById('miscellaneous-fee-' + listCounter + '-type'),
+      //     autoselect: false,
+      //     showAllValues: true,
+      //     defaultValue: ''
+      //   });
+      // }
+
       try {
         autocomplete({
           selectElement: document.getElementById('miscellaneous-fee-' + listCounter + '-type'),
@@ -149,6 +157,8 @@ $(document).ready(function(){
       listCounter++;
       fieldCounter++;
     });
+
+    // console.log('Qty: ' + $(document).find('.miscellaneous-fee-type').length);
 
     if ($(document).find('.list-item-row').length === 1) {
       $('.remove-list-item').remove();
