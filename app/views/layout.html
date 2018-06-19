@@ -21,7 +21,7 @@
             {% if serviceName %} {{ serviceName }} {% endif %}
           {% endblock %}
         </a>
-        
+        {% if data['links'] != 'hide' %}
         <ul id="proposition-links">
             <!-- <li><a href="/claims" class="active">Claims</a></li> -->
             <li><a href="/providers/">Providers</a></li>
@@ -29,7 +29,7 @@
             <li><a href="/admins/">Admins</a></li>
             <li><a href="/playground/">Playground</a></li>
         </ul>
-        
+        {% endif %}
       </nav>
     </div>
   </div>
