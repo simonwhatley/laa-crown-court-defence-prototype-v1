@@ -4,6 +4,10 @@
   {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
+{#% block page_scripts %}
+<script src="/public/javascripts/validation.js"></script>
+{% endblock %#}
+
 {% block content %}
 
 <main id="content" role="main">
@@ -28,11 +32,11 @@
 						<input type="hidden" name="fee_scheme" value="lgfs">
 
 						<div class="form-section">
-							<div class="form-group">
+							<div class="form-group" data-required="true" data-error="Choose a bill type">
 								<fieldset>
 
-									<legend>
-										<h3 class="heading-medium">Choose your bill type</h3>
+									<legend class="heading-medium">
+										Choose your bill type
 									</legend>
 
 									<div class="multiple-choice">

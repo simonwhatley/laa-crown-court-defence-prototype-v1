@@ -24,7 +24,7 @@
 
 	<div class="grid-row">
 		<div class="column-one-third">
-	
+
 			<h2 class="heading-large">
 				<span class="heading-secondary">Total outstanding</span>
 				£99,999.00
@@ -33,10 +33,10 @@
 			<p>
 				<a id="view-outstanding-claim-details" href="{{links.outstanding}}">View details <span class="visually-hidden">for total claims outstanding</span></a>
 			</p>
-		
+
 		</div>
 		<div class="column-one-third">
-			
+
 			<h2 class="heading-large">
 				<span class="heading-secondary">Total authorised</span>
 				£99,999.00
@@ -118,11 +118,11 @@
 						<tr id="claim-{{claim.id}}">
 							<td aria-label="Bill type">{{claim.bill_type | replace('litigator_','') | capitalize}}</td>
 							<th aria-label="Case number" scope="row">
-								{% if claim.status == 'draft' -%}
+								{#% if claim.status == 'draft' -%#}
 								<a href="#noop"><!-- ./{{claim.id}}/summary -->
-								{% else %}
+								{#% else %}
 								<a href="./{{claim.id}}/details">
-								{%- endif %}
+								{%- endif %#}
 									{{claim.case_number}}
 								</a>
 								<br>
