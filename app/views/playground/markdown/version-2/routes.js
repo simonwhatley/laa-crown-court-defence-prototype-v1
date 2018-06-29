@@ -26,24 +26,55 @@ router.get('/', (req, res) => {
 
 });
 
-router.get('/:page/', (req, res) => {
+router.get('/:file/', (req, res) => {
 
 	let fs = require('fs');
 
 	try {
 		
-		let doc = fs.readFileSync(path.join(__dirname, 'content', (req.params.page + '.md')), 'utf8');
+		let doc = fs.readFileSync(path.join(__dirname, 'content', (req.params.file + '.md')), 'utf8');
 		let html = marked(doc);
 
 		res.render(`${req.section}/${req.feature}/${req.version}/page`,
 		{
-			content: html
+			content: html,
+			links: {'back': req.baseUrl + '/'}
 		});
 
 	}
 	catch (e) {
 
-		res.render(`${req.section}/${req.feature}/${req.version}/404`);
+		res.render(`${req.section}/${req.feature}/${req.version}/404`,{
+			links: {'home': req.baseUrl + '/'}
+		});
+
+	}
+
+});
+
+router.get('/:folder/:file/', (req, res) => {
+
+	let fs = require('fs');
+
+	try {
+		
+		let doc = fs.readFileSync(path.join(__dirname, ('content/' + req.params.folder), (req.params.file + '.md')), 'utf8');
+		let html = marked(doc);
+
+		console.log(req.baseUrl)
+
+		res.render(`${req.section}/${req.feature}/${req.version}/page`,
+		{
+			content: html,
+			links: {'back': req.baseUrl + '/'}
+		});
+
+	}
+	catch (e) {
+
+		res.render(`${req.section}/${req.feature}/${req.version}/404`,{
+			links: {'home': req.baseUrl + '/'}
+		});
 
 	}
 

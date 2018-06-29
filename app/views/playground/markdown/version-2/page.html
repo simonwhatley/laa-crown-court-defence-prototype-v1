@@ -1,0 +1,22 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main" class="markdown">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="{{links.back}}">Back</a>
+
+      	{{content|safe}}
+
+    </div>
+    
+  </div>
+</main>
+
+{% endblock %}
