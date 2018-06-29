@@ -12,12 +12,12 @@ router.use('/', (req, res, next) => {
   next();
 });
 
-router.get('/', function (req, res) {
+router.get('/', (req, res) => {
 
-	var fs = require('fs');
+	let fs = require('fs');
 
-	var doc = fs.readFileSync(path.join(__dirname, 'content', 'example.md'), 'utf8');
-  	var html = marked(doc);
+	let doc = fs.readFileSync(path.join(__dirname, 'content', 'example.md'), 'utf8');
+  	let html = marked(doc);
 
 	res.render(`${req.section}/${req.feature}/${req.version}/index`,
 		{
