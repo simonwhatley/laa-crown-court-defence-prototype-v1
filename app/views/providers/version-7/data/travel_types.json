@@ -164,9 +164,9 @@
 	    	"location": false,
 	    	"mileage": false,
 	    	"reason": true,
-	    	"net": true,
-	    	"vat": true,
-	    	"gross": false,
+	    	"net": false,
+	    	"vat": false,
+	    	"gross": true,
 	    	"info": true
 	    }
 	}
