@@ -173,11 +173,6 @@
 										Was this case transferred from another court?
 									</legend>
 
-									<div class="multiple-choice">
-										<input id="transfer-court-no" type="radio" name="transfer_court_option" value="no" {{ checked('transfer_court_option','no') }}>
-										<label for="transfer-court-no">No</label>
-									</div>
-
 									<div class="multiple-choice" data-target="transfer-court-panel">
 										<input id="transfer-court-yes" type="radio" name="transfer_court_option" value="yes" {{ checked('transfer_court_option','yes') }}>
 										<label for="transfer-court-yes">Yes</label>
@@ -204,6 +199,11 @@
 											</label>
 											<input class="form-control" name="transfer_case_number" type="text" id="transfer-case-number" value="{{ data['transfer_case_number']}}">
 										</div>
+									</div>
+
+									<div class="multiple-choice">
+										<input id="transfer-court-no" type="radio" name="transfer_court_option" value="no" {{ checked('transfer_court_option','no') }}>
+										<label for="transfer-court-no">No</label>
 									</div>
 
 								</fieldset>
