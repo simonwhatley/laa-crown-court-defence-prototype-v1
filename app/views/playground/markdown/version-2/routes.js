@@ -61,8 +61,6 @@ router.get('/:folder/:file/', (req, res) => {
 		let doc = fs.readFileSync(path.join(__dirname, ('content/' + req.params.folder), (req.params.file + '.md')), 'utf8');
 		let html = marked(doc);
 
-		console.log(req.baseUrl)
-
 		res.render(`${req.section}/${req.feature}/${req.version}/page`,
 		{
 			content: html,
