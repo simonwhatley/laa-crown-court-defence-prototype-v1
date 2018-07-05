@@ -776,7 +776,7 @@ router.get('/litigators/travel-expenses', function(req, res) {
 
     }
 
-    console.log(utils.getDummySupplier(1078,req.session.data.supplier_number));
+    // console.log(utils.getDummySupplier(1078,req.session.data.supplier_number));
 
     res.render(`${req.feature}/${req.version}/litigators/travel-expenses`,
     	{
