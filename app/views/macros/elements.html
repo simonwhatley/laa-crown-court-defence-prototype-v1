@@ -1,5 +1,21 @@
-
 <!-- Element: Input -->
+
+{% macro field(name, id, value='', type='text', class='form-control') %}
+<div class="form-group">
+  <label class="form-label-bold" for="{{ id | default(name) }}">{{ name | title }}</label>
+  <input id="{{ id | default(name) }}" class="{{ class }}" type="{{ type }}" name="{{ name }}" value="{{ value | escape }}">
+</div>
+{% endmacro %}
+
+
+{% macro govukInput(name, id, value='', type='text', class='form-control') %}
+<div class="form-group">
+  <label class="form-label-bold" for="{{ id | default(name) }}">{{ name | title }}</label>
+  <input id="{{ id | default(name) }}" class="{{ class }}" type="{{ type }}" name="{{ name }}" value="{{ value | escape }}">
+</div>
+{% endmacro %}
+
+
 
 {% macro input(data, formcache={}, seedNum=1) %}
   {% set contextID = (data.context | default('general')) +'-input-' + (data.label | nameAttr) + '-' + seedNum %}

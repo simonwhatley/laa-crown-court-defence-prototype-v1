@@ -92,6 +92,11 @@ router.use(/\/playground\/markdown\/version-([0-9]+)/, (req, res, next) => {
   require(`./views/playground/markdown/version-${req.params[0]}/routes`)(req, res, next);
 });
 
+// Playground > Macros
+router.use(/\/playground\/macros\/version-([0-9]+)/, (req, res, next) => {
+  require(`./views/playground/macros/version-${req.params[0]}/routes`)(req, res, next);
+});
+
 // Add your routes above this line
 
 module.exports = router;

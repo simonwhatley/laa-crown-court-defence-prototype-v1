@@ -1,0 +1,61 @@
+{% extends "govuk_template.html" %}
+{% import "../../macros/elements.html" as ELEMENT %}
+{% import "../../macros/components.html" as COMPONENT %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+  {% block page_styles %}{% endblock %}
+{% endblock %}
+
+{% block cookie_message %}
+  <p>{{cookieText | safe }}</p>
+{% endblock %}
+
+{% block proposition_header %}
+
+  <div class="header-proposition">
+    <div class="content">
+      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+      <nav id="proposition-menu">
+        <a href="/" id="proposition-name">
+          {# Set serviceName in config.js. Use a block to override on a page. #}
+          {% block service_name %}
+            {% if serviceName %} {{ serviceName }} {% endif %}
+          {% endblock %}
+        </a>
+        {% if data['links'] != 'hide' %}
+        <ul id="proposition-links">
+            <!-- <li><a href="/claims" class="active">Claims</a></li> -->
+            <li><a href="/providers/">Providers</a></li>
+            <li><a href="/caseworkers/">Caseworkers</a></li>
+            <li><a href="/admins/">Admins</a></li>
+            <li><a href="/playground/">Playground</a></li>
+        </ul>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block header_class -%}
+  with-proposition
+{%- endblock %}
+
+{% block footer_support_links %}
+  {% if useAutoStoreData %}
+    <ul>
+      <li>
+        <a href="/prototype-admin/clear-data">Clear data</a>
+      </li>
+    </ul>
+  {% endif %}
+{% endblock %}
+
+{% block body_end %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    {% block page_scripts %}{% endblock %}
+  {% endblock %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}

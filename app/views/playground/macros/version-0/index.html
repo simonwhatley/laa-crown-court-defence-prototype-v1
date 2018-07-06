@@ -1,0 +1,38 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_styles %}
+
+{% endblock %}
+
+{% block page_scripts %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  	<div class="grid-row">
+
+		<div class="column-two-thirds">
+
+	    	<a class="link-back" href="../">Back</a>
+
+		    <h1 class="heading-xlarge">
+		      Macros
+		    </h1>
+
+			{{ ELEMENT.field(name='username') }}
+			{{ ELEMENT.govukInput(name='password', type='password') }}
+
+		</div>
+
+		<!-- README: https://github.com/alphagov/govuk-frontend/tree/master/package/components -->
+
+    </div>
+</main>
+
+{% endblock %}
