@@ -25,7 +25,23 @@
 		      Macros
 		    </h1>
 
-			{{ ELEMENT.field(name='username') }}
+<h2 class="heading-large">Example 1</h2>
+
+<h3 class="heading-medium">Code</h3>
+<pre class="panel panel-border-wide code">
+<code>&#123;&#123; ELEMENT.govukInput(name='username') &#125;&#125;</code>
+</pre>
+
+<h2 class="heading-medium">Output</h2>
+			{{ ELEMENT.govukInput(name='username') }}
+
+<h2 class="heading-large">Example 2</h2>
+
+<h2 class="heading-medium">Code</h2>
+<pre class="panel panel-border-wide code">
+<code>&#123;&#123; ELEMENT.govukInput(name='password', type='password') &#125;&#125;</code>
+</pre>
+<h3 class="heading-medium">Output</h3>
 			{{ ELEMENT.govukInput(name='password', type='password') }}
 
 		</div>
