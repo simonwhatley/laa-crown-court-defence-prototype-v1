@@ -2,19 +2,20 @@
 <table>
 	<thead>
 		<tr>
-			<th><abbr onclick="" title="Number" tabindex="-1">#</abbr></th>
+			<!-- <th><abbr onclick="" title="Number" tabindex="-1">#</abbr></th> -->
 			<th><a href="#noop">Type of expense</a></th>
 			<th><a href="#noop">Reason for travel</a></th>
 			<th>Details</th>
 			<th><a href="#noop">Date of expense</a></th>
 			<th><a href="#noop">Net amount</a></th>
 			<th><a href="#noop"><!-- <abbr onclick="" title="Value Added Tax" tabindex="-1"> -->VAT<!-- </abbr> --> amount</a></th>
+			<th><a href="#noop">Gross amount</a></th>
 		</tr>
 	</thead>
 	<tbody>
 		{% for expense in claim.expenses %}
 		<tr id="expense-{{loop.index}}">
-			<td>{{loop.index}}</td>
+			<!-- <td>{{loop.index}}</td> -->
 			<td>{{expense.type|replace('_',' ')|capitalize}}</td>
 			<td>{{expense.reason.label}}</td>
 			<td>
@@ -63,6 +64,7 @@
 			<td>{{expense.date_of_expense|date('DD/MM/YYYY')}}</td>
 			<td>&pound;{{expense.net_amount|numeral('0,0.00')}}</td>
 			<td>&pound;{{expense.vat_amount|numeral('0,0.00')}}</td>
+			<td>&pound;{{(expense.net_amount + expense.vat_amount)|numeral('0,0.00')}}</td>
 		</tr>
 		{% endfor %}
 	</tbody>
