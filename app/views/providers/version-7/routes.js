@@ -27,7 +27,7 @@ router.get('/auth', function(req, res) {
 
     } else if (utils.authenticate("provider", req.session.data.username) == "litigators") {
 
-        req.session.data.settings = utils.getDummyProvider(1078);
+        req.session.data.settings = utils.getDummyProvider(311);
 
         res.redirect(`/${req.feature}/${req.version}/litigators/`);
 
@@ -522,7 +522,7 @@ router.get('/advocates/:claim_id([0-9]+)/details', function(req, res) {
 // ==============================================
 
 router.get('/litigators/', function(req, res) {
-    req.session.data.settings = utils.getDummyProvider(1078);
+    req.session.data.settings = utils.getDummyProvider(311);
     res.render(`${req.feature}/${req.version}/litigators/index`,
         {
             links: {
@@ -541,7 +541,7 @@ router.get('/litigators/start', function(req, res) {
 });
 
 router.get('/litigators/bill-type', function(req, res) {
-    req.session.data.settings = utils.getDummyProvider(1078);
+    req.session.data.settings = utils.getDummyProvider(311);
     res.render(`${req.feature}/${req.version}/litigators/bill-type`,
     	{
             links: {
@@ -787,7 +787,7 @@ router.get('/litigators/travel-expenses', function(req, res) {
             },
             travel_types: utils.getTravelTypes(req.session.data.fee_scheme),
             travel_reasons: utils.getTravelReasons('lgfs'),
-            travel_origin: utils.getDummySupplier(1078,req.session.data.supplier_number)[0].address.postcode,
+            travel_origin: utils.getDummySupplier(311,req.session.data.supplier_number)[0].address.postcode,
             crown_courts: utils.getCrownCourts(),
             magistrates_courts: utils.getMagistratesCourts(),
             prisons: utils.getPrisons(),
@@ -863,7 +863,7 @@ router.get('/litigators/thank-you', function(req, res) {
 
 router.get('/litigators/cancel', function(req, res) {
     req.session.destroy();
-    req.session.data.settings = utils.getDummyProvider(1078);
+    req.session.data.settings = utils.getDummyProvider(311);
     res.redirect(`/${req.feature}/${req.version}/litigators/`);
 });
 
