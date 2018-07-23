@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "./layout.html" %}
 
 {% block page_title %}
   {% if serviceName %} {{ serviceName }} {% endif %}
@@ -34,26 +34,33 @@
 
 <h2 class="heading-medium">Output</h2> -->
 
+{{ govukBackLink({
+	"href": "https://www.google.com",
+	"text": "Back"
+}) }}
+
+
+<h2 class="heading-large">Example 2</h2>
 {{ govukDateInput({
-	id: "date-of-birth",
-	name: "date_of_birth",
-	fieldset: {
-		legend: {
-			text: "Date of birth"
+	"id": "date-of-birth",
+	"name": "date_of_birth",
+	"fieldset": {
+		"legend": {
+			"text": "Date of birth"
 		}
 	},
-	hint: {
-		text: "For example, 31 3 1980"
+	"hint": {
+		"text": "For example, 31 3 1980"
 	},
-	items: [
+	"items": [
 		{
-			name: "day"
+			"name": "day"
 		},
 		{
-			name: "month"
+			"name": "month"
 		},
 		{
-			name: "year"
+			"name": "year"
 		}
 	]
 }) }}
