@@ -25,22 +25,76 @@
 		      Macros
 		    </h1>
 
-<h2 class="heading-large">Example 1</h2>
-<!--
-<h3 class="heading-medium">Code</h3>
+<h2 class="heading-large">Setup</h2>
+
+<p>In the <code>layout.html</code> file, include the following:</p>
+
 <pre class="panel panel-border-wide code">
-<code>&#123;&#123; ELEMENT.govukInput(name='username') &#125;&#125;</code>
+<code>&#123;% from "./components/back-link/macro.njk" import govukBackLink %&#125;
+&#123;% from "./components/date-input/macro.njk" import govukDateInput %&#125;</code>
 </pre>
 
-<h2 class="heading-medium">Output</h2> -->
+<p>In the view file, e.g., <code>index.html</code>, ensure the correct layout file is referenced.</p>
+
+<pre class="panel panel-border-wide code">
+<code>&#123;% extends "./layout.html" %&#125;</code>
+</pre>
+
+<p><em>Nunjucks gracefully fails, which could lead to the macro being undefined or falsey</em></p>
+
+<h2 class="heading-large">Example 1</h2>
+
+<p>Call the imported <code>govukBackLink</code> macro:</p>
+
+<h3 class="heading-medium">Code</h3>
+
+<pre class="panel panel-border-wide code">
+<code>&#123;&#123; govukBackLink({
+	"href": "https://www.google.com",
+	"text": "Back"
+}) &#125;&#125;</code>
+</pre>
+
+<h2 class="heading-medium">Output</h2>
 
 {{ govukBackLink({
 	"href": "https://www.google.com",
 	"text": "Back"
 }) }}
 
-
 <h2 class="heading-large">Example 2</h2>
+
+<p>Call the imported <code>govukDateInput</code> macro:</p>
+
+<h3 class="heading-medium">Code</h3>
+
+<pre class="panel panel-border-wide code">
+<code>&#123;&#123; govukDateInput({
+	"id": "date-of-birth",
+	"name": "date_of_birth",
+	"fieldset": {
+		"legend": {
+			"text": "Date of birth"
+		}
+	},
+	"hint": {
+		"text": "For example, 31 3 1980"
+	},
+	"items": [
+		{
+			"name": "day"
+		},
+		{
+			"name": "month"
+		},
+		{
+			"name": "year"
+		}
+	]
+}) &#125;&#125;</code>
+</pre>
+
+<h2 class="heading-medium">Output</h2>
 {{ govukDateInput({
 	"id": "date-of-birth",
 	"name": "date_of_birth",
@@ -64,7 +118,6 @@
 		}
 	]
 }) }}
-
 
 		<!-- README: https://github.com/alphagov/govuk-frontend/tree/master/package/components -->
 

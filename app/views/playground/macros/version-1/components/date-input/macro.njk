@@ -1,5 +1,4 @@
 {% macro govukDateInput(params) %}
-{#%- include "./template.njk" -#}
 <div class="form-group">
 	<fieldset aria-describedby="date-hint" role="group">
 		<legend>
@@ -12,22 +11,22 @@
 		</legend>
 		<div class="form-date" id="date">
 			<div class="form-group form-group-day">
-				<label class="form-label" for="date-day">
+				<label class="form-label" for="{{params.id}}-{{params.items[0].name}}">
 					{{ params.items[0].name | capitalize }}
 				</label>
-				<input class="form-control" id="date-day" name="date-day" type="number" pattern="[0-9]*" min="1" max="31">
+				<input class="form-control" id="{{params.id}}-{{params.items[0].name}}" name="{{params.name}}-{{params.items[0].name}}" type="number" pattern="[0-9]*" min="1" max="31">
 			</div>
 			<div class="form-group form-group-month">
-				<label class="form-label" for="date-month">
+				<label class="form-label" for="{{params.id}}-{{params.items[1].name}}">
 					{{ params.items[1].name | capitalize }}
 				</label>
-				<input class="form-control" id="date-month" name="date-month" type="number" pattern="[0-9]*" min="1" max="12">
+				<input class="form-control" id="{{params.id}}-{{params.items[1].name}}" name="{{params.name}}-{{params.items[1].name}}" type="number" pattern="[0-9]*" min="1" max="12">
 			</div>
 			<div class="form-group form-group-year">
-				<label class="form-label" for="date-year">
+				<label class="form-label" for="{{params.id}}-{{params.items[2].name}}">
 					{{ params.items[2].name | capitalize }}
 				</label>
-				<input class="form-control" id="date-year" name="date-year" type="number" pattern="[0-9]*" min="1900">
+				<input class="form-control" id="{{params.id}}-{{params.items[2].name}}" name="{{params.name}}-{{params.items[2].name}}" type="number" pattern="[0-9]*" min="1900">
 			</div>
 		</div>
 	</fieldset>
