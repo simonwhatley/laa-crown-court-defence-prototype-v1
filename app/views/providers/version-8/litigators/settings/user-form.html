@@ -1,0 +1,148 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.back}}">Back</a>
+
+			<h1 class="heading-xlarge">
+				Settings
+			</h1>
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					<h2 id="section-heading" class="heading-large">
+						User details
+					</h2>
+
+					<form class="form" method="post">
+
+						<div class="form-group" data-required="true" data-error="Add a first name">
+							<label class="form-label-bold" for="first-name">
+								First name
+								<!-- <span class="form-hint">Something...</span> -->
+							</label>
+							<input class="form-control form-control-1-2" id="first-name" type="text" name="first_name" value="{{data['first_name']}}" autocomplete="off" autocapitalize="off">
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Add a last name">
+							<label class="form-label-bold" for="last-name">
+								Last name
+								<!-- <span class="form-hint">Something...</span> -->
+							</label>
+							<input class="form-control form-control-1-2" id="last-name" type="text" name="last_name" value="{{data['last_name']}}" autocomplete="off" autocapitalize="off">
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Add an email">
+							<label class="form-label-bold" for="email">
+								Email address
+								<!-- <span class="form-hint">Something...</span> -->
+							</label>
+							<input class="form-control form-control-1-2" id="email" type="text" name="email" value="{{data['email']}}" autocomplete="off" autocapitalize="off">
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Choose whether to accept notifications">
+
+							<fieldset class="inline">
+
+								<legend class="form-label-bold">
+									Get email notifications?
+									<span class="form-hint">This allows us to message you on claims you have created</span>
+								</legend>
+
+								<div class="multiple-choice inline">
+									<input id="notifications-yes" type="radio" name="notifications" value="yes" {{ checked('notifications', 'yes') }}>
+									<label for="notifications-yes">Yes</label>
+								</div>
+
+								<div class="multiple-choice">
+									<input id="notifications-no" type="radio" name="notifications" value="no" {{ checked('notifications', 'no') }}>
+									<label for="notifications-no">No</label>
+								</div>
+
+							</fieldset>
+
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Choose at least one type">
+						    <fieldset>
+						        <legend class="heading-small">
+						            Type of user
+						            <!-- <span class="form-hint">Please choose all relevant options </span> -->
+						        </legend>
+
+								<!-- <div class="multiple-choice">
+						            <input id="user-type-clerk" name="user_type_checklist" type="checkbox" value="clerk" {% if (data['user_type_checklist'] and 'clerk' in data['user_type_checklist']) -%}checked="checked"{%- endif %}>
+						            <label for="user-type-clerk">
+						                Clerk
+						            </label>
+						        </div> -->
+
+								<div class="multiple-choice">
+						            <input id="user-type-advocate" name="user_type_checklist" type="checkbox" value="advocate" {% if (data['user_type_checklist'] and 'advocate' in data['user_type_checklist']) -%}checked="checked"{%- endif %}>
+						            <label for="user-type-advocate">
+						                Advocate
+						            </label>
+						        </div>
+
+								<div class="multiple-choice">
+						            <input id="user-type-litigator" name="user_type_checklist" type="checkbox" value="litigator" {% if (data['user_type_checklist'] and 'litigator' in data['user_type_checklist']) -%}checked="checked"{%- endif %}>
+						            <label for="user-type-litigator">
+						                Litigator
+						            </label>
+						        </div>
+
+						    </fieldset>
+						</div>
+
+						<div class="form-group" data-required="true" data-error="Choose a user role">
+
+							<fieldset class="inline">
+
+								<legend class="form-label-bold">
+									Role of user
+									<!-- <span class="form-hint">Something...</span> -->
+								</legend>
+
+								<div class="multiple-choice">
+									<input id="role-user" type="radio" name="role" value="user" {{ checked('role', 'user') }}>
+									<label for="role-user">User</label>
+								</div>
+
+								<div class="multiple-choice inline">
+									<input id="role-admin" type="radio" name="role" value="admin" {{ checked('role', 'admin') }}>
+									<label for="role-admin">Admin</label>
+								</div>
+
+							</fieldset>
+
+						</div>
+
+
+						{% include "./_form_actions.html" %}
+
+					</form>
+
+					{% include "./_help.html" %}
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

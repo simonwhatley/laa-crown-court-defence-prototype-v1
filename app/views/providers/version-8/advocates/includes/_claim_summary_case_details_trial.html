@@ -1,0 +1,28 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				First day of trial
+			</th>
+			<td>{{data['first_day_of_trial_day']}}/{{data['first_day_of_trial_month']}}/{{data['first_day_of_trial_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Trial concluded on
+			</th>
+			<td>{{data['trial_concluded_on_day']}}/{{data['trial_concluded_on_month']}}/{{data['trial_concluded_on_year']}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Estimated trial length
+			</th>
+			<td>{% if data['estimated_trial_length'].length -%}{{data['estimated_trial_length']}} days{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Actual trial length
+			</th>
+			<td>{{data['actual_trial_length']}} days</td>
+		</tr>
+	</tbody>
+</table>

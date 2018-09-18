@@ -1,0 +1,12 @@
+<div class="panel panel-border-wide">
+	<h3 class="heading-small">Warning: Missing information</h3>
+	<p>You must enter the following before adding offence details:</p>
+	<ul class="list list-bullet">
+		{% if not data['case_type'].length -%}
+			<li><a href="{{links.case_details}}"><span class="visually-hidden">Change&nbsp;</span>case details</a></li>
+		{%- endif %}
+		{% if not (data['defendant_1_first_name'].length and data['defendant_1_last_name'].length) -%}
+			<li><a href="{{links.defendant_details}}"><span class="visually-hidden">Change&nbsp;</span>defendant details</a></li>
+		{%- endif %}
+	</ul>
+</div>

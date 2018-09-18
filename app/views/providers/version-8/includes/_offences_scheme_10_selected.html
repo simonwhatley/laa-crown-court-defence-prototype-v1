@@ -1,0 +1,14 @@
+{% if offence.class_label.length and offence.band_label.length and offence.category_label.length -%}
+<div class="form-section">
+	<div class="form-group selected-offence">
+		<p class="bold">You have chosen the following offence details:</p>
+		<p>
+			<em>{{ offence.class_label }} > {{ offence.band_label }} > {{ offence.category_label }}</em>
+		</p>
+	</div>
+	<div class="form-group form-buttons">
+		<a href="{{links.next}}?fee_scheme_version=10&amp;offence_class={{offence.class_id}}&amp;offence_band={{offence.band_id}}&amp;offence_category={{offence.category_id}}" class="button" role="button">Save and continue</a>
+		<a href="{{links.clear}}" class="link-secondary">Clear selected offence</a>
+	</div>
+</div>
+{%- endif %}

@@ -1,0 +1,23 @@
+<h3 id="prosecution-witnesses" class="heading-medium">
+    Prosecution witnesses
+</h3>
+
+<div class="form-group">
+    <fieldset>
+        <div class="form-group">
+            <label class="form-label-bold " for="total-number-of-prosecution-witnesses">
+                Total number of prosecution witnesses
+            </label>
+            <input class="form-control form-control-1-4" id="total-number-of-prosecution-witnesses" name="total_number_of_prosecution_witnesses" type="number" max="9999" min="0" step="1" value="{{data['total_number_of_prosecution_witnesses']}}" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <label class="form-label-bold" for="prosecution-witnesses-net-amount">
+                Net amount
+            </label>
+            <span class="form-input-denote">
+                &pound;
+            </span>
+            <input class="form-control form-control-1-4 form-input-denote__input" id="prosecution-witnesses-net-amount" name="prosecution_witnesses_net_amount" type="number" max="999999.99" min="0.00" step="0.00" value="{{data['prosecution_witnesses_net_amount']}}">
+        </div>
+    </fieldset>
+</div>

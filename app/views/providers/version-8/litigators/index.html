@@ -1,0 +1,178 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	{# include "./includes/navigation.html" #}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h1 class="heading-xlarge">
+				Your claims
+			</h1>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-one-third">
+
+			<h2 class="heading-large">
+				<span class="heading-secondary">Total outstanding</span>
+				£99,999.00
+			</h2>
+
+			<p>
+				<a id="view-outstanding-claim-details" href="{{links.outstanding}}">View details <span class="visually-hidden">for total claims outstanding</span></a>
+			</p>
+
+		</div>
+		<div class="column-one-third">
+
+			<h2 class="heading-large">
+				<span class="heading-secondary">Total authorised</span>
+				£99,999.00
+			</h2>
+
+			<p>
+				<a id="view-authorised-claims-details" href="{{links.authorised}}">View details <span class="visually-hidden">for total claims authorised</span></a>
+			</p>
+
+		</div>
+		<div class="column-one-third">
+
+			<h2 class="heading-large">
+				<!-- <span class="heading-secondary">Create a claim</span> -->
+				<a class="button button-start" href="{{links.start}}" role="button">Start now</a>
+			</h2>
+
+			<form id="upload-json" action="{{links.upload}}" method="post" enctype="multipart/form-data">
+				<label class="form-hint">Or upload your claims in <abbr title="JavaScript Object Notation">JSON</abbr></label>
+				<!-- <input id="file-uploader" type="submit" class="button button-tertiary" name="Choose file"> -->
+				<a class="button button-tertiary" href="{{links.upload}}" role="button">Choose file</a>
+			</form>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h2 class="heading-large">
+				Claims list
+			</h2>
+
+			<!-- <form class="form" action="{{links.search}}" method="post">
+
+				<div class="form-section">
+
+					<div class="form-group">
+						<label class="form-label-bold" for="search-claims">
+							Search
+							<span class="form-hint">
+								For example case number, defendant name, reference number
+							</span>
+						</label>
+						<input class="form-control" id="search-claims" type="text" name="search_claims" value="{{ data['search_claims']}}">
+					</div>
+
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Search claims">
+					</div>
+				</div>
+
+			</form> -->
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Bill type</th>
+							<th scope="col">Case number</th>
+							<th scope="col">Defendants</th>
+							<th class="numeric" scope="col">Claimed</th>
+							<th class="numeric" scope="col">Assessed</th>
+							<th scope="col">Status</th>
+							<th scope="col">Date submitted</th>
+							<th scope="col">Messages</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						{% for claim in claims %}
+
+						<tr id="claim-{{claim.id}}">
+							<td aria-label="Bill type">{{claim.bill_type | replace('litigator_','') | capitalize}}</td>
+							<th aria-label="Case number" scope="row">
+								{#% if claim.status == 'draft' -%#}
+								<a href="#noop"><!-- ./{{claim.id}}/summary -->
+								{#% else %}
+								<a href="./{{claim.id}}/details">
+								{%- endif %#}
+									{{claim.case_number}}
+								</a>
+								<br>
+								<span class="font-xsmall font-grey">{{claim.reference_number}}</span>
+							</th>
+							<td aria-label="Defendants">
+								<ul>
+								{% for defendant in claim.defendants %}
+									<li>{{defendant.first_name}} {{defendant.last_name}}</li>
+								{% endfor %}
+								</ul>
+							</td>
+							<td aria-label="Claimed amount" class="numeric">
+								&pound;{{claim.totals.claimed.gross_amount | numeral('0,0.00')}}
+							</td>
+							<td aria-label="Assessed amount" class="numeric">
+								{% if claim.status in ['draft','submitted','allocated'] -%}
+								&ndash;
+								{% else %}
+								&pound;{{claim.totals.assessed.gross_amount | numeral('0,0.00')}}
+								{%- endif %}
+							</td>
+							<td aria-label="Claim status">
+								<span class="status status-{{claim.status | replace('_','-')}}">{{claim.status | replace('_',' ') | capitalize}}</span>
+							</td>
+							<td aria-label="Date submitted">
+								{% if claim.status == 'draft' -%}
+								&ndash;
+								{% else %}
+								{{claim.dates.submitted | date('DD/MM/YYYY')}}
+								{%- endif %}
+							</td>
+							<td aria-label="Messages" class="font-grey">
+								{% if claim.messages.length -%}
+									<a href="./{{claim.id}}/details">View {{claim.messages.length}} message{% if claim.messages.length > 1 -%}s{%- endif %}</a>
+								{% else %}
+									No messages
+								{%- endif %}
+							</td>
+						</tr>
+
+						{% endfor %}
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

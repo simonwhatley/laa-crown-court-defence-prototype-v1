@@ -1,0 +1,50 @@
+<div class="grid-row">
+	<div class="column-one-third">
+		<h1 class="heading-large">
+			<span class="heading-secondary">Case number</span>
+			{{claim.case_number}}
+			<span class="font-xsmall bold font-grey">#{{claim.id}}</span>
+		</h1>
+	</div>
+	<div class="column-one-third">
+		<h1 class="heading-large">
+			<span class="heading-secondary">Status</span>
+			<span class="status-text status-{{claim.status|replace('_','-')}}">{{claim.status|replace('_',' ')|capitalize}}</span>
+		</h1>
+	</div>
+	<div class="column-one-third">
+		<h1 class="heading-large">
+			<span class="heading-secondary">Assessed date</span>
+			{% if claim.status in ['draft','submitted','allocated'] -%}
+				Not yet assessed
+			{% else %}
+				{{claim.dates.assessed|date('DD/MM/YYYY')}}
+			{%- endif %}
+		</h1>
+	</div>
+</div>
+
+<div class="grid-row">
+	<div class="column-one-third">
+		<h1 class="heading-large">
+			<span class="heading-secondary">Defendant{% if claim.defendants.length > 1 -%}s{%- endif %}</span>
+			<ul>
+			{% for defendant in claim.defendants %}
+				<li>{{defendant.first_name}} {{defendant.last_name}}</li>
+			{% endfor %}
+			</ul>
+		</h1>
+	</div>
+	<div class="column-one-third">
+		<h1 class="heading-large">
+			<span class="heading-secondary">Instructed advocate</span>
+			{{claim.instructed_advocate.first_name}} {{claim.instructed_advocate.last_name}}
+		</h1>
+	</div>
+	<div class="column-one-third">
+		<!-- <h1 class="heading-large">
+			<span class="heading-secondary">Chamber</span>
+			Equity Court
+		</h1> -->
+	</div>
+</div>

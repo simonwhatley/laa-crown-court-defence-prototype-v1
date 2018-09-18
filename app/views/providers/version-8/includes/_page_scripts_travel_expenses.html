@@ -1,0 +1,464 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHZYFDLX6xDaMgEvHq9NMiIp9RbsmbrM" type="text/javascript"></script>
+<script src="/public/javascripts/jquery.Google.DirectionsService.js"></script>
+
+<script type="text/javascript">
+$(function(){
+
+  // ============================================
+  // Expense type
+  // ============================================
+
+  $('.fx-select-expense-type').on('change', function(e){
+    e.preventDefault();
+
+    if ($('.fx-select-travel-reason').val()) {
+      $('.fx-select-travel-reason').trigger('change');
+    }
+
+    if ($('.fx-select-court').val()) {
+      $('.fx-select-court').trigger('change');
+    }
+
+    if ($('.fx-select-magistrates-court').val()) {
+      $('.fx-select-magistrates-court').trigger('change');
+    }
+
+    if ($('.fx-select-prison').val()) {
+      $('.fx-select-prison').trigger('change');
+    }
+
+    if ($('.fx-select-hospital').val()) {
+      $('.fx-select-hospital').trigger('change');
+    }
+
+    var costState = $(this).find(':selected').attr('data-cost');
+    var dateState = $(this).find(':selected').attr('data-date');
+    var destinationState = $(this).find(':selected').attr('data-destination');
+    var distanceState = $(this).find(':selected').attr('data-distance');
+    var hoursState = $(this).find(':selected').attr('data-hours');
+    var locationState = $(this).find(':selected').attr('data-location');
+    var mileageState = $(this).find(':selected').attr('data-mileage');
+    var reasonState = $(this).find(':selected').attr('data-reason');
+    var netAmountState = $(this).find(':selected').attr('data-net-amount');
+    var vatAmountState = $(this).find(':selected').attr('data-vat-amount');
+    var grossAmountState = $(this).find(':selected').attr('data-gross-amount');
+    var additionalInfoState = $(this).find(':selected').attr('data-additional-info');
+
+    $('.fx-travel-cost').is(function(){
+      var $el = $(this);
+      costState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-date').is(function(){
+      var $el = $(this);
+      dateState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-destination').is(function(){
+      var $el = $(this);
+      destinationState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-distance').is(function(){
+      var $el = $(this);
+      distanceState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-hours').is(function(){
+      var $el = $(this);
+      hoursState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-location').is(function(){
+      var $el = $(this);
+      locationState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-mileage').is(function(){
+      var $el = $(this);
+      mileageState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-reason').is(function(){
+      var $el = $(this);
+      reasonState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-net-amount').is(function(){
+      var $el = $(this);
+      netAmountState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-vat-amount').is(function(){
+      var $el = $(this);
+      vatAmountState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-gross-amount').is(function(){
+      var $el = $(this);
+      grossAmountState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-additional-info').is(function(){
+      var $el = $(this);
+      additionalInfoState == "true" ? $el.show() : $el.hide();
+    });
+
+    if ($('.fx-select-expense-type').val() == 'car_travel' || $('.fx-select-expense-type').val() == 'bike_travel') {
+      $('.fx-select-travel-reason').trigger('change');
+    } else {
+      $('.fx-travel-court').hide();
+      $('.fx-travel-magistrates-court').hide();
+      $('.fx-travel-prison').hide();
+      $('.fx-travel-hospital').hide();
+    }
+
+  });
+
+  // ============================================
+  // Travel reason
+  // ============================================
+
+  $('.fx-select-travel-reason').on('change', function(e){
+    e.preventDefault();
+
+    var otherState = $(this).find(':selected').attr('data-other');
+    var reasonState = $(this).find(':selected').val();
+
+    $('.fx-travel-reason-other').is(function(){
+      var $el = $(this);
+      otherState == "true" ? $el.show() : $el.hide();
+    });
+
+    $('.fx-travel-court').is(function(){
+      var $el = $(this);
+      reasonState == "court_hearing" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
+    });
+
+    $('.fx-travel-magistrates-court').is(function(){
+      var $el = $(this);
+      reasonState == "court_hearing_magistrates" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
+    });
+
+    $('.fx-travel-prison').is(function(){
+      var $el = $(this);
+      reasonState == "prison_visit" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
+    });
+
+    $('.fx-travel-hospital').is(function(){
+      var $el = $(this);
+      reasonState == "secure_hospital_visit" ? $el.show() : $el.hide();
+      $('#travel-expense-1-distance').val('');
+      $('#travel-expense-1-net-amount').val('');
+      $('#travel-expense-1-vat-amount').val('');
+      $('#travel-expense-1-gross-amount').val('');
+    });
+
+    $('.fx-travel-destination').is(function(){
+      var $el = $(this);
+      reasonState == "court_hearing" || reasonState == "court_hearing_magistrates" || reasonState == "prison_visit" || reasonState == "secure_hospital_visit" ? $el.hide() : $el.show();
+    });
+
+  });
+
+  // ============================================
+  // Travel crown court
+  // ============================================
+
+  $('.fx-travel-court').on('change', function(e) {
+    e.preventDefault();
+
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-magistrates-court').prop('selectedIndex',0);
+    // Clear selected prison as irrelevant
+    $('#travel-expense-1-prison').prop('selectedIndex',0);
+    // Clear selected hospital as irrelevant
+    $('#travel-expense-1-hospital').prop('selectedIndex',0);
+
+    // TODO split distance calculation into separate function
+    var origin = $('#origin_postcode').val();
+    var destination = $(this).find(':selected').attr('data-postcode');
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    if ($('.fx-select-expense-type').val() == 'bike_travel') {
+      var travel_mode = 'BICYCLING'
+    } else {
+      var travel_mode = 'DRIVING'
+    }
+
+    $('#travel-expense-1-distance').directionsService({
+      start_address: origin,
+      end_address: destination,
+      units: 'miles',
+      travel_mode: travel_mode,
+      journey_type: 'return',
+      result_container_type: 'textbox'
+    });
+
+    // TODO split amount calculation into separate function
+    if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
+
+      setTimeout(function () {
+
+        var distance = $('#travel-expense-1-distance').val();
+
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
+
+        var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+        var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+        $('#travel-expense-1-net-amount').val(net_amount);
+        $('#travel-expense-1-vat-amount').val(vat_amount);
+
+      }, 1000);
+
+    }
+
+  });
+
+  // ============================================
+  // Travel magistrates court
+  // ============================================
+
+  $('.fx-travel-magistrates-court').on('change', function(e) {
+    e.preventDefault();
+
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-court').prop('selectedIndex',0);
+    // Clear selected prison as irrelevant
+    $('#travel-expense-1-prison').prop('selectedIndex',0);
+    // Clear selected hospital as irrelevant
+    $('#travel-expense-1-hospital').prop('selectedIndex',0);
+
+    // TODO split distance calculation into separate function
+    var origin = $('#origin_postcode').val();
+    var destination = $(this).find(':selected').attr('data-postcode');
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    if ($('.fx-select-expense-type').val() == 'bike_travel') {
+      var travel_mode = 'BICYCLING'
+    } else {
+      var travel_mode = 'DRIVING'
+    }
+
+    $('#travel-expense-1-distance').directionsService({
+      start_address: origin,
+      end_address: destination,
+      units: 'miles',
+      travel_mode: travel_mode,
+      journey_type: 'return',
+      result_container_type: 'textbox'
+    });
+
+    // TODO split amount calculation into separate function
+    if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
+
+      setTimeout(function () {
+
+        var distance = $('#travel-expense-1-distance').val();
+
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
+
+        var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+        var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+        $('#travel-expense-1-net-amount').val(net_amount);
+        $('#travel-expense-1-vat-amount').val(vat_amount);
+
+      }, 1000);
+
+    }
+
+  });
+
+  // ============================================
+  // Travel prison
+  // ============================================
+
+  $('.fx-travel-prison').on('change', function(e) {
+    e.preventDefault();
+
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-court').prop('selectedIndex',0);
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-magistrates-court').prop('selectedIndex',0);
+    // Clear selected hospital as irrelevant
+    $('#travel-expense-1-hospital').prop('selectedIndex',0);
+
+    // TODO split distance calculation into separate function
+    var origin = $('#origin_postcode').val();
+    var destination = $(this).find(':selected').attr('data-postcode');
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    if ($('.fx-select-expense-type').val() == 'bike_travel') {
+      var travel_mode = 'BICYCLING'
+    } else {
+      var travel_mode = 'DRIVING'
+    }
+
+    $('#travel-expense-1-distance').directionsService({
+      start_address: origin,
+      end_address: destination,
+      units: 'miles',
+      travel_mode: travel_mode,
+      journey_type: 'return',
+      result_container_type: 'textbox'
+    });
+
+    // TODO split amount calculation into separate function
+    if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
+
+      setTimeout(function () {
+
+        var distance = $('#travel-expense-1-distance').val();
+
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
+
+        var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+        var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+        $('#travel-expense-1-net-amount').val(net_amount);
+        $('#travel-expense-1-vat-amount').val(vat_amount);
+
+      }, 1000);
+
+    }
+
+  });
+
+  // ============================================
+  // Travel secure hospital
+  // ============================================
+
+  $('.fx-travel-hospital').on('change', function(e) {
+    e.preventDefault();
+
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-court').prop('selectedIndex',0);
+    // Clear selected court as irrelevant
+    $('#travel-expense-1-magistrates-court').prop('selectedIndex',0);
+    // Clear selected prison as irrelevant
+    $('#travel-expense-1-prison').prop('selectedIndex',0);
+
+    // TODO split distance calculation into separate function
+    var origin = $('#origin_postcode').val();
+    var destination = $(this).find(':selected').attr('data-postcode');
+
+    // Travel modes: DRIVING (default), BICYCLING, TRANSIT, WALKING
+    // Result container: container (default), textbox
+
+    if ($('.fx-select-expense-type').val() == 'bike_travel') {
+      var travel_mode = 'BICYCLING'
+    } else {
+      var travel_mode = 'DRIVING'
+    }
+
+    $('#travel-expense-1-distance').directionsService({
+      start_address: origin,
+      end_address: destination,
+      units: 'miles',
+      travel_mode: travel_mode,
+      journey_type: 'return',
+      result_container_type: 'textbox'
+    });
+
+    // TODO split amount calculation into separate function
+    if (typeof $('.travel-expense-1-cost-per-mile:checked').val() != 'undefined') {
+
+      setTimeout(function () {
+
+        var distance = $('#travel-expense-1-distance').val();
+
+        if ($('.fx-select-expense-type').val() == 'bike_travel') {
+          var cost_per_mile = 0.2;
+        } else {
+          var cost_per_mile = $('.travel-expense-1-cost-per-mile:checked').val();
+        }
+
+        var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+        var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+        $('#travel-expense-1-net-amount').val(net_amount);
+        $('#travel-expense-1-vat-amount').val(vat_amount);
+
+      }, 1000);
+
+    }
+
+  });
+
+  $('.travel-expense-1-cost-per-mile').on('change', function(e){
+    e.preventDefault();
+
+    var $el = $(this);
+
+    var distance = $('#travel-expense-1-distance').val();
+
+    var cost_per_mile = $el.val();
+
+    var net_amount = parseFloat(distance * cost_per_mile).toFixed(2);;
+    var vat_amount = parseFloat(net_amount * 0.2).toFixed(2);
+
+    $('#travel-expense-1-net-amount').val(net_amount);
+    $('#travel-expense-1-vat-amount').val(vat_amount);
+
+  });
+
+  // TODO clear distance if reason changed
+
+  if ($('.fx-select-expense-type').val()) {
+    $('.fx-select-expense-type').trigger('change');
+  }
+
+  if ($('.fx-select-travel-reason').val()) {
+    $('.fx-select-travel-reason').trigger('change');
+  }
+
+  if ($('.fx-select-court').val()) {
+    $('.fx-select-court').trigger('change');
+  }
+
+  if ($('.fx-select-magistrates-court').val()) {
+    $('.fx-select-magistrates-court').trigger('change');
+  }
+
+  if ($('.fx-select-prison').val()) {
+    $('.fx-select-prison').trigger('change');
+  }
+
+  if ($('.fx-select-hospital').val()) {
+    $('.fx-select-hospital').trigger('change');
+  }
+
+});
+</script>

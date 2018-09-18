@@ -1,0 +1,69 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "../includes/_page_scripts_supporting_evidence_file_upload.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					<h2 id="section-heading" class="heading-large">
+						Supporting evidence
+					</h2>
+
+					<form class="form" method="post">
+
+						<div class="form-section">
+
+							<div class="form-section">
+
+								{% if data['bill_type'] == 'advocate_final' -%}
+								
+									{% include "../includes/_supporting_evidence_disk_evidence.html" %}
+								
+								{%- endif %}
+
+								{% include "../includes/_supporting_evidence_file_upload.html" %}
+
+								{% include "../includes/_supporting_evidence_checklist.html" %}
+
+							</div>
+
+							{% include "./includes/_form_actions.html" %}
+
+						</div>
+
+					</form>
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+
+				{# include "./includes/_sidebar.html" #}
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

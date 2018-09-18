@@ -1,0 +1,1709 @@
+{
+	"classes": [
+		{
+			"key": "A",
+			"name": "Homicide and related grave offences",
+			"categories":
+				[
+				    {
+				        "key": "A48",
+				        "name": "Attempt to cause explosion making or keeping explosive etc."
+				    },
+				    {
+				        "key": "A77",
+				        "name": "Causing explosion likely to endanger life or property"
+				    },
+				    {
+				        "key": "A90",
+				        "name": "Child destruction"
+				    },
+				    {
+				        "key": "A211",
+				        "name": "Infanticide"
+				    },
+				    {
+				        "key": "A232",
+				        "name": "Manslaughter"
+				    },
+				    {
+				        "key": "A238",
+				        "name": "Murder"
+				    },
+				    {
+				        "key": "A341",
+				        "name": "Soliciting to commit murder"
+				    }
+				]
+		},
+		{
+			"key": "B",
+			"name": "Offences involving serious violence or damage and serious drug offences",
+			"categories":
+				[
+				    {
+				        "key": "B15",
+				        "name": "Acquisition use or possession of criminal property"
+				    },
+				    {
+				        "key": "B16",
+				        "name": "Activities relating to opium"
+				    },
+				    {
+				        "key": "B19",
+				        "name": "Administering chloroform, laudanum etc."
+				    },
+				    {
+				        "key": "B21",
+				        "name": "Administering poison etc. so as to endanger life"
+				    },
+				    {
+				        "key": "B24",
+				        "name": "Aggravated arson"
+				    },
+				    {
+				        "key": "B25",
+				        "name": "Aggravated burglary"
+				    },
+				    {
+				        "key": "B26",
+				        "name": "Aggravated criminal damage"
+				    },
+				    {
+				        "key": "B28",
+				        "name": "Aggravated vehicle taking resulting in death"
+				    },
+				    {
+				        "key": "B30",
+				        "name": "Aiding and abetting suicide"
+				    },
+				    {
+				        "key": "B32",
+				        "name": "Allowing the death of a child"
+				    },
+				    {
+				        "key": "B33",
+				        "name": "Armed robbery"
+				    },
+				    {
+				        "key": "B36",
+				        "name": "Arson (where value exceeds £30,000)"
+				    },
+				    {
+				        "key": "B42",
+				        "name": "Assault with weapon with intent to rob"
+				    },
+				    {
+				        "key": "B43",
+				        "name": "Assaulting prison officer whilst possessing firearm etc."
+				    },
+				    {
+				        "key": "B49",
+				        "name": "Attempting to choke, suffocate, strangle etc."
+				    },
+				    {
+				        "key": "B52",
+				        "name": "Blackmail"
+				    },
+				    {
+				        "key": "B73",
+				        "name": "Causing bodily injury by explosives"
+				    },
+				    {
+				        "key": "B74",
+				        "name": "Causing danger to road users"
+				    },
+				    {
+				        "key": "B75",
+				        "name": "Causing death by careless driving while under the influence of drink or drugs"
+				    },
+				    {
+				        "key": "B76",
+				        "name": "Causing death by dangerous driving"
+				    },
+				    {
+				        "key": "B78",
+				        "name": "Causing miscarriage by poison, instrument"
+				    },
+				    {
+				        "key": "B79",
+				        "name": "Causing or allowing the death of a child"
+				    },
+				    {
+				        "key": "B95",
+				        "name": "Concealing criminal property"
+				    },
+				    {
+				        "key": "B98",
+				        "name": "Contamination of goods with intent"
+				    },
+				    {
+				        "key": "B114",
+				        "name": "Cruelty to persons under 16"
+				    },
+				    {
+				        "key": "B115",
+				        "name": "Cultivation of cannabis plant"
+				    },
+				    {
+				        "key": "B123",
+				        "name": "Directing terrorist organisation"
+				    },
+				    {
+				        "key": "B124",
+				        "name": "Disclosure prejudicing, or interference of material relevant to, investigation of terrorism"
+				    },
+				    {
+				        "key": "B125",
+				        "name": "Disclosure under sections 330, 331, 332 or 333 of the Proceeds of Crime Act 2002 otherwise than in the form and manner prescribed"
+				    },
+				    {
+				        "key": "B126",
+				        "name": "Drug trafficking offences at sea"
+				    },
+				    {
+				        "key": "B128",
+				        "name": "Endangering the safety of an aircraft"
+				    },
+				    {
+				        "key": "B129",
+				        "name": "Endangering the safety of railway passengers"
+				    },
+				    {
+				        "key": "B143",
+				        "name": "Failure to disclose knowledge or suspicion of money laundering: nominated officers in the regulated sector"
+				    },
+				    {
+				        "key": "B144",
+				        "name": "Failure to disclose knowledge or suspicion of money laundering: other nominated officers"
+				    },
+				    {
+				        "key": "B145",
+				        "name": "Failure to disclose knowledge or suspicion of money laundering: regulated sector"
+				    },
+				    {
+				        "key": "B150",
+				        "name": "False imprisonment"
+				    },
+				    {
+				        "key": "B153",
+				        "name": "Firing on Revenue vessel"
+				    },
+				    {
+				        "key": "B171",
+				        "name": "Fraudulent evasion of controls on Class A and B drugs"
+				    },
+				    {
+				        "key": "B180",
+				        "name": "Fund-raising for terrorism"
+				    },
+				    {
+				        "key": "B191",
+				        "name": "Hostage taking"
+				    },
+				    {
+				        "key": "B192",
+				        "name": "Illegal importation of Class A and B drugs"
+				    },
+				    {
+				        "key": "B199",
+				        "name": "Impeding persons endeavouring to escape wrecks"
+				    },
+				    {
+				        "key": "B203",
+				        "name": "Incitement of terrorism overseas"
+				    },
+				    {
+				        "key": "B214",
+				        "name": "Involvement in arrangements facilitating the acquisition, retention, use or control of criminal property"
+				    },
+				    {
+				        "key": "B216",
+				        "name": "Kidnapping"
+				    },
+				    {
+				        "key": "B224",
+				        "name": "Making or possession of explosive in suspicious circumstances"
+				    },
+				    {
+				        "key": "B229",
+				        "name": "Making threats to kill"
+				    },
+				    {
+				        "key": "B233",
+				        "name": "Manufacture and supply of scheduled substances"
+				    },
+				    {
+				        "key": "B235",
+				        "name": "Membership of proscribed organisations"
+				    },
+				    {
+				        "key": "B255",
+				        "name": "Occupier knowingly permitting drugs offences etc."
+				    },
+				    {
+				        "key": "B256",
+				        "name": "Offences against international protection of nuclear material"
+				    },
+				    {
+				        "key": "B260",
+				        "name": "Offences in relation to money laundering investigations"
+				    },
+				    {
+				        "key": "B261",
+				        "name": "Offences in relation to proceeds of drug trafficking"
+				    },
+				    {
+				        "key": "B267",
+				        "name": "Other offences involving money or property to be used for terrorism"
+				    },
+				    {
+				        "key": "B281",
+				        "name": "Placing explosives with intent to cause bodily injury"
+				    },
+				    {
+				        "key": "B290",
+				        "name": "Possession of a Class A or B drug with intent to supply"
+				    },
+				    {
+				        "key": "B292",
+				        "name": "Possession of articles for terrorist purposes"
+				    },
+				    {
+				        "key": "B295",
+				        "name": "Possession of firearm with criminal intent"
+				    },
+				    {
+				        "key": "B296",
+				        "name": "Possession of firearm with intent to endanger life"
+				    },
+				    {
+				        "key": "B300",
+				        "name": "Possession or acquisition of certain prohibited weapons etc."
+				    },
+				    {
+				        "key": "B302",
+				        "name": "Practitioner contravening drug supply regulations"
+				    },
+				    {
+				        "key": "B305",
+				        "name": "Prison mutiny"
+				    },
+				    {
+				        "key": "B311",
+				        "name": "Producing or supplying a Class A or B drug"
+				    },
+				    {
+				        "key": "B315",
+				        "name": "Racially-aggravated arson (not endangering life)"
+				    },
+				    {
+				        "key": "B323",
+				        "name": "Riot"
+				    },
+				    {
+				        "key": "B344",
+				        "name": "Support or meeting of proscribed organisations"
+				    },
+				    {
+				        "key": "B349",
+				        "name": "Tipping off"
+				    },
+				    {
+				        "key": "B358",
+				        "name": "Uniform of proscribed organisations"
+				    },
+				    {
+				        "key": "B359",
+				        "name": "Unlawful collection of information for terrorist purposes"
+				    },
+				    {
+				        "key": "B362",
+				        "name": "Use of firearm to resist arrest"
+				    },
+				    {
+				        "key": "B369",
+				        "name": "Using explosive or corrosives with intent to cause grievous bodily harm"
+				    },
+				    {
+				        "key": "B373",
+				        "name": "Violent disorder"
+				    },
+				    {
+				        "key": "B376",
+				        "name": "Weapons training"
+				    },
+				    {
+				        "key": "B378",
+				        "name": "Wounding or grievous bodily harm with intent to cause grievous bodily harm etc."
+				    }
+				]
+		},
+		{
+			"key": "C",
+			"name": "Lesser offences involving violence or damage and less serious drug offences",
+			"categories":
+				[
+				    {
+				        "key": "C1",
+				        "name": "Abandonment of children under two"
+				    },
+				    {
+				        "key": "C14",
+				        "name": "Acquisition by or supply of firearms to person denied them"
+				    },
+				    {
+				        "key": "C22",
+				        "name": "Administering poison with intent to injure etc."
+				    },
+				    {
+				        "key": "C35",
+				        "name": "Arson (other than aggravated arson) where value does not exceed £300"
+				    },
+				    {
+				        "key": "C38",
+				        "name": "Assault occasioning actual bodily harm"
+				    },
+				    {
+				        "key": "C44",
+				        "name": "Assaults on officers saving wrecks"
+				    },
+				    {
+				        "key": "C45",
+				        "name": "Assisting illegal entry or harbouring persons"
+				    },
+				    {
+				        "key": "C47",
+				        "name": "Assisting prisoners to escape"
+				    },
+				    {
+				        "key": "C50",
+				        "name": "Attempting to injure or alarm the Sovereign"
+				    },
+				    {
+				        "key": "C53",
+				        "name": "Bomb hoax"
+				    },
+				    {
+				        "key": "C56",
+				        "name": "Breach of prison"
+				    },
+				    {
+				        "key": "C59",
+				        "name": "Breaking or injuring submarine telegraph cables"
+				    },
+				    {
+				        "key": "C68",
+				        "name": "Carrying loaded firearm in public place"
+				    },
+				    {
+				        "key": "C88",
+				        "name": "Child abduction by connected person"
+				    },
+				    {
+				        "key": "C89",
+				        "name": "Child abduction by other person"
+				    },
+				    {
+				        "key": "C92",
+				        "name": "Circumcision of females"
+				    },
+				    {
+				        "key": "C96",
+				        "name": "Concealment of birth"
+				    },
+				    {
+				        "key": "C113",
+				        "name": "Criminal damage (other than aggravated criminal damage)"
+				    },
+				    {
+				        "key": "C120",
+				        "name": "Dealing in firearms"
+				    },
+				    {
+				        "key": "C132",
+				        "name": "Escaping from lawful custody without force"
+				    },
+				    {
+				        "key": "C139",
+				        "name": "Failing to keep dogs under proper control resulting in injury"
+				    },
+				    {
+				        "key": "C140",
+				        "name": "Failure to comply with certificate when transferring firearm"
+				    },
+				    {
+				        "key": "C141",
+				        "name": "Failure to disclose information about terrorism"
+				    },
+				    {
+				        "key": "C142",
+				        "name": "Failure to disclose knowledge or suspicion of money laundering"
+				    },
+				    {
+				        "key": "C170",
+				        "name": "Fraudulent evasion of agricultural levy"
+				    },
+				    {
+				        "key": "C172",
+				        "name": "Fraudulent evasion of controls on Class C drugs"
+				    },
+				    {
+				        "key": "C188",
+				        "name": "Harbouring escaped prisoners"
+				    },
+				    {
+				        "key": "C193",
+				        "name": "Illegal importation of Class C drugs"
+				    },
+				    {
+				        "key": "C222",
+				        "name": "Making gunpowder etc. to commit offences"
+				    },
+				    {
+				        "key": "C228",
+				        "name": "Making threats to destroy or damage property"
+				    },
+				    {
+				        "key": "C239",
+				        "name": "Neglecting to provide food for or assaulting servants etc."
+				    },
+				    {
+				        "key": "C265",
+				        "name": "Offender armed or disguised"
+				    },
+				    {
+				        "key": "C274",
+				        "name": "Permitting an escape"
+				    },
+				    {
+				        "key": "C282",
+				        "name": "Possessing anything with intent to destroy or damage property"
+				    },
+				    {
+				        "key": "C291",
+				        "name": "Possession of a Class C drug with intent to supply"
+				    },
+				    {
+				        "key": "C293",
+				        "name": "Possession of Class A drug"
+				    },
+				    {
+				        "key": "C297",
+				        "name": "Possession of firearm without certificate"
+				    },
+				    {
+				        "key": "C298",
+				        "name": "Possession of firearms by person convicted of crime"
+				    },
+				    {
+				        "key": "C301",
+				        "name": "Possession or acquisition of shotgun without certificate"
+				    },
+				    {
+				        "key": "C312",
+				        "name": "Producing or supplying Class C drug"
+				    },
+				    {
+				        "key": "C316",
+				        "name": "Racially-aggravated assault"
+				    },
+				    {
+				        "key": "C317",
+				        "name": "Racially-aggravated criminal damage"
+				    },
+				    {
+				        "key": "C322",
+				        "name": "Rescue"
+				    },
+				    {
+				        "key": "C324",
+				        "name": "Robbery (other than armed robbery)"
+				    },
+				    {
+				        "key": "C326",
+				        "name": "Setting spring guns with intent to inflict grievous bodily harm"
+				    },
+				    {
+				        "key": "C338",
+				        "name": "Shortening of shotgun or possession of shortened shotgun"
+				    },
+				    {
+				        "key": "C339",
+				        "name": "Shortening of smooth bore gun"
+				    },
+				    {
+				        "key": "C342",
+				        "name": "Stirring up racial hatred"
+				    },
+				    {
+				        "key": "C343",
+				        "name": "Supplying instrument etc. to cause miscarriage"
+				    },
+				    {
+				        "key": "C350",
+				        "name": "Tipping-off in relation to money laundering investigations"
+				    },
+				    {
+				        "key": "C356",
+				        "name": "Trespassing with a firearm"
+				    },
+				    {
+				        "key": "C361",
+				        "name": "Unlawful wounding"
+				    }
+				]
+		},
+		{
+			"key": "D",
+			"name": "Serious sexual offences and offences against children",
+			"categories":
+				[
+				    {
+				        "key": "D2",
+				        "name": "Abduction of defective from parent"
+				    },
+				    {
+				        "key": "D4",
+				        "name": "Abduction of unmarried girl under 18 from parent"
+				    },
+				    {
+				        "key": "D9",
+				        "name": "Abuse of position of trust"
+				    },
+				    {
+				        "key": "D10",
+				        "name": "Abuse of position of trust: causing a child to engage in sexual activity"
+				    },
+				    {
+				        "key": "D11",
+				        "name": "Abuse of position of trust: causing a child to watch sexual activity"
+				    },
+				    {
+				        "key": "D12",
+				        "name": "Abuse of trust: sexual activity in the presence of a child"
+				    },
+				    {
+				        "key": "D13",
+				        "name": "Abuse of trust: sexual activity with a child"
+				    },
+				    {
+				        "key": "D18",
+				        "name": "Administering a substance with intent"
+				    },
+				    {
+				        "key": "D20",
+				        "name": "Administering drugs to obtain intercourse"
+				    },
+				    {
+				        "key": "D64",
+				        "name": "Care workers: causing a person with a mental disorder to watch a sexual act"
+				    },
+				    {
+				        "key": "D66",
+				        "name": "Care workers: sexual activity in presence of a person with a mental disorder"
+				    },
+				    {
+				        "key": "D70",
+				        "name": "Causing a child to watch a sexual act"
+				    },
+				    {
+				        "key": "D72",
+				        "name": "Causing a person with a mental disorder to watch a sexual act"
+				    },
+				    {
+				        "key": "D80",
+				        "name": "Causing or encouraging prostitution of defective"
+				    },
+				    {
+				        "key": "D84",
+				        "name": "Causing or inciting prostitution for gain"
+				    },
+				    {
+				        "key": "D87",
+				        "name": "Causing sexual activity without penetration"
+				    },
+				    {
+				        "key": "D91",
+				        "name": "Child sex offence committed by person under 18"
+				    },
+				    {
+				        "key": "D93",
+				        "name": "Committing offence with intent to commit sexual offence"
+				    },
+				    {
+				        "key": "D100",
+				        "name": "Controlling prostitution for gain"
+				    },
+				    {
+				        "key": "D130",
+				        "name": "Engaging in sexual activity in the presence of a child"
+				    },
+				    {
+				        "key": "D131",
+				        "name": "Engaging in sexual activity in the presence of a person with a mental disorder"
+				    },
+				    {
+				        "key": "D136",
+				        "name": "Exposure"
+				    },
+				    {
+				        "key": "D183",
+				        "name": "Gross indecency between male of 21 or over and male under 16"
+				    },
+				    {
+				        "key": "D198",
+				        "name": "Ill-treatment of persons of unsound mind"
+				    },
+				    {
+				        "key": "D202",
+				        "name": "Incest other than by man with a girl under 13"
+				    },
+				    {
+				        "key": "D204",
+				        "name": "Incitement to commit incest"
+				    },
+				    {
+				        "key": "D207",
+				        "name": "Indecent assault on a man"
+				    },
+				    {
+				        "key": "D208",
+				        "name": "Indecent assault on a woman"
+				    },
+				    {
+				        "key": "D212",
+				        "name": "Intercourse with an animal"
+				    },
+				    {
+				        "key": "D217",
+				        "name": "Living on earnings of male prostitution"
+				    },
+				    {
+				        "key": "D231",
+				        "name": "Man living on earnings of prostitution"
+				    },
+				    {
+				        "key": "D234",
+				        "name": "Meeting child following sexual grooming"
+				    },
+				    {
+				        "key": "D275",
+				        "name": "Permitting defective to use premises for intercourse"
+				    },
+				    {
+				        "key": "D306",
+				        "name": "Procuration of girl under 21"
+				    },
+				    {
+				        "key": "D307",
+				        "name": "Procurement of a defective"
+				    },
+				    {
+				        "key": "D327",
+				        "name": "Sex with adult relative"
+				    },
+				    {
+				        "key": "D331",
+				        "name": "Sexual assault"
+				    },
+				    {
+				        "key": "D337",
+				        "name": "Sexual penetration of a corpse"
+				    },
+				    {
+				        "key": "D355",
+				        "name": "Trespass with intent to commit sexual offence"
+				    },
+				    {
+				        "key": "D374",
+				        "name": "Voyeurism"
+				    },
+				    {
+				        "key": "D377",
+				        "name": "Woman exercising control over prostitute"
+				    }
+				]
+		},
+		{
+			"key": "E",
+			"name": "Burglary",
+			"categories":
+				[
+				    {
+				        "key": "E62",
+				        "name": "Burglary (domestic)"
+				    },
+				    {
+				        "key": "E63",
+				        "name": "Burglary (non-domestic)"
+				    },
+				    {
+				        "key": "E182",
+				        "name": "Going equipped to steal"
+				    }
+				]
+		},
+		{
+			"key": "F",
+			"name": "Other offences of dishonesty up to £30,000",
+			"categories":
+				[
+				    {
+				        "key": "F6",
+				        "name": "Abstraction of electricity"
+				    },
+				    {
+				        "key": "F101",
+				        "name": "Copying false instrument with intent"
+				    },
+				    {
+				        "key": "F106",
+				        "name": "Counterfeiting Customs documents"
+				    },
+				    {
+				        "key": "F110",
+				        "name": "Counterfeiting of dies or marks"
+				    },
+				    {
+				        "key": "F116",
+				        "name": "Custody or control of false instruments etc."
+				    },
+				    {
+				        "key": "F121",
+				        "name": "Destruction of registers of births etc."
+				    },
+				    {
+				        "key": "F133",
+				        "name": "Evasion of liability by deception"
+				    },
+				    {
+				        "key": "F146",
+				        "name": "False accounting"
+				    },
+				    {
+				        "key": "F154",
+				        "name": "Forgery"
+				    },
+				    {
+				        "key": "F161",
+				        "name": "Fraud by abuse of position"
+				    },
+				    {
+				        "key": "F164",
+				        "name": "Fraud by failing to disclose information"
+				    },
+				    {
+				        "key": "F167",
+				        "name": "Fraud by false representation"
+				    },
+				    {
+				        "key": "F173",
+				        "name": "Fraudulent evasion of duty"
+				    },
+				    {
+				        "key": "F177",
+				        "name": "Fraudulent evasion: not elsewhere specified"
+				    },
+				    {
+				        "key": "F185",
+				        "name": "Handling stolen goods"
+				    },
+				    {
+				        "key": "F195",
+				        "name": "Illegal importation: not elsewhere specified"
+				    },
+				    {
+				        "key": "F219",
+				        "name": "Making false entries in copies of registers sent to register"
+				    },
+				    {
+				        "key": "F225",
+				        "name": "Making or supplying articles for use in frauds"
+				    },
+				    {
+				        "key": "F243",
+				        "name": "Obtaining pecuniary advantage by deception"
+				    },
+				    {
+				        "key": "F246",
+				        "name": "Obtaining property by deception"
+				    },
+				    {
+				        "key": "F249",
+				        "name": "Obtaining services by deception"
+				    },
+				    {
+				        "key": "F252",
+				        "name": "Obtaining services by dishonesty"
+				    },
+				    {
+				        "key": "F257",
+				        "name": "Offences in relation to dies or stamps"
+				    },
+				    {
+				        "key": "F268",
+				        "name": "Participating in fraudulent business carried on by sole trader etc."
+				    },
+				    {
+				        "key": "F283",
+				        "name": "Possession (with intention) of apparatus or material for making false identity documents"
+				    },
+				    {
+				        "key": "F284",
+				        "name": "Possession (with intention) of false identity documents"
+				    },
+				    {
+				        "key": "F285",
+				        "name": "Possession of false identify documents"
+				    },
+				    {
+				        "key": "F286",
+				        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents"
+				    },
+				    {
+				        "key": "F287",
+				        "name": "Possession etc of articles for use in frauds"
+				    },
+				    {
+				        "key": "F346",
+				        "name": "Theft"
+				    },
+				    {
+				        "key": "F363",
+				        "name": "Using a copy of a false instrument"
+				    },
+				    {
+				        "key": "F366",
+				        "name": "Using a false instrument"
+				    },
+				    {
+				        "key": "F370",
+				        "name": "VAT offences"
+				    },
+				    {
+				        "key": "F390",
+				        "name": "Counterfeiting notes and coins"
+				    },
+				    {
+				        "key": "F394",
+				        "name": "Fraudulent evasion: counterfeit notes or coins"
+				    },
+				    {
+				        "key": "F396",
+				        "name": "Illegal importation: counterfeit notes or coins"
+				    },
+				    {
+				        "key": "F400",
+				        "name": "Making, custody or control of counterfeiting materials etc."
+				    },
+				    {
+				        "key": "F402",
+				        "name": "Offences involving custody or control of counterfeit notes and coins"
+				    },
+				    {
+				        "key": "F404",
+				        "name": "Passing counterfeit notes and coins"
+				    },
+				    {
+				        "key": "F414",
+				        "name": "Removal of articles from places open to the public"
+				    },
+				    {
+				        "key": "F416",
+				        "name": "Undischarged bankrupt being concerned in a company"
+				    }
+				]
+		},
+		{
+			"key": "G",
+			"name": "Other offences of dishonesty between £30,001 and £100,000",
+			"categories":
+				[
+				    {
+				        "key": "G7",
+				        "name": "Abstraction of electricity"
+				    },
+				    {
+				        "key": "G102",
+				        "name": "Copying false instrument with intent"
+				    },
+				    {
+				        "key": "G107",
+				        "name": "Counterfeiting Customs documents"
+				    },
+				    {
+				        "key": "G109",
+				        "name": "Counterfeiting notes and coins"
+				    },
+				    {
+				        "key": "G111",
+				        "name": "Counterfeiting of dies or marks"
+				    },
+				    {
+				        "key": "G117",
+				        "name": "Custody or control of false instruments etc."
+				    },
+				    {
+				        "key": "G134",
+				        "name": "Evasion of liability by deception"
+				    },
+				    {
+				        "key": "G147",
+				        "name": "False accounting"
+				    },
+				    {
+				        "key": "G155",
+				        "name": "Forgery"
+				    },
+				    {
+				        "key": "G162",
+				        "name": "Fraud by abuse of position"
+				    },
+				    {
+				        "key": "G165",
+				        "name": "Fraud by failing to disclose information"
+				    },
+				    {
+				        "key": "G168",
+				        "name": "Fraud by false representation"
+				    },
+				    {
+				        "key": "G174",
+				        "name": "Fraudulent evasion of duty"
+				    },
+				    {
+				        "key": "G176",
+				        "name": "Fraudulent evasion: counterfeit notes or coins"
+				    },
+				    {
+				        "key": "G178",
+				        "name": "Fraudulent evasion: not elsewhere specified"
+				    },
+				    {
+				        "key": "G186",
+				        "name": "Handling stolen goods"
+				    },
+				    {
+				        "key": "G194",
+				        "name": "Illegal importation: counterfeit notes or coins"
+				    },
+				    {
+				        "key": "G196",
+				        "name": "Illegal importation: not elsewhere specified"
+				    },
+				    {
+				        "key": "G226",
+				        "name": "Making or supplying articles for use in frauds"
+				    },
+				    {
+				        "key": "G230",
+				        "name": "Making, custody or control of counterfeiting materials etc."
+				    },
+				    {
+				        "key": "G244",
+				        "name": "Obtaining pecuniary advantage by deception"
+				    },
+				    {
+				        "key": "G247",
+				        "name": "Obtaining property by deception"
+				    },
+				    {
+				        "key": "G250",
+				        "name": "Obtaining services by deception"
+				    },
+				    {
+				        "key": "G253",
+				        "name": "Obtaining services by dishonesty"
+				    },
+				    {
+				        "key": "G258",
+				        "name": "Offences in relation to dies or stamps"
+				    },
+				    {
+				        "key": "G262",
+				        "name": "Offences involving custody or control of counterfeit notes and coins"
+				    },
+				    {
+				        "key": "G269",
+				        "name": "Participating in fraudulent business carried on by sole trader etc."
+				    },
+				    {
+				        "key": "G271",
+				        "name": "Passing counterfeit notes and coins"
+				    },
+				    {
+				        "key": "G288",
+				        "name": "Possession etc of articles for use in frauds"
+				    },
+				    {
+				        "key": "G321",
+				        "name": "Removal of articles from places open to the public"
+				    },
+				    {
+				        "key": "G347",
+				        "name": "Theft"
+				    },
+				    {
+				        "key": "G357",
+				        "name": "Undischarged bankrupt being concerned in a company"
+				    },
+				    {
+				        "key": "G364",
+				        "name": "Using a copy of a false instrument"
+				    },
+				    {
+				        "key": "G367",
+				        "name": "Using a false instrument"
+				    },
+				    {
+				        "key": "G371",
+				        "name": "VAT offences"
+				    },
+				    {
+				        "key": "G392",
+				        "name": "Destruction of registers of births etc."
+				    },
+				    {
+				        "key": "G398",
+				        "name": "Making false entries in copies of registers sent to register"
+				    },
+				    {
+				        "key": "G406",
+				        "name": "Possession (with intention) of apparatus or material for making false identity documents"
+				    },
+				    {
+				        "key": "G408",
+				        "name": "Possession (with intention) of false identity documents"
+				    },
+				    {
+				        "key": "G410",
+				        "name": "Possession of false identify documents"
+				    },
+				    {
+				        "key": "G412",
+				        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents"
+				    }
+				]
+		},
+		{
+			"key": "H",
+			"name": "Miscellaneous lesser offences",
+			"categories":
+				[
+				    {
+				        "key": "H17",
+				        "name": "Acts outraging public decency"
+				    },
+				    {
+				        "key": "H23",
+				        "name": "Affray"
+				    },
+				    {
+				        "key": "H27",
+				        "name": "Aggravated vehicle taking"
+				    },
+				    {
+				        "key": "H29",
+				        "name": "Agreeing to indemnify sureties"
+				    },
+				    {
+				        "key": "H41",
+				        "name": "Assault with intent to resist arrest"
+				    },
+				    {
+				        "key": "H51",
+				        "name": "Being drunk on an aircraft"
+				    },
+				    {
+				        "key": "H54",
+				        "name": "Breach of anti-social behaviour order"
+				    },
+				    {
+				        "key": "H55",
+				        "name": "Breach of harassment injunction"
+				    },
+				    {
+				        "key": "H57",
+				        "name": "Breach of restraining order"
+				    },
+				    {
+				        "key": "H58",
+				        "name": "Breach of sex offender order"
+				    },
+				    {
+				        "key": "H60",
+				        "name": "Buggery of males of 16 or over otherwise than in private"
+				    },
+				    {
+				        "key": "H85",
+				        "name": "Causing prostitution of women"
+				    },
+				    {
+				        "key": "H119",
+				        "name": "Dangerous driving"
+				    },
+				    {
+				        "key": "H122",
+				        "name": "Detention of woman in brothel or other premises"
+				    },
+				    {
+				        "key": "H157",
+				        "name": "Forgery and misuse of driving documents"
+				    },
+				    {
+				        "key": "H158",
+				        "name": "Forgery etc. of licences and other documents"
+				    },
+				    {
+				        "key": "H159",
+				        "name": "Forgery of driving documents"
+				    },
+				    {
+				        "key": "H160",
+				        "name": "Forgery, alteration, fraud of licences etc."
+				    },
+				    {
+				        "key": "H184",
+				        "name": "Gross indecency between males (other than where one is 21 or over and the other is under 16)"
+				    },
+				    {
+				        "key": "H190",
+				        "name": "Having an article with a blade or point in a public place"
+				    },
+				    {
+				        "key": "H200",
+				        "name": "Impersonating Customs officer"
+				    },
+				    {
+				        "key": "H209",
+				        "name": "Indecent display"
+				    },
+				    {
+				        "key": "H215",
+				        "name": "Keeping a disorderly house"
+				    },
+				    {
+				        "key": "H223",
+				        "name": "Making off without payment"
+				    },
+				    {
+				        "key": "H236",
+				        "name": "Misconduct endangering ship or persons on board ship"
+				    },
+				    {
+				        "key": "H237",
+				        "name": "Mishandling or falsifying parking documents etc."
+				    },
+				    {
+				        "key": "H240",
+				        "name": "Obscene articles intended for publication for gain"
+				    },
+				    {
+				        "key": "H241",
+				        "name": "Obstructing Customs officer"
+				    },
+				    {
+				        "key": "H242",
+				        "name": "Obstructing engine or carriage on railway"
+				    },
+				    {
+				        "key": "H263",
+				        "name": "Offences of publication of obscene matter"
+				    },
+				    {
+				        "key": "H264",
+				        "name": "Offences relating to the safe custody of controlled drugs"
+				    },
+				    {
+				        "key": "H294",
+				        "name": "Possession of Class B or C drug"
+				    },
+				    {
+				        "key": "H299",
+				        "name": "Possession of offensive weapon"
+				    },
+				    {
+				        "key": "H304",
+				        "name": "Presentation of obscene performance"
+				    },
+				    {
+				        "key": "H308",
+				        "name": "Procurement of a woman by false pretences"
+				    },
+				    {
+				        "key": "H309",
+				        "name": "Procurement of intercourse by threats etc."
+				    },
+				    {
+				        "key": "H310",
+				        "name": "Procuring others to commit homosexual acts"
+				    },
+				    {
+				        "key": "H313",
+				        "name": "Putting people in fear of violence"
+				    },
+				    {
+				        "key": "H314",
+				        "name": "Racially aggravated harassment/putting another in fear of violence"
+				    },
+				    {
+				        "key": "H318",
+				        "name": "Racially-aggravated public order offence"
+				    },
+				    {
+				        "key": "H325",
+				        "name": "Sending prohibited articles by post"
+				    },
+				    {
+				        "key": "H340",
+				        "name": "Solicitation for immoral purposes"
+				    },
+				    {
+				        "key": "H351",
+				        "name": "Trade description offences (9 offences)"
+				    },
+				    {
+				        "key": "H360",
+				        "name": "Unlawful eviction and harassment of occupier"
+				    },
+				    {
+				        "key": "H375",
+				        "name": "Wanton or furious driving"
+				    }
+				]
+		},
+		{
+			"key": "I",
+			"name": "Offences against public justice and similar offences",
+			"categories":
+				[
+				    {
+				        "key": "I46",
+				        "name": "Assisting offenders"
+				    },
+				    {
+				        "key": "I94",
+				        "name": "Concealing an arrestable offence"
+				    },
+				    {
+				        "key": "I97",
+				        "name": "Conspiring to commit offences outside the United Kingdom"
+				    },
+				    {
+				        "key": "I104",
+				        "name": "Corrupt transactions with agents"
+				    },
+				    {
+				        "key": "I105",
+				        "name": "Corruption in public office"
+				    },
+				    {
+				        "key": "I127",
+				        "name": "Embracery"
+				    },
+				    {
+				        "key": "I137",
+				        "name": "Fabrication of evidence with intent to mislead a tribunal"
+				    },
+				    {
+				        "key": "I149",
+				        "name": "False evidence before European Court"
+				    },
+				    {
+				        "key": "I151",
+				        "name": "False statement tendered under section 5B of the Magistrates' Courts Act 1980"
+				    },
+				    {
+				        "key": "I152",
+				        "name": "False statement tendered under section 9 of the Criminal Justice Act 1967"
+				    },
+				    {
+				        "key": "I181",
+				        "name": "Giving false statements to procure cremation"
+				    },
+				    {
+				        "key": "I189",
+				        "name": "Harming, threatening to harm a witness, juror etc."
+				    },
+				    {
+				        "key": "I213",
+				        "name": "Intimidating a witness, juror etc."
+				    },
+				    {
+				        "key": "I218",
+				        "name": "Making a false statement to obtain interim possession order"
+				    },
+				    {
+				        "key": "I220",
+				        "name": "Making false statement to authorised officer"
+				    },
+				    {
+				        "key": "I221",
+				        "name": "Making false statement to resist making of interim possession order"
+				    },
+				    {
+				        "key": "I273",
+				        "name": "Perjuries (7 offences)"
+				    },
+				    {
+				        "key": "I278",
+				        "name": "Personating for purposes of bail etc."
+				    },
+				    {
+				        "key": "I279",
+				        "name": "Personation of jurors"
+				    },
+				    {
+				        "key": "I280",
+				        "name": "Perverting the course of public justice"
+				    },
+				    {
+				        "key": "I303",
+				        "name": "Prejudicing a drug trafficking investigation"
+				    }
+				]
+		},
+		{
+			"key": "J",
+			"name": "Serious sexual offences, offences against children",
+			"categories":
+				[
+				    {
+				        "key": "J3",
+				        "name": "Abduction of unmarried girl under 16 from parent"
+				    },
+				    {
+				        "key": "J5",
+				        "name": "Abduction of woman by force"
+				    },
+				    {
+				        "key": "J31",
+				        "name": "Allowing or procuring child under 16 to go abroad to perform"
+				    },
+				    {
+				        "key": "J34",
+				        "name": "Arranging child sex offence"
+				    },
+				    {
+				        "key": "J37",
+				        "name": "Assault by penetration"
+				    },
+				    {
+				        "key": "J39",
+				        "name": "Assault of child under 13 by penetration"
+				    },
+				    {
+				        "key": "J40",
+				        "name": "Assault with intent to commit buggery"
+				    },
+				    {
+				        "key": "J61",
+				        "name": "Buggery of person under 16"
+				    },
+				    {
+				        "key": "J65",
+				        "name": "Care workers: inciting person with mental disorder to engage in sexual act"
+				    },
+				    {
+				        "key": "J67",
+				        "name": "Care workers: sexual activity with a person with a mental disorder"
+				    },
+				    {
+				        "key": "J69",
+				        "name": "Causing a child to engage in sexual activity"
+				    },
+				    {
+				        "key": "J71",
+				        "name": "Causing a child under 13 to engage in sexual activity"
+				    },
+				    {
+				        "key": "J81",
+				        "name": "Causing or encouraging prostitution of girl under 16"
+				    },
+				    {
+				        "key": "J82",
+				        "name": "Causing or inciting a person with a mental disorder to engage in sexual activity"
+				    },
+				    {
+				        "key": "J83",
+				        "name": "Causing or inciting child prostitution or pornography"
+				    },
+				    {
+				        "key": "J86",
+				        "name": "Causing sexual activity with penetration"
+				    },
+				    {
+				        "key": "J99",
+				        "name": "Controlling a child prostitute"
+				    },
+				    {
+				        "key": "J138",
+				        "name": "Facilitating child prostitution"
+				    },
+				    {
+				        "key": "J201",
+				        "name": "Incest by man with a girl under 13"
+				    },
+				    {
+				        "key": "J205",
+				        "name": "Inciting a child family member to engage in sexual activity"
+				    },
+				    {
+				        "key": "J206",
+				        "name": "Indecency with children under 14"
+				    },
+				    {
+				        "key": "J210",
+				        "name": "Inducing person with mental disorder to engage in sexual activity"
+				    },
+				    {
+				        "key": "J266",
+				        "name": "Offering inducement to procure sexual activity with a person with a mental disorder"
+				    },
+				    {
+				        "key": "J272",
+				        "name": "Paying for sexual services of a child"
+				    },
+				    {
+				        "key": "J276",
+				        "name": "Permitting girl under 13 to use premises for sexual intercourse"
+				    },
+				    {
+				        "key": "J277",
+				        "name": "Permitting girl under 16 to use premises for intercourse"
+				    },
+				    {
+				        "key": "J319",
+				        "name": "Rape"
+				    },
+				    {
+				        "key": "J320",
+				        "name": "Rape of child under 13"
+				    },
+				    {
+				        "key": "J328",
+				        "name": "Sexual activity with a child"
+				    },
+				    {
+				        "key": "J329",
+				        "name": "Sexual activity with a child family member, with penetration"
+				    },
+				    {
+				        "key": "J330",
+				        "name": "Sexual activity with a person with a mental disorder"
+				    },
+				    {
+				        "key": "J332",
+				        "name": "Sexual assault of child under 13"
+				    },
+				    {
+				        "key": "J333",
+				        "name": "Sexual intercourse with defective"
+				    },
+				    {
+				        "key": "J334",
+				        "name": "Sexual intercourse with girl under 13"
+				    },
+				    {
+				        "key": "J335",
+				        "name": "Sexual intercourse with girl under 16"
+				    },
+				    {
+				        "key": "J336",
+				        "name": "Sexual intercourse with patients"
+				    },
+				    {
+				        "key": "J345",
+				        "name": "Taking, having etc. indecent photographs of children"
+				    },
+				    {
+				        "key": "J352",
+				        "name": "Trafficking into UK for sexual exploitation"
+				    },
+				    {
+				        "key": "J353",
+				        "name": "Trafficking out of UK for sexual exploitation"
+				    },
+				    {
+				        "key": "J354",
+				        "name": "Trafficking within UK for sexual exploitation"
+				    }
+				]
+		},
+		{
+			"key": "K",
+			"name": "Offences of dishonesty in Class F where the value in is in excess of £100,000",
+			"categories":
+				[
+				    {
+				        "key": "K8",
+				        "name": "Abstraction of electricity"
+				    },
+				    {
+				        "key": "K103",
+				        "name": "Copying false instrument with intent"
+				    },
+				    {
+				        "key": "K108",
+				        "name": "Counterfeiting Customs documents"
+				    },
+				    {
+				        "key": "K112",
+				        "name": "Counterfeiting of dies or marks"
+				    },
+				    {
+				        "key": "K118",
+				        "name": "Custody or control of false instruments etc."
+				    },
+				    {
+				        "key": "K135",
+				        "name": "Evasion of liability by deception"
+				    },
+				    {
+				        "key": "K148",
+				        "name": "False accounting"
+				    },
+				    {
+				        "key": "K156",
+				        "name": "Forgery"
+				    },
+				    {
+				        "key": "K163",
+				        "name": "Fraud by abuse of position"
+				    },
+				    {
+				        "key": "K166",
+				        "name": "Fraud by failing to disclose information"
+				    },
+				    {
+				        "key": "K169",
+				        "name": "Fraud by false representation"
+				    },
+				    {
+				        "key": "K175",
+				        "name": "Fraudulent evasion of duty"
+				    },
+				    {
+				        "key": "K179",
+				        "name": "Fraudulent evasion: not elsewhere specified"
+				    },
+				    {
+				        "key": "K187",
+				        "name": "Handling stolen goods"
+				    },
+				    {
+				        "key": "K197",
+				        "name": "Illegal importation: not elsewhere specified"
+				    },
+				    {
+				        "key": "K227",
+				        "name": "Making or supplying articles for use in frauds"
+				    },
+				    {
+				        "key": "K245",
+				        "name": "Obtaining pecuniary advantage by deception"
+				    },
+				    {
+				        "key": "K248",
+				        "name": "Obtaining property by deception"
+				    },
+				    {
+				        "key": "K251",
+				        "name": "Obtaining services by deception"
+				    },
+				    {
+				        "key": "K254",
+				        "name": "Obtaining services by dishonesty"
+				    },
+				    {
+				        "key": "K259",
+				        "name": "Offences in relation to dies or stamps"
+				    },
+				    {
+				        "key": "K270",
+				        "name": "Participating in fraudulent business carried on by sole trader etc."
+				    },
+				    {
+				        "key": "K289",
+				        "name": "Possession etc of articles for use in frauds"
+				    },
+				    {
+				        "key": "K348",
+				        "name": "Theft"
+				    },
+				    {
+				        "key": "K365",
+				        "name": "Using a copy of a false instrument"
+				    },
+				    {
+				        "key": "K368",
+				        "name": "Using a false instrument"
+				    },
+				    {
+				        "key": "K372",
+				        "name": "VAT offences"
+				    },
+				    {
+				        "key": "K391",
+				        "name": "Counterfeiting notes and coins"
+				    },
+				    {
+				        "key": "K393",
+				        "name": "Destruction of registers of births etc."
+				    },
+				    {
+				        "key": "K395",
+				        "name": "Fraudulent evasion: counterfeit notes or coins"
+				    },
+				    {
+				        "key": "K397",
+				        "name": "Illegal importation: counterfeit notes or coins"
+				    },
+				    {
+				        "key": "K399",
+				        "name": "Making false entries in copies of registers sent to register"
+				    },
+				    {
+				        "key": "K401",
+				        "name": "Making, custody or control of counterfeiting materials etc."
+				    },
+				    {
+				        "key": "K403",
+				        "name": "Offences involving custody or control of counterfeit notes and coins"
+				    },
+				    {
+				        "key": "K405",
+				        "name": "Passing counterfeit notes and coins"
+				    },
+				    {
+				        "key": "K407",
+				        "name": "Possession (with intention) of apparatus or material for making false identity documents"
+				    },
+				    {
+				        "key": "K409",
+				        "name": "Possession (with intention) of false identity documents"
+				    },
+				    {
+				        "key": "K411",
+				        "name": "Possession of false identify documents"
+				    },
+				    {
+				        "key": "K413",
+				        "name": "Possession (without reasonable excuse) of false identity documents or apparatus or material for making false identity documents"
+				    },
+				    {
+				        "key": "K415",
+				        "name": "Removal of articles from places open to the public"
+				    },
+				    {
+				        "key": "K417",
+				        "name": "Undischarged bankrupt being concerned in a company"
+				    },
+				    {
+				        "key": "K389",
+				        "name": "Miscellaneous/other"
+				    }
+				]
+		}
+	]
+}
