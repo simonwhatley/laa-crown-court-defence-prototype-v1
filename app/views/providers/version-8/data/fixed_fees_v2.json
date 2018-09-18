@@ -1,0 +1,321 @@
+[{
+    "code": "FXACV",
+    "key": "appeal_against_conviction",
+    "name": "Appeal Against Conviction",
+    "scheme": ["AGFS"],
+    "scheme_version": [
+        9,
+        10
+    ],
+    "fees": [{
+        "code": "FXACV",
+        "key": "appeals_to_the_crown_court_against_conviction",
+        "name": "Appeals to the Crown court against conviction",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXADJ",
+        "key": "adjourned_appeals_committals_and_breaches",
+        "name": "Adjourned appeals, committals and breaches",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNDR",
+        "key": "number_of_defendants_uplift",
+        "name": "Number of defendants uplift",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": false,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNOC",
+        "key": "number_of_cases_uplift",
+        "name": "Number of cases uplift",
+        "attributes": {
+            "additional_case_numbers": true,
+            "dates": false,
+            "quantity": false,
+            "rate": true
+        }
+    }, {
+        "code": "FXSAF",
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }]
+}, {
+    "code": "FXASE",
+    "key": "appeal_against_sentence",
+    "name": "Appeal Against Sentence",
+    "scheme": ["AGFS"],
+    "scheme_version": [
+        9,
+        10
+    ],
+    "fees": [{
+        "code": "FXADJ",
+        "key": "adjourned_appeals_committals_and_breaches",
+        "name": "Adjourned appeals, committals and breaches",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXASE",
+        "key": "appeals_to_the_crown_court_against_sentence",
+        "name": "Appeals to the Crown court against sentence",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNDR",
+        "key": "number_of_defendants_uplift",
+        "name": "Number of defendants uplift",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": false,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNOC",
+        "key": "number_of_cases_uplift",
+        "name": "Number of cases uplift",
+        "attributes": {
+            "additional_case_numbers": true,
+            "dates": false,
+            "quantity": false,
+            "rate": true
+        }
+    }, {
+        "code": "FXSAF",
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }]
+}, {
+    "code": "FXCBR",
+    "key": "breach_of_crown_court_order",
+    "name": "Breach of Crown Court Order",
+    "scheme": ["AGFS"],
+    "scheme_version": [
+        9,
+        10
+    ],
+    "fees": [{
+        "code": "FXADJ",
+        "key": "adjourned_appeals_committals_and_breaches",
+        "name": "Adjourned appeals, committals and breaches",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXCBR",
+        "key": "breach_of_a_crown_court_order",
+        "name": "Breach of a crown court order",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNDR",
+        "key": "number_of_defendants_uplift",
+        "name": "Number of defendants uplift",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": false,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNOC",
+        "key": "number_of_cases_uplift",
+        "name": "Number of cases uplift",
+        "attributes": {
+            "additional_case_numbers": true,
+            "dates": false,
+            "quantity": false,
+            "rate": true
+        }
+    }, {
+        "code": "FXSAF",
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }]
+}, {
+    "code": "FXCON",
+    "key": "contempt",
+    "name": "Contempt",
+    "scheme": ["AGFS"],
+    "scheme_version": [
+        9,
+        10
+    ],
+    "fees": [{
+        "code": "FXADJ",
+        "key": "adjourned_appeals_committals_and_breaches",
+        "name": "Adjourned appeals, committals and breaches",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXCON",
+        "key": "contempt",
+        "name": "Contempt",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXSAF",
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }]
+}, {
+    "code": "FXCSE",
+    "key": "committal_for_sentence",
+    "name": "Committal for Sentence",
+    "scheme": ["AGFS"],
+    "scheme_version": [
+        9,
+        10
+    ],
+    "fees": [{
+        "code": "FXADJ",
+        "key": "adjourned_appeals_committals_and_breaches",
+        "name": "Adjourned appeals, committals and breaches",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXCSE",
+        "key": "committal_for_sentence_hearings",
+        "name": "Committal for sentence hearings",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNDR",
+        "key": "number_of_defendants_uplift",
+        "name": "Number of defendants uplift",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": false,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNOC",
+        "key": "number_of_cases_uplift",
+        "name": "Number of cases uplift",
+        "attributes": {
+            "additional_case_numbers": true,
+            "dates": false,
+            "quantity": false,
+            "rate": true
+        }
+    }, {
+        "code": "FXSAF",
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }]
+}, {
+    "code": "FXENP",
+    "key": "elected_cases_not_proceeded",
+    "name": "Elected Cases Not Proceeded",
+    "scheme": ["AGFS"],
+    "scheme_version": [
+        9,
+        10
+    ],
+    "fees": [{
+        "code": "FXENP",
+        "key": "elected_case_not_proceeded",
+        "name": "Elected case not proceeded",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": true,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNDR",
+        "key": "number_of_defendants_uplift",
+        "name": "Number of defendants uplift",
+        "attributes": {
+            "additional_case_numbers": false,
+            "dates": false,
+            "quantity": true,
+            "rate": true
+        }
+    }, {
+        "code": "FXNOC",
+        "key": "number_of_cases_uplift",
+        "name": "Number of cases uplift",
+        "attributes": {
+            "additional_case_numbers": true,
+            "dates": false,
+            "quantity": false,
+            "rate": true
+        }
+    }]
+}]

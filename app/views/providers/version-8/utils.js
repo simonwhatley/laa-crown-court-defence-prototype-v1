@@ -8,6 +8,7 @@ var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json');
 var offencesScheme9 = require('./data/scheme_9_offences.json');
 var miscellaneousFees = require('./data/miscellaneous_fees.json');
 var fixedFees = require('./data/fixed_fees.json');
+var fixedFeesV2 = require('./data/fixed_fees_v2.json');
 var disbursements = require('./data/disbursements.json');
 var transferReasons = require('./data/transfer_reasons.json');
 var travelTypes = require('./data/travel_types.json');
@@ -226,6 +227,17 @@ module.exports = {
 		return fixedFees.filter( (obj) =>
 	        !!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
 	    )
+
+	},
+
+	getFixedFeesV2: function(case_type) {
+
+		if (!case_type)
+			return null
+
+		return fixedFeesV2.filter( (obj) =>
+			!!~obj.key.indexOf(case_type.toLowerCase())
+		)
 
 	},
 
