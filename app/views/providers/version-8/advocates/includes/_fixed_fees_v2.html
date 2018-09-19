@@ -41,7 +41,7 @@
 		                        
 		                    </span> -->
 		                </label>
-		                <input class="form-control form-control-1-4" id="fixed-fee-1-quantity" name="fixed_fee_1_quantity" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_quantity']}}">
+		                <input class="form-control form-control-1-8" id="fixed-fee-1-quantity" name="fixed_fee_1_quantity" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_quantity']}}">
 		            </div>
 					{%- endif %}
 					{% if fee.attributes.dates -%}
@@ -55,7 +55,7 @@
 					                <span class="visually-hidden">&nbsp;this fee</span>
 					            </a> -->
 					            <span class="form-hint">
-					                For example, 31 3 2017
+					                For example, {{ now | date('subtract', {months:4}) | date('DD M YYYY') }}
 					            </span>
 					        </legend>
 

@@ -89,7 +89,7 @@
             <legend class="form-label">
                 Representation order date
                 <span class="form-hint">
-                    For example, 31 3 2017
+                    For example, {{ now | date('subtract', {months:5}) | date('DD M YYYY') }}
                 </span>
             </legend>
             <div class="form-date">
