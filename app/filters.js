@@ -1,7 +1,7 @@
 // https://www.npmjs.com/package/nunjucks-numeral-filter
 var numeralFilter = require('nunjucks-numeral-filter')
 // https://www.npmjs.com/package/nunjucks-date-filter
-var dateFilter = require('nunjucks-date-filter')
+// var dateFilter = require('nunjucks-date-filter')
 
 module.exports = function (env) {
   /**
@@ -13,7 +13,7 @@ module.exports = function (env) {
   var filters = {}
 
   filters.numeral = numeralFilter
-  filters.date = dateFilter
+  // filters.date = dateFilter
 
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:

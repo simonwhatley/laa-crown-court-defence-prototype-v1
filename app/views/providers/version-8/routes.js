@@ -352,8 +352,6 @@ router.get('/advocates/fees-v2', function(req, res) {
 
         if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-            console.log(utils.getFixedFeesV2(req.session.data.case_type).fees)
-
             res.render(`${req.feature}/${req.version}/advocates/fixed-fees-v2`,
                  {
                     links: {
