@@ -52,5 +52,7 @@
       "nunjucks"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nunjucks-date-filter": "^0.1.1"
+  }
 }
