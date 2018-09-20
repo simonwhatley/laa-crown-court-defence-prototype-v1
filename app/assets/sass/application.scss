@@ -116,19 +116,23 @@ div.offence-item, li.offence-item {
     border-bottom: 1px solid #ccc;
 }
 
-div.offence-item:nth-child(odd), li.offence-item:nth-child(odd) {
+div.offence-item:nth-child(odd),
+li.offence-item:nth-child(odd) {
    background-color: #f8f8f8;
 }
 
-div.offence-item:hover, li.offence-item:hover {
+div.offence-item:hover,
+li.offence-item:hover {
    background-color: #e7f4fb;
 }
 
-div.offence-item a.offence-item-button, li.offence-item a.offence-item-button {
+div.offence-item a.offence-item-button,
+li.offence-item a.offence-item-button {
   visibility: hidden;
 }
 
-div.offence-item:hover a.offence-item-button, li.offence-item:hover a.offence-item-button {
+div.offence-item:hover a.offence-item-button,
+li.offence-item:hover a.offence-item-button {
    visibility: visible;
 }
 

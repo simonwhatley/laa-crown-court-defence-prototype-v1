@@ -14,11 +14,10 @@
 				Type of fee
 				<!-- <span class="form-hint"></span> -->
 			</legend>
-{#{fixed_fees|dump|safe}#}
 			{% for fee in fixed_fees -%}
 				<div class="multiple-choice" data-target="{{fee.key}}-panel">
-					<input id="fixed-fee-{{loop.index}}-type" type="radio" name="fixed_fee_1_type" value="{{fee.key}}" {{ checked('fixed_fee_1_type',fee.key) }}>
-					<label for="fixed-fee-{{loop.index}}-type">{{fee.name}}</label>
+					<input id="fixed-fee-1-type-{{loop.index}}" type="radio" name="fixed_fee_1_type" value="{{fee.key}}" {{ checked('fixed_fee_1_type',fee.key) }}>
+					<label for="fixed-fee-1-type-{{loop.index}}">{{fee.name}}</label>
 				</div>
 
 				<div class="panel panel-border-narrow js-hidden" id="{{fee.key}}-panel">

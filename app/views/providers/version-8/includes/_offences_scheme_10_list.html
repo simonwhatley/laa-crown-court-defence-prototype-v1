@@ -6,9 +6,9 @@
 		<li id="offence-item-{{loop.index}}" class="grid-row offence-item">
 			
 			<div class="column-two-thirds">
-				<span class="font-xsmall font-grey">{{offence.class_label | capitalize}} > {{offence.band_label | capitalize}}</span><br>
-		        {{offence.category_label | capitalize}}<br>
-		        <span class="font-xsmall font-grey">{{offence.act_label}}</span>
+				<a href="{{links.filter}}/{{offence.class_id}}" class="font-xsmall link-grey">{{offence.class_label | capitalize}}</a> <span class="font-xsmall font-grey">></span> <a href="{{links.filter}}/{{offence.class_id}}/{{offence.band_id}}" class="font-xsmall link-grey" title="{{offence.band_short_desc}}">{{offence.band_label | capitalize}}</a><br>
+		        <span>{{offence.category_label | capitalize}}</span><br>
+		        <a href="{{links.filter}}/act/{{offence.act_id}}" class="font-xsmall link-grey">{{offence.act_label}}</a>
 			</div>
 
 			<div class="column-one-third align-right"><br>
