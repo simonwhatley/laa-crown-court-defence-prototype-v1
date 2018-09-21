@@ -24,12 +24,23 @@
 						Fixed fees
 					</h2>
 
+					<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
+
+					<p>Check the <a href="https://www.gov.uk/government/publications/graduated-fee-calculators" target="_blank">graduated fee calculators</a> <span class="visually-hidden">opens in new window</span> for help.</p>
+
 					<form class="form" method="post">
 
-						<div class="form-section">
+						<!-- <div class="form-section"> -->
 
 							{% include "./includes/_fixed_fees.html" %}
 
+						<!-- </div> -->
+
+						<div class="form-section">
+							<hr>
+							<div class="form-group form-buttons">
+								<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
+							</div>
 						</div>
 
 						{% include "./includes/_form_actions.html" %}
