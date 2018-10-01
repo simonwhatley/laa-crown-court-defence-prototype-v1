@@ -37,13 +37,15 @@
 						</li>
 					{%- endif %}
 					{% if expense.type in ["bike_travel","car_travel"] -%}
-						<li>
-							<span class="bold">Distance:</span>
+						<li {% if expense.distance > expense.distance_calculated %}class="error"{% endif %}>
+							<span class="bold">
+								Distance {%- if expense.distance > expense.distance_calculated %} claimed{% endif %}:
+							</span>
 							{{expense.distance}} miles
 						</li>
 						{% if expense.distance > expense.distance_calculated -%}
 							<li class="error">
-								<span class="bold">Calculated distance:</span>
+								<span class="bold">Distance calculated:</span>
 								{{expense.distance_calculated}} miles
 								<a href="https://www.google.co.uk/maps/dir/?api=1&amp;origin={{expense.origin.postcode}}&amp;destination={{expense.destination.postcode}}&amp;travelmode=driving" target="_blank">View on a map <span class="visually-hidden">(opens in new window)</span></a>
 							</li>
