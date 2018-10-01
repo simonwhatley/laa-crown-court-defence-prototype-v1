@@ -26,7 +26,7 @@
 		    <div class="grid-row">
 				<div class="column-full">
 
-					<h2 class="heading-large">
+					<h2 id="claim-messages" class="heading-large">
 			            Claim messages
 			        </h2>
 
@@ -38,7 +38,7 @@
 		    <div class="grid-row">
 				<div class="column-full">
 
-					<h2 class="heading-large">
+					<h2 id="assessment-details" class="heading-large">
 			            Assessment details
 			        </h2>
 
@@ -56,24 +56,24 @@
 	    	<div class="grid-row">
 				<div class="column-full">
 
-			        <h2 class="heading-large">
+			        <h2 id="claim-details" class="heading-large">
 			            Claim details
 			        </h2>
 
-			        <h3 class="heading-medium">
+			        <h3 id="certification" class="heading-medium">
 			            Certification
 			        </h3>
 
 			        {% include "./includes/_certification.html" %}
 
 			        {% if claim.bill_type == 'litigator_transfer' -%}
-				        <h3 class="heading-medium">
+				        <h3 id="transfer-details" class="heading-medium">
 				        	Transfer details
 				        </h3>
 				        {% include "./includes/_transfer_details.html" %}
 				    {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="case-details" class="heading-medium">
 			        	Case details
 			        </h3>
 			        {% include "./includes/_case_details.html" %}
@@ -81,28 +81,28 @@
 			        {% if claim.bill_type in ['advocate_final','advocate_interim'] -%}
 
 				        {% if claim.case_type in ['trial','retrial'] -%}
-					        <h3 class="heading-medium">
+					        <h3 id="trial-details" class="heading-medium">
 					        	Trial details
 					        </h3>
 				        	{% include "./includes/_trial_details.html" %}
 				        {%- endif %}
 
 				        {% if claim.case_type == 'retrial' -%}
-					        <h3 class="heading-medium">
+					        <h3 id="retrial-details" class="heading-medium">
 					        	Retrial details
 					        </h3>
 				        	{% include "./includes/_retrial_details.html" %}
 				        {%- endif %}
 
 				        {% if claim.case_type == 'cracked_trial' -%}
-					        <h3 class="heading-medium">
+					        <h3 id="cracked-trial-details" class="heading-medium">
 					        	Cracked trial details
 					        </h3>
 				        	{% include "./includes/_cracked_trial_details.html" %}
 				        {%- endif %}
 
 				        {% if claim.case_type == 'cracked_before_retrial' -%}
-					        <h3 class="heading-medium">
+					        <h3 id="cracked-before-retrial-details" class="heading-medium">
 					        	Cracked before retrial details
 					        </h3>
 					        {% include "./includes/_cracked_before_retrial_details.html" %}
@@ -110,7 +110,7 @@
 
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="defendant-details" class="heading-medium">
 			        	Defendant details
 			        </h3>
 			        {% if claim.defendants.length -%}
@@ -121,7 +121,7 @@
 
 			        {% if claim.fee_type == 'graduated' -%}
 
-				        <h3 class="heading-medium">
+				        <h3 id="offence-details" class="heading-medium">
 				        	Offence details
 				        </h3>
 				        {% if claim.offence.class.length -%}
@@ -132,7 +132,7 @@
 
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="fees" class="heading-medium">
 			            {% if claim.fee_type.length -%}
 			            	{{claim.fee_type|capitalize}} fees
 			            {% else %}
@@ -157,7 +157,7 @@
 			        	<p>There are no {{claim.fee_type|lower}} fees for this claim.</p>
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="miscellaneous-fees" class="heading-medium">
 			        	Miscellaneous fees
 			        </h3>
 			        {% if claim.miscellaneous_fees.length -%}
@@ -166,7 +166,7 @@
 			        	<p>There are no miscellaneous fees for this claim.</p>
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="warrant-details" class="heading-medium">
 			        	Warrant details
 			        </h3>
 			        {% if claim.warrants.length -%}
@@ -176,7 +176,7 @@
 			        {%- endif %}
 
 			        {% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
-				        <h3 class="heading-medium">
+				        <h3 id="disbursements" class="heading-medium">
 				        	Disbursements
 				        </h3>
 				        {% if claim.disbursements.length -%}
@@ -186,7 +186,7 @@
 				        {%- endif %}
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="travel-expenses" class="heading-medium">
 			        	Travel expenses
 			        </h3>
 			        {% if claim.expenses.length -%}
@@ -201,7 +201,7 @@
 			        	<p>There are no travel expenses for this claim.</p>
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="supporting-evidence" class="heading-medium">
 			        	Supporting evidence
 			        </h3>
 			        {% if claim.evidence.checklist.length -%}
@@ -210,7 +210,7 @@
 			        	<p>There is no supporting evidence for this claim.</p>
 			        {%- endif %}
 
-			        <h3 class="heading-medium">
+			        <h3 id="additional-information" class="heading-medium">
 			        	Additional information
 			        </h3>
 			        {% if claim.additional_information.length -%}
