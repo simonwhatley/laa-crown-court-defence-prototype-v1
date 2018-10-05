@@ -1,0 +1,40 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+	      Numerals
+	    </h1>
+
+      <p>Numbers up to ten should be written in words, and those over ten written using numerals. <a href="https://www.grammarly.com/blog/when-to-spell-out-numbers/">https://www.grammarly.com/blog/when-to-spell-out-numbers/</a></p>
+
+      <ul>
+      {% for i in range(1, 201) -%}
+        <!-- <li>The color blue was preferred by five out of 11 experiment participants.</li> -->
+
+
+        <li>There are <span class="bold">
+        {% if i <= 111 %}
+          {{ i | numberLiteral }}
+        {% else %}
+          {{ i }}
+        {% endif %}
+         </span>errors with the travel expenses</li>
+      {%- endfor %}
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
