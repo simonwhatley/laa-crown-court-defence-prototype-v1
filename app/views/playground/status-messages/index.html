@@ -1,0 +1,160 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+    	<a class="link-back" href="../">Back</a>
+
+	    <h1 class="heading-xlarge">
+        	Status messages
+	    </h1>
+
+		<h2 class="heading-large">
+			Error messages
+		</h2>
+
+		<h3 class="heading-medium">
+			Summary
+		</h3>
+		<p>Displayed at the top of the page to summarise all errors found on the page.</p>
+
+		<div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+
+	        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+	            This is the error summary title
+	        </h1>
+
+	        <p>
+	        	Check below for more details
+	      	</p>
+
+	        <ul class="error-summary-list">
+	        	<li><a href="#noop">Error 1</a></li>
+	        	<li><a href="#noop">Error 2</a></li>
+	        	<li><a href="#noop">Error 3</a></li>
+	        </ul>
+
+	    </div>
+
+	    <h3 class="heading-medium">
+			Inline
+		</h3>
+		<p>Displayed in the context of the section where an error has occurred.</p>
+
+		<div class="panel-error panel-border-wide">
+			<h3 class="heading-small">This is the error title</h3>
+			<p>This is the error text</p>
+		</div>
+
+		<h3 class="heading-medium">
+			Form fields
+		</h3>
+		<p>Field-level error messages, linked to from the error summary.</p>
+
+		<div class="form-group form-group-error">
+			<label class="form-label-bold" for="example-form-control">
+				This is the label text
+				<span class="form-hint">
+					This is hint text
+				</span>
+				<span class="error-message">
+					Error message goes here
+				</span>
+			</label>
+			<input class="form-control form-control-error" id="example-form-control" type="text">
+		</div>
+
+		<h2 class="heading-large">
+			Warning messages
+		</h2>
+
+		<h3 class="heading-medium">
+			Summary
+		</h3>
+		<p>Displayed at the top of the page to summarise all warnings found on the page. If errors are on the page, the error message summary takes precedence.</p>
+	
+		<div class="warning-summary" role="alert" aria-labelledby="warning-summary-heading-example-1" tabindex="-1">
+
+	        <h1 class="heading-medium warning-summary-heading" id="warning-summary-heading-example-1">
+	            This is the warning summary title
+	        </h1>
+
+	        <p>
+	        	Check below for more details
+	      	</p>
+
+	        <ul class="warning-summary-list">
+	        	<li><a href="#noop">Warning 1</a></li>
+	        	<li><a href="#noop">Warning 2</a></li>
+	        	<li><a href="#noop">Warning 3</a></li>
+	        </ul>
+
+	    </div>
+
+	    <h3 class="heading-medium">
+			Inline
+		</h3>
+		<p>Displayed in the context of the section where a warning has occurred. For example, on the claim summary page where dependent information is required before a section can be completed.</p>
+
+		<div class="panel-warning panel-border-wide">
+			<h3 class="heading-small">This is the warning title</h3>
+			<p>This is the warning text</p>
+		</div>
+
+		<h2 class="heading-large">
+			Confirmation messages
+		</h2>
+
+		<h3 class="heading-medium">
+			Summary
+		</h3>
+		<p>Displayed at the end of the process to confirm completion. The message would normally contain a reference number to be used by the citizen or provider when contacting the service.</p>
+
+		<div class="confirmation">
+			<h2 class="heading-large">
+				Thank you for submitting your claim
+			</h2>
+			<p>Your claim reference is <span class="bold">T20180101/11234</span></p>
+		</div>
+
+		<h2 class="heading-large">
+			Inset messages
+		</h2>
+
+	    <!-- <h3 class="heading-medium">
+			Inline
+		</h3> -->
+
+		<div class="panel panel-border-wide">
+			<p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+		</div>
+
+		<h2 class="heading-large">
+			Notice messages
+		</h2>
+
+	    <!-- <h3 class="heading-medium">
+			Inline
+		</h3>
+ -->
+		<div class="notice">
+			<i class="icon icon-important">
+				<span class="visually-hidden">Warning</span>
+			</i>
+			<strong class="bold-small">
+				You can be fined up to £5,000 if you don’t register.
+			</strong>
+		</div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
