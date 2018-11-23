@@ -205,11 +205,11 @@
 								{% if data['case_type'].length and data['defendant_1_first_name'].length and data['defendant_1_last_name'].length -%}
 
 									{% include "../includes/_claim_summary_offence_details.html" %}
-								
+
 								{% else %}
 
 									{% include "../includes/_claim_summary_offence_details_message_warning.html" %}
-									
+
 								{%- endif %}
 
 							</div>
@@ -252,7 +252,7 @@
 									{% else %}
 
 										{% include "./includes/_claim_summary_graduated_fees_message_warning.html" %}
-									
+
 									{%- endif %}
 
 								</div>
@@ -307,7 +307,7 @@
 									{% else %}
 
 										{% include "./includes/_claim_summary_fixed_fees_message_warning.html" %}
-									
+
 									{%- endif %}
 
 								</div>

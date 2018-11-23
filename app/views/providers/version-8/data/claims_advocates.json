@@ -946,6 +946,18 @@
                         "maat_reference": 23473716
                     }
                 ]
+            },
+            {
+                "first_name": "Katina",
+                "last_name": "Yerrall",
+                "date_of_birth": "1967-09-08T00:00:00.000Z",
+                "judicial_apportionment": "yes",
+                "representation_orders": [
+                    {
+                        "representation_order_date": "2017-05-28T00:00:00.000Z",
+                        "maat_reference": 44332721
+                    }
+                ]
             }
         ],
         "offence_details": {

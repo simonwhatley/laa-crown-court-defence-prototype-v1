@@ -1,12 +1,14 @@
 {% if data['defendant_1_first_name'].length -%}
 <table class="summary">
 	<tbody>
+		{% if data['defendant_2_first_name'].length > 0 -%}
 		<tr>
 			<th class="bold" scope="row">
 				Defendant 1
 			</th>
 			<td>
 				<table class="nested-summary">
+		{%- endif %}
 					<tbody>
 						<tr>
 							<th class="bold" scope="row">
@@ -55,9 +57,11 @@
 						</tr>
 						{%- endif %}
 					</tbody>
+		{% if data['defendant_2_first_name'].length > 0 -%}
 				</table>
 			</td>
 		</tr>
+		{%- endif %}
 	</tbody>
 </table>
 {% else %}
