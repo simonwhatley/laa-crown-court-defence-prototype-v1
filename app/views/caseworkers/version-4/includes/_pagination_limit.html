@@ -1,0 +1,21 @@
+<div class="grid-row">
+    <div class="column-one-third">
+        <form class="pagination__Limit items-per-page-form" method="get" action="{{links.list}}">
+            <input type="hidden" name="sort" value="{{data['sort']}}">
+            <input type="hidden" name="order" value="{{data['order']}}">
+            <input type="hidden" name="page" value="{{data['page']}}">
+            <label for="items-per-page">Showing&nbsp;<span class="visually-hidden">results per page</span></label>
+            <select name="limit" id="items-per-page" class="form-control form-control-1-4 items-per-page">
+                {% for i in [10,25,50,100] -%}
+                <option value="{{i}}" {% if pagination.limit == i %}selected="selected"{%- endif %}>{{i}}</option>
+                {%- endfor %}
+            </select>
+            <label for="items-per-page">&nbsp;results per page</label>
+        </form>
+    </div>
+    <div class="column-two-thirds">
+        <nav role="navigation" aria-label="Pagination">
+            {% include "./_pagination.html" %}
+        </nav>
+    </div>
+</div>

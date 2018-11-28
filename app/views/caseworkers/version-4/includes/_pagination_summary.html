@@ -1,0 +1,16 @@
+<div class="grid-row">
+    <div class="column-full">
+    
+    <nav role="navigation" aria-label="Pagination">
+        <div class="pagination__summary">
+        	{% if pagination.total_count > 0 -%}
+        	Showing {{pagination.start_item}} &ndash; {{pagination.end_item}} of {{pagination.total_count}} results
+        	{% else %}
+        	There are no results
+        	{%- endif %}
+        </div>
+        {% include "./_pagination.html" %}
+    </nav>
+
+    </div>
+</div>

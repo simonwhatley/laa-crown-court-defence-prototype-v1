@@ -1,0 +1,42 @@
+<table class="summary">
+    <tbody>
+
+        {% for warrant in claim.warrants %}
+
+        {% if claim.warrants.length > 1 -%}
+        <tr>
+            <th class="bold" scope="row">
+                Warrant {{loop.index}}
+            </th>
+            <td>
+                <table class="nested-summary">
+                    <tbody>
+        {%- endif %}
+        
+                        <tr>
+                            <th class="bold" scope="row">
+                                Date issued
+                            </th>
+                            <td>
+                                {{warrant.date_issued|date('DD/MM/YYYY')}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="bold" scope="row">
+                                Date executed
+                            </th>
+                            <td>
+                                {{warrant.date_executed|date('DD/MM/YYYY')}}
+                            </td>
+                        </tr>
+
+         {% if claim.warrants.length > 1 -%}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        {%- endif %}
+
+        {% endfor %}
+    </tbody>
+</table>

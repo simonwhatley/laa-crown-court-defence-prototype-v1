@@ -1,0 +1,34 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				First day of retrial
+			</th>
+			<td>{% if claim.first_day_of_retrial -%}{{claim.first_day_of_retrial|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Retrial concluded on
+			</th>
+			<td>{% if claim.retrial_concluded_on -%}{{claim.retrial_concluded_on|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Estimated retrial length
+			</th>
+			<td>{% if claim.estimated_retrial_length -%}{{claim.estimated_retrial_length}} days{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Actual retrial length
+			</th>
+			<td>{% if claim.actual_retrial_length -%}{{claim.actual_retrial_length}} days{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Apply reduced rate to retrial?
+			</th>
+			<td>{{claim.apply_reduced_rate_retrial|capitalize}}</td>
+		</tr>
+	</tbody>
+</table>

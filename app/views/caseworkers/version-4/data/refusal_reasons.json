@@ -1,0 +1,7 @@
+[
+	{
+	    "key": "duplicate_claim",
+	    "name": "Duplicate claim",
+	    "scheme": ["agfs", "lgfs"]
+	}
+]
