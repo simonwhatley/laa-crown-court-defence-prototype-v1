@@ -263,9 +263,9 @@ module.exports = {
 					        "distance": 42,
 					        "distance_calculated": 32,
 					        "date_of_expense": "2018-01-05T00:00:00.000Z",
-					        "cost_per_mile": 0.25,
-					        "net_amount": 10.5,
-					        "vat_amount": 2.1,
+					        "cost_per_mile": 0.45,
+					        "net_amount": 18.9,
+					        "vat_amount": 3.78,
 					        "additional_information": "Lorem ispum dolor sit emet"
 					    }, {
 					        "type": "car_travel",
