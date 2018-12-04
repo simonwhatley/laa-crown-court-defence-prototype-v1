@@ -67,7 +67,7 @@
 								<a href="https://www.google.co.uk/maps/dir/?api=1&amp;origin={{expense.origin.postcode}}&amp;destination={{expense.destination.postcode}}&amp;travelmode=transit" target="_blank">View public transport journey <span class="visually-hidden">(opens in new window)</span></a>
 							{% endif %}
 						{%- endif %}
-						<li>
+						<li{% if expense.cost_per_mile == '0.45' %} class="error"{% endif %}>
 							<span class="bold">Cost per mile:</span>
 							{{expense.cost_per_mile|replace('0.','')}}p per mile
 						</li>
