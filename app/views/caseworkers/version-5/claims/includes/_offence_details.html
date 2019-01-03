@@ -1,0 +1,24 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Offence class
+			</th>
+			<td>{{claim.offence.class}}</td>
+		</tr>
+		{% if claim.bill_type in ['advocate_final','advocate_interim'] and claim.fee_scheme_version == 10 -%}
+		<tr>
+			<th class="bold" scope="row">
+				Offence band
+			</th>
+			<td>{{claim.offence.band}}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Offence category
+			</th>
+			<td>{{claim.offence.category}}</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,28 @@
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				First day of trial
+			</th>
+			<td>{% if claim.first_day_of_trial -%}{{claim.first_day_of_trial|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Trial concluded on
+			</th>
+			<td>{% if claim.trial_concluded_on -%}{{claim.trial_concluded_on|date('DD/MM/YYYY')}}{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Estimated trial length
+			</th>
+			<td>{% if claim.estimated_trial_length -%}{{claim.estimated_trial_length}} days{% else %}Not provided{%- endif %}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Actual trial length
+			</th>
+			<td>{% if claim.actual_trial_length -%}{{claim.actual_trial_length}} days{% else %}Not provided{%- endif %}</td>
+		</tr>
+	</tbody>
+</table>

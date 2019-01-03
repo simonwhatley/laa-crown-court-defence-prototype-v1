@@ -1,0 +1,356 @@
+<form method="post">
+	<div class="form-section-compound">
+		<div class="form-group">
+
+			<fieldset>
+
+				<legend class="form-label-bold">
+					Assessment decision
+					<!-- <span class="form-hint">Something...</span> -->
+				</legend>
+
+				<div class="multiple-choice" data-target="assessment-decision-authorised-panel">
+					<input aria-controls="assessment-decision-authorised-panel" aria-expanded="false" id="assessment-decision-authorised" type="radio" name="assessment_decision" value="authorised" {{ checked('assessment_decision','authorised') }}>
+					<label for="assessment-decision-authorised">Authorised</label>
+				</div>
+				<div class="panel panel-border-narrow js-hidden" id="assessment-decision-authorised-panel">
+					<div class="form-group">
+
+						<div class="table-container">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col">Description</th>
+										<th class="numeric" scope="col">Claimed by provider</th>
+										<th class="numeric" scope="col">Total authorised by <abbr onclick="" title="Legal Aid Agency" tabindex="-1">LAA</abbr></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td aria-label="Fees" scope="row">
+											<label class="form-label" for="assessment-decision-authorised-fees">Fees</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.fees|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-fees" name="claim[totals][assessed][fees]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.fees|numeral('0.00')}}">
+										</td>
+									</tr>
+									<tr>
+										<td aria-label="Miscellaneous fees" scope="row">
+											<label class="form-label" for="assessment-decision-authorised-miscellaneous-fees">Miscellaneous fees</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-miscellaneous-fees" name="claim[totals][assessed][miscellaneous_fees]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.miscellaneous_fees|numeral('0.00')}}">
+										</td>
+									</tr>
+									{% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
+									<tr>
+										<td aria-label="Miscellaneous fees" scope="row">
+											<label class="form-label" for="assessment-decision-authorised-disbursements">Disbursements</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.disbursements|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-disbursements" name="claim[totals][assessed][disbursements]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.disbursements|numeral('0.00')}}">
+										</td>
+									</tr>
+									{%- endif %}
+									<tr>
+										<td aria-label="Travel expenses" scope="row">
+											<label class="form-label" for="assessment-decision-authorised-travel-expenses">Travel expenses</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.expenses|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-travel-expenses" name="claim[totals][assessed][expenses]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.expenses|numeral('0.00')}}">
+										</td>
+									</tr>
+									<tr>
+										<td aria-label="Net amount" scope="row">
+											<label class="form-label-bold" for="assessment-decision-authorised-net-amount">Net amount</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.net_amount|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-net-amount" name="claim[totals][assessed][net_amount]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.net_amount|numeral('0.00')}}">
+										</td>
+									</tr>
+									<!-- TODO: If provider isn't VAT registered, hide line? -->
+									<tr>
+										<td aria-label="Description" scope="row">
+											<label class="form-label" for="assessment-decision-authorised-vat"><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount (20%)</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.vat_amount|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-vat" name="claim[totals][assessed][vat_amount]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.vat_amount|numeral('0.00')}}">
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td aria-label="Description" scope="row">
+											<label class="form-label-bold" for="assessment-decision-authorised-gross-amount">Gross amount</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.gross_amount|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-authorised-gross-amount" name="claim[totals][assessed][gross_amount]" type="number" max="999999.99" min="0.00" step="0.01" value="{{claim.totals.claimed.gross_amount|numeral('0.00')}}">
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+					</div>
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Authorise claim" formaction="{{links.save}}">
+					</div>
+				</div>
+
+				<div class="multiple-choice" data-target="assessment-decision-part-authorised-panel">
+					<input aria-controls="assessment-decision-part-authorised-panel" aria-expanded="false" id="assessment-decision-part-authorised" type="radio" name="assessment_decision" value="part_authorised" {{ checked('assessment_decision','part_authorised') }}>
+					<label for="assessment-decision-part-authorised">Part authorised</label>
+				</div>
+				<div class="panel panel-border-narrow js-hidden" id="assessment-decision-part-authorised-panel">
+					<div class="form-group">
+
+						<div class="table-container">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col">Description</th>
+										<th class="numeric" scope="col">Claimed by provider</th>
+										<th class="numeric" scope="col">Total authorised by <abbr onclick="" title="Legal Aid Agency" tabindex="-1">LAA</abbr></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td aria-label="Fees" scope="row">
+											<label class="form-label" for="assessment-decision-part-authorised-fees">Fees</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.fees|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-fees" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+									<tr>
+										<td aria-label="Miscellaneous fees" scope="row">
+											<label class="form-label" for="assessment-decision-part-authorised-miscellaneous-fees">Miscellaneous fees</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-miscellaneous-fees" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+									{% if claim.bill_type in ['litigator_final','litigator_interim','litigator_transfer'] -%}
+									<tr>
+										<td aria-label="Miscellaneous fees" scope="row">
+											<label class="form-label" for="assessment-decision-part-authorised-disbursements">Disbursements</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-disbursements" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+									{%- endif %}
+									<tr>
+										<td aria-label="Travel expenses" scope="row">
+											<label class="form-label" for="assessment-decision-part-authorised-travel-expenses">Travel expenses</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.expenses|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-travel-expenses" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+									<tr>
+										<td aria-label="Net amount" scope="row">
+											<label class="form-label-bold" for="assessment-decision-part-authorised-net-amount">Net amount</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.net_amount|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-net-amount" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+									<!-- TODO: If provider isn't VAT registered, hide line? -->
+									<tr>
+										<td aria-label="Description" scope="row">
+											<label class="form-label" for="assessment-decision-part-authorised-vat"><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount (20%)</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.vat_amount|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-vat" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td aria-label="Description" scope="row">
+											<label class="form-label-bold" for="assessment-decision-part-authorised-gross-amount">Gross amount</label>
+										</td>
+										<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.gross_amount|numeral('0,0.00')}}</td>
+										<td aria-label="Assessed amount" class="numeric">
+										    <span class="form-input-denote">
+										        &pound;
+										    </span>
+										    <input class="form-control form-input-denote__input" id="assessment-decision-part-authorised-gross-amount" name="" type="number" max="999999.99" min="0.00" step="0.01" value="">
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+					</div>
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Part authorise claim" formaction="{{links.save}}">
+					</div>
+				</div>
+				
+				<div class="multiple-choice" data-target="assessment-decision-refused-panel">
+					<input aria-controls="assessment-decision-refused-panel" aria-expanded="false" id="assessment-decision-refused" type="radio" name="assessment_decision" value="refused" {{ checked('assessment_decision','refused') }}>
+					<label for="assessment-decision-refused">Refused</label>
+				</div>
+				<div class="panel panel-border-narrow js-hidden" id="assessment-decision-refused-panel">
+					<div class="form-group">
+
+						<div class="form-group">
+						    <fieldset>
+						        <legend class="heading-small">
+						            Reason for refusal
+						            <span class="form-hint">
+						                Please choose all relevant options
+						            </span>
+						        </legend>
+
+						        {% for reason in reasons.refused -%}
+
+						        <div class="multiple-choice">
+						            <input id="reason-for-refusal-{{loop.index}}" name="reason_for_refusal_list" type="checkbox" value="{{reason.key}}">
+						            <label for="reason-for-refusal-{{loop.index}}">
+						                {{reason.name}}
+						            </label>
+						        </div>
+
+						        {%- endfor %}
+
+						        <p class="form-block">or</p>
+
+						        <div class="multiple-choice" data-target="reason-for-refusal-other-panel">
+						            <input aria-controls="reason-for-refusal-other-panel" aria-expanded="false" id="reason-for-refusal-other" name="reason_for_refusal_list" type="checkbox" value="rejection_other">
+						            <label for="reason-for-refusal-other">
+						                Other
+						            </label>
+						        </div>
+						        <div class="panel panel-border-narrow js-hidden" id="reason-for-refusal-other-panel">
+									<div class="form-group">
+										<label class="form-label-bold" for="reason-for-refusal-other-reason">
+						                    Other reason
+						                    <!-- <span class="form-hint">Something...</span> -->
+						                </label>
+										<input class="form-control form-control-1-2" id="reason-for-refusal-other-reason" name="reason_for_refusal_other_reason" type="text" value="">
+									</div>
+								</div>
+
+						    </fieldset>
+						</div>
+
+					</div>
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Refuse claim" formaction="{{links.save}}">
+					</div>
+				</div>
+				
+				<div class="multiple-choice" data-target="assessment-decision-rejected-panel">
+					<input aria-controls="assessment-decision-rejected-panel" aria-expanded="false" id="assessment-decision-rejected" type="radio" name="assessment_decision" value="rejected" {{ checked('assessment_decision','rejected') }}>
+					<label for="assessment-decision-rejected">Rejected</label>
+				</div>
+				<div class="panel panel-border-narrow js-hidden" id="assessment-decision-rejected-panel">
+					<div class="form-group">
+
+						<div class="form-group">
+						    <fieldset>
+						        <legend class="heading-small">
+						            Reason for rejection
+						            <span class="form-hint">
+						                Please choose all relevant options
+						            </span>
+						        </legend>
+
+						        {% for reason in reasons.rejected -%}
+
+						        <div class="multiple-choice">
+						            <input id="reason-for-rejection-{{loop.index}}" name="reason_for_rejection_list" type="checkbox" value="{{reason.key}}">
+						            <label for="reason-for-rejection-{{loop.index}}">
+						                {{reason.name}}
+						            </label>
+						        </div>
+
+						        {%- endfor %}
+
+						        <p class="form-block">or</p>
+
+						        <div class="multiple-choice" data-target="reason-for-rejection-other-panel">
+						            <input aria-controls="reason-for-rejection-other-panel" aria-expanded="false" id="reason-for-rejection-other" name="reason_for_rejection_list" type="checkbox" value="rejection_other">
+						            <label for="reason-for-rejection-other">
+						                Other
+						            </label>
+						        </div>
+						        <div class="panel panel-border-narrow js-hidden" id="reason-for-rejection-other-panel">
+									<div class="form-group">
+										<label class="form-label-bold" for="reason-for-rejection-other-reason">
+						                    Other reason
+						                    <!-- <span class="form-hint">Something...</span> -->
+						                </label>
+										<input class="form-control form-control-1-2" id="reason-for-rejection-other-reason" name="reason_for_rejection_other_reason" type="text" value="">
+									</div>
+								</div>
+
+						    </fieldset>
+						</div>
+
+					</div>
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Reject claim" formaction="{{links.save}}">
+					</div>
+				</div>
+
+			</fieldset>
+
+		</div>
+	</div>
+</form>

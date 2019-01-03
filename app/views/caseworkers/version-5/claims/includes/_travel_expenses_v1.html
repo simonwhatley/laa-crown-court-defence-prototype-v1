@@ -1,0 +1,91 @@
+<div class="table-container">
+<table>
+	<thead>
+		<tr>
+			<!-- <th><abbr onclick="" title="Number" tabindex="-1">#</abbr></th> -->
+			<th><a href="#noop">Type of expense</a></th>
+			<th><a href="#noop">Reason for travel</a></th>
+			<th>Details</th>
+			<th><a href="#noop">Date of expense</a></th>
+			<th><a href="#noop">Net amount</a></th>
+			<th><a href="#noop"><!-- <abbr onclick="" title="Value Added Tax" tabindex="-1"> -->VAT<!-- </abbr> --> amount</a></th>
+			<th><a href="#noop">Gross amount</a></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for expense in claim.expenses %}
+		<tr id="expense-{{loop.index}}">
+			<!-- <td>{{loop.index}}</td> -->
+			<td>
+				{{expense.type|replace('_',' ')|capitalize}}
+				{% if (expense.cost_per_mile == '0.45') or (expense.distance > expense.distance_calculated) %}
+					<span class="status status-rejected">Unverified</span>
+				{% else %}
+					<span class="status status-authorised">Accepted</span>
+				{% endif %}
+			</td>
+			<td>{{expense.reason.label}}</td>
+			<td>
+				<ul>
+					{% if expense.type in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","time"] -%}
+						<li>
+							<span class="bold">Origin:</span>
+							{{expense.origin.name|replace(expense.origin.postcode,'')|replace('(','')|replace(')','')}} ({{expense.origin.postcode}})
+						</li>
+						<li>
+							<span class="bold">Destination:</span>
+							{{expense.destination.name}} {% if expense.destination.postcode.length -%}({{expense.destination.postcode}}){%- endif %}
+						</li>
+					{%- endif %}
+					{% if expense.type in ["hotel_accommodation","subsistence"] -%}
+						<li>
+							<span class="bold">Location:</span>
+							{{expense.location}}
+						</li>
+					{%- endif %}
+					{% if expense.type in ["bike_travel","car_travel"] -%}
+						<li {% if expense.distance > expense.distance_calculated %}class="error"{% endif %}>
+							<span class="bold">
+								Distance {%- if expense.distance > expense.distance_calculated %} claimed{% endif %}:
+							</span>
+							{{expense.distance}} miles
+						</li>
+						{% if expense.distance > expense.distance_calculated -%}
+							<li class="error">
+								<span class="bold">Distance calculated:</span>
+								{{expense.distance_calculated}} miles
+							</li>
+							<li>
+								{% if expense.cost_per_mile == '0.25' %}
+									<a href="https://www.google.co.uk/maps/dir/?api=1&amp;origin={{expense.origin.postcode}}&amp;destination={{expense.destination.postcode}}&amp;travelmode=driving" target="_blank">View car journey <span class="visually-hidden">(opens in new window)</span></a>
+								{% else %}
+									<a href="https://www.google.co.uk/maps/dir/?api=1&amp;origin={{expense.origin.postcode}}&amp;destination={{expense.destination.postcode}}&amp;travelmode=transit" target="_blank">View public transport journey <span class="visually-hidden">(opens in new window)</span></a>
+								{% endif %}
+							</li>
+						{% else %}
+							{% if expense.cost_per_mile == '0.45' %}
+								<a href="https://www.google.co.uk/maps/dir/?api=1&amp;origin={{expense.origin.postcode}}&amp;destination={{expense.destination.postcode}}&amp;travelmode=transit" target="_blank">View public transport journey <span class="visually-hidden">(opens in new window)</span></a>
+							{% endif %}
+						{%- endif %}
+						<li{% if expense.cost_per_mile == '0.45' %} class="error"{% endif %}>
+							<span class="bold">Cost per mile:</span>
+							{{expense.cost_per_mile|replace('0.','')}}p per mile
+						</li>
+					{%- endif %}
+					{% if expense.type in ["time"] -%}
+						<li>
+							<span class="bold">Hours:</span>
+							{{expense.hours}}
+						</li>
+					{%- endif %}
+				</ul>
+			</td>
+			<td>{{expense.date_of_expense|date('DD/MM/YYYY')}}</td>
+			<td>&pound;{{expense.net_amount|numeral('0,0.00')}}</td>
+			<td>&pound;{{expense.vat_amount|numeral('0,0.00')}}</td>
+			<td>&pound;{{(expense.net_amount + expense.vat_amount)|numeral('0,0.00')}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+</div>

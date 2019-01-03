@@ -1,0 +1,124 @@
+<table class="summary">
+	<tbody>
+		
+		{% for expense in claim.expenses %}
+
+        {% if claim.expenses.length > 1 -%}
+        <tr id="expense-{{loop.index}}">
+            <th class="bold" scope="row">
+                Expense {{loop.index}}
+            </th>
+            <td>
+                <table class="nested-summary">
+                    <tbody>
+        {%- endif %}
+
+						<tr>
+							<th class="bold" scope="row">
+								Type of expense
+							</th>
+							<td>{{expense.type|replace('_',' ')|capitalize}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Reason for travel
+							</th>
+							<td>{{expense.reason.label}}</td>
+						</tr>
+						{% if expense.type in ["bike_travel","cab_fares","car_travel","road_or_tunnel_tolls","train_or_public_transport","time"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Origin
+							</th>
+							<td>{{expense.origin.name|replace(expense.origin.postcode,'')|replace('(','')|replace(')','')}} ({{expense.origin.postcode}})</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Destination
+							</th>
+							<td>{{expense.destination.name}} {% if expense.destination.postcode.length -%}({{expense.destination.postcode}}){%- endif %}</td>
+						</tr>
+						{%- endif %}
+						{% if expense.type in ["hotel_accommodation","subsistence"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Location
+							</th>
+							<td>{#% for location in expense.location -%}{{location}}{%- endfor %#}</td>
+						</tr>
+						{%- endif %}
+						{% if expense.type in ["bike_travel","car_travel"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Distance
+							</th>
+							<td>
+								{{expense.distance}} miles
+								{% if expense.distance > expense.distance_calculated -%}<br><span class="error">The calculated distance is {{expense.distance_calculated}} miles.</span> <a href="https://www.google.co.uk/maps/dir/{{expense.origin.postcode}}/{{expense.destination.postcode}}/" target="_blank">View on a map <span class="visually-hidden">(opens in new window)</span></a>{%- endif %}
+							</td>
+						</tr>
+						{%- endif %}
+						{% if expense.type in ["time"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Hours
+							</th>
+							<td>{{expense.hours}}</td>
+						</tr>
+						{%- endif %}
+						<tr>
+							<th class="bold" scope="row">
+								Date of expense
+							</th>
+							<td>{{expense.date_of_expense|date('DD/MM/YYYY')}}</td>
+						</tr>
+						{% if expense.type in ["bike_travel","car_travel"] -%}
+						<tr>
+							<th class="bold" scope="row">
+								Cost per mile
+							</th>
+							<td>{{expense.cost_per_mile|replace('0.','')}}p per mile</td>
+						</tr>
+						{%- endif %}
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>
+								&pound;{{expense.net_amount|numeral('0,0.00')}}
+								{% if expense.distance > expense.distance_calculated -%}<br><span class="error">The calculated net amount is &pound;{{(expense.distance_calculated*expense.cost_per_mile)|numeral('0,0.00')}}</span>{%- endif %}
+							</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								<abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount
+							</th>
+							<td>
+								&pound;{{expense.vat_amount|numeral('0,0.00')}}
+								{% if expense.distance > expense.distance_calculated -%}<br><span class="error">The calculated <abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount is &pound;{{((expense.distance_calculated*expense.cost_per_mile)*0.2)|numeral('0,0.00')}}</span>{%- endif %}
+							</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Additional information
+							</th>
+							<td>
+								{% if expense.additional_information.length -%}
+									{{expense.additional_information}}
+								{% else %}
+									None provided
+								{%- endif %}
+							</td>
+						</tr>
+					
+		{% if claim.expenses.length > 1 -%}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        {%- endif %}
+
+        {% endfor %}
+
+	</tbody>
+</table>

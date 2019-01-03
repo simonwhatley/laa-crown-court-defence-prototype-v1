@@ -1,0 +1,51 @@
+<div class="table-container">
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Description</th>
+				<th class="numeric" scope="col">Claimed by provider</th>
+				<th class="numeric" scope="col">Total authorised by <abbr onclick="" title="Legal Aid Agency" tabindex="-1">LAA</abbr></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td aria-label="Fees" scope="row">Fees</td>
+				<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.fees|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="numeric">&pound;{{claim.totals.assessed.fees|numeral('0,0.00')}}</td>
+			</tr>
+			<tr>
+				<td aria-label="Miscellaneous fees" scope="row">Miscellaneous fees</td>
+				<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="numeric">&pound;{{claim.totals.assessed.miscellaneous_fees|numeral('0,0.00')}}</td>
+			</tr>
+			<tr>
+				<td aria-label="Miscellaneous fees" scope="row">Disbursements</td>
+				<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.miscellaneous_fees|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="numeric">&pound;{{claim.totals.assessed.miscellaneous_fees|numeral('0,0.00')}}</td>
+			</tr>
+			<tr>
+				<td aria-label="Travel expenses" scope="row">Travel expenses</td>
+				<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.expenses|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="numeric">&pound;{{claim.totals.assessed.expenses|numeral('0,0.00')}}</td>
+			</tr>
+			<tr>
+				<td aria-label="Net amount" scope="row" class="bold">Net amount</td>
+				<td aria-label="Claimed amount" class="bold numeric">&pound;{{claim.totals.claimed.net_amount|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="bold numeric">&pound;{{claim.totals.assessed.net_amount|numeral('0,0.00')}}</td>
+			</tr>
+			<!-- TODO: If provider isn't VAT registered, hide line? -->
+			<tr>
+				<td aria-label="Description" scope="row"><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount (20%)</td>
+				<td aria-label="Claimed amount" class="numeric">&pound;{{claim.totals.claimed.vat_amount|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="numeric">&pound;{{claim.totals.assessed.vat_amount|numeral('0,0.00')}}</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td aria-label="Description" scope="row" class="bold">Gross amount</td>
+				<td aria-label="Claimed amount" class="bold numeric">&pound;{{claim.totals.claimed.gross_amount|numeral('0,0.00')}}</td>
+				<td aria-label="Assessed amount" class="bold numeric">&pound;{{claim.totals.assessed.gross_amount|numeral('0,0.00')}}</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
