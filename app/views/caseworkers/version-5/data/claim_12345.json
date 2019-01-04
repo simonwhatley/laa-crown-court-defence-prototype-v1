@@ -1,0 +1,536 @@
+[{
+    "id": 12345,
+    "supplier_number": "1K905R",
+    "case_number": "T20180101",
+    "court": "Cardiff",
+    "fee_scheme": "agfs",
+    "fee_scheme_version": 9,
+    "bill_type": "litigator_final",
+    "case_type": "trial",
+    "fee_type": "graduated",
+    "date_submitted": "2018-02-01T10:30:00.000Z",
+    "status": "allocated",
+    "reference_number": "HR/PS/72852849",
+    "totals": {
+        "claimed": {
+            "fees": 9990.00,
+            "miscellaneous_fees": 990.00,
+            "disbursements": 0.00,
+            "expenses": 90.00,
+            "net_amount": 11079.00,
+            "vat_amount": 2215.80,
+            "gross_amount": 13294.80
+        },
+        "assessed": {
+            "fees": 0.00,
+            "miscellaneous_fees": 0.00,
+            "disbursements": 0.00,
+            "expenses": 0.00,
+            "net_amount": 0.00,
+            "vat_amount": 0.00,
+            "gross_amount": 0.00
+        }
+    },
+    "defendants": [{
+        "urn": 12345,
+        "first_name": "Philippine",
+        "last_name": "Struttman",
+        "date_of_birth": "1973-06-05T00:00:00.000Z",
+        "judicial_apportionment": "yes",
+        "representation_orders": [{
+            "maat_reference": 72852849,
+            "representation_order_date": "2017-09-24T00:00:00.000Z"
+        }]
+    }],
+    "certification": {
+        "certified_by": "Rufus Titterington",
+        "certified_date": "2018-02-01T10:30:00.000Z",
+        "reason": "I attended the main hearing (1st day of trial)"
+    },
+    "offence": {
+        "class": "A – Homicide and related grave offences",
+        "band": "",
+        "category": "Murder"
+    },
+    "expenses": [{
+        "id": 257085,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-03T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 664140,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-04T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 1438338,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-05T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 2276873,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-06T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 2877828,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-07T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 3347669,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-10T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 3907586,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-11T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 4453781,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-12T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 5363374,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-13T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 6149246,
+        "type": "car_travel",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "origin": {
+            "supplier_number": "1K905R",
+            "name": "Birmingham (B4 6QB)",
+            "postcode": "B4 6QB"
+        },
+        "destination": {
+            "type": "crown_court",
+            "name": "Wolverhampton",
+            "postcode": "WV1 3LQ"
+        },
+        "distance": {
+            "reported": 32,
+            "calculated": 32
+        },
+        "date_of_expense": "2018-12-14T00:00:00.000Z",
+        "cost_per_mile": 0.25,
+        "net_amount": 8,
+        "vat_amount": 1.6,
+        "gross_amount": 9.6
+    }, {
+        "id": 6831644,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-03T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 7579056,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-04T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 7893547,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-05T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 8783824,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-06T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 9255694,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-07T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 10150439,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-10T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 10634084,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-11T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 11038585,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-12T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 11325749,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-13T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 11577595,
+        "type": "parking",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "date_of_expense": "2018-12-14T00:00:00.000Z",
+        "gross_amount": 4.2,
+        "additional_information": "Wolverhampton Pipers Row NCP"
+    }, {
+        "id": 11994422,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-03T00:00:00.000Z",
+        "gross_amount": 10.84
+    }, {
+        "id": 12498374,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-04T00:00:00.000Z",
+        "gross_amount": 7.85
+    }, {
+        "id": 13426468,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-05T00:00:00.000Z",
+        "gross_amount": 8.59
+    }, {
+        "id": 13783053,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-06T00:00:00.000Z",
+        "gross_amount": 9.09
+    }, {
+        "id": 14699758,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-07T00:00:00.000Z",
+        "gross_amount": 8.13
+    }, {
+        "id": 15059265,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-10T00:00:00.000Z",
+        "gross_amount": 12.43
+    }, {
+        "id": 15955244,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-11T00:00:00.000Z",
+        "gross_amount": 10.08
+    }, {
+        "id": 16636209,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-12T00:00:00.000Z",
+        "gross_amount": 8.35
+    }, {
+        "id": 17414273,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-13T00:00:00.000Z",
+        "gross_amount": 12.85
+    }, {
+        "id": 18307236,
+        "type": "subsistence",
+        "reason": {
+            "label": "Court hearing (Crown court)",
+            "key": "court_hearing"
+        },
+        "location": "Wolverhampton",
+        "date_of_expense": "2018-12-14T00:00:00.000Z",
+        "gross_amount": 11.98
+    }],
+    "evidence": {
+        "electronic_evidence": "no",
+        "checklist": ["representation_order", "invoices"]
+    },
+    "additional_information": "",
+    "messages": [{
+        "message_id": 61347,
+        "timestamp": "2018-03-29T10:50:00.000Z",
+        "message": "Your claim has been submitted",
+        "user_id": 1,
+        "user_name": "System",
+        "type": "system"
+    }, {
+        "message_id": 69230,
+        "timestamp": "2018-03-29T10:53:00.000Z",
+        "message": "Your claim has been allocated",
+        "user_id": 1,
+        "user_name": "System",
+        "type": "system"
+    }]
+}]

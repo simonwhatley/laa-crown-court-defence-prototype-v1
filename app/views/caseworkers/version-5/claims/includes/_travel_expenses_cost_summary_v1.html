@@ -2,38 +2,45 @@
 <table>
 	<thead>
 		<tr>
-			<!-- <th><abbr onclick="" title="Number" tabindex="-1">#</abbr></th> -->
 			<th scope="col">Type of expense</th>
 			<th class="numeric" scope="col">Net amount</th>
 			<th class="numeric" scope="col"><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount</th>
-			<th class="numeric" scope="col">Gross amount</th>
+			<th class="numeric" scope="col">Total amount</th>
 		</tr>
 	</thead>
 	<tbody>
+		{% for expense in totals %}
 		<tr>
-			<td scope="row">Car travel</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
+			<td scope="row">{{ expense.type | replace("_"," ") | capitalize }}</td>
+			<td class="numeric" scope="row">
+				{% if expense.amount.net %}
+					&pound;{{ expense.amount.net |numeral('0,0.00') }}
+				{% else %}
+					<span class="font-grey">
+						<abbr onclick="" title="Not applicable" tabindex="-1">N/A</abbr>
+					</span>
+				{% endif %}
+			</td>
+			<td class="numeric" scope="row">
+				{% if expense.amount.vat %}
+					&pound;{{ expense.amount.vat |numeral('0,0.00') }}
+				{% else %}
+					<span class="font-grey">
+						<abbr onclick="" title="Not applicable" tabindex="-1">N/A</abbr>
+					</span>
+				{% endif %}
+			</td>
+			<td class="numeric" scope="row">
+				{% if expense.amount.total %}
+					&pound;{{ expense.amount.total |numeral('0,0.00') }}
+				{% else %}
+					<span class="font-grey">
+						<abbr onclick="" title="Not applicable" tabindex="-1">N/A</abbr>
+					</span>
+				{% endif %}
+			</td>
 		</tr>
-		<tr>
-			<td scope="row">Parking</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-		</tr>
-		<tr>
-			<td scope="row">Road or tunnel tolls</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-		</tr>
-		<tr>
-			<td scope="row">Subsistence</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-			<td class="numeric" scope="row">&pound;0.00</td>
-		</tr>
+		{% endfor %}
 	</tbody>
 </table>
 <br>

@@ -105,12 +105,14 @@ router.get('/claims', function(req, res) {
 });
 
 router.get('/claim/:claim_id([0-9]+)', function(req, res) {
+    
     res.render(`${req.feature}/${req.version}/claims/detail`,
         {
             links: {
       	  		'back': req.baseUrl + '/claims'
             },
             claim: utils.getClaim(req.param.claim_id),
+            totals: utils.getExpenseTotals(req.param.claim_id),
             reasons: {
             	'rejected': utils.getRejectReasons(),
             	'refused' : utils.getRefusalReasons()

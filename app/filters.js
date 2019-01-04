@@ -1,7 +1,7 @@
 // https://www.npmjs.com/package/nunjucks-numeral-filter
-let numeralFilter = require('nunjucks-numeral-filter')
+let numeralFilter = require('nunjucks-numeral-filter');
 // https://www.npmjs.com/package/nunjucks-date-filter
-let dateFilter = require('nunjucks-date-filter')
+let dateFilter = require('nunjucks-date-filter');
 
 module.exports = function (env) {
   /**
@@ -12,8 +12,8 @@ module.exports = function (env) {
    */
   let filters = {}
 
-  filters.numeral = numeralFilter
-  filters.date = dateFilter
+  filters.numeral = numeralFilter;
+  filters.date = dateFilter;
 
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:
@@ -45,6 +45,18 @@ module.exports = function (env) {
     documentation.
 
   ------------------------------------------------------------------ */
+
+  function parseTravelType(type) {
+
+  }
+
+  filters.travelType = parseTravelType;
+
+  function parseTravelReason(reason) {
+
+  }
+
+  filters.travelReason = parseTravelReason;
 
   /**
    * Convert an integer to its words representation
@@ -148,5 +160,5 @@ module.exports = function (env) {
   /* ------------------------------------------------------------------
     keep the following line to return your filters to the app
   ------------------------------------------------------------------ */
-  return filters
+  return filters;
 }
