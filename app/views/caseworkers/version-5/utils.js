@@ -92,30 +92,33 @@ module.exports = {
 
 		let data = claim;
 		let totals = [
-			{
-			  "type": "car_travel",
-			  "amount": {
-			    "net": 80,
-			    "vat": 15.999999999999998,
-			    "total": 95.99999999999999
-			  }
-			},
-			{
-			  "type": "parking",
-			  "amount": {
-			    "net": 0,
-			    "vat": 0,
-			    "total": 42.00000000000001
-			  }
-			},
-			{
-			  "type": "subsistence",
-			  "amount": {
-			    "net": 0,
-			    "vat": 0,
-			    "total": 100.19
-			  }
-			}
+		    {
+		      "type": "car_travel",
+		      "quantity": 10,
+		      "amount": {
+		        "net": 80,
+		        "vat": 15.999999999999998,
+		        "total": 95.99999999999999
+		      }
+		    },
+		    {
+		      "type": "parking",
+		      "quantity": 10,
+		      "amount": {
+		        "net": 0,
+		        "vat": 0,
+		        "total": 42.00000000000001
+		      }
+		    },
+		    {
+		      "type": "subsistence",
+		      "quantity": 10,
+		      "amount": {
+		        "net": 0,
+		        "vat": 0,
+		        "total": 100.19
+		      }
+		    }
 		];
 
 

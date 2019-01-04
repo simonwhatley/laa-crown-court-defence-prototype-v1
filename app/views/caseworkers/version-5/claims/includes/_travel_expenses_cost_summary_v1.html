@@ -3,6 +3,7 @@
 	<thead>
 		<tr>
 			<th scope="col">Type of expense</th>
+			<th class="numeric" scope="col">Quantity</th>
 			<th class="numeric" scope="col">Net amount</th>
 			<th class="numeric" scope="col"><abbr onclick="" title="Value Added Tax" tabindex="-1">VAT</abbr> amount</th>
 			<th class="numeric" scope="col">Total amount</th>
@@ -12,9 +13,10 @@
 		{% for expense in totals %}
 		<tr>
 			<td scope="row">{{ expense.type | replace("_"," ") | capitalize }}</td>
+			<td class="numeric" scope="row">{{ expense.quantity | numeral('0,0') }}</td>
 			<td class="numeric" scope="row">
 				{% if expense.amount.net %}
-					&pound;{{ expense.amount.net |numeral('0,0.00') }}
+					&pound;{{ expense.amount.net | numeral('0,0.00') }}
 				{% else %}
 					<span class="font-grey">
 						<abbr onclick="" title="Not applicable" tabindex="-1">N/A</abbr>
@@ -23,7 +25,7 @@
 			</td>
 			<td class="numeric" scope="row">
 				{% if expense.amount.vat %}
-					&pound;{{ expense.amount.vat |numeral('0,0.00') }}
+					&pound;{{ expense.amount.vat | numeral('0,0.00') }}
 				{% else %}
 					<span class="font-grey">
 						<abbr onclick="" title="Not applicable" tabindex="-1">N/A</abbr>
@@ -32,7 +34,7 @@
 			</td>
 			<td class="numeric" scope="row">
 				{% if expense.amount.total %}
-					&pound;{{ expense.amount.total |numeral('0,0.00') }}
+					&pound;{{ expense.amount.total | numeral('0,0.00') }}
 				{% else %}
 					<span class="font-grey">
 						<abbr onclick="" title="Not applicable" tabindex="-1">N/A</abbr>
