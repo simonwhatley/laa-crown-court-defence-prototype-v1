@@ -1,0 +1,57 @@
+<div class="form-group">
+    <fieldset>
+        <div class="form-group">
+            <label class="form-label-bold " for="total-number-of-pages-of-prosecution-evidence">
+                Total <!-- number of  -->pages of evidence
+            </label>
+            <input class="form-control form-control-1-4" id="total-number-of-pages-of-prosecution-evidence" name="total_number_of_pages_of_prosecution_evidence" type="number" max="999999" min="0" step="1" value="{{data['total_number_of_pages_of_prosecution_evidence']}}" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label-bold">
+                    First day of hearing
+                    <span class="form-hint">
+                        For example, 31 3 2017
+                    </span>
+                </legend>
+                <div class="form-date">
+                    <div class="form-group form-group-day">
+                        <label class="form-label" for="first-day-of-hearing-day">
+                            Day
+                        </label>
+                        <input class="form-control" id="first-day-of-hearing-day" max="31" min="1" name="first_day_of_hearing_day" pattern="[0-9]*" type="number" value="{{data['first_day_of_hearing_day']}}">
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="first-day-of-hearing-month">
+                            Month
+                        </label>
+                        <input class="form-control" id="first-day-of-hearing-month" max="12" min="1" name="first_day_of_hearing_month" pattern="[0-9]*" type="number" value="{{data['first_day_of_hearing_month']}}">
+                    </div>
+                    <div class="form-group form-group-year">
+                        <label class="form-label" for="first-day-of-hearing-year">
+                            Year
+                        </label>
+                        <input class="form-control" id="first-day-of-hearing-year" max="2019" min="1900" name="first_day_of_hearing_year" pattern="[0-9]*" type="number" value="{{data['first_day_of_hearing_year']}}">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        {% if data['case_type'] == 'trial' -%}
+        <div class="form-group">
+            <label class="form-label-bold " for="actual-trial-length">
+                Actual trial length
+            </label>
+            <input class="form-control form-control-1-4" id="actual-trial-length" name="actual_trial_length" type="number" max="9999" min="0" step="1" value="{{data['actual_trial_length']}}" autocomplete="off">
+        </div>
+        {%- endif %}
+        <div class="form-group">
+            <label class="form-label-bold" for="pages-of-evidence-net-amount">
+                Net amount
+            </label>
+            <span class="form-input-denote">
+                &pound;
+            </span>
+            <input class="form-control form-control-1-4 form-input-denote__input" id="pages-of-evidence-net-amount" name="pages_of_evidence_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['pages_of_evidence_net_amount']}}">
+        </div>
+    </fieldset>
+</div>

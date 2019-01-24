@@ -1,0 +1,74 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+{% include "./includes/_page_scripts_fixed_fees.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "./includes/_banner.html" %}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<a class="link-back" href="{{links.previous}}">Back</a>
+
+			{% include "./includes/_page_heading.html" %}
+
+			<div class="grid-row">
+				<div class="column-two-thirds">
+
+					<h2 id="section-heading" class="heading-large">
+						Fixed fees
+					</h2>
+
+					<p>All fees should be entered exclusive of <abbr title="Value Added Tax">VAT</abbr>.</p>
+
+					<div class="panel panel-border-narrow">
+						<p><span class="bold">Help with adjourned hearings</span><br>
+						If you are claiming an adjourned hearing, please select "adjourned appeals, committals and breaches" from the list instead of a standard appearance fee.
+						</p>
+					</div>
+
+					<form class="form" method="post">
+
+						<div class="form-section">
+
+							{% include "./includes/_advocate_category.html" %}
+
+						</div>
+
+						{% include "./includes/_fixed_fees_v2.html" %}
+
+						<div class="form-section">
+							<hr>
+							<div class="form-group form-buttons">
+								<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
+							</div>
+						</div>
+
+						{% include "./includes/_form_actions.html" %}
+
+					</form>
+
+					{% include "./includes/_help.html" %}
+
+				</div>
+
+				{% include "./includes/_sidebar.html" %}
+
+			</div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}

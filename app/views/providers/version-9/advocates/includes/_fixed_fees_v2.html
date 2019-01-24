@@ -1,0 +1,132 @@
+<div class="form-section-compound" data-item-number="1">
+
+	<h3 class="heading-medium">
+		Fixed fee<!--  1 -->
+		<!-- <a href="#noop" class="link-remove">
+			Remove
+			<span class="visually-hidden">&nbsp;this fee</span>
+		</a> -->
+	</h3>
+
+	<div class="form-group">
+		<fieldset>
+			<legend class="form-label-bold">
+				Type of fee
+				<!-- <span class="form-hint"></span> -->
+			</legend>
+			{% for fee in fixed_fees -%}
+				<div class="multiple-choice" data-target="{{fee.key}}-panel">
+					<input id="fixed-fee-1-type-{{loop.index}}" type="radio" name="fixed_fee_1_type" value="{{fee.key}}" {{ checked('fixed_fee_1_type',fee.key) }}>
+					<label for="fixed-fee-1-type-{{loop.index}}">{{fee.name}}</label>
+				</div>
+
+				<div class="panel panel-border-narrow js-hidden" id="{{fee.key}}-panel">
+		            {% if fee.attributes.additional_case_numbers -%}
+		            <div class="form-group">
+		                <label class="form-label-bold" for="fixed-fee-1-additional-case-numbers">
+		                    Additional case numbers
+		                    <span class="form-hint">
+		                        Separate with commas
+		                    </span>
+		                </label>
+		                <input class="form-control form-control-3-4" id="fixed-fee-1-additional-case-numbers" name="fixed_fee_1_additional_case_numbers" type="text" value="{{data['fixed_fee_1_additional_case_numbers']}}">
+		            </div>
+					{%- endif %}
+					{% if fee.attributes.quantity -%}
+		            <div class="form-group">
+		                <label class="form-label-bold" for="fixed-fee-1-quantity">
+		                    Quantity
+		                    <!-- <span class="form-hint">
+
+		                    </span> -->
+		                </label>
+		                <input class="form-control form-control-1-8" id="fixed-fee-1-quantity" name="fixed_fee_1_quantity" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_quantity']}}">
+		            </div>
+					{%- endif %}
+					{% if fee.attributes.dates -%}
+					<div class="form-group" data-item-number="1">
+					    <fieldset>
+					        <legend class="form-label-bold width-half">
+					            Date<!--  1 -->
+					            <!-- TODO: if count >1 add a remove link -->
+					            <!-- <a href="#noop" class="link-remove">
+					                Remove
+					                <span class="visually-hidden">&nbsp;this fee</span>
+					            </a> -->
+					            <span class="form-hint">
+					                For example, {{ now | date('subtract', {months:4}) | date('DD M YYYY') }}
+					            </span>
+					        </legend>
+
+							<div class="form-date">
+							    <div class="form-group form-group-day">
+							        <label class="form-label" for="fixed-fee-1-date-1-day">
+							            Day
+							        </label>
+							        <input class="form-control" id="fixed-fee-1-date-1-day" max="31" min="1" name="fixed_fee_1_date_1_day" pattern="[0-9]*" type="number" value="{{data['fixed_fee_1_date_1_day']}}">
+							    </div>
+							    <div class="form-group form-group-month">
+							        <label class="form-label" for="fixed-fee-1-date-1-month">
+							            Month
+							        </label>
+							        <input class="form-control" id="fixed-fee-1-date-1-month" max="12" min="1" name="fixed_fee_1_date_1_month" pattern="[0-9]*" type="number" value="{{data['fixed_fee_1_date_1_month']}}">
+							    </div>
+							    <div class="form-group form-group-year">
+							        <label class="form-label" for="fixed-fee-1-date-1-year">
+							            Year
+							        </label>
+							        <input class="form-control" id="fixed-fee-1-date-1-year" max="2019" min="1900" name="fixed_fee_1_date_1_year" pattern="[0-9]*" type="number" value="{{data['fixed_fee_1_date_1_year']}}">
+							    </div>
+							</div>
+
+						</fieldset>
+					</div>
+					<div class="form-group">
+					    <a href="#noop">
+					        Add another date
+					    </a>
+					</div>
+					{%- endif %}
+					{% if fee.attributes.rate -%}
+		            <div class="form-group">
+		                <label class="form-label-bold" for="fixed-fee-1-rate">
+		                    Rate
+		                    <!-- <span class="form-hint">
+
+		                    </span> -->
+		                </label>
+					    <span class="form-input-denote">
+					        &pound;
+					    </span>
+		                <input class="form-control form-control-1-4 form-input-denote__input" id="fixed-fee-1-rate" name="fixed_fee_1_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_rate']}}">
+		            </div>
+		            <details>
+						<summary>
+						<span class="summary">
+							How is the rate calculated?
+						</span>
+						</summary>
+						<div class="panel panel-border-narrow">
+						<p>
+						We calculate the rate based upon the fee scheme, case type, advocate category and fee type.
+						</p>
+						</div>
+					</details>
+					{%- endif %}
+		        </div>
+			{%- endfor %}
+
+		</fieldset>
+	</div>
+
+	<div class="form-group">
+	    <label class="form-label-bold" for="fixed-fee-1-net-amount">
+	        Net amount
+	    </label>
+	    <span class="form-input-denote">
+	        &pound;
+	    </span>
+	    <input class="form-control form-control-1-4 form-input-denote__input" id="fixed-fee-1-net-amount" name="fixed_fee_1_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_net_amount']}}">
+	</div>
+
+</div>

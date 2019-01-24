@@ -1,0 +1,180 @@
+{% if data['advocate_category'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">Advocate category</th>
+			<td>{% if data['advocate_category'] == 'qc' -%}{{data['advocate_category']|upper}}{% else %}{{data['advocate_category']|replace('_',' ')|capitalize}}{%- endif %}</td>
+		</tr>
+
+		{% if data['graduated_fees_checklist'] and "daily_attendance_fees" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Daily attendance fees</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of days</th>
+							<td>{{data['daily_attendance_fees_number_of_days']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates attended</th>
+							<td>
+								<ul><!--  class="list list-bullet" -->
+									{% for i in range(0, data['daily_attendance_fees_number_of_days']) -%}
+										{% if data['daily_attendance_fees_date_attended_' + loop.index + '_day'].length and data['daily_attendance_fees_date_attended_' + loop.index + '_month'] and data['daily_attendance_fees_date_attended_' + loop.index + '_year'] -%}
+
+											<li>{{data['daily_attendance_fees_date_attended_' + loop.index + '_day']}}/{{data['daily_attendance_fees_date_attended_' + loop.index + '_month']}}/{{data['daily_attendance_fees_date_attended_' + loop.index + '_year']}}</li>
+
+										{%- endif %}
+									{% endfor %}
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['daily_attendance_fees_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "standard_appearance_fees" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Standard appearance fees</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of appearances</th>
+							<td>{{data['standard_appearance_fees_number_of_appearances']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates attended</th>
+							<td>
+								<ul><!--  class="list list-number" -->
+									{% for i in range(0, data['standard_appearance_fees_number_of_appearances']) -%}
+										{% if data['standard_appearance_fees_date_attended_' + loop.index + '_day'].length and data['standard_appearance_fees_date_attended_' + loop.index + '_month'] and data['standard_appearance_fees_date_attended_' + loop.index + '_year'] -%}
+
+											<li>{{data['standard_appearance_fees_date_attended_' + loop.index + '_day']}}/{{data['standard_appearance_fees_date_attended_' + loop.index + '_month']}}/{{data['standard_appearance_fees_date_attended_' + loop.index + '_year']}}</li>
+
+										{%- endif %}
+									{% endfor %}
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['standard_appearance_fees_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "plea_trial_prep_hearings" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Plea and trial preparation hearings (<abbr title="Plea and trial preparation hearings">PTPH</abbr>)</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of hearings</th>
+							<td>{{data['plea_trial_prep_hearings_number_of_hearings']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Dates attended</th>
+							<td>
+								<ul><!--  class="list list-number" -->
+									{% for i in range(0, data['plea_trial_prep_hearings_number_of_hearings']) -%}
+
+										{% if data['plea_trial_preparation_hearings_date_attended_' + loop.index + '_day'].length and data['plea_trial_preparation_hearings_date_attended_' + loop.index + '_month'] and data['plea_trial_preparation_hearings_date_attended_' + loop.index + '_year'] -%}
+
+											<li>{{data['plea_trial_preparation_hearings_date_attended_' + loop.index + '_day']}}/{{data['plea_trial_preparation_hearings_date_attended_' + loop.index + '_month']}}/{{data['plea_trial_preparation_hearings_date_attended_' + loop.index + '_year']}}</li>
+
+										{%- endif %}
+									{% endfor %}
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['plea_trial_prep_hearing_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "conferences_views" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Conferences and views</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of conferences and views</th>
+							<td>{{data['number_of_conferences_views']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['conferences_views_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "defendants_uplift" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Number of defendants uplift</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of defendants</th>
+							<td>{{data['number_of_defendants']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['defendants_uplift_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+		{% if data['graduated_fees_checklist'] and "cases_uplift" in data['graduated_fees_checklist'] -%}
+		<tr>
+			<th class="bold" scope="row">Number of cases uplift</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">Number of cases</th>
+							<td>{{data['number_of_cases']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Additional case numbers</th>
+							<td>{{data['additional_case_numbers']}}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">Net amount</th>
+							<td>&pound;{{data['cases_uplift_net_amount']|numeral('0,0.00')}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{%- endif %}
+
+	</tbody>
+</table>
+{% else %}
+<p>There are no graduated fees for this claim.</p>
+{%- endif %}

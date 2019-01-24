@@ -1,0 +1,11 @@
+<!-- <script src="/public/javascripts/dependent-dropdown.min.js"></script> -->
+<script>
+$("#offence-category").depdrop({
+	depends: ['offence-class'],
+    url: '../data/offences/9/categories',
+    loadingText: '',
+    parentParam: 'class',
+    idParam: 'key'
+    {%- if data['offence_class'].length %}, initialize: true{%- endif %}
+});
+</script>

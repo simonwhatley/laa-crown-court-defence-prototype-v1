@@ -1,0 +1,41 @@
+<div class="form-group">
+
+	<fieldset>
+
+		<legend class="form-label-bold" for="advocate-category-1">
+			Advocate category
+			<!-- <span class="form-hint">Please choose a relevant advocate category</span> -->
+		</legend>
+
+		{% if data['fee_scheme_version'] == "10" or fee_scheme_version == "10" -%}
+		
+			<div class="multiple-choice">
+				<input id="advocate-category-junior" type="radio" name="advocate_category" value="junior" {{ checked('advocate_category','junior') }}>
+				<label for="advocate-category-junior">Junior</label>
+			</div>
+		
+		{% else %}
+		
+			<div class="multiple-choice">
+				<input id="advocate-category-junior-alone" type="radio" name="advocate_category" value="junior_alone" {{ checked('advocate_category','junior_alone') }}>
+				<label for="advocate-category-junior-alone">Junior alone</label>
+			</div>
+			<div class="multiple-choice">
+				<input id="advocate-category-led-junior" type="radio" name="advocate_category" value="led_junior" {{ checked('advocate_category','led_junior') }}>
+				<label for="advocate-category-2=led-junior">Led junior</label>
+			</div>
+		
+		{% endif %}
+
+		<div class="multiple-choice">
+			<input id="advocate-category-leading-junior" type="radio" name="advocate_category" value="leading_junior" {{ checked('advocate_category','leading_junior') }}>
+			<label for="advocate-category-leading-junior">Leading junior</label>
+		</div>
+		<div class="multiple-choice">
+			<input id="advocate-category-qc" type="radio" name="advocate_category" value="queens_counsel" {{ checked('advocate_category','queens_counsel') }}>
+			<label for="advocate-category-qc">Queen's Counsel</label>
+		</div>
+
+	</fieldset>
+
+</div>

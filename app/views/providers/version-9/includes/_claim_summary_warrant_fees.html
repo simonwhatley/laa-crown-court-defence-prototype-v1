@@ -1,0 +1,38 @@
+{% if data['interim_warrant_fee_option'].length and data['interim_warrant_fee_option'] == 'yes' -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Have you previously been paid for an interim warrant fee?
+			</th>
+			<td>{{data['interim_warrant_fee_option']|capitalize}}</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Warrant issued date
+			</th>
+			<td>
+				{% if data['warrant_issued_date_day'].length and data['warrant_issued_date_month'].length and data['warrant_issued_date_year'].length -%}
+					{{data['warrant_issued_date_day']}}/{{data['warrant_issued_date_month']}}/{{data['warrant_issued_date_year']}}
+				{% else %}
+					Date not provided
+				{%- endif %}
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Warrant executed date
+			</th>
+			<td>
+				{% if data['warrant_executed_date_day'].length and data['warrant_executed_date_month'].length and data['warrant_executed_date_year'].length -%}
+					{{data['warrant_executed_date_day']}}/{{data['warrant_executed_date_month']}}/{{data['warrant_executed_date_year']}}
+				{% else %}
+					Date not provided
+				{%- endif %}
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no warrant fees for this claim.</p>
+{%- endif %}

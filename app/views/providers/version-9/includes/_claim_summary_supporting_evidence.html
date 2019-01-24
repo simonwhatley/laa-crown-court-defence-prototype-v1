@@ -1,0 +1,40 @@
+{% if data['supporting_evidence_checklist'].length -%}
+<table class="summary">
+	<tbody>
+		{% if data['bill_type'] == 'advocate_final' -%}
+		<tr>
+			<th class="bold" scope="row">
+				Will you be sending disk evidence for this claim?
+			</th>
+			<td>{% if data['electronic_evidence_option'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
+		</tr>
+		{%- endif %}
+		<tr>
+			<th class="bold" scope="row">
+				Supporting evidence
+			</th>
+			<td>
+				<ul>
+					{% for evidence in data['supporting_evidence_checklist'] -%}
+					<li><a href="#noop">{{evidence|replace('_','-')}}.pdf</a></li>
+					{%- endfor %}
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th class="bold" scope="row">
+				Supporting evidence checklist
+			</th>
+			<td>
+				<ul>
+					{% for evidence in data['supporting_evidence_checklist'] -%}
+					<li>{{evidence|replace('_',' ')|capitalize}}</li>
+					{%- endfor %}
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There is no supporting evidence for this claim.</p>
+{%- endif %}

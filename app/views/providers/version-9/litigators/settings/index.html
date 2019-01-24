@@ -1,0 +1,197 @@
+{% extends "../../layout.html" %}
+
+{% block page_title %}
+  {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block page_scripts %}
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('.generate-key').on('click', function (e) {
+    e.preventDefault();
+    $('.api-key').html(generateUUID());
+  });
+
+  function generateUUID() {
+    var d = new Date().getTime();
+    if(Date.now){
+        d = Date.now(); //high-precision timer
+    }
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+  };
+
+});
+</script>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	{% include "../includes/_banner.html" %}
+
+	{# include "./includes/navigation.html" #}
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h1 class="heading-xlarge">
+				Settings
+			</h1>
+
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			{#% if messages %}
+	        <div class="warning-summary" role="alert" aria-labelledby="success-summary-heading-example-1" tabindex="-1">
+
+	            <h1 class="heading-medium warning-summary-heading" id="success-summary-heading-example-1">
+	                Message to alert the user to a success goes here
+	            </h1>
+
+	            <p>
+		        	Optional description of the success
+		      	</p>
+
+	            <ul class="warning-summary-list">
+	                {% for key, value in messages %}
+	                    <li><a href="#{{ key }}">{{ value }}</a></li>
+	                {% endfor %}
+	            </ul>
+
+		    </div>
+		    {% endif %#}
+
+		    {#{data|dump|safe}#}
+
+
+			<h2 class="heading-large">
+				Provider details
+			</h2>
+
+			<table class="summary">
+	            <tbody>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        Provider name
+	                    </th>
+	                    <td>{{data['settings']['provider_name']}}</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        Provider type
+	                    </th>
+	                    <td>{{data['settings']['provider_type']|capitalize}}</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        API key
+	                    </th>
+	                    <td class="api-key">{{data['settings']['api_key']}}</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        <abbr onclick="" title="Advocate Graduated Fee Scheme" tabindex="0">AGFS</abbr> supplier number
+	                    </th>
+	                    <td>{{data['settings']['agfs_account_number']}}</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        <abbr onclick="" title="Litigator Graduated Fee Scheme" tabindex="0">LGFS</abbr> supplier number{% if data['settings']['suppliers'].length > 1 -%}s{%- endif %}
+	                    </th>
+	                    <td>
+	                    	<ul>
+	                    	{% for supplier in data['settings']['suppliers'] %}
+	                    		<li>{{supplier.lgfs_account_number}} – {{supplier.name}}</li>
+	                    	{% endfor %}
+	                    	<ul>
+	                	</td>
+	                </tr>
+	                <tr>
+	                    <th class="bold" scope="row">
+	                        VAT registered?
+	                    </th>
+	                    <td>{% if data['settings']['vat_registered'] == true or data['settings']['vat_registered'] == 'yes' -%}Yes{% else %}No{%- endif %}</td>
+	                </tr>
+	            </tbody>
+	        </table>
+
+		</div>
+	</div>
+
+	<form class="form" method="post">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Edit provider details" formaction="{{links.edit_provider}}">
+						<input type="button" class="button button-tertiary generate-key" value="Generate new API key">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="grid-row">
+		<div class="column-full">
+
+			<h2 class="heading-large">
+				User details
+			</h2>
+
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Firstname</th>
+							<th scope="col">Lastname</th>
+							<th scope="col">Supplier number</th>
+							<th scope="col">Email</th>
+							<th scope="col">Notifications</th>
+							<th scope="col">&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for user in data['settings']['users'] %}
+						<tr>
+							<td>{{user.first_name}}</td>
+							<td>{{user.last_name}}</td>
+							<td>{{user.account_number}}</td>
+							<td>{{user.email_address}}</td>
+							<td>{% if user.notifications == true -%}On{% else %}Off{%- endif %}</td>
+							<td>
+								<a href="{{links.edit_user}}/{{user.id}}">Change</a>
+							</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+			<br>
+		</div>
+	</div>
+
+	<form class="form" method="post">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<div class="form-section">
+					<div class="form-group form-buttons">
+						<input type="submit" class="button" value="Add user to provider" formaction="{{links.add_user}}">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</main>
+
+{% endblock %}

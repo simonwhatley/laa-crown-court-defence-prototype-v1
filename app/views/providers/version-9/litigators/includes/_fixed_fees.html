@@ -1,0 +1,99 @@
+<div class="form-section-compound" data-item-number="1">
+
+    <h3 class="heading-medium">
+        Fixed fee<!--  1 -->
+        <!-- <a href="#noop" class="link-remove">
+            Remove
+            <span class="visually-hidden">&nbsp;this fee</span>
+        </a> -->
+    </h3>
+
+    <div class="form-group">
+        <label class="form-label-bold">Type of fee</label>
+        <p>{{ data['case_type'] | replace("_"," ") | title }}</p>
+    </div>
+
+    <!-- <div class="form-group">
+        <fieldset>
+            <legend class="form-label-bold">
+                Date of hearing
+                <span class="form-hint">
+                    For example, {{ now | date('subtract', {months:4}) | date('DD M YYYY') }}
+                </span>
+            </legend>
+            <div class="form-date">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-of-hearing-day">
+                        Day
+                    </label>
+                    <input class="form-control" id="date-of-hearing-day" max="31" min="1" name="date_of_hearing_day" pattern="[0-9]*" type="number" value="{{data['date_of_hearing_day']}}">
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-of-hearing-month">
+                        Month
+                    </label>
+                    <input class="form-control" id="date-of-hearing-month" max="12" min="1" name="date_of_hearing_month" pattern="[0-9]*" type="number" value="{{data['date_of_hearing_month']}}">
+                </div>
+                <div class="form-group form-group-year">
+                    <label class="form-label" for="date-of-hearing-year">
+                        Year
+                    </label>
+                    <input class="form-control" id="date-of-hearing-year" max="2019" min="1900" name="date_of_hearing_year" pattern="[0-9]*" type="number" value="{{data['date_of_hearing_year']}}">
+                </div>
+            </div>
+        </fieldset>
+    </div> -->
+
+    <div class="form-group">
+        <label class="form-label-bold" for="fixed-fee-1-quantity">
+            Quantity
+            <!-- <span class="form-hint">
+                
+            </span> -->
+        </label>
+        <input class="form-control form-control-1-8" id="fixed-fee-1-quantity" name="fixed_fee_1_quantity" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_quantity']}}">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label-bold" for="fixed-fee-1-rate">
+            Rate
+            <!-- <span class="form-hint">
+                
+            </span> -->
+        </label>
+        <span class="form-input-denote">
+            &pound;
+        </span>
+        <input class="form-control form-control-1-4 form-input-denote__input" id="fixed-fee-1-rate" name="fixed_fee_1_rate" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['fixed_fee_1_rate']}}">
+    </div>
+    <details>
+        <summary>
+        <span class="summary">
+            How is the rate calculated?
+        </span>
+        </summary>
+        <div class="panel panel-border-narrow">
+        <p>
+        We calculate the rate based upon the fee scheme, case type and fee type.
+        </p>
+        </div>
+    </details>
+    
+    <br>
+    <div class="form-group">
+        <label class="form-label-bold" for="pages-of-evidence-net-amount">
+            Net amount
+        </label>
+        <span class="form-input-denote">
+            &pound;
+        </span>
+        <input class="form-control form-control-1-4 form-input-denote__input" id="pages-of-evidence-net-amount" name="pages_of_evidence_net_amount" type="number" max="999999.99" min="0.00" step="0.01" value="{{data['pages_of_evidence_net_amount']}}">
+    </div>
+
+    <div class="form-group">
+        <a href="#noop">
+            Add fixed fee dates
+        </a>
+    </div>
+
+</div>

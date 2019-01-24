@@ -1,0 +1,74 @@
+[
+    {
+        "message_id": 81355,
+        "timestamp": "2018-10-16T10:50:00.000Z",
+        "message": "Your claim has been submitted",
+        "user_id": 1,
+        "user_name": "System",
+        "type": "system"
+    },
+    {
+        "message_id": 87605,
+        "timestamp": "2018-10-16T10:51:00.000Z",
+        "message": "I forgot to attach filename\n\nAttachment: DefendantName_T12345678_Indictment.pdf (23.1 KB)",
+        "user_id": 3,
+        "user_name": "Horace Rumpole",
+        "type": "provider"
+    },
+    {
+        "message_id": 92327,
+        "timestamp": "2018-10-19T10:53:00.000Z",
+        "message": "Your claim has been allocated",
+        "user_id": 1,
+        "user_name": "System",
+        "type": "system"
+    },
+    {
+        "message_id": 98961,
+        "timestamp": "2018-10-19T10:55:00.000Z",
+        "message": "Okay great. We'll use the file in our assessment of the claim",
+        "user_id": 2,
+        "user_name": "Caseworker",
+        "type": "caseworker"
+    },
+    {
+        "message_id": 107190,
+        "timestamp": "2018-10-21T11:55:00.000Z",
+        "message": "Please consider new offence information\n\nAttachment: Screen_Shot_2017-10-17_at_15.21.45.png (337 KB)",
+        "user_id": 3,
+        "user_name": "Horace Rumpole",
+        "type": "provider"
+    },
+    {
+        "message_id": 114983,
+        "timestamp": "2018-10-21T11:56:00.000Z",
+        "message": "You requested redetermination",
+        "user_id": 3,
+        "user_name": "Horace Rumpole",
+        "type": "provider"
+    },
+    {
+        "message_id": 118365,
+        "timestamp": "2018-10-22T11:56:00.000Z",
+        "message": "Your claim has been allocated",
+        "user_id": 1,
+        "user_name": "System",
+        "type": "system"
+    },
+    {
+        "message_id": 121199,
+        "timestamp": "2018-10-23T11:56:00.000Z",
+        "message": "Your claim has been authorised",
+        "user_id": 1,
+        "user_name": "System",
+        "type": "system"
+    },
+    {
+        "message_id": 130335,
+        "timestamp": "2018-10-23T11:56:00.000Z",
+        "message": "Paid as claimed",
+        "user_id": 2,
+        "user_name": "Caseworker",
+        "type": "caseworker"
+    }
+]
