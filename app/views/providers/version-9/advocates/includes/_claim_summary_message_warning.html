@@ -9,11 +9,13 @@
 		{% if not (data['defendant_1_first_name'].length and data['defendant_1_last_name'].length) -%}
 			<li>defendant details</li>
 		{%- endif %}
-		{% if data['fee_type'] == 'graduated' -%}
-			<li>offence details</li>
-			<li>graduated fees</li>
-		{% else %}
-			<li>fixed fees</li>
+		{% if data['bill_type'] != "advocate_miscellaneous" -%}
+			{% if data['fee_type'] == 'graduated' -%}
+				<li>offence details</li>
+				<li>graduated fees</li>
+			{% else %}
+				<li>fixed fees</li>
+			{%- endif %}
 		{%- endif %}
 	</ul>
 </div>

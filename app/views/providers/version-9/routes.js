@@ -137,7 +137,15 @@ router.get('/advocates/defendant-details', function(req, res) {
 
     } else {
 
-        var nextUrl = req.baseUrl + '/advocates/offence-details'
+        if (req.session.data.bill_type == 'advocate_miscellaneous') {
+
+            var nextUrl = req.baseUrl + '/advocates/miscellaneous-fees'
+
+        } else {
+
+            var nextUrl = req.baseUrl + '/advocates/offence-details'
+            
+        }
 
         req.session.data.fee_type = 'graduated'
 
@@ -311,222 +319,233 @@ router.get('/advocates/fees', function(req, res) {
 
 });
 
-router.get('/advocates/fees-v2', function(req, res) {
+// router.get('/advocates/fees-v2', function(req, res) {
 
-    if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
+//     if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-        var previousUrl = req.baseUrl + '/advocates/defendant-details'
+//         var previousUrl = req.baseUrl + '/advocates/defendant-details'
 
-    } else {
+//     } else {
 
-        var previousUrl = req.baseUrl + '/advocates/offence-details'
+//         var previousUrl = req.baseUrl + '/advocates/offence-details'
 
-    }
+//     }
 
-    if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
+//     if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
 
-        req.session.data.fee_scheme_version = '10'
-        var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+//         req.session.data.fee_scheme_version = '10'
+//         var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
 
-    } else {
+//     } else {
 
-        req.session.data.fee_scheme_version = '9'
-        var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
+//         req.session.data.fee_scheme_version = '9'
+//         var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
 
-    }
+//     }
 
-    if (req.session.data.bill_type == "advocate_interim") {
+//     if (req.session.data.bill_type == "advocate_interim") {
 
-        res.render(`${req.feature}/${req.version}/advocates/interim-fees`,
-            {
-                links: {
-                    'next' : req.baseUrl + '/advocates/travel-expenses',
-                    'previous' : previousUrl,
-                    'save' : req.baseUrl + '/advocates/',
-                    'new' : req.baseUrl + '/advocates/start',
-                    'home' : req.baseUrl + '/advocates/'
-                }
-            });
+//         res.render(`${req.feature}/${req.version}/advocates/interim-fees`,
+//             {
+//                 links: {
+//                     'next' : req.baseUrl + '/advocates/travel-expenses',
+//                     'previous' : previousUrl,
+//                     'save' : req.baseUrl + '/advocates/',
+//                     'new' : req.baseUrl + '/advocates/start',
+//                     'home' : req.baseUrl + '/advocates/'
+//                 }
+//             });
 
-    } else {
+//     } else {
 
-        if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
+//         if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-            res.render(`${req.feature}/${req.version}/advocates/fixed-fees-v2`,
-                 {
-                    links: {
-                        'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl,
-                        'save' : req.baseUrl + '/advocates/'
-                    },
-                    fixed_fees: utils.getFixedFeesV2(req.session.data.case_type)[0].fees,
-                    fee_scheme_version: req.session.data.fee_scheme_version
-                 });
+//             res.render(`${req.feature}/${req.version}/advocates/fixed-fees-v2`,
+//                  {
+//                     links: {
+//                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
+//                         'previous' : previousUrl,
+//                         'save' : req.baseUrl + '/advocates/'
+//                     },
+//                     fixed_fees: utils.getFixedFeesV2(req.session.data.case_type)[0].fees,
+//                     fee_scheme_version: req.session.data.fee_scheme_version
+//                  });
 
-        } else {
+//         } else {
 
-            res.render(`${req.feature}/${req.version}/advocates/graduated-fees-v2`,
-                {
-                    links: {
-                        'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl,
-                        'save' : req.baseUrl + '/advocates/'
-                    },
-                    offence: offence,
-                    fee_scheme_version: req.session.data.fee_scheme_version
-                });
+//             res.render(`${req.feature}/${req.version}/advocates/graduated-fees-v2`,
+//                 {
+//                     links: {
+//                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
+//                         'previous' : previousUrl,
+//                         'save' : req.baseUrl + '/advocates/'
+//                     },
+//                     offence: offence,
+//                     fee_scheme_version: req.session.data.fee_scheme_version
+//                 });
 
-        }
-    }
+//         }
+//     }
 
-});
+// });
 
-router.get('/advocates/fees-v3', function(req, res) {
+// router.get('/advocates/fees-v3', function(req, res) {
 
-    if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
+//     if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-        var previousUrl = req.baseUrl + '/advocates/defendant-details'
+//         var previousUrl = req.baseUrl + '/advocates/defendant-details'
 
-    } else {
+//     } else {
 
-        var previousUrl = req.baseUrl + '/advocates/offence-details'
+//         var previousUrl = req.baseUrl + '/advocates/offence-details'
 
-    }
+//     }
 
-    if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
+//     if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
 
-        req.session.data.fee_scheme_version = '10'
-        var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+//         req.session.data.fee_scheme_version = '10'
+//         var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
 
-    } else {
+//     } else {
 
-        req.session.data.fee_scheme_version = '9'
-        var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
+//         req.session.data.fee_scheme_version = '9'
+//         var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
 
-    }
+//     }
 
-    if (req.session.data.bill_type == "advocate_interim") {
+//     if (req.session.data.bill_type == "advocate_interim") {
 
-        res.render(`${req.feature}/${req.version}/advocates/interim-fees`,
-            {
-                links: {
-                    'next' : req.baseUrl + '/advocates/travel-expenses',
-                    'previous' : previousUrl,
-                    'save' : req.baseUrl + '/advocates/',
-                    'new' : req.baseUrl + '/advocates/start',
-                    'home' : req.baseUrl + '/advocates/'
-                }
-            });
+//         res.render(`${req.feature}/${req.version}/advocates/interim-fees`,
+//             {
+//                 links: {
+//                     'next' : req.baseUrl + '/advocates/travel-expenses',
+//                     'previous' : previousUrl,
+//                     'save' : req.baseUrl + '/advocates/',
+//                     'new' : req.baseUrl + '/advocates/start',
+//                     'home' : req.baseUrl + '/advocates/'
+//                 }
+//             });
 
-    } else {
+//     } else {
 
-        if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
+//         if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-            res.render(`${req.feature}/${req.version}/advocates/fixed-fees-v3`,
-                 {
-                    links: {
-                        'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl,
-                        'save' : req.baseUrl + '/advocates/'
-                    },
-                    fixed_fees: utils.getFixedFeesV2(req.session.data.case_type)[0].fees,
-                    fee_scheme_version: req.session.data.fee_scheme_version
-                 });
+//             res.render(`${req.feature}/${req.version}/advocates/fixed-fees-v3`,
+//                  {
+//                     links: {
+//                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
+//                         'previous' : previousUrl,
+//                         'save' : req.baseUrl + '/advocates/'
+//                     },
+//                     fixed_fees: utils.getFixedFeesV2(req.session.data.case_type)[0].fees,
+//                     fee_scheme_version: req.session.data.fee_scheme_version
+//                  });
 
-        } else {
+//         } else {
 
-            res.render(`${req.feature}/${req.version}/advocates/graduated-fees-v3`,
-                {
-                    links: {
-                        'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl,
-                        'save' : req.baseUrl + '/advocates/'
-                    },
-                    offence: offence,
-                    fee_scheme_version: req.session.data.fee_scheme_version
-                });
+//             res.render(`${req.feature}/${req.version}/advocates/graduated-fees-v3`,
+//                 {
+//                     links: {
+//                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
+//                         'previous' : previousUrl,
+//                         'save' : req.baseUrl + '/advocates/'
+//                     },
+//                     offence: offence,
+//                     fee_scheme_version: req.session.data.fee_scheme_version
+//                 });
 
-        }
-    }
+//         }
+//     }
 
-});
+// });
 
-router.get('/advocates/fees-basic', function(req, res) {
+// router.get('/advocates/fees-basic', function(req, res) {
 
-    if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
+//     if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-        var previousUrl = req.baseUrl + '/advocates/defendant-details'
+//         var previousUrl = req.baseUrl + '/advocates/defendant-details'
 
-    } else {
+//     } else {
 
-        var previousUrl = req.baseUrl + '/advocates/offence-details'
+//         var previousUrl = req.baseUrl + '/advocates/offence-details'
 
-    }
+//     }
 
-    if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
+//     if (req.session.data.defendant_1_representation_order_date_1_year >= 2018 && req.session.data.defendant_1_representation_order_date_1_month >= 4 && req.session.data.defendant_1_representation_order_date_1_day >= 1) {
 
-        req.session.data.fee_scheme_version = '10'
-        var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
+//         req.session.data.fee_scheme_version = '10'
+//         var offence = utils.getOffenceScheme10(req.session.data.offence_class, req.session.data.offence_band, req.session.data.offence_category)
 
-    } else {
+//     } else {
 
-        req.session.data.fee_scheme_version = '9'
-        var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
+//         req.session.data.fee_scheme_version = '9'
+//         var offence = { "class_label": utils.getOffenceScheme9ClassName(req.session.data.offence_class), "category_label": utils.getOffenceScheme9CategoryName(req.session.data.offence_class, req.session.data.offence_category) }
 
-    }
+//     }
 
-    if (req.session.data.bill_type == "advocate_interim") {
+//     if (req.session.data.bill_type == "advocate_interim") {
 
-        res.render(`${req.feature}/${req.version}/advocates/interim-fees`,
-            {
-                links: {
-                    'next' : req.baseUrl + '/advocates/travel-expenses',
-                    'previous' : previousUrl,
-                    'save' : req.baseUrl + '/advocates/',
-                    'new' : req.baseUrl + '/advocates/start',
-                    'home' : req.baseUrl + '/advocates/'
-                }
-            });
+//         res.render(`${req.feature}/${req.version}/advocates/interim-fees`,
+//             {
+//                 links: {
+//                     'next' : req.baseUrl + '/advocates/travel-expenses',
+//                     'previous' : previousUrl,
+//                     'save' : req.baseUrl + '/advocates/',
+//                     'new' : req.baseUrl + '/advocates/start',
+//                     'home' : req.baseUrl + '/advocates/'
+//                 }
+//             });
 
-    } else {
+//     } else {
 
-        if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
+//         if (utils.isFixedFee(req.session.data.fee_scheme, req.session.data.case_type)) {
 
-            res.render(`${req.feature}/${req.version}/advocates/fixed-fees`,
-                 {
-                    links: {
-                        'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl,
-                        'save' : req.baseUrl + '/advocates/'
-                    },
-                    fixed_fees: utils.getFixedFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version),
-                    fee_scheme_version: req.session.data.fee_scheme_version
-                 });
+//             res.render(`${req.feature}/${req.version}/advocates/fixed-fees`,
+//                  {
+//                     links: {
+//                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
+//                         'previous' : previousUrl,
+//                         'save' : req.baseUrl + '/advocates/'
+//                     },
+//                     fixed_fees: utils.getFixedFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version),
+//                     fee_scheme_version: req.session.data.fee_scheme_version
+//                  });
 
-        } else {
+//         } else {
 
-            res.render(`${req.feature}/${req.version}/advocates/graduated-fees-v3`,
-                {
-                    links: {
-                        'next' : req.baseUrl + '/advocates/miscellaneous-fees',
-                        'previous' : previousUrl,
-                        'save' : req.baseUrl + '/advocates/'
-                    },
-                    offence: offence,
-                    fee_scheme_version: req.session.data.fee_scheme_version
-                });
+//             res.render(`${req.feature}/${req.version}/advocates/graduated-fees-v3`,
+//                 {
+//                     links: {
+//                         'next' : req.baseUrl + '/advocates/miscellaneous-fees',
+//                         'previous' : previousUrl,
+//                         'save' : req.baseUrl + '/advocates/'
+//                     },
+//                     offence: offence,
+//                     fee_scheme_version: req.session.data.fee_scheme_version
+//                 });
 
-        }
-    }
+//         }
+//     }
 
-});
+// });
 
 router.get('/advocates/miscellaneous-fees', function(req, res) {
+
+    if (req.session.data.bill_type == 'advocate_miscellaneous') {
+
+        var previousUrl = req.baseUrl + '/advocates/defendant-details'
+
+    } else {
+
+        var previousUrl = req.baseUrl + '/advocates/fees'
+
+    }
+
     res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees`,
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
-                'previous' : req.baseUrl + '/advocates/fees',
+                'previous' : previousUrl,
                 'save' : req.baseUrl + '/advocates/'
             },
             fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
@@ -577,23 +596,23 @@ router.get('/advocates/supporting-evidence', function(req, res) {
     res.render(`${req.feature}/${req.version}/advocates/supporting-evidence`,
     	{
             links: {
-                'next' : req.baseUrl + '/advocates/additional-information',
+                'next' : req.baseUrl + '/advocates/claim-summary',
                 'previous' : req.baseUrl + '/advocates/travel-expenses',
                 'save' : req.baseUrl + '/advocates/'
             }
     	});
 });
 
-router.get('/advocates/additional-information', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/additional-information`,
-    	{
-            links: {
-                'next' : req.baseUrl + '/advocates/claim-summary',
-                'previous' : req.baseUrl + '/advocates/supporting-evidence',
-                'save' : req.baseUrl + '/advocates/'
-            }
-    	});
-});
+// router.get('/advocates/additional-information', function(req, res) {
+//     res.render(`${req.feature}/${req.version}/advocates/additional-information`,
+//     	{
+//             links: {
+//                 'next' : req.baseUrl + '/advocates/claim-summary',
+//                 'previous' : req.baseUrl + '/advocates/supporting-evidence',
+//                 'save' : req.baseUrl + '/advocates/'
+//             }
+//     	});
+// });
 
 router.get('/advocates/claim-summary', function(req, res) {
 
@@ -611,7 +630,7 @@ router.get('/advocates/claim-summary', function(req, res) {
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/certify-claim',
-                'previous' : req.baseUrl + '/advocates/additional-information',
+                'previous' : req.baseUrl + '/advocates/supporting-evidence',
                 'save' : req.baseUrl + '/advocates/',
                 'case_details' : req.baseUrl + '/advocates/case-details' + '?referrer=summary',
                 'defendant_details' : req.baseUrl + '/advocates/defendant-details' + '?referrer=summary',
