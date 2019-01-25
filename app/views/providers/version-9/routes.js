@@ -541,7 +541,7 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
 
     }
 
-    res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees`,
+    res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees-v2`,
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
@@ -552,17 +552,17 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
     	});
 });
 
-router.get('/advocates/miscellaneous-fees-v2', function(req, res) {
-    res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees-v2`,
-        {
-            links: {
-                'next' : req.baseUrl + '/advocates/travel-expenses',
-                'previous' : req.baseUrl + '/advocates/fees',
-                'save' : req.baseUrl + '/advocates/'
-            },
-            fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
-        });
-});
+// router.get('/advocates/miscellaneous-fees-v2', function(req, res) {
+//     res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees-v2`,
+//         {
+//             links: {
+//                 'next' : req.baseUrl + '/advocates/travel-expenses',
+//                 'previous' : req.baseUrl + '/advocates/fees',
+//                 'save' : req.baseUrl + '/advocates/'
+//             },
+//             fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
+//         });
+// });
 
 router.get('/advocates/travel-expenses', function(req, res) {
 
