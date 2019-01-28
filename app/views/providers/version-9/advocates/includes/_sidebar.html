@@ -4,6 +4,7 @@
 			Summary total
 		</h2>
 
+		{%- if not data['bill_type'] == "advocate_miscellaneous" %}
 		<h3>
 			{% if data['bill_type'] == "advocate_interim" -%}
 				Interim fees
@@ -16,13 +17,14 @@
 			{%- endif %}
 			<span class="numeric" data-total-fees="£0.00">£0.00</span>
 		</h3>
+		{% endif -%}
 
-		{% if data['bill_type'] == "advocate_final" -%}
+		{%- if data['bill_type'] in ["advocate_final","advocate_miscellaneous"] %}
 		<h3>
 			Miscellaneous fees
 			<span class="numeric" data-total-fees="£0.00">£0.00</span>
 		</h3>
-		{%- endif %}
+		{% endif -%}
 
 		<h3>
 			Travel expenses

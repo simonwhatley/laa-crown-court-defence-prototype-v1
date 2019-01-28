@@ -7,6 +7,7 @@ var offencesScheme10 = require('./data/scheme_10_offences.json');
 var offencesScheme10_flat = require('./data/scheme_10_offences_flat.json');
 var offencesScheme9 = require('./data/scheme_9_offences.json');
 var miscellaneousFees = require('./data/miscellaneous_fees.json');
+var miscellaneousFeesAlternate = require('./data/miscellaneous_fees_alternate.json');
 var fixedFees = require('./data/fixed_fees.json');
 var fixedFeesV2 = require('./data/fixed_fees_v2.json');
 var disbursements = require('./data/disbursements.json');
@@ -241,17 +242,41 @@ module.exports = {
 
 	},
 
-	getMiscellaneousFees: function(fee_scheme, fee_scheme_version) {
+	getMiscellaneousFees: function(fee_scheme, fee_scheme_version, bill_type) {
 
 		if(!fee_scheme)
 			return null
 
 		if(!fee_scheme_version)
-			var fee_scheme_version = "9"
+			var fee_scheme_version = "9";
 
-		return miscellaneousFees.filter( (obj) =>
-	        !!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
-	    )
+		if(!bill_type) {
+			
+			return miscellaneousFees.filter( (obj) =>
+	        	!!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+	    	);
+
+		} else {
+
+			return miscellaneousFees.filter( (obj) =>
+		        !!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version) && !!~obj.bill_type.indexOf(bill_type)
+		    );
+
+		}
+
+	},
+
+	getMiscellaneousFeesAlternate: function(fee_scheme, fee_scheme_version, bill_type) {
+
+		if(!fee_scheme)
+			return null
+
+		if(!fee_scheme_version)
+			var fee_scheme_version = "9";
+
+		return miscellaneousFeesAlternate.filter( (obj) =>
+        	!!~obj.scheme.indexOf(fee_scheme.toLowerCase()) && !!~obj.scheme_version.indexOf(fee_scheme_version)
+    	);
 
 	},
 

@@ -34,12 +34,16 @@
 
 					<form class="form" method="post">
 
-						{% include "./includes/_miscellaneous_fees.html" %}
+						{%- if data['bill_type'] == "advocate_miscellaneous" %}
+							{% include "./includes/_miscellaneous_fees_alternate.html" %}
+						{% else %}
+							{% include "./includes/_miscellaneous_fees.html" %}
+						{% endif -%}
 
-						<div class="form-section">
+						<!-- <div class="form-section">
 							<hr>
 							<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
-						</div>
+						</div> -->
 
 						{% if data['bill_type'] == 'advocate_final' -%}
 							{% if data['defendant_1_representation_order_date_1_year'] >= 2018 and data['defendant_1_representation_order_date_1_month'] >= 7 and data['defendant_1_representation_order_date_1_day'] >= 1 -%}

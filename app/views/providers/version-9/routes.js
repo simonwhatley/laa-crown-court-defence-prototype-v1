@@ -534,21 +534,23 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
     if (req.session.data.bill_type == 'advocate_miscellaneous') {
 
         var previousUrl = req.baseUrl + '/advocates/defendant-details'
+        var miscFees = utils.getMiscellaneousFeesAlternate(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
 
     } else {
 
         var previousUrl = req.baseUrl + '/advocates/fees'
+        var miscFees = utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
 
     }
 
-    res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees-v2`,
+    res.render(`${req.feature}/${req.version}/advocates/miscellaneous-fees`,
     	{
             links: {
                 'next' : req.baseUrl + '/advocates/travel-expenses',
                 'previous' : previousUrl,
                 'save' : req.baseUrl + '/advocates/'
             },
-            fees: utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
+            fees: miscFees
     	});
 });
 

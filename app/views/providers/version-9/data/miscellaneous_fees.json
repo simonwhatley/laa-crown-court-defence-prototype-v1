@@ -4,6 +4,7 @@
         "name": "Abuse of process hearings (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["APH"]
     },
@@ -12,6 +13,7 @@
         "name": "Abuse of process hearings (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["APU"]
     },
@@ -20,6 +22,7 @@
         "name": "Abuse of process hearings (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["APW"]
     },
@@ -28,6 +31,7 @@
         "name": "Abuse of process hearings (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["AWU"]
     },
@@ -36,6 +40,7 @@
         "name": "Adjourned appeals",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -44,6 +49,7 @@
         "name": "Application to dismiss a charge (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -52,6 +58,7 @@
         "name": "Application to dismiss a charge (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -60,6 +67,7 @@
         "name": "Application to dismiss a charge (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -68,6 +76,7 @@
         "name": "Application to dismiss a charge (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -76,6 +85,7 @@
         "name": "Case uplift",
         "scheme": ["lgfs"],
         "scheme_version": ["9"],
+        "bill_type": ["litigator_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -84,6 +94,7 @@
         "name": "Confiscation hearings (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["DTH","PCH"]
     },
@@ -92,6 +103,7 @@
         "name": "Confiscation hearings (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["DHU","CHU"]
     },
@@ -100,6 +112,7 @@
         "name": "Confiscation hearings (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["DTW","PCW"]
     },
@@ -108,6 +121,7 @@
         "name": "Confiscation hearings (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["DWU","CWU"]
     },
@@ -116,6 +130,7 @@
         "name": "Costs judge application",
         "scheme": ["lgfs"],
         "scheme_version": ["9"],
+        "bill_type": ["litigator_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -124,6 +139,7 @@
         "name": "Costs judge preparation",
         "scheme": ["lgfs"],
         "scheme_version": ["9"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -132,14 +148,16 @@
         "name": "Deferred sentence hearings",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["DSE"]
     },
     {
         "key": "deferred_sentence_hearings_uplift",
-        "name": "Deferred sentence hearings uplift",
+        "name": "Deferred sentence hearings (uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["DSU"]
     },
@@ -148,6 +166,7 @@
         "name": "Evidence provision fee",
         "scheme": ["lgfs"],
         "scheme_version": ["9"],
+        "bill_type": ["litigator_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -156,6 +175,7 @@
         "name": "Further case management hearing (FCMH)",
         "scheme": ["agfs"],
         "scheme_version": ["10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["FCMH"]
     },
@@ -164,6 +184,7 @@
         "name": "Ground rules hearing",
         "scheme": ["agfs"],
         "scheme_version": ["10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -172,6 +193,7 @@
         "name": "Hearings relating to admissibility of evidence (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["AEH","PAH"]
     },
@@ -180,6 +202,7 @@
         "name": "Hearings relating to admissibility of evidence (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["EHU","PHU"]
     },
@@ -188,6 +211,7 @@
         "name": "Hearings relating to admissibility of evidence (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["AEW","PAW"]
     },
@@ -196,6 +220,7 @@
         "name": "Hearings relating to admissibility of evidence (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["EWU","PWU"]
     },
@@ -204,6 +229,7 @@
         "name": "Hearings relating to disclosure (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["HDH"]
     },
@@ -212,6 +238,7 @@
         "name": "Hearings relating to disclosure (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["HHU"]
     },
@@ -220,6 +247,7 @@
         "name": "Hearings relating to disclosure (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["HDW"]
     },
@@ -228,6 +256,7 @@
         "name": "Hearings relating to disclosure (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["HWU"]
     },
@@ -236,6 +265,7 @@
         "name": "Noting brief fee",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": ["NBR"]
     },
@@ -244,14 +274,16 @@
         "name": "Paper plea & case management hearing",
         "scheme": ["agfs"],
         "scheme_version": ["9"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["PPC"]
     },
     {
         "key": "paper_plea_case_management_hearing_uplift",
-        "name": "Paper plea & case management hearing uplift",
+        "name": "Paper plea & case management hearing (uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["PCU"]
     },
@@ -260,6 +292,7 @@
         "name": "Proceeds of crime hearings (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -268,6 +301,7 @@
         "name": "Proceeds of crime hearings (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -276,6 +310,7 @@
         "name": "Proceeds of crime hearings (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -284,6 +319,7 @@
         "name": "Proceeds of crime hearings (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -292,6 +328,7 @@
         "name": "Public interest immunity hearings (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -300,6 +337,7 @@
         "name": "Public interest immunity hearings (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -308,6 +346,7 @@
         "name": "Public interest immunity hearings (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -316,6 +355,7 @@
         "name": "Public interest immunity hearings (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -324,6 +364,7 @@
         "name": "Research of very unusual or novel factual issue",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -332,6 +373,7 @@
         "name": "Research of very unusual or novel point of law",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -340,14 +382,16 @@
         "name": "Sentence hearings",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": []
     },
     {
         "key": "sentence_hearings_uplift",
-        "name": "Sentence hearings uplift",
+        "name": "Sentence hearings (uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": []
     },
@@ -356,14 +400,16 @@
         "name": "Special preparation fee",
         "scheme": ["agfs","lgfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous","litigator_final"],
         "other_names": [],
         "abbreviations": ["SPF"]
     },
     {
         "key": "standard_appearance_fee_uplift",
-        "name": "Standard appearance fee uplift",
+        "name": "Standard appearance fee (uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": [],
         "abbreviations": ["SAU"]
     },
@@ -372,14 +418,16 @@
         "name": "Trial not proceed",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
     {
         "key": "trial_not_proceed_uplift",
-        "name": "Trial not proceed uplift",
+        "name": "Trial not proceed (uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -388,6 +436,7 @@
         "name": "Unsuccessful application to vacate a guilty plea (half day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -396,6 +445,7 @@
         "name": "Unsuccessful application to vacate a guilty plea (half day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -404,6 +454,7 @@
         "name": "Unsuccessful application to vacate a guilty plea (whole day)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -412,6 +463,7 @@
         "name": "Unsuccessful application to vacate a guilty plea (whole day uplift)",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": [],
         "abbreviations": []
     },
@@ -420,6 +472,7 @@
         "name": "Wasted preparation fee",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
         "other_names": ["Wasted prep fee"],
         "abbreviations": ["WPF"]
     },
@@ -428,6 +481,7 @@
         "name": "Written / oral advice",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final"],
         "other_names": ["Written or oral advice"],
         "abbreviations": ["WOA","RNF","RNL"]
     }

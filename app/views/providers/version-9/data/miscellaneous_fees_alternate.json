@@ -1,0 +1,81 @@
+[
+    
+    {
+        "key": "confiscation_hearings_half_day",
+        "name": "Confiscation hearings (half day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": [],
+        "abbreviations": ["DTH","PCH"],
+        "has_uplift": true
+    },
+    {
+        "key": "confiscation_hearings_whole_day",
+        "name": "Confiscation hearings (whole day)",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": [],
+        "abbreviations": ["DTW","PCW"],
+        "has_uplift": true
+    },
+    {
+        "key": "deferred_sentence_hearings",
+        "name": "Deferred sentence hearings",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": [],
+        "abbreviations": ["DSE"],
+        "has_uplift": true
+    },
+    {
+        "key": "paper_plea_case_management_hearing",
+        "name": "Paper plea & case management hearings",
+        "scheme": ["agfs"],
+        "scheme_version": ["9"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": [],
+        "abbreviations": ["PPC"],
+        "has_uplift": true
+    },
+    {
+        "key": "sentence_hearings",
+        "name": "Sentence hearings",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": [],
+        "abbreviations": [],
+        "has_uplift": true
+    },
+    {
+        "key": "special_preparation_fee",
+        "name": "Special preparation fee",
+        "scheme": ["agfs","lgfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous","litigator_final"],
+        "other_names": [],
+        "abbreviations": ["SPF"]
+    },
+    {
+        "key": "standard_appearance_fee",
+        "name": "Standard appearance fee",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": [],
+        "abbreviations": ["SAU"],
+        "has_uplift": true
+    },
+    {
+        "key": "wasted_preparation_fee",
+        "name": "Wasted preparation fee",
+        "scheme": ["agfs"],
+        "scheme_version": ["9","10"],
+        "bill_type": ["advocate_final","advocate_miscellaneous"],
+        "other_names": ["Wasted prep fee"],
+        "abbreviations": ["WPF"]
+    }
+]
