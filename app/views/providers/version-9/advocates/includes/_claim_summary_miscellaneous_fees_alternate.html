@@ -1,0 +1,65 @@
+{% if data['miscellaneous_fees_checklist'].length -%}
+<table class="summary">
+	<tbody>
+		{% for fee in fees %}
+		{% if fee.key in data['miscellaneous_fees_checklist'] %}
+		<tr>
+			<th class="bold" scope="row">
+				{{ fee.name }}
+			</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">
+								Quantity
+							</th>
+							<td>
+								{%- if fee.key in ["confiscation_hearings_half_day"] %}
+									{{ data[fee.key + '_quantity'] | numeral('0,0')  }} half days
+		                    	{% elif fee.key in ["confiscation_hearings_whole_day","deferred_sentence_hearings","paper_plea_case_management_hearing","sentence_hearings","standard_appearance_fee"] %}
+									{{ data[fee.key + '_quantity'] | numeral('0,0')  }} days
+		                    	{% elif fee.key in ["special_preparation_fee","wasted_preparation_fee"] %}
+									{{ data[fee.key + '_quantity'] | numeral('0,0')  }} hours
+		                    	{% endif -%}
+							</td>
+						</tr>
+						{%- if fee.has_uplift %}
+						<tr>
+							<th class="bold" scope="row">
+								Number of defendants
+							</th>
+							<td>{{ data[fee.key + '_uplift'] | numeral('0,0') }}</td>
+						</tr>
+						{% endif -%}
+						<tr>
+							<th class="bold" scope="row">
+								Rate
+							</th>
+							<td>&pound;{{ data[fee.key + '_rate'] | numeral('0,0.00') }}</td>
+						</tr>
+						{% if fee.key not in ["special_preparation_fee","wasted_preparation_fee"] %}
+						<tr>
+							<th class="bold" scope="row">
+								Date attended
+							</th>
+							<td>{{ data[fee.key + '_date_attended_' + loop.index + '_day'] }}/{{ data[fee.key + '_date_attended_' + loop.index + '_month'] }}/{{ data[fee.key + '_date_attended_' + loop.index + '_year'] }}</td>
+						</tr>
+						{% endif -%}
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>&pound;{{ data[fee.key + '_net_amount'] | numeral('0,0.00') }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		{% endif %}
+		{% endfor %}
+	</tbody>
+</table>
+{% else %}
+<p>There are no miscellaneous fees for this claim.</p>
+{%- endif %}

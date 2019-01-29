@@ -628,6 +628,16 @@ router.get('/advocates/claim-summary', function(req, res) {
 
     }
 
+    if (req.session.data.bill_type == 'advocate_miscellaneous') {
+
+        var miscFees = utils.getMiscellaneousFeesAlternate(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
+
+    } else {
+
+        var miscFees = utils.getMiscellaneousFees(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
+
+    }
+
     res.render(`${req.feature}/${req.version}/advocates/claim-summary`,
     	{
             links: {
@@ -641,9 +651,10 @@ router.get('/advocates/claim-summary', function(req, res) {
                 'miscellaneous_fees' : req.baseUrl + '/advocates/miscellaneous-fees' + '?referrer=summary',
                 'travel_expenses' : req.baseUrl + '/advocates/travel-expenses' + '?referrer=summary',
                 'supporting_evidence' : req.baseUrl + '/advocates/supporting-evidence' + '?referrer=summary',
-                'additional_information' : req.baseUrl + '/advocates/additional-information' + '?referrer=summary'
+                'additional_information' : req.baseUrl + '/advocates/supporting-evidence' + '?referrer=summary#additional-information'
             },
-            offence: offence
+            offence: offence,
+            fees: miscFees
     	});
 });
 

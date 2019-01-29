@@ -326,7 +326,7 @@
 
 						{%- endif %}
 
-						{% if data['fee_scheme_version'] != 10 -%}
+						{#% if data['fee_scheme_version'] != 10 -%#}
 							<div class="form-section">
 								<h3 class="heading-medium">
 									Miscellaneous fees
@@ -336,10 +336,18 @@
 									</a>
 								</h3>
 
-								{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
+								{% if data['bill_type'] == 'advocate_miscellaneous' %}
+
+									{% include "./includes/_claim_summary_miscellaneous_fees_alternate.html" %}
+
+								{% else %}
+								
+									{% include "../includes/_claim_summary_miscellaneous_fees.html" %}
+
+								{% endif %}
 
 							</div>
-						{%- endif %}
+						{#%- endif %#}
 
 						{% if data['bill_type'] == 'advocate_final' -%}
 						<div class="form-section">
