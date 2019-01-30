@@ -137,7 +137,7 @@ router.get('/advocates/defendant-details', function(req, res) {
 
     } else {
 
-        if (req.session.data.bill_type == 'advocate_miscellaneous') {
+        if (req.session.data.bill_type == 'advocate_supplementary') {
 
             var nextUrl = req.baseUrl + '/advocates/miscellaneous-fees'
 
@@ -531,7 +531,7 @@ router.get('/advocates/fees', function(req, res) {
 
 router.get('/advocates/miscellaneous-fees', function(req, res) {
 
-    if (req.session.data.bill_type == 'advocate_miscellaneous') {
+    if (req.session.data.bill_type == 'advocate_supplementary') {
 
         var previousUrl = req.baseUrl + '/advocates/defendant-details'
         var miscFees = utils.getMiscellaneousFeesAlternate(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
@@ -628,7 +628,7 @@ router.get('/advocates/claim-summary', function(req, res) {
 
     }
 
-    if (req.session.data.bill_type == 'advocate_miscellaneous') {
+    if (req.session.data.bill_type == 'advocate_supplementary') {
 
         var miscFees = utils.getMiscellaneousFeesAlternate(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
 

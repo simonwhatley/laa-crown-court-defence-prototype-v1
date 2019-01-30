@@ -25,7 +25,7 @@
 
 				<div class="grid-row">
 
-					{% if data['bill_type'] != "advocate_miscellaneous" -%}
+					{% if data['bill_type'] != "advocate_supplementary" -%}
 						<div class="column-one-quarter">
 							<h3 class="heading-large">
 								<span class="heading-secondary">
@@ -192,7 +192,7 @@
 
 						</div>
 
-						{% if data['bill_type'] != "advocate_miscellaneous" -%}
+						{% if data['bill_type'] != "advocate_supplementary" -%}
 
 							{% if data['fee_type'] == 'graduated' -%}
 								<div class="form-section">
@@ -238,7 +238,7 @@
 
 						{% else %}
 
-							{% if data['bill_type'] != "advocate_miscellaneous" -%}
+							{% if data['bill_type'] != "advocate_supplementary" -%}
 
 								{% if data['fee_type'] == 'graduated' -%}
 
@@ -336,7 +336,7 @@
 									</a>
 								</h3>
 
-								{% if data['bill_type'] == 'advocate_miscellaneous' %}
+								{% if data['bill_type'] == 'advocate_supplementary' %}
 
 									{% include "./includes/_claim_summary_miscellaneous_fees_alternate.html" %}
 
