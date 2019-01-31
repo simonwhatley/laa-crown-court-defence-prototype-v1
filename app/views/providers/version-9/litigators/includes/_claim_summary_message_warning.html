@@ -8,11 +8,13 @@
 		{%- endif %}
 		<li>case details</li>
 		<li>defendant details</li>
-		{% if data['fee_type'] == 'graduated' -%}
-			<li>offence details</li>
-			<li>graduated fees</li>
-		{% else %}
-			<li>fixed fees</li>
+		{% if data['bill_type'] != 'litigator_supplementary' %}
+			{% if data['fee_type'] == 'graduated' -%}
+				<li>offence details</li>
+				<li>graduated fees</li>
+			{% else %}
+				<li>fixed fees</li>
+			{%- endif %}
 		{%- endif %}
 	</ul>
 </div>

@@ -30,16 +30,24 @@
 
 					<form class="form" method="post">
 
-						{% include "./includes/_miscellaneous_fees.html" %}
+						{%- if data['bill_type'] == 'litigator_supplementary' %}
+							
+							{% include "./includes/_miscellaneous_fees_alternate.html" %}
 
-						<div class="form-section">
-							<hr>
-							<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
-						</div>
+						{% else %}
 
-						{% if data['bill_type'] == 'litigator_final' -%}
-							{% include "../includes/_warrant_fees.html" %}
-						{%- endif %}
+							{% include "./includes/_miscellaneous_fees.html" %}
+
+							<div class="form-section">
+								<hr>
+								<a href="#noop" class="button button-secondary" role="button">Add another fee</a>
+							</div>
+
+							{%- if data['bill_type'] == 'litigator_final' %}
+								{% include "../includes/_warrant_fees.html" %}
+							{% endif -%}
+
+						{% endif -%}
 
 						{% include "./includes/_form_actions.html" %}
 

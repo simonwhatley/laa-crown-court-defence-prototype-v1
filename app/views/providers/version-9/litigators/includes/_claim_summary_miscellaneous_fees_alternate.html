@@ -1,0 +1,47 @@
+{% if data['special_preparation_fee_quantity'].length -%}
+<table class="summary">
+	<tbody>
+		<tr>
+			<th class="bold" scope="row">
+				Special preparation fees
+			</th>
+			<td>
+				<table class="nested-summary">
+					<tbody>
+						<tr>
+							<th class="bold" scope="row">
+								Quantity
+							</th>
+							<td>
+								{{ data['special_preparation_fee_quantity'] | numeral('0,0')  }} hours
+							</td>
+						</tr>
+						{%- if fee.has_uplift %}
+						<tr>
+							<th class="bold" scope="row">
+								Number of defendants
+							</th>
+							<td>{{ data['special_preparation_fee_uplift'] | numeral('0,0') }}</td>
+						</tr>
+						{% endif -%}
+						<tr>
+							<th class="bold" scope="row">
+								Rate
+							</th>
+							<td>&pound;{{ data['special_preparation_fee_rate'] | numeral('0,0.00') }}</td>
+						</tr>
+						<tr>
+							<th class="bold" scope="row">
+								Net amount
+							</th>
+							<td>&pound;{{ data['special_preparation_fee_net_amount'] | numeral('0,0.00') }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% else %}
+<p>There are no miscellaneous fees for this claim.</p>
+{%- endif %}
