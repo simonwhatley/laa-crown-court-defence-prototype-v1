@@ -31,16 +31,6 @@
         "has_uplift": true
     },
     {
-        "key": "paper_plea_case_management_hearing",
-        "name": "Paper plea & case management hearings",
-        "scheme": ["agfs"],
-        "scheme_version": ["9"],
-        "bill_type": ["advocate_final","advocate_miscellaneous"],
-        "other_names": [],
-        "abbreviations": ["PPC"],
-        "has_uplift": true
-    },
-    {
         "key": "sentence_hearings",
         "name": "Sentence hearings",
         "scheme": ["agfs"],
@@ -52,7 +42,7 @@
     },
     {
         "key": "special_preparation_fee",
-        "name": "Special preparation fee",
+        "name": "Special preparation fees",
         "scheme": ["agfs","lgfs"],
         "scheme_version": ["9","10"],
         "bill_type": ["advocate_final","advocate_miscellaneous","litigator_final"],
@@ -61,7 +51,7 @@
     },
     {
         "key": "standard_appearance_fee",
-        "name": "Standard appearance fee",
+        "name": "Standard appearance fees",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "bill_type": ["advocate_final","advocate_miscellaneous"],
@@ -71,7 +61,7 @@
     },
     {
         "key": "wasted_preparation_fee",
-        "name": "Wasted preparation fee",
+        "name": "Wasted preparation fees",
         "scheme": ["agfs"],
         "scheme_version": ["9","10"],
         "bill_type": ["advocate_final","advocate_miscellaneous"],

@@ -266,7 +266,7 @@ module.exports = {
 
 	},
 
-	getMiscellaneousFeesAlternate: function(fee_scheme, fee_scheme_version, bill_type) {
+	getMiscellaneousFeesAlternate: function(fee_scheme, fee_scheme_version) {
 
 		if(!fee_scheme)
 			return null

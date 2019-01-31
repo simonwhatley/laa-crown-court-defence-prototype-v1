@@ -534,7 +534,7 @@ router.get('/advocates/miscellaneous-fees', function(req, res) {
     if (req.session.data.bill_type == 'advocate_supplementary') {
 
         var previousUrl = req.baseUrl + '/advocates/defendant-details'
-        var miscFees = utils.getMiscellaneousFeesAlternate(req.session.data.fee_scheme, req.session.data.fee_scheme_version, req.session.data.bill_type)
+        var miscFees = utils.getMiscellaneousFeesAlternate(req.session.data.fee_scheme, req.session.data.fee_scheme_version)
 
     } else {
 
