@@ -35,6 +35,12 @@
 					<form class="form" method="post">
 
 						{%- if data['bill_type'] == "advocate_supplementary" %}
+							<div class="form-section">
+
+								{% include "./includes/_advocate_category.html" %}
+
+							</div>
+
 							{% include "./includes/_miscellaneous_fees_alternate.html" %}
 						{% else %}
 							{% include "./includes/_miscellaneous_fees.html" %}

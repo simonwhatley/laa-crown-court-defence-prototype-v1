@@ -8,14 +8,14 @@
 		</legend>
 
 		{% if data['fee_scheme_version'] == "10" or fee_scheme_version == "10" -%}
-		
+
 			<div class="multiple-choice">
 				<input id="advocate-category-junior" type="radio" name="advocate_category" value="junior" {{ checked('advocate_category','junior') }}>
 				<label for="advocate-category-junior">Junior</label>
 			</div>
-		
+
 		{% else %}
-		
+
 			<div class="multiple-choice">
 				<input id="advocate-category-junior-alone" type="radio" name="advocate_category" value="junior_alone" {{ checked('advocate_category','junior_alone') }}>
 				<label for="advocate-category-junior-alone">Junior alone</label>
@@ -24,7 +24,7 @@
 				<input id="advocate-category-led-junior" type="radio" name="advocate_category" value="led_junior" {{ checked('advocate_category','led_junior') }}>
 				<label for="advocate-category-2=led-junior">Led junior</label>
 			</div>
-		
+
 		{% endif %}
 
 		<div class="multiple-choice">
