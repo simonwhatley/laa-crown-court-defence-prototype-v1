@@ -209,36 +209,40 @@
 								</fieldset>
 							</div>
 
-							<div class="form-group">
-						        <fieldset>
-						            <legend class="form-label-bold">
-						                Date case concluded
-						                <span class="form-hint">
-						                    For example, 31 3 2017
-						                </span>
-						            </legend>
-						            <div class="form-date">
-						                <div class="form-group form-group-day">
-						                    <label class="form-label" for="date-case-concluded-day">
-						                        Day
-						                    </label>
-						                    <input class="form-control" id="date-case-concluded-day" max="31" min="1" name="date_case_concluded_day" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_day']}}">
-						                </div>
-						                <div class="form-group form-group-month">
-						                    <label class="form-label" for="date-case-concluded-month">
-						                        Month
-						                    </label>
-						                    <input class="form-control" id="date-case-concluded-month" max="12" min="1" name="date_case_concluded_month" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_month']}}">
-						                </div>
-						                <div class="form-group form-group-year">
-						                    <label class="form-label" for="date-case-concluded-year">
-						                        Year
-						                    </label>
-						                    <input class="form-control" id="date-case-concluded-year" max="2019" min="1900" name="date_case_concluded_year" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_year']}}">
-						                </div>
-						            </div>
-						        </fieldset>
-						    </div>
+							{%- if data['bill_type'] != 'litigator_supplementary' %}
+
+								<div class="form-group">
+							        <fieldset>
+							            <legend class="form-label-bold">
+							                Date case concluded
+							                <span class="form-hint">
+							                    For example, 31 3 2017
+							                </span>
+							            </legend>
+							            <div class="form-date">
+							                <div class="form-group form-group-day">
+							                    <label class="form-label" for="date-case-concluded-day">
+							                        Day
+							                    </label>
+							                    <input class="form-control" id="date-case-concluded-day" max="31" min="1" name="date_case_concluded_day" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_day']}}">
+							                </div>
+							                <div class="form-group form-group-month">
+							                    <label class="form-label" for="date-case-concluded-month">
+							                        Month
+							                    </label>
+							                    <input class="form-control" id="date-case-concluded-month" max="12" min="1" name="date_case_concluded_month" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_month']}}">
+							                </div>
+							                <div class="form-group form-group-year">
+							                    <label class="form-label" for="date-case-concluded-year">
+							                        Year
+							                    </label>
+							                    <input class="form-control" id="date-case-concluded-year" max="2019" min="1900" name="date_case_concluded_year" pattern="[0-9]*" type="number" value="{{data['date_case_concluded_year']}}">
+							                </div>
+							            </div>
+							        </fieldset>
+							    </div>
+
+						    {% endif -%}
 
 						</div>
 
