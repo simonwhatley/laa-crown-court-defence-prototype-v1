@@ -14,14 +14,12 @@
         <input class="form-control form-control-1-4" id="special-preparation-fee-quantity" name="special_preparation_fee_quantity" type="number" max="999" min="0" step="1" value="{{ data['special_preparation_fee_quantity'] }}">
     </div>
 
-	{%- if defendants.length > 1 %}
     <div class="form-group">
-        <label class="form-label-bold" for="special-preparation-fee-uplift">
-            Number of defendants
+        <label class="form-label-bold " for="special-preparation-fee-pages-of-evidence">
+            Total pages of evidence
         </label>
-        <input class="form-control form-control-1-4" id="special-preparation-fee-uplift" name="special_preparation_fee_uplift" type="number" max="999" min="0" step="1" value="{{ data['special_preparation_fee_uplift'] }}">
+        <input class="form-control form-control-1-4" id="special-preparation-fee-pages-of-evidence" name="special_preparation_fee_pages_of_evidence" type="number" max="999999" min="0" step="1" value="{{data['special_preparation_fee_pages_of_evidence']}}" autocomplete="off">
     </div>
-    {% endif -%}
 
 	<div class="form-group">
         <label class="form-label-bold" for="special-preparation-fee-rate">
