@@ -5,11 +5,11 @@
   also includes sourcemaps
 */
 
-const gulp = require('gulp')
-const sass = require('gulp-sass')
-const sourcemaps = require('gulp-sourcemaps')
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
-const config = require('./config.json')
+const config = require('./config.json');
 
 gulp.task('sass', function () {
   return gulp.src(config.paths.assets + '/sass/*.scss')
@@ -20,7 +20,7 @@ gulp.task('sass', function () {
       'govuk_modules/govuk-elements-sass/']}).on('error', sass.logError))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(config.paths.public + '/stylesheets/'))
-})
+});
 
 gulp.task('sass-documentation', function () {
   return gulp.src(config.paths.docsAssets + '/sass/*.scss')
@@ -31,4 +31,4 @@ gulp.task('sass-documentation', function () {
       'govuk_modules/govuk-elements-sass/']}).on('error', sass.logError))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(config.paths.public + '/stylesheets/'))
-})
+});

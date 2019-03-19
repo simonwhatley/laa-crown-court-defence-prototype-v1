@@ -10,7 +10,55 @@
   tasks to run when you run `gulp`.
 */
 
-const requireDir = require('require-dir')
+const gulp = require('gulp');
+const mocha = require('gulp-mocha');
+const requireDir = require('require-dir');
 
 // Require all tasks in gulp/tasks, including subfolders
-requireDir('./gulp', {recurse: true})
+requireDir('./gulp', {recurse: true});
+
+gulp.task('generate-assets', gulp.series(
+  'clean',
+  gulp.parallel(
+    'sass',
+    'sass-documentation',
+    'copy-assets',
+    'copy-assets-documentation'
+  )
+));
+
+gulp.task('copy-govuk-modules', gulp.series(
+  'copy-toolkit',
+  'copy-template-assets',
+  'copy-elements-sass',
+  'copy-template'
+));
+
+gulp.task('watch', gulp.parallel(
+  'watch-sass',
+  'watch-assets'
+));
+
+gulp.task('mocha', function () {
+  return gulp.src(['test/**/*.js'], { read: false })
+    .pipe(mocha({ reporter: 'spec' }))
+    .once('error', () => {
+      process.exit(1)
+    })
+    .once('end', () => {
+      process.exit()
+    })
+});
+
+gulp.task('test', gulp.series(
+  'generate-assets',
+  'mocha'
+));
+
+gulp.task('default', gulp.series(
+  'generate-assets',
+  gulp.parallel(
+    'watch',
+    'server'
+  )
+));

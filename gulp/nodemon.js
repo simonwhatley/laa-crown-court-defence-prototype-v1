@@ -4,13 +4,13 @@
   uses nodemon to run a server, watches for javascript and json changes
 */
 
-const fs = require('fs')
-const path = require('path')
+const fs = require('fs');
+const path = require('path');
 
-const gulp = require('gulp')
-const nodemon = require('gulp-nodemon')
+const gulp = require('gulp');
+const nodemon = require('gulp-nodemon');
 
-const config = require('./config.json')
+const config = require('./config.json');
 
 gulp.task('server', function () {
   nodemon({
@@ -27,4 +27,4 @@ gulp.task('server', function () {
 
     process.exit(0)
   })
-})
+});
