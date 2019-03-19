@@ -12,14 +12,14 @@ const nodemon = require('gulp-nodemon');
 
 const config = require('./config.json');
 
-gulp.task('server', function () {
+gulp.task('server', () => {
   nodemon({
     script: 'server.js',
     ext: 'js, json',
     ignore: [config.paths.public + '*',
       config.paths.assets + '*',
       config.paths.nodeModules + '*']
-  }).on('quit', function () {
+  }).on('quit', () => {
     // remove .port.tmp if it exists
     try {
       fs.unlinkSync(path.join(__dirname, '/../.port.tmp'))

@@ -40,7 +40,7 @@ gulp.task('watch', gulp.parallel(
   'watch-assets'
 ));
 
-gulp.task('mocha', function () {
+gulp.task('mocha', () => {
   return gulp.src(['test/**/*.js'], { read: false })
     .pipe(mocha({ reporter: 'spec' }))
     .once('error', () => {
