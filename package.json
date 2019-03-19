@@ -1,6 +1,6 @@
 {
-  "name": "express-prototype",
-  "description": "GOVUK prototyping app in Express",
+  "name": "laa-claim-crown-court-defence-prototype",
+  "description": "Claim for Crown Court Defence (CCCD) is an online billing application for the Advocates' and Litigators' Graduated Fee Schemes, provided by the Legal Aid Agency (LAA).",
   "version": "6.3.0",
   "private": true,
   "engines": {
