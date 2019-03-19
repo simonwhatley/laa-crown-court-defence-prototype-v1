@@ -17,21 +17,22 @@ const requireDir = require('require-dir');
 // Require all tasks in gulp/tasks, including subfolders
 requireDir('./gulp', {recurse: true});
 
-gulp.task('generate-assets', gulp.series(
-  'clean',
-  gulp.parallel(
-    'sass',
-    'sass-documentation',
-    'copy-assets',
-    'copy-assets-documentation'
-  )
-));
-
 gulp.task('copy-govuk-modules', gulp.series(
   'copy-toolkit',
   'copy-template-assets',
   'copy-elements-sass',
   'copy-template'
+));
+
+gulp.task('generate-assets', gulp.series(
+  'clean',
+  'copy-govuk-modules',
+  gulp.parallel(
+    'sass',
+    'sass-documentation',
+    'copy-assets',
+    'copy-documentation-assets'
+  )
 ));
 
 gulp.task('watch', gulp.parallel(
