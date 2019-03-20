@@ -6,6 +6,13 @@
 			<td>{% if data['advocate_category'] == 'qc' -%}{{data['advocate_category']|upper}}{% else %}{{data['advocate_category']|replace('_',' ')|capitalize}}{%- endif %}</td>
 		</tr>
 
+		{% if data['case_type'] == 'discontinuance' -%}
+		<tr>
+			<th class="bold" scope="row">Was prosecution evidence served on this case?</th>
+			<td>{{data['distcontinuance_evidence_submitted']|capitalize}}</td>
+		</tr>
+		{%- endif %}
+
 		{% if data['graduated_fees_checklist'] and "daily_attendance_fees" in data['graduated_fees_checklist'] -%}
 		<tr>
 			<th class="bold" scope="row">Daily attendance fees</th>

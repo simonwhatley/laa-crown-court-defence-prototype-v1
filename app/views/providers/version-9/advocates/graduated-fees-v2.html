@@ -37,7 +37,15 @@
 
 							{% include "./includes/_advocate_category.html" %}
 
+							{%- if data['case_type'] == 'discontinuance' %}
+
+								{% include "./includes/_discontinuance_evidence_submitted.html" %}
+
+							{% endif -%}
+
 						</div>
+
+						
 
 						<div class="form-section">
 
