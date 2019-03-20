@@ -21,7 +21,7 @@ gulp.task('sass', () => {
         'govuk_modules/govuk-elements-sass/'
       ]}).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.paths.public + '/stylesheets/'))
+    .pipe(gulp.dest(config.paths.public + '/stylesheets/'));
 });
 
 gulp.task('sass-documentation', () => {
@@ -34,5 +34,5 @@ gulp.task('sass-documentation', () => {
         'govuk_modules/govuk-elements-sass/'
       ]}).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.paths.public + '/stylesheets/'))
+    .pipe(gulp.dest(config.paths.public + '/stylesheets/'));
 });

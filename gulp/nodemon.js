@@ -25,6 +25,6 @@ gulp.task('server', () => {
       fs.unlinkSync(path.join(__dirname, '/../.port.tmp'))
     } catch (e) {}
 
-    process.exit(0)
+    process.exit(0);
   })
 });
